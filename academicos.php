@@ -18,7 +18,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                   <div class="row">
                       <div id="desc-programa">
                           <div class="col-md-5">
-                              <a class="button-primary">Lic. Seguridad Pública</a>
+                              <a class="button-primary"><?php the_title() ?></a>
                               <p class="descripcion-programa"><?php the_field('descripcion_del_programa'); ?></p>
                               <p id="RVOE" class="revoe">
                                   <strong><?php the_field('texto_rvoe'); ?></strong><br>
@@ -73,7 +73,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                   <div class="row">
                       <div id="desc-programa">
                           <div class="col-md-5">
-                              <a class="button-primary">Lic. Seguridad Pública</a>
+                              <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
                                     <?php the_field('lo_que_vas_a_aprender'); ?>
                               </div>
@@ -127,7 +127,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                   <div class="row">
                       <div id="desc-programa">
                           <div class="col-md-5">
-                              <a class="button-primary">Lic. Seguridad Pública</a>
+                              <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
                                     <?php the_field('donde_puedes_trabajar'); ?>
                               </div>
@@ -177,7 +177,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                     <div class="row">
                         <div id="desc-programa">
                             <div class="col-md-5">
-                                <a class="button-primary">Lic. Seguridad Pública 2</a>
+                                <a class="button-primary"><?php the_title() ?> 2</a>
                                 <p class="descripcion-programa">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                                 <p id="RVOE" class="revoe">
                                     <strong>Reconocimiento de Validez Oficial de Estudios (RVOE)</strong><br>
@@ -221,7 +221,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
             </div>
             <div class="col-3">
                         <select id="seleccionperiodo" class="periodo">
-                            <option value="bloque-materia" selected>Todas</option>
+                            <!-- <option value="bloque-materia" selected>Todas</option> -->
                             <?php while ($unicorn_contador <= get_field('cantidad_de_periodos'))  {  ?>
                                 <option value="periodo-<?php echo $unicorn_contador ?>"><?php echo $unicorn_contador ?>° <?php the_field('tipo_de_periodos'); ?></option>
 
