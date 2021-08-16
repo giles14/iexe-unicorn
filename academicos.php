@@ -18,8 +18,11 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                   <div class="row">
                       <div id="desc-programa">
                           <div class="col-md-5">
+                            <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
-                              <p class="descripcion-programa"><?php the_field('descripcion_del_programa'); ?></p>
+                              <div class="descripcion-programa">
+                                <?php the_field('descripcion_del_programa'); ?>
+                              </div>
                               <p id="RVOE" class="revoe">
                                   <strong><?php the_field('texto_rvoe'); ?></strong><br>
                                   Consultalo en: <a href="<?php the_field('link_rvoe'); ?>" class="notorio" target="_blank">www.sirvoes.sep.gob.mx</a>
@@ -73,6 +76,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                   <div class="row">
                       <div id="desc-programa">
                           <div class="col-md-5">
+                            <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
                                     <?php the_field('lo_que_vas_a_aprender'); ?>
@@ -127,6 +131,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                   <div class="row">
                       <div id="desc-programa">
                           <div class="col-md-5">
+                          <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
                                     <?php the_field('donde_puedes_trabajar'); ?>
@@ -177,6 +182,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                     <div class="row">
                         <div id="desc-programa">
                             <div class="col-md-5">
+                            <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                                 <a class="button-primary"><?php the_title() ?> 2</a>
                                 <p class="descripcion-programa">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                                 <p id="RVOE" class="revoe">
