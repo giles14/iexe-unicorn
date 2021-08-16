@@ -50,3 +50,13 @@ function iexe_unicorn_body() {
     }
 }
 
+if ( ! function_exists( 'iexe_unicorn_registra_nav_menu' ) ) {
+ 
+    function iexe_unicorn_registra_nav_menu(){
+        register_nav_menus( array(
+            'menu_principal' => 'Menu Principal',
+            'menu_footer'  => 'Menu Footer'
+        ) );
+    }
+    add_action( 'after_setup_theme', 'iexe_unicorn_registra_nav_menu', 0 );
+}

@@ -41,7 +41,7 @@
      navbar-expand-lg navbar-light bg-light">
         <div class="container">
             
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
              <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.svg"  alt="">
           </a>
             
