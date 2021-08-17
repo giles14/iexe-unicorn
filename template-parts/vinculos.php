@@ -20,7 +20,7 @@
                 <div class="texto-icono">Consultoría</div>
             </div>
             <div class="col-md-3">
-                <div class="boton-icono"><a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/capacitacion.png" alt=""></a></div>
+                <div class="boton-icono"><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/capacitacion.png" alt=""></a></div>
                 <div class="texto-icono">Capacitación Especializada</div>
             </div>
             

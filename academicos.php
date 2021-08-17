@@ -31,9 +31,9 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                           </div>
                           <div class="col-md-3">
                             <?php
-                              if( !empty( $imagenAsesor ) ): ?>
-                                <img class="asesor" src="<?php echo esc_url($imagenAsesor['url']); ?>" alt="<?php echo esc_attr($imagenAsesor['alt']); ?>" />
-                            <?php endif; ?>
+                              //if ( !empty( $imagenAsesor ) ): ?>
+                                <!-- <img class="asesor" src="<?php // echo esc_url($imagenAsesor['url']); ?>" alt="<?php // echo esc_attr($imagenAsesor['alt']); ?>" /> -->
+                            <?php // endif; ?>
                               <!-- <img class="asesor" src="<?php // echo get_template_directory_uri() ?>/assets/img/foto_coordinador.webp" alt=""> -->
                           </div>
                           <div class="col-md-4">
@@ -88,34 +88,14 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
               
                           </div>
                           <div class="col-md-3">
-                              <img class="asesor" src="<?php echo get_template_directory_uri() ?>/assets/img/foto_coordinador.png" alt="">
+                            
                           </div>
                           <div class="col-md-4">
-                              <div class="formulario">
-                                  <div class="cabecera">
-                                      <h1 class="interes">¿Estás interesado?</h1>
-                                  </div>
-                                  <div class="cuerpo">
-                                      <form id="interes">
-                                          <div class="form-group">
-                                            <label for="nombre">Nombre completo*</label>
-                                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
-                                          </div>
-                                          <div class="form-group">
-                                              <label for="correo">Correo electrónico*</label>
-                                              <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                          </div>
-                                          <div class="form-group">
-                                              <label for="telefono">Teléfono o celular*</label>
-                                              <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
-                                          </div>
-                                          <div class="col-12 text-center">
-                                              <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>
-                                          </div>
-                                        </form>
-                                  </div>
-              
-                              </div>
+                              <!--  -->
+                              <?php
+                              if ( !empty( $imagenAsesor ) ): ?>
+                                <img class="asesor" src="<?php echo esc_url($imagenAsesor['url']); ?>" alt="<?php echo esc_attr($imagenAsesor['alt']); ?>" />
+                            <?php endif; ?>
                           </div>
           
                       </div>               
@@ -139,7 +119,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
               
                           </div>
                           <div class="col-md-3">
-                              <img class="asesor" src="<?php echo get_template_directory_uri() ?>/assets/img/foto_coordinador.png" alt="">
+                              <img class="asesor" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/foto_coordinador.png" alt="">
                           </div>
                           <div class="col-md-4">
                               <div class="formulario">
@@ -195,7 +175,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                                 
                             </div>
                             <div class="col-md-5">
-                                <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/img/videoEjemplo.webp" alt="">
+                                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/videoEjemplo.webp" alt="">
                             </div>
             
                         </div>               
@@ -360,7 +340,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/escudo-becas.webp" alt="" class="img-fluid">
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-becas.webp" alt="" class="img-fluid">
             </div>
             <div class="col-md-6">
                 <p>Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.</p>
@@ -443,7 +423,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
     <div class="container">
         <div class="row">
             <div class="col">
-            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/banner.webp" class="img-fluid" alt=""></a>
+            <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner.webp" class="img-fluid" alt=""></a>
             </div>
         </div>
     </div>

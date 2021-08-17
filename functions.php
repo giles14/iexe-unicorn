@@ -3,6 +3,7 @@
 ========================================== */
 define('MAXIMAS_MATERIAS' , 7);
 define('MAXIMOS_PERIODOS' , 10);
+add_theme_support( 'title-tag' );
 
 function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.0', 'all'  );

@@ -3,10 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img class="logo-abajo mx-auto d-block" id="logo-pie" src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="">
+                    <img class="logo-abajo mx-auto d-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.png" alt="">
                     <span class="redes-sociales">SÍGUENOS EN</span>
                     <div class="iconos-redes-sociales">
-                        <a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a>
+                        <a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a>
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -41,8 +41,8 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p class="telefono-mexico buffer"><img src="<?php echo get_template_directory_uri() ?>/assets/img/wa.svg" alt="">800-286-84-64</p>
-                    <p class="telefono-puebla"><img src="<?php echo get_template_directory_uri() ?>/assets/img/telefono.svg" alt="">222-286-84-64</p>
+                    <p class="telefono-mexico buffer"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt="">800-286-84-64</p>
+                    <p class="telefono-puebla"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt="">222-286-84-64</p>
                     <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a>
                     <p class="direccion">Blvd. Esteban de Antuñano 2702,<br>C.P. 72160 Puebla. México</p>
                 </div>
@@ -66,7 +66,7 @@
     <div id="mySidenav" class="sidenav animate__bounceInRight">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Cerrar <span>&times;</span></a>
         <div class="logo">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.svg" alt="Logo IEXE">
+            <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/logo.svg" alt="Logo IEXE">
         </div>
         <div class="menu-navegacion">
             <a class="button-primary">MENÚ</a>
@@ -85,19 +85,10 @@
             <a href="#">IEXE Comunidad</a>
         </div>
     </div>
-      
-
-    
-    <!-- <div class="cards">
-        <div class="card">
-          <h2 class="card-title">Seal</h2>
-          <img src="https://images.unsplash.com/photo-1591485423007-765bde4139ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="">
-          <p class="card-desc">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur seals), and Phocidae (the earless seals, or true seals).</p>
-        </div>
-    </div> -->
     
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>     -->
 <script>
+    var $ = jQuery;
     $(document).ready(function(){
         $(".oferta-bloque").click(function(){  
             $('.oferta-bloque').removeClass("activo");

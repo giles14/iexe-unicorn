@@ -5,10 +5,16 @@
                 <div id="carouselExampleControls" style="height: 100vh" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-licenciaturas.webp" alt="First slide">
+                        <div class="texto-slider">
+                            <span>Somos la</span>
+                            <span>VENTANA</span>
+                            <span>a un futuro prometedor</span>
+                            <span>Líderes IEXE</span>
+                        </div>
+                        <img class="d-block w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/slider-licenciaturas.webp" alt="First slide">
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Second slide">
+                        <img class="d-block w-100" src="<?php echo get_template_directory_uri() ?>/assets/img/slider-doctorado.webp" alt="Second slide">
                       </div>
                       <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
@@ -70,19 +76,19 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="oferta-educativa/licenciatura-en-ciencias-politicas-y-administracion-publica/">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="oferta-educativa/licenciatura-en-seguridad-publica/">Seguridad Pública</a></li>
-                                    <li><a href="oferta-educativa/derecho/">Derecho</a></li>
-                                    <li><a href="oferta-educativa/seguridad-publica/">Administración de Empresas</a></li>                                    
+                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
+                                    <li><a href="#">Seguridad Pública</a></li>
+                                    <li><a href="#">Derecho</a></li>
+                                    <li><a href="#">Administración de Empresas</a></li>                                    
                                 </ul>
                             </div>
                         </div> 
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div id="maestro" class="oferta-bloque mae">
+                    <div id="maestro" class="oferta-bloque lic">
                         <div class="informa">
-                            <a class="button-primary">MAESTRÍAS</a>
+                            <a class="button-primary">MÁSTERS</a>
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
@@ -97,9 +103,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div id="maestro" class="oferta-bloque doc">
+                    <div id="maestro" class="oferta-bloque lic">
                         <div class="informa">
-                            <a class="button-primary">DOCTORADO</a>
+                            <a class="button-primary">MAESTRÍAS</a>
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
@@ -116,9 +122,9 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <div class="oferta-bloque mas">
+                    <div class="oferta-bloque lic">
                         <div class="informa">
-                            <a class="button-primary">MÁSTERS</a>
+                            <a class="button-primary">DOCTORADO</a>
                             <a class="descubre-mas" disabled>Descubre más</a>
                             <div class="links-programas">
                                 <ul>
@@ -132,7 +138,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="oferta-bloque dip">
+                    <div class="oferta-bloque lic">
                         <div class="informa">
                             <a class="button-primary">DIPLOMADOS</a>
                             <a class="descubre-mas">Descubre más</a>
@@ -148,7 +154,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="oferta-bloque cap">
+                    <div class="oferta-bloque lic">
                         <div class="informa">
                             <a class="button-primary">CAPACITACIONES</a>
                             <a class="descubre-mas">Descubre más</a>
@@ -184,12 +190,12 @@
                 <div class="col col-md-4 my-video primero">
                     <div class="marco">
                         <div class="info-pre-video">
-                            <a><img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt=""></a>
+                            <a><img class="boton-play" src="<?php echo get_template_directory_uri() ?>/assets/img/play.png" alt=""></a>
                             <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
                         </div>
                     </div>
                     <video width="443" height="579" muted loop>
-                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx1.mp4" type="video/mp4" muted>
+                        <source src="<?php echo get_template_directory_uri() ?>/assets/video/alx1.mp4" type="video/mp4" muted>
                         El navegador no acepta video
                   </video>
 
@@ -197,13 +203,13 @@
                 <div class="col col-md-4 my-video segundo muted">
                     <div class="marco">
                         <div class="info-pre-video">
-                            <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
+                            <img class="boton-play" src="<?php echo get_template_directory_uri() ?>/assets/img/play.png" alt="">
                             <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
                         </div>
                     </div>
                         <video width="443" height="579" muted loop>
-                            <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
-                            <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx2.mp4" type="video/mp4">
+                            <img class="boton-play" src="<?php echo get_template_directory_uri() ?>/assets/img/play.png" alt="">
+                            <source src="<?php echo get_template_directory_uri() ?>/assets/video/alx2.mp4" type="video/mp4">
                             El navegador no acepta video
                       </video>
                     <!-- <div class="marco">
@@ -216,12 +222,12 @@
                 <div class="col col-md-4 my-video tercero">
                     <div class="marco">
                         <div class="info-pre-video">
-                            <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
+                            <img class="boton-play" src="<?php echo get_template_directory_uri() ?>/assets/img/play.png" alt="">
                             <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
                         </div>
                     </div>
                     <video width="443" height="579" muted loop>
-                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx3.mp4" type="video/mp4" muted>
+                        <source src="<?php echo get_template_directory_uri() ?>/assets/video/alx3.mp4" type="video/mp4" muted>
                         El navegador no acepta video
                   </video>
 
@@ -239,10 +245,10 @@
             </div>
             <div class="row buffer-60">
                 <div class="col-md-6">
-                        <img class="img-fluid escudo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo.png" alt="">
+                        <img class="img-fluid escudo" src="<?php echo get_template_directory_uri() ?>/assets/img/escudo.png" alt="">
                 </div>
                 <div class="fondo-x">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x.png" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/x.png" alt="">
                 </div>
                 <div class="col-md-5">
                     <p class="interes-programa">Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.</p>
@@ -294,16 +300,16 @@
             </div>
             <div class="row quick-quit">
                     <div class="col-md-1 align-self-center">
-                        <div class="boton-izquierdo"><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-izquierda.png" alt=""></a></div>
+                        <div class="boton-izquierdo"><a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/boton-izquierda.png" alt=""></a></div>
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="imagen-blog">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blogMiniatura.webp" alt="" class="img-fluid">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/blogMiniatura.webp" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="autor">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor.png" alt="" class="autor-foto">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/autor.png" alt="" class="autor-foto">
                             <div class="meta-informacion">
                                 <span class="nombre">Name Surname</span>
                                 <span class="redes">@johndoe</span>
@@ -321,7 +327,7 @@
                         </div>
                     </div>
                     <div class="col-md-1 align-self-center">
-                        <div class="boton-derecha"><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-derecha.png" alt=""></a></div>
+                        <div class="boton-derecha"><a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/boton-derecha.png" alt=""></a></div>
                     </div>
 
             </div>
