@@ -1,0 +1,8 @@
+.categoria-img {
+    height: 352px;
+    position: relative;
+    background: url(../img/categoria.png);
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
