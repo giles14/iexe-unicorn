@@ -19,10 +19,11 @@ body#archive {
 .categoria-img {
     height: 352px;
     position: relative;
-    background: url(../img/categoria.png);
+    background: url(../img/categoria.webp);
     width: 250px;
     margin: 0 auto;
     border-radius: 15px;
+    background-size: cover;
 }
 .categoria-img h2 {
     color: #fff;
@@ -35,11 +36,25 @@ body#archive {
     left: 12px;
     width: 54px;
 }
+.categoria-img:hover {
+    border: 1px solid #8E99FF;
+    box-shadow: -12px 18px 9px #0017FF36;
+}
 section#ultimas-entradas{
     background: linear-gradient(180deg, rgba(0,30,66,1) 0%, rgba(0,30,66,1) 28%, rgba(237,237,237,1) 100%);
 }
 section#ultimas-noticias{
     background: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(254,254,254,1) 100%);
+}
+section#noticia-destacada {
+    background: var(--primario--azul-obscuro);
+}
+section#noticia-destacada h1.titulo {
+    color: var(--primario-cyan);
+    padding-top: 30px;
+}
+section#noticia-destacada h2.description {
+    color: #e3e3e3;
 }
 .bloque-entrada-blog {
     position: relative;
@@ -66,6 +81,10 @@ section#ultimas-entradas h1.titulo {
 section#ultimas-entradas h2.description {
     color: #e3e3e3;
     font-weight: 200;
+}
+section#ultimas-noticias{
+    margin-top: unset;
+    padding-top: 60px;
 }
 span.meta.fecha {
     position: absolute;
@@ -95,4 +114,23 @@ span.meta.categoria {
 }
 .bloque-entrada p {
     font-weight: 500;
+}
+
+.autor-destacada {
+    height: 78px;
+    background: url(../img/x-elemento.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-color: #e3e3e3;
+}
+.destacada-post {
+    height: 389px;
+    background: #fff;
+}
+.post-texto {
+    padding: 22px 30px;
+}
+.post-texto p {
+    font-size: 24px;
+    line-height: 36px;
 }
