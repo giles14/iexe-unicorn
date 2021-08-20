@@ -5,6 +5,8 @@ define('MAXIMAS_MATERIAS' , 7);
 define('MAXIMOS_PERIODOS' , 10);
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'destacada-archivo', 600, 420 );
+add_image_size( 'ultimas-archivo', 400, 280 , true );
 
 function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.0', 'all'  );
@@ -27,6 +29,11 @@ function agregar_estilos_tema(){
 
 }
 add_action( 'wp_enqueue_scripts', 'agregar_estilos_tema' );
+
+function iexe_unicorn_excerpt_lenght() {
+    return 20;
+}
+add_filter( 'excerpt_length', 'iexe_unicorn_excerpt_lenght', 999 );
 
 function iexe_unicorn_body() {
 

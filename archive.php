@@ -39,7 +39,7 @@
 </section>
 
     
-    <section id="ultimas-entradas">
+    <!-- <section id="ultimas-entradas">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -88,9 +88,51 @@
                 </div>
             </div>
         </div>
-        
+    </section> -->
 
+    <section id="ultimas-entradas">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="titulo">Entradas de Blog</h1>
+                    <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                </div>  
+            </div>
+            <div class="row">
+            <?php 
+                // Define our WP Query Parameters
+                //$the_query = new WP_Query( 'posts_per_page=3' ); 
+                $the_query = new WP_Query( array( 'category_name' => 'blog',
+                                                    'posts_per_page' => 3
+                
+                                            ) ); ?>
+                
+                <?php 
+                while ($the_query -> have_posts()) : $the_query -> the_post(); 
+                ?>
+                <div class="col-md-4">
+                    <div class="bloque-entrada-blog">
+                        <?php the_post_thumbnail('ultimas-archivo', array('class' => 'img-fluid')); ?>
+                        <div class="bloque-flecha"></div>
+                        <div class="bloque-entrada">
+                            <span class="meta fecha"><?php echo get_the_date('j F\, Y'); ?></span>
+                            <span class="meta categoria">Blog</span>
+                            <h2 class="titulo"><a href="<?php the_permalink() ?>"><?php echo mb_strimwidth(get_the_title(), 0, 62, '...'); ?></a></h2>
+                            <p><?php echo wp_trim_excerpt() ?></p>
+                        </div>
+                    </div>
+                </div>
+                <?php 
+                // Repeat the process and reset once it hits the limit
+                endwhile;
+                wp_reset_postdata();
+                ?>
+            
+            </div>
+                
+        </div>
     </section>
+
     <section id="ultimas-noticias">
         <div class="container">
             <div class="row">
@@ -150,21 +192,24 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Titulo de la nota</h2>
+                    <h2 class="titulo-entrada-destacada">Titulo de la nota</h2>
                 </div>
             </div>
             <div class="row no-gutters">
                 <div class="col-md-6">
                     <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/destacada.png" alt=""></div>
-                <div class="col-md-6">
+                <div class="col-md-6" style="margin-left: -1px;">
                     <div class="destacada-post">
                         <div class="autor-destacada">
-                            <span>Name Surname</span>
-                            <span>@johndoe</span>
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor.png" alt="" class="autor-foto" style="border: 1px solid cyan; border-radius: 40px;">
+                            <div class="meta-informacion">
+                                <span class="nombre">Name Surname</span>
+                                <span class="redes">@johndoe</span>
+                            </div>
                         </div>
                         <div class="resumen-destacada">
                             <div class="post-texto"><p> Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor.</p>
-                            <button type="submit" class="btn btn-primario mt-3">Ver más</button>
+                            <button type="submit" class="btn btn-primario mt-3 float-right">Ver más</button>
                         </div>
 
                         </div>
@@ -174,7 +219,9 @@
                 </div>
 
             </div>
+            
         </div>
     </section>
+ 
     <?php // get_template_part( 'template-parts/vinculos'); ?>
     <?php get_footer( ); ?>
