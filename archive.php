@@ -112,11 +112,11 @@
                 <div class="col-md-4">
                     <div class="bloque-entrada-blog">
                         <?php the_post_thumbnail('ultimas-archivo', array('class' => 'img-fluid')); ?>
-                        <div class="bloque-flecha"><a href=""><i class="uil uil-angle-right link-flecha"></i></a></div>
+                        <div class="bloque-flecha"><a href="<?php the_permalink() ?>"><i class="uil uil-angle-right link-flecha"></i></a></div>
                         <div class="bloque-entrada">
                             <span class="meta fecha"><?php echo get_the_date('j F\, Y'); ?></span>
                             <span class="meta categoria">Blog</span>
-                            <h2 class="titulo"><a href="<?php the_permalink() ?>"><?php echo wp_trim_words(get_the_title(), 10, '...'); ?></a></h2>
+                            <h2 class="titulo"><a href="<?php the_permalink() ?>"><?php echo wp_trim_words(get_the_title(), 9, '...'); ?></a></h2>
                             <p><?php echo get_the_excerpt() ?></p>
                         </div>
                     </div>
@@ -153,11 +153,11 @@
                 <div class="col-md-4">
                     <div class="bloque-entrada-blog">
                         <?php the_post_thumbnail('ultimas-archivo', array('class' => 'img-fluid')); ?>
-                        <div class="bloque-flecha"><a href=""><i class="uil uil-angle-right link-flecha"></i></a></div>
+                        <div class="bloque-flecha"><a href="<?php the_permalink() ?>"><i class="uil uil-angle-right link-flecha"></i></a></div>
                         <div class="bloque-entrada">
                             <span class="meta fecha"><?php echo get_the_date('j F\, Y'); ?></span>
                             <span class="meta categoria">Noticias</span>
-                            <h2 class="titulo"><a href="<?php the_permalink() ?>"><?php echo wp_trim_words(get_the_title(), 10, '...'); ?></a></h2>
+                            <h2 class="titulo"><a href="<?php the_permalink() ?>"><?php echo wp_trim_words(get_the_title(), 9, '...'); ?></a></h2>
                             <p><?php echo get_the_excerpt() ?></p>
                         </div>
                     </div>
