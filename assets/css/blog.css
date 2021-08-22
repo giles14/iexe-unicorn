@@ -8,6 +8,7 @@ section#archivo-posts {
     background: #FFF;
     padding-top: 60px;
 }
+
 .row.un-post {
     margin-bottom: 80px;
 }
@@ -245,7 +246,90 @@ a.leer-mas {
     line-height: 20px;
 }
 .contenido-post {
-    font-weight: 300;
+    font-weight: 400;
     font-family: 'Nunito Sans';
     font-size: 16px;
+}
+.post-titulo a {
+    color: var(--azul-primario);
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+}
+#entrada-blog span.meta-blog-autor {
+    color: var(--primario-azul);
+    font-weight: 800;
+    line-height: 22px;
+    padding-bottom: 16px;
+    display: block;
+}
+#entrada-blog .archivo-thumb {
+    margin-bottom: 28px;
+}
+#entrada-blog .meta-articulo {
+    margin-bottom: 24px;
+}
+#entrada-blog h1.post-titulo {
+    margin-bottom: 36px;
+}
+#entrada-blog .meta-articulo {
+    color: var(--primario-azul);
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.18px;
+}
+#entrada-blog h1.titulo a {
+    color: var(--primario-azul);
+    text-decoration: none;
+    letter-spacing: -4px;
+    font-weight: 500;
+}
+h2.post-categorias {
+    font-family: 'Lexend Exa';
+    text-transform: uppercase;
+    font-size: 21px;
+    color: var(--primario-azul);
+    letter-spacing: -1px;
+    border-bottom: 3px solid;
+}
+h2.titulo-entrada {
+    font-weight: 700;
+    font-size: 22px;
+}
+div#categoria-sel {
+    background: var(--primario-azul);
+    text-align: center;
+    color: #FFF;
+    height: 46px;
+    font-size: 22px;
+    letter-spacing: -2px;
+    font-family: var(--familia-titulos);
+    padding: 6px 16px;
+    border: none;
+}
+select.categoria-sel {
+    background: var(--primario-azul);
+    text-align: center;
+    color: #FFF;
+    height: 46px;
+    font-size: 22px;
+    letter-spacing: -2px;
+    font-family: var(--familia-titulos);
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+}
+select#seleccioncategoria-sel {
+    text-align-last: center;
+    appearance: none;
+    background: url(../img/Flecha_Down.webp) no-repeat right var(--primario-azul);
+    background-position-x: 95%;
+    padding-right: 45px;
+    border: none;
+}
+select#seleccioncategoria-sel:focus-visible {
+    outline: none;
+}
+.pagination{
+    justify-content: center;
 }
