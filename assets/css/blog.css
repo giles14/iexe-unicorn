@@ -333,3 +333,9 @@ select#seleccioncategoria-sel:focus-visible {
 .pagination{
     justify-content: center;
 }
+#seleccionperiodo option {
+    text-transform: capitalize;
+}
+select#seleccionperiodo {
+    text-transform: capitalize;
+}

@@ -1,5 +1,12 @@
+<?php $categorias = get_categories(); 
+$categoria_actual = get_queried_object();
+$categoria_actual->term_id;
+?>
+
 <select id="seleccionperiodo" class="categoria-sel">
-    <option value="blog" selected>Blog</option>
-    <option value="Ultimas-Noticias">Categoría 2</option>
-    <option value="tercero" >Categoría 3</option>
+    <?php foreach($categorias as $categoria) {
+        $seleccionado = ($categoria_actual->term_id == $categoria->term_id) ? 'selected' : '';
+        echo '<option value"' . $categoria->name .'" ' . $seleccionado .'>' .  $categoria->name . '</option>';
+    }
+    ?>
 </select>
