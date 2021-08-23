@@ -7,7 +7,6 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'destacada-archivo', 600, 420 , true );
 add_image_size( 'ultimas-archivo', 400, 280 , true );
-add_image_size( 'archivo-thumb', 640, 340 , true );
 add_image_size('destacada-post-header', 900 , 508, true );
 
 function agregar_estilos_tema(){
@@ -109,7 +108,7 @@ add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt');
 function iexe_unicorn_body() {
 
 	global $post; 
-	$postclass = $post->post_name;
+	//$postclass = $post->post_name;
  
 	if (is_home()) {
 		echo ' id="home"';
