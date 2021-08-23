@@ -108,7 +108,7 @@ add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt');
 function iexe_unicorn_body() {
 
 	global $post; 
-	//$postclass = $post->post_name;
+	$postclass = $post->post_name;
  
 	if (is_home()) {
 		echo ' id="home"';
@@ -141,4 +141,10 @@ if ( ! function_exists( 'iexe_unicorn_registra_nav_menu' ) ) {
         ) );
     }
     add_action( 'after_setup_theme', 'iexe_unicorn_registra_nav_menu', 0 );
+}
+add_filter('comment_form_default_fields', 'iexe_unicorn_unset_url_field');
+function iexe_unicorn_unset_url_field($fields){
+    if(isset($fields['url']))
+       unset($fields['url']);
+       return $fields;
 }

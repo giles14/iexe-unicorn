@@ -15,9 +15,10 @@
                                 
                         </div>
                     </div>
-                <div class="meta-articulo">Categoría COLABORACIONES, Emprendimiento, MiPyme Ibero, Talleres CEDE17 junio, 2021AdminIberoBlogs109 Visitas0 commentarios</div>
+                <div class="meta-articulo"></div>
             </div>
             <div class="col-md-3">
+                <?php get_template_part( 'template-parts/lateral-blog'); ?>
             </div>
         </div>
         <div class="row">
@@ -27,13 +28,33 @@
                 <div class="contenido-post">
                     <?php the_content(); ?>
                 </div>
+                <?php if(get_field('notas')): ?>
+                    <div class="notas">
+                        <h2 >Notas</h2>
+                        <?php the_field('notas') ?>
+                    </div>
+                <?php endif; ?>
+                <?php if(get_field('notas')): ?>
+                    <div class="referencias">
+                        <h2>Referencias</h2>
+                        <?php the_field('referencias'); ?>
+                    </div>
+                <?php endif; ?>
+                
             </div>
             <div class="col-md-3">
-                <h2 class="post-categorias">Categorías</h2>
+                
             </div>
         </div>
         <?php endwhile; ?>
     </div>
+</section>
+<section id="comentarios">
+    <?php
+    if ( comments_open() || get_comments_number() ) :
+        comments_template();
+    endif; 
+    ?>
 </section>
 <?php get_template_part( 'template-parts/interesar'); ?>
 

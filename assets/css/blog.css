@@ -338,3 +338,111 @@ select#seleccioncategoria-sel:focus-visible {
 select#seleccionperiodo {
     text-transform: capitalize;
 }
+
+.notas {
+    color: var(--primario-azul);
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    line-height: 24px;
+    border-bottom: 2px solid;
+    margin-bottom: 16px;
+}
+.notas p {
+    margin-bottom: 6px;
+}
+.notas h2 {
+    font-size: 18px;
+}
+.referencias {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Nunito Sans';
+    color: var(--primario--azul-obscuro);
+    line-height: 24px;
+    border-bottom: 1px solid var(--primario--azul-obscuro)!important;
+}
+.referencias h2 {
+    font-size: 18px;
+}
+.referencias p {
+    margin-bottom: 6px;
+}
+.reply {
+    text-align: right!important;
+}
+/* Comentarios : @TODO: Remover y pasara a archivo separado comentarios.css */ 
+#respond { 
+    background: #fbfbfb;
+    padding: 25px;
+    }
+      
+    /* Highlight active form field */
+      
+#respond input[type=text], textarea {
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+       
+       
+#respond input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    margin: 5px 1px 3px 0px;
+    border: 2px solid rgba(81, 203, 238, 1);
+}
+.comment-body {
+    background: #FBFBFB;
+    margin: 9px;
+    padding: 8px;
+}
+.odd .comment-body {
+    background: #f1f1f1;
+}
+.comment-author.vcard {
+    line-height: 18px;
+}
+p.form-submit {
+    text-align: right;
+}
+.comment-meta.commentmetadata {
+    line-height: 18px;
+}
+img.avatar {
+    float: left;
+    margin-right: 20px;
+}
+#author, #email { 
+    font-family: "Open Sans", "Droid Sans", Arial;
+    font-style:italic;
+    color:#1d1d1d; 
+    letter-spacing:.1em;
+} 
+          
+#url  { 
+    color: #1d1d1d;
+    font-family: "Luicida Console", "Courier New", "Courier", monospace; 
+} 
+p.comment-form-comment {
+    width: 100%;
+    float: left;
+}
+textarea#comment {
+    width: 100%;
+}
+p.comment-form-author {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+input#author {
+    width: 100%;
+}
+p.comment-form-email {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+input#email {
+    width: 100%;
+}

@@ -22,4 +22,13 @@ function returnToOriginalSize() {
     $(this).css({height: "", width: "", marginTop:""});
 }
 
+$('select#seleccionperiodo').change(function() {
+    //var envio = 'https://' +  window.location.hostname + '/' + $(this).val();
+    var limpio = $(this).val();
+    limpio = limpio.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    var envio = window.location.origin + '/' + limpio;
+    window.location.href = envio;
+});
+
+
 });
