@@ -284,12 +284,12 @@ a.leer-mas {
     font-weight: 500;
 }
 h2.post-categorias {
-    font-family: 'Lexend Exa';
+    font-family: 'Nunito Sans';
     text-transform: uppercase;
     font-size: 21px;
     color: var(--primario-azul);
-    letter-spacing: -1px;
     border-bottom: 3px solid;
+    font-weight: 800;
 }
 h2.titulo-entrada {
     font-weight: 700;
@@ -367,6 +367,21 @@ select#seleccionperiodo {
 .referencias p {
     margin-bottom: 6px;
 }
+.lateral-categorias li {
+    color: #000;
+    list-style: none;
+    width: 100%;
+    display: block;
+}
+.lateral-categorias li a {
+    color: #000;
+    font-size: 20px;
+}
+.lateral-categorias li a:hover {
+    margin-left: 10px;
+    width: 100%;
+}
+
 .reply {
     text-align: right!important;
 }

@@ -3,7 +3,7 @@
     <div class="container">
         <?php  while ( have_posts() ) : the_post(); ?>
         <div class="row">
-            <h1 class="titulo"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+            <h1 class="titulo"><a href="<?php echo esc_url(home_url()) ?>">Inicio</a> / <a href="<?php echo get_category_link( get_the_category()->cat_ID ) ?>">categoria</a> / <a href="<?php the_permalink() ?>"> / <?php the_title(); ?></a></h1>
         </div>
         <div class="row">
             <div class="col-md-9">

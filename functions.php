@@ -19,8 +19,11 @@ function agregar_estilos_tema(){
     wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', false, '3.6.0', true );
     wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', 'jquery', '4.6.0', 'all' );
     
-    wp_enqueue_style( 'iexe-unicorn-blog');
-    wp_enqueue_script( 'iexe-unicorn-blog');
+    if(!is_page() || !is_page_template( 'academicos.php' ) ){
+        wp_enqueue_style( 'iexe-unicorn-blog');
+        wp_enqueue_script( 'iexe-unicorn-blog');
+    }
+    
 
     wp_enqueue_style( 'iexe-unicorn-main' );
     if(is_page_template('academicos.php')){

@@ -1,4 +1,5 @@
-<?php $categorias = get_categories(); 
+<?php 
+$categorias = get_categories(); 
 $categoria_actual = get_queried_object();
 $categoria_actual->term_id;
 ?>

@@ -1,4 +1,4 @@
-<div class="laterial-categorias">
+<div class="lateral-categorias">
     <h2 class="post-categorias">Categorías</h2>
     <ul>
 
