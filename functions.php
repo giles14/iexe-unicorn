@@ -8,6 +8,7 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'destacada-archivo', 600, 420 , true );
 add_image_size( 'ultimas-archivo', 400, 280 , true );
 add_image_size( 'archivo-thumb', 640, 340 , true );
+add_image_size('destacada-post-header', 900 , 508, true );
 
 function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.0', 'all'  );

@@ -2,11 +2,14 @@
 <section id="archivo-posts">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-9">
                 <h1 class="titulo"><?php single_cat_title(); ?>...</h1>
                 <?php if ( category_description() ) : ?>
                     <h2 class="description"><?php echo category_description(); ?></h2>
                 <?php endif; ?>                    
+            </div>
+            <div class="col-3">
+                <?php get_template_part( 'template-parts/categoriaLista'); ?>
             </div>
         </div>
             <?php if ( have_posts() ) : ?>

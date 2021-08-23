@@ -1,8 +1,3 @@
-<?php
-/*
-Template Name: Academicos
-*/
-?>
 <?php get_header( ); ?>
 <section id="header">
     <div id="informacion-programa" class="carousel slide carousel-fade" data-ride="carousel">
