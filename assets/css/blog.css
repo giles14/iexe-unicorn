@@ -4,6 +4,34 @@ body#archive {
     background-size: contain;
     background-repeat: no-repeat;
 }
+section#archivo-posts {
+    background: #FFF;
+    padding-top: 60px;
+}
+.row.un-post {
+    margin-bottom: 80px;
+}
+.archivo-thumb .wp-post-image {
+    z-index: 1;
+    position: relative;
+}
+.archivo-thumb::before {
+    border: 4px solid var(--primario-cyan);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-18px,18px);
+    transition: transform 100ms ease-in-out;
+    z-index: 0;
+}
+.archivo-thumb {
+    position: relative;
+    z-index: 2;
+}
 .buffer-blog {
     margin-top: 55vh;
 }
@@ -159,10 +187,60 @@ h2.titulo-entrada-destacada a:hover {
     text-decoration: none;
     font-weight: 400;
 }
+h1.blog-titulo a {
+    color: #000;
+    font-family: 'Lexend Exa';
+    letter-spacing: -4.5px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.meta-blog-autor a {
+    color: var(--primario-azul);
+    font-weight: 700;
+}
+a.leer-mas {
+    text-align: right;
+    display: block;
+    text-decoration: underline;
+    color: var(--primario-azul);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    bottom: 1px;
+    position: absolute;
+    right: 1px;
+}
 .link-flecha {
     font-size: 53px;
     color: var(--primario--azul-obscuro);
     position: absolute;
     top: -7px;
     left: 5px;
+}
+.archivo-thumb {
+    position: relative;
+    z-index: 1;
+    width: 96%;
+}
+.archivo-fecha {
+    position: absolute;
+    z-index: 3;
+    background: var(--primario-azul);
+    top: 0px;
+    right: 0px;
+    width: 75px;
+    height: 75px;
+    color: #FFF;
+}
+.archivo-fecha span.numero {
+    display: block;
+    text-align: center;
+    font-size: 45px;
+    height: 52px;
+}
+.archivo-fecha span.mes {
+    text-align: center;
+    display: block;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
 }
