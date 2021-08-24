@@ -79,7 +79,7 @@
                    
         </div>
         <div class="menu">
-            <a href="javascript:void(0)" class="closebtn" onclick="openNav()">Menu <img class="menu-boton" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/menu.svg" alt=""></a>
+            <a href="javascript:void(0)" class="closebtn" onclick="openNav()">Menú <img class="menu-boton" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/menu.svg" alt=""></a>
         </div>
         </div>
       </nav>

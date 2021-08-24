@@ -10,6 +10,9 @@
                       <div class="carousel-item">
                         <img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Second slide">
                       </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-becas.webp" alt="Third slide">
+                      </div>
                       <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
                       </div> -->

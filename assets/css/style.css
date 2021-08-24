@@ -398,7 +398,6 @@ p.consejos {
 }
 #blog{
     background: #001E42;
-    padding-bottom: 75px;
 }
 section#blog .container {
     background: url(../img/pleca.png);
@@ -406,6 +405,7 @@ section#blog .container {
     background-repeat-y: no-repeat;
     background-position-x: 100%;
     background-position-y: 32px;
+    padding-bottom: 44px;
 }
 .post {
     background: white;
