@@ -26,7 +26,7 @@ $('select#seleccionperiodo').change(function() {
     //var envio = 'https://' +  window.location.hostname + '/' + $(this).val();
     var limpio = $(this).val();
     limpio = limpio.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    var envio = window.location.origin + '/' + limpio;
+    var envio = window.location.origin + '/category/' + limpio;
     window.location.href = envio;
 });
 

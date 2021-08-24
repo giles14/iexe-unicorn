@@ -239,7 +239,7 @@
             </div>
             <div class="row buffer-60">
                 <div class="col-md-6">
-                        <img class="img-fluid escudo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo.png" alt="">
+                        <img class="img-fluid escudo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo.webp" alt="">
                 </div>
                 <div class="fondo-x">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x.png" alt="">

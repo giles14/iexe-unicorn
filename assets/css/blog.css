@@ -1,4 +1,4 @@
-body#archive {
+body#blog {
     background: url(../img/blog-bg.jpg);
     /* background-color: #EDEDED; */
     background-size: contain;
@@ -381,10 +381,34 @@ select#seleccionperiodo {
     margin-left: 10px;
     width: 100%;
 }
-
-.reply {
-    text-align: right!important;
+h2.comments-title {
+    font-size: 18px;
+    font-weight: 800;
 }
+.buscar {
+    text-align: right;
+}
+input#busqueda-blog {
+    border: none;
+    border-bottom: 2px solid var(--primario-cyan);
+    color: #fff;
+    width: 100%;
+    padding-left: 30px;
+    background: url(../img/buscar.svg);
+    background-repeat: no-repeat;
+}
+input#busqueda-blog::placeholder {
+    color: #FFF;
+    font-size: 18px;
+    padding-left: 15px;
+    margin-bottom: 18px;
+    background-repeat: no-repeat;
+}
+input#busqueda-blog:focus-within {
+    outline: none;
+}
+
+
 /* Comentarios : @TODO: Remover y pasara a archivo separado comentarios.css */ 
 #respond { 
     background: #fbfbfb;
@@ -460,4 +484,21 @@ p.comment-form-email {
 }
 input#email {
     width: 100%;
+}
+.reply {
+    text-align: right!important;
+}
+ol.comment-list {
+    list-style: none;
+}
+ol.children {
+    list-style: none;
+}
+#comentarios input#submit {
+    background: #d4e4f9;
+    border: none;
+    border-radius: 38px;
+    padding: 8px 30px;
+    color: var(--primario-azul);
+    font-weight: 600;
 }

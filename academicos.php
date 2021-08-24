@@ -163,7 +163,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                         <div id="desc-programa">
                             <div class="col-md-5">
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
-                                <a class="button-primary"><?php the_title() ?> 2</a>
+                                <a class="button-primary"><?php the_title() ?></a>
                                 <p class="descripcion-programa">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                                 <p id="RVOE" class="revoe">
                                     <strong>Reconocimiento de Validez Oficial de Estudios (RVOE)</strong><br>

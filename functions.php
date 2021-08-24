@@ -130,7 +130,7 @@ function iexe_unicorn_body() {
         if(is_page_template('academicos.php')){
             echo 'id="programas"';
         }else{
-            echo ' id="page"';
+            echo "id = '" . strtolower(get_the_title()) . "'";
         }
     }
 }
