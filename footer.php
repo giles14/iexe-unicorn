@@ -11,38 +11,59 @@
                 </div>
                 <div class="col-md-2">
                     <a class="menu" href="">NOSOTROS</a>
-                    <ul>
+                    <?php
+                    wp_nav_menu( array(
+                        'container' => '',
+                        'theme_location' => 'menu_primero',
+                        'menu_class' => 'menu-footer'
+                    ) );
+                     ?>
+                    <!-- <ul>
                         <li><a href="">¿Quénes somos?</a></li>
                         <li><a href="">Nuestra comunidad</a></li>
                         <li><a href="">Bienvenido a IEXE</a></li>
                         <li><a href="">Blog & noticias</a></li>
                         <li><a href="">Sello editorial</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-md-2">
                     <a class="menu" href="">PROCESOS</a>
-                    <ul>
+                    <?php
+                    wp_nav_menu( array(
+                        'container' => '',
+                        'theme_location' => 'menu_segundo',
+                        'menu_class' => 'menu-footer'
+                    ) );
+                     ?>
+                    <!-- <ul>
                         <li><a href="">Inscripciones abiertas</a></li>
                         <li><a href="">Requisitos de ingreso</a></li>
                         <li><a href="">Becas</a></li>
                         <li><a href="">Recorrido virtual</a></li>
                         <li><a href="">Bolsa de Trabajo</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-md-2">
                     <a class="menu" href="">OFERTAS</a>
-                    <ul>
+                    <?php
+                    wp_nav_menu( array(
+                        'container' => '',
+                        'theme_location' => 'menu_tercero',
+                        'menu_class' => 'menu-footer'
+                    ) );
+                     ?>
+                    <!-- <ul>
                         <li><a href="">Licenciaturas</a></li>
                         <li><a href="">Maestrías</a></li>
                         <li><a href="">Másters</a></li>
                         <li><a href="">Doctorado</a></li>
                         <li><a href="">Diplomado</a></li>
                         <li><a href="">Capacitaciones</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-md-3">
-                    <p class="telefono-mexico buffer"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt="">800-286-84-64</p>
-                    <p class="telefono-puebla"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt="">222-286-84-64</p>
+                    <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a class="telefono-whatsapp" href="https://bit.ly/2WgHHhn">222-286-84-64</a></p>
+                    <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
                     <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a>
                     <p class="direccion">Blvd. Esteban de Antuñano 2702,<br>C.P. 72160 Puebla. México</p>
                 </div>
@@ -55,7 +76,15 @@
             <div class="row">
                 <div class="col-12">
                     <div class="informacion-importante">
-                        <p>Todos los derechos reservados IEXE 2021. </p> <a href="#"> Aviso de Privacidad</a> | <a href="#">Términos y condiciones</a> | <a href="#">Mapa del sitio</a> | <a href="#">Contacto</a> |
+                            <p>Todos los derechos reservados IEXE 2021.</p>
+                            <?php
+                            wp_nav_menu( array(
+                                'container' => '',
+                                'theme_location' => 'pie',
+                                'menu_class' => 'menu-footer'
+                            ) );
+                            ?>
+                        <!-- <p>Todos los derechos reservados IEXE 2021. </p> <a href="#"> Aviso de Privacidad</a> | <a href="#">Términos y condiciones</a> | <a href="#">Mapa del sitio</a> | <a href="#">Contacto</a> | -->
                     </div>
                     
                 </div>

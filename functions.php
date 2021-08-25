@@ -8,6 +8,7 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'destacada-archivo', 600, 420 , true );
 add_image_size( 'ultimas-archivo', 400, 280 , true );
 add_image_size('destacada-post-header', 900 , 508, true );
+add_image_size('destacada-interesar', 374 , 210, true );
 
 function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.0', 'all'  );
@@ -139,8 +140,11 @@ if ( ! function_exists( 'iexe_unicorn_registra_nav_menu' ) ) {
  
     function iexe_unicorn_registra_nav_menu(){
         register_nav_menus( array(
-            'menu_principal' => 'Menu Principal',
-            'menu_footer'  => 'Menu Footer'
+            'menu_primero'  => 'Footer columna 1',
+            'menu_segundo'  => 'Footer columna 2',
+            'menu_tercero'  => 'Footer columna 3',
+            'pie' => 'pie principal',
+            'menu_principal' => 'Menu Principal'
         ) );
     }
     add_action( 'after_setup_theme', 'iexe_unicorn_registra_nav_menu', 0 );

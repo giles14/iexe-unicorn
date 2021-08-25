@@ -295,6 +295,17 @@ h2.titulo-entrada {
     font-weight: 700;
     font-size: 22px;
 }
+#interesar h2.titulo-entrada {
+    padding-top: 16px;
+}
+#interesar h2.titulo-entrada a {
+    color: var(--primario--azul-obscuro);
+}
+#interesar span.fecha {
+    color: var(--primario--azul-obscuro);
+    font-family: 'Nunito Sans';
+    font-size: 17px;
+}
 div#categoria-sel {
     background: var(--primario-azul);
     text-align: center;
@@ -435,6 +446,14 @@ a.btn.btn-primario {
     -webkit-box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
     box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
     border: 0px;
+}
+
+h2.interesar {
+    color: var(--primario-azul);
+    padding-bottom: 32px;
+    font-weight: 400;
+    font-family: var(--familia-titulos);
+    font-size: 24px;
 }
 
 /* Comentarios : @TODO: Remover y pasara a archivo separado comentarios.css */ 

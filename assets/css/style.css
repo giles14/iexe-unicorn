@@ -553,6 +553,33 @@ p.telefono-puebla {
     font-weight: 800;
     text-align: right;
 }
+a.telefono-whatsapp {
+    color: #71f6a5;
+    font-family: 'Nunito Sans';
+    font-size: 28px;
+    font-weight: 800;
+    text-align: right;
+}
+a.telefono-mexico {
+    color: #00FFE8;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: right;
+}
+img.whatsapp-logo {
+    padding-right: 15px;
+}
+img.telefono-logo {
+    padding-right: 15px;
+}
+ul#menu-pie-final li {
+    float: left;
+    list-style: none;
+}
+ul#menu-pie-final li:after {
+    content: "|";
+    padding: 5px;
+}
 a.e-mail {
     color: #fff;
     font-family: 'Nunito Sans';
