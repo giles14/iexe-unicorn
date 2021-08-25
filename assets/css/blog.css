@@ -455,6 +455,10 @@ h2.interesar {
     font-family: var(--familia-titulos);
     font-size: 24px;
 }
+.social-box i {
+    color: var(--primario-azul);
+    font-size: 20px;
+}
 
 /* Comentarios : @TODO: Remover y pasara a archivo separado comentarios.css */ 
 #respond { 
