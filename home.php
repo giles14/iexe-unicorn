@@ -74,9 +74,9 @@
                             <div class="links-programas">
                                 <ul>
                                     <li><a href="oferta-educativa/licenciatura-en-ciencias-politicas-y-administracion-publica/">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="oferta-educativa/licenciatura-en-seguridad-publica/">Seguridad Pública</a></li>
-                                    <li><a href="oferta-educativa/derecho/">Derecho</a></li>
-                                    <li><a href="oferta-educativa/seguridad-publica/">Administración de Empresas</a></li>                                    
+                                    <li><a href="oferta-educativa/licenciatura-en-seguridad-publica/licenciatura-en-seguridad-publica">Seguridad Pública</a></li>
+                                    <li><a href="oferta-educativa/licenciatura-en-derecho/">Derecho</a></li>
+                                    <li><a href="oferta-educativa/licenciatura-en-administracion-de-empresas/">Administración de Empresas</a></li>                                    
                                 </ul>
                             </div>
                         </div> 
@@ -89,10 +89,10 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Política Públicas</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
+                                    <li><a href="oferta-educativa/maestrias-en-finanzas-publicas">Finanzas Públicas</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Maestría en Seguridad Pública y Políticas Públicas</a></li>                                    
                                 </ul>
                             </div>
                         </div>
@@ -106,10 +106,7 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="oferta-educativa/doctorado-en-politicas-publicas">Políticas Públicas</a></li>                                
                                 </ul>
                             </div>
                         </div>
@@ -125,10 +122,7 @@
                             <a class="descubre-mas" disabled>Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="oferta-educativa/master-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a></li>                              
                                 </ul>
                             </div>
                         </div> 

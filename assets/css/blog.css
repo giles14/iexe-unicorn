@@ -457,7 +457,14 @@ h2.interesar {
 }
 .social-box i {
     color: var(--primario-azul);
-    font-size: 20px;
+    font-size: 24px;
+}
+span.compartir{
+        float: left;
+        color: var(--primario-azul);
+        font-weight: 600;
+        font-size: 24px;
+        padding-right: 16px;
 }
 
 /* Comentarios : @TODO: Remover y pasara a archivo separado comentarios.css */ 

@@ -119,14 +119,24 @@
 <script>
     var $ = jQuery;
     $(document).ready(function(){
-        $(".oferta-bloque").click(function(){  
-            $('.oferta-bloque').removeClass("activo");
-            $(this).toggleClass( "activo" );
+        // $(".oferta-bloque").click(function(){  
+        //     $('.oferta-bloque').removeClass("activo");
+        //     $(this).toggleClass( "activo" );
+        // });
+        // $("a.descubre-mas").click(function(){
+        //     $('.oferta-bloque').removeClass("activo");
+        //     $(this).toggleClass( "activo" );
+        // });
+        $(".oferta-bloque").click(function(){
+            if ( $(this).hasClass('activo') ){
+                $(this).removeClass('activo')
+            } else {
+                $('.oferta-bloque').removeClass("activo");
+                $(this).addClass( "activo" );
+            }
+
         });
-        $("a.descubre-mas").click(function(){
-            $('.oferta-bloque').removeClass("activo");
-            $(this).toggleClass( "activo" );
-        });
+        
 
     });
     

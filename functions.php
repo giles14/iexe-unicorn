@@ -155,13 +155,34 @@ function iexe_unicorn_unset_url_field($fields){
        unset($fields['url']);
        return $fields;
 }
+// No usar email para registro
+
+add_action('user_profile_update_errors', 'my_user_profile_update_errors', 10, 3);
+function my_user_profile_update_errors($errors, $update, $user) {
+    $errors->remove('empty_email');
+}
+
+add_action('user_new_form', 'my_user_new_form', 10, 1);
+add_action('show_user_profile', 'my_user_new_form', 10, 1);
+add_action('edit_user_profile', 'my_user_new_form', 10, 1);
+function my_user_new_form($form_type) {
+    ?>
+    <script type="text/javascript">
+    jQuery('#email').closest('tr').removeClass('form-required').find('.description').remove();
+
+    <?php if (isset($form_type) && $form_type === 'add-new-user') : ?>
+        jQuery ('#send_user_notification') .removeAttr('checked');
+    <?php endif; ?>
+    </script>
+    <?php
+}
 
 // Function to handle the thumbnail request
 function get_the_post_thumbnail_src($img)
 {
   return (preg_match('~\bsrc="([^"]++)"~', $img, $matches)) ? $matches[1] : '';
 }
-function wpvkp_social_buttons($content) {
+function unicorn_boton_compartir($content) {
     global $post;
     if(is_singular() || is_home()){
     
@@ -172,31 +193,20 @@ function wpvkp_social_buttons($content) {
         $sb_title = str_replace( ' ', '%20', get_the_title());
         
         // Get Post Thumbnail for pinterest
-        $sb_thumb = get_the_post_thumbnail_src(get_the_post_thumbnail());
+        //$sb_thumb = get_the_post_thumbnail_src(get_the_post_thumbnail());
+        $sb_thumb = 'https://iexe.xyz/wp-content/uploads/2021/08/LGBT-Miniatura-PP-Blog-900x508.jpg';
  
         // Construct sharing URL without using any script
         $twitterURL = 'https://twitter.com/intent/tweet?text='.$sb_title.'&amp;url='.$sb_url;
         $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$sb_url;
-        $bufferURL = 'https://bufferapp.com/add?url='.$sb_url.'&amp;text='.$sb_title;
         $whatsappURL = 'whatsapp://send?text='.$sb_title . ' ' . $sb_url;
         $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$sb_url.'&amp;title='.$sb_title;
 
-       if(!empty($sb_thumb)) {
-            $pinterestURL = 'https://pinterest.com/pin/create/button/?url='.$sb_url.'&amp;media='.$sb_thumb[0].'&amp;description='.$sb_title;
-        }
-        else {
-            $pinterestURL = 'https://pinterest.com/pin/create/button/?url='.$sb_url.'&amp;description='.$sb_title;
-        }
- 
-        // Based on popular demand added Pinterest too
-        $pinterestURL = 'https://pinterest.com/pin/create/button/?url='.$sb_url.'&amp;media='.$sb_thumb[0].'&amp;description='.$sb_title;
- 
         // Add sharing button at the end of page/page content
         $content .= '<div class="social-box"><div class="social-btn">';
         $content .= '<a class="col-1 sbtn s-twitter" href="'. $twitterURL .'" target="_blank" rel="nofollow"><span><i class="uil uil-twitter"></i></span></a>';
         $content .= '<a class="col-1 sbtn s-facebook" href="'.$facebookURL.'" target="_blank" rel="nofollow"><span><i class="uil uil-facebook-f"></i></span></a>';
         $content .= '<a class="col-2 sbtn s-whatsapp" href="'.$whatsappURL.'" target="_blank" rel="nofollow"><span><i class="uil uil-whatsapp"></i></span></a>';
-        $content .= '<a class="col-2 sbtn s-pinterest" href="'.$pinterestURL.'" data-pin-custom="true" target="_blank" rel="nofollow"><span>Pin It Pinter</span></a>';
         $content .= '<a class="col-2 sbtn s-linkedin" href="'.$linkedInURL.'" target="_blank" rel="nofollow"><span><i class="uil uil-linkedin"></i></span></a>';
         $content .= '</div></div>';
         
@@ -206,5 +216,4 @@ function wpvkp_social_buttons($content) {
         return $content;
     }
 };
-
-add_shortcode('social','wpvkp_social_buttons');
+add_shortcode('social','unicorn_boton_compartir');

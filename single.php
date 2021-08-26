@@ -51,6 +51,11 @@
                 
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6 mt-4">
+              <span class="compartir">Compartir:</span>  <?php echo do_shortcode( '[social]' ); ?>
+            </div>
+        </div>
         <?php endwhile; ?>
     </div>
 </section>
