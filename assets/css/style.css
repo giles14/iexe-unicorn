@@ -78,18 +78,24 @@ img.flecha-ir {
     height: 120px;
     color: #FFF;
     margin-bottom: 15px;
-    margin-left: 5px;
+    margin-left: 9px;
     border-radius: 10px;
 }
 .last{
     margin: 0;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 .boton-slide span{
     width: 100%;
     text-align: center;
     align-self: center;
-
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+.boton-slide span:hover {
+    color: var(--primario-cyan);
+    cursor: pointer;
 }
 
 .boton-derecha {
@@ -265,6 +271,7 @@ h3.titulos {
 .my-video{
     height: 579px;
     background: darkblue;
+    overflow: hidden;
 }
 .marco {
     height: calc(100% - 40px);
@@ -276,12 +283,15 @@ h3.titulos {
 }
 .my-video.primero{
     background: url('../img/video1.webp');
+    background-position-x: center;
 }
 .my-video.segundo{
     background: url('../img/video2.webp');
+    background-position-x: center;
 }
 .my-video.tercero{
     background: url('../img/video3.webp');
+    background-position-x: center;
 }
 .buffer-60{
     margin-top: 60px;

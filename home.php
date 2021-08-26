@@ -31,7 +31,11 @@
         
     </section>
     <section id="info-primaria">
-        <div class="container">
+        <div class="container" style="position: relative;">
+            <video width="1140" height="420" autoplay muted loop style="position: absolute;top: 0;left: 0;border-radius: 15px;">
+                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/video4.m4v" type="video/mp4" muted>
+                        El navegador no acepta video
+            </video>
             <div class="row">
                 <div class="col-12 col-md-4">
                     <div class="boton-slide d-flex">
@@ -49,8 +53,8 @@
 
                 </div>
                 <div class="col-md-3">
-                    <p class="descripcion">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque</p>
-                    <a href="#" class="descubre-mas">Descubre más</a>
+                    <!-- <p class="descripcion">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque</p> -->
+                    <!-- <a href="#" class="descubre-mas">Descubre más</a> -->
 
                 </div>
             </div>
