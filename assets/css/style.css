@@ -1796,6 +1796,8 @@ p.preguntas {
     font-weight: 300;
     font-family: 'Nunito Sans';
     font-size: 15px;
+    padding-bottom: 8px;
+    padding-top: 25px;
 }
 h1.preguntas-frecuentes {
     font-family: var(--familia-titulos);
@@ -1803,6 +1805,9 @@ h1.preguntas-frecuentes {
     letter-spacing: 0.58px;
     font-weight: 800;
     line-height: 46px;
+}
+.myaccordion {
+    margin-bottom: 22px;
 }
 .myaccordion button.d-flex.align-items-center.justify-content-between.btn.btn-link {
     width: 100%;
@@ -1845,4 +1850,34 @@ h1.preguntas-frecuentes {
 }
 .myaccordion button.d-flex[aria-expanded="false"] .ver-mas .uil-minus {
     display: none;
+}
+
+h2.tipo-beca {
+    font-family: var(--familia-titulos);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.26px;
+    padding-bottom: 8px;
+}
+a.opcion-tipo-becas {
+    color: #f6f6f6;
+    letter-spacing: 0.54px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+a.opcion-tipo-becas.active {
+    font-weight: 800;
+    letter-spacing: 0.54px;
+    text-decoration: underline 4px var(--primario-cyan);
+    width: 100%;
+    display: block;
+    text-underline-offset: 4px;
+}
+section#beca-institucional {
+    background: linear-gradient(
+180deg
+, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 40%, rgba(245,245,245,1) 79%, rgba(255,255,255,1) 100%);
+    margin-top: unset;
+    padding-top: 24px;
 }
