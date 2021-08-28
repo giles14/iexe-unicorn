@@ -59,6 +59,10 @@ section#plan-de-estudios {
 section#comunidad {
     margin-top: 74px;
 }
+section#comunidad .foto-grande{
+    max-height: 372px;
+}
+
 .boton-accion {
     position: relative;
 }
