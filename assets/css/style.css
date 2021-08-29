@@ -1885,3 +1885,76 @@ section#beca-institucional {
     margin-top: unset;
     padding-top: 24px;
 }
+
+/*
+
+Programas
+
+*/
+section#licenciaturas, section#maestrias, section#doctorado, section#masters, section#diplomados, section#capacitaciones, section#interes, section#comunidad {
+    margin-top: 18px;
+}
+.imagen-principal-completa {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/slider-licenciaturas.webp");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #licenciaturas .row.contenedor-programa {
+    background: url(../img/oferta-licenciaturas.webp);
+    min-height: 300px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 26px;
+}
+h1.nombre-programa {
+    color: #FFF;
+    font-family: var(--familia-titulos);
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+}
+.contenedor-programa ul {
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+.contenedor-programa ul li a {
+    color: #e3e3e3;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.27px;
+    line-height: 36px;
+}
+.contenedor-programa li {
+    list-style: square;
+    color: var(--primario-cyan);
+}
+.contenedor-programa i.cyan {
+    color: var(--primario-cyan);
+    font-size: 40px;
+}
+.row.contenedor-programa{
+    min-height: 300px;
+    background-repeat: no-repeat!important;
+    border-radius: 15px;
+    padding: 26px;
+    padding-bottom: 0px;
+}
+#masters .row.contenedor-programa {
+    background: url(../img/oferta-master.webp);
+}
+#maestrias .row.contenedor-programa {
+    background: url(../img/oferta-maestrias.webp);
+}
+#doctorado .row.contenedor-programa {
+    background: url(../img/oferta-doctorados.webp);
+}
+#diplomados .row.contenedor-programa {
+    background: url(../img/oferta-diplomados.webp);
+}
+#capacitaciones .row.contenedor-programa {
+    background: url(../img/oferta-capacitaciones.webp);
+}
