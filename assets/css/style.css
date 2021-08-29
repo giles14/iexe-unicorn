@@ -1891,8 +1891,30 @@ section#beca-institucional {
 Programas
 
 */
-section#licenciaturas, section#maestrias, section#doctorado, section#masters, section#diplomados, section#capacitaciones, section#interes, section#comunidad {
+section#todos-los-programas-academicos {
+    background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(206,224,248,1) 80%, rgba(206,224,248,1) 100%);;
+}
+section#licenciaturas, section#maestrias, section#doctorado, section#masters, section#diplomados, section#capacitaciones {
     margin-top: 18px;
+}
+#programas section#interes{
+    background: linear-gradient(180deg, rgba(206,224,248,1) 0%, rgba(227,227,227,1) 16%, rgba(227,227,227,1) 97%, rgba(206,224,248,1) 100%);
+    margin-top: unset;
+    padding-top: 64px;
+}
+#programas section#anuncio {
+    background: linear-gradient(
+180deg
+, rgba(206,224,248,1) 0%, rgba(206,224,248,1) 100%);
+}
+#programas section#vinculos {
+    background: #cee0f8;
+    margin-top: unset;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+#programas section#pie{
+    margin-top: unset;
 }
 .imagen-principal-completa {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -1957,4 +1979,7 @@ h1.nombre-programa {
 }
 #capacitaciones .row.contenedor-programa {
     background: url(../img/oferta-capacitaciones.webp);
+}
+#programas #interes #contacto .form-control {
+    background: transparent;
 }

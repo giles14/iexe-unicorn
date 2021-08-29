@@ -139,10 +139,12 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="#">Disciplina Financiera y Fiscalización</a> </li>
+                                    <li><a href="#">Evaluación de Políticas Públicas</a> </li>
+                                    <li><a href="#">Habilidades Gerenciales y Liderazgo</a> </li>
+                                    <li><a href="#">Análisis y Diseño de Políticas Públicas</a> </li>
+                                    <li><a href="#">Presupuesto basado en Resultados (PbR)</a></li>
+                                    <li><a href="#">Alta Dirección en la Función Pública</a></li>                                    
                                 </ul>
                             </div>
                         </div> 
