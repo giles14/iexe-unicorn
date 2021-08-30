@@ -1896,6 +1896,8 @@ section#becas-slider a.btn.btn-primario {
     padding: 10px 20px;
     font-size: 15px;
     width: 210px;
+    display: block;
+    margin: 0 auto;
 }
 a.btn.btn-primario.azules {
     background: #D4E4F9;

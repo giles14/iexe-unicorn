@@ -77,19 +77,13 @@ Template Name: Becas
                                     <div class="col-md-3">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_1.webp" alt="" class="beca">
                                     </div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-3">
-                                        <p class="descripcion-beca">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut.</p>
-                                    </div>
-                                    
-                                    <div class="col-md-3">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-5">
+                                        <p class="descripcion-beca">Pensada en apoyar a los alumnos(as) sobresalientes,
+                                            la Beca IEXE otorga un porcentaje que va del 20% al 70% en las colegiaturas de licenciaturas,
+                                            maestrías y doctorado. Nuestros estudiantes y aspirantes pueden solicitarla todo el año.</p>
                                         <div class="botones-beca">
-                                            <a style="visibility:hidden;" class="btn btn-primario azules mt-3 float-right" href="#">Descarga la convocatoria</a>
-                                            <a style="visibility:hidden;" class="btn btn-primario azules mt-3 float-right" href="#">Te asesoramos</a>
-                                            <a class="btn btn-primario mt-3 float-right" href="#">Solicítala aquí</a>
+                                            <a class="btn btn-primario mt-3" href="#">Solicítala aquí</a>
                                         </div>
                                     </div>
                                     <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
@@ -111,10 +105,9 @@ Template Name: Becas
                                     </div>
                                     <div class="col-md-1"></div>
                                     <div class="col-md-3">
-                                        <p  class="descripcion-beca">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut.</p>
+                                        <p  class="descripcion-beca">Promovida por la Secretaría de Educación Pública,
+                                             la convocatoria de la Beca SEP es publicada una vez al año y
+                                              otorga porcentajes que van desde el 25% al 75% sobre la colegiatura.</p>
                                     </div>
                                     
                                     <div class="col-md-3">
@@ -141,22 +134,17 @@ Template Name: Becas
                                     <div class="col-md-3">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_1.webp" alt="" class="beca">
                                     </div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-3">
-                                        <p  class="descripcion-beca">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut.</p>
-                                    </div>
                                     
-                                    <div class="col-md-3">
-                                        <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Descarga la convocatoria</a>
-                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Te asesoramos</a>
-                                            <a class="btn btn-primario mt-3 float-right" href="#">Solicítala aquí</a>
+                                    <div class="col-md-5 offset-md-2">
+                                        <p  class="descripcion-beca">Diseñada para apoyar a los integrantes de la Comunidad IEXE,
+                                            la Beca de embajadores IEXE otorga a nuestros alumnos(as) un beneficio acumulable
+                                            por cada referido inscrito, por lo que se puede otorgar hasta un 100% de beca.</p>
+                                            <div class="botones-beca">
+                                                <a class="btn btn-primario mt-3" href="#">Solicítala aquí</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                    
+                                    <div class="col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
                                 </div>
                     </div>
                 </div>
@@ -173,22 +161,14 @@ Template Name: Becas
                                     <div class="col-md-3">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_2.webp" alt="" class="beca">
                                     </div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-3">
-                                        <p  class="descripcion-beca">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut.</p>
-                                    </div>
-                                    
-                                    <div class="col-md-3">
+                                    <div class="col-md-5 offset-md-2">
+                                        <p  class="descripcion-beca">Hemos realizado alianzas estratégicas con distintas instituciones públicas y privadas. Si perteneces a alguna de ellas, tú y tus familiares pueden solicitar una beca.</p>
                                         <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Descarga la convocatoria</a>
-                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Te asesoramos</a>
-                                            <a class="btn btn-primario mt-3 float-right" href="#">Solicítala aquí</a>
+                                            <a class="btn btn-primario mt-3" href="#">Solicítala aquí</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                    
+                                    <div class="col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
                                 </div>
                     </div>
                 </div>
