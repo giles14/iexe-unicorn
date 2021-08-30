@@ -1789,7 +1789,11 @@ display:inline-block;
 /*
 BECAS
 */
-
+#becas section#calcula-beca {
+    margin: unset;
+    padding-top: 80px;
+    background: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(227,227,227,1) 29%, rgba(227,227,227,1) 56%, rgba(227,227,227,1) 92%, rgba(239,239,239,1) 100%);
+}
 section#preguntas-frecuentes {
     background: var(--primario--azul-obscuro);
     color: var(--primario-cyan);
@@ -1885,12 +1889,67 @@ section#beca-institucional {
     margin-top: unset;
     padding-top: 24px;
 }
+section#becas-slider{
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+}
+section#becas-slider a.btn.btn-primario {
+    padding: 10px 20px;
+    font-size: 15px;
+    width: 210px;
+}
+a.btn.btn-primario.azules {
+    background: #D4E4F9;
+    color: #000;
+    font-weight: 400;
+    color: var(--primario-azul);
+    font-size: 15px!important;
+    box-shadow: none;
+}
+p.descripcion-beca {
+    margin-top: 110px;
+}
+.botones-beca {
+    margin-top: 95px;
+}
+.con-x{
+    background: url('../img/xBecas.png');
+    background-repeat: no-repeat;
+    background-size: 600px;
+}
+.boton-adelante {
+    cursor: pointer;
+}
+.boton-atras {
+    cursor: pointer;
+}
 
+
+
+/*
+404
+*/
+section#error-404 .container {
+    padding: 80px;
+    background: var(--primario-cyan);
+}
+section#error-404 p.error{
+    font-size: 22px;
+    font-weight: 600;
+}
 /*
 
 Programas
 
 */
+section#principal {
+    height: 90vh;
+    margin: unset;
+    background: url(../img/slider-licenciaturas.webp);
+    background-size: cover;
+}
+section#todos-los-programas-academicos {
+    margin: unset;
+}
 section#todos-los-programas-academicos {
     background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(206,224,248,1) 80%, rgba(206,224,248,1) 100%);;
 }

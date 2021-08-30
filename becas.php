@@ -62,52 +62,138 @@ Template Name: Becas
         </div>
     </div>
 </section>
-<section id="beca-institucional">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="titulo-plan text-center">Beca institucional IEXE</h1>
-                <h2 class="description text-center">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item w-100 active">
-                        <div class="mask flex-center">
-                            <div class="container">
+<section id="becas-slider">
+            <div class="sliding">
+                <div>
+                    <div class="container">
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <h2>Beca</h2>
-                                        <p>Mi texto</p>
-                                        <div class="col-md-4">
-                                            <h1>Becas</h1>
-                                        </div>
+                                    <div class="col-md-6 offset-md-5">
+                                        <h1 class="titulo">Beca institucional IEXE</h1>
+                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
+                                    </div>
+                                </div>
+                                <div class="row con-x">
+                                    <div class="col-md-1 align-self-center"><img class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
+                                    <div class="col-md-3">
+                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_1.webp" alt="" class="beca">
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-3">
+                                        <p class="descripcion-beca">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut.</p>
                                     </div>
                                     
+                                    <div class="col-md-3">
+                                        <div class="botones-beca">
+                                            <a style="visibility:hidden;" class="btn btn-primario azules mt-3 float-right" href="#">Descarga la convocatoria</a>
+                                            <a style="visibility:hidden;" class="btn btn-primario azules mt-3 float-right" href="#">Te asesoramos</a>
+                                            <a class="btn btn-primario mt-3 float-right" href="#">Solicítala aquí</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/slides/2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/slides/3.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-    </div>
-
-        </div>
-    </div>
+                <div>
+                    <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 offset-md-5">
+                                        <h1 class="titulo">Beca SEP</h1>
+                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
+                                    </div>
+                                </div>
+                                <div class="row con-x">
+                                    <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
+                                    <div class="col-md-3">
+                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_3.webp" alt="" class="beca">
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-3">
+                                        <p  class="descripcion-beca">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut.</p>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="botones-beca">
+                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Descarga la convocatoria</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Te asesoramos</a>
+                                            <a class="btn btn-primario mt-3 float-right" href="#">Solicítala aquí</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 offset-md-5">
+                                        <h1 class="titulo">Beca Embajadores IEXE</h1>
+                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
+                                    </div>
+                                </div>
+                                <div class="row con-x">
+                                    <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
+                                    <div class="col-md-3">
+                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_1.webp" alt="" class="beca">
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-3">
+                                        <p  class="descripcion-beca">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut.</p>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="botones-beca">
+                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Descarga la convocatoria</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Te asesoramos</a>
+                                            <a class="btn btn-primario mt-3 float-right" href="#">Solicítala aquí</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 offset-md-5">
+                                        <h1 class="titulo">Beca Convenios</h1>
+                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
+                                    </div>
+                                </div>
+                                <div class="row con-x">
+                                    <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
+                                    <div class="col-md-3">
+                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_2.webp" alt="" class="beca">
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-3">
+                                        <p  class="descripcion-beca">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut.</p>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="botones-beca">
+                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Descarga la convocatoria</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Te asesoramos</a>
+                                            <a class="btn btn-primario mt-3 float-right" href="#">Solicítala aquí</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                </div>
+                    </div>
+                </div>
+            </div>  
+    
 </section>
 <!-- <section id="inscripcion">
     <div class="container">
@@ -248,7 +334,7 @@ Template Name: Becas
                 <p class="preguntas">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
                 <h2 class="tipo-beca">Categorías</h2>
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="opcion-tipo-becas" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Becas</a>
+                    <a class="opcion-tipo-becas active" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Becas</a>
                     <a class="opcion-tipo-becas" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Convenios</a>
                     <a class="opcion-tipo-becas" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Créditos Anticipados</a>
                 </div>

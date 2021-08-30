@@ -1,0 +1,1 @@
+$('tipo-becas').onClick

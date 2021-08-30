@@ -5,9 +5,9 @@ Template Name: Programas
 ?>
 <?php get_header( ); ?>
 <section id="principal">
-    <div class="imagen-principal-completa">
-
-    </div>
+    <!-- <div class="imagen-principal-completa">
+        
+    </div> -->
 </section>
 <section id="todos-los-programas-academicos">
     <div class="container">

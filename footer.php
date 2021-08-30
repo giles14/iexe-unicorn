@@ -161,14 +161,33 @@
 });
 </script>
 <script>
+    var estado_menu = false;
     function openNav() {
       document.getElementById("mySidenav").style.width = "66%";
+      estado_menu = true;
     }
     
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
+      estado_menu = false;
     }
 </script>
 <?php wp_footer(  )?>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // $('.sliding').slick({
+        //     dots: true,
+        // infinite: true,
+        // variableWidth: false
+        // });
+        $('.sliding').slick({
+            // prevArrow:'<i class="uil uil-angle-left-b"></i>',
+            prevArrow:$("img.boton-atras"),
+            nextArrow:$("img.boton-adelante")
+        });
+});
+</script>
+			
 </body>
 </html>

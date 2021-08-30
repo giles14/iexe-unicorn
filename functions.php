@@ -112,7 +112,11 @@ add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt');
 function iexe_unicorn_body() {
 
 	global $post; 
-	$postclass = $post->post_name;
+    if($post){
+	    $postclass = $post->post_name;
+    }else{
+        $postclass = 'sin-definir';
+    }
  
 	if (is_home()) {
 		echo ' id="home"';
