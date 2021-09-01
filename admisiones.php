@@ -1,8 +1,8 @@
 <?php
 /*
-Template Name: Becas
+Template Name: Admisiones
 */
-?>
+?> 
 <?php get_header( ); ?>
 <section id="header">
     <div id="informacion-programa" class="carousel slide carousel-fade" data-ride="carousel">
@@ -11,8 +11,8 @@ Template Name: Becas
             <div class="mask flex-center">
               <div class="container">
                   <div class="row">
-                            <div class="col-md-3"><img class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/layer_1.png" alt=""></div>
-                            <div class="col-md-4"><img class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/layer_2.png" alt=""></div>
+                            <!-- <div class="col-md-3"><img class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/layer_1.png" alt=""></div>
+                            <div class="col-md-4"><img class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/layer_2.png" alt=""></div> -->
                   </div>
               </div>
             </div>
@@ -56,244 +56,115 @@ Template Name: Becas
 <section id="navegacion">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">BECAS<br>INSTITUCIONALES</div></div></a></div>
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONVENIOS <br> IEXE</div></div></a></div>
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">CRÉDITOS ANTICIPADOS</div></div></a></div>
+            <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">ADMISIONES</div></div></a></div>
+            <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">PROMOCIONES</div></div></a></div>
+            <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONVENIOS</div></div></a></div>
+            <div class="col"><a data-target="#informacion-programa" data-slide-to="4"><div class="col d-table"><div class="contenido d-table-cell align-middle">CRÉDITOS ANTICIPADOS</div></div></a></div>
         </div>
     </div>
 </section>
-<section id="becas-slider">
-            <div class="sliding">
-                <div>
-                    <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-5">
-                                        <h1 class="titulo">Beca institucional IEXE</h1>
-                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
-                                    </div>
-                                </div>
-                                <div class="row con-x">
-                                    <div class="col-md-1 align-self-center"><img class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
-                                    <div class="col-md-3">
-                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_1.webp" alt="" class="beca">
-                                    </div>
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-5">
-                                        <p class="descripcion-beca">Pensada en apoyar a los alumnos(as) sobresalientes,
-                                            la Beca IEXE otorga un porcentaje que va del 20% al 70% en las colegiaturas de licenciaturas,
-                                            maestrías y doctorado. Nuestros estudiantes y aspirantes pueden solicitarla todo el año.</p>
-                                        <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3" href="#">Solicítala aquí</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
-                                </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-5">
-                                        <h1 class="titulo">Beca SEP</h1>
-                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
-                                    </div>
-                                </div>
-                                <div class="row con-x">
-                                    <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
-                                    <div class="col-md-3">
-                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_2.webp" alt="" class="beca">
-                                    </div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-3">
-                                        <p  class="descripcion-beca">Promovida por la Secretaría de Educación Pública,
-                                             la convocatoria de la Beca SEP es publicada una vez al año y
-                                              otorga porcentajes que van desde el 25% al 75% sobre la colegiatura.</p>
-                                    </div>
-                                    
-                                    <div class="col-md-3">
-                                        <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Descarga la convocatoria</a>
-                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Te asesoramos</a>
-                                            <a class="btn btn-primario mt-3 float-right" href="#">Solicítala aquí</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
-                                </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-5">
-                                        <h1 class="titulo">Beca Embajadores IEXE</h1>
-                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
-                                    </div>
-                                </div>
-                                <div class="row con-x">
-                                    <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
-                                    <div class="col-md-3">
-                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_3.webp" alt="" class="beca">
-                                    </div>
-                                    
-                                    <div class="col-md-5 offset-md-2">
-                                        <p  class="descripcion-beca">Diseñada para apoyar a los integrantes de la Comunidad IEXE,
-                                            la Beca de embajadores IEXE otorga a nuestros alumnos(as) un beneficio acumulable
-                                            por cada referido inscrito, por lo que se puede otorgar hasta un 100% de beca.</p>
-                                            <div class="botones-beca">
-                                                <a class="btn btn-primario mt-3" href="#">Solicítala aquí</a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
-                                </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-5">
-                                        <h1 class="titulo">Beca Convenios</h1>
-                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
-                                    </div>
-                                </div>
-                                <div class="row con-x">
-                                    <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
-                                    <div class="col-md-3">
-                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_4.webp" alt="" class="beca">
-                                    </div>
-                                    <div class="col-md-5 offset-md-2">
-                                        <p  class="descripcion-beca">Hemos realizado alianzas estratégicas con distintas instituciones públicas y privadas. Si perteneces a alguna de ellas, tú y tus familiares pueden solicitar una beca.</p>
-                                        <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3" href="#">Solicítala aquí</a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
-                                </div>
-                    </div>
-                </div>
-            </div>  
-    
-</section>
-<!-- <section id="inscripcion">
+<section id="requisitos-inscripcion">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="bloque-inscripcion">
-                    <h2 class="titulo">Requisitos de admisión</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy:</p>
+            <div class="col-md-12">
+                <h1 class="titulo">Requisitos de inscripcion</h1>
+                <h2 class="description">¡Tu camino empieza aquí! Elige el programa de tu preferencia y empieza tu proceso.</h2>
+            </div>
+        </div>
+    </div>
+    <section id="licenciaturas">
+        <div class="container">
+            <div class="row contenedor-admision">
+                <div class="col-md-6">
+                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Licenciaturas</h1>
                     <ul class="requisitos">
                         <li>Acta de nacimiento original.</li>
                         <li>Copia de CURP.</li>
+                        <li>Certificado de término de bachillerato o proparatoria.</li>
                         <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
                     </ul>
-                    
+                </div>
+                <div class="inicia-proceso">
+                    <a href="#">Inicia tu proceso con un asesor</a>
+                </div>
+                <div class="col-md-6">
+                    <img class="x-admision" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/xAdmisiones.svg" alt="">
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="bloque-inscripcion azul">
-                    <h2 class="titulo">Proceso de inscripción</h2>
-                    <p>El primer paso para ingresar al programa es completar el formulario de inscripción. Una vez recibido nos pondremos en contacto para coordinar la entrevista (online).</p>
-                    <p class="text-center">
-                        <button type="submit" class="btn btn-primario mt-3">Quiero inscribirme</button>
-                    </p>
-                    
+        </div>  
+    </section>
+    <section id="maestrias">
+        <div class="container">
+            <div class="row contenedor-admision">
+                <div class="col-md-6">
+                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrias</h1>
+                    <ul class="requisitos">
+                        <li>Acta de nacimiento original.</li>
+                        <li>Copia de CURP.</li>
+                        <li>Copia de título profesional de licenciatura (en caso de que se encuentre en trámite constancia de titulación en trámite y copia de acta de examen profesional).</li>
+                        <li>Copia de cédula profesional de licenciatura (en caso de que se encuentre en trámite, constancia de titulación en trámite).</li>
+                        <li>El/la aspirante que ingresa a la maestría como opción de titulación de la licenciatura, deberá entregar además los 2 siguientes requisitos:</li>
+                            <ul>
+                                <li>A) Certificado original de término de la licenciatura debidamente legalizado.</li>
+                                <li>B) Carta OTEM original (oficio de su universidad de procedencia donde le autoriza titularse por estudios de maestría).</li>
+                            </ul>
+                        
+                    </ul>
+                </div>
+                <div class="inicia-proceso">
+                    <a href="#">Inicia tu proceso con un asesor</a>
                 </div>
             </div>
-        </div>
-    </div>
-</section> -->
-
-<section id="calcula-beca">
+        </div>  
+    </section>
+    <section id="doctorado">
+        <div class="container">
+            <div class="row contenedor-admision">
+                <div class="col-md-6">
+                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Doctorado</h1>
+                    <ul class="requisitos">
+                        <li>Acta de nacimiento original.</li>
+                        <li>Copia de CURP</li>
+                        <li>Certificado de término de bachillerato o proparatoria </li>
+                        <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img class="x-admision" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/xAdmisiones.svg" alt="">
+                </div>
+                <div class="inicia-proceso">
+                    <a href="#">Inicia tu proceso con un asesor</a>
+                </div>
+            </div>
+        </div>  
+    </section>
+</section>
+<section id="eres-parte">
     <div class="container">
-        <div class="row beca">
-            <div class="col">
-                <h1 class="titulo">¡Calcula el monto de tu beca!</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="titulo">Ya eres parte de IEXE Universidad</h1>
+                <h2 class="description">En breve tu hacer concejero administrativo te familiarizará con todo ¡Felicicades!</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-becas.webp" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-                <p>Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.</p>
-                <div id="pasos-formulario" class="">
-                    <ul id="progressbar">
-                        <li class="active">Paso</li>
-                        <li>Paso</li>
-                        <li>Paso</li>
-                    </ul>
-
-                </div>
-                <form id="calcula-beca">
-                    <!-- progressbar -->
-                    <!-- <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div> <br> fieldsets -->
-                    <fieldset>
-                        <div class="form-card">
-                            <label class="fieldlabels">Nombre</label> <input type="text" name="uname" placeholder="Ingresa aquí tu nombre" /><label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" /><label class="fieldlabels">Teléfono: *</label> <input type="email" name="email" placeholder="Ingresa aquí tu número telefónico" />
-                            <div class="row">
-                                <div class="col-7">
-                                    <!-- <h2 class="fs-title">Account Information:</h2> -->
-                                </div>
-                                <div class="col-5">
-                                    <!-- <h2 class="steps">Paso 1 - 4</h2> -->
-                                </div>
-                            </div> 
-                        </div> 
-                        
-                        <button type="button" name="next" class="next btn btn-primario float-right mt-3">Siguiente</button>
-                    </fieldset>
-                    <fieldset>
-                        <div class="form-card">
-                            
-                            <label class="fieldlabels">Nombre: *</label> <input type="text" name="fname" placeholder="Nombre" /> <label class="fieldlabels">Apellido *</label> <input type="text" name="apellido" placeholder="Last Name" /> <label class="fieldlabels">Teléfono: *</label> <input type="text" name="tel" placeholder="Teléfono" />
-                            <div class="row">
-                                <div class="col-7">
-                                    <!-- <h2 class="fs-title">Personal Information:</h2> -->
-                                </div>
-                                <div class="col-5">
-                                    <!-- <h2 class="steps">Paso 2 - 4</h2> -->
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" name="next" class="next btn btn-primario float-right mt-3">Siguiente</button> <!--<button type="button" name="previous" class="previous btn btn-primario float-right mt-3">Anterior</button>  -->
-                    </fieldset>
-                    <fieldset>
-                        <div class="form-card">
-                            <div class="row">
-                                <div class="col-7">
-                                    <!-- <h2 class="fs-title">Image Upload:</h2> -->
-                                </div>
-                                <div class="col-5">
-                                    <!-- <h2 class="steps">paso 3 - 4</h2> -->
-                                </div>
-                            </div> <label class="fieldlabels">Tu INE:</label> <input type="file" name="pic" accept="image/*"> <label class="fieldlabels">Tu comprobante:</label> <input type="file" name="pic" accept="image/*">
-                        </div> 
-                         <button type="button" name="next" class="next btn btn-primario float-right mt-3">Generar</button><!-- <input type="button" name="next" class="next action-button" value="Generar" /> <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> -->
-                    </fieldset>
-                    <fieldset>
-                        <div class="form-card">
-                            <h2 class="text-center"><strong>Esta es la beca a la que podrás acceder</strong></h2> <br>
-                            <div class="row justify-content-center">
-                                <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
-
-                            <div class="row justify-content-center">
-                                <div class="col-7 text-center">
-                                    <h5 class="text-center">*Sujeto a la revisión del equipo correspondiente de IEXE</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-                
+            <div class="col-md-12">
             </div>
         </div>
     </div>
 </section>
 <?php get_template_part( 'template-parts/anuncios' ); ?>
-
+<?php get_template_part( 'template-parts/calcula-beca'); ?>
+<section id="revalidacion">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+    </div>
+</section>
 <section id="preguntas-frecuentes">
     <div class="container">
         <div class="row">
@@ -467,7 +338,6 @@ Template Name: Becas
         </div>
     </div>
 </section>
-
-<?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
-<?php get_template_part( 'template-parts/vinculos'); ?>
-<?php get_footer( ); ?>
+<?php get_template_part( 'template-parts/comunidad' ) ?>
+<?php get_template_part( 'template-parts/vinculos' ); ?>
+<?php get_footer(); ?>
