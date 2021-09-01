@@ -7,7 +7,8 @@ Template Name: Programas academicos
 $unicorn_contador = 1;
 $unicorn_grupo = 1;
 $materiasMax = MAXIMAS_MATERIAS;
-$imagenAsesor = get_field('imagen_coordinador'); ?>
+$imagenAsesor = get_field('imagen_coordinador');
+$estiloPrograma = get_field('estilo_de_programa'); ?>
 <?php get_header( ); ?>
 <section id="header">
     <div id="informacion-programa" class="carousel slide carousel-fade" data-ride="carousel">
@@ -23,11 +24,12 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                               <div class="descripcion-programa">
                                 <?php the_field('descripcion_del_programa'); ?>
                               </div>
+                              <?php if($estiloPrograma == "Programas Tradicionales") { ?>
                               <p id="RVOE" class="revoe">
                                   <strong><?php the_field('texto_rvoe'); ?></strong><br>
                                   Consultalo en: <a href="<?php the_field('link_rvoe'); ?>" class="notorio" target="_blank">www.sirvoes.sep.gob.mx</a>
                               </p>
-              
+                                <?php } ?>
                           </div>
                           <div class="col-md-2">
                             <?php
@@ -79,12 +81,12 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
-                                    <?php the_field('lo_que_vas_a_aprender'); ?>
+                                    <?php if($estiloPrograma == "Programas Tradicionales") {
+                                         the_field('lo_que_vas_a_aprender');
+                                     }else{
+                                    echo get_field('dirigido_a');
+                                } ?>
                               </div>
-                              <!-- <p id="RVOE" class="revoe">
-                                  <strong>Reconocimiento de Validez Oficial de Estudios (RVOE)</strong><br>
-                                  Consultalo en: <a href="https://www.sirvoes.sep.gob.mx" class="notorio" target="_blank">www.sirvoes.sep.gob.mx</a>
-                              </p> -->
               
                           </div>
                           <div class="col-md-2">
@@ -104,57 +106,38 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
       
             </div>
           </div>
+          <?php if($estiloPrograma == "Programas Tradicionales") { ?>
           <div class="carousel-item">
-            <div class="mask flex-center">
-              
-              <div class="container">
-                  <div class="row">
-                      <div id="desc-programa">
-                          <div class="col-md-6">
-                          <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
-                              <a class="button-primary"><?php the_title() ?></a>
-                              <div class="descripcion-programa">
-                                    <?php the_field('donde_puedes_trabajar'); ?>
-                              </div>
-              
-                          </div>
-                          <div class="col-md-2">
-                              
-                          </div>
-                          <div class="col-md-4">
-                              <div class="formulario">
-                                  <div class="cabecera">
-                                      <h1 class="interes">¿Estás interesado?</h1>
-                                  </div>
-                                  <div class="cuerpo">
-                                      <form id="interes">
-                                          <div class="form-group">
-                                            <label for="nombre">Nombre completo*</label>
-                                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
-                                          </div>
-                                          <div class="form-group">
-                                              <label for="correo">Correo electrónico*</label>
-                                              <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                          </div>
-                                          <div class="form-group">
-                                              <label for="telefono">Teléfono o celular*</label>
-                                              <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
-                                          </div>
-                                          <div class="col-12 text-center">
-                                              <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>
-                                          </div>
-                                        </form>
-                                  </div>
-              
-                              </div>
-                          </div>
-          
-                      </div>               
-                  </div>
-              </div>
-      
+                <div class="mask flex-center">
+                <div class="container">
+                    <div class="row">
+                        <div id="desc-programa">
+                            <div class="col-md-6">
+                                <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
+                                <a class="button-primary"><?php the_title() ?></a>
+                                <div class="descripcion-programa">
+                                    <?php the_field('donde_puedes_trabajar'); ?>                                
+                                </div>
+                
+                            </div>
+                            <div class="col-md-2">
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <!--  -->
+                                <?php
+                                if ( !empty( $imagenAsesor ) ): ?>
+                                    <img class="asesor" src="<?php echo esc_url($imagenAsesor['url']); ?>" alt="<?php echo esc_attr($imagenAsesor['alt']); ?>" />
+                                <?php endif; ?>
+                            </div>
+            
+                        </div>               
+                    </div>
+        
+                </div>
             </div>
           </div>
+          <?php } ?>
           <div class="carousel-item">
               <div class="mask flex-center">
                 
@@ -164,18 +147,17 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                             <div class="col-md-6">
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                                 <a class="button-primary"><?php the_title() ?></a>
-                                <p class="descripcion-programa">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                <p id="RVOE" class="revoe">
-                                    <strong>Reconocimiento de Validez Oficial de Estudios (RVOE)</strong><br>
-                                    Consultalo en: <a href="https://www.sirvoes.sep.gob.mx" class="notorio" target="_blank">www.sirvoes.sep.gob.mx</a>
-                                </p>
+                                <div style="min-height: 250px" class="descripcion-programa">
+                                    <?php the_field('creditos_anticipados'); ?>
+                                </div>
+                                
                 
                             </div>
                             <div class="col-md-1">
                                 
                             </div>
-                            <div class="col-md-5">
-                                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/videoEjemplo.webp" alt="">
+                            <div class="col-md-5 my-auto">
+                                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/pragmaFlex-logo.webp" alt="">
                             </div>
             
                         </div>               
@@ -192,9 +174,14 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
     <div class="container">
         <div class="row no-gutters">
             <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">DESCRIPCIÓN<br> DEL PROGRAMA</div></div></a></div>
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">LO QUE VAS A APRENDER </div></div></a></div>
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">DÓNDE PUEDES TRABAJAR</div></div></a></div>
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">CRÉDITOS ANTICIPADOS</div></div></a></div>
+            <?php if($estiloPrograma == "Programas Tradicionales") { ?>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">LO QUE VAS A APRENDER </div></div></a></div>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">DÓNDE PUEDES TRABAJAR</div></div></a></div>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">NUESTRO MÉTODO DE ENSEÑANZA</div></div></a></div>
+            <?php }else{ ?>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">DIRIGIDO A</div></div></a></div>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">NUESTRO MÉTODO DE ENSEÑANZA</div></div></a></div>
+                <?php }?>
         </div>
     </div>
 </section>
@@ -206,7 +193,7 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                 <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
             </div>
             <div class="col-3">
-                        <select id="seleccionperiodo" class="periodo">
+                        <select <?php echo ($estiloPrograma == "Programas Tradicionales") ? '' : 'style="display:none"' ?>  id="seleccionperiodo" class="periodo">
                             <!-- <option value="bloque-materia" selected>Todas</option> -->
                             <?php while ($unicorn_contador <= get_field('cantidad_de_periodos'))  {  ?>
                                 <option value="periodo-<?php echo $unicorn_contador ?>"><?php echo $unicorn_contador ?>° <?php the_field('tipo_de_periodos'); ?></option>
@@ -243,13 +230,13 @@ $imagenAsesor = get_field('imagen_coordinador'); ?>
                             <div class="col-md-4">
                                 <div class="bloque-materia periodo-<?php echo $unicorn_grupo ?>">
                                     <h2 class="materia"><?php the_sub_field('nombre_materia') ?></h2>
-                                    <h3 class="duracion">Duración: 16 hrs.</h3>
+                                    <h3 class="duracion"><?php echo ($estiloPrograma == "Programas Tradicionales") ? 'Duración: 16'  : get_sub_field('duracion_materia') ?> hrs.</h3>
                                     <div class="descripcion-materia">
                                         <?php the_sub_field('descripcion_materia') ?>
                                     </div>
-                                    <div id="social">
+                                    <!-- <div id="social">
                                         
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <?php 

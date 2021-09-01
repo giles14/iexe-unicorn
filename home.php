@@ -192,7 +192,7 @@
                         </div>
                     </div>
                     <video width="443" height="579" muted loop>
-                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx1.mp4" type="video/mp4" muted>
+                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx1.m4v" type="video/mp4" muted>
                         El navegador no acepta video
                   </video>
 
@@ -206,7 +206,7 @@
                     </div>
                         <video width="443" height="579" muted loop>
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
-                            <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx2.mp4" type="video/mp4">
+                            <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx2.m4v" type="video/mp4">
                             El navegador no acepta video
                       </video>
                     <!-- <div class="marco">
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                     <video width="443" height="579" muted loop>
-                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx3.mp4" type="video/mp4" muted>
+                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx3.m4v" type="video/mp4" muted>
                         El navegador no acepta video
                   </video>
 
