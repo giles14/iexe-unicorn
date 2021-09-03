@@ -74,28 +74,64 @@ Template Name: Admisiones
     </div>
     <section id="licenciaturas">
         <div class="container">
-            <div class="row contenedor-admision">
-                <div class="col-md-6">
-                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Licenciaturas</h1>
-                    <ul class="requisitos">
-                        <li>Acta de nacimiento original.</li>
-                        <li>Copia de CURP.</li>
-                        <li>Certificado de término de bachillerato o proparatoria.</li>
-                        <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
-                    </ul>
-                </div>
-                <div class="inicia-proceso">
-                    <a href="#">Inicia tu proceso con un asesor</a>
-                </div>
-                <div class="col-md-6">
-                    <img class="x-admision" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/xAdmisiones.svg" alt="">
-                </div>
+            <div class="row contenedor-admision los-requisitos">
+                    <div class="col-md-6">
+                        <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Licenciaturas</h1>
+                        <ul class="requisitos">
+                            <li>Acta de nacimiento original.</li>
+                            <li>Copia de CURP.</li>
+                            <li>Certificado de término de bachillerato o proparatoria.</li>
+                            <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
+                        </ul>
+                    </div>
+                    <div class="inicia-proceso">
+                        <a>Inicia tu proceso con un asesor</a>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+            </div>
+            <div class="row contenedor-admision el-formulario" style="display: none">
+                    <div class="col-md-4"><h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Licenciaturas</h1></div>
+                    <div class="col-md-4">
+                        <form id="inscripcion">
+                            <div class="form-group">
+                            <label for="nombre">Nombre completo*</label>
+                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo electrónico*</label>
+                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono o celular*</label>
+                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="interes">Programa académico de interés</label>
+                                <select class="form-control" id="interes" name="select">
+                                    <option value="value1" selected="">Seleccionar programa</option>
+                                    <option value="value2">Ciencias Políticas y Administración Pública</option>
+                                    <option value="value3">Seguridad Pública</option>
+                                    <option value="value4">Derecho</option>
+                                    <option value="value5">Administración de Empresas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4  d-flex align-items-end">
+                            <button style="display:block; margin: 0 auto; margin-bottom: 24px;" type="submit" class="btn btn-primario mt-3">Enviar registro</button>
+                         </form>
+                        </div>
+                        <div class="regresa-requisitos">
+                        <a>< Regresar</a>
+                    </div>
+            </div>
+                    
             </div>
         </div>  
     </section>
     <section id="maestrias">
         <div class="container">
-            <div class="row contenedor-admision">
+            <div class="row contenedor-admision los-requisitos">
                 <div class="col-md-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrias</h1>
                     <ul class="requisitos">
@@ -108,18 +144,52 @@ Template Name: Admisiones
                                 <li>A) Certificado original de término de la licenciatura debidamente legalizado.</li>
                                 <li>B) Carta OTEM original (oficio de su universidad de procedencia donde le autoriza titularse por estudios de maestría).</li>
                             </ul>
-                        
                     </ul>
                 </div>
                 <div class="inicia-proceso">
-                    <a href="#">Inicia tu proceso con un asesor</a>
+                    <a>Inicia tu proceso con un asesor</a>
                 </div>
+            </div>
+            <div class="row contenedor-admision el-formulario" style="display: none">
+                    <div class="col-md-4"><h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrías</h1></div>
+                    <div class="col-md-4">
+                        <form id="inscripcion">
+                            <div class="form-group">
+                            <label for="nombre">Nombre completo*</label>
+                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo electrónico*</label>
+                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono o celular*</label>
+                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="interes">Programa académico de interés</label>
+                                <select class="form-control" id="interes" name="select">
+                                    <option value="value1" selected="">Seleccionar programa</option>
+                                    <option value="value2">Ciencias Políticas y Administración Pública</option>
+                                    <option value="value3">Seguridad Pública</option>
+                                    <option value="value4">Derecho</option>
+                                    <option value="value5">Administración de Empresas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4  d-flex align-items-end">
+                            <button style="display:block; margin: 0 auto; margin-bottom: 24px;" type="submit" class="btn btn-primario mt-3">Enviar registro</button>
+                         </form>
+                        </div>
+                        <div class="regresa-requisitos">
+                        <a>< Regresar</a>
+                    </div>
             </div>
         </div>  
     </section>
     <section id="doctorado">
         <div class="container">
-            <div class="row contenedor-admision">
+            <div class="row contenedor-admision los-requisitos">
                 <div class="col-md-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Doctorado</h1>
                     <ul class="requisitos">
@@ -130,16 +200,50 @@ Template Name: Admisiones
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <img class="x-admision" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/xAdmisiones.svg" alt="">
                 </div>
                 <div class="inicia-proceso">
-                    <a href="#">Inicia tu proceso con un asesor</a>
+                    <a>Inicia tu proceso con un asesor</a>
                 </div>
+            </div>
+            <div class="row contenedor-admision el-formulario" style="display: none">
+                    <div class="col-md-4"><h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Doctorado</h1></div>
+                    <div class="col-md-4">
+                        <form id="inscripcion">
+                            <div class="form-group">
+                            <label for="nombre">Nombre completo*</label>
+                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo electrónico*</label>
+                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono o celular*</label>
+                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="interes">Programa académico de interés</label>
+                                <select class="form-control" id="interes" name="select">
+                                    <option value="value1" selected="">Seleccionar programa</option>
+                                    <option value="value2">Ciencias Políticas y Administración Pública</option>
+                                    <option value="value3">Seguridad Pública</option>
+                                    <option value="value4">Derecho</option>
+                                    <option value="value5">Administración de Empresas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4  d-flex align-items-end">
+                            <button style="display:block; margin: 0 auto; margin-bottom: 24px;" type="submit" class="btn btn-primario mt-3">Enviar registro</button>
+                         </form>
+                        </div>
+                        <div class="regresa-requisitos">
+                        <a>< Regresar</a>
+                    </div>
             </div>
         </div>  
     </section>
 </section>
-<section id="eres-parte">
+<!-- <section id="eres-parte">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -152,7 +256,7 @@ Template Name: Admisiones
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <?php get_template_part( 'template-parts/anuncios' ); ?>
 <?php get_template_part( 'template-parts/calcula-beca'); ?>
 <section id="revalidacion">

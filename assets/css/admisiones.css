@@ -10,7 +10,7 @@ Admisiones
     background-color: #E4F8F7;
 }
 section#licenciaturas .row.contenedor-admision {
-    background: url(../img/bg-admisiones.svg);
+    background: url(../img/bg-admisiones-lic.webp);
     min-height: 340px;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -22,7 +22,7 @@ section#licenciaturas .row.contenedor-admision {
     /* height: 478px; */
 }
 section#doctorado .row.contenedor-admision {
-    background: url(../img/bg-admisiones.svg);
+    background: url(../img/bg-admisiones-lic.webp);
     min-height: 340px;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -81,11 +81,12 @@ img.x-admision {
     text-align: right;
 }
 .inicia-proceso a {
-    color: var(--primario-cyan);
-    text-decoration: underline;
+    color: var(--primario-cyan)!important;
+    text-decoration: underline!important;
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
+    cursor: pointer;
 }
 p.preguntas {
     color: #f6f6f6;
@@ -170,4 +171,51 @@ a.opcion-tipo-becas.active {
     width: 100%;
     display: block;
     text-underline-offset: 4px;
+}
+.el-formulario {
+    display: flex;
+}
+.los-requisitos{
+    display: flex;
+}
+
+#inscripcion label {
+    font-weight: bold;
+    letter-spacing: 0.29px;
+    margin-bottom: 0px;
+}
+#inscripcion .form-control{
+    border: none;
+    border-radius: unset;
+    border-bottom: 1px solid var(--primario-cyan);
+    background: transparent;
+}
+#inscripcion .form-control::placeholder {
+    color: #ededed;
+    font-weight: 300;
+}
+#inscripcion select {
+    color: #e3e3e3;
+}
+#inscripcion .form-group {
+    margin-bottom: 0.8rem;
+}
+select#interes option {
+    background: var(--primario--azul-obscuro);
+}
+.regresa-requistos {
+    position: absolute;
+    bottom: 45px;
+}
+.regresa-requisitos a {
+    color: var(--primario-cyan)!important;
+    text-decoration: underline!important;
+    cursor: pointer;
+    bottom: 50px;
+    position: absolute;
+    left: 70px;
+}
+.desaparece-menu{
+    transition: 1s ease-out;
+    display: none;
 }
