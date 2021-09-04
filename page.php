@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
             <?php if (have_posts()) : while (have_posts()) : the_post();?>
             <h2 id="post-<?php the_ID(); ?>"><?php the_title();?></h2>
             <div class="entrytext">
@@ -12,9 +12,6 @@
             </div>
             <?php endwhile; endif; ?>
 
-            </div>
-            <div class="col-md-4">
-                TIENDA 
             </div>
         </div>
     </div>

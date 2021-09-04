@@ -11,6 +11,7 @@ add_image_size('destacada-post-header', 900 , 508, true );
 add_image_size('destacada-interesar', 374 , 210, true );
 // global $post; 
 // 	    $unicorn_id = $post->id;
+//add_theme_support( 'woocommerce' );
 
 function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.0', 'all'  );
@@ -237,3 +238,35 @@ function unicorn_boton_compartir($content) {
     }
 };
 add_shortcode('social','unicorn_boton_compartir');
+
+/**
+ * Sidebar Editorial.
+ */
+function iexe_unicorn_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Editorial Sidebar', 'iexe-unicorn' ),
+        'id'            => 'sidebar-1',
+        'description'   => __( 'Sidebar para Editorial', 'iexe-unicorn' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'iexe_unicorn_widgets_init' );
+
+/**
+ * Sidebar Editorial-single.
+ */
+function iexe_unicorn_widget_2_init() {
+    register_sidebar( array(
+        'name'          => __( 'Producto Sidebar', 'iexe-unicorn' ),
+        'id'            => 'sidebar-producto',
+        'description'   => __( 'Sidebar para Producto de Editorial', 'iexe-unicorn' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'iexe_unicorn_widget_2_init' );

@@ -144,4 +144,6 @@ p.descripcion-beca {
 .boton-atras {
     cursor: pointer;
 }
-
+#becas section#header .container {
+    padding-top: 166px;
+}

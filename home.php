@@ -139,12 +139,11 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Disciplina Financiera y Fiscalización</a> </li>
-                                    <li><a href="#">Evaluación de Políticas Públicas</a> </li>
-                                    <li><a href="#">Habilidades Gerenciales y Liderazgo</a> </li>
-                                    <li><a href="#">Análisis y Diseño de Políticas Públicas</a> </li>
-                                    <li><a href="#">Presupuesto basado en Resultados (PbR)</a></li>
-                                    <li><a href="#">Alta Dirección en la Función Pública</a></li>                                    
+                                    <li><a href="/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/">Disciplina Financiera y Fiscalización</a> </li>
+                                    <li><a href="/oferta-educativa/diplomado-en-habilidades-gerenciales-y-liderazgo/">Habilidades Gerenciales y Liderazgo</a> </li>
+                                    <li><a href="/oferta-educativa/d-analisis-y-diseno-y-de-politicas-publicas/">Análisis y Diseño de Políticas Públicas</a> </li>
+                                    <li><a href="/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/">Fundamentos de Administración Pública</a></li>
+                                    <li><a href="/oferta-educativa/diplomado-en-alta-direccion-en-la-funcion-publica/">Alta Dirección en la Función Pública</a></li>                                    
                                 </ul>
                             </div>
                         </div> 
