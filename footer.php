@@ -3,11 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img class="logo-abajo mx-auto d-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.png" alt="">
-                    <span class="redes-sociales">SÍGUENOS EN</span>
-                    <div class="iconos-redes-sociales">
-                        <a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a>
-                    </div>
+                    <img style="width:60%" class="logo-abajo mx-auto d-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical.svg" alt="">
+                    <!-- <span class="redes-sociales">SÍGUENOS EN</span> -->
+                    
                 </div>
                 <div class="col-md-2">
                     <a class="menu" href="">NOSOTROS</a>
@@ -64,7 +62,10 @@
                 <div class="col-md-3">
                     <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a class="telefono-whatsapp" href="https://bit.ly/2WgHHhn">222-286-84-64</a></p>
                     <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
-                    <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a>
+                    <!-- <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a> -->
+                    <div class="iconos-redes-sociales">
+                        <a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a>
+                    </div>
                     <p class="direccion">Blvd. Esteban de Antuñano 2702,<br>C.P. 72160 Puebla. México</p>
                 </div>
             </div>
@@ -80,7 +81,7 @@
                             <?php
                             wp_nav_menu( array(
                                 'container' => '',
-                                'theme_location' => 'pie',
+                                'theme_location' => 'pie_principal',
                                 'menu_class' => 'menu-footer'
                             ) );
                             ?>
@@ -99,19 +100,19 @@
         </div>
         <div class="menu-navegacion">
             <a class="button-primary">MENÚ</a>
-            <a href="#">Acerca de IEXE</a>
-            <a href="#">Programas académicos</a>
+            <a href="/nosotros">Acerca de IEXE</a>
+            <a href="/oferta-educativa">Programas académicos</a>
                 <ul class="programas-academicos">
-                    <li><a href="#">Licenciaturas</a></li>
-                    <li><a href="#">Másters</a></li>
-                    <li><a href="#">Maestrías</a></li>
-                    <li><a href="#">Doctorado</a></li>
-                    <li><a href="#">Capacitaciones</a></li>
-                    <li><a href="#">Diplomados</a></li>
+                    <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
+                    <li><a href="/oferta-educativa/#masters">Másters</a></li>
+                    <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
+                    <li><a href="/oferta-educativa/#doctorado">Doctorado</a></li>
+                    <li><a href="/oferta-educativa/#capacitaciones">Capacitaciones</a></li>
+                    <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
                 </ul>
-            <a href="#">Admisiones</a>
-            <a href="#">Becas</a>
-            <a href="#">IEXE Comunidad</a>
+            <a href="/admisiones">Admisiones</a>
+            <a href="/becas">Becas</a>
+            <a href="/comunidad">IEXE Comunidad</a>
         </div>
     </div>
     

@@ -526,7 +526,8 @@ span.redes{
     line-height: 24px;
     padding-bottom: 15px;
     display: block;
-    margin-top: 96px;
+    margin-top: 36px;
+    margin-bottom: 16px;
 }
 
 #pie li{
@@ -536,7 +537,7 @@ span.redes{
 #pie li a {
     font-size: 15px;
     color: #EDEDED;
-    line-height: 36px;
+    line-height: 24px;
     font-weight: 300;
     letter-spacing: 0px;
 }
@@ -551,11 +552,11 @@ span.redes{
 #pie .iconos-redes-sociales {
     justify-content: space-evenly;
     display: flex;
-    margin-bottom: 48px;
-    margin-top: 8px;
+    margin-bottom: 16px;
+    margin-top: 16px;
 }
 #pie .buffer{
-    margin-top: 24px;
+    margin-top: 36px;
 }
 p.telefono-mexico {
     color: #71f6a5;
@@ -569,6 +570,7 @@ p.telefono-puebla {
     font-size: 30px;
     font-weight: 800;
     text-align: right;
+    margin-bottom: 0;
 }
 a.telefono-whatsapp {
     color: #71f6a5;
@@ -589,13 +591,17 @@ img.whatsapp-logo {
 img.telefono-logo {
     padding-right: 15px;
 }
-ul#menu-pie-final li {
+ul#menu-footer-bottom li {
     float: left;
     list-style: none;
 }
-ul#menu-pie-final li:after {
+ul#menu-footer-bottom li:after {
     content: "|";
     padding: 5px;
+}
+ul#menu-footer-bottom li {
+    float: left;
+    list-style: none;
 }
 a.e-mail {
     color: #fff;
@@ -616,7 +622,7 @@ p.direccion {
     font-weight: 300;
 }
 .logo-abajo{
-    margin-top: 24px;
+    margin-top: 36px;
 }
 section#sub-pie {
     background: var(--primario--azul-obscuro);
@@ -1873,6 +1879,20 @@ h1.nombre-programa {
     letter-spacing: 0.27px;
     line-height: 36px;
 }
+section#diplomados .contenedor-programa ul li a {
+    color: #e3e3e3;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.27px;
+    line-height: 33px;
+}
+section#maestrias .contenedor-programa ul li a {
+    color: #e3e3e3;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.27px;
+    line-height: 33px;
+}
 .contenedor-programa li {
     list-style: square;
     color: var(--primario-cyan);
@@ -2169,4 +2189,7 @@ img.generacion {
     margin: 0 auto;
     display: block;
     /* padding-top: 20px; */
+}
+.buffer-25{
+    margin-top: 25px;
 }

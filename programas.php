@@ -4,17 +4,17 @@ Template Name: Programas
 */
 ?>
 <?php get_header( ); ?>
-<section id="principal">
-    <!-- <div class="imagen-principal-completa">
+<!-- <section id="principal">
+    <div class="imagen-principal-completa">
         
-    </div> -->
-</section>
-<section id="todos-los-programas-academicos">
+    </div> 
+</section> -->
+<section id="todos-los-programas-academicos buffer-60">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="titulo">Oferta Educativa</h1>
-                <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                <h2 class="description">Conoce nuestros programas 100% en línea avalados por la SEP.</h2>
             </div>
         </div>
     </div>
@@ -55,9 +55,9 @@ Template Name: Programas
         <div class="container">
             <div class="row contenedor-programa">
                 <div class="col-md-6">
-                    <h1 class="nombre-programa">Doctorado</h1>
+                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Doctorado</h1>
                     <ul class="doctorados">
-                        <li><a href="/oferta-educativa/doctorado-en-politicas-publicas"><i class="cyan uil uil-angle-right"></i>Políticas Públicas</a> </li>
+                        <li><a href="/oferta-educativa/doctorado-en-politicas-publicas">Políticas Públicas</a> </li>
                     </ul>
                 </div>  
             </div>

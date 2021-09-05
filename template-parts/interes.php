@@ -13,7 +13,7 @@
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x.png" alt="">
                 </div>
                 <div class="col-md-5">
-                    <p class="interes-programa">Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.</p>
+                    <p class="interes-programa">Estudia con nosotros sin descuidar tus actividades, acceso a nuestra plataforma 24 horas al día 7 días de la semana, oferta totalmente flexible y digital. <br> ¡20 años de experiencia forjando líderes nos respaldan!</p>
                     <form id="contacto">
                         <div class="form-group">
                           <label for="nombre">Nombre completo*</label>

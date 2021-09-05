@@ -125,7 +125,7 @@ span.meta.fecha {
     font-weight: 300;
     font-size: 14px;
     height: 36px;
-    width: 120px;
+    width: 160px;
     text-align: center;
 }
 span.meta.categoria {
@@ -559,4 +559,8 @@ ol.children {
     padding: 8px 30px;
     color: var(--primario-azul);
     font-weight: 600;
+}
+.alignleft {
+    float: left;
+    padding: 15px;
 }

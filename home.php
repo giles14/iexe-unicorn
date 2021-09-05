@@ -66,7 +66,7 @@
             <div class="row">
                 <div class="col">
                     <h1 class="titulo">Oferta Educativa</h1>
-                    <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                    <h2 class="description">Conoce nuestros programas 100% en línea. ¡Desarróllate, especialízate y concreta tu futuro profesional!</h2>
                 </div>
             </div>
             <div class="row">
@@ -177,7 +177,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="titulo">Embajadores IEXE</h1>
-                    <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                    <h2 class="description">Conoce las experiencias de nuestra comunidad y al igual que ellos, ¡decídete a estudiar con nosotros!</h2>
                 </div>
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="marco">
                         <div class="info-pre-video">
                             <a><img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt=""></a>
-                            <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
+                            <p class="consejos">Tips para mis compañeros de nuevo ingreso</p>
                         </div>
                     </div>
                     <video width="443" height="579" muted loop>
@@ -200,7 +200,7 @@
                     <div class="marco">
                         <div class="info-pre-video">
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
-                            <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
+                            <p class="consejos">Consejos para mis próximos compañeros de doctorado</p>
                         </div>
                     </div>
                         <video width="443" height="579" muted loop>
@@ -219,7 +219,7 @@
                     <div class="marco">
                         <div class="info-pre-video">
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
-                            <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
+                            <p class="consejos">Un consejo para estudiar en IEXE Universidad</p>
                         </div>
                     </div>
                     <video width="443" height="579" muted loop>

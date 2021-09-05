@@ -164,7 +164,7 @@ if ( ! function_exists( 'iexe_unicorn_registra_nav_menu' ) ) {
             'menu_primero'  => 'Footer columna 1',
             'menu_segundo'  => 'Footer columna 2',
             'menu_tercero'  => 'Footer columna 3',
-            'pie' => 'pie principal',
+            'pie_principal' => 'pie principal',
             'menu_principal' => 'Menu Principal'
         ) );
     }

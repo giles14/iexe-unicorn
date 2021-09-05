@@ -11,7 +11,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p class="text-center mt-4 interes-programa">Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr, sed diam nonumy</p>
+                    <p class="text-center mt-4 interes-programa">¡Seguimos creciendo y queremos que tú seas parte de esto!<br> Descubre como IEXE tiene presencia nacional e internacional.</p>
                 </div>
             </div>
             <div class="row galeria">

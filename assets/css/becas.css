@@ -147,3 +147,6 @@ p.descripcion-beca {
 #becas section#header .container {
     padding-top: 166px;
 }
+body#becas section#navegacion .container {
+    visibility: hidden;
+}
