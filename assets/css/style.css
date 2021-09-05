@@ -14,6 +14,9 @@
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 /* Reescritura de gutters */
 
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
@@ -2047,4 +2050,123 @@ a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart {
     -webkit-box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
     box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
     border: 0px;
+}
+
+/*
+    Nosotros
+*/
+span.css-sprite-flecha-bloc.flecha-ir {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+h1.button-primary.fijo {
+    width: 350px;
+    margin-bottom: 21px;
+}
+h1.el-futuro-iexe {
+    font-family: var(--familia-titulos);
+    color: var(--primario-cyan);
+    font-size: 30px;
+    line-height: 38px;
+}
+section#el-futuro {
+    background: var(--primario--azul-obscuro);
+    background: url(../img/x-el-futuro-bg.svg) var(--primario--azul-obscuro);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    padding: 160px 0px 115px 0px;
+}
+section#el-futuro p {
+    color: #F6F6F6;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 23px;
+}
+section#el-futuro strong {
+    font-weight: 800;
+}
+
+section#nuestra-identidad {
+    background: url(../img/sombra-contenedor.webp);
+    background-position-x: center;
+    background-position-y: 130px;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+}
+section#nuestra-historia {
+    background: url(../img/sombra-contenedor-inversa.webp);
+    background-position-x: center;
+    background-position-y: -20px;
+    background-repeat: no-repeat;
+    padding-bottom: 170px;
+}
+#nosotros section#pie {
+    margin: unset;
+}
+#nosotros section#header {
+    background: url(../img/nosotros-header.webp);
+    height: 535px;
+    margin-top: unset;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #E4F8F7;
+    background-size: cover;
+}
+#nosotros section#navegacion {
+    margin-top: unset;
+    color: #FFF;
+    height: 64px;
+    margin-top: -64px;
+    background: none;
+}
+
+/*
+
+Comunidad
+
+*/
+body#comunidad {
+    background: url(../img/comunidad-bg.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.categoria-img h2.nombre {
+    color: #fff;
+    font-family: var(--familia-titulos);
+    position: unset;
+    bottom: 12px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    width: unset;
+    padding-top: 24px;
+}
+#comunidad .categoria-img {
+    background: var(--primario--azul-obscuro);
+    padding: 20px;
+}
+p.nombre-progamna {
+    color: #f6f6f6;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Nunito Sans';
+    padding-top: 7px;
+}
+section#seleccion-categoria .categoria-img span {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    color: var(--primario-cyan);
+    font-size: 18px;
+    font-weight: 600;
+}
+img.generacion {
+    max-width: 150px;
+    border-radius: 100px;
+    border: 3px solid var(--primario-cyan);
+    margin: 0 auto;
+    display: block;
+    /* padding-top: 20px; */
 }

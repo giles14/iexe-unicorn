@@ -11,7 +11,7 @@ Template Name: Becas
             <div class="mask flex-center">
               <div class="container">
                   <div class="row">
-                            <div class="col-md-12"><img class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/becas-slider.webp" alt=""></div>
+                            <div class="col-md-12"><img style="margin-top: -138px;width: 90%;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/becas-slider-iexe.webp" alt=""></div>
                   </div>
               </div>
             </div>
