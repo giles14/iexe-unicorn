@@ -11,8 +11,9 @@ Template Name: Admisiones
             <div class="mask flex-center">
               <div class="container">
                   <div class="row">
-                            <!-- <div class="col-md-3"><img class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/layer_1.png" alt=""></div>
-                            <div class="col-md-4"><img class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/layer_2.png" alt=""></div> -->
+                      <div class="col-md-12">
+                          <img style="margin-top: -50px;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones.webp" alt="">
+                      </div>
                   </div>
               </div>
             </div>
@@ -21,45 +22,25 @@ Template Name: Admisiones
             <div class="mask flex-center">
               <div class="container">
                   <div class="row">
-                                   
+                    <div class="col-md-12">
+                          <img style="margin-top: -95px;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones-pasos.webp" alt="">
+                      </div>           
                   </div>
               </div>
       
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="mask flex-center">
-              
-              <div class="container">
-                  <div class="row">
-            
-                  </div>
-              </div>
-      
-            </div>
-          </div>
-          <div class="carousel-item">
-              <div class="mask flex-center">
-                
-                <div class="container">
-                    <div class="row">
-                                   
-                    </div>
-                </div>
-        
-              </div>
-            </div>
         </div>
-        <a class="carousel-control-prev" href="#informacion-programa" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#informacion-programa" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> 
+        <!-- <a class="carousel-control-prev" href="#informacion-programa" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#informacion-programa" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>  -->
       </div>
 </section>
 <section id="navegacion">
     <div class="container">
         <div class="row no-gutters">
             <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">ADMISIONES</div></div></a></div>
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">PROMOCIONES</div></div></a></div>
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONVENIOS</div></div></a></div>
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="4"><div class="col d-table"><div class="contenido d-table-cell align-middle">CRÉDITOS ANTICIPADOS</div></div></a></div>
+            <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">PROCESO</div></div></a></div>
+            <div class="col"><a href="https://iexe.edu.mx/alianzas-academicas" target="_blank"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONVENIOS</div></div></a></div>
+            <!-- <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">CRÉDITOS ANTICIPADOS</div></div></a></div> -->
         </div>
     </div>
 </section>
@@ -269,7 +250,7 @@ Template Name: Admisiones
         </div>
     </div>
 </section>
-<section id="preguntas-frecuentes">
+<!-- <section id="preguntas-frecuentes">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -441,7 +422,7 @@ Template Name: Admisiones
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <?php get_template_part( 'template-parts/comunidad' ) ?>
 <?php get_template_part( 'template-parts/vinculos' ); ?>
 <?php get_footer(); ?>

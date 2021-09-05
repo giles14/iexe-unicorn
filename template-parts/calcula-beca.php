@@ -10,7 +10,7 @@
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-becas.webp" alt="" class="img-fluid">
             </div>
             <div class="col-md-6">
-                <p>Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.</p>
+                <p>Sigue unos sencillos pasos para calcular el monto de tu beca. ¡Tenemos una especialmente diseñada para ti!</p>
                 <div id="pasos-formulario" class="">
                     <ul id="progressbar">
                         <li class="active">Paso</li>
