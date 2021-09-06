@@ -35,7 +35,9 @@
         <div class="row">
             <div class="col-md-9">
                 <h1 class="post-titulo"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h1>
-                <span class="meta-blog-autor"><?php echo get_the_author() ?></span>
+                <?php if(!is_woocommerce() ) { ?>
+                    <span class="meta-blog-autor"><?php echo get_the_author() ?></span>
+                <?php } ?>
                 <div class="contenido-post">
                     <?php the_content(); ?>
                 </div>

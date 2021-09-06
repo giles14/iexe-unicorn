@@ -185,12 +185,23 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
     </div>
 </section>
+<?php if(is_page('855') || is_page('835') || is_page('734')){ ?>
+<section id="acreditacion-unitar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/acreditacion_cifal.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<?php } ?>
 <section id="plan-de-estudios">
     <div class="container">
         <div class="row">
             <div class="col-9">
                 <h1 class="titulo-plan">Plan de Estudios</h1>
-                <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                <h2 class="description">Clases enfocadas en conocimientos <strong>útiles</strong> para tu <strong>vida profesional.</strong></h2>
             </div>
             <div class="col-3">
                         <select <?php echo ($estiloPrograma == "Programas Tradicionales") ? '' : 'style="display:none"' ?>  id="seleccionperiodo" class="periodo">
@@ -263,7 +274,6 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
             <div class="col-md-6">
                 <div class="bloque-inscripcion">
                     <h2 class="titulo">Requisitos de admisión</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy:</p>
                     <ul class="requisitos">
                         <li>Acta de nacimiento original.</li>
                         <li>Copia de CURP.</li>
@@ -277,7 +287,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                     <h2 class="titulo">Proceso de inscripción</h2>
                     <p>El primer paso para ingresar al programa es completar el formulario de inscripción. Una vez recibido nos pondremos en contacto para coordinar la entrevista (online).</p>
                     <p class="text-center">
-                        <button type="submit" class="btn btn-primario mt-3">Quiero inscribirme</button>
+                        <a class="btn btn-primario mt-3" href="/admisiones">Quiero inscribirme</a>
                     </p>
                     
                 </div>

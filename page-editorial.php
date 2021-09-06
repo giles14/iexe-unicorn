@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h1 class="titulo">Best Sellers</h1>
-                <h2 class="description">Elige el programa en el que deseas inscribirte para ver todo el proceso</h2>
+                <h2 class="description">Elige entre algunos de nuestros libros más vendidos</h2>
             </div>
             <div class="col-md-3">
             </div>
@@ -16,24 +16,32 @@
         </div>
         <div class="row">
             <div class="col-md-3">
+                <a href="/producto/la-campana/">
                 <div class="categoria-img la-campana">
                     <h2>La Campaña</h2>
                 </div>
+                </a>
             </div>
             <div class="col-md-3">
+                <a href="/producto/crisis-viral/">
                 <div class="categoria-img crisis-viral">
                     <h2>Crisis Viral</h2>
                 </div>
+                </a>
             </div>
             <div class="col-md-3">
+                <a href="/diseno-de-politicas-publicas/">
                 <div class="categoria-img politicas-publicas">
                     <h2>Diseño de Políticas Públicas</h2>
                 </div>
+                </a>
             </div>
             <div class="col-md-3">
+                <a href="/producto/el-pais-de-los-elefantes-blancos/">
                 <div class="categoria-img elefantes-blancos">
                     <h2>El país de los elefantes blancos</h2>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -44,7 +52,7 @@
             <div class="col-md-8">
             <?php if (have_posts()) : while (have_posts()) : the_post();?>
             <h1 class="titulo-editorial" id="post-<?php the_ID(); ?>"><?php the_title();?></h1>
-            <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+            <h2 class="description">Nuestras obras se han convertido en libros de texto en universidades y de consulta obligada en instituciones públicas y privadas.</h2>
             <div class="entrytext">
             <?php the_content(); ?>
             </div>

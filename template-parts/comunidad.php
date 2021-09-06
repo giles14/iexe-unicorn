@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="row">
-                <a href="" class="descubre-mas azul-primario-color">Descubre más</a>
+                <a href="/comunidad" class="descubre-mas azul-primario-color">Descubre más</a>
             </div>
         </div>
     </section>

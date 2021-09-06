@@ -127,7 +127,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12"><h1 class="titulo">Noticia destacada IEXE</h1></div>
-                <div class="col-md-12"><h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2></div>
+                <div class="col-md-12"><h2 class="description">Nuestra entrada más destacada de la semana</h2></div>
             </div>
             <div class="row">
             <?php 
@@ -153,7 +153,7 @@
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor.png" alt="" class="autor-foto" style="border: 1px solid cyan; border-radius: 40px;">
                             <div class="meta-informacion">
                                 <span class="nombre"><?php echo get_the_author() ?></span>
-                                <span class="redes">@johndoe</span>
+                                <span class="redes">@Migueliexe</span>
                             </div>
                         </div>
                         <div class="resumen-destacada">
@@ -187,7 +187,7 @@
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-blog.webp" alt="" class="img-fluid">
             </div>
             <div class="col-md-6">
-                <p class="interes-programa">Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.</p>
+                <p class="interes-programa">¡Seguimos creciendo y queremos que tú seas parte de esto!<br> Descubre como IEXE tiene presencia nacional e internacional.</p>
                     <form id="contacto">
                         <div class="form-group">
                           <label for="nombre">Nombre completo*</label>
@@ -218,6 +218,14 @@
         </div>
     </div>
 </section>
-    <?php get_template_part( 'template-parts/anuncios'); ?>
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/comunidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_blog.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <?php get_template_part( 'template-parts/vinculos'); ?>
     <?php get_footer( ); ?>

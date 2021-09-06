@@ -2071,6 +2071,16 @@ a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart {
     box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
     border: 0px;
 }
+h2.woocommerce-loop-product__title {
+    text-align: center;
+}
+span.price {
+    text-align: center;
+}
+a.button.product_type_variable {
+    width: 100%;
+    text-align: center;
+}
 
 /*
     Nosotros
@@ -2110,9 +2120,9 @@ section#el-futuro strong {
 section#nuestra-identidad {
     background: url(../img/sombra-contenedor.webp);
     background-position-x: center;
-    background-position-y: 130px;
+    background-position-y: 200px;
     background-repeat: no-repeat;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 section#nuestra-historia {
     background: url(../img/sombra-contenedor-inversa.webp);
@@ -2140,7 +2150,12 @@ section#nuestra-historia {
     margin-top: -64px;
     background: none;
 }
-
+div#mapa-iexe {
+    margin-top: 80px;
+}
+#nosotros section#vinculos {
+    margin-bottom: 64px;
+}
 /*
 
 Comunidad
@@ -2193,3 +2208,15 @@ img.generacion {
 .buffer-25{
     margin-top: 25px;
 }
+.link-regresar {
+    text-align: right;
+    width: 88%;
+    padding-top: 23px;
+    margin-bottom: -23px;
+}
+:target:before {
+    content:"";
+    display:block;
+    height:90px;
+    margin:-90px 0 0;
+    }

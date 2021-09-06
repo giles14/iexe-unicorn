@@ -238,7 +238,15 @@ Template Name: Admisiones
         </div>
     </div>
 </section> -->
-<?php get_template_part( 'template-parts/anuncios' ); ?>
+<section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
 <?php get_template_part( 'template-parts/calcula-beca'); ?>
 <section id="revalidacion">
     <div class="container">
@@ -250,7 +258,7 @@ Template Name: Admisiones
         </div>
     </div>
 </section>
-<!-- <section id="preguntas-frecuentes">
+<section id="preguntas-frecuentes">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -259,12 +267,11 @@ Template Name: Admisiones
         </div>
         <div class="row">
             <div class="col-md-4">
-                <p class="preguntas">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+                <p class="preguntas">Conoce toda la información necesaria para pertenecer a nuestra <strong>comunidad estudiantil.</strong></p>
                 <h2 class="tipo-beca">Categorías</h2>
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="opcion-tipo-becas active" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Becas</a>
-                    <a class="opcion-tipo-becas" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Convenios</a>
-                    <a class="opcion-tipo-becas" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Créditos Anticipados</a>
+                    <a class="opcion-tipo-becas active" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Generales</a>
+                    <a class="opcion-tipo-becas" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Titulación</a>
                 </div>
             </div>
             <div class="col-md-8">
@@ -275,14 +282,14 @@ Template Name: Admisiones
                                     <div class="card-header" id="headingOne">
                                     <h2 class="mb-0">
                                         <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            ¿Encabezado o título de la pregunta que se debe responder?
+                                            ¿Cómo es la experiencia de estudiar en línea?
                                             <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
                                         </button>
                                     </h2>
                                     </div>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.</p>
+                                        <p>Tomarás clases a través de una plataforma interactiva, abierta las <strong>24 horas del día</strong>, los <strong>365 días del año.</strong> Además, a través de ella, podrás tener interacción con docentes excepcionales.</p>
                                     </div>
                                     </div>
                                 </div>
@@ -290,14 +297,14 @@ Template Name: Admisiones
                                     <div class="card-header" id="headingTwo">
                                     <h2 class="mb-0">
                                         <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        ¿Encabezado o título de la pregunta que se debe responder?
+                                        ¿Todos sus programas cuentan con validación por parte de la SEP?
                                         <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
                                         </button>
                                     </h2>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.</p>
+                                        <p>Así es, puedes consultar el <strong>Reconocimiento de Validez Oficial de Estudios (RVOE)</strong> en: www.sirvoes.sep.gob.mx</p>
                                     </div>
                                     </div>
                                 </div>
@@ -305,14 +312,44 @@ Template Name: Admisiones
                                     <div class="card-header" id="headingThree">
                                     <h2 class="mb-0">
                                         <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        ¿Encabezado o título de la pregunta que se debe responder?
+                                        ¿Es necesario tener conexión a internet?
                                         <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
                                         </button>
                                     </h2>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.</p>
+                                        <p>Para ingresar a la plataforma es necesario tener conexión a internet, sin embargo existe <stron>material descargable</strong> para ser utilizado <strong>sin conexión.</strong></p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿Me pueden revalidar materias?
+                                        <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
+                                        </button>
+                                    </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Sí, <strong>comunícate con nuestros(os) asesores(as)</strong> para brindarte atención personalizada.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFive">
+                                    <h2 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿Estudiar en línea es accesible?
+                                        <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
+                                        </button>
+                                    </h2>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p>Sí, contamos con un sistema <strong>flexible de pagos</strong> y un excelente <strong>plan de becas.</strong></p>
                                     </div>
                                     </div>
                                 </div>
@@ -324,44 +361,14 @@ Template Name: Admisiones
                                     <div class="card-header" id="headingOne-2">
                                     <h2 class="mb-0">
                                         <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne-2" aria-expanded="false" aria-controls="collapseOne-2">
-                                            ¿Encabezado o título de la pregunta que se debe responder?
+                                            ¿Cuáles son las opciones de titulación?
                                             <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
                                         </button>
                                     </h2>
                                     </div>
                                     <div id="collapseOne-2" class="collapse" aria-labelledby="headingOne-2" data-parent="#accordion-2">
                                     <div class="card-body">
-                                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.</p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo-2">
-                                    <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo-2" aria-expanded="false" aria-controls="collapseTwo-2">
-                                        ¿Encabezado o título de la pregunta que se debe responder?
-                                        <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
-                                        </button>
-                                    </h2>
-                                    </div>
-                                    <div id="collapseTwo-2" class="collapse" aria-labelledby="headingTwo-2" data-parent="#accordion-2">
-                                    <div class="card-body">
-                                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.</p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree-2">
-                                    <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree-2" aria-expanded="false" aria-controls="collapseThree-2">
-                                        ¿Encabezado o título de la pregunta que se debe responder?
-                                        <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
-                                        </button>
-                                    </h2>
-                                    </div>
-                                    <div id="collapseThree-2" class="collapse" aria-labelledby="headingThree-2" data-parent="#accordion-2">
-                                    <div class="card-body">
-                                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.</p>
+                                    <p>Contamos con múltiples opciones de titulación. Concluye tu programa y elige la mejor opción para ti.</p><p>Opciones de titulación (Licenciatura):<br>I.- Elaboración de tesis con sustento de examen profesional<br>II.- Memoria de experiencia profesional con sustentación de examen profesional<br>III.- Escolaridad por promedio mínimo general de nueve punto cero (9.0)<br>IV.- Obtención de título profesional de licenciatura por estudios de maestría</p><p>Opciones de titulación (Maestría):<br>I.- Elaboración de tesis con sustento de examen profesional<br>II.- Escolaridad por promedio mínimo general de nueve punto cero (9.0)<br>III.- Obtención de grado de maestría por estudios de doctorado</p><p>Opciones de titulación (Doctorado):<br>I.- Elaboración de tesis con sustento de examen profesional</p>
                                     </div>
                                     </div>
                                 </div>
@@ -422,7 +429,7 @@ Template Name: Admisiones
             </div>
         </div>
     </div>
-</section> -->
+</section>
 <?php get_template_part( 'template-parts/comunidad' ) ?>
 <?php get_template_part( 'template-parts/vinculos' ); ?>
 <?php get_footer(); ?>

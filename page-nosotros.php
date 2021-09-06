@@ -39,7 +39,7 @@
                 <p>¡Bienvenido a IEXE Universidad, será un orgullo tenerte como alumno!</p>
             </div>
             <div class="col-md-1"></div>
-            <div class="link-regresar"><a href="top">Regresar</a></div>
+            <div class="link-regresar"><a href="#top">Regresar</a></div>
         </div>
     </div>
 </section>
@@ -84,6 +84,7 @@
                 </div>
                 <div class="col-md-4">
                 </div>
+                <div class="link-regresar"><a href="#top">Regresar</a></div>
             </div>  
         </section>
         
@@ -107,7 +108,7 @@
             </div>
             <div class="col-md-1">
             </div>
-
+            <div class="link-regresar"><a href="#top">Regresar</a></div>
         </div>
     </div>
 </section>
@@ -130,5 +131,37 @@
         </div>
     </div>
 </section>
-<?php get_template_part( 'template-parts/botones-accion'); ?>
+<section id="mapa-iexe">
+<div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1 class="titulo">¿Donde nos ubicamos?</h1>
+            <h2 class="description">Encuentranos y resuelve todas tus dudas en Blvd. Esteban de Antuñano #2702, 72160 Puebla de Zaragoza, México.</h2>
+        </div>
+            <div class="col-md-12">
+            <iframe
+                        width="1128"
+                        height="550"
+                        style="border:0"
+                        loading="lazy"
+                        allowfullscreen
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6KwiDd1Uxuo9l7clbobNoOftFqPqHsAM
+                            &q=IEXE+Escuela">
+                        </iframe>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_nosotros.webp" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+<?php // get_template_part( 'template-parts/botones-accion'); ?>
+<?php get_template_part('template-parts/vinculos') ?>
 <?php get_footer(); ?>
