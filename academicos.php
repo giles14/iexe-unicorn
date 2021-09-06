@@ -297,7 +297,15 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
 </section>
 <?php get_template_part( 'template-parts/botones-accion'); ?>
 <?php get_template_part( 'template-parts/calcula-beca'); ?>
-<?php get_template_part( 'template-parts/anuncios' ); ?>
+<section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="/admisiones"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_programas_academicos.webp" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>

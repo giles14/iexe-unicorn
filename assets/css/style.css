@@ -1367,6 +1367,7 @@ div#social {
     letter-spacing: 0.14px;
     font-weight: 300;
     line-height: 22px;
+    height: 45px;
 }
 .row.beca{
     margin-bottom: 40px;
@@ -1837,7 +1838,7 @@ section#licenciaturas, section#maestrias, section#doctorado, section#masters, se
 , rgba(206,224,248,1) 0%, rgba(206,224,248,1) 100%);
 }
 #programas section#vinculos {
-    background: #cee0f8;
+    /* background: #cee0f8; */
     margin-top: unset;
     padding-top: 64px;
     padding-bottom: 64px;
@@ -2214,9 +2215,49 @@ img.generacion {
     padding-top: 23px;
     margin-bottom: -23px;
 }
+#navegacion a:hover {
+    color: var(--primario-cyan);
+    text-decoration: unset;
+}
+.menu-navegacion a:hover {
+    font-weight: 800;
+}
+#info-primaria a:hover {
+    text-decoration: none;
+}
+section#todos-los-programas-academicos\ buffer-60 {
+    margin-top: 120px;
+}
 :target:before {
     content:"";
     display:block;
     height:90px;
     margin:-90px 0 0;
     }
+
+/*
+Login
+*/
+.login {
+    height: 100%;
+    background: var(--primario-azul);
+    position: fixed;
+}
+.formulario-login input[type="text"], .formulario-login input[type="password"] {
+    width: 72%;
+    /* margin: 0px 70px; */
+}
+.formulario-login form {
+    width: 72%;
+    margin: 0 auto;
+}
+.formulario-login label {
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Nunito Sans';
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    color: #f6f6f6;
+    font-weight: 300;
+}

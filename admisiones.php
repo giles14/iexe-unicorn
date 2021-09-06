@@ -5,7 +5,7 @@ Template Name: Admisiones
 ?> 
 <?php get_header( ); ?>
 <section id="header">
-    <div id="informacion-programa" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="informacion-programa" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="mask flex-center">

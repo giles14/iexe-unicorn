@@ -95,9 +95,9 @@
     </section>
     <div id="mySidenav" class="sidenav animate__bounceInRight">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Cerrar <span>&times;</span></a>
-        <div class="logo">
+        <a href="https://iexe.xyz/"><div class="logo">
             <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/logo.svg" alt="Logo IEXE">
-        </div>
+        </div></a>
         <div class="menu-navegacion">
             <a class="button-primary">MENÚ</a>
             <a href="/nosotros">Acerca de IEXE</a>
@@ -156,13 +156,17 @@
     });
 </script>
 <script>
-    $(window).scroll(function() {
-    if ($(this).scrollTop() > 120) {
+    if($('#body#oferta\ educativa').length){
         $('.navbar').addClass('sticky');
-    }else{
-        $('.navbar').removeClass('sticky');
-    }
-});
+    }else {
+        $(window).scroll(function() {
+        if ($(this).scrollTop() > 120) {
+            $('.navbar').addClass('sticky');
+        }else{
+            $('.navbar').removeClass('sticky');
+        }
+    });
+}
 </script>
 <script>
     var estado_menu = false;

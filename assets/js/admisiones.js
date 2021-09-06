@@ -23,5 +23,12 @@ $(document).ready(function(){
         $('#doctorado .los-requisitos').toggle();
         $(this).parents("#doctorado .el-formulario").toggle();
     });
+    $("section#navegacion a").click(function(){
+        $("section#navegacion a").removeClass('active');
+        $(this).addClass('active');
 
+    });
+    $('#informacion-programa').carousel({
+        interval: false,
+     });
 });

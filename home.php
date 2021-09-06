@@ -5,13 +5,16 @@
                 <div id="carouselExampleControls" style="height: 100vh" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-licenciaturas.webp" alt="First slide">
+                            <a href="/nosotros/#el-futuro"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="First slide"></a>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Second slide">
+                            <a href="/becas"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Second slide"></a>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-becas.webp" alt="Third slide">
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-doctorado.webp" alt="Third slide"></a>
+                      </div>
+                      <div class="carousel-item">
+                            <a href="/oferta-educativa/#diplomados"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-diplomados.webp" alt="Third slide"></a>
                       </div>
                       <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
@@ -38,7 +41,7 @@
             </video>
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <a href="/oferta-academica">
+                    <a href="/oferta-educativa">
                     <div class="boton-slide d-flex">
                         <span>Estudiar a tu ritmo</span>
                     </div>
@@ -71,7 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="titulo">Oferta Educativa</h1>
+                    <a href="/oferta-educativa/"><h1 class="titulo">Oferta Educativa</h1></a>
                     <h2 class="description">Conoce nuestros programas 100% en línea. ¡Desarróllate, especialízate y concreta tu futuro profesional!</h2>
                 </div>
             </div>
