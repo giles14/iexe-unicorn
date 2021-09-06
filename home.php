@@ -38,15 +38,21 @@
             </video>
             <div class="row">
                 <div class="col-12 col-md-4">
+                    <a href="/oferta-academica">
                     <div class="boton-slide d-flex">
                         <span>Estudiar a tu ritmo</span>
                     </div>
+                    </a>
+                    <a href="/admisiones">
                     <div class="boton-slide d-flex">
                         <span>Inscripción en línea</span>
                     </div>
+                    </a>
+                    <a href="/becas">
                     <div class="boton-slide last d-flex">
                         <span>Becas a tu medida</span>
                     </div>
+                    </a>
 
                 </div>
                 <div class="col-md-5">
@@ -190,8 +196,8 @@
                             <p class="consejos">Tips para mis compañeros de nuevo ingreso</p>
                         </div>
                     </div>
-                    <video width="443" height="579" muted loop>
-                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx1.m4v" type="video/mp4" muted>
+                    <video width="443" height="579" loop>
+                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx1.m4v" type="video/mp4">
                         El navegador no acepta video
                   </video>
 
@@ -234,6 +240,15 @@
     </section>
     <?php get_template_part( 'template-parts/interes'); ?>
     <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe'); ?>
+    <section id="banners">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/admisiones"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
      <section id="blog">
         <div class="overlay-img">
         <div class="container">
@@ -251,7 +266,7 @@
             </div>
             <div class="row quick-quit">
                     <div class="col-md-1 align-self-center">
-                        <div class="boton-izquierdo"><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-izquierda.png" alt=""></a></div>
+                        <div class="boton-izquierdo"><a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-izquierda.png" alt=""></a></div>
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="imagen-blog">
@@ -262,15 +277,15 @@
                         <div class="autor">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor.png" alt="" class="autor-foto">
                             <div class="meta-informacion">
-                                <span class="nombre">Name Surname</span>
-                                <span class="redes">@johndoe</span>
+                                <span class="nombre">Miguel Hdz</span>
+                                <span class="redes">@migueliexe</span>
                             </div>
                             
                         </div>
                         <div class="post">
-                            <h2 class="titulo">Subtítulo de la noticia destacada</h2>
+                            <a href="/destacado/derechos-de-la-comunidad-lgbt-el-camino-hacia-una-politica-de-igualdad-y-diversidad/"><h2 class="titulo">Derechos de la comunidad LGBT+; el camino hacia una política</h2></a>
                             <div class="entrada">
-                                <p>Lorem ipsum dolor sit amet onse tetur sadipscing elitr dolor sit amet onse tetur sadips ipsum dolor sit amet onse</p>
+                                <a href="/destacado/derechos-de-la-comunidad-lgbt-el-camino-hacia-una-politica-de-igualdad-y-diversidad/"><p> Políticas públicas y diversidad: el caso de la comunidad LGBT+ Algunos antecedentes históricos de lucha…</p></a>
                             </div>
                             <div class="iconos">
                                 <i class="fas fa-heart primero"></i>90<i class="fas fa-comment-alt"></i>78<i class="fas fa-sync-alt"></i>12<i class="fas fa-bookmark ultimo"></i>34
@@ -278,7 +293,7 @@
                         </div>
                     </div>
                     <div class="col-md-1 align-self-center">
-                        <div class="boton-derecha"><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-derecha.png" alt=""></a></div>
+                        <div class="boton-derecha"><a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-derecha.png" alt=""></a></div>
                     </div>
 
             </div>

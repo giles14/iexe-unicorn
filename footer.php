@@ -145,11 +145,14 @@
 <script>
     $(".my-video").mouseenter(function(){
         $(this).find("video").addClass('activo');
-        $(this).find('video').trigger('play').prop('muted', true);
+        $(this).find('video').trigger('play').prop('muted', false);
     });
     $(".my-video").mouseleave(function(){
         $(this).find("video").removeClass('activo');
         $(this).find('video').trigger('pause');
+    });
+    $(".my-video").click(function(){
+        $(this).find('video').trigger('play').prop('muted', false);
     });
 </script>
 <script>

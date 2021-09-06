@@ -291,9 +291,19 @@ Template Name: Becas
         </div>
     </div>
 </section>
-<?php get_template_part( 'template-parts/anuncios' ); ?>
 
-<section id="preguntas-frecuentes">
+<section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="/admision"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_becas.webp" alt=""></a>
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="preguntas-frecuentes">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -465,8 +475,17 @@ Template Name: Becas
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
+<section id="banners">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/admisiones"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer( ); ?>

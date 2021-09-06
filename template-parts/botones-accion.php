@@ -6,7 +6,7 @@
                     <div class="boton-accion-contenido ">
                       <h4>Becas</h4>
                       <p>Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding.</p>
-                      <a href=""><span class="css-sprite-flecha-bloc flecha-ir"></span><!-- <img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">--></a>
+                      <a href="/becas"><span class="css-sprite-flecha-bloc flecha-ir"></span><!-- <img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">--></a>
                     </div>
                   </div>
             </div>
@@ -15,7 +15,7 @@
                     <div class="boton-accion-contenido">
                       <h4>Asesor en línea</h4>
                       <p>Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding.</p>
-                      <a href=""><span class="css-sprite-flecha-bloc flecha-ir"></span><!-- <img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">--></a>
+                      <a href="/admision"><span class="css-sprite-flecha-bloc flecha-ir"></span><!-- <img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">--></a>
                     </div>
                   </div>
             </div>
@@ -24,7 +24,7 @@
                     <div class="boton-accion-contenido">
                       <h4>Admisión</h4>
                       <p>Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding.</p>
-                      <a href=""><span class="css-sprite-flecha-bloc flecha-ir"></span><!--<img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">--></a>
+                      <a href="/admision"><span class="css-sprite-flecha-bloc flecha-ir"></span><!--<img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">--></a>
                     </div>
                   </div>
             </div>
