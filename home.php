@@ -33,7 +33,7 @@
         </div>
         
     </section>
-    <section id="info-primaria">
+    <section class="d-none d-sm-block" id="info-primaria">
         <div class="container" style="position: relative;">
             <video width="1140" height="420" autoplay muted loop style="position: absolute;top: 0;left: 0;border-radius: 15px;">
                         <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/video4.m4v" type="video/mp4" muted>
@@ -247,7 +247,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/admisiones"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                    <a href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
                 </div>
             </div>
         </div>
@@ -277,7 +277,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-5">
-                        <div class="autor">
+                        <div class="autor d-none d-sm-block">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor.png" alt="" class="autor-foto">
                             <div class="meta-informacion">
                                 <span class="nombre">Miguel Hdz</span>

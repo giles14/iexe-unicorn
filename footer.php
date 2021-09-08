@@ -3,11 +3,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img style="width:60%" class="logo-abajo mx-auto d-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical.svg" alt="">
+                    <img class="logo-abajo mx-auto img-fluid 	d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.svg"  alt="">
+                    <img style="width:60%" class="logo-abajo mx-auto  d-none d-lg-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical.svg" alt="">
                     <!-- <span class="redes-sociales">SÍGUENOS EN</span> -->
                     
                 </div>
-                <div class="col-md-2">
+                <div class="col-6 col-md-2 order-2 order-lg-1">
                     <a class="menu" href="">NOSOTROS</a>
                     <?php
                     wp_nav_menu( array(
@@ -24,7 +25,7 @@
                         <li><a href="">Sello editorial</a></li>
                     </ul> -->
                 </div>
-                <div class="col-md-2">
+                <div class="col-6 col-md-2 order-3 order-lg-2">
                     <a class="menu" href="">PROCESOS</a>
                     <?php
                     wp_nav_menu( array(
@@ -41,7 +42,7 @@
                         <li><a href="">Bolsa de Trabajo</a></li>
                     </ul> -->
                 </div>
-                <div class="col-md-2">
+                <div class="col-6 col-md-2 order-1 order-lg-3">
                     <a class="menu" href="">OFERTAS</a>
                     <?php
                     wp_nav_menu( array(
@@ -59,7 +60,7 @@
                         <li><a href="">Capacitaciones</a></li>
                     </ul> -->
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 order-4">
                     <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a class="telefono-whatsapp" href="https://bit.ly/2WgHHhn">222-286-84-64</a></p>
                     <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
                     <!-- <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a> -->

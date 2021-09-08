@@ -50,6 +50,10 @@ function agregar_estilos_tema(){
         wp_enqueue_script( 'iexe-unicorn-admisiones');
         wp_enqueue_style( 'iexe-unicorn-admisiones-estilo');
     }
+    if(is_page_template('page-busqueda.php')){
+        wp_enqueue_style( 'live-search-select-style', 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css', 'bootstrap', '1.13.14', 'all' );
+        wp_enqueue_script( 'live-search-select', 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js', 'jquery', '1.13.14', true );
+    }
 
 }
 add_action( 'wp_enqueue_scripts', 'agregar_estilos_tema' );

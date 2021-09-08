@@ -2261,3 +2261,46 @@ Login
     color: #f6f6f6;
     font-weight: 300;
 }
+@media (max-width: 576px) {  
+    #pie a.menu {
+        margin-top: 8px;
+        text-underline-offset: unset;
+        text-align: center;
+        width: 100%;
+        text-decoration: unset;
+        margin-bottom: 4px;
+    }
+    p.telefono-mexico {
+        text-align: center;
+    }
+    p.telefono-puebla {
+        text-align: center;
+    }
+    p.direccion {
+        text-align: center;
+    }
+    #pie li {
+        text-align: center;
+    }
+    ul#menu-footer-bottom {
+        padding-inline-start: 8px;
+        margin: 0 auto;
+    }
+    .post {
+        background: white;
+        padding: 9px 12px 45px 12px;
+        border-radius: 15px;
+        opacity: 0.96;
+        color: var(--primario-azul);
+        margin-top: -25px;
+        margin-left: unset;
+        width: unset;
+    }
+    section#blog .entrada p {
+        line-height: 26px;
+    }
+    .autor {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}

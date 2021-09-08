@@ -1,7 +1,4 @@
-<?php /* Template Name: Editorial */ ?>
 <?php get_header( ); ?>
-<div id="content" class="widecolumn">
-
     <div class="container">
         <div class="row">
             <div class="col-md-12">
