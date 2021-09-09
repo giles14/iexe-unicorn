@@ -1,4 +1,4 @@
-<section id="botones-accion">
+<section class="d-none d-sm-block" id="botones-accion">
     <div class="container">
         <div class="row">
             <div class="col-md-4">

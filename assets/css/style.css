@@ -65,7 +65,9 @@ section#comunidad {
 section#comunidad .foto-grande{
     max-height: 372px;
 }
-
+section#comunidad .button-primary{
+    max-width: unset;
+}
 .boton-accion {
     position: relative;
 }
@@ -1082,6 +1084,7 @@ ul.programas-academicos {
     position: absolute;
     top: 52px;
     left: 88px;
+    display: none;
 }
 .menu-navegacion a {
     /* margin-bottom: 32px; */
@@ -1188,9 +1191,9 @@ section#header a.button-primary {
     max-width: 390px;
     margin: unset;
 }
-section#header .container{
+/* section#header .container{
     padding-top: 178px;
-}
+} */
 
 a.notorio {
     text-decoration: underline;
@@ -2206,6 +2209,9 @@ img.generacion {
     display: block;
     /* padding-top: 20px; */
 }
+.el-collage{
+    height: 180px;
+}
 .buffer-25{
     margin-top: 25px;
 }
@@ -2302,5 +2308,114 @@ Login
     .autor {
         margin-top: 8px;
         margin-bottom: 8px;
+    }
+    section#blog a.button-primary {
+        margin: unset;
+    }
+    .bloque-foto {
+        max-height: 167px;
+    }
+    .el-collage{
+        height: 360px;
+    }
+    .row.quick-quit {
+        margin-top: 48px;
+    }
+    section#blog .container {
+        background: unset;
+    }
+    #licenciaturas .row.contenedor-programa {
+        background: var(--primario--azul-obscuro);
+    }
+    h1.nombre-programa {
+        font-size: 24px;
+    }
+    .contenedor-programa i.cyan {
+        font-size: 1em;
+    }
+    .contenedor-programa ul {
+        margin-bottom: 0;
+        padding-bottom: 0px;
+        padding-inline-start: 14px;
+    }
+    .contenedor-programa ul li a {
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 34px;
+    }
+    .row.contenedor-programa {
+        padding: 20px 22px;
+    }
+    section#maestrias .contenedor-programa ul li a {
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 32px;
+    }
+    #maestrias .row.contenedor-programa,#doctorado .row.contenedor-programa,#masters .row.contenedor-programa,#diplomados .row.contenedor-programa,#capacitaciones .row.contenedor-programa {
+        background: var(--primario--azul-obscuro)
+    }     
+    section#diplomados .contenedor-programa ul li a {
+        font-size: 16px;
+        letter-spacing: 0.27px;
+        line-height: 33px;
+    }
+    .row.buffer-60 {
+        margin-top: 16px;
+    }
+    div#desc-programa {
+        display: flex;
+        flex-wrap: inherit;
+    }
+    
+    .bloque-inscripcion p, .bloque-inscripcion li {
+        margin: 0 20px;
+    }
+    .boton-accion.becas {
+        margin-bottom: unset;
+    }
+    .bloque-inscripcion {
+        padding-top: unset;
+    }
+    ul.requisitos {
+        margin-bottom: 64px;
+    }
+    section#calcula-beca {
+        margin-top: 64px;
+    }
+    section#comunidad {
+        margin-top: 64px;
+    }
+    #mySidenav .logo {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+    }
+    .sidenav .closebtn {
+        top: 14px;
+        right: 18px;
+    }
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+        padding-right: 13px!important;
+        padding-left: 13px!important;
+    }
+    ul.programas-academicos li {
+        display: list-item;
+        float: unset;
+    }
+    ul.programas-academicos {
+        margin-bottom: 2vhpx;
+        height: unset;
+        width: 20rem;
+        margin-left: 30px
+    }
+    .menu-navegacion {
+        margin: 0 0px 0 30px;
+        width: 100%;
+    }
+    .sidenav {
+        padding: unset;
+    }
+    a.menu-movil {
+        margin-left: 30px;
     }
 }

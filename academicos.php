@@ -18,7 +18,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
               <div class="container">
                   <div class="row">
                       <div id="desc-programa">
-                          <div class="col-md-6">
+                          <div class="col-12 col-md-6">
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
@@ -31,14 +31,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                               </p>
                                 <?php } ?>
                           </div>
-                          <div class="col-md-2">
-                            <?php
-                              //if ( !empty( $imagenAsesor ) ): ?>
-                                <!-- <img class="asesor" src="<?php // echo esc_url($imagenAsesor['url']); ?>" alt="<?php // echo esc_attr($imagenAsesor['alt']); ?>" /> -->
-                            <?php // endif; ?>
-                              <!-- <img class="asesor" src="<?php // echo get_template_directory_uri() ?>/assets/img/foto_coordinador.webp" alt=""> -->
-                          </div>
-                          <div class="col-md-4">
+                          <div class="col-md-4 offset-md-2 d-none d-sm-block">
                               <div class="formulario">
                                   <div class="cabecera">
                                       <h1 class="interes">¿Estás interesado?</h1>
@@ -77,7 +70,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
               <div class="container">
                   <div class="row">
                       <div id="desc-programa">
-                          <div class="col-md-6">
+                          <div class="col-12 col-md-6">
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
@@ -89,10 +82,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                               </div>
               
                           </div>
-                          <div class="col-md-2">
-                            
-                          </div>
-                          <div class="col-md-4">
+                          <div class="col-md-4 offset-md-2 d-none d-sm-block">
                               <!--  -->
                               <?php
                               if ( !empty( $imagenAsesor ) ): ?>
@@ -112,7 +102,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                 <div class="container">
                     <div class="row">
                         <div id="desc-programa">
-                            <div class="col-md-6">
+                            <div class="col-12 col-md-6">
                                 <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                                 <a class="button-primary"><?php the_title() ?></a>
                                 <div class="descripcion-programa">
@@ -120,10 +110,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                                 </div>
                 
                             </div>
-                            <div class="col-md-2">
-                                
-                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 offset-md-2 d-none d-sm-block">
                                 <!--  -->
                                 <?php
                                 if ( !empty( $imagenAsesor ) ): ?>
@@ -190,7 +177,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/acreditacion_cifal.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/acreditacion_cifal.webp" alt="">
             </div>
         </div>
     </div>
@@ -199,11 +186,11 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
 <section id="plan-de-estudios">
     <div class="container">
         <div class="row">
-            <div class="col-9">
+            <div class="col-12 col-md-9">
                 <h1 class="titulo-plan">Plan de Estudios</h1>
                 <h2 class="description">Clases enfocadas en conocimientos <strong>útiles</strong> para tu <strong>vida profesional.</strong></h2>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-3">
                         <select <?php echo ($estiloPrograma == "Programas Tradicionales") ? '' : 'style="display:none"' ?>  id="seleccionperiodo" class="periodo">
                             <!-- <option value="bloque-materia" selected>Todas</option> -->
                             <?php while ($unicorn_contador <= get_field('cantidad_de_periodos'))  {  ?>
@@ -301,7 +288,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <a href="/admisiones"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_programas_academicos.webp" alt=""></a>
+                <a href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_programas_academicos.webp" alt=""></a>
             </div>
         </div>
     </div>

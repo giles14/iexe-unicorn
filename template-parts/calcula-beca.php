@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-becas.webp" alt="" class="img-fluid">
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-becas.webp" alt="" class="img-fluid d-none d-sm-block">
             </div>
             <div class="col-md-6">
                 <p>Sigue unos sencillos pasos para calcular el monto de tu beca. ¡Tenemos una especialmente diseñada para ti!</p>

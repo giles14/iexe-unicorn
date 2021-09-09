@@ -101,8 +101,8 @@
         </div></a>
         <div class="menu-navegacion">
             <a class="button-primary">MENÚ</a>
-            <a href="/nosotros">Acerca de IEXE</a>
-            <a href="/oferta-educativa">Programas académicos</a>
+            <a class="menu-movil" href="/nosotros">Acerca de IEXE</a>
+            <a class="menu-movil" href="/oferta-educativa">Programas académicos</a>
                 <ul class="programas-academicos">
                     <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
                     <li><a href="/oferta-educativa/#masters">Másters</a></li>
@@ -111,9 +111,9 @@
                     <li><a href="/oferta-educativa/#capacitaciones">Capacitaciones</a></li>
                     <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
                 </ul>
-            <a href="/admisiones">Admisiones</a>
-            <a href="/becas">Becas</a>
-            <a href="/comunidad">IEXE Comunidad</a>
+            <a class="menu-movil" href="/admisiones">Admisiones</a>
+            <a class="menu-movil" href="/becas">Becas</a>
+            <a class="menu-movil" href="/comunidad">IEXE Comunidad</a>
         </div>
     </div>
     
@@ -169,17 +169,63 @@
     });
 }
 </script>
-<script>
+<script>    
     var estado_menu = false;
     function openNav() {
-      document.getElementById("mySidenav").style.width = "66%";
+        var w = window.innerWidth;
+        if(w > 800){
+            document.getElementById("mySidenav").style.width = "66%";
+        }else {
+            document.getElementById("mySidenav").style.width = "100%";
+            disableScroll();
+        }
+      
       estado_menu = true;
     }
     
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
       estado_menu = false;
+      enableScroll();
     }
+
+    function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+    get: function () { supportsPassive = true; } 
+  }));
+} catch(e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false);
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
 </script>
 <?php wp_footer(  )?>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

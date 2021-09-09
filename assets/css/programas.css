@@ -264,6 +264,11 @@ img.asesor {
 #informacion-programa .container{
     padding-top: 178px;
 }
+@media (max-width: 576px) {
+#informacion-programa .container {
+  padding-top: 90px;
+}
+}
 a.carousel-control-prev {
     display: none;
 }

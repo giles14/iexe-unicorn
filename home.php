@@ -5,16 +5,19 @@
                 <div id="carouselExampleControls" style="height: 100vh" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                            <a href="/nosotros/#el-futuro"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="First slide"></a>
+                            <a href="/nosotros/#el-futuro"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/becas"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Second slide"></a>
+                            <a href="/becas"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-doctorado.webp" alt="Third slide"></a>
+                            <a href="/oferta-educativa/#diplomados"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/#diplomados"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-diplomados.webp" alt="Third slide"></a>
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
+                      </div>
+                      <div class="carousel-item">
+                            <a href="/oferta-educativa/#diplomados"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-diplomados.webp" alt="Diplomado slide"></a>
                       </div>
                       <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
@@ -242,6 +245,7 @@
 
     </section>
     <?php get_template_part( 'template-parts/interes'); ?>
+    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_recta.png" alt="" class="img-fluid miniban d-block d-sm-none">
     <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe'); ?>
     <section id="banners">
         <div class="container">
@@ -257,13 +261,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-10 offset-1">
-                    <div class="bloque-moderno izquierda">
-                        <div class="bloque-azul">    
+                     <div class="bloque-moderno izquierda">
+                        <!--<div class="bloque-azul">    
                         </div>
                             <div class="bloque-neon">
                                 <h3 class="titulos">Hablemos de...</h3>
-                            </div>
+                            </div> -->
+                            <a class="button-primary">Hablemos de...</a>
                     </div>
+                    
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -304,4 +310,10 @@
         </div>
     </section>
     <?php get_template_part( 'template-parts/vinculos'); ?>
+    <style>
+        .miniban{
+            margin: 10px 0px;
+            padding: 0px 12px;
+        }
+    </style>
     <?php get_footer( ); ?>
