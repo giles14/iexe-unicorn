@@ -43,7 +43,7 @@
                     </ul> -->
                 </div>
                 <div class="col-6 col-md-2 order-1 order-lg-3">
-                    <a class="menu" href="">OFERTAS</a>
+                    <a class="menu" href="">OFERTA</a>
                     <?php
                     wp_nav_menu( array(
                         'container' => '',
@@ -65,9 +65,9 @@
                     <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
                     <!-- <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a> -->
                     <div class="iconos-redes-sociales">
-                        <a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a>
+                        <a href="https://www.facebook.com/IEXE.Universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a href="https://twitter.com/IEXE_Uni"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a href="https://www.youtube.com/c/IexeEduMx"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a href="https://www.linkedin.com/school/iexeuniversidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a href="https://www.instagram.com/iexe_universidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a>
                     </div>
-                    <p class="direccion">Blvd. Esteban de Antuñano 2702,<br>C.P. 72160 Puebla. México</p>
+                    <p class="direccion">Blvd. Esteban de Antuñano 2702,<br>C.P. 72160 Cd. de Puebla, México</p>
                 </div>
             </div>
         </div>
@@ -171,11 +171,14 @@
 </script>
 <script>    
     var estado_menu = false;
+    var w = window.innerWidth;
     function openNav() {
-        var w = window.innerWidth;
+        
         if(w > 800){
             document.getElementById("mySidenav").style.width = "66%";
+            
         }else {
+            $('nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light').addClass('sticky');
             document.getElementById("mySidenav").style.width = "100%";
             disableScroll();
         }

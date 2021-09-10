@@ -47,7 +47,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                                               <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                           </div>
                                           <div class="form-group">
-                                              <label for="telefono">Teléfono o celular*</label>
+                                              <label for="telefono">Teléfono móvil*</label>
                                               <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
                                           </div>
                                           <div class="col-12 text-center">
@@ -162,7 +162,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         <div class="row no-gutters">
             <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">DESCRIPCIÓN<br> DEL PROGRAMA</div></div></a></div>
             <?php if($estiloPrograma == "Programas Tradicionales") { ?>
-                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">LO QUE VAS A APRENDER </div></div></a></div>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">QUÉ VAS A APRENDER </div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">DÓNDE PUEDES TRABAJAR</div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">NUESTRO MÉTODO DE ENSEÑANZA</div></div></a></div>
             <?php }else{ ?>

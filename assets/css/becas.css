@@ -12,8 +12,11 @@ BECAS
 #becas section#calcula-beca {
     margin: unset;
     padding-top: 80px;
-    background: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(227,227,227,1) 29%, rgba(227,227,227,1) 56%, rgba(227,227,227,1) 92%, rgba(239,239,239,1) 100%);
+    background: linear-gradient(
+        180deg, rgba(255,255,255,1) 0%, rgba(227,227,227,1) 29%, rgba(227,227,227,1) 56%, rgba(227,227,227,1) 92%, rgba(255,255,255,1) 100%);
+    padding-bottom: 30px;
 }
+
 section#preguntas-frecuentes {
     background: var(--primario--azul-obscuro);
     color: var(--primario-cyan);
@@ -110,7 +113,7 @@ section#beca-institucional {
     padding-top: 24px;
 }
 section#becas-slider{
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+    background: #ffffff;
 }
 section#becas-slider a.btn.btn-primario {
     padding: 10px 20px;

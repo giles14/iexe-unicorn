@@ -13,8 +13,8 @@ Template Name: Programas
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="titulo">Oferta Educativa</h1>
-                <h2 class="description">Conoce nuestros programas 100% en línea avalados por la SEP.</h2>
+                <h1 class="titulo">Programas académicos 100% en línea</h1>
+                <h2 class="description">Nuestros programas académicos, están diseñados para proporcionarte conocimiento valioso y verdaderamente práctico. Conócelos:</h2>
             </div>
         </div>
     </div>
@@ -100,10 +100,7 @@ Template Name: Programas
                 <div class="col-md-6 offset-md-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Capacitaciones</h1>
                     <ul class="capacitaciones">
-                        <li><a href="#">Administración de Empresas</a> </li>
-                        <li><a href="#">Ciencias Políticas y Administración Pública Pública</a> </li>
-                        <li><a href="#">Seguridad Pública</a> </li>
-                        <li><a href="#">Derecho</a> </li>
+                        <li><a href="#">Próximamente</a> </li>
                     </ul>
                 </div>  
             </div>
@@ -112,6 +109,14 @@ Template Name: Programas
 </section>
 
 <?php get_template_part( 'template-parts/interes'); ?>
-<?php get_template_part( 'template-parts/anuncios'); ?>
+<section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <a href="/admisiones"><img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner-oferta.webp" alt="" class="img-fluid"></a>
+            </div>
+        </div>
+    </div>
+</section>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer( ); ?>

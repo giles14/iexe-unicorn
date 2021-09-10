@@ -296,7 +296,7 @@ Template Name: Admisiones
                                 <div class="card">
                                     <div class="card-header" id="headingTwo">
                                     <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <button class="d-flex align-items-start justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         ¿Todos sus programas cuentan con validación por parte de la SEP?
                                         <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
                                         </button>

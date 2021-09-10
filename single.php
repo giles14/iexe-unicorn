@@ -5,9 +5,9 @@
         <div class="row">
             <div class="col-md-12">
                 <?php if(isset(get_the_category()[0]->cat_ID)){ ?>
-                <h1 class="titulo"><a href="<?php echo esc_url(home_url()) ?>">Inicio</a> / <a href="<?php echo get_category_link( get_the_category()[0]->cat_ID ) ?>"><?php echo get_the_category()[0]->name  ?></a> / <a href="<?php the_permalink() ?>"> <?php echo wp_trim_words(get_the_title(), 4, '...'); ?></a></h1>
+                <h1 class="titulo navegacion"><a href="/blog">Blog</a> / <a href="<?php echo get_category_link( get_the_category()[0]->cat_ID ) ?>"><?php echo get_the_category()[0]->name  ?></a> / <a href="<?php the_permalink() ?>"> <?php echo wp_trim_words(get_the_title(), 4, '...'); ?></a></h1>
                 <?php if ( category_description(get_the_category()[0]->cat_ID) ) : ?>
-                    <h2 class="description"><?php echo category_description(get_the_category()[0]->cat_ID); ?></h2>
+                    <h2 class="description">Navegación</h2>
                 <?php endif; ?>
                 <?php } ?>
             </div>

@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="titulo">Honoris Causa</h1>
-                <h2 class="description">Elige el programa en el que deseas inscribirte para ver todo el proceso</h2>
+                <h1 class="titulo">Galardón Generación 2021</h1>
+                <h2 class="description">Nuestros finalistas elegidos por la comunidad edicion 2021</h2>
             </div>
             <div class="col-md-3">
             </div>
@@ -20,7 +20,7 @@
                     <img class="generacion" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/ulises-garduno.jpg" alt="">
                     <h2 class="nombre">Ulises González Garduño</h2>
                     <p class="nombre-progamna">Maestría en Finanzas Públicas</p>
-                    <span>11 Generación</span>
+                    
                 </div>
             </div>
             <div class="col-md-3">
@@ -28,7 +28,6 @@
                 <img class="generacion" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/yovani-molina.jpg" alt="">
                     <h2 class="nombre">Mauricio Yovani Molina Medina</h2>
                     <p class="nombre-progamna">Maestría en Seguridad Pública y Políticas Públicas</p>
-                    <span>11 Generación</span>
                 </div>
             </div>
             <div class="col-md-3">
@@ -36,7 +35,6 @@
                     <img class="generacion" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/cecilia-oliva.jpg" alt="">
                     <h2 class="nombre">Cecilia Nohemi Olivia Juárez</h2>
                     <p class="nombre-progamna">Maestría en Evaluación de Políticas Públcias</p>
-                    <span>11 Generación</span>
                 </div>
             </div>
             <div class="col-md-3">
@@ -44,7 +42,6 @@
                     <img class="generacion" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/alejandro-gallardo.jpg" alt="">
                     <h2 class="nombre">Alejandro A. Gallardo</h2>
                     <p class="nombre-progamna">Maestría en Administración de Negocios</p>
-                    <span>11 Generación</span>
                 </div>
             </div>
         </div>

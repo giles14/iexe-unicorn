@@ -11,7 +11,7 @@ Template Name: Becas
             <div class="mask flex-center">
               <div class="container">
                   <div class="row">
-                            <div class="col-md-12"><img style="margin-top: -138px;width: 90%;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/becas-slider-iexe.webp" alt=""></div>
+                            <div class="col-md-12"><img style="margin-top: -138px;width: 90%;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/becas-slide.webp" alt=""></div>
                   </div>
               </div>
             </div>
@@ -49,7 +49,6 @@ Template Name: Becas
               </div>
             </div>
         </div>
-        <!-- <a class="carousel-control-prev" href="#informacion-programa" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#informacion-programa" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>  -->
       </div>
 </section>
 <section id="navegacion">
@@ -66,7 +65,7 @@ Template Name: Becas
                 <div>
                     <div class="container">
                                 <div class="row">
-                                    <div class="col-md-6 offset-md-5">
+                                    <div class="col-md-6 offset-md-6">
                                         <h1 class="titulo">Beca institucional IEXE</h1>
                                         <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
                                     </div>
@@ -123,7 +122,7 @@ Template Name: Becas
                 <div>
                     <div class="container">
                                 <div class="row">
-                                    <div class="col-md-6 offset-md-5">
+                                    <div class="col-md-6 offset-md-6">
                                         <h1 class="titulo">Beca Embajadores IEXE</h1>
                                         <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
                                     </div>
@@ -150,7 +149,7 @@ Template Name: Becas
                 <div>
                     <div class="container">
                                 <div class="row">
-                                    <div class="col-md-6 offset-md-5">
+                                    <div class="col-md-6 offset-md-6">
                                         <h1 class="titulo">Beca Convenios</h1>
                                         <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
                                     </div>
@@ -478,14 +477,5 @@ Template Name: Becas
 </section> -->
 
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
-<section id="banners">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="/admisiones"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </section>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer( ); ?>

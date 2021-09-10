@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="titulo">Best Sellers</h1>
-                <h2 class="description">Elige entre algunos de nuestros libros más vendidos</h2>
+                <h1 style="color: #001E42;" class="titulo">Los más vendidos</h1>
+                <h2 class="description">Los libros de IEXE Editorial son número 1 en ventas.</h2>
             </div>
             <div class="col-md-3">
             </div>

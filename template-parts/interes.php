@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="titulo">¿Te interesa algún programa?</h1>
+                    <h1 class="titulo">¿Deseas conocer alguno de nuestros programas?</h1>
                 </div>
             </div>
             <div class="row buffer-60">
@@ -13,7 +13,7 @@
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x.png" alt="">
                 </div>
                 <div class="col-md-5">
-                    <p class="interes-programa">Estudia con nosotros sin descuidar tus actividades, acceso a nuestra plataforma 24 horas al día 7 días de la semana, oferta totalmente flexible y digital. <br> ¡20 años de experiencia forjando líderes nos respaldan!</p>
+                    <p class="interes-programa">Estudia uno de nuestros programas académicos totalmente digital y adaptable. No descuides el resto de tus actividades gracias a una plataforma abierta las 24 horas del día, todos los días. Pertenece a una institución con dos décadas de experiencia en educación en línea.</p>
                     <form id="contacto">
                         <div class="form-group">
                           <label for="nombre">Nombre completo*</label>
@@ -24,11 +24,11 @@
                             <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="telefono">Teléfono o celular*</label>
+                            <label for="telefono">Teléfono móvil*</label>
                             <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="interes">Programa académico de interés</label>
+                            <label for="interes">Selecciona un programa</label>
                             <select class="form-control" id="programa-interes" name="select">
                                 <option value="value1" selected>Seleccionar programa</option>
                                 <option value="value2">Value 2</option>

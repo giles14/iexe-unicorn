@@ -45,9 +45,9 @@ section#archivo-posts {
     color: #fff;
 }
 .categoria-img {
-    height: 352px;
+    height: 145px;
     position: relative;
-    background: url(../img/categoria.webp);
+    background: var(--primario--azul-obscuro);
     width: 250px;
     margin: 0 auto;
     border-radius: 15px;
@@ -282,6 +282,15 @@ a.leer-mas {
     text-decoration: none;
     letter-spacing: -4px;
     font-weight: 500;
+}
+#entrada-blog h1.titulo.navegacion a {
+    font-size: 20px;
+    font-family: var(--familia-general);
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+#entrada-blog h1.titulo.navegacion {
+    font-size: 22px;
 }
 h2.post-categorias {
     font-family: 'Nunito Sans';

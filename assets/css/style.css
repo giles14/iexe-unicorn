@@ -56,11 +56,17 @@ section#plan-de-estudios {
     background: url(../img/fondoX.svg);
     background-repeat: no-repeat;
     bottom: 0px;
-    background-position-x: 100%;
+    background-position-x: 120%;
     background-position-y: 90%;
+}
+#comunidad-internacional .col {
+    text-align: center;
 }
 section#comunidad {
     margin-top: 74px;
+}
+#programas section#comunidad {
+    margin-top: 69px;
 }
 section#comunidad .foto-grande{
     max-height: 372px;
@@ -80,7 +86,9 @@ img.flecha-ir {
     background: url(../img/fondoB.webp);
     border-radius: 10px;
     padding: 15px;
-
+}
+.menu-navegacion a.button-primary {
+    margin-bottom: 80px;
 }
 .boton-slide{
     background: var(--primario--azul-obscuro);
@@ -410,10 +418,17 @@ p.consejos {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    font-family: var(--familia-titulos);
+    font-family: var(--familia-general);
     letter-spacing: 0px;
     line-height: 30px;
     color: var(--primario--azul-obscuro);
+    font-weight: 800;
+    padding-top: 8px;
+}
+.boton-icono:hover {
+    background: var(--primario--azul-obscuro);
+    transition: all 0.5s;
+    text-decoration: none;
 }
 #blog{
     background: #001E42;
@@ -1031,7 +1046,7 @@ nav.navbar.sticky .navegacion-botones {
     position: fixed;
     z-index: 1;
     top: 0;
-    right: -7px;
+    right: -6px;
     background-color: #001E42;
     overflow-x: hidden;
     transition: 0.5s;
@@ -1111,10 +1126,11 @@ ul.programas-academicos {
   
   .sidenav .closebtn {
     position: absolute;
-    top: 56px;
+    top: 10px;
     right: 110px;
     font-size: 15px;
     margin-left: 50px;
+    letter-spacing: 0.25px;
   }
   .closebtn span {
     font-size: 31px;
@@ -1271,10 +1287,11 @@ div#periodo {
     color: #FFF;
     height: 46px;
     font-size: 22px;
-    letter-spacing: -2px;
-    font-family: var(--familia-titulos);
+    letter-spacing: -0.2px;
+    font-family: var(--familia-general);
     padding: 6px 16px;
     border: none;
+    font-weight: 400;
 }
 select.periodo {
     background: var(--primario-azul);
@@ -1377,7 +1394,11 @@ div#social {
 }
 section#calcula-beca{
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(227,227,227,1) 29%, rgba(227,227,227,1) 56%, rgba(227,227,227,1) 92%, rgba(239,239,239,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(227,227,227,1) 29%, rgba(227,227,227,1) 56%, rgba(227,227,227,1) 92%, rgba(255,255,255,1) 100%);
+    padding-bottom: 20px;
+}
+#programas section#banner {
+    margin-top: 36px;
 }
 section#anuncio{
     background: rgb(239,239,239);
@@ -1846,6 +1867,10 @@ section#licenciaturas, section#maestrias, section#doctorado, section#masters, se
     padding-top: 64px;
     padding-bottom: 64px;
 }
+section#vinculos a:hover {
+    text-decoration: none;
+    color: var(--primario-cyan);
+}
 #programas section#pie{
     margin-top: unset;
 }
@@ -2068,12 +2093,15 @@ a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart {
 90deg , rgba(37,51,244,1) 0%, rgba(136,119,242,1) 100%);
     color: #FFF;
     border-radius: 25px;
-    padding: 10px 50px;
-    font-weight: bold;
-    font-size: 18px;
+    padding: 8px 50px;
+    font-weight: 400;
+    font-size: 14.91px;
     -webkit-box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
     box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
     border: 0px;
+}
+a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart:hover {
+    text-decoration: none;
 }
 h2.woocommerce-loop-product__title {
     text-align: center;
@@ -2084,6 +2112,12 @@ span.price {
 a.button.product_type_variable {
     width: 100%;
     text-align: center;
+}
+a.wp-block-button__link.add_to_cart_button {
+    width: 100%;
+}
+a.wp-block-button__link.add_to_cart_button:hover {
+    text-decoration: none;
 }
 
 /*
@@ -2403,7 +2437,7 @@ Login
         float: unset;
     }
     ul.programas-academicos {
-        margin-bottom: 2vhpx;
+        margin-bottom: 2vh;
         height: unset;
         width: 20rem;
         margin-left: 30px
@@ -2418,4 +2452,20 @@ Login
     a.menu-movil {
         margin-left: 30px;
     }
+    .sidenav a.button-primary {
+        display: block;
+        max-width: 184px;
+        top: 18px;
+        margin-left: 0;
+        position: absolute;
+        padding: 8px 35px 8px 40px;
+    }
+    section#blog .bloque-moderno {
+        width: unset;
+        
+    }
+    button.d-flex.align-items-start.justify-content-between.btn.btn-link.collapsed {
+        text-align: left;
+    }
+    
 }
