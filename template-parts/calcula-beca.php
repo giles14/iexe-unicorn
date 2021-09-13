@@ -26,7 +26,7 @@
                     </div> <br> fieldsets -->
                     <fieldset>
                         <div class="form-card">
-                            <label class="fieldlabels">Nombre</label> <input type="text" name="uname" placeholder="Ingresa aquí tu nombre" /><label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" /><label class="fieldlabels">Teléfono: *</label> <input type="email" name="email" placeholder="Ingresa aquí tu número telefónico" />
+                            <label class="fieldlabels">Nombre</label> <input type="text" name="uname" placeholder="Ingresa aquí tu nombre" /><label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" /><label class="fieldlabels">Teléfono: *</label> <input id="telefono-beca" type="tel" name="email" placeholder="Ingresa aquí tu número telefónico" />
                             <div class="row">
                                 <div class="col-7">
                                     <!-- <h2 class="fs-title">Account Information:</h2> -->

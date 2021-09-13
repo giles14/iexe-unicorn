@@ -110,6 +110,13 @@ h1.preguntas-frecuentes {
 .myaccordion button.d-flex.align-items-center.justify-content-between.btn.btn-link {
     width: 100%;
 }
+.myaccordion button.d-flex.align-items-center.justify-content-between.btn.btn-link {
+    width: 100%;
+    text-align: left;
+}
+button.d-flex.align-items-start.justify-content-between.btn.btn-link.collapsed {
+    text-align: left;
+}
 .myaccordion .card-header {
     background-color: var(--primario--azul-obscuro);
     border-bottom: 1px solid var(--primario-cyan);

@@ -1545,7 +1545,16 @@ ul.requisitos li::before {
     width: 1em; 
     margin-left: -1em; 
   }
-
+  .iti {
+    width: 100%!important;
+}
+  .iti__country {
+    padding: 1px 10px!important;
+    font-size: 14px;
+}
+.iti__country-list {
+    max-height: 125px!important;
+}
  #calcula-beca {
 font-family: 'Nunito Sans', sans-serif;
 position: relative;

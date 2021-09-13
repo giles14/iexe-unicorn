@@ -48,8 +48,8 @@ Template Name: Admisiones
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="titulo">Requisitos de inscripcion</h1>
-                <h2 class="description">¡Tu camino empieza aquí! Elige el programa de tu preferencia y empieza tu proceso.</h2>
+                <h1 class="titulo">Requisitos de inscripción</h1>
+                <h2 class="description">¡Tu camino empieza aquí! Elige el programa de tu preferencia y comienza tu proceso.</h2>
             </div>
         </div>
     </div>
@@ -61,7 +61,7 @@ Template Name: Admisiones
                         <ul class="requisitos">
                             <li>Acta de nacimiento original.</li>
                             <li>Copia de CURP.</li>
-                            <li>Certificado de término de bachillerato o proparatoria.</li>
+                            <li>Certificado de término de bachillerato o preparatoria.</li>
                             <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
                         </ul>
                     </div>
@@ -114,7 +114,7 @@ Template Name: Admisiones
         <div class="container">
             <div class="row contenedor-admision los-requisitos">
                 <div class="col-md-6">
-                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrias</h1>
+                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrías</h1>
                     <ul class="requisitos">
                         <li>Acta de nacimiento original.</li>
                         <li>Copia de CURP.</li>
@@ -151,10 +151,12 @@ Template Name: Admisiones
                                 <label for="interes">Programa académico de interés</label>
                                 <select class="form-control" id="interes" name="select">
                                     <option value="value1" selected="">Seleccionar programa</option>
-                                    <option value="value2">Ciencias Políticas y Administración Pública</option>
-                                    <option value="value3">Seguridad Pública</option>
-                                    <option value="value4">Derecho</option>
-                                    <option value="value5">Administración de Empresas</option>
+                                    <option value="value2">Administración de Negocios</option>
+                                    <option value="value3">Ingeniería en Tecnologías de la Información</option>
+                                    <option value="value4">Administración y Políticas Públicas</option>
+                                    <option value="value5">Evaluación de Políticas Públicas</option>
+                                    <option value="value6">Finanzas Públicas</option>
+                                    <option value="value7">Seguridad Pública y Políticas Públicas</option>
                                 </select>
                             </div>
                         </div>
@@ -175,9 +177,9 @@ Template Name: Admisiones
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Doctorado</h1>
                     <ul class="requisitos">
                         <li>Acta de nacimiento original.</li>
-                        <li>Copia de CURP</li>
-                        <li>Certificado de término de bachillerato o proparatoria </li>
-                        <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
+                        <li>Copia de CURP.</li>
+                        <li>Copia de grado de maestría (en caso de que se encuentre en trámite constancia de titulación en trámite y copia de acta de examen de grado).</li>
+                        <li>Copia de cédula profesional de maestría (en caso de que se encuentre en trámite constancia de titulación en trámite).</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
@@ -205,11 +207,7 @@ Template Name: Admisiones
                             <div class="form-group">
                                 <label for="interes">Programa académico de interés</label>
                                 <select class="form-control" id="interes" name="select">
-                                    <option value="value1" selected="">Seleccionar programa</option>
-                                    <option value="value2">Ciencias Políticas y Administración Pública</option>
-                                    <option value="value3">Seguridad Pública</option>
-                                    <option value="value4">Derecho</option>
-                                    <option value="value5">Administración de Empresas</option>
+                                    <option value="politicas publicas" selected="">Políticas Públicas</option>
                                 </select>
                             </div>
                         </div>
@@ -242,7 +240,7 @@ Template Name: Admisiones
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
             </div>
         </div>
     </div>

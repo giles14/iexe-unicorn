@@ -62,7 +62,7 @@
         <section id="vision">
             <div class="row">
                 <div class="col-md-6 offset-md-2">
-                    <h1 class="button-primary fijo">Vision</h1>
+                    <h1 class="button-primary fijo">Visión</h1>
                     <p>En IEXE Universidad somos la institución que cambia los <strong>paradigmas</strong> de la <strong>educación</strong> en línea y establecemos el <strong>futuro</strong> del aprendizaje en <strong>América Latina</strong>; formando la comunidad estudiantil más grande del continente y contando con egresados que colaboran en instituciones de los <strong>tres órdenes de gobierno</strong>, en agencias multilaterales, en las principales agencias gubernamentales y en organizaciones privadas de primer nivel.</p>
                     <p>Somos la primera opción de las personas cuando buscan una institución de educación superior <strong>especializada, totalmente en línea.</strong></p>
                 </div>
@@ -134,8 +134,8 @@
 <section id="mapa-iexe">
 <div class="container">
         <div class="row">
-            <div class="col-md-12"><h1 class="titulo">¿Donde nos ubicamos?</h1>
-            <h2 class="description">Encuentranos y resuelve todas tus dudas en Blvd. Esteban de Antuñano #2702, 72160 Puebla de Zaragoza, México.</h2>
+            <div class="col-md-12"><h1 class="titulo">¿Dónde nos ubicamos?</h1>
+            <h2 class="description">Encuéntranos y resuelve todas tus dudas en Blvd. Esteban de Antuñano #2702, 72160 Puebla de Zaragoza, México.</h2>
         </div>
             <div class="col-md-12">
             <iframe

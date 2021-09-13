@@ -105,6 +105,8 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
+                                    <li><a href="oferta-educativa/administracion-de-negocios-mba/">Administración de Negocios (MBA)</a></li>
+                                    <li><a href="oferta-educativa/ingenieria-en-tecnologias-de-la-informacion/">Ingeniería en Tecnologías de la Información</a></li>
                                     <li><a href="oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Política Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
                                     <li><a href="oferta-educativa/maestrias-en-finanzas-publicas">Finanzas Públicas</a></li>
@@ -138,7 +140,8 @@
                             <a class="descubre-mas" disabled>Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="oferta-educativa/master-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a></li>                              
+                                    <li><a href="oferta-educativa/master-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a></li> 
+                                    <li><a href="oferta-educativa/ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a></li>                            
                                 </ul>
                             </div>
                         </div> 
@@ -168,10 +171,7 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="#">Próximamente</a></li>                                    
                                 </ul>
                             </div>
                         </div> 

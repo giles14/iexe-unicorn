@@ -48,7 +48,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                                           </div>
                                           <div class="form-group">
                                               <label for="telefono">Teléfono móvil*</label>
-                                              <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
+                                              <input type="tel" placeholder="Ingresa aquí tu teléfono móvil" class="form-control" id="telefono" aria-describedby="emailHelp">
                                           </div>
                                           <div class="col-12 text-center">
                                               <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>
@@ -262,9 +262,15 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                 <div class="bloque-inscripcion">
                     <h2 class="titulo">Requisitos de admisión</h2>
                     <ul class="requisitos">
-                        <li>Acta de nacimiento original.</li>
-                        <li>Copia de CURP.</li>
-                        <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
+                        <?php if(get_field('tipo') == "Doctorado en línea"){
+                            echo $requisitos_doctorado;
+                        }elseif(get_field('tipo') == "Maestría en línea"){
+                            echo $requisitos_maestria;
+                        }else{
+                            echo $requisitos_licenciatura;
+                        }
+                        
+                        ?>
                     </ul>
                     
                 </div>
@@ -296,4 +302,20 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
 
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>
+<script>
+    var input = document.querySelector("#telefono");
+    window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+    var input = document.querySelector("#telefono-beca");
+    window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+  </script>
 <?php get_footer( ); ?>

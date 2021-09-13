@@ -34,7 +34,7 @@
                 <div class="categoria-img">
                     <img class="generacion" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/cecilia-oliva.jpg" alt="">
                     <h2 class="nombre">Cecilia Nohemi Olivia Juárez</h2>
-                    <p class="nombre-progamna">Maestría en Evaluación de Políticas Públcias</p>
+                    <p class="nombre-progamna">Maestría en Evaluación de Políticas Públicas</p>
                 </div>
             </div>
             <div class="col-md-3">
