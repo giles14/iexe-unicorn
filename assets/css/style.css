@@ -1766,6 +1766,27 @@ height: 20px
 background-color: #673AB7
 }
 
+.modal button.btn.btn-primario{
+    font-size: 16px;
+    padding: 8px 50px;
+}
+h5.titulo {
+    color: var(--primario-azul);
+    font-size: 24px;
+    text-align: left;
+    letter-spacing: -0.55px;
+    font-weight: bold;
+    margin: 0;
+    font-family: var(--familia-titulos), sans-serif;
+}
+p.description {
+    color: var(--primario--azul-obscuro);
+    font-weight: 300;
+    letter-spacing: 0.23px;
+    font-size: 15px;
+    height: 40px;
+    margin-bottom: 11px;
+}
 .fit-image {
 width: 100%;
 object-fit: cover

@@ -81,7 +81,7 @@ Template Name: Becas
                                             la Beca IEXE otorga un porcentaje que va del 20% al 70% en las colegiaturas de licenciaturas,
                                             maestrías y doctorado. Nuestros estudiantes y aspirantes pueden solicitarla todo el año.</p>
                                         <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3" href="#">Solicítala aquí</a>
+                                            <a class="btn btn-primario mt-3" href="#" data-toggle="modal" data-target="#modal-beca-IEXE">Solicítala aquí</a>
                                         </div>
                                     </div>
                                     <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
@@ -110,9 +110,9 @@ Template Name: Becas
                                     
                                     <div class="col-md-3">
                                         <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Descarga la convocatoria</a>
-                                            <a class="btn btn-primario mt-3 azules float-right" href="#">Te asesoramos</a>
-                                            <a class="btn btn-primario mt-3 float-right" href="#">Solicítala aquí</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/CONVOCATORIA-FIRMADA-POR-EL-C.-SRIO.pdf">Convocatoria SEP</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/FORMATO_DE_SOLICITUD_DE_BECA_CICLO_2021-2022-2.docx">Formato de solicitud</a>
+                                            <a class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
                                         </div>
                                     </div>
                                     <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
@@ -138,7 +138,7 @@ Template Name: Becas
                                             la Beca de embajadores IEXE otorga a nuestros alumnos(as) un beneficio acumulable
                                             por cada referido inscrito, por lo que se puede otorgar hasta un 100% de beca.</p>
                                             <div class="botones-beca">
-                                                <a class="btn btn-primario mt-3" href="#">Solicítala aquí</a>
+                                                <a class="btn btn-primario mt-3" href="#" data-toggle="modal" data-target="#modal-beca-embajadores">Solicítala aquí</a>
                                         </div>
                                     </div>
                                     
@@ -162,7 +162,7 @@ Template Name: Becas
                                     <div class="col-md-5 offset-md-2">
                                         <p  class="descripcion-beca">Hemos realizado alianzas estratégicas con distintas instituciones públicas y privadas. Si perteneces a alguna de ellas, tú y tus familiares pueden solicitar una beca.</p>
                                         <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3" href="#">Solicítala aquí</a>
+                                            <a class="btn btn-primario mt-3" target="_blank" href="https://iexe.edu.mx/alianzas-academicas">Solicítala aquí</a>
                                         </div>
                                     </div>
                                     
@@ -475,7 +475,259 @@ Template Name: Becas
         </div>
     </div>
 </section> -->
+<div class="container">
+    <div class="row">
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-beca-IEXE">
+        Botón
+    </button> -->
 
+<!-- Modal BECA IEXE-->
+<div class="modal fade" id="modal-beca-IEXE" tabindex="-1" aria-labelledby="modal-beca-IEXELabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titulo" id="modal-beca-IEXELabel">Formulario Beca IEXE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
+                </div>
+            </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
+                </div>
+                <div class="form-group col-md-6">
+                <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="email" id="correo" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <input placeholder="Teléfono móvil*" id="telefono-iexe" type="text" class="form-control" name="telefono" required>
+                </div>
+                <div class="form-group col-md-6">
+                <select class="form-control" name="programa" required>
+                    <option value="">- Programa académico de interés -</option>
+                    <optgroup label="Licenciaturas">              
+                        <option value="Licenciatura en Ciencias Políticas y Administración Pública">Ciencias Políticas y Administración Pública</option>
+                        <option value="Licenciatura en Seguridad Pública">Seguridad Pública</option>
+                        <option value="Licenciatura en Administración de Empresas">Administración de Empresas</option>
+                        <option value="Licenciatura en Derecho">Derecho</option>
+                    </optgroup>          
+                    <optgroup label="Maestrías">  
+                        <option value="Maestría en Finanzas Públicas">Finanzas Públicas</option>
+                        <option value="Maestría en Administración y Políticas Públicas">Administración y Políticas Públicas</option>
+                        <option value="Maestría en Evaluación de Políticas Públicas">Evaluación de Políticas Públicas</option>
+                        <option value="Maestría en Seguridad Pública y Políticas Públicas">Seguridad Pública y Políticas Públicas</option>
+                        <option value="Maestría en Administración de Negocios">Administración de Negocios</option>
+                        <option value="Maestría en Tecnologías de la Información">Tecnologías de la Información</option>
+                    </optgroup>
+                    <optgroup label="Diplomados">
+                        <option value="Diplomado en Alta Dirección en la Función Pública">Alta Dirección en la Función Pública</option>
+                        <option value="Diplomado en Análisis y Diseño de Políticas Públicas">Análisis y Diseño de Políticas Públicas</option>																
+                        <option value="Diplomado Evaluación de Políticas Publicas">Evaluación de Políticas Públicas</option>
+                        <option value="Diplomado Disciplina Financiera y Fiscalización">Disciplina Financiera y Fiscalización</option>
+                        <option value="Diplomado en Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
+                        <option value="Diplomado en Habilidades Gerenciales">Diplomado en habilidades Gerenciales y Liderazgo</option>
+                    </optgroup>
+                    <optgroup label="Doctorado">
+                        <option value="Doctorado en Políticas Públicas">Doctorado en Políticas Públicas</option>
+                    </optgroup>
+                    <optgroup label="Master">
+                        <option value="Innovación y Gestión Educativa">Innovación y Gestión Educativa</option>
+                        <option value="Ciencia de Datos Aplicada">Ciencia de Datos Aplicada</option>
+                    </optgroup>
+                </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primario float-right">Enviar</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal BECA SEP-->
+<div class="modal fade" id="modal-beca-SEP" tabindex="-1" aria-labelledby="modal-beca-SEPLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titulo" id="modal-beca-SEPLabel">Formulario Beca SEP</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
+                </div>
+            </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
+                </div>
+                <div class="form-group col-md-6">
+                <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="email" id="correo" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <input placeholder="Teléfono móvil*" id="telefono-sep" type="text" class="form-control" name="telefono" required>
+                </div>
+                <div class="form-group col-md-6">
+                <select class="form-control" name="programa" required>
+                    <option value="">- Programa académico de interés -</option>
+                    <optgroup label="Licenciaturas">              
+                        <option value="Licenciatura en Ciencias Políticas y Administración Pública">Ciencias Políticas y Administración Pública</option>
+                        <option value="Licenciatura en Seguridad Pública">Seguridad Pública</option>
+                        <option value="Licenciatura en Administración de Empresas">Administración de Empresas</option>
+                        <option value="Licenciatura en Derecho">Derecho</option>
+                    </optgroup>          
+                    <optgroup label="Maestrías">  
+                        <option value="Maestría en Finanzas Públicas">Finanzas Públicas</option>
+                        <option value="Maestría en Administración y Políticas Públicas">Administración y Políticas Públicas</option>
+                        <option value="Maestría en Evaluación de Políticas Públicas">Evaluación de Políticas Públicas</option>
+                        <option value="Maestría en Seguridad Pública y Políticas Públicas">Seguridad Pública y Políticas Públicas</option>
+                        <option value="Maestría en Administración de Negocios">Administración de Negocios</option>
+                        <option value="Maestría en Tecnologías de la Información">Tecnologías de la Información</option>
+                    </optgroup>
+                    <optgroup label="Diplomados">
+                        <option value="Diplomado en Alta Dirección en la Función Pública">Alta Dirección en la Función Pública</option>
+                        <option value="Diplomado en Análisis y Diseño de Políticas Públicas">Análisis y Diseño de Políticas Públicas</option>																
+                        <option value="Diplomado Evaluación de Políticas Publicas">Evaluación de Políticas Públicas</option>
+                        <option value="Diplomado Disciplina Financiera y Fiscalización">Disciplina Financiera y Fiscalización</option>
+                        <option value="Diplomado en Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
+                        <option value="Diplomado en Habilidades Gerenciales">Diplomado en habilidades Gerenciales y Liderazgo</option>
+                    </optgroup>
+                    <optgroup label="Doctorado">
+                        <option value="Doctorado en Políticas Públicas">Doctorado en Políticas Públicas</option>
+                    </optgroup>
+                    <optgroup label="Master">
+                        <option value="Innovación y Gestión Educativa">Innovación y Gestión Educativa</option>
+                        <option value="Ciencia de Datos Aplicada">Ciencia de Datos Aplicada</option>
+                    </optgroup>
+                </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primario float-right">Enviar</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal BECA Embajadores-->
+<div class="modal fade" id="modal-beca-embajadores" tabindex="-1" aria-labelledby="modal-beca-embajadoresLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titulo" id="modal-beca-embajadoresLabel">Formulario Beca Embajadores IEXE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
+                </div>
+            </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="email" id="correo" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input placeholder="Teléfono móvil*" id="telefono-embajadores" type="tel" class="form-control" name="telefono" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <input placeholder="Nombre del Estudiante que te recomienda*" type="text" class="form-control" name="estudiante-recomendado" required>
+                </div>
+                <div class="form-group col-md-7">
+                    <select class="form-control" name="programa" required>
+                        <option value="">- Programa académico de interés -</option>
+                        <optgroup label="Licenciaturas">              
+                            <option value="Licenciatura en Ciencias Políticas y Administración Pública">Ciencias Políticas y Administración Pública</option>
+                            <option value="Licenciatura en Seguridad Pública">Seguridad Pública</option>
+                            <option value="Licenciatura en Administración de Empresas">Administración de Empresas</option>
+                            <option value="Licenciatura en Derecho">Derecho</option>
+                        </optgroup>          
+                        <optgroup label="Maestrías">  
+                            <option value="Maestría en Finanzas Públicas">Finanzas Públicas</option>
+                            <option value="Maestría en Administración y Políticas Públicas">Administración y Políticas Públicas</option>
+                            <option value="Maestría en Evaluación de Políticas Públicas">Evaluación de Políticas Públicas</option>
+                            <option value="Maestría en Seguridad Pública y Políticas Públicas">Seguridad Pública y Políticas Públicas</option>
+                            <option value="Maestría en Administración de Negocios">Administración de Negocios</option>
+                            <option value="Maestría en Tecnologías de la Información">Tecnologías de la Información</option>
+                        </optgroup>
+                        <optgroup label="Diplomados">
+                            <option value="Diplomado en Alta Dirección en la Función Pública">Alta Dirección en la Función Pública</option>
+                            <option value="Diplomado en Análisis y Diseño de Políticas Públicas">Análisis y Diseño de Políticas Públicas</option>																
+                            <option value="Diplomado Evaluación de Políticas Publicas">Evaluación de Políticas Públicas</option>
+                            <option value="Diplomado Disciplina Financiera y Fiscalización">Disciplina Financiera y Fiscalización</option>
+                            <option value="Diplomado en Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
+                            <option value="Diplomado en Habilidades Gerenciales">Diplomado en habilidades Gerenciales y Liderazgo</option>
+                        </optgroup>
+                        <optgroup label="Doctorado">
+                            <option value="Doctorado en Políticas Públicas">Doctorado en Políticas Públicas</option>
+                        </optgroup>
+                        <optgroup label="Master">
+                            <option value="Innovación y Gestión Educativa">Innovación y Gestión Educativa</option>
+                            <option value="Ciencia de Datos Aplicada">Ciencia de Datos Aplicada</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primario float-right">Enviar</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+</div>
+<script>
+    var input = document.querySelector("#telefono-iexe");
+    window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+    var input = document.querySelector("#telefono-sep");
+    window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+    var input = document.querySelector("#telefono-embajadores");
+    window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+  </script>
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer( ); ?>

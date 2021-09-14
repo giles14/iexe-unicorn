@@ -315,7 +315,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
       localizedCountries: { 'us': 'Estados Unidos' },
       preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
       separateDialCode: true,
-      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js",
     });
   </script>
 <?php get_footer( ); ?>

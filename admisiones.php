@@ -12,7 +12,7 @@ Template Name: Admisiones
               <div class="container">
                   <div class="row">
                       <div class="col-md-12">
-                          <img style="margin-top: -50px;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones.webp" alt="">
+                          <img style="margin-top: 30px;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones.webp" alt="">
                       </div>
                   </div>
               </div>
@@ -23,7 +23,7 @@ Template Name: Admisiones
               <div class="container">
                   <div class="row">
                     <div class="col-md-12">
-                          <img style="margin-top: -95px;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones-pasos.webp" alt="">
+                          <img style="margin-top: 17px;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones-pasos.webp" alt="">
                       </div>           
                   </div>
               </div>
