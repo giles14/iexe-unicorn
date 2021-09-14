@@ -246,6 +246,92 @@ function enableScroll() {
         });
 });
 </script>
+<script>
+    var input = document.querySelector("#telefono");
+    var iti = window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+    var input = document.querySelector("#telefono-beca");
+    window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js",
+    });
+  </script>
+  <script>
+      $(document).ready(function(){
+
+$('#interes button.btn.btn-primario').click(function(){     
+    var nombre = $("[name='nombre']").val();
+    var correo = $("[name='email']").val();
+    var programa = $('input#hiddenPrograma').val();
+    //var telefono = $("#telefono").val();
+    var telefono = iti.getNumber(crossOriginIsolated);
+    var data;           
+    // var formData = new FormData(forma);
+    // formData.append('telefono', String(iti.getNumber(crossOriginIsolated)));
+    $.ajax({
+    url: 'https://api.redisoft.dev/Leads/web',
+    type: 'post',
+    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#interes" + "&charifaz=" + navigator.userAgent,
+    success: function(data){
+        console.log(data);
+        if(data == true || data == "saved"){
+            console.log("se salvó");
+            $("#exampleModal").modal('show');
+
+        }else if(data == "duplicated"){
+            console.log("Ya hay un registro con este correo electrónico");
+        } else{
+            $("#exampleModal").modal('show');
+            console.log("Ocurrió un error, por favor intentalo más tarde");
+        }
+        // if(data[0]['saved'] == true){
+        //     $("#modalExito").modal('show');
+        //     console.log(data[0]);
+        //     //console.log(data);
+        //     console.log(data[0]['fields'])
+        // }else {
+        //     $("#modalFracaso").modal('show');
+        //     $("#error-alerta").html(data[0]['reason']);
+        //     console.log(data[0]['reason']);
+        //     console.log(data[0]['fields'])
+        // }
+        //
+    },
+    error: function(data){
+        console.log("No se logró contactar al servidor");
+        console.log(data);
+        // $("#modalFracaso").modal('show');
+        // $("#error-alerta").html("El servidor remoto no se pudo contactar, por favor intente más tarde");
+    }
+});
+});
+});
+  </script>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Se han registrado sus datos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Nuestro equipo se pondrá en contácto con usted
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 			
 </body>
 </html>

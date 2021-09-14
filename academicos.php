@@ -27,7 +27,9 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                               <?php if($estiloPrograma == "Programas Tradicionales") { ?>
                               <p id="RVOE" class="revoe">
                                   <strong><?php the_field('texto_rvoe'); ?></strong><br>
-                                  Consultalo en: <a href="<?php the_field('link_rvoe'); ?>" class="notorio" target="_blank">www.sirvoes.sep.gob.mx</a>
+                                  <?php if(get_field('link_rvoe')) { ?>
+                                    Consultalo en: <a href="<?php the_field('link_rvoe'); ?>" class="notorio" target="_blank">www.sirvoes.sep.gob.mx</a>
+                                  <?php } ?>
                               </p>
                                 <?php } ?>
                           </div>
@@ -37,21 +39,22 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                                       <h1 class="interes">¿Estás interesado?</h1>
                                   </div>
                                   <div class="cuerpo">
-                                      <form id="interes">
+                                      <form id="interes" method="POST" action="">
                                           <div class="form-group">
                                             <label for="nombre">Nombre completo*</label>
-                                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                            <input type="text" placeholder="Ingresa aquí tu nombre" class="form-control" name="nombre" id="nombre" >
                                           </div>
                                           <div class="form-group">
                                               <label for="correo">Correo electrónico*</label>
-                                              <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                              <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="email" class="form-control" id="exampleInputEmail1">
                                           </div>
                                           <div class="form-group">
                                               <label for="telefono">Teléfono móvil*</label>
-                                              <input type="tel" placeholder="Ingresa aquí tu teléfono móvil" class="form-control" id="telefono" aria-describedby="emailHelp">
+                                              <input type="tel" placeholder="Ingresa aquí tu teléfono móvil" class="form-control" name="telefono" id="telefono">
                                           </div>
                                           <div class="col-12 text-center">
-                                              <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>
+                                          <input id="hiddenPrograma" name="hiddenPrograma" type="hidden" value="<?php echo (get_field('clave_del_programa')) ? get_field('clave_del_programa')  : 'SINA'; ?>">
+                                              <button type="button" class="btn btn-primario mt-3">Enviar registro</button>
                                           </div>
                                         </form>
                                   </div>
@@ -302,20 +305,4 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
 
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>
-<script>
-    var input = document.querySelector("#telefono");
-    window.intlTelInput(input, {
-      localizedCountries: { 'us': 'Estados Unidos' },
-      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
-      separateDialCode: true,
-      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
-    });
-    var input = document.querySelector("#telefono-beca");
-    window.intlTelInput(input, {
-      localizedCountries: { 'us': 'Estados Unidos' },
-      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
-      separateDialCode: true,
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js",
-    });
-  </script>
 <?php get_footer( ); ?>
