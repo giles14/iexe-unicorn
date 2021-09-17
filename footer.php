@@ -78,15 +78,19 @@
             <div class="row">
                 <div class="col-12">
                     <div class="informacion-importante">
+                        <div class="bloque">
+                        
                             <p>Todos los derechos reservados IEXE 2021.</p>
                             <?php
                             wp_nav_menu( array(
                                 'container' => '',
                                 'theme_location' => 'pie_principal',
-                                'menu_class' => 'menu-footer'
+                                'menu_class' => 'menu-footer',
+                                'items_wrap' => '%3$s'
                             ) );
                             ?>
                         <!-- <p>Todos los derechos reservados IEXE 2021. </p> <a href="#"> Aviso de Privacidad</a> | <a href="#">Términos y condiciones</a> | <a href="#">Mapa del sitio</a> | <a href="#">Contacto</a> | -->
+                        </div>
                     </div>
                     
                 </div>
@@ -281,27 +285,15 @@ $('#interes button.btn.btn-primario').click(function(){
     success: function(data){
         console.log(data);
         if(data == true || data == "saved"){
-            console.log("se salvó");
-            $("#exampleModal").modal('show');
+            console.log("se salvó :)");
+            $("#problemaModal").modal('show');
 
         }else if(data == "duplicated"){
             console.log("Ya hay un registro con este correo electrónico");
         } else{
-            $("#exampleModal").modal('show');
-            console.log("Ocurrió un error, por favor intentalo más tarde");
+            $("#guardadoModal").modal('show');
+            
         }
-        // if(data[0]['saved'] == true){
-        //     $("#modalExito").modal('show');
-        //     console.log(data[0]);
-        //     //console.log(data);
-        //     console.log(data[0]['fields'])
-        // }else {
-        //     $("#modalFracaso").modal('show');
-        //     $("#error-alerta").html(data[0]['reason']);
-        //     console.log(data[0]['reason']);
-        //     console.log(data[0]['fields'])
-        // }
-        //
     },
     error: function(data){
         console.log("No se logró contactar al servidor");
@@ -313,17 +305,59 @@ $('#interes button.btn.btn-primario').click(function(){
 });
 });
   </script>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal fade" id="guardadoModal" tabindex="-1" aria-labelledby="guardadoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Se han registrado sus datos</h5>
+        <h5 class="modal-title titulo" id="guardadoModalLabel">Se han registrado sus datos</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        Nuestro equipo se pondrá en contácto con usted
+          <p class="description">Nuestro equipo se pondrá en contácto con usted</p>
+          <img style="height: 150px; margin: 0 auto; text-align: center; display: block;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/alegria.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="problemaModal" tabindex="-1" aria-labelledby="problemaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titulo" id="problemaModalLabel">Ha ocurrido un error</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p class="description">Por favor verifique que todos los campos fueron llenados y que la información proporcionada es correcta e intente de nuevo.</p>
+          <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
+          <img style="height: 150px; margin: 0 auto; text-align: center; display: block;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/triste.webp" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="servidorModal" tabindex="-1" aria-labelledby="servidorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titulo" id="servidorModalLabel">Ha ocurrido un error</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p class="description">El servidor remoto no ha podido contactarse, le rogamos vuelva a intentarlo y si el problema persiste por favor contactenos.</p>
+          <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
+          <img style="height: 150px; margin: 0 auto; text-align: center; display: block;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/ira.jpg" alt="">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

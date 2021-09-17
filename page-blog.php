@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h1 class="titulo">Categorías</h1>
-                <h2 class="description">Elige el programa en el que deseas inscribirte para ver todo el proceso</h2>
+                <h2 class="description">¡Traemos la información más reciente en Políticas Públicas y otros temas de interés IEXE!</h2>
             </div>
             <div class="col-md-3">
             </div>

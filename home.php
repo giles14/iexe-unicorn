@@ -77,7 +77,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a href="/oferta-educativa/"><h1 class="titulo">Oferta Educativa</h1></a>
+                    <a href="/oferta-educativa/"><h1 class="titulo">Programas académicos</h1></a>
                     <h2 class="description">Conoce nuestros programas 100% en línea. ¡Desarróllate, especialízate y concreta tu futuro profesional!</h2>
                 </div>
             </div>
