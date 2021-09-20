@@ -109,7 +109,7 @@
                                     <li><a href="oferta-educativa/ingenieria-en-tecnologias-de-la-informacion/">Ingeniería en Tecnologías de la Información</a></li>
                                     <li><a href="oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Política Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
-                                    <li><a href="oferta-educativa/maestrias-en-finanzas-publicas">Finanzas Públicas</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-finanzas-publicas">Finanzas Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Maestría en Seguridad Pública y Políticas Públicas</a></li>                                    
                                 </ul>
                             </div>

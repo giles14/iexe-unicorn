@@ -99,7 +99,7 @@ Template Name: Becas
                                 <div class="row con-x">
                                     <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
                                     <div class="col-md-3">
-                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_2.webp" alt="" class="beca">
+                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_4.webp" alt="" class="beca">
                                     </div>
                                     <div class="col-md-1"></div>
                                     <div class="col-md-3">
@@ -157,7 +157,7 @@ Template Name: Becas
                                 <div class="row con-x">
                                     <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
                                     <div class="col-md-3">
-                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_4.webp" alt="" class="beca">
+                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_2.webp" alt="" class="beca">
                                     </div>
                                     <div class="col-md-5 offset-md-2">
                                         <p  class="descripcion-beca">Hemos realizado alianzas estratégicas con distintas instituciones públicas y privadas. Si perteneces a alguna de ellas, tú y tus familiares pueden solicitar una beca.</p>

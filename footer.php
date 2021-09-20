@@ -109,7 +109,7 @@
             <a class="menu-movil" href="/oferta-educativa">Programas académicos</a>
                 <ul class="programas-academicos">
                     <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
-                    <li><a href="/oferta-educativa/#masters">Másters</a></li>
+                    <li><a href="/oferta-educativa/#masters">Másteres</a></li>
                     <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
                     <li><a href="/oferta-educativa/#doctorado">Doctorado</a></li>
                     <li><a href="/oferta-educativa/#capacitaciones">Capacitaciones</a></li>

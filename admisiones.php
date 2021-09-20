@@ -61,7 +61,6 @@ Template Name: Admisiones
                         <ul class="requisitos">
                             <li>Acta de nacimiento original.</li>
                             <li>Copia de CURP.</li>
-                            <li>Certificado de término de bachillerato o preparatoria.</li>
                             <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
                         </ul>
                     </div>
