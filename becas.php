@@ -66,8 +66,8 @@ Template Name: Becas
                     <div class="container">
                                 <div class="row">
                                     <div class="col-md-6 offset-md-6">
-                                        <h1 class="titulo">Beca institucional IEXE</h1>
-                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
+                                        <!-- <h1 class="titulo">Beca Institucional IEXE</h1> -->
+                                        <!-- <h2 class="description"></h2> -->
                                     </div>
                                 </div>
                                 <div class="row con-x">
@@ -77,6 +77,7 @@ Template Name: Becas
                                     </div>
                                     <div class="col-md-2"></div>
                                     <div class="col-md-5">
+                                        <h1 class="titulo">Beca Institucional IEXE</h1>
                                         <p class="descripcion-beca">Pensada en apoyar a los alumnos(as) sobresalientes,
                                             la Beca IEXE otorga un porcentaje que va del 20% al 70% en las colegiaturas de licenciaturas,
                                             maestrías y doctorado. Nuestros estudiantes y aspirantes pueden solicitarla todo el año.</p>
@@ -92,8 +93,8 @@ Template Name: Becas
                     <div class="container">
                                 <div class="row">
                                     <div class="col-md-6 offset-md-5">
-                                        <h1 class="titulo">Beca SEP</h1>
-                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
+                                        <!-- <h1 class="titulo">Beca SEP</h1>
+                                        <h2 class="description"></h2> -->
                                     </div>
                                 </div>
                                 <div class="row con-x">
@@ -103,6 +104,7 @@ Template Name: Becas
                                     </div>
                                     <div class="col-md-1"></div>
                                     <div class="col-md-3">
+                                        <h1 class="titulo">Beca SEP</h1>
                                         <p  class="descripcion-beca">Promovida por la Secretaría de Educación Pública,
                                              la convocatoria de la Beca SEP es publicada una vez al año y
                                               otorga porcentajes que van desde el 25% al 75% sobre la colegiatura.</p>
@@ -123,8 +125,8 @@ Template Name: Becas
                     <div class="container">
                                 <div class="row">
                                     <div class="col-md-6 offset-md-6">
-                                        <h1 class="titulo">Beca Embajadores IEXE</h1>
-                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
+                                        <!-- <h1 class="titulo">Beca Embajadores IEXE</h1>
+                                        <h2 class="description"></h2> -->
                                     </div>
                                 </div>
                                 <div class="row con-x">
@@ -134,6 +136,7 @@ Template Name: Becas
                                     </div>
                                     
                                     <div class="col-md-5 offset-md-2">
+                                        <h1 class="titulo">Beca Embajadores IEXE</h1>
                                         <p  class="descripcion-beca">Diseñada para apoyar a los integrantes de la Comunidad IEXE,
                                             la Beca de embajadores IEXE otorga a nuestros alumnos(as) un beneficio acumulable
                                             por cada referido inscrito, por lo que se puede otorgar hasta un 100% de beca.</p>
@@ -150,8 +153,8 @@ Template Name: Becas
                     <div class="container">
                                 <div class="row">
                                     <div class="col-md-6 offset-md-6">
-                                        <h1 class="titulo">Beca Convenios</h1>
-                                        <h2 class="description">Elige el programa en el que desas inscribirte para ver todo el proceso.</h2>
+                                        <!-- <h1 class="titulo">Beca Alianzas Estratégicas</h1>
+                                        <h2 class="description"></h2> -->
                                     </div>
                                 </div>
                                 <div class="row con-x">
@@ -160,7 +163,8 @@ Template Name: Becas
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_2.webp" alt="" class="beca">
                                     </div>
                                     <div class="col-md-5 offset-md-2">
-                                        <p  class="descripcion-beca">Hemos realizado alianzas estratégicas con distintas instituciones públicas y privadas. Si perteneces a alguna de ellas, tú y tus familiares pueden solicitar una beca.</p>
+                                        <h1 class="titulo">Beca Alianzas Estratégicas</h1>
+                                        <p  class="descripcion-beca">Hemos realizado alianzas académicas con distintas instituciones públicas y privadas. Si perteneces a alguna de ellas, tú y tus familiares pueden solicitar una beca por medio de un convenio estratégico entre la universidad con la empresa donde laboras.</p>
                                         <div class="botones-beca">
                                             <a class="btn btn-primario mt-3" target="_blank" href="https://iexe.edu.mx/alianzas-academicas">Solicítala aquí</a>
                                         </div>

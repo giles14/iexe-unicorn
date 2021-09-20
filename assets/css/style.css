@@ -74,6 +74,9 @@ section#comunidad .foto-grande{
 section#comunidad .button-primary{
     max-width: unset;
 }
+section#slider {
+    height: 100vh;
+}
 .boton-accion {
     position: relative;
 }
@@ -659,7 +662,7 @@ section#sub-pie {
     margin-top: 24px;
 }
 .informacion-importante p {
-    float: left;
+    text-align: center;
     margin-right: 5px;
     font-family: 'Nunito Sans';
     font-size: 18px;
@@ -724,6 +727,12 @@ section#oferta-educativa a:hover {
 }
 img.menu-boton {
     margin-left: 16px;
+    padding-top: 4.5px;
+    vertical-align: baseline;
+}
+#editorial .categoria-img {
+    border: 1px solid #f3f3f3;
+    color: #fff;
 }
 .navegacion-botones{
     color: #FFF;
@@ -735,7 +744,13 @@ img.menu-boton {
     z-index: 4;
     top: 5px;
 }
-
+#editorial h2.description.tienda{
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+}
+.categoria-img:hover h2 {
+    visibility: hidden;
+}
 .bg-light {
     background-color: unset!important;
 }
@@ -872,7 +887,8 @@ section#comunidad .mensaje {
   .links-programas>ul {
     list-style: none;
     text-align: left;
-    padding-left: 14px;
+    /* padding-left: 14px; */
+    padding-left: 0px;
 }
   a.button-primary:hover {
     color: #FFF;
@@ -985,11 +1001,33 @@ a.button-primary {
     vertical-align: -4px;
     color: #FFF;
  }
+ body#programas\ academicos {
+    background: url(../img/bg-programas-academicos.webp);
+    background-repeat: no-repeat;
+}
 .links-programas ul li {
     padding-bottom: 20px;
 }
+/* .activo .links-programas {
+    top: 15px;
+} */
 .activo .links-programas {
     top: 15px;
+    height: 360px;
+    overflow-y: auto;
+    overflow-x: initial;
+    width: 315px;
+    padding: 0px 10px 0px;
+}
+.links-programas::-webkit-scrollbar {
+    background: var(--primario-azul);
+    width: 5px;
+}
+.links-programas::-webkit-scrollbar {
+    width: 3px;
+}
+.links-programas::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 100px rgb(0 255 232);
 }
 
 a.descubre-mas.activo {
@@ -1814,6 +1852,9 @@ object-fit: cover
     text-align: center;
     display: block;
 }
+ul.maestrias.secundario {
+    padding-top: 46px;
+}
 /*
     Optimizacion Sprites
 */
@@ -1979,6 +2020,9 @@ section#maestrias .contenedor-programa ul li a {
     letter-spacing: 0.27px;
     line-height: 33px;
 }
+section#maestrias .contenedor-programa ul li a:hover {
+    font-weight: 800;
+}
 .contenedor-programa li {
     list-style: square;
     color: var(--primario-cyan);
@@ -2052,28 +2096,28 @@ a.button.product_type_simple {
 .categoria-img{
     background-size: cover!important;
 }
-.la-campana{
+#seleccion-categoria .la-campana{
     background: url(../img/boton-campana.webp);
 }
-.la-campana:hover{
+#seleccion-categoria .la-campana:hover{
     background: url(../img/boton-campana-over.webp);
 }
-.crisis-viral{
+#seleccion-categoria .crisis-viral{
     background: url(../img/boton-crisis-viral.webp);
 }
-.crisis-viral:hover{
+#seleccion-categoria .crisis-viral:hover{
     background: url(../img/boton-crisis-viral-over.webp);
 }
-.politicas-publicas{
+#seleccion-categoria .politicas-publicas{
     background: url(../img/boton-politicas-publicas.webp);
 }
-.politicas-publicas:hover{
+#seleccion-categoria .politicas-publicas:hover{
     background: url(../img/boton-politicas-publicas-over.webp);
 }
-.elefantes-blancos{
+#seleccion-categoria .elefantes-blancos{
     background: url(../img/boton-elefantes-blancos.webp);
 }
-.elefantes-blancos:hover{
+#seleccion-categoria .elefantes-blancos:hover{
     background: url(../img/boton-elefantes-blancos-over.webp);
 }
 
@@ -2367,6 +2411,9 @@ Login
         text-decoration: unset;
         margin-bottom: 4px;
     }
+    section#slider {
+        height: unset;
+    }
     p.telefono-mexico {
         text-align: center;
     }
@@ -2524,5 +2571,15 @@ Login
     button.d-flex.align-items-start.justify-content-between.btn.btn-link.collapsed {
         text-align: left;
     }
+    ul.maestrias.secundario {
+        padding-top: unset;
+    }
     
+}
+/* Woocommerce */
+span.woocommerce-input-wrapper {
+    width: 100%;
+}
+body#finalizar\ compra label {
+    width: 100%;
 }

@@ -2,22 +2,27 @@
 <section id="slider">
         <div class="container-fluid">
             <div class="row">
-                <div id="carouselExampleControls" style="height: 100vh" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                            <a href="/nosotros/#el-futuro"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
+                            <a href="/nosotros/#el-futuro"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
+                            <a href="/nosotros/#el-futuro"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/becas"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
+                            <a href="/becas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
+                            <a href="/becas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador-mobile.webp" alt="Embajadores Slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/#diplomados"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
+                            <a href="/oferta-educativa/#diplomados"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
+                            <a href="/oferta-educativa/#diplomados"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/#diplomados"><img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-diplomados.webp" alt="Diplomado slide"></a>
+                            <a href="/oferta-educativa/#diplomados"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-diplomados.webp" alt="Diplomado slide"></a>
+                            <a href="/oferta-educativa/#diplomados"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-diplomados-mobile.webp" alt="Diplomado slide"></a>
                       </div>
                       <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
@@ -105,12 +110,14 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="oferta-educativa/administracion-de-negocios-mba/">Administración de Negocios (MBA)</a></li>
-                                    <li><a href="oferta-educativa/ingenieria-en-tecnologias-de-la-informacion/">Ingeniería en Tecnologías de la Información</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Seguridad Pública y Políticas Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Política Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-finanzas-publicas">Finanzas Públicas</a></li>
-                                    <li><a href="oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Maestría en Seguridad Pública y Políticas Públicas</a></li>                                    
+                                    <li><a href="oferta-educativa/administracion-de-negocios-mba/">Administración de Negocios (MBA)</a></li>
+                                    <li><a href="oferta-educativa/ingenieria-en-tecnologias-de-la-informacion/">Ingeniería en Tecnologías de la Información</a></li>
+                                    <li><a href="oferta-educativa/administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental/">Auditoria Gubernamental</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -208,7 +215,7 @@
                   </video>
 
                 </div>
-                <div class="col col-md-4 my-video segundo muted">
+                <div class="col col-md-4 my-video segundo">
                     <div class="marco">
                         <div class="info-pre-video">
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
@@ -220,12 +227,6 @@
                             <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx2.m4v" type="video/mp4">
                             El navegador no acepta video
                       </video>
-                    <!-- <div class="marco">
-                        <div class="info-pre-video">
-                            <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
-                        </div>
-                    </div> -->
-
                 </div>
                 <div class="col col-md-4 my-video tercero">
                     <div class="marco">

@@ -207,6 +207,12 @@ function my_user_new_form($form_type) {
     </script>
     <?php
 }
+function bootstrap_visible_xs($unicorn_maximo){
+    $aleatorio = rand(1 , $unicorn_maximo);
+    while($actual >= $unicorn_maximo):
+        $arr_resultado[] = ($actual == )
+    endwhile;
+}
 
 // Function to handle the thumbnail request
 function get_the_post_thumbnail_src($img)

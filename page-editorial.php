@@ -3,15 +3,15 @@
 <section id="seleccion-categoria" class="buffer-blog">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <h1 style="color: #001E42;" class="titulo">Los más vendidos</h1>
-                <h2 class="description">Los libros de IEXE Editorial son número 1 en ventas.</h2>
+                <h2 class="description tienda">Los libros de IEXE Editorial son número 1 en ventas porque brindan metodologías de aplicación práctica.</h2>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-1">
             </div>
 
             <div class="col-md-3">
-                <div class="buscar"><input id="busqueda-blog" type="text" placeholder="Buscar"></div>
+                <!-- <div class="buscar"><input id="busqueda-blog" type="text" placeholder="Buscar"></div> -->
             </div>
         </div>
         <div class="row">

@@ -80,15 +80,19 @@
                     <div class="informacion-importante">
                         <div class="bloque">
                         
-                            <p>Todos los derechos reservados IEXE 2021.</p>
+                            <p>Todos los derechos reservados IEXE 2021.
                             <?php
-                            wp_nav_menu( array(
-                                'container' => '',
-                                'theme_location' => 'pie_principal',
-                                'menu_class' => 'menu-footer',
-                                'items_wrap' => '%3$s'
-                            ) );
+                            echo strip_tags(
+                                wp_nav_menu( array(
+                                    'container' => false,
+                                    'echo' => false,
+                                    'theme_location' => 'pie_principal',
+                                    'menu_class' => 'menu-footer',
+                                    'depth' => 0,
+                                    'items_wrap' => '%3$s',
+                                ) ), '<a>');
                             ?>
+                            </p>
                         <!-- <p>Todos los derechos reservados IEXE 2021. </p> <a href="#"> Aviso de Privacidad</a> | <a href="#">Términos y condiciones</a> | <a href="#">Mapa del sitio</a> | <a href="#">Contacto</a> | -->
                         </div>
                     </div>

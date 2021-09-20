@@ -36,16 +36,23 @@ Template Name: Programas
     <section id="maestrias">
         <div class="container">
             <div class="row contenedor-programa">
-                <div class="col-md-6 offset-md-6">
+                <div class="col-md-4 offset-md-4">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrías</h1>
                     <ul class="maestrias">
-                        <li><a href="oferta-educativa/administracion-de-negocios-mba/">Administración de Negocios (MBA)</a> </li>
-                        <li><a href="oferta-educativa/ingenieria-en-tecnologias-de-la-informacion/">Ingeniería en Tecnologías de la Información</a> </li>
+                        <li><a href="/oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Seguridad Pública y Políticas Públicas</a></li>
                         <li><a href="/oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Políticas Públicas</a></li>
                         <li><a href="/oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
                         <li><a href="/oferta-educativa/maestria-en-finanzas-publicas">Finanzas Públicas</a></li>
-                        <li><a href="/oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Seguridad Pública y Políticas Públicas</a></li>
+                        <li><a href="oferta-educativa/administracion-de-negocios-mba/">Administración de Negocios (MBA)</a> </li>
                         
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="maestrias secundario">
+                        <li><a href="oferta-educativa/ingenieria-en-tecnologias-de-la-informacion">Ingeniería en Tecnologías de la Información</a> </li>
+                        <li><a href="oferta-educativa/administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
+                        <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoria Gubernamental</a></li>
                     </ul>
                 </div>
             </div>
@@ -85,7 +92,7 @@ Template Name: Programas
                         <li><a href="/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/">Disciplina Financiera y Fiscalización</a> </li>
                         <li><a href="/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/">Fundamentos de Administración Pública</a> </li>
                         <li><a href="/oferta-educativa/diplomado-en-habilidades-gerenciales-y-liderazgo/">Habilidades Gerenciales y Liderazgo</a> </li>
-                        <li><a href="/oferta-educativa/d-analisis-y-diseno-y-de-politicas-publicas/">Análisis y Diseño de Políticas Públicas</a> </li>
+                        <li><a href="/oferta-educativa/diplomado-en-en-analisis-y-diseno-y-de-politicas-publicas/">Análisis y Diseño de Políticas Públicas</a> </li>
                         <li><a href="/oferta-educativa/diplomado-en-alta-direccion-en-la-funcion-publica/">Alta Dirección en la Función Pública</a></li>
                             
                     </ul>

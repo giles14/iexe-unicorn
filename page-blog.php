@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col">
                     <h1 class="titulo">Entradas de Blog</h1>
-                    <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                    <h2 class="description">Aquí encontrarás información de interés en temas IEXE y más.</h2>
                 </div>  
             </div>
             <div class="row">
@@ -88,7 +88,7 @@
             <div class="row">
                 <div class="col">
                     <h1 class="titulo">Últimas noticias..</h1>
-                    <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                    <h2 class="description">Conoce a detalle todo lo que ha acontecido estos últimos días.</h2>
                 </div>
             </div>
             <div class="row">
@@ -127,7 +127,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12"><h1 class="titulo">Noticia destacada IEXE</h1></div>
-                <div class="col-md-12"><h2 class="description">Nuestra entrada más destacada de la semana</h2></div>
+                <div class="col-md-12"><h2 class="description">¡Esto es de lo que todos están hablando! No te lo pierdas</h2></div>
             </div>
             <div class="row">
             <?php 
