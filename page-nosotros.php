@@ -26,27 +26,27 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-5 align-self-center">
-                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Edificio_IEXE.webp" alt="">
+            <div class="col-md-5">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Edificio_IEXE.webp" alt="">
             </div>
             <div class="col-md-6">
                 <p>El 20 de diciembre de <strong>2003</strong> el Doctor <strong>Julio Franco Corzo,</strong> junto con un grupo de apasionados de la <strong>tecnología</strong> y las <strong>políticas públicas,</strong> cimentaron las bases de la primera institución <strong>educativa totalmente en línea</strong> de América Latina; cuya labor desde ese momento a la fecha, se ha enfocado en la enseñanza de herramientas prácticas y modelos para la toma de decisiones en el ámbito profesional.</p>
                 <p>Es así como se plantó la semilla de nuestra institución, una que durante dos décadas se ha ganado la confianza y el respeto de <strong>organizaciones públicas y privadas</strong> de toda América. Ejemplo de ello son los seminarios realizados en <strong>2005</strong> en conjunto con la <strong>Universidad de Chicago;</strong> o el reconocimiento otorgado en <strong>2007</strong> por la fundación Innova México por la <strong>impartición del diplomado</strong> "Mejora en la gestión y gerencia pública".</p>
-                <p>En <strong>2009,</strong> damos un nuevo paso al futuro con la creación de <strong>IEXE Editorial,</strong> cuya misión es generar <strong>Aconocimiento práctico</strong> para plasmarlo en libros realmente útiles. Hoy, los títulos de IEXE Editorial son <strong>textos de cabecera</strong> en otras universidades, organismos multilaterales e instituciones de los <strong>tres órdenes de gobierno.</strong></p>
+                <p>En <strong>2009,</strong> damos un nuevo paso al futuro con la creación de <strong>IEXE Editorial,</strong> cuya misión es generar <strong>conocimiento práctico</strong> para plasmarlo en libros realmente útiles. Hoy, los títulos de IEXE Editorial son <strong>textos de cabecera</strong> en otras universidades, organismos multilaterales e instituciones de los <strong>tres órdenes de gobierno.</strong></p>
                 <p><strong>2015</strong> marca otro hito en nuestra historia, con los primeros pasos rumbo a la internacionalización, gracias a las capacitaciones realizadas para el <strong>Banco Interamericano de Desarrollo</strong> (BID) en Honduras, Uruguay y Colombia.</p>
                 <p>Es así, como en <strong>2017,</strong> nos convertimos en la institución privada con <strong>más alumnos</strong> en un programa de educación superior enfocado en políticas públicas; un logro que se traduce en la <strong>mayor comunidad de estudio</strong> de personas interesadas en asuntos públicos.</p>
                 <p>Desde nuestros inicios, en IEXE Universidad nos ha impulsado una única cosa: nuestra <strong>pasión</strong> por generar y compartir <strong>conocimiento práctico</strong> para que las personas puedan crecer profesionalmente y colaboren con la generación de un mejor futuro para sus países.</p>
                 <p>¡Bienvenido a IEXE Universidad, será un orgullo tenerte como alumno!</p>
             </div>
             <div class="col-md-1"></div>
-            <div class="link-regresar"><a href="#top">Regresar</a></div>
+            <div class="link-regresar"><a href="#top">Regresar <i class="uil uil-arrow-circle-up"></i></a> </div>
         </div>
     </div>
 </section>
 <section id="nuestra-identidad">
     <div class="container">
         <div class="row">
-            <div class="col-md-10"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iexe_universidad.webp" alt=""></div>
+            <div class="col-md-10"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iexe_universidad.webp" alt=""></div>
         </div>
         <section id="mision">
             <div class="row">
@@ -84,7 +84,7 @@
                 </div>
                 <div class="col-md-4">
                 </div>
-                <div class="link-regresar"><a href="#top">Regresar</a></div>
+                <div style="padding-top:0px;" class="link-regresar"><a href="#top">Regresar <i class="uil uil-arrow-circle-up"></i></a></div>
             </div>  
         </section>
         
@@ -108,7 +108,7 @@
             </div>
             <div class="col-md-1">
             </div>
-            <div class="link-regresar"><a href="#top">Regresar</a></div>
+            <div class="link-regresar"><a href="#top">Regresar <i class="uil uil-arrow-circle-up"></i></a></div>
         </div>
     </div>
 </section>

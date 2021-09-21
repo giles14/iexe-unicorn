@@ -116,7 +116,7 @@
                     <li><a href="/oferta-educativa/#masters">Másteres</a></li>
                     <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
                     <li><a href="/oferta-educativa/#doctorado">Doctorado</a></li>
-                    <li><a href="/oferta-educativa/#capacitaciones">Capacitaciones</a></li>
+                    <!-- <li><a href="/oferta-educativa/#capacitaciones">Capacitaciones</a></li> -->
                     <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
                 </ul>
             <a class="menu-movil" href="/admisiones">Admisiones</a>
@@ -236,6 +236,9 @@ function enableScroll() {
   window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
   window.removeEventListener('touchmove', preventDefault, wheelOpt);
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+if(estado_menu){
+    
 }
 </script>
 <?php wp_footer(  )?>

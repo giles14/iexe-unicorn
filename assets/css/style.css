@@ -748,7 +748,7 @@ img.menu-boton {
     text-shadow: 1px 1px 1px #000;
     color: #fff;
 }
-.categoria-img:hover h2 {
+#editorial .categoria-img:hover h2 {
     visibility: hidden;
 }
 .bg-light {
@@ -914,7 +914,6 @@ a.button-primary {
     display: block;
     max-width: 280px;
     margin: 0 auto;
-    cursor: pointer;
 }
   .button-primary::before, .button-selected::before {
     border: 3px solid #000;
@@ -1411,19 +1410,36 @@ div#social {
     background-size: cover;
     border-radius: 1em;
 }
+#becas-slider h1.titulo {
+    margin-top: 8px;
+}
+.link-regresar a {
+    color: var(--primario-azul);
+    font-weight: 800;
+    text-decoration: underline 2px;
+    vertical-align: 5px;
+}
+i.uil.uil-arrow-circle-up {
+    font-size: 30px;
+    color: var(--primario-azul);
+    vertical-align: -4px;
+}
 .boton-accion.becas {
     background-image: linear-gradient(#00446927, #002d3f), url(../img/beca_boton.webp);
     margin-bottom: 80px;
 }
 .boton-accion.asesor {
     background: var(--primario--azul-obscuro);
+    background-image: linear-gradient(#00446927, #002d3f), url(../img/asesoria-bg.webp);
 }
 .boton-accion.admision {
     background-image: linear-gradient(#00446927, #002d3f), url(../img/admision-boton.webp);
 }
 .boton-accion-contenido{
     color: #F6F6F6;
+    
 }
+
 .boton-accion-contenido h4{
     
     font-size: 30px;
@@ -1448,6 +1464,13 @@ section#calcula-beca{
 }
 #programas section#banner {
     margin-top: 36px;
+}
+.banners{
+    border-radius: 15px;
+}
+.bloque a:hover{
+    text-decoration: none;
+    color: var(--primario-cyan);
 }
 section#anuncio{
     background: rgb(239,239,239);
@@ -1965,6 +1988,17 @@ section#vinculos a:hover {
     text-decoration: none;
     color: var(--primario-cyan);
 }
+.texto-vinculo {
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    font-size: 18px;
+    font-family: var(--familia-titulos);
+    color: #FFF;
+}
+.boton-vinculo {
+    position: relative;
+}
 #programas section#pie{
     margin-top: unset;
 }
@@ -2012,6 +2046,9 @@ section#diplomados .contenedor-programa ul li a {
     font-size: 18px;
     letter-spacing: 0.27px;
     line-height: 33px;
+}
+section#diplomados .contenedor-programa ul li a:hover {
+    font-weight: 800;
 }
 section#maestrias .contenedor-programa ul li a {
     color: #e3e3e3;
@@ -2093,6 +2130,22 @@ a.button.product_type_simple {
 .woocommerce table.cart td.actions .input-text{
     width: 150px;
 }
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    max-width: unset;
+}
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    float: right;
+    width: 48%;
+    max-width: unset;
+}
+body#finalizar\ compra {
+    background: url(../img/bg-programas-academicos.webp);
+    background-repeat: no-repeat;
+}
+h2#post-972 {
+    margin-top: 70px;
+    font-weight: 700;
+}
 .categoria-img{
     background-size: cover!important;
 }
@@ -2142,7 +2195,7 @@ p.woocommerce-mini-cart__buttons.buttons {
     text-align: center;
 }
 .widget_shopping_cart {
-    background: var(--primario--azul-obscuro);
+    background: rgba(0, 30, 66, 0.9);
     padding: 24px;
     border-radius: 16px;
     color: #FFF;
@@ -2162,14 +2215,26 @@ h1.titulo-editorial {
 h2.titulo-woocommerce {
     letter-spacing: -1px;
     font-family: 'Nunito Sans';
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
     margin-top: 24px;
     margin-bottom: 16px;
+    color: var(--primario--azul-obscuro);
+    border-bottom: 2px solid var(--primario-cyan);
+    padding-bottom: 10px;
 }
 li.wc-block-product-categories-list-item {
     padding-bottom: 5px;
     list-style: none;
+}
+li.wc-block-product-categories-list-item a {
+    color: var(--primario-azul-obscuro);
+    text-transform: none;
+    font-weight: 300;
+}
+li.wc-block-product-categories-list-item a:hover {
+    font-weight: 800;
+    text-decoration: none;
 }
 #editorial .categoria-img:hover {
     border: 1px solid #8E99FF;
@@ -2187,14 +2252,14 @@ li.wc-block-product-categories-list-item {
 }
 span.woocommerce-Price-amount.amount {
     font-weight: 900;
-    color: var(--primario--azul-obscuro);
+    color: #FFF;
 }
 a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart {
     background: linear-gradient( 
 90deg , rgba(37,51,244,1) 0%, rgba(136,119,242,1) 100%);
     color: #FFF;
     border-radius: 25px;
-    padding: 8px 50px;
+    padding: 8px 24px;
     font-weight: 400;
     font-size: 14.91px;
     -webkit-box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
@@ -2215,10 +2280,19 @@ a.button.product_type_variable {
     text-align: center;
 }
 a.wp-block-button__link.add_to_cart_button {
-    width: 100%;
+    /* width: 100%; */
 }
 a.wp-block-button__link.add_to_cart_button:hover {
     text-decoration: none;
+}
+h2.widgettitle {
+    font-size: 24px;
+    font-weight: 300;
+}
+.woocommerce ul.cart_list li a, .woocommerce ul.product_list_widget li a {
+    display: block;
+    color: var(--primario-cyan);
+    font-weight: 300;
 }
 
 /*

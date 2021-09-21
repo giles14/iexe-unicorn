@@ -31,4 +31,18 @@ $(document).ready(function(){
     $('#informacion-programa').carousel({
         interval: false,
      });
+     var input = document.querySelector("#telefono-maestria");
+    window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js",
+    });
+    var input = document.querySelector("#telefono-doctorado");
+    window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js",
+    });
 });

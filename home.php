@@ -252,7 +252,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                    <a href="/admisiones"><img class="img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
                 </div>
             </div>
         </div>

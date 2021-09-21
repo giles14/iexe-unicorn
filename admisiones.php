@@ -144,7 +144,7 @@ Template Name: Admisiones
                             </div>
                             <div class="form-group">
                                 <label for="telefono">Teléfono o celular*</label>
-                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
+                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono-maestria" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
                                 <label for="interes">Programa académico de interés</label>
@@ -201,7 +201,7 @@ Template Name: Admisiones
                             </div>
                             <div class="form-group">
                                 <label for="telefono">Teléfono o celular*</label>
-                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
+                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono-doctorado" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
                                 <label for="interes">Programa académico de interés</label>
@@ -239,7 +239,7 @@ Template Name: Admisiones
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
+                <img class="img-fluid banners" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
             </div>
         </div>
     </div>
