@@ -185,6 +185,11 @@
     const menu = document.getElementById("mySidenav");
     const overlay = document.getElementById('overlay-menu');
     var w = window.innerWidth;
+    window.addEventListener('resize', function () { 
+        "use strict";
+        w = window.innerWidth; 
+        console.log("se hizo resize");
+    });
     function openNav() {
         
         if(w > 800){

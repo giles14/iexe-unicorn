@@ -1865,7 +1865,9 @@ background: var(--primario-azul);
 z-index: 1;
 content: ' ';
 }
-
+section#calcula-beca ul#progressbar {
+    padding-inline-start: 0px;
+}
 .progress {
 height: 20px
 }
@@ -2703,6 +2705,18 @@ Login
     }
     .buffer-blog {
         margin-top: 15vh;
+    }
+    section#requisitos-inscripcion .row.contenedor-admision.los-requisitos {
+        background: var(--primario--azul-obscuro);
+        height: unset;
+    }
+    #requisitos-inscripcion .row.contenedor-admision.el-formulario {
+        background: blue;
+        height: unset;
+    }
+    #requisitos-inscripcion .regresa-requisitos a {
+        bottom: 13px;
+        left: 35px;
     }
 }
 /* Woocommerce */

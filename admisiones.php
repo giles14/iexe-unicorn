@@ -371,55 +371,6 @@ Template Name: Admisiones
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        <div id="accordion-3" class="myaccordion">
-                                <div class="card">
-                                    <div class="card-header" id="headingOne-3">
-                                    <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne-3" aria-expanded="false" aria-controls="collapseOne-3">
-                                            ¿Encabezado o título de la pregunta que se debe responder?
-                                            <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
-                                        </button>
-                                    </h2>
-                                    </div>
-                                    <div id="collapseOne-3" class="collapse" aria-labelledby="headingOne-3" data-parent="#accordion-3">
-                                    <div class="card-body">
-                                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.</p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingTwo-3">
-                                    <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo-3" aria-expanded="false" aria-controls="collapseTwo-3">
-                                        ¿Encabezado o título de la pregunta que se debe responder?
-                                        <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
-                                        </button>
-                                    </h2>
-                                    </div>
-                                    <div id="collapseTwo-3" class="collapse" aria-labelledby="headingTwo-3" data-parent="#accordion-3">
-                                    <div class="card-body">
-                                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.</p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="headingThree-3">
-                                    <h2 class="mb-0">
-                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree-3" aria-expanded="false" aria-controls="collapseThree-3">
-                                        ¿Encabezado o título de la pregunta que se debe responder?
-                                        <span class="text-right ver-mas"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></span>
-                                        </button>
-                                    </h2>
-                                    </div>
-                                    <div id="collapseThree-3" class="collapse" aria-labelledby="headingThree-3" data-parent="#accordion-3">
-                                    <div class="card-body">
-                                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo.</p>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 
 
@@ -427,6 +378,17 @@ Template Name: Admisiones
         </div>
     </div>
 </section>
+<script>
+    jQuery(document).ready(function($){
+        $(".submit").click(function(){
+            return false;
+        });
+        $(".GaugeMeter").gaugeMeter();
+        $("#generar-resultado").click(function(){
+            $("#medidorBeca").gaugeMeter({percent:<?php echo round(rand(50 , 70), -1) ?>});
+        });
+    });   
+</script>
 <?php get_template_part( 'template-parts/comunidad' ) ?>
 <?php get_template_part( 'template-parts/vinculos' ); ?>
 <?php get_footer(); ?>
