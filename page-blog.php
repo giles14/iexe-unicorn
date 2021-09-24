@@ -12,29 +12,38 @@
             </div>
 
             <div class="col-md-3">
-                <div class="buscar"><input id="busqueda-blog" type="text" placeholder="Buscar"></div>
+                <!-- <div class="buscar"><input id="busqueda-blog" type="text" placeholder="Buscar"></div> -->
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
-                <div class="categoria-img seguridad">
-                    <h2>Seguridad Pública</h2>
-                </div>
+                <a href="/category/Destacado/">
+                    <div class="categoria-img seguridad">
+                        <h2>Destacado</h2>
+                    </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <div class="categoria-img politicas">
-                    <h2>Políticas Públicas</h2>
-                </div>
+                <a href="/category/infografia/">
+                    <div class="categoria-img politicas">
+                        <h2>Infografía</h2>
+                    </div>
+                </a>
             </div>
             <div class="col-md-3">
-                <div class="categoria-img liderazgo">
-                    <h2>Liderazgo</h2>
-                </div>
+                <a href="/category/Noticias/">
+                    <div class="categoria-img liderazgo">
+                        <h2>Noticias</h2>
+                    </div>
+                </a>
+                
             </div>
             <div class="col-md-3">
-                <div class="categoria-img internacionales">
-                    <h2>Internacionales</h2>
-                </div>
+                <a href="/category/politicas-publicas/">
+                    <div class="categoria-img internacionales">
+                        <h2>Políticas Públicas</h2>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -203,11 +212,7 @@
                         </div>
                         <div class="form-group">
                             <label for="interes">Programa académico de interés</label>
-                            <select class="form-control" id="interes" name="select">
-                                <option value="value1" selected>Seleccionar programa</option>
-                                <option value="value2">Value 2</option>
-                                <option value="value3">Value 3</option>
-                            </select>
+                            <?php get_template_part( 'template-parts/selectProgramas'); ?>
                         </div>
                         <div class="col-12 text-center">
                             <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>

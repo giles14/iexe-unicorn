@@ -138,8 +138,18 @@ a.descubre-mas {
     bottom: 30px;
     right: 22px;
 }
+h1.titulo.bandera {
+    font-size: 30px;
+    text-align: center;
+    color: var(--primario--azul-obscuro);
+}
+.img-fluid.bandera{
+    max-width: 86%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 8px;
 
-
+}
 p.descripcion {
     font-size: 16px;
     text-align: left;
@@ -337,6 +347,21 @@ p.interes-programa {
     border-radius: unset;
     border-bottom: 1px solid var(--primario-azul);
     background: var(--fondo-section-gris);
+}
+button.btn.btn-primario.mt-3[disabled] {
+    background: orange;
+    transition: 0.5s;
+}
+button.btn.btn-primario.mt-3:disabled {
+    background: orange;
+    transition: all ease 0.5s;
+}
+button.btn.btn-primario.mt-3.exito {
+    background: green;
+    transition: 1s;
+}
+button.btn.btn-primario.mt-3.error {
+    background: darkred;
 }
 #contacto .form-control::placeholder {
     color: var(--primario-azul);
@@ -1119,6 +1144,16 @@ nav.navbar.sticky .navegacion-botones {
     display: block;
     transition: 0.3s;
   }
+  #overlay-menu {
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 98;
+    background: rgba(0, 0, 0, 0.5);
+  }
   ul.programas-academicos {
     margin-bottom: 32px;
     /* display: block; */
@@ -1141,9 +1176,9 @@ ul.programas-academicos {
 }
 #mySidenav .logo {
     position: absolute;
-    top: 52px;
+    top: 10px;
     left: 88px;
-    display: none;
+    font-size: 30px
 }
 .menu-navegacion a {
     /* margin-bottom: 32px; */
@@ -1394,6 +1429,7 @@ h3.duracion {
     color: var(--primario-azul);
     font-size: 15px;
     font-weight: 300;
+    visibility: hidden;
 }
 .buffer-materias{
     margin-top: 24px;
@@ -1876,6 +1912,9 @@ object-fit: cover
     display: block;
 }
 ul.maestrias.secundario {
+    padding-top: 46px;
+}
+ul.masters.secundario {
     padding-top: 46px;
 }
 /*
@@ -2648,7 +2687,23 @@ Login
     ul.maestrias.secundario {
         padding-top: unset;
     }
-    
+    ul.masters.secundario {
+        padding-top: 0px;
+    }
+    h1.titulo.bandera {
+        font-size: 20px;
+        text-align: center;
+        color: var(--primario--azul-obscuro);
+    }
+    section#vinculos .col-6 {
+        margin-bottom: 10px;
+    }
+    .texto-vinculo {
+        font-size: 14px;
+    }
+    .buffer-blog {
+        margin-top: 15vh;
+    }
 }
 /* Woocommerce */
 span.woocommerce-input-wrapper {
@@ -2656,4 +2711,9 @@ span.woocommerce-input-wrapper {
 }
 body#finalizar\ compra label {
     width: 100%;
+}
+/* Archivo */
+body#archive {
+    background: url(../img/bg-programas-academicos.webp);
+    background-repeat: no-repeat;
 }

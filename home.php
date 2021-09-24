@@ -21,8 +21,8 @@
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/#diplomados"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-diplomados.webp" alt="Diplomado slide"></a>
-                            <a href="/oferta-educativa/#diplomados"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-diplomados-mobile.webp" alt="Diplomado slide"></a>
+                            <a href="/oferta-educativa/#diplomados"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
+                            <a href="/oferta-educativa/#diplomados"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
                       </div>
                       <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
@@ -114,10 +114,8 @@
                                     <li><a href="oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Política Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-finanzas-publicas">Finanzas Públicas</a></li>
-                                    <li><a href="oferta-educativa/administracion-de-negocios-mba/">Administración de Negocios (MBA)</a></li>
-                                    <li><a href="oferta-educativa/ingenieria-en-tecnologias-de-la-informacion/">Ingeniería en Tecnologías de la Información</a></li>
-                                    <li><a href="oferta-educativa/administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
-                                    <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental/">Auditoria Gubernamental</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-administracion-de-negocios-mba/">Administración de Negocios (MBA)</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-ingenieria-en-tecnologias-de-la-informacion/">Ingeniería en Tecnologías de la Información</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -143,12 +141,17 @@
                 <div class="col-12 col-md-4">
                     <div class="oferta-bloque mas">
                         <div class="informa">
-                            <a class="button-primary">MÁSTERS</a>
+                            <a class="button-primary">MÁSTERES</a>
                             <a class="descubre-mas" disabled>Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="oferta-educativa/master-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a></li> 
-                                    <li><a href="oferta-educativa/ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a></li>                            
+                                    <li><a href="oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/">Marketing Político y Opinión Pública</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoria Gubernamental</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/">Sistema Penal Acusatorio y Juicio Oral </a></li>
+                                    <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a></li>                                                                 
                                 </ul>
                             </div>
                         </div> 
@@ -202,7 +205,7 @@
         </div>
         <div class="container container-plus">
             <div class="row no-gutters">
-                <div class="col col-md-4 my-video primero">
+                <div class="col col-md-4 d-none d-md-block my-video primero">
                     <div class="marco">
                         <div class="info-pre-video">
                             <a><img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt=""></a>
@@ -228,7 +231,7 @@
                             El navegador no acepta video
                       </video>
                 </div>
-                <div class="col col-md-4 my-video tercero">
+                <div class="col col-md-4 d-none d-md-block my-video tercero">
                     <div class="marco">
                         <div class="info-pre-video">
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
@@ -310,6 +313,7 @@
         </div>
         </div>
     </section>
+    <?php get_template_part( 'template-parts/banderas'); ?>
     <?php get_template_part( 'template-parts/vinculos'); ?>
     <style>
         .miniban{

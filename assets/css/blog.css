@@ -4,9 +4,16 @@ body#blog {
     background-size: contain;
     background-repeat: no-repeat;
 }
+body#single{
+    background: url(../img/bg-programas-academicos.webp);
+    background-repeat: no-repeat;
+}
 section#archivo-posts {
-    background: #FFF;
-    padding-top: 60px;
+    /* background: #FFF; */
+    padding-top: 120px;
+}
+section#entrada-blog {
+    padding-top: 100px;
 }
 .row.un-post {
     margin-bottom: 80px;
@@ -63,6 +70,21 @@ section#archivo-posts {
     font-weight: 600;
     left: 12px;
     width: 54px;
+}
+#seleccion-categoria .categoria-img h2 {
+    /* color: var(--primario--azul-obscuro); */
+}
+.categoria-img.seguridad {
+    background-image: url(../img/x-destacados.webp);
+}
+.categoria-img.politicas {
+    background-image: url(../img/x-Infografia.webp);
+}
+.categoria-img.liderazgo {
+    background-image: url(../img/x-noticias.webp);
+}
+.categoria-img.internacionales {
+    background-image: url(../img/x-politicas.webp);
 }
 .categoria-img:hover {
     border: 1px solid #8E99FF;
@@ -188,10 +210,14 @@ h2.titulo-entrada-destacada a:hover {
 }
 h1.blog-titulo a {
     color: #000;
-    font-family: 'Lexend Exa';
-    letter-spacing: -4.5px;
-    font-size: 35px;
+    font-family: var(--familia-titulos);
+    letter-spacing: -0.5px;
+    font-size: 24px;
     font-weight: 600;
+}
+h1.blog-titulo a:hover {
+    text-decoration: none;
+    color: var(--primario-cyan);
 }
 .meta-blog-autor a {
     color: var(--primario-azul);

@@ -50,7 +50,7 @@
         <div class="container">
             
           <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.svg"  alt="">
+             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Logo_IEXE_Menu.webp"  alt="">
           </a>
             
             

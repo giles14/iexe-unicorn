@@ -103,9 +103,11 @@
 
     </section>
     <div id="mySidenav" class="sidenav animate__bounceInRight">
+        
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Cerrar <span>&times;</span></a>
         <a href="https://iexe.xyz/"><div class="logo">
-            <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/logo.svg" alt="Logo IEXE">
+            <i class="fas fa-home"></i>
+            <!-- <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/logo.svg" alt="Logo IEXE"> -->
         </div></a>
         <div class="menu-navegacion">
             <a class="button-primary">MENÚ</a>
@@ -124,6 +126,7 @@
             <a class="menu-movil" href="/comunidad">IEXE Comunidad</a>
         </div>
     </div>
+    <div id="overlay-menu"></div>
     
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>     -->
 <script>
@@ -179,15 +182,20 @@
 </script>
 <script>    
     var estado_menu = false;
+    const menu = document.getElementById("mySidenav");
+    const overlay = document.getElementById('overlay-menu');
     var w = window.innerWidth;
     function openNav() {
         
         if(w > 800){
-            document.getElementById("mySidenav").style.width = "66%";
-            
+            // document.getElementById("mySidenav").style.width = "66%";
+            menu.style.width = "66%";
+            overlay.style.display = "block";
+            disableScroll();
         }else {
             $('nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light').addClass('sticky');
-            document.getElementById("mySidenav").style.width = "100%";
+            // document.getElementById("mySidenav").style.width = "100%";
+            menu.style.width = "100%";
             disableScroll();
         }
       
@@ -198,11 +206,12 @@
       document.getElementById("mySidenav").style.width = "0";
       estado_menu = false;
       enableScroll();
+      overlay.style.display = "none";
     }
 
     function preventDefault(e) {
-  e.preventDefault();
-}
+        e.preventDefault();
+    }
 
 function preventDefaultForScrollKeys(e) {
     if (keys[e.keyCode]) {
@@ -237,9 +246,17 @@ function enableScroll() {
   window.removeEventListener('touchmove', preventDefault, wheelOpt);
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
-if(estado_menu){
-    
-}
+    $(document).mouseup(function(e) 
+        {
+            var container = $("#mySidenav");
+
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0) 
+            {
+                closeNav();
+            }
+        });
+
 </script>
 <?php wp_footer(  )?>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -276,10 +293,19 @@ if(estado_menu){
   <script>
       $(document).ready(function(){
 
-$('#interes button.btn.btn-primario').click(function(){     
+$('#interes button.btn.btn-primario').click(function(){    
+    $('#interes button.btn.btn-primario').removeClass("error exito"); 
+    $('#interes button.btn.btn-primario').attr("disabled", true);
     var nombre = $("[name='nombre']").val();
     var correo = $("[name='email']").val();
-    var programa = $('input#hiddenPrograma').val();
+    
+    if($('input#hiddenPrograma').val()){
+        var programa = $('input#hiddenPrograma').val();
+        console.log(programa);
+    }else{
+        var programa = $("[name='programa']").val();
+        console.log(programa);
+    }
     //var telefono = $("#telefono").val();
     var telefono = iti.getNumber(crossOriginIsolated);
     var data;           
@@ -294,17 +320,23 @@ $('#interes button.btn.btn-primario').click(function(){
         if(data == true || data == "saved"){
             console.log("se salvó :)");
             $("#problemaModal").modal('show');
+            $('#interes button.btn.btn-primario').addClass("error");
 
         }else if(data == "duplicated"){
             console.log("Ya hay un registro con este correo electrónico");
         } else{
             $("#guardadoModal").modal('show');
-            
+            $('#interes button.btn.btn-primario').removeClass("error");
+            $('#interes button.btn.btn-primario').addClass("exito");
         }
+        $('#interes button.btn.btn-primario').attr("disabled", false);
+        
     },
     error: function(data){
         console.log("No se logró contactar al servidor");
         console.log(data);
+        $('#interes button.btn.btn-primario').attr("disabled", false);
+        $('#interes button.btn.btn-primario').addClass("error");
         // $("#modalFracaso").modal('show');
         // $("#error-alerta").html("El servidor remoto no se pudo contactar, por favor intente más tarde");
     }
@@ -373,6 +405,5 @@ $('#interes button.btn.btn-primario').click(function(){
     </div>
   </div>
 </div>
-			
 </body>
 </html>

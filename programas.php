@@ -36,23 +36,15 @@ Template Name: Programas
     <section id="maestrias">
         <div class="container">
             <div class="row contenedor-programa">
-                <div class="col-md-4 offset-md-4">
+                <div class="col-md-6 offset-md-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrías</h1>
                     <ul class="maestrias">
                         <li><a href="/oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Seguridad Pública y Políticas Públicas</a></li>
                         <li><a href="/oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Políticas Públicas</a></li>
                         <li><a href="/oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
                         <li><a href="/oferta-educativa/maestria-en-finanzas-publicas">Finanzas Públicas</a></li>
-                        <li><a href="oferta-educativa/administracion-de-negocios-mba/">Administración de Negocios (MBA)</a> </li>
-                        
-                        
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="maestrias secundario">
-                        <li><a href="oferta-educativa/ingenieria-en-tecnologias-de-la-informacion">Ingeniería en Tecnologías de la Información</a> </li>
-                        <li><a href="oferta-educativa/administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
-                        <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoria Gubernamental</a></li>
+                        <li><a href="oferta-educativa/maestria-en-administracion-de-negocios-mba/">Administración de Negocios (MBA)</a> </li>
+                        <li><a href="oferta-educativa/maestria-en-ingenieria-en-tecnologias-de-la-informacion">Ingeniería en Tecnologías de la Información</a> </li>
                     </ul>
                 </div>
             </div>
@@ -73,11 +65,20 @@ Template Name: Programas
     <section id="masters">
         <div class="container">
             <div class="row contenedor-programa">
-                <div class="col-md-6 offset-md-6">
+                <div class="col-md-4 offset-md-4">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Másteres</h1>
                     <ul class="masters">
-                        <li><a href="/oferta-educativa/master-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a> </li>
-                        <li><a href="/oferta-educativa/ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a> </li>
+                        <li><a href="/oferta-educativa/maestria-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a> </li>
+                        <li><a href="/oferta-educativa/maestria-en-ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a> </li>
+                        <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
+                        <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoria Gubernamental</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="masters secundario">
+                        <li><a href="oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/">Marketing Político y Opinión Pública</a></li>
+                        <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>
+                        <li><a href="oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/">Sistema Penal Acusatorio y Juicio Oral </a></li>
                     </ul>
                 </div>  
             </div>
@@ -124,5 +125,6 @@ Template Name: Programas
         </div>
     </div>
 </section>
+<?php get_template_part( 'template-parts/banderas'); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer( ); ?>

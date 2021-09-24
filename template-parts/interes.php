@@ -17,23 +17,20 @@
                     <form id="contacto">
                         <div class="form-group">
                           <label for="nombre">Nombre completo*</label>
-                          <input type="text" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+                          <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp" required>
                         </div>
                         <div class="form-group">
                             <label for="correo">Correo electrónico*</label>
-                            <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input name="email" type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                         </div>
                         <div class="form-group">
                             <label for="telefono">Teléfono móvil*</label>
-                            <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
+                            <input name="telefono" type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
-                            <label for="interes">Selecciona un programa</label>
-                            <select class="form-control" id="programa-interes" name="select">
-                                <option value="value1" selected>Seleccionar programa</option>
-                                <option value="value2">Value 2</option>
-                                <option value="value3">Value 3</option>
-                            </select>
+                            <label for="programa-interes">Selecciona un programa</label>
+                            
+                            <?php get_template_part( 'template-parts/selectProgramas'); ?>
                         </div>
                         <div class="col-12 text-center">
                             <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>

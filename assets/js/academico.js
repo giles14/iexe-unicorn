@@ -107,10 +107,14 @@ $(document).ready(function(){
     $(".progress-bar")
     .css("width",percent+"%")
     }
-
+    
     $(".submit").click(function(){
     return false;
     });
-
+    $(".GaugeMeter").gaugeMeter();
+    $("#generar-resultado").click(function(){
+        $("#medidorBeca").gaugeMeter({percent:70});
+    });
+      
 
 });
