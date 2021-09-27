@@ -1,0 +1,124 @@
+#capacitaciones section#header {
+    background: url(../img/licenciatura-maestria.webp);
+    height: 535px;
+    margin-top: unset;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #E4F8F7;
+}
+h2.tipo-oferta {
+    text-align: center;
+    max-width: 390px;
+    color: var(--primario-azul);
+    font-size: 20px;
+}
+#informacion-programa .container {
+    padding-top: 117px;
+}
+section#header a.button-primary {
+    max-width: 425px;
+    margin: unset;
+}
+a.carousel-control-prev {
+    display: none;
+}
+a.carousel-control-next {
+    display: none;
+}
+section#ventajas {
+    background: #F6F6F6;
+    padding: 32px 0px 60px 0px;
+}
+#ventajas p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primario-azul-obscuro);
+    padding: 0px;
+    margin-bottom: 10px;
+}
+#ventajas h1.text-center {
+    font-weight: 800;
+    font-family: var(--familia-titulos);
+    letter-spacing: -0.32px;
+    margin-bottom: 20px;
+}
+section#experiencia{
+    margin: unset;
+    background: var(--primario--azul-obscuro);
+    padding: 32px 0px 60px 0px;
+}
+#experiencia h1.text-center {
+    font-weight: 800;
+    font-family: var(--familia-titulos);
+    color: var(--primario-cyan);
+    letter-spacing: -0.32px;
+    margin-bottom: 20px;
+}
+#experiencia p {
+    font-size: 18px;
+    color: #f6f6f6;
+    padding: 0px;
+    font-weight: 200;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+}
+#nuestros-clientes h1.text-center {
+    font-weight: 800;
+    font-family: var(--familia-titulos);
+    letter-spacing: -0.32px;
+    margin-bottom: 20px;
+}
+#nuestros-clientes p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primario-azul-obscuro);
+    padding: 0px;
+    margin-bottom: 10px;
+}
+#gobierno-federal h1.text-center {
+    font-weight: 800;
+    font-family: var(--familia-titulos);
+    color: var(--primario--azul-obscuro);
+    letter-spacing: -0.32px;
+    margin-bottom: 20px;
+}
+#modalidades .contenedor {
+    background: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(240,240,240,1) 100%);
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+}
+h2.modalidad {
+    font-size: 21px;
+    font-weight: 800;
+    color: var(--primario--azul-obscuro);
+}
+#modalidades ol {
+    padding-inline-start: 15px;
+    font-weight: 300;
+    color: var(--color--azul-obscuro);
+}
+#modalidades li {
+    padding-bottom: 15px;
+}
+#modalidades ol {
+    margin:0 0 1.5em;
+    padding:0;
+    counter-reset:item;
+  }
+   
+  #modalidades  ol>li {
+    margin:0;
+    padding:0 0 15px 2em;
+    text-indent:-2em;
+    list-style-type:none;
+    counter-increment:item;
+  }
+   
+  #modalidades ol>li:before {
+    display:inline-block;
+    width:1.5em;
+    padding-right:0.5em;
+    font-weight:bold;
+    text-align:right;
+    content:counter(item) ".";
+  }

@@ -20,6 +20,7 @@ function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-admisiones-estilo', get_template_directory_uri() . '/assets/css/admisiones.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-programas-academicos', get_template_directory_uri() . '/assets/css/programas-academicos.css', 'iexe-unicorn-main', '1.0', 'all' );
+    wp_register_style( 'iexe-unicorn-capacitaciones', get_template_directory_uri() . '/assets/css/capacitaciones.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_script( 'iexe-unicorn-programas', get_template_directory_uri() . '/assets/js/academico.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-multipasos', get_template_directory_uri() . '/assets/js/form-multipasos.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
@@ -53,6 +54,9 @@ function agregar_estilos_tema(){
         wp_enqueue_script( 'iexe-unicorn-admisiones');
         wp_enqueue_style( 'iexe-unicorn-admisiones-estilo');
         wp_enqueue_script('iexe-unicorn-multipasos');
+    }
+    if(is_page_template('capacitaciones.php')){
+        wp_enqueue_style( 'iexe-unicorn-capacitaciones');
     }
     if(is_page_template('page-busqueda.php')){
         wp_enqueue_style( 'live-search-select-style', 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css', 'bootstrap', '1.13.14', 'all' );

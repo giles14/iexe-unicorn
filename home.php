@@ -181,7 +181,7 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Próximamente</a></li>                                    
+                                    <li><a href="/capacitaciones/">Programas de capacitación para el sector público y privado</a></li>                                    
                                 </ul>
                             </div>
                         </div> 

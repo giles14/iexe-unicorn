@@ -221,6 +221,54 @@ Template Name: Admisiones
         </div>  
     </section>
 </section>
+<section id="proceso-revalidacion">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="titulo">Proceso de revalidación internacional</h1>
+                <h2 class="description">En los siguientes enlaces podrás encontrar la información necesaria de cada país para realizar tu proceso de revalidación.</h2>
+            </div>
+        </div>
+        <div class="row banderas">
+            <div class="col">
+                <span class="nombre-pais">Ecuador</span>
+                <span class="nombre-institucion">SENECYT</span>
+                <a class="btn btn-primario" href="">Ver información</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/ecuador.png" alt="">
+            </div>
+            <div class="col">
+                <span class="nombre-pais">Colombia</span>
+                <span class="nombre-institucion">MINEDUCAC</span>
+                <a class="btn btn-primario" href="">Ver información</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/colombia.png" alt="">
+            </div>
+            <div class="col">
+                <span class="nombre-pais">Guatemala</span>
+                <span class="nombre-institucion">USAC</span>
+                <a class="btn btn-primario" href="">Ver información</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/guatemala.png" alt="">
+            </div>
+            <div class="col">
+                <span class="nombre-pais">El Salvador</span>
+                <span class="nombre-institucion">MINED</span>
+                <a class="btn btn-primario" href="">Ver información</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/el-salvador.png" alt="">
+            </div>
+            <div class="col">
+                <span class="nombre-pais">Panamá</span>
+                <span class="nombre-institucion">MEDUCA</span>
+                <a class="btn btn-primario" href="">Ver información</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/panama.png" alt="">
+            </div>
+            <div class="col ultimo">
+                <span class="nombre-pais">Perú</span>
+                <span class="nombre-institucion">MINEDU</span>
+                <a class="btn btn-primario" href="">Ver información</a>
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/peru.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
 <!-- <section id="eres-parte">
     <div class="container">
         <div class="row">

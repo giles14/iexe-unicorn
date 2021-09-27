@@ -107,7 +107,7 @@ Template Name: Programas
                 <div class="col-md-6 offset-md-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Capacitaciones</h1>
                     <ul class="capacitaciones">
-                        <li><a href="#">Estamos mejorando esta sección para tí...</a> </li>
+                        <li><a href="/capacitaciones/">Programas de capacitación para el sector público y privado</a> </li>
                     </ul>
                 </div>  
             </div>
