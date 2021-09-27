@@ -361,10 +361,10 @@ $('#interes button.btn.btn-primario').click(function(){
       </div>
       <div class="modal-body">
           <p class="description">Nuestro equipo se pondrá en contácto con usted</p>
-          <img style="height: 150px; margin: 0 auto; text-align: center; display: block;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/alegria.jpg" alt="">
+          <i class="far fa-check-circle"></i>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primario" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
