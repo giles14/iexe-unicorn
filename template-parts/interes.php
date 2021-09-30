@@ -13,7 +13,7 @@
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x.png" alt="">
                 </div>
                 <div class="col-md-5">
-                    <p class="interes-programa">Estudia uno de nuestros programas académicos totalmente digital y adaptable. No descuides el resto de tus actividades gracias a una plataforma abierta las 24 horas del día, todos los días. Pertenece a una institución con dos décadas de experiencia en educación en línea.</p>
+					<p class="interes-programa">Estudia uno de nuestros programas académicos <strong>totalmente digitales y adaptables</strong>. No descuides el resto de tus actividades gracias a una plataforma <strong>abierta las 24 horas del día, todos los días</strong>. Pertenece a una institución con <strong>dos décadas de experiencia</strong> en educación en línea.</p>
                     <form id="contacto">
                         <div class="form-group">
                           <label for="nombre">Nombre completo*</label>

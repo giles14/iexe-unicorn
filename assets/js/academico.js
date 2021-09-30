@@ -113,8 +113,53 @@ $(document).ready(function(){
     });
     $(".GaugeMeter").gaugeMeter();
     $("#generar-resultado").click(function(){
-        $("#medidorBeca").gaugeMeter({percent:70});
+        var resultadoR = Math.round(Math.random() * (66 - 50) + 50)
+        $("#medidorBeca").gaugeMeter({percent:resultadoR});
     });
+    
+    $('#navegacione li').click(function () {
+        $('#navegacione li').removeClass('active');
+        $(this).addClass('active');
+      });
+      var lastScrollLeft = 0;
+      var anchoLi = $('#navegacione').width();
+      var anchoTotal = anchoLi * 4;
+      console.log(anchoLi);
+      console.log(anchoTotal);
+      $('#navegacione').scroll(function () {
+        var documentScrollLeft = $('#navegacione').scrollLeft();
+        if (lastScrollLeft != documentScrollLeft) {
+          console.log('scroll x');
+          lastScrollLeft = documentScrollLeft;
+          console.log(lastScrollLeft);
+
+          var miEstado = false;
+          var veces = 0;
+          if(lastScrollLeft < anchoLi){
+            $('#navegacione li').removeClass('active');
+            $('#descripcion').addClass('active');
+            $('#informacion-programa').carousel(0);
+          }
+          if (lastScrollLeft > anchoLi - 50 && lastScrollLeft < anchoLi * 2   ){
+              console.log('Entré' + veces);
+              veces++;
+            $('#navegacione li').removeClass('active');
+            $('#aprender').addClass('active');
+            if(!miEstado){
+                $('#informacion-programa').carousel(1);
+            }
+            miEstado = true;
+          } else if(lastScrollLeft > anchoLi * 2 - 50 && lastScrollLeft < anchoLi * 3 ){
+            $('#navegacione li').removeClass('active');
+            $('#trabajar').addClass('active');
+            $('#informacion-programa').carousel(2);
+          } else if (lastScrollLeft > anchoLi * 3  -25 && lastScrollLeft < anchoLi * 4){
+              $('#navegacione li').removeClass('active');
+              $('#metodo').addClass('active');
+              $('#informacion-programa').carousel(3);
       
+          }
+        }
+      });
 
 });

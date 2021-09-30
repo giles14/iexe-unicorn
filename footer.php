@@ -105,26 +105,28 @@
     <div id="mySidenav" class="sidenav animate__bounceInRight">
         
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Cerrar <span>&times;</span></a>
-        <a href="https://iexe.xyz/"><div class="logo">
+        <a class="d-none d-sm-block" href="<?php home_url(); ?>"><div class="logo">
             <i class="fas fa-home"></i>
-            <!-- <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/logo.svg" alt="Logo IEXE"> -->
+            <!-- <img src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/logo.svg" alt="Logo IEXE"> -->
         </div></a>
         <div class="menu-navegacion">
             <a class="button-primary">MENÚ</a>
-            <a class="menu-movil" href="/nosotros">Acerca de IEXE</a>
-            <a class="menu-movil" href="/oferta-educativa">Programas académicos</a>
-                <ul class="programas-academicos">
-                    <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
-                    <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
-                    <li><a href="/oferta-educativa/#doctorado">Doctorado</a></li>
-                    <li><a href="/oferta-educativa/#masters">Másteres</a></li>
-                    <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
-                    <li><a href="/oferta-educativa/#capacitaciones">Capacitaciones</a></li>
-                    
-                </ul>
-            <a class="menu-movil" href="/admisiones">Admisiones</a>
-            <a class="menu-movil" href="/becas">Becas</a>
-            <a class="menu-movil" href="/comunidad">IEXE Comunidad</a>
+            <div class="contenedor-menu">
+                <a class="menu-movil" href="/nosotros">Acerca de IEXE</a>
+                <a class="menu-movil" href="/oferta-educativa">Programas académicos</a>
+                    <ul class="programas-academicos">
+                        <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
+                        <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
+                        <li><a href="/oferta-educativa/#doctorado">Doctorado</a></li>
+                        <li><a href="/oferta-educativa/#masters">Másteres</a></li>
+                        <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
+                        <li><a href="/oferta-educativa/#capacitaciones">Capacitaciones</a></li>
+                        
+                    </ul>
+                <a class="menu-movil" href="/admisiones">Admisiones</a>
+                <a class="menu-movil" href="/becas">Becas</a>
+                <a class="menu-movil" href="/comunidad">IEXE Comunidad</a>
+            </div>
         </div>
     </div>
     <div id="overlay-menu"></div>

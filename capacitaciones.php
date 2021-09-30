@@ -99,13 +99,12 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                 <div class="contenedor">
                     <h2 class="modalidad">Especializada</h2>
                     <p>
-                        <strong>La modalidad presencial se basa en 4 características:</strong>
+                        <strong>Los cursos de capacitación especializada se caracterizan por 3 cosas:</strong>
                     </p>
                     <ol>
-                        <li>Docentes con amplia experiencia en el proceso de enseñanza aprendizaje, enfocados al desarrollo de competencias laborales de nuestros estudiantes.</li>
-                        <li>Logística impecable para el desarrollo de la capacitación.</li>
-                        <li>Cursos dinámicos y prácticos.</li>
-                        <li>Materiales y recursos didácticos de apoyo para cada uno de los participantes.</li>
+                        <li>Una plataforma de aprendizaje e-learning intuitiva y fácil de usar.</li>
+                        <li>Atención y retroalimentación personalizada por parte de nuestros docentes.</li>
+                        <li>Contenidos multimedia (audio, video y animaciones).</li>
                     </ol>
                 </div>
             </div>
@@ -115,13 +114,12 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                 <div class="contenedor">                
                     <h2 class="modalidad">Mixta</h2>
                     <p>
-                        <strong>La modalidad presencial se basa en 4 características:</strong>
+                        <strong>La modalidad mixta, caracterizada por sesiones presenciales y en línea, ofrece lo siguiente:</strong>
                     </p>
                     <ol>
-                        <li>Docentes con amplia experiencia en el proceso de enseñanza aprendizaje, enfocados al desarrollo de competencias laborales de nuestros estudiantes.</li>
-                        <li>Logística impecable para el desarrollo de la capacitación.</li>
-                        <li>Cursos dinámicos y prácticos.</li>
-                        <li>Materiales y recursos didácticos de apoyo para cada uno de los participantes.</li>
+                        <li>Tres sesiones presenciales de carácter práctico.</li>
+                        <li>Lecciones y actividades en plataforma con seguimiento incluido.</li>
+                        <li>Atención y retroalimentación personalizada por parte de nuestros(as) docentes.</li>
                     </ol>
                 </div>
             </div>
@@ -137,11 +135,13 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
         <div class="row">
             <div class="col">
-                <p>Los cursos son diseñados con base en un Diagnóstico de Necesidades de Capacitación.</p>
-                <p>Además, esto permite impartir contenido fundamentado en casos reales de la institución.</p> 
-                <p>A través de los cursos se cumplen las obligaciones en materia de capacitación de la STPS (DC3 y DC4), para instituciones privadas.</p> 
-                <p>La inversión en capacitación es deducible de impuestos.</p>
-                <p>La modalidad en línea no afecta el tiempo productivo, además de permitir la capacitación masiva y simultánea.</p>
+                <ol>
+                    <li>Los cursos son diseñados con base en un Diagnóstico de Necesidades de Capacitación.</li>
+                    <li>Además, esto permite impartir contenido fundamentado en casos reales de la institución.</li> 
+                    <li>A través de los cursos se cumplen las obligaciones en materia de capacitación de la STPS (DC3 y DC4), para instituciones privadas.</li> 
+                    <li>La inversión en capacitación es deducible de impuestos.</li>
+                    <li>La modalidad en línea no afecta el tiempo productivo, además de permitir la capacitación masiva y simultánea.</li>
+                </ol>
             </div>
         </div>
     </div>
@@ -155,7 +155,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
         <div class="row">
             <div class="col">
-            <p>IEXE Universidad ha llevado acabo 296 capacitaciones especializadas a nivel nacional e internacional desde el año 2004. Esa experiencia nos ha permitido perfeccionar los procesos de logística y de aprendizaje para personas que trabajan en el servicio público y sector privado. A continuación se muestran algunos ejemplos de distintos formatos de capacitación presencial que IEXE ha realizado en los últimos 20 años.</p>
+                <p><strong>IEXE Universidad</strong> ha llevado acabo <strong>296 capacitaciones especializadas</strong> a nivel nacional e internacional desde el año 2004. Esa experiencia nos ha permitido <strong>perfeccionar los procesos de logística y de aprendizaje</strong> para personas que trabajan en el servicio público y sector privado. A continuación se muestran algunos ejemplos de <strong>distintos</strong> formatos de <strong>capacitación presencial</strong> que IEXE ha realizado en los últimos <strong>20 años.</strong></p>
             </div>
             
         </div>
@@ -170,7 +170,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
         <div class="row">
             <div class="col">
-                <p>Durante 20 años IEXE Universidad ha desarrollado exitosos proyectos de capacitación presencial dirigidos a personas que trabajan en el servicio público de todos los niveles en México y organismos multilaterales, con base a nuestro modelo de educación presencial, en línea y mixto.</p>
+                <p>Durante <strong>20 años<strong> IEXE Universidad ha desarrollado <strong>exitosos proyectos</strong> de <strong>capacitación presencial</strong> dirigidos a personas que trabajan en el servicio público de todos los niveles en <strong>México y organismos multilaterales</strong>, con base a nuestro <strong>modelo</strong> de <strong>educación presencial, en línea y mixto.</strong></p>
             </div>
         </div>
         <div class="row">

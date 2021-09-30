@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col">
                 <h1 class="titulo text-center">Vínculos IEXE</h1>
-                <h2 class="description text-center">Somos más que una universidad, conoce las razones.</h2>
+                <h2 class="description text-center"><strong> Somos más que una universidad,</strong> conoce las razones.</h2>
             </div>
         </div>
         <div class="row">

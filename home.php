@@ -83,7 +83,7 @@
             <div class="row">
                 <div class="col">
                     <a href="/oferta-educativa/"><h1 class="titulo">Programas académicos</h1></a>
-                    <h2 class="description">Conoce nuestros programas 100% en línea. ¡Desarróllate, especialízate y concreta tu futuro profesional!</h2>
+					<h2 class="description">Conoce nuestros programas <strong>100% en línea.</strong> ¡Desarróllate, especialízate y concreta tu futuro profesional!</h2>
                 </div>
             </div>
             <div class="row">
@@ -166,7 +166,7 @@
                                 <ul>
                                     <li><a href="/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/">Disciplina Financiera y Fiscalización</a> </li>
                                     <li><a href="/oferta-educativa/diplomado-en-habilidades-gerenciales-y-liderazgo/">Habilidades Gerenciales y Liderazgo</a> </li>
-                                    <li><a href="/oferta-educativa/d-analisis-y-diseno-y-de-politicas-publicas/">Análisis y Diseño de Políticas Públicas</a> </li>
+                                    <li><a href="/oferta-educativa/diplomado-en-analisis-y-diseno-y-de-politicas-publicas/">Análisis y Diseño de Políticas Públicas</a> </li>
                                     <li><a href="/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/">Fundamentos de Administración Pública</a></li>
                                     <li><a href="/oferta-educativa/diplomado-en-alta-direccion-en-la-funcion-publica/">Alta Dirección en la Función Pública</a></li>                                    
                                 </ul>
@@ -199,7 +199,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="titulo">Embajadores IEXE</h1>
-                    <h2 class="description">Conoce las experiencias de nuestra comunidad y al igual que ellos, ¡decídete a estudiar con nosotros!</h2>
+					<h2 class="description">Conoce las experiencias de nuestra comunidad y al igual que ellos, <strong>¡decídete a estudiar con nosotros!</strong></h2>
                 </div>
             </div>
         </div>

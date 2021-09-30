@@ -175,6 +175,97 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
     </div>
 </section>
+<section id="segunda-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul id="navegacione" class="nav nav-tabs" role="tablist">
+                    <li id="descripcion" role="presentation" class="active"><a data-target="#informacion-programa" data-slide-to="0" aria-controls="home" role="tab" data-toggle="tab">DESCRIPCIÓN<br> DEL PROGRAMA</a></li>
+                    <li id="aprender" role="presentation"><a data-target="#informacion-programa" data-slide-to="1" aria-controls="profile" role="tab" data-toggle="tab">QUÉ VAS A APRENDER</a></li>
+                    <li id="trabajar" role="presentation"><a data-target="#informacion-programa" data-slide-to="2" aria-controls="messages" role="tab" data-toggle="tab">DÓNDE PUEDES TRABAJAR</a></li>
+                    <li id="metodo" role="presentation"><a data-target="#informacion-programa" data-slide-to="3" aria-controls="settings" role="tab" data-toggle="tab">NUESTRO MÉTODO DE ENSEÑANZA</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    section#segunda-nav{
+        background: var(--primario--azul-obscuro);
+    }
+    #segunda-nav li {
+    min-width: 100%;
+    text-align: center;
+    }
+    #navegacione li.active {
+    border-bottom: 3px solid cyan;
+}
+    #navegacione.nav-tabs {
+  display: inline-flex;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: none; /*// IE 10+*/
+  overflow: -moz-scrollbars-none;/*// Firefox*/}
+  #navegacione.nav-tabs>li.active>a,
+  #navegacione.nav-tabs>li.active>a:focus,
+  #navegacione.nav-tabs>li.active>a:hover {
+  border-width: 0;
+  border-bottom: none;
+}
+#navegacione.nav-tabs>li>a {
+  border: none;
+  color: #FFF;
+}
+#navegacione.nav-tabs>li.active>a,
+#navegacione.nav-tabs>li>a:hover {
+  border: none;
+  background: transparent;
+}
+#navegacione.nav-tabs>li>a::after {
+  content: "";  
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 1px;
+  transition: all 250ms ease 0s;
+  transform: scale(0);
+}
+#navegacione.nav-tabs>li.active>a::after,
+#navegacione.nav-tabs>li:hover>a::after {
+  transform: scale(1);
+}
+#navegacione.tab-nav>li>a::after {
+  background: #21527d none repeat scroll 0% 0%;
+  color: #fff;
+}
+#navegacione.tab-pane {
+  padding: 15px 0;
+}
+#navegacione.tab-content {
+  padding: 20px
+}
+
+#navegacione.nav-tabs::-webkit-scrollbar {
+  display: none; /*Safari and Chrome*/
+}
+.card {
+  background: #FFF none repeat scroll 0% 0%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  display: block;
+}
+
+#navegacione.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+#navegacione.nav{
+    flex-wrap: inherit; 
+}
+</style>
 <?php if(is_page('855') || is_page('835') || is_page('734')){ ?>
 <section id="acreditacion-unitar">
     <div class="container">

@@ -195,7 +195,7 @@ h2.description{
     font-weight: 300;
     letter-spacing: 0.23px;
     font-size: 15px;
-    height: 40px;
+    min-height: 40px;
     margin-bottom: 11px;
 }
 .oferta-bloque{
@@ -1256,7 +1256,7 @@ ul.programas-academicos {
      margin-top: unset;
      background: #001E42;
      color: #FFF;
-     height: 64px;
+     min-height: 64px;
  }
  #navegacion .col {
     height: 64px;
@@ -2386,14 +2386,14 @@ section#el-futuro strong {
 section#nuestra-identidad {
     background: url(../img/sombra-contenedor.webp);
     background-position-x: center;
-    background-position-y: 200px;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     padding-bottom: 100px;
 }
 section#nuestra-historia {
     background: url(../img/sombra-contenedor-inversa.webp);
     background-position-x: center;
-    background-position-y: -20px;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     padding-bottom: 170px;
 }
@@ -2730,6 +2730,31 @@ Login
         bottom: 13px;
         left: 35px;
     }
+    .sticky a.navbar-brand {
+        margin-right: 25px;
+    }
+    section#nuestra-identidad{
+        background: unset;
+    }
+    .contenedor-menu {
+        margin-top: 20%;
+    }
+    h1.button-primary.fijo {
+        width: unset;
+    }
+    section#nuestra-identidad {
+        padding-bottom: unset;
+    }
+    section#nuestra-historia {
+        background: unset;
+        padding-bottom: unset;
+    }
+    section#el-futuro {
+        padding: 60px 0px 15px 0px;
+    }
+    .navbar {
+        padding: .3rem 0.5rem;
+    }
 }
 /* Woocommerce */
 span.woocommerce-input-wrapper {
@@ -2791,3 +2816,93 @@ span.nombre-institucion {
 #proceso-revalidacion .col.ultimo {
     border: unset;
 }
+
+/* Facultad */
+.instructor-item .instructor-info{
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    background-color: #FFF;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -khtml-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    }
+        .instructor-item {
+            padding-bottom: 30px;
+            padding-right: 20px;
+            padding-left: 20px;
+            max-width: 332px;
+            margin: 0 auto;
+        }
+    
+        .instructor-item .name {
+            margin-bottom: 4px;
+            margin-top: 0px;
+            font-size: 22px;
+            font-weight: 400;
+        }
+        .instructor-item .wrap-item {
+            background-color: #FFF;
+            box-shadow: 6px 4px 18px rgb(0 0 0 / 8%);
+            text-align: center;
+            position: relative;
+            padding-bottom: 100px;
+            overflow: hidden;
+            height: 478px;
+        }
+        .instructor-item .info_ins {
+            margin: 0 30px;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            color: #999;
+        }
+        .instructor-info:hover {
+            bottom: 155px;
+        }
+    
+        .instructor-item .instructor-info {
+            position: absolute;
+            bottom: -378px;
+            left: 0;
+            right: 0;
+            background-color: #FFF;
+            -webkit-transition: all 0.2s ease-in-out 0s;
+            -khtml-transition: all 0.2s ease-in-out 0s;
+            -moz-transition: all 0.2s ease-in-out 0s;
+            -ms-transition: all 0.2s ease-in-out 0s;
+            -o-transition: all 0.2s ease-in-out 0s;
+            transition: all 0.9s ease-in-out 0s;
+            height: 478px;
+            padding: 10px;
+            padding-top: 26px;
+        }
+        .description {
+            text-align: justify;
+            padding: 15px;
+            line-height: 20px;
+        }
+        .instructor-info:hover {
+            bottom: 0px;
+            background: var(--primario-azul);
+            color: #fff;
+        }
+        p.univ {
+            color: #000;
+            font-size: 18px;
+        }
+        p.job {
+            font-size: 15px;
+            margin-bottom: 14px;
+            line-height: 18px;
+        }
+        .instructor-info:hover > .name a {
+            color: #3A94D9;
+        }
+        strong {
+            font-weight: bold;
+        }
