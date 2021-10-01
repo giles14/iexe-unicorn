@@ -1,47 +1,57 @@
 <?php /* Template Name: Comunidad */ ?>
 <?php get_header( ); ?>
-<section id="seleccion-categoria" class="buffer-blog">
+<section id="comunicados">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h1 class="titulo">Galardón Generación 2021</h1>
-                <h2 class="description">Nuestros finalistas elegidos por la comunidad edicion 2021</h2>
-            </div>
-            <div class="col-md-3">
-            </div>
-
-            <div class="col-md-3">
-                <div class="buscar"><input id="busqueda-blog" type="text" placeholder="Buscar"></div>
+            <div class="col">
+                <h1 class="titulo">Comunicados...</h1>
+                <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
-                <div class="categoria-img">
-                    <img class="generacion" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/ulises-garduno.jpg" alt="">
-                    <h2 class="nombre">Ulises González Garduño</h2>
-                    <p class="nombre-progamna">Maestría en Finanzas Públicas</p>
-                    
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/imagen-noticia.png" alt="">
+            </div>
+            <div class="col-md-9">
+                <div class="aviso">
+                    <span class="tipo">AVISO</span>
+                    <div class="fecha">3 de Octubre del 2021</div>
+                    <div class="titulo-aviso">
+                        <h3>Encabezado principal o aviso relevante a la comunidad máximo de dos renglones y cortar texto…</h3>
+                    </div>
+                    <div class="descripcion-aviso">
+                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="categoria-img ">
-                <img class="generacion" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/yovani-molina.jpg" alt="">
-                    <h2 class="nombre">Mauricio Yovani Molina Medina</h2>
-                    <p class="nombre-progamna">Maestría en Seguridad Pública y Políticas Públicas</p>
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/imagen-noticia.png" alt="">
+            </div>
+            <div class="col-md-9">
+                <div class="aviso">
+                    <span class="tipo">NOTICIA</span>
+                    <div class="fecha">3 de Octubre del 2021</div>
+                    <div class="titulo-aviso">
+                        <h3>Encabezado principal o aviso relevante a la comunidad máximo de dos renglones y cortar texto…</h3>
+                    </div>
+                    <div class="descripcion-aviso">
+                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="categoria-img">
-                    <img class="generacion" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/cecilia-oliva.jpg" alt="">
-                    <h2 class="nombre">Cecilia Nohemi Olivia Juárez</h2>
-                    <p class="nombre-progamna">Maestría en Evaluación de Políticas Públicas</p>
-                </div>
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/imagen-noticia.png" alt="">
             </div>
-            <div class="col-md-3">
-                <div class="categoria-img">
-                    <img class="generacion" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/alejandro-gallardo.jpg" alt="">
-                    <h2 class="nombre">Alejandro A. Gallardo</h2>
-                    <p class="nombre-progamna">Maestría en Administración de Negocios</p>
+            <div class="col-md-9">
+                <div class="aviso">
+                    <span class="tipo">EVENTO</span>
+                    <div class="fecha">3 de Octubre del 2021</div>
+                    <div class="titulo-aviso">
+                        <h3>Encabezado principal o aviso relevante a la comunidad máximo de dos renglones y cortar texto…</h3>
+                    </div>
+                    <div class="descripcion-aviso">
+                        <p>Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,6 +101,56 @@
 
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="podcast">
+        <div class="container podcast">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/imagen-de-podcast.webp" alt="imágen de podcast">
+                    <h2 class="titulo-podcast">El valor de X</h2>
+                    <span class="tipo-de">Podcast</span>
+                    <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/barra-progreso.svg" alt="">
+                    <div class="controles-audio">
+                        
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">   
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/miniatura-podcast.png" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <h3 class="titulo-podcast">Podcast Uno: <strong>El valor de X</strong></h3>
+                                <p class="descripcion-podcast">
+                                    Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.
+                                    <div class="links-podcast">
+                                        <a href="">Ir a Spotify</a>
+                                        <a href="">Ir a Youtube</a>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/miniatura-podcast.png" alt="">
+                            </div>
+                            <div class="col-9">
+                                <h3 class="titulo-podcast">Podcast Uno: <strong>El valor de X</strong></h3>
+                                <p class="descripcion-podcast">
+                                    Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.
+                                    <div class="links-podcast">
+                                        <a href="">Ir a Spotify</a>
+                                        <a href="">Ir a Youtube</a>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 <section id="banner-libro">

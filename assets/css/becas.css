@@ -153,3 +153,30 @@ p.descripcion-beca {
 body#becas section#navegacion .container {
     visibility: hidden;
 }
+
+#becas section#header {
+    height: unset;
+}
+@media (max-width: 576px){
+
+    #becas section#header {
+        height: unset;
+    }
+    #becas section#navegacion {
+        height: 8px;
+        min-height: unset;
+    }
+    section#becas-slider {
+        margin-top: 24px;
+    }
+    .botones-beca {
+        margin-top: unset;
+        padding-bottom: 24px;
+    }
+    p.descripcion-beca {
+        margin-top: 32px;
+    }
+    a#boton-sep{
+        margin-bottom: 24px!important;
+    }
+}

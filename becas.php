@@ -12,7 +12,7 @@ Template Name: Becas
               <div class="container">
                   <div class="row">
                             <div class="col-md-12 d-none d-sm-block"><img style="margin-top: -103px;width: 90%;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/becas-slide.webp" alt=""></div>
-                            <div class="col-md-12 d-block d-sm-none"><img style="margin-top: -103px;width: 90%;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/becas-bg-movil.webp" alt=""></div>
+                            <div class="col-md-12 d-block d-sm-none"><img style="margin-top: -110px;width: 100%;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/becas-bg-movil.webp" alt=""></div>
                             
                   </div>
               </div>
@@ -73,12 +73,11 @@ Template Name: Becas
                                     </div>
                                 </div>
                                 <div class="row con-x">
-                                    <div class="col-md-1 align-self-center"><img class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
-                                    <div class="col-md-3">
+                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
+                                    <div class="col-md-3 d-none d-sm-block">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_1.webp" alt="" class="beca">
                                     </div>
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-5">
+                                    <div class="col-8 col-md-5 offset-md-2">
                                         <h1 class="titulo">Beca Institucional IEXE</h1>
                                         <p class="descripcion-beca">Pensada en apoyar a los alumnos(as) sobresalientes,
                                             la Beca IEXE otorga un porcentaje que va del 20% al 70% en las colegiaturas de licenciaturas,
@@ -87,7 +86,7 @@ Template Name: Becas
                                             <a class="btn btn-primario mt-3" href="#" data-toggle="modal" data-target="#modal-beca-IEXE">Solicítala aquí</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
                                 </div>
                     </div>
                 </div>
@@ -100,26 +99,31 @@ Template Name: Becas
                                     </div>
                                 </div>
                                 <div class="row con-x">
-                                    <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
-                                    <div class="col-md-3">
+                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
+                                    <div class="col-md-3 d-none d-sm-block">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_4.webp" alt="" class="beca">
                                     </div>
-                                    <div class="col-md-1"></div>
-                                    <div class="col-md-3">
+                                    <div class=" col-8 col-md-3 offset-md-1">
                                         <h1 class="titulo">Beca SEP</h1>
                                         <p  class="descripcion-beca">Promovida por la Secretaría de Educación Pública,
                                              la convocatoria de la Beca SEP es publicada una vez al año y
-                                              otorga porcentajes que van desde el 25% al 75% sobre la colegiatura.</p>
+                                              otorga porcentajes que van desde el 25% al 75% sobre la colegiatura.
+                                              </p>
+                                        <div class="botones-beca d-block d-sm-none">
+                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/CONVOCATORIA-FIRMADA-POR-EL-C.-SRIO.pdf">Convocatoria SEP</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/FORMATO_DE_SOLICITUD_DE_BECA_CICLO_2021-2022-2.docx">Formato de solicitud</a>
+                                            <a id="boton-sep" class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
+                                        </div>
                                     </div>
                                     
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 d-none d-sm-block">
                                         <div class="botones-beca">
                                             <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/CONVOCATORIA-FIRMADA-POR-EL-C.-SRIO.pdf">Convocatoria SEP</a>
                                             <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/FORMATO_DE_SOLICITUD_DE_BECA_CICLO_2021-2022-2.docx">Formato de solicitud</a>
                                             <a class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
                                 </div>
                     </div>
                 </div>
@@ -132,12 +136,12 @@ Template Name: Becas
                                     </div>
                                 </div>
                                 <div class="row con-x">
-                                    <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
-                                    <div class="col-md-3">
+                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
+                                    <div class="col-md-3 d-none d-sm-block">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_3.webp" alt="" class="beca">
                                     </div>
                                     
-                                    <div class="col-md-5 offset-md-2">
+                                    <div class="col-8 col-md-5 offset-md-2">
                                         <h1 class="titulo">Beca Embajadores IEXE</h1>
                                         <p  class="descripcion-beca">Diseñada para apoyar a los integrantes de la Comunidad IEXE,
                                             la Beca de embajadores IEXE otorga a nuestros alumnos(as) un beneficio acumulable
@@ -147,7 +151,7 @@ Template Name: Becas
                                         </div>
                                     </div>
                                     
-                                    <div class="col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
                                 </div>
                     </div>
                 </div>
@@ -160,11 +164,11 @@ Template Name: Becas
                                     </div>
                                 </div>
                                 <div class="row con-x">
-                                    <div class="col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
-                                    <div class="col-md-3">
+                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
+                                    <div class="col-md-3 d-none d-sm-block">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_2.webp" alt="" class="beca">
                                     </div>
-                                    <div class="col-md-5 offset-md-2">
+                                    <div class="col-8 col-md-5 offset-md-2">
                                         <h1 class="titulo">Beca Alianzas Estratégicas</h1>
                                         <p  class="descripcion-beca">Hemos realizado alianzas académicas con distintas instituciones públicas y privadas. Si perteneces a alguna de ellas, tú y tus familiares pueden solicitar una beca por medio de un convenio estratégico entre la universidad con la empresa donde laboras.</p>
                                         <div class="botones-beca">
@@ -172,7 +176,7 @@ Template Name: Becas
                                         </div>
                                     </div>
                                     
-                                    <div class="col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
                                 </div>
                     </div>
                 </div>
@@ -213,9 +217,9 @@ Template Name: Becas
 <section id="banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <a href="/admision"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_becas.webp" alt=""></a>
-            
+            <div class="col col-md-12">
+                <a class="d-none d-sm-block" href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_becas.webp" alt=""></a>
+                <a class="d-block d-sm-none" href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner-becas-movil.webp" alt=""></a>
             </div>
         </div>
     </div>

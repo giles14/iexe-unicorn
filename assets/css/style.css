@@ -197,6 +197,7 @@ h2.description{
     font-size: 15px;
     min-height: 40px;
     margin-bottom: 11px;
+    padding:unset;
 }
 .oferta-bloque{
     border-radius: 15px;
@@ -1103,7 +1104,7 @@ img.boton-play {
 }
 
 .sticky a.navbar-brand {
-    width: 45px;
+    width: 46px;
     overflow: hidden;
     /* transition: all 0.5s ease-out; */
     margin-right: 152px;
@@ -1138,6 +1139,7 @@ nav.navbar.sticky .navegacion-botones {
     z-index: 99;
     outline: 6px solid var(--primario-cyan);
   }
+  
   .sidenav:before {
     position: absolute;
     background: #000;
@@ -1156,6 +1158,50 @@ nav.navbar.sticky .navegacion-botones {
     display: block;
     transition: 0.3s;
   }
+  .accesosPanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -6px;
+    background-color: #001E42;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    opacity: 0.98;
+    z-index: 99;
+    outline: 6px solid var(--primario-cyan);
+  }
+  .accesosPanel a {
+    /* padding: 8px 8px 8px 32px; */
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color-navegacion);
+    display: block;
+    transition: 0.3s;
+}
+  .accesosPanel .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 110px;
+    font-size: 15px;
+    margin-left: 50px;
+    letter-spacing: 0.25px;
+}
+#accesos .logo {
+    position: absolute;
+    top: 10px;
+    left: 88px;
+    font-size: 30px;
+}
+#accesos .contenedor-menu {
+    min-width: 350px;
+}
   #overlay-menu {
     position: fixed;
     display: none;
@@ -2432,6 +2478,58 @@ body#comunidad {
     background-size: contain;
     background-repeat: no-repeat;
 }
+section#comunicados {
+    margin-top: 37%;
+    background: linear-gradient(180deg, rgba(0,255,232,1) 0%, rgba(142,153,255,1) 77%, rgba(255,255,255,1) 100%);
+    padding-top: 28px;
+}
+section#comunicados .aviso {
+    border-radius: 0px 0px 15px 15px;
+}
+#comunicados span.tipo {
+    background: #4323FF;
+    color: #FFF;
+    font-family: var(--familia-titulos);
+    padding: 10px 20px;
+    position: absolute;
+    top: -32px;
+    left: 0px;
+    width: 180px;
+    text-align: center;
+    font-size: 18px;
+}
+.descripcion-aviso {
+    max-width: 570px;
+}
+.aviso {
+    background: #FFF;
+    padding: 30px 15px 22px 75px;
+    height: 172px;
+    position: relative;
+    margin-top: 32px;
+    background-image: url(../img/x-comunicados.svg);
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 80%;
+}
+.aviso .fecha {
+    font-size: 15px;
+    text-align: left;
+    font-weight: 300;
+    color: var(--primario-azul);
+}
+.aviso .titulo-aviso  h3{
+    font-weight: 600;
+    font-size: 21px;
+    text-align: left;
+    color: var(--primario--azul-obscuro);
+}
+.aviso .descripcion-aviso p {
+    color: var(--primario--azul-obscuro);
+    font-size: 15px;
+    letter-spacing: 0.14px;
+    font-weight: 300;
+}
 .categoria-img h2.nombre {
     color: #fff;
     font-family: var(--familia-titulos);
@@ -2502,7 +2600,51 @@ section#todos-los-programas-academicos\ buffer-60 {
     height:90px;
     margin:-90px 0 0;
     }
-
+.container.podcast{
+    background: var(--primario--azul-obscuro);
+    border-radius: 15px;
+    padding: 36px;
+}
+h3.titulo-podcast {
+    color: var(--primario-cyan);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.29px;
+}
+p.descripcion-podcast {
+    color: #F6F6F6;
+    font-size: 16px;
+    letter-spacing: 0.26px;
+    font-weight: 200;
+}
+.links-podcast {
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+.links-podcast a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.row.lista-de-podcast {
+    border-bottom: 1px solid var(--primario-cyan);
+    margin-bottom: 16px;
+}
+h2.titulo-podcast {
+    color: cyan;
+    text-align: center;
+    font-weight: 800;
+    font-family: var(--familia-titulos);
+    font-size: 30px;
+    margin-top: 16px;
+}
+span.tipo-de {
+    font-size: 8px;
+    text-align: center;
+    display: block;
+    color: #e3e3e3;
+}
 /*
 Login
 */
@@ -2753,7 +2895,7 @@ Login
         padding: 60px 0px 15px 0px;
     }
     .navbar {
-        padding: .3rem 0.5rem;
+        padding: 0rem 0.5rem;
     }
 }
 /* Woocommerce */
@@ -2791,7 +2933,7 @@ section#proceso-revalidacion .container {
     background: #D4E4F9;
     border-radius: 15px;
     padding-top: 15px;
-    padding: 15px 25px;
+    padding: 24px 25px;
 }
 span.nombre-pais {
     width: 100%;

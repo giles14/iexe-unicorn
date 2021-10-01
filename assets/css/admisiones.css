@@ -259,6 +259,31 @@ select#interes option {
 #admisiones section#banner {
     margin-bottom: 60px;
 }
+a.mostrar-mas {
+    color: var(--primario-azul);
+    text-align: center;
+    letter-spacing: 0.36px;
+    text-decoration: underline 3px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-underline-offset: 3px;
+    margin: 0 auto;
+    display: block;
+    min-width: 125px;
+    margin-bottom: 16px;
+}
 .carousel-item{
     transition: transform 2s ease, opacity .5s ease-out
+}
+@media (max-width: 576px){
+    #admisiones section#header {
+        height: unset;
+    }
+    #proceso-revalidacion .banderas .col {
+        border-right: unset;
+    }
+    .row.contenedor-admision.los-requisitos {
+        margin: 0 auto;
+    }
 }

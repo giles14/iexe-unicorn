@@ -12,7 +12,8 @@ Template Name: Admisiones
               <div class="container">
                   <div class="row">
                       <div class="col-md-12">
-                          <img style="margin-top: 30px;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones.webp" alt="">
+                          <img style="margin-top: 30px;" class="img-fluid d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones.webp" alt="">
+                          <img style="margin-top: 30px;" class="img-fluid d-block d-sm-none" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/admisiones-movil.webp" alt="">
                       </div>
                   </div>
               </div>
@@ -23,7 +24,8 @@ Template Name: Admisiones
               <div class="container">
                   <div class="row">
                     <div class="col-md-12">
-                          <img style="margin-top: 17px;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones-pasos.webp" alt="">
+                          <img style="margin-top: 17px;" class="img-fluid d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-admisiones-pasos.webp" alt="">
+                          <img style="margin-top: 35px;" class="img-fluid d-block d-sm-none" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/admisones-pasos-movil.webp" alt="">
                       </div>           
                   </div>
               </div>
@@ -233,38 +235,43 @@ Template Name: Admisiones
             <div class="col">
                 <span class="nombre-pais">Ecuador</span>
                 <span class="nombre-institucion">SENECYT</span>
-                <a class="btn btn-primario" href="">Ver información</a>
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/ecuador.png" alt="">
+                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://siau.senescyt.gob.ec/pregunta-frecuente/los-titulos-de-abogado-obtenidos-en-el-extranjero-y-que-sean-registrados-en-el-pais-deben-pasar-por-un-proceso-adicional-para-ejercer-la-profesion-en-ecuador/">Ver información</a>
             </div>
             <div class="col">
                 <span class="nombre-pais">Colombia</span>
                 <span class="nombre-institucion">MINEDUCAC</span>
-                <a class="btn btn-primario" href="">Ver información</a>
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/colombia.png" alt="">
+                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://www.mineducacion.gov.co/portal/convalidaciones/Convalidaciones-Educacion-Superior/355353:Preguntas-Frecuentes">Ver información</a>
+                
             </div>
             <div class="col">
                 <span class="nombre-pais">Guatemala</span>
                 <span class="nombre-institucion">USAC</span>
-                <a class="btn btn-primario" href="">Ver información</a>
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/guatemala.png" alt="">
+                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://registro.usac.edu.gt/index.php?equi=1">Ver información</a>
+                
             </div>
             <div class="col">
                 <span class="nombre-pais">El Salvador</span>
                 <span class="nombre-institucion">MINED</span>
-                <a class="btn btn-primario" href="">Ver información</a>
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/el-salvador.png" alt="">
+                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://www.mined.gob.sv/servicios/incorporacion-de-titulos-de-educacion-superior-procedentes-del-extranjero/ ">Ver información</a>
+                
             </div>
             <div class="col">
                 <span class="nombre-pais">Panamá</span>
                 <span class="nombre-institucion">MEDUCA</span>
-                <a class="btn btn-primario" href="">Ver información</a>
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/panama.png" alt="">
+                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://www.panamatramita.gob.pa/es/tramite/solicitud-de-rev%C3%A1lida-de-t%C3%ADtulos">Ver información</a>
+                
             </div>
             <div class="col ultimo">
                 <span class="nombre-pais">Perú</span>
                 <span class="nombre-institucion">MINEDU</span>
-                <a class="btn btn-primario" href="">Ver información</a>
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/peru.png" alt="">
+                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://www.sunedu.gob.pe/procedimiento-de-reconocimiento-de-grados-y-titulos-extranjeros/#ver-la-lista">Ver información</a>
+                
             </div>
         </div>
     </div>

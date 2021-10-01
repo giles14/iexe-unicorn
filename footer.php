@@ -17,13 +17,6 @@
                         'menu_class' => 'menu-footer'
                     ) );
                      ?>
-                    <!-- <ul>
-                        <li><a href="">¿Quénes somos?</a></li>
-                        <li><a href="">Nuestra comunidad</a></li>
-                        <li><a href="">Bienvenido a IEXE</a></li>
-                        <li><a href="">Blog & noticias</a></li>
-                        <li><a href="">Sello editorial</a></li>
-                    </ul> -->
                 </div>
                 <div class="col-6 col-md-2 order-3 order-lg-2">
                     <a class="menu" href="">PROCESOS</a>
@@ -34,13 +27,6 @@
                         'menu_class' => 'menu-footer'
                     ) );
                      ?>
-                    <!-- <ul>
-                        <li><a href="">Inscripciones abiertas</a></li>
-                        <li><a href="">Requisitos de ingreso</a></li>
-                        <li><a href="">Becas</a></li>
-                        <li><a href="">Recorrido virtual</a></li>
-                        <li><a href="">Bolsa de Trabajo</a></li>
-                    </ul> -->
                 </div>
                 <div class="col-6 col-md-2 order-1 order-lg-3">
                     <a class="menu" href="">OFERTA</a>
@@ -51,14 +37,6 @@
                         'menu_class' => 'menu-footer'
                     ) );
                      ?>
-                    <!-- <ul>
-                        <li><a href="">Licenciaturas</a></li>
-                        <li><a href="">Maestrías</a></li>
-                        <li><a href="">Másters</a></li>
-                        <li><a href="">Doctorado</a></li>
-                        <li><a href="">Diplomado</a></li>
-                        <li><a href="">Capacitaciones</a></li>
-                    </ul> -->
                 </div>
                 <div class="col-md-3 order-4">
                     <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a target="_blank" class="telefono-whatsapp" href="https://bit.ly/3C4nwCo">55-3409-8683</a></p>
@@ -102,8 +80,7 @@
         </div>
 
     </section>
-    <div id="mySidenav" class="sidenav animate__bounceInRight">
-        
+    <div id="mySidenav" class="sidenav animate__bounceInRight"> 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Cerrar <span>&times;</span></a>
         <a class="d-none d-sm-block" href="<?php home_url(); ?>"><div class="logo">
             <i class="fas fa-home"></i>
@@ -121,7 +98,6 @@
                         <li><a href="/oferta-educativa/#masters">Másteres</a></li>
                         <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
                         <li><a href="/oferta-educativa/#capacitaciones">Capacitaciones</a></li>
-                        
                     </ul>
                 <a class="menu-movil" href="/admisiones">Admisiones</a>
                 <a class="menu-movil" href="/becas">Becas</a>
@@ -129,20 +105,25 @@
             </div>
         </div>
     </div>
+    <div id="accesos" class="accesosPanel animate__bounceInRight"> 
+        <a href="javascript:void(0)" class="closebtn" onclick="cierraAccesos()">Cerrar <span>&times;</span></a>
+        <a class="d-none d-sm-block" href="<?php home_url(); ?>"><div class="logo">
+            <i class="fas fa-home"></i>
+            <!-- <img src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/logo.svg" alt="Logo IEXE"> -->
+        </div></a>
+        <div class="menu-navegacion">
+            <a class="button-primary">ACCESOS</a>
+            <div class="contenedor-menu">
+                <a class="menu-movil" target="_blank" href="https://www.alumnos.iexe.edu.mx/">Alumnos</a>
+                <a class="menu-movil" target="_blank" href="https://www.docentes.iexe.edu.mx">Colaboradores</a>
+                <a class="menu-movil" target="_blank" href="https://www.talento.iexe.edu.mx">Comercial</a>
+            </div>
+        </div>
+    </div>
     <div id="overlay-menu"></div>
-    
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>     -->
 <script>
     var $ = jQuery;
     $(document).ready(function(){
-        // $(".oferta-bloque").click(function(){  
-        //     $('.oferta-bloque').removeClass("activo");
-        //     $(this).toggleClass( "activo" );
-        // });
-        // $("a.descubre-mas").click(function(){
-        //     $('.oferta-bloque').removeClass("activo");
-        //     $(this).toggleClass( "activo" );
-        // });
         $(".oferta-bloque").click(function(){
             if ( $(this).hasClass('activo') ){
                 $(this).removeClass('activo')
@@ -152,8 +133,6 @@
             }
 
         });
-        
-
     });
     
 </script>
@@ -175,7 +154,7 @@
         $('.navbar').addClass('sticky');
     }else {
         $(window).scroll(function() {
-        if ($(this).scrollTop() > 120) {
+        if ($(this).scrollTop() > 60) {
             $('.navbar').addClass('sticky');
         }else{
             $('.navbar').removeClass('sticky');
@@ -186,6 +165,7 @@
 <script>    
     var estado_menu = false;
     const menu = document.getElementById("mySidenav");
+    const acceso = document.getElementById("accesos");
     const overlay = document.getElementById('overlay-menu');
     var w = window.innerWidth;
     window.addEventListener('resize', function () { 
@@ -211,8 +191,28 @@
     }
     
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
+      menu.style.width = "0";
       estado_menu = false;
+      enableScroll();
+      overlay.style.display = "none";
+    }
+    function abreAccesos() {
+        
+        if(w > 800){
+            // document.getElementById("mySidenav").style.width = "66%";
+            acceso.style.width = "66%";
+            overlay.style.display = "block";
+            disableScroll();
+        }else {
+            $('nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light').addClass('sticky');
+            // document.getElementById("mySidenav").style.width = "100%";
+            acceso.style.width = "100%";
+            disableScroll();
+        }
+    }
+    
+    function cierraAccesos() {
+      acceso.style.width = "0";
       enableScroll();
       overlay.style.display = "none";
     }
@@ -257,11 +257,13 @@ function enableScroll() {
     $(document).mouseup(function(e) 
         {
             var container = $("#mySidenav");
+            var acceso = $("#accesos")
 
             // if the target of the click isn't the container nor a descendant of the container
             if (!container.is(e.target) && container.has(e.target).length === 0) 
             {
                 closeNav();
+                cierraAccesos();
             }
         });
 
@@ -276,7 +278,6 @@ function enableScroll() {
         // variableWidth: false
         // });
         $('.sliding').slick({
-            // prevArrow:'<i class="uil uil-angle-left-b"></i>',
             prevArrow:$("img.boton-atras"),
             nextArrow:$("img.boton-adelante")
         });
