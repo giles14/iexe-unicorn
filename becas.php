@@ -73,7 +73,7 @@ Template Name: Becas
                                     </div>
                                 </div>
                                 <div class="row con-x">
-                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.png" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
                                     <div class="col-md-3 d-none d-sm-block">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_1.webp" alt="" class="beca">
                                     </div>
@@ -86,7 +86,7 @@ Template Name: Becas
                                             <a class="btn btn-primario mt-3" href="#" data-toggle="modal" data-target="#modal-beca-IEXE">Solicítala aquí</a>
                                         </div>
                                     </div>
-                                    <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.png" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
                                 </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ Template Name: Becas
                                     </div>
                                 </div>
                                 <div class="row con-x">
-                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.webp" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
                                     <div class="col-md-3 d-none d-sm-block">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_4.webp" alt="" class="beca">
                                     </div>
@@ -123,7 +123,7 @@ Template Name: Becas
                                             <a class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
                                         </div>
                                     </div>
-                                    <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.webp" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
                                 </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ Template Name: Becas
                                     </div>
                                 </div>
                                 <div class="row con-x">
-                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.webp" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
                                     <div class="col-md-3 d-none d-sm-block">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_3.webp" alt="" class="beca">
                                     </div>
@@ -151,7 +151,7 @@ Template Name: Becas
                                         </div>
                                     </div>
                                     
-                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.webp" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
                                 </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@ Template Name: Becas
                                     </div>
                                 </div>
                                 <div class="row con-x">
-                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.webp" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
                                     <div class="col-md-3 d-none d-sm-block">
                                         <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_2.webp" alt="" class="beca">
                                     </div>
@@ -176,7 +176,7 @@ Template Name: Becas
                                         </div>
                                     </div>
                                     
-                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.webp" alt=""></div>
+                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
                                 </div>
                     </div>
                 </div>

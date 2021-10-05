@@ -7,9 +7,47 @@ $(document).ready(function(){
     setProgressBar(current);
 
     $(".next").click(function(){
+        if(current == 1){
+            if(($('input[name=nombre]').val().length != 0) && ($('input[name=email]').val().length != 0) && ($('input[name=telefono]').val().length != 0)){
+                console.log('tiene informacion');
+                console.log(current);
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+            }else{
+                console.log('PASO UNO NO PASO');
+                console.log(current);
+                alert('Por favor llene los datos antes de contiunuar');
+                console.log('nuevo valor ' + current);
+            }
+        }else if(current == 2){
+            if(($('input[name=edad]').val().length != 0) && ($('input[name=promedio]').val().length != 0)){
+                console.log('tiene informacion 2');
+                console.log(current);
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+            }else{
+                console.log('PASO DOS NO PASO');
+                console.log(current);
+                alert('Por favor llene los datos antes de contiunuar');
+                current = 1;
+                console.log('nuevo valor ' + current);
+            }
+        } else if(current == 3){
+            if($('#entiendo').prop('checked')){
+                console.log('tiene informacion 3');
+                console.log(current);
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+            }else{
+                console.log('PASO TRES NO PASO');
+                console.log(current);
+                alert('debe de aceptar los términos antes de continuar');
+                current = 2;
+            }
+        }
+        
 
-    current_fs = $(this).parent();
-    next_fs = $(this).parent().next();
+    
 
     //Add Class Active
     $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
@@ -67,11 +105,8 @@ $(document).ready(function(){
     $(".progress-bar")
     .css("width",percent+"%")
     }
-
+    console.log(current);
     $(".submit").click(function(){
     return false;
     });
-    $("#calcula-beca").validate({
-        debug: true
-      });
 });

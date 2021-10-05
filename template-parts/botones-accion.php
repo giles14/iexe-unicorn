@@ -3,29 +3,35 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="boton-accion becas">
+                <a href="/becas">
                     <div class="boton-accion-contenido ">
                       <h4>Becas</h4>
                       <p>Educación accesible para todos.</p>
-                      <a href="/becas"><span class="css-sprite-flecha-bloc flecha-ir"></span><!-- <img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">--></a>
+                      <span class="css-sprite-flecha-bloc flecha-ir"></span><!-- <img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">-->
                     </div>
+                </a>
                   </div>
             </div>
             <div class="col-md-4">
                 <div class="boton-accion asesor">
+                  <a href="https://bit.ly/3C4nwCo">
                     <div class="boton-accion-contenido">
                       <h4>Asesor en línea</h4>
                       <p>Inicia tu proceso de admisión con alguno de nuestros asesores</p>
-                      <a href="https://bit.ly/3C4nwCo"><span class="css-sprite-flecha-bloc flecha-ir"></span><!-- <img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">--></a>
+                      <span class="css-sprite-flecha-bloc flecha-ir"></span><!-- <img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">-->
                     </div>
+                  </a>
                   </div>
             </div>
             <div class="col-md-4">
                 <div class="boton-accion admision">
-                    <div class="boton-accion-contenido">
+                <a href="/admisiones">
+                  <div class="boton-accion-contenido">
                       <h4>Admisión</h4>
                       <p>Iniciamos clases todos los meses</p>
-                      <a href="/admisiones"><span class="css-sprite-flecha-bloc flecha-ir"></span><!--<img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">--></a>
+                      <span class="css-sprite-flecha-bloc flecha-ir"></span><!--<img src="assets/img/flecha-bloc.png" alt="" class="flecha-ir">-->
                     </div>
+                </a>
                   </div>
             </div>
         </div>

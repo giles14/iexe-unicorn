@@ -37,6 +37,9 @@ html {
     color: cyan;
     font-weight: bold;
 }
+#becas-slider .slick-slide img:hover {
+    filter: drop-shadow(3px 5px 4px rgb(0 0 0 / 0.3));
+}
 section{
     color: var(--primario--azul-obscuro);
     margin-top: 64px;
@@ -1496,6 +1499,9 @@ h3.duracion {
     font-size: 15px;
     font-weight: 300;
     visibility: hidden;
+}
+#botones-accion a:hover {
+    text-decoration: none;
 }
 .buffer-materias{
     margin-top: 24px;

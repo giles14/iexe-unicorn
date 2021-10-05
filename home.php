@@ -255,7 +255,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/admisiones"><img class="img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                    <a href="/admisiones"><img class="d-none d-sm-block img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                    <a href="/admisiones"><img class="d-block d-sm-none img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home_movil.webp" alt=""></a>
                 </div>
             </div>
         </div>
