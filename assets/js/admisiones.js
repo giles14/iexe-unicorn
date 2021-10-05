@@ -1,29 +1,36 @@
 $(document).ready(function(){
     $("#licenciaturas .los-requisitos .inicia-proceso a").click(function(){
+        window.scrollTo(0,0);
         $(this).parents(".los-requisitos").toggle();
         $('#licenciaturas .el-formulario').toggle().css("display: flex");
     });
     $("#licenciaturas .el-formulario .regresa-requisitos a").click(function(){
+        window.scrollTo(0,0);
         $('#licenciaturas .los-requisitos').toggle();
         $(this).parents(".el-formulario").toggle();
     });
     $("#maestrias .los-requisitos .inicia-proceso a").click(function(){
+        window.scrollTo(0,0);
         $(this).parents('.los-requisitos').toggle();
         $('#maestrias .el-formulario').toggle().css("display: flex");
     });
     $("#maestrias .el-formulario .regresa-requisitos a").click(function(){
+        window.scrollTo(0,0);
         $('#maestrias .los-requisitos').toggle();
         $(this).parents(".el-formulario").toggle();
     });
     $("#doctorado .los-requisitos .inicia-proceso a").click(function(){
+        window.scrollTo(0,0);
         $(this).parents('.los-requisitos').toggle();
         $('#doctorado .el-formulario').toggle().css("display: flex");
     });
     $("#doctorado .el-formulario .regresa-requisitos a").click(function(){
+        window.scrollTo(0,0);
         $('#doctorado .los-requisitos').toggle();
         $(this).parents("#doctorado .el-formulario").toggle();
     });
     $("section#navegacion a").click(function(){
+        window.scrollTo(0,0);
         $("section#navegacion a").removeClass('active');
         $(this).addClass('active');
 

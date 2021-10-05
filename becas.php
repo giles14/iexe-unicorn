@@ -79,7 +79,7 @@ Template Name: Becas
                                     </div>
                                     <div class="col-8 col-md-5 offset-md-2">
                                         <h1 class="titulo">Beca Institucional IEXE</h1>
-                                        <p class="descripcion-beca">Pensada en apoyar a los alumnos(as) sobresalientes,
+                                        <p class="descripcion-beca">Pensada en apoyar a los alumnos sobresalientes,
                                             la Beca IEXE otorga un porcentaje que va del 20% al 70% en las colegiaturas de licenciaturas,
                                             maestrías y doctorado. Nuestros estudiantes y aspirantes pueden solicitarla todo el año.</p>
                                         <div class="botones-beca">
@@ -144,7 +144,7 @@ Template Name: Becas
                                     <div class="col-8 col-md-5 offset-md-2">
                                         <h1 class="titulo">Beca Embajadores IEXE</h1>
                                         <p  class="descripcion-beca">Diseñada para apoyar a los integrantes de la Comunidad IEXE,
-                                            la Beca de embajadores IEXE otorga a nuestros alumnos(as) un beneficio acumulable
+                                            la Beca de embajadores IEXE otorga a nuestros alumnos un beneficio acumulable
                                             por cada referido inscrito, por lo que se puede otorgar hasta un 100% de beca.</p>
                                             <div class="botones-beca">
                                                 <a class="btn btn-primario mt-3" href="#" data-toggle="modal" data-target="#modal-beca-embajadores">Solicítala aquí</a>
@@ -218,7 +218,7 @@ Template Name: Becas
     <div class="container">
         <div class="row">
             <div class="col col-md-12">
-                <a class="d-none d-sm-block" href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_becas.webp" alt=""></a>
+                <a class="d-none d-sm-block" href="/admisiones"><img class="img-fluid redondear" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_becas.webp" alt=""></a>
                 <a class="d-block d-sm-none" href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner-becas-movil.webp" alt=""></a>
             </div>
         </div>

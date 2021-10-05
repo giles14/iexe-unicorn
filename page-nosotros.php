@@ -17,7 +17,7 @@
                     </div>
     </div>
 </section>
-<section id="segunda-nav">
+<!-- <section id="segunda-nav">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -99,7 +99,7 @@
 #navegacion.nav{
     flex-wrap: inherit; 
 }
-</style>
+</style> -->
 
 <section id="nuestra-historia">
     <div class="container">

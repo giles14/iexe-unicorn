@@ -294,7 +294,9 @@ Template Name: Admisiones
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img class="img-fluid banners" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
+                <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/">
+                    <img class="img-fluid banners" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
+                </a>
             </div>
         </div>
     </div>

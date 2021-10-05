@@ -51,12 +51,12 @@
                 <div class="col-12 col-md-4">
                     <a href="/oferta-educativa">
                     <div class="boton-slide d-flex">
-                        <span>Estudiar a tu ritmo</span>
+                        <span>Educación a distancia</span>
                     </div>
                     </a>
-                    <a href="/admisiones">
+                    <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/">
                     <div class="boton-slide d-flex">
-                        <span>Inscripción en línea</span>
+                        <span>Programas internacionales</span>
                     </div>
                     </a>
                     <a href="/becas">
@@ -82,7 +82,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a href="/oferta-educativa/"><h1 class="titulo">Programas académicos</h1></a>
+                    <a href="/oferta-educativa/"><h1 class="titulo">Oferta educativa</h1></a>
 					<h2 class="description">Conoce nuestros programas <strong>100% en línea.</strong> ¡Desarróllate, especialízate y concreta tu futuro profesional!</h2>
                 </div>
             </div>
@@ -209,7 +209,7 @@
                     <div class="marco">
                         <div class="info-pre-video">
                             <a><img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt=""></a>
-                            <p class="consejos">Tips para mis compañeros de nuevo ingreso</p>
+                            <p class="consejos">Tips para mis compañeros de maestría</p>
                         </div>
                     </div>
                     <video width="443" height="579" loop>
@@ -235,7 +235,7 @@
                     <div class="marco">
                         <div class="info-pre-video">
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
-                            <p class="consejos">Un consejo para estudiar en IEXE Universidad</p>
+                            <p class="consejos">Ventajas de estudiar en línea mi licenciatura</p>
                         </div>
                     </div>
                     <video width="443" height="579" muted loop>

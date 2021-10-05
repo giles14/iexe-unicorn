@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img class="logo-abajo mx-auto img-fluid 	d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.svg"  alt="">
-                    <img style="width:60%" class="logo-abajo mx-auto  d-none d-lg-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical.svg" alt="">
+                    <a href="<?php echo get_home_url(); ?>"><img class="logo-abajo mx-auto img-fluid 	d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.svg"  alt=""></a>
+                    <a href="<?php echo get_home_url(); ?>"><img style="width:60%" class="logo-abajo mx-auto  d-none d-lg-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical.svg" alt=""></a>
                     <!-- <span class="redes-sociales">SÍGUENOS EN</span> -->
                     
                 </div>
@@ -90,7 +90,7 @@
             <a class="button-primary">MENÚ</a>
             <div class="contenedor-menu">
                 <a class="menu-movil" href="/nosotros">Acerca de IEXE</a>
-                <a class="menu-movil" href="/oferta-educativa">Programas académicos</a>
+                <a class="menu-movil" href="/oferta-educativa">Oferta educativa</a>
                     <ul class="programas-academicos">
                         <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
                         <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
@@ -115,7 +115,8 @@
             <a class="button-primary">ACCESOS</a>
             <div class="contenedor-menu">
                 <a class="menu-movil" target="_blank" href="https://www.alumnos.iexe.edu.mx/">Alumnos</a>
-                <a class="menu-movil" target="_blank" href="https://www.docentes.iexe.edu.mx">Colaboradores</a>
+                <a class="menu-movil" target="_blank" href="https://www.docentes.iexe.edu.mx">Docentes</a>
+                <a class="menu-movil" target="_blank" href="https://develop.redisoft.dev">Colaboradores</a>
                 <a class="menu-movil" target="_blank" href="https://www.talento.iexe.edu.mx">Comercial</a>
             </div>
         </div>
@@ -125,6 +126,9 @@
     var $ = jQuery;
     $(document).ready(function(){
         $(".oferta-bloque").click(function(){
+            if($(this).hasClass('activo') && $('.links-programas ul li > a').click() ){
+
+            }else 
             if ( $(this).hasClass('activo') ){
                 $(this).removeClass('activo')
             } else {

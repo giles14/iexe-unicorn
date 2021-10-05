@@ -71,4 +71,7 @@ $(document).ready(function(){
     $(".submit").click(function(){
     return false;
     });
+    $("#calcula-beca").validate({
+        debug: true
+      });
 });

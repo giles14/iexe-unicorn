@@ -82,13 +82,15 @@
             </li>
           </ul> -->
           <div class="navegacion-botones">
-            <a style="color: #fff;" onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos"> Accesos</a>
+            <a onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos"> Accesos</a>
             <!-- <img style="margin-left: 20px;" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/search.svg" alt="" class="busqueda"> Buscar -->
           </div>
                    
         </div>
-        <div class="menu">
-            <a href="javascript:void(0)" class="closebtn" onclick="openNav()">Menú <img class="menu-boton" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/menu.svg" alt=""></a>
-        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="openNav()">
+          <div class="menu">
+              Menú <img class="menu-boton" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/menu.svg" alt="">
+          </div>
+        </a>
         </div>
       </nav>

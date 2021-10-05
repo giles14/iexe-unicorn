@@ -157,6 +157,9 @@ body#becas section#navegacion .container {
 #becas section#header {
     height: unset;
 }
+.img-fluid.redondear {
+    border-radius: 15px;
+}
 @media (max-width: 576px){
 
     #becas section#header {

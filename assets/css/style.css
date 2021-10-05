@@ -28,7 +28,15 @@ html {
     font-weight: 500;
     line-height: 1;
 }
-
+.navegacion-botones a {
+    text-decoration: none;
+    color: #fff;
+}
+.navegacion-botones a:hover {
+    text-decoration: none;
+    color: cyan;
+    font-weight: bold;
+}
 section{
     color: var(--primario--azul-obscuro);
     margin-top: 64px;
@@ -2624,8 +2632,11 @@ p.descripcion-podcast {
 }
 .links-podcast a {
     color: #fff;
-    text-decoration: underline;
     font-weight: 600;
+}
+.links-podcast a:hover {
+    color:var(--primario-cyan);
+    text-decoration: none;
 }
 .row.lista-de-podcast {
     border-bottom: 1px solid var(--primario-cyan);
@@ -2645,6 +2656,112 @@ span.tipo-de {
     display: block;
     color: #e3e3e3;
 }
+#anuncio-tiktok .tiktok {
+    background: var(--primario--azul-obscuro);
+    margin-left: 5%;
+    border-radius: 15px;
+    background-image: url(../img/tiktok.svg);
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    min-height: 185px;
+    background-position-y: 100%;
+    padding: 15px;
+}
+.tiktok a.btn.btn-primario {
+    font-size: 16px;
+    padding: 8px 15px;
+    margin-top: 12px;
+}
+.tiktok .texto {
+    font-family: var(--familia-titulos);
+    color: #f3f3f3;
+    letter-spacing: 0.72px;
+    font-size: 24px;
+    max-width: 310px;
+}
+#anuncio-tiktok .generacion {
+    background: var(--primario-azul);
+    border-radius: 15px;
+    padding: 15px;
+}
+.escudo-comunidad {
+    margin-top: -50px;
+}
+.generacion h1 {
+    font-family: var(--familia-titulos);
+    font-size: 19px;
+    color: #f6f6f6;
+    padding-left: 20px;
+    float: left;
+    width: 302px;
+}
+#anuncio-tiktok .generacion p {
+    color: #f6f6f6;
+    float: left;
+    padding-left: 18px;
+    width: 310px;
+    font-weight: 100;
+}
+a.conocelos {
+    background: #f6f6f6;
+    border-radius: 20px;
+    color: var(--primario--azul-obscuro);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 6px 23px;
+    float: left;
+    margin-left: 17px;
+}
+section#video-testimonial {
+    background: var(--primario--azul-obscuro);
+    color: #f6f6f6;
+}
+h2.titulo-testimonial {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.22px;
+    color: #f6f6f6;
+    margin-bottom: 46px;
+    margin-top: 10px
+}
+section#video-testimonial {
+    background: var(--primario--azul-obscuro);
+    color: #f6f6f6;
+    background-image: url(../img/video-bg.webp);
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-size: contain;
+    background-position-x: -158px;
+}
+section#video-testimonial h1 {
+    color: var(--primario-cyan);
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    margin-top: 26px;
+    font-family: var(--familia-titulos);
+}
+section#video-testimonial p {
+    max-width: 440px;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0.26px;
+    margin-bottom: 40px;
+}
+section#anuncio-tiktok {
+    margin-top: 82px;
+}
+a.icono-spotify {
+    margin-right: 30px;
+}
+section#mapa-comunidad {
+    background: linear-gradient(
+90deg, rgba(255,255,255,1) 12%, rgba(0,255,232,1) 100%);
+}
+img.img-fluid.internacional {
+    margin-top: -85px;
+}
+
 /*
 Login
 */

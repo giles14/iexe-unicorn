@@ -126,8 +126,8 @@
                                 <p class="descripcion-podcast">
                                     Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.
                                     <div class="links-podcast">
-                                        <a href="">Ir a Spotify</a>
-                                        <a href="">Ir a Youtube</a>
+                                        <a class="icono-spotify" href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-spotify.webp" alt=""> Ir a Spotify</a>
+                                        <a class="icono-youtube" href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
                                     </div>
                                 </p>
                             </div>
@@ -141,8 +141,8 @@
                                 <p class="descripcion-podcast">
                                     Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.
                                     <div class="links-podcast">
-                                        <a href="">Ir a Spotify</a>
-                                        <a href="">Ir a Youtube</a>
+                                        <a class="icono-spotify" href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-spotify.webp" alt=""> Ir a Spotify</a>
+                                        <a class="icono-youtube" href=""><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
                                     </div>
                                 </p>
                             </div>
@@ -153,6 +153,99 @@
 
         </div>
     </section>
+    <section id="anuncio-tiktok">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 tiktok">
+                    <div class="texto">
+                        Descubre y diviértete con nuestro nuevo canal de Tik tok IEXE
+                        <a href="" class="btn btn-primario" target="_blank">¡Descúbrelo!</a>
+                    </div>
+
+                </div>
+                <div class="col-md-5 offset-md-1 generacion">
+                    <img class="float-left escudo-comunidad" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudoComunidad.webp" alt="">
+                    <div class="texto">
+                        <h1>Alumno de la generación</h1>
+                        <p>Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding.</p>
+                        <a href="" class="conocelos">¡Cónocelos!</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="video-testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-4">
+                    <h1>Videos testimoniales IEXE</h1>
+                    <p>Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 offset-md-4">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/video-testimonial.png" alt="">
+                    <h2 class="titulo-testimonial">Podcast Uno: <strong>El valor de X</strong></h2>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/video-testimonial.png" alt="">
+                    <h2 class="titulo-testimonial">Podcast Uno: <strong>El valor de X</strong></h2>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mapa-comunidad">
+        <div class="container">
+            <div class="row">
+                <img class="img-fluid internacional" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comunidad-internacional.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <h1 class="titulo">Comunidad Internacional</h1>
+                    <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="lista-pais">
+                        <div class="bandera"></div>
+                        <div class="nombre-pais">Ecuador</div>
+                    </div>
+                    <div class="lista-pais">
+                        <div class="bandera"></div>
+                        <div class="nombre-pais">Colombia</div>
+                    </div>
+                    <div class="lista-pais">
+                        <div class="bandera"></div>
+                        <div class="nombre-pais">Guatemala</div>
+                    </div>
+                    <div class="lista-pais">
+                        <div class="bandera"></div>
+                        <div class="nombre-pais">Estados Unidos</div>
+                    </div>
+                    <div class="lista-pais">
+                        <div class="bandera"></div>
+                        <div class="nombre-pais">México</div>
+                    </div>
+                    <div class="lista-pais">
+                        <div class="bandera"></div>
+                        <div class="nombre-pais">Argentina</div>
+                    </div>
+                    <div class="lista-pais">
+                        <div class="bandera"></div>
+                        <div class="nombre-pais">República Dominicana</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <section id="banner-libro">
     <div class="container">
         <div class="row">
