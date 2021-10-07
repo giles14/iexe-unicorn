@@ -91,7 +91,15 @@
                 
         </div>
     </section>
-
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/comunidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_blog.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="ultimas-noticias">
         <div class="container">
             <div class="row">
@@ -161,8 +169,8 @@
                         <div class="autor-destacada">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor.png" alt="" class="autor-foto" style="border: 1px solid cyan; border-radius: 40px;">
                             <div class="meta-informacion">
-                                <span class="nombre"><?php echo get_the_author() ?></span>
-                                <span class="redes">@Migueliexe</span>
+                                <span class="nombre"><?php // echo get_the_author() ?>Luis Miguel Arroyo</span>
+                                <span class="redes">Colaborador IEXE</span>
                             </div>
                         </div>
                         <div class="resumen-destacada">
@@ -223,14 +231,5 @@
         </div>
     </div>
 </section>
-    <section id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="/comunidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_blog.webp" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </section>
     <?php get_template_part( 'template-parts/vinculos'); ?>
     <?php get_footer( ); ?>

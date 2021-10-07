@@ -175,7 +175,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
     </div>
 </section>
-<section id="segunda-nav">
+<!-- <section id="segunda-nav">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -188,7 +188,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <style>
     section#segunda-nav{
@@ -271,7 +271,8 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/acreditacion_cifal.webp" alt="">
+                <img class="img-fluid d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/acreditacion_cifal.webp" alt="">
+                <img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/acreditacion_cifal_movil.webp" alt="">
             </div>
         </div>
     </div>
@@ -393,7 +394,13 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
     </div>
 </section>
-
+<script>
+    jQuery(document).ready(function($){
+        $('section#navegacion a').click(function(){
+            
+        });
+    }
+</script>
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer( ); ?>

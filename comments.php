@@ -38,7 +38,12 @@
             
             <?php endif; // have_comments() ?>
             
-            <?php comment_form(); ?>
+            <?php if(!is_woocommerce()) {
+                comment_form(array('title_reply' => 'Deja un comentario'));
+            }else{
+                comment_form(array('title_reply' => 'Deja una opinión'));
+            }
+            ?>
             
             </div><!-- #comments -->
         </div>

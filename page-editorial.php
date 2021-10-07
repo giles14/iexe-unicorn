@@ -16,6 +16,13 @@
         </div>
         <div class="row">
             <div class="col-md-3">
+                <a href="/producto/el-pais-de-los-elefantes-blancos/">
+                <div class="categoria-img elefantes-blancos">
+                    <h2>El País de los Elefantes Blancos</h2>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3">
                 <a href="/producto/la-campana/">
                 <div class="categoria-img la-campana">
                     <h2>La Campaña</h2>
@@ -23,23 +30,16 @@
                 </a>
             </div>
             <div class="col-md-3">
-                <a href="/producto/crisis-viral/">
-                <div class="categoria-img crisis-viral">
-                    <h2>Crisis Viral</h2>
-                </div>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="/diseno-de-politicas-publicas/">
+                <a href="/producto/diseno-de-politicas-publicas/">
                 <div class="categoria-img politicas-publicas">
                     <h2>Diseño de Políticas Públicas</h2>
                 </div>
                 </a>
             </div>
             <div class="col-md-3">
-                <a href="/producto/el-pais-de-los-elefantes-blancos/">
-                <div class="categoria-img elefantes-blancos">
-                    <h2>El país de los elefantes blancos</h2>
+                <a href="/producto/crisis-viral/">
+                <div class="categoria-img crisis-viral">
+                    <h2>Crisis Viral</h2>
                 </div>
                 </a>
             </div>
@@ -69,7 +69,25 @@
             </div>
         </div>
     </div>
-
+    <script>
+        jQuery(document).ready(function($){
+        $('.la-campana').hover(function(){
+            $('body#editorial').addClass('editorial-2');
+        }, function(){
+            $('body#editorial').delay( 1800 ).removeClass('editorial-2');
+        });
+        $('.politicas-publicas').hover(function(){
+            $('body#editorial').addClass('editorial-3');
+        }, function(){
+            $('body#editorial').delay( 1800 ).removeClass('editorial-3');
+        });
+        $('.crisis-viral').hover(function(){
+            $('body#editorial').addClass('editorial-1');
+        }, function(){
+            $('body#editorial').delay( 1800 ).removeClass('editorial-1');
+        });
+    });
+    </script>            
 
 
 <?php get_footer(); ?>

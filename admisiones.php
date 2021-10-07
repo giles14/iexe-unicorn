@@ -41,7 +41,7 @@ Template Name: Admisiones
         <div class="row no-gutters">
             <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">ADMISIONES</div></div></a></div>
             <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">PROCESO</div></div></a></div>
-            <div class="col"><a href="https://iexe.edu.mx/alianzas-academicas" target="_blank"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONVENIOS</div></div></a></div>
+            <div class="col d-none"><a href="https://iexe.edu.mx/alianzas-academicas" target="_blank"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONVENIOS</div></div></a></div>
             <!-- <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">CRÉDITOS ANTICIPADOS</div></div></a></div> -->
         </div>
     </div>
@@ -119,7 +119,7 @@ Template Name: Admisiones
                     <ul class="requisitos">
                         <li>Acta de nacimiento original.</li>
                         <li>Copia de CURP.</li>
-                        <li>Copia de título profesional de licenciatura (en caso de que se encuentre en trámite constancia de titulación en trámite y copia de acta de examen profesional).</li>
+                        <li>Copia de título profesional de licenciatura (en caso de que se encuentre en trámite, constancia de titulación en trámite y copia de acta de examen profesional).</li>
                         <li>Copia de cédula profesional de licenciatura (en caso de que se encuentre en trámite, constancia de titulación en trámite).</li>
                         <li>El/la aspirante que ingresa a la maestría como opción de titulación de la licenciatura, deberá entregar además los 2 siguientes requisitos:</li>
                             <ul>
@@ -236,7 +236,7 @@ Template Name: Admisiones
                 <span class="nombre-pais">Ecuador</span>
                 <span class="nombre-institucion">SENECYT</span>
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/ecuador.png" alt="">
-                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://siau.senescyt.gob.ec/pregunta-frecuente/los-titulos-de-abogado-obtenidos-en-el-extranjero-y-que-sean-registrados-en-el-pais-deben-pasar-por-un-proceso-adicional-para-ejercer-la-profesion-en-ecuador/">Ver información</a>
+                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://siau.senescyt.gob.ec/proceso/registro-de-titulos-extranjeros/">Ver información</a>
             </div>
             <div class="col">
                 <span class="nombre-pais">Colombia</span>
@@ -295,7 +295,8 @@ Template Name: Admisiones
         <div class="row">
             <div class="col-md-12">
                 <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/">
-                    <img class="img-fluid banners" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
+                    <img class="img-fluid banners d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
+                    <img class="img-fluid banners d-block d-sm-none" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones_movil.webp" alt="">
                 </a>
             </div>
         </div>
@@ -358,7 +359,7 @@ Template Name: Admisiones
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body">
-                                        <p>Así es, puedes consultar el <strong>Reconocimiento de Validez Oficial de Estudios (RVOE)</strong> en: www.sirvoes.sep.gob.mx</p>
+                                        <p>Las licenciaturas, maestrías, doctorado y diplomados cuentan con el aval de la <strong>Secretaría de Educación Pública de México</strong>. Puedes consultar el Reconocimiento de Validez Oficial de Estudios (RVOE) en: www.sirvoes.sep.gob.mx</p>
                                     </div>
                                     </div>
                                 </div>

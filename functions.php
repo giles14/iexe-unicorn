@@ -52,6 +52,7 @@ function agregar_estilos_tema(){
     if(is_page_template('becas.php')){
         wp_enqueue_script( 'iexe-unicorn-becas');
         wp_enqueue_style( 'iexe-unicorn-becas-estilo');
+        wp_enqueue_script('iexe-unicorn-multipasos');
     }
     if(is_page_template('admisiones.php')){
         wp_enqueue_script( 'iexe-unicorn-admisiones');

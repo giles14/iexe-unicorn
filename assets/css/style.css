@@ -492,6 +492,7 @@ section#blog .container {
     background-position-x: 100%;
     background-position-y: 32px;
     padding-bottom: 44px;
+    background-repeat: no-repeat;
 }
 .post {
     background: white;
@@ -797,8 +798,22 @@ img.menu-boton {
     text-shadow: 1px 1px 1px #000;
     color: #fff;
 }
-#editorial .categoria-img:hover h2 {
+/* #editorial .categoria-img:hover h2 {
     visibility: hidden;
+} */
+#blog section#banner {
+    background: #EEEEEE;
+    margin-top: -5px;
+}
+section#blog a:hover {
+    text-decoration: none;
+}
+section#blog a:hover {
+    text-decoration: none;
+}
+section#blog a:hover h2 {
+    text-decoration: none;
+    color: var(--primario-cyan);
 }
 .bg-light {
     background-color: unset!important;
@@ -856,7 +871,7 @@ section#comunidad .mensaje {
     background: var(--primario--azul-obscuro)!important;
 }
 .mensaje.fuente-pequeña {
-    font-size: 26px!important;
+    font-size: 23px!important;
     line-height: normal!important;
 }
 .overlay-img{
@@ -928,6 +943,12 @@ section#comunidad .mensaje {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+   .quantity .text {
+    position: unset;
+    color: unset;
+    top: unset;
+    transform: unset;
+}
   .links-programas {
     top: 40px;
     position: relative;
@@ -1511,6 +1532,13 @@ div#social {
     width: 100%;
     background: lightgray;
     margin-top: 22px;
+}
+.meta-informacion {
+    float: left;
+    width: 170px;
+}
+section#blog a.button-primary {
+    margin: unset;
 }
 .boton-accion{
     max-height: 170px;
@@ -2214,6 +2242,27 @@ body#editorial {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.editorial-1 {
+    background-image: url(../img/crisis-bg.webp)!important;
+    /* background-color: #EDEDED; */
+    background-size: contain!important;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.editorial-2 {
+    background-image: url(../img/campana-bg.webp)!important;
+    /* background-color: #EDEDED; */
+    background-size: contain!important;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.editorial-3 {
+    background-image: url(../img/dpp-bg.webp)!important;
+    /* background-color: #EDEDED; */
+    background-size: contain!important;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
 #editorial .categoria-img h2 {
     color: #fff;
     font-family: var(--familia-titulos);
@@ -2407,6 +2456,20 @@ h2.widgettitle {
     color: var(--primario-cyan);
     font-weight: 300;
 }
+.price span.woocommerce-Price-amount.amount bdi {
+    color: var(--primario-azul);
+    font-size: 22px;
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: var(--blue);
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+.woocommerce button.button.alt:hover {
+    background-color: var(--primario--azul-obscuro);
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
 
 /*
     Nosotros
@@ -2518,7 +2581,7 @@ section#comunicados .aviso {
 .aviso {
     background: #FFF;
     padding: 30px 15px 22px 75px;
-    height: 172px;
+    min-height: 172px;
     position: relative;
     margin-top: 32px;
     background-image: url(../img/x-comunicados.svg);
@@ -2671,7 +2734,7 @@ span.tipo-de {
     background-position-x: 99%;
     min-height: 185px;
     background-position-y: 100%;
-    padding: 15px;
+    padding: 20px;
 }
 .tiktok a.btn.btn-primario {
     font-size: 16px;
@@ -2688,7 +2751,7 @@ span.tipo-de {
 #anuncio-tiktok .generacion {
     background: var(--primario-azul);
     border-radius: 15px;
-    padding: 15px;
+    padding: 20px;
 }
 .escudo-comunidad {
     margin-top: -50px;
@@ -2699,13 +2762,13 @@ span.tipo-de {
     color: #f6f6f6;
     padding-left: 20px;
     float: left;
-    width: 302px;
+    width: 280px;
 }
 #anuncio-tiktok .generacion p {
     color: #f6f6f6;
     float: left;
     padding-left: 18px;
-    width: 310px;
+    width: 295px;
     font-weight: 100;
 }
 a.conocelos {
@@ -3020,6 +3083,25 @@ Login
     .navbar {
         padding: 0rem 0.5rem;
     }
+    #anuncio-tiktok .tiktok {
+        margin: 0px 15px 90px 15px;
+    }
+    .col-md-5.offset-md-1.generacion {
+        margin: 0 15px;
+    }
+    .aviso{
+        margin-bottom: 16px;
+        padding: 20px;
+        background-image: none;
+    }
+    .foto-podcast{
+        margin-top: 16px;
+    }
+    .escudo-nosotros{
+        margin: 0 auto;
+        display: block;
+    }
+
 }
 /* Woocommerce */
 span.woocommerce-input-wrapper {

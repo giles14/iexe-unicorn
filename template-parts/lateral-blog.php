@@ -3,7 +3,9 @@
     <ul>
 
     </ul>
-    <?php $lateralCategorias = get_categories(); 
+    <?php $lateralCategorias = get_categories(array(
+        'exclude' => 32
+    )); 
         foreach ($lateralCategorias as $categoria){
         echo "<li><a href=" . get_category_link( $categoria->term_id ) .">$categoria->name</a></li>";
     }

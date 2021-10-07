@@ -24,9 +24,9 @@ Template Name: Programas
                 <div class="col-md-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Licenciaturas</h1>
                     <ul class="licenciaturas">
-                        <li><a href="/oferta-educativa/licenciatura-en-administracion-de-empresas/">Administración de Empresas</a> </li>
-                        <li><a href="/oferta-educativa/licenciatura-en-ciencias-politicas-y-administracion-publica/">Ciencias Políticas y Administración Pública</a> </li>
                         <li><a href="/oferta-educativa/licenciatura-en-seguridad-publica/licenciatura-en-seguridad-publica">Seguridad Pública</a> </li>
+                        <li><a href="/oferta-educativa/licenciatura-en-ciencias-politicas-y-administracion-publica/">Ciencias Políticas y Administración Pública</a> </li>
+                        <li><a href="/oferta-educativa/licenciatura-en-administracion-de-empresas/">Administración de Empresas</a> </li>
                         <li><a href="/oferta-educativa/licenciatura-en-derecho/">Derecho</a> </li>
                     </ul>
                 </div>

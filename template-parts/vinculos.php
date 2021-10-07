@@ -10,7 +10,7 @@
             <div class="col-6 col-md-3">
                 <a target="_blank" href="/editorial">
                 <img class="img-fluid boton-vinculo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/sello-editorial.webp" alt="">
-                <div class="texto-vinculo">Sello<br> Editorial<br> IEXE</div></a>
+                <div class="texto-vinculo"></div></a>
             </div>
             <div class="col-6 col-md-3">
                 <a target="_blank" href="https://juliofranco.mx">
@@ -20,7 +20,7 @@
             <div class="col-6 col-md-3">
                 <a target="_blank" href="https://evaluare.mx">
                 <img class="img-fluid boton-vinculo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/evualuare.webp" alt="">
-                <div class="texto-vinculo">Consultoria<br> IEXE</div></a>
+                <div class="texto-vinculo">Consultoría<br> IEXE</div></a>
                 </a>
             </div>
             <div class="col-6 col-md-3">

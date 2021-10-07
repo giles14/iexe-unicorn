@@ -39,11 +39,11 @@
                      ?>
                 </div>
                 <div class="col-md-3 order-4">
-                    <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a target="_blank" class="telefono-whatsapp" href="https://bit.ly/3C4nwCo">55-3409-8683</a></p>
+                    <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a target="_blank" class="telefono-whatsapp" href="https://bit.ly/3uOB6Hv">55-6814-0690</a></p>
                     <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
                     <!-- <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a> -->
                     <div class="iconos-redes-sociales">
-                        <a target="_blank" href="https://www.facebook.com/IEXE.Universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a target="_blank" href="https://twitter.com/IEXE_Uni"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a target="_blank" href="https://www.youtube.com/c/IexeEduMx"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a target="_blank" href="https://www.linkedin.com/school/iexeuniversidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a target="_blank" href="https://www.instagram.com/iexe_universidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a>
+                        <a target="_blank" href="https://www.facebook.com/IEXE.Universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a target="_blank" href="https://twitter.com/IEXE_Uni"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a target="_blank" href="https://www.youtube.com/c/IexeEduMx"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a target="_blank" href="https://www.linkedin.com/school/iexeuniversidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a target="_blank" href="https://www.instagram.com/iexe_universidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a><a target="_blank" href="https://open.spotify.com/show/0UL42ohKAgBn2Sdse3VV5J"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/spotify.svg" alt="" class="redes"></a><a target="_blank" href="https://vm.tiktok.com/ZMRoQFFQC/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/tiktok.svg" alt="" class="redes"></a>
                     </div>
                     <p class="direccion">Blvd. Esteban de Antuñano 2702,<br>C.P. 72160 Cd. de Puebla, México</p>
                 </div>
@@ -97,7 +97,7 @@
                         <li><a href="/oferta-educativa/#doctorado">Doctorado</a></li>
                         <li><a href="/oferta-educativa/#masters">Másteres</a></li>
                         <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
-                        <li><a href="/oferta-educativa/#capacitaciones">Capacitaciones</a></li>
+                        <li><a href="/capacitaciones/">Capacitaciones</a></li>
                     </ul>
                 <a class="menu-movil" href="/admisiones">Admisiones</a>
                 <a class="menu-movil" href="/becas">Becas</a>
@@ -116,7 +116,7 @@
             <div class="contenedor-menu">
                 <a class="menu-movil" target="_blank" href="https://www.alumnos.iexe.edu.mx/">Alumnos</a>
                 <a class="menu-movil" target="_blank" href="https://www.docentes.iexe.edu.mx">Docentes</a>
-                <a class="menu-movil" target="_blank" href="https://develop.redisoft.dev">Colaboradores</a>
+                <!-- <a class="menu-movil" target="_blank" href="https://develop.redisoft.dev">Colaboradores</a> -->
                 <a class="menu-movil" target="_blank" href="https://www.talento.iexe.edu.mx">Comercial</a>
             </div>
         </div>
@@ -126,7 +126,10 @@
     var $ = jQuery;
     $(document).ready(function(){
         $(".oferta-bloque").click(function(){
-            if($(this).hasClass('activo') && $('.links-programas ul li > a').click() ){
+            if($(this).hasClass('activo')){
+                if($('.links-programas ul li > a').parent().click()){
+                    $(this).removeClass('activo');
+                }
 
             }else 
             if ( $(this).hasClass('activo') ){
@@ -388,7 +391,7 @@ $('#interes button.btn.btn-primario').click(function(){
       <div class="modal-body">
           <p class="description">Por favor verifique que todos los campos fueron llenados y que la información proporcionada es correcta e intente de nuevo.</p>
           <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
-          <img style="height: 150px; margin: 0 auto; text-align: center; display: block;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/triste.webp" alt="">
+          
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

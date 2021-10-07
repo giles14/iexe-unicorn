@@ -5,24 +5,24 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                            <a href="/nosotros/#el-futuro"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
-                            <a href="/nosotros/#el-futuro"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
+                            <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
+                            <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
                       </div>
                       <div class="carousel-item">
                             <a href="/becas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
                             <a href="/becas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador-mobile.webp" alt="Embajadores Slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/#diplomados"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
-                            <a href="/oferta-educativa/#diplomados"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
+                            <a href="/editorial"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
+                            <a href="/editorial"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
                       </div>
                       <div class="carousel-item">
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/#diplomados"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
-                            <a href="/oferta-educativa/#diplomados"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
+                            <a href="/comunidad"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
+                            <a href="/comunidad"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
                       </div>
                       <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
@@ -94,8 +94,8 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="oferta-educativa/licenciatura-en-ciencias-politicas-y-administracion-publica/">Ciencias Políticas y Administración Pública</a></li>
                                     <li><a href="oferta-educativa/licenciatura-en-seguridad-publica/licenciatura-en-seguridad-publica">Seguridad Pública</a></li>
+                                    <li><a href="oferta-educativa/licenciatura-en-ciencias-politicas-y-administracion-publica/">Ciencias Políticas y Administración Pública</a></li>
                                     <li><a href="oferta-educativa/licenciatura-en-derecho/">Derecho</a></li>
                                     <li><a href="oferta-educativa/licenciatura-en-administracion-de-empresas/">Administración de Empresas</a></li>                                    
                                 </ul>
@@ -205,7 +205,7 @@
         </div>
         <div class="container container-plus">
             <div class="row no-gutters">
-                <div class="col col-md-4 d-none d-md-block my-video primero">
+                <div class="col col-md-4 d-none d-md-block my-video primero d-none d-sm-block">
                     <div class="marco">
                         <div class="info-pre-video">
                             <a><img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt=""></a>
@@ -231,7 +231,7 @@
                             El navegador no acepta video
                       </video>
                 </div>
-                <div class="col col-md-4 d-none d-md-block my-video tercero">
+                <div class="col col-md-4 d-none d-md-block my-video tercero d-none d-sm-block">
                     <div class="marco">
                         <div class="info-pre-video">
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
@@ -249,7 +249,7 @@
 
     </section>
     <?php get_template_part( 'template-parts/interes'); ?>
-    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_recta.png" alt="" class="img-fluid miniban d-block d-sm-none">
+        <a href="/comunidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_recta.png" alt="" class="img-fluid miniban d-none "></a>
     <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe'); ?>
     <section id="banners">
         <div class="container">
@@ -272,7 +272,7 @@
                             <div class="bloque-neon">
                                 <h3 class="titulos">Hablemos de...</h3>
                             </div> -->
-                            <a class="button-primary">Hablemos de...</a>
+                            <a href="/blog" class="button-primary">En el blog IEXE Hablamos de...</a>
                     </div>
                     
                 </div>
@@ -284,25 +284,25 @@
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="imagen-blog">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blogMiniatura.webp" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/convenio-haya.webp" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="autor d-none d-sm-block">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor.png" alt="" class="autor-foto">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/luis.webp" alt="" class="autor-foto">
                             <div class="meta-informacion">
-                                <span class="nombre">Miguel Hdz</span>
-                                <span class="redes">@migueliexe</span>
+                                <span class="nombre">Luis Miguel Arroyo</span>
+                                <span class="redes">Colaborador IEXE</span>
                             </div>
                             
                         </div>
                         <div class="post">
-                            <a href="/destacado/derechos-de-la-comunidad-lgbt-el-camino-hacia-una-politica-de-igualdad-y-diversidad/"><h2 class="titulo">Derechos de la comunidad LGBT+; el camino hacia una política</h2></a>
+                            <a href="/destacado/derechos-de-la-comunidad-lgbt-el-camino-hacia-una-politica-de-igualdad-y-diversidad/"><h2 class="titulo">Validez internacional a títulos expedidos por IEXE Universidad</h2></a>
                             <div class="entrada">
-                                <a href="/destacado/derechos-de-la-comunidad-lgbt-el-camino-hacia-una-politica-de-igualdad-y-diversidad/"><p> Políticas públicas y diversidad: el caso de la comunidad LGBT+ Algunos antecedentes históricos de lucha…</p></a>
+                                <a href="/destacado/derechos-de-la-comunidad-lgbt-el-camino-hacia-una-politica-de-igualdad-y-diversidad/"><p>Los títulos expedidos por IEXE Universidad mediante la Conferencia de la Haya y la suscripción…</p></a>
                             </div>
                             <div class="iconos">
-                                <i class="fas fa-heart primero"></i>90<i class="fas fa-comment-alt"></i>78<i class="fas fa-sync-alt"></i>12<i class="fas fa-bookmark ultimo"></i>34
+                                <!-- <i class="fas fa-heart primero"></i>90<i class="fas fa-comment-alt"></i>78<i class="fas fa-sync-alt"></i>12<i class="fas fa-bookmark ultimo"></i>34 -->
                             </div>
                         </div>
                     </div>

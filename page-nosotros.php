@@ -150,7 +150,7 @@
                     <p>Somos la primera opción de las personas cuando buscan una institución de educación superior <strong>especializada, totalmente en línea.</strong></p>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-fluid float-right" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-iexe-nosotros.svg" alt="">
+                    <img class="img-fluid float-md-right escudo-nosostros" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-iexe-nosotros.svg" alt="">
                 </div>
             </div>  
         </section>

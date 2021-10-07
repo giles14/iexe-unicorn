@@ -80,7 +80,12 @@
     endif; 
     ?>
 </section>
-<?php get_template_part( 'template-parts/interesar'); ?>
+
+<?php
+    if(!is_woocommerce()) {
+        get_template_part( 'template-parts/interesar'); 
+    }
+ ?>
 
     <!-- Agregar banner publicidad -->
 

@@ -30,8 +30,8 @@
                             <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" />
                             <label class="fieldlabels">Email: *</label>
                             <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" />
-                            <label class="fieldlabels">Teléfono: *</label>
-                            <input id="telefono-beca" type="tel" name="telefono" placeholder="Ingresa aquí tu número telefónico" />
+                            <label class="fieldlabels">Celular: *</label>
+                            <input id="telefono-beca" type="tel" name="telefono" placeholder="Ingresa aquí tu teléfono móvil" />
                             <div style="margin-top: 15px" class="form-group">
                                 <label for="programa-interes">Selecciona un programa</label>
                                 <?php get_template_part( 'template-parts/selectProgramas'); ?>

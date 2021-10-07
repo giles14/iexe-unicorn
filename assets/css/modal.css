@@ -1,6 +1,8 @@
 .modal p.description{
     text-align: center;
     color: #FFF;
+    margin-bottom: 30px;
+    min-height: 100px;
 }
 .modal-footer {
     background-color: #e9ecef;
