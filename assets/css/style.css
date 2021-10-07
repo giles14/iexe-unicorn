@@ -2414,7 +2414,7 @@ li.wc-block-product-categories-list-item a:hover {
 }
 span.woocommerce-Price-amount.amount {
     font-weight: 900;
-    color: #FFF;
+    /* color: #FFF; */
 }
 a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart {
     background: linear-gradient( 
@@ -3100,6 +3100,9 @@ Login
     .escudo-nosotros{
         margin: 0 auto;
         display: block;
+    }
+    .archivo-thumb{
+        margin: 20px 5px;
     }
 
 }

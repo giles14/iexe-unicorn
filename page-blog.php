@@ -17,21 +17,21 @@
         </div>
         <div class="row">
             <div class="col-md-3">
-                <a href="/category/Destacado/">
+                <a class="boton-categoria" href="/category/Destacado/">
                     <div class="categoria-img seguridad">
                         <h2>Destacado</h2>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <a href="/category/infografia/">
                     <div class="categoria-img politicas">
                         <h2>Infografía</h2>
                     </div>
                 </a>
-            </div>
+            </div> -->
             <div class="col-md-3">
-                <a href="/category/Noticias/">
+                <a class="boton-categoria" href="/category/Noticias/">
                     <div class="categoria-img liderazgo">
                         <h2>Noticias</h2>
                     </div>
@@ -39,7 +39,7 @@
                 
             </div>
             <div class="col-md-3">
-                <a href="/category/politicas-publicas/">
+                <a class="boton-categoria" href="/category/politicas-publicas/">
                     <div class="categoria-img internacionales">
                         <h2>Políticas Públicas</h2>
                     </div>
@@ -70,7 +70,7 @@
                 <div class="col-md-4">
                     <div class="bloque-entrada-blog">
                         <?php the_post_thumbnail('ultimas-archivo', array('class' => 'img-fluid')); ?>
-                        <div class="bloque-flecha"><a href="<?php the_permalink() ?>"><i class="uil uil-angle-right link-flecha"></i></a></div>
+                        <div class="bloque-flecha d-none d-sm-block"><a href="<?php the_permalink() ?>"><i class="uil uil-angle-right link-flecha"></i></a></div>
                         <div class="bloque-entrada">
                             <span class="meta fecha"><?php echo get_the_date('j F\, Y'); ?></span>
                             <span class="meta categoria">Blog</span>
@@ -95,7 +95,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/comunidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_blog.webp" alt=""></a>
+                    <a href="/comunidad"><img class="img-fluid d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_blog.webp" alt=""></a>
+                    <a href="/comunidad"><img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_blog_movil.webp" alt=""></a>
                 </div>
             </div>
         </div>
@@ -122,7 +123,7 @@
                 <div class="col-md-4">
                     <div class="bloque-entrada-blog">
                         <?php the_post_thumbnail('ultimas-archivo', array('class' => 'img-fluid')); ?>
-                        <div class="bloque-flecha"><a href="<?php the_permalink() ?>"><i class="uil uil-angle-right link-flecha"></i></a></div>
+                        <div class="bloque-flecha d-none d-sm-block"><a href="<?php the_permalink() ?>"><i class="uil uil-angle-right link-flecha"></i></a></div>
                         <div class="bloque-entrada">
                             <span class="meta fecha"><?php echo get_the_date('j F\, Y'); ?></span>
                             <span class="meta categoria">Noticias</span>
@@ -167,7 +168,7 @@
                 <div class="col-md-6" style="margin-left: -1px;">
                     <div class="destacada-post">
                         <div class="autor-destacada">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor.png" alt="" class="autor-foto" style="border: 1px solid cyan; border-radius: 40px;">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/luis.webp" alt="" class="autor-foto" style="border: 1px solid cyan; border-radius: 40px;">
                             <div class="meta-informacion">
                                 <span class="nombre"><?php // echo get_the_author() ?>Luis Miguel Arroyo</span>
                                 <span class="redes">Colaborador IEXE</span>
@@ -201,7 +202,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-blog.webp" alt="" class="img-fluid">
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-blog.webp" alt="" class="img-fluid d-none d-sm-block">
             </div>
             <div class="col-md-6">
                 <p class="interes-programa">¡Seguimos creciendo y queremos que tú seas parte de esto!<br> Descubre como IEXE tiene presencia nacional e internacional.</p>

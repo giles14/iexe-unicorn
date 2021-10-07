@@ -8,7 +8,7 @@
                     <h2 class="description"><?php echo category_description(); ?></h2>
                 <?php endif; ?>                    
             </div>
-            <div class="col-3">
+            <div class="col col-md-3">
                 <?php get_template_part( 'template-parts/categoriaLista'); ?>
             </div>
         </div>
@@ -20,7 +20,7 @@
             <div class="row un-post">
                     <div class="col-md-6">
                         <div class="archivo-thumb">
-                            <?php the_post_thumbnail('archivo-thumb', array('class' => 'img-fluid')); ?>
+                            <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('archivo-thumb', array('class' => 'img-fluid')); ?></a>
                             <div class="archivo-fecha">
                                 <span class="numero"><?php echo get_the_date('d') ?></span>
                                 <span class="mes"><?php echo get_the_date('F') ?></span>
