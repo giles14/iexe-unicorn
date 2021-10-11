@@ -46,6 +46,9 @@
         </div>
     </div>
 </section>
+<img rel="preload" as="image" class="d-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/campana-bg.webp" alt="">
+<img rel="preload" as="image" class="d-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/crisis-bg.webp" alt="">
+<img rel="preload" as="image" class="d-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/dpp-bg.webp" alt="">
 
     <div class="container">
         <div class="row">
