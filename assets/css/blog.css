@@ -93,6 +93,7 @@ section#entrada-blog {
 .categoria-img:hover {
     border: 1px solid #8E99FF;
     box-shadow: -12px 18px 9px #0017FF36;
+    transform: scale(1.05);
 }
 section#ultimas-entradas{
     background: linear-gradient(rgba(0,30,66,1) 0%, rgba(237,237,237,1) 100%);

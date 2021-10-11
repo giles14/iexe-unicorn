@@ -2,7 +2,7 @@
 <section id="slider">
         <div class="container-fluid">
             <div class="row">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div id="slidePrincipal" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                             <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
@@ -28,13 +28,13 @@
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
                       </div> -->
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#slidePrincipal" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
+                      <span class="sr-only">Anterior</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#slidePrincipal" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
+                      <span class="sr-only">Siguiente</span>
                     </a>
                 </div>
             </div>
@@ -141,12 +141,12 @@
                 <div class="col-12 col-md-4">
                     <div class="oferta-bloque mas">
                         <div class="informa">
-                            <a class="button-primary">MÁSTERES</a>
+                            <a class="button-primary">MASTERS</a>
                             <a class="descubre-mas" disabled>Descubre más</a>
                             <div class="links-programas">
                                 <ul>
                                     <li><a href="oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/">Marketing Político y Opinión Pública</a></li>
-                                    <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoria Gubernamental</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoría Gubernamental</a></li>
                                     <li><a href="oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/">Sistema Penal Acusatorio y Juicio Oral </a></li>
                                     <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
                                     <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>
@@ -272,7 +272,7 @@
                             <div class="bloque-neon">
                                 <h3 class="titulos">Hablemos de...</h3>
                             </div> -->
-                            <a href="/blog" class="button-primary">En el blog IEXE Hablamos de...</a>
+                            <a href="/blog" class="button-primary">En el blog IEXE, hablamos de...</a>
                     </div>
                     
                 </div>
@@ -280,7 +280,7 @@
             </div>
             <div class="row quick-quit">
                     <div class="col-md-1 align-self-center">
-                        <div class="boton-izquierdo"><a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-izquierda.png" alt=""></a></div>
+                        <div class="boton-izquierdo"> <!-- <a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-izquierda.png" alt=""></a> --></div>
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="imagen-blog">
@@ -297,9 +297,9 @@
                             
                         </div>
                         <div class="post">
-                            <a href="/destacado/derechos-de-la-comunidad-lgbt-el-camino-hacia-una-politica-de-igualdad-y-diversidad/"><h2 class="titulo">Validez internacional a títulos expedidos por IEXE Universidad</h2></a>
+                            <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/"><h2 class="titulo">Validez internacional a títulos expedidos por IEXE Universidad</h2></a>
                             <div class="entrada">
-                                <a href="/destacado/derechos-de-la-comunidad-lgbt-el-camino-hacia-una-politica-de-igualdad-y-diversidad/"><p>Los títulos expedidos por IEXE Universidad mediante la Conferencia de la Haya y la suscripción…</p></a>
+                                <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/"><p>Los títulos expedidos por IEXE Universidad mediante la Conferencia de la Haya y la suscripción…</p></a>
                             </div>
                             <div class="iconos">
                                 <!-- <i class="fas fa-heart primero"></i>90<i class="fas fa-comment-alt"></i>78<i class="fas fa-sync-alt"></i>12<i class="fas fa-bookmark ultimo"></i>34 -->
@@ -307,7 +307,7 @@
                         </div>
                     </div>
                     <div class="col-md-1 align-self-center">
-                        <div class="boton-derecha"><a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-derecha.png" alt=""></a></div>
+                        <div class="boton-derecha"><!-- <a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-derecha.png" alt=""></a> --></div>
                     </div>
 
             </div>

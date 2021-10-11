@@ -27,7 +27,7 @@
                 <div class="meta-articulo"></div>
                 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 d-none d-sm-block">
                 <?php get_template_part( 'template-parts/lateral-blog'); ?>
             </div>
         </div>
@@ -55,7 +55,13 @@
                 <?php endif; ?>
                 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 ">
+                    <div class="wrapper-x d-block d-sm-none">
+                        <?php if(is_single()){
+                        get_template_part( 'template-parts/lateral-blog');
+                    }  ?>
+                    </div>
+               
                 
                 <?php if ( is_active_sidebar( 'sidebar-producto' ) && is_woocommerce() ) { ?>
                     

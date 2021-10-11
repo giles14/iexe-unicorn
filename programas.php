@@ -66,12 +66,12 @@ Template Name: Programas
         <div class="container">
             <div class="row contenedor-programa">
                 <div class="col-md-4 offset-md-4">
-                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Másteres</h1>
+                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Másters</h1>
                     <ul class="masters">
                         <li><a href="/oferta-educativa/maestria-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a> </li>
                         <li><a href="/oferta-educativa/maestria-en-ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a> </li>
                         <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
-                        <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoria Gubernamental</a></li>
+                        <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoría Gubernamental</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -120,7 +120,7 @@ Template Name: Programas
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <a href="/admisiones"><img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner-oferta.webp" alt="" class="img-fluid"></a>
+                <a href="/admisiones"><img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner-oferta.webp" alt="" class="img-fluid d-block d-sm-none"></a>
             </div>
         </div>
     </div>

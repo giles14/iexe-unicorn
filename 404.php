@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-12">
                 <h1 class="titulo">Página no encontrada</h1>
-                <p class="error">La página solicitada no fué encontrada, sin embargo te invitamos a visitar nuestro blog, navegar por nuestros programas académicos o visitar nuestra tienda editorial.</p>
+                <p class="error">La página solicitada no fué encontrada, sin embargo te invitamos a visitar nuestro <a href="/blog/">blog</a> , navegar por nuestros <a href="/oferta-educativa/">programas académicos</a>  o visitar nuestra <a href="/editorial/">tienda editorial</a> .</p>
             </div>
         </div>
     </div>

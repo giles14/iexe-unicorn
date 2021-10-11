@@ -95,7 +95,7 @@
                         <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
                         <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
                         <li><a href="/oferta-educativa/#doctorado">Doctorado</a></li>
-                        <li><a href="/oferta-educativa/#masters">Másteres</a></li>
+                        <li><a href="/oferta-educativa/#masters">Masters</a></li>
                         <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
                         <li><a href="/capacitaciones/">Capacitaciones</a></li>
                     </ul>
@@ -157,14 +157,20 @@
     });
 </script>
 <script>
+    if($(window).width() < 540){
+        $('.navbar').addClass('sticky');
+    }
     if($('#body#oferta\ educativa').length){
         $('.navbar').addClass('sticky');
     }else {
         $(window).scroll(function() {
-        if ($(this).scrollTop() > 60) {
+        if ($(this).scrollTop() > 60 || $(window).width() < 540) {
             $('.navbar').addClass('sticky');
         }else{
-            $('.navbar').removeClass('sticky');
+            if($(window).width() > 540){
+                $('.navbar').removeClass('sticky');
+            }
+            
         }
     });
 }

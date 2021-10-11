@@ -28,10 +28,10 @@
 	<optgroup  label="Master">
 	    <option  value="MIGE">Innovación y Gestión Educativa</option>
 		<option  value="MCDA">Ciencia de Datos Aplicada</option>
-        <option value="">Administración de Instituciones de Salud</option>
-        <option value="">Auditoria Gubernamental</option>
-        <option value="">Marketing Político y Opinión Pública</option>
-        <option value="">Gestión Pública Municipal</option>
-        <option value="">Sistema Penal Acusatorio y Juicio Oral</option>
+        <option value="MAIS">Administración de Instituciones de Salud</option>
+        <option value="MAG">Auditoria Gubernamental</option>
+        <option value="MMPOP">Marketing Político y Opinión Pública</option>
+        <option value="MGPM">Gestión Pública Municipal</option>
+        <option value="MSPAJ">Sistema Penal Acusatorio y Juicio Oral</option>
     </optgroup>
 </select>

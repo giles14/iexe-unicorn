@@ -137,7 +137,7 @@
                                 <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/miniatura-podcast.png" alt="">
                             </div>
                             <div class="col-md-8">
-                                <h3 class="titulo-podcast">Episodio dos: <strong>Legalización del aborto (proximamente)</strong></h3>
+                                <h3 class="titulo-podcast">Episodio dos: <strong>Legalización del aborto (próximamente)</strong></h3>
                                 <p class="descripcion-podcast">
                                     En este episodio hablamos de un tema de alta relevancia nacional, basado en el poder de decisión de las mujeres. Te invitamos a estar al pendiente este 11 de Ocrubre.</p>
                                     <div class="links-podcast">

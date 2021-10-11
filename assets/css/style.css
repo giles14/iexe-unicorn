@@ -780,6 +780,17 @@ img.menu-boton {
     padding-top: 4.5px;
     vertical-align: baseline;
 }
+section#editorial{
+    transition: all 0.5s;
+}
+section#editorial::after{
+    position:absolute;
+    width:0;
+    height:0;
+    overflow:hidden;
+    z-index:-1;
+    content:url(../img/crisis-bg.webp) url(../img/campana-bg.webp) url(../img/dpp-bg.webp); 
+ }
 #editorial .categoria-img {
     border: 1px solid #f3f3f3;
     color: #fff;
@@ -1168,7 +1179,7 @@ nav.navbar.sticky .navegacion-botones {
     display: flex;
     align-items: center;
     opacity: 0.98;
-    z-index: 99;
+    z-index: 102;
     outline: 6px solid var(--primario-cyan);
   }
   
@@ -3041,7 +3052,7 @@ Login
         margin-bottom: 10px;
     }
     .texto-vinculo {
-        font-size: 14px;
+        font-size: 12px;
     }
     .buffer-blog {
         margin-top: 15vh;

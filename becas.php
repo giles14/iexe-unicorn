@@ -263,35 +263,40 @@ Template Name: Becas
                 </div>
                 <div class="form-group col-md-6">
                 <select class="form-control" name="programa" required>
-                    <option value="">- Programa académico de interés -</option>
+                    <option name="programa" value="">- Programa académico de interés -</option>
                     <optgroup label="Licenciaturas">              
-                        <option value="Licenciatura en Ciencias Políticas y Administración Pública">Ciencias Políticas y Administración Pública</option>
-                        <option value="Licenciatura en Seguridad Pública">Seguridad Pública</option>
-                        <option value="Licenciatura en Administración de Empresas">Administración de Empresas</option>
-                        <option value="Licenciatura en Derecho">Derecho</option>
+                        <option value="LCP">Ciencias Políticas y Administración Pública</option>
+                        <option value="LSP">Seguridad Pública</option>
+                        <option value="LAE">Administración de Empresas</option>
+                        <option value="LD">Derecho</option>
                     </optgroup>          
                     <optgroup label="Maestrías">  
-                        <option value="Maestría en Finanzas Públicas">Finanzas Públicas</option>
-                        <option value="Maestría en Administración y Políticas Públicas">Administración y Políticas Públicas</option>
-                        <option value="Maestría en Evaluación de Políticas Públicas">Evaluación de Políticas Públicas</option>
-                        <option value="Maestría en Seguridad Pública y Políticas Públicas">Seguridad Pública y Políticas Públicas</option>
-                        <option value="Maestría en Administración de Negocios">Administración de Negocios</option>
-                        <option value="Maestría en Tecnologías de la Información">Tecnologías de la Información</option>
+                        <option value="MFP">Finanzas Públicas</option>
+                        <option value="MAPP">Administración y Políticas Públicas</option>
+                        <option value="MEPP">Evaluación de Políticas Públicas</option>
+                        <option value="MSPP">Seguridad Pública y Políticas Públicas</option>
+                        <option value="MBAT">Administración de Negocios</option>
+                        <option value="MITIC">Tecnologías de la Información</option>
                     </optgroup>
                     <optgroup label="Diplomados">
-                        <option value="Diplomado en Alta Dirección en la Función Pública">Alta Dirección en la Función Pública</option>
-                        <option value="Diplomado en Análisis y Diseño de Políticas Públicas">Análisis y Diseño de Políticas Públicas</option>																
-                        <option value="Diplomado Evaluación de Políticas Publicas">Evaluación de Políticas Públicas</option>
-                        <option value="Diplomado Disciplina Financiera y Fiscalización">Disciplina Financiera y Fiscalización</option>
-                        <option value="Diplomado en Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
-                        <option value="Diplomado en Habilidades Gerenciales">Diplomado en habilidades Gerenciales y Liderazgo</option>
+                        <option value="DADFP">Alta Dirección en la Función Pública</option>
+                        <option value="DADPP">Análisis y Diseño de Políticas Públicas</option>																
+                        <option value="MEPP">Evaluación de Políticas Públicas</option>
+                        <option value="DDFF">Disciplina Financiera y Fiscalización</option>
+                        <option value="DPRSED">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
+                        <option value="DHG">Diplomado en habilidades Gerenciales y Liderazgo</option>
                     </optgroup>
                     <optgroup label="Doctorado">
-                        <option value="Doctorado en Políticas Públicas">Doctorado en Políticas Públicas</option>
+                        <option value="DOC">Doctorado en Políticas Públicas</option>
                     </optgroup>
                     <optgroup label="Master">
-                        <option value="Innovación y Gestión Educativa">Innovación y Gestión Educativa</option>
-                        <option value="Ciencia de Datos Aplicada">Ciencia de Datos Aplicada</option>
+                        <option value="MMPOP">Marketing Político y Opinión Pública</option>
+                        <option value="MAG">Auditoría Gubernamental</option>
+                        <option value="MSPAJ">Sistema Penal Acusatorio y Juicio Oral </option>
+                        <option value="MAIS">Administración de Instituciones de Salud</option>
+                        <option value="MGPM">Gestión Pública Municipal</option>
+                        <option value="MCDA">Ciencia de Datos Aplicada</option>
+                        <option value="MIGE">Innovación y Gestión Educativa</option>
                     </optgroup>
                 </select>
                 </div>
@@ -337,38 +342,43 @@ Template Name: Becas
                         <input placeholder="Teléfono móvil*" id="telefono-sep" type="text" class="form-control" name="telefono" required>
                         </div>
                         <div class="form-group col-md-6">
-                        <select class="form-control" name="programa" required>
-                            <option value="">- Programa académico de interés -</option>
-                            <optgroup label="Licenciaturas">              
-                                <option value="Licenciatura en Ciencias Políticas y Administración Pública">Ciencias Políticas y Administración Pública</option>
-                                <option value="Licenciatura en Seguridad Pública">Seguridad Pública</option>
-                                <option value="Licenciatura en Administración de Empresas">Administración de Empresas</option>
-                                <option value="Licenciatura en Derecho">Derecho</option>
-                            </optgroup>          
-                            <optgroup label="Maestrías">  
-                                <option value="Maestría en Finanzas Públicas">Finanzas Públicas</option>
-                                <option value="Maestría en Administración y Políticas Públicas">Administración y Políticas Públicas</option>
-                                <option value="Maestría en Evaluación de Políticas Públicas">Evaluación de Políticas Públicas</option>
-                                <option value="Maestría en Seguridad Pública y Políticas Públicas">Seguridad Pública y Políticas Públicas</option>
-                                <option value="Maestría en Administración de Negocios">Administración de Negocios</option>
-                                <option value="Maestría en Tecnologías de la Información">Tecnologías de la Información</option>
-                            </optgroup>
-                            <optgroup label="Diplomados">
-                                <option value="Diplomado en Alta Dirección en la Función Pública">Alta Dirección en la Función Pública</option>
-                                <option value="Diplomado en Análisis y Diseño de Políticas Públicas">Análisis y Diseño de Políticas Públicas</option>																
-                                <option value="Diplomado Evaluación de Políticas Publicas">Evaluación de Políticas Públicas</option>
-                                <option value="Diplomado Disciplina Financiera y Fiscalización">Disciplina Financiera y Fiscalización</option>
-                                <option value="Diplomado en Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
-                                <option value="Diplomado en Habilidades Gerenciales">Diplomado en habilidades Gerenciales y Liderazgo</option>
-                            </optgroup>
-                            <optgroup label="Doctorado">
-                                <option value="Doctorado en Políticas Públicas">Doctorado en Políticas Públicas</option>
-                            </optgroup>
-                            <optgroup label="Master">
-                                <option value="Innovación y Gestión Educativa">Innovación y Gestión Educativa</option>
-                                <option value="Ciencia de Datos Aplicada">Ciencia de Datos Aplicada</option>
-                            </optgroup>
-                        </select>
+                            <select class="form-control" name="programa" required>
+                                <option name="programa" value="">- Programa académico de interés -</option>
+                                <optgroup label="Licenciaturas">              
+                                    <option value="LCP">Ciencias Políticas y Administración Pública</option>
+                                    <option value="LSP">Seguridad Pública</option>
+                                    <option value="LAE">Administración de Empresas</option>
+                                    <option value="LD">Derecho</option>
+                                </optgroup>          
+                                <optgroup label="Maestrías">  
+                                    <option value="MFP">Finanzas Públicas</option>
+                                    <option value="MAPP">Administración y Políticas Públicas</option>
+                                    <option value="MEPP">Evaluación de Políticas Públicas</option>
+                                    <option value="MSPP">Seguridad Pública y Políticas Públicas</option>
+                                    <option value="MBAT">Administración de Negocios</option>
+                                    <option value="MITIC">Tecnologías de la Información</option>
+                                </optgroup>
+                                <optgroup label="Diplomados">
+                                    <option value="DADFP">Alta Dirección en la Función Pública</option>
+                                    <option value="DADPP">Análisis y Diseño de Políticas Públicas</option>																
+                                    <option value="MEPP">Evaluación de Políticas Públicas</option>
+                                    <option value="DDFF">Disciplina Financiera y Fiscalización</option>
+                                    <option value="DPRSED">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
+                                    <option value="DHG">Diplomado en habilidades Gerenciales y Liderazgo</option>
+                                </optgroup>
+                                <optgroup label="Doctorado">
+                                    <option value="DOC">Doctorado en Políticas Públicas</option>
+                                </optgroup>
+                                <optgroup label="Master">
+                                    <option value="MMPOP">Marketing Político y Opinión Pública</option>
+                                    <option value="MAG">Auditoría Gubernamental</option>
+                                    <option value="MSPAJ">Sistema Penal Acusatorio y Juicio Oral </option>
+                                    <option value="MAIS">Administración de Instituciones de Salud</option>
+                                    <option value="MGPM">Gestión Pública Municipal</option>
+                                    <option value="MCDA">Ciencia de Datos Aplicada</option>
+                                    <option value="MIGE">Innovación y Gestión Educativa</option>
+                                </optgroup>
+                            </select>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primario float-right">Enviar</button>
@@ -416,38 +426,43 @@ Template Name: Becas
                     <input placeholder="Nombre del Estudiante que te recomienda*" type="text" class="form-control" name="estudiante-recomendado" required>
                 </div>
                 <div class="form-group col-md-7">
-                    <select class="form-control" name="programa" required>
-                        <option value="">- Programa académico de interés -</option>
-                        <optgroup label="Licenciaturas">              
-                            <option value="Licenciatura en Ciencias Políticas y Administración Pública">Ciencias Políticas y Administración Pública</option>
-                            <option value="Licenciatura en Seguridad Pública">Seguridad Pública</option>
-                            <option value="Licenciatura en Administración de Empresas">Administración de Empresas</option>
-                            <option value="Licenciatura en Derecho">Derecho</option>
-                        </optgroup>          
-                        <optgroup label="Maestrías">  
-                            <option value="Maestría en Finanzas Públicas">Finanzas Públicas</option>
-                            <option value="Maestría en Administración y Políticas Públicas">Administración y Políticas Públicas</option>
-                            <option value="Maestría en Evaluación de Políticas Públicas">Evaluación de Políticas Públicas</option>
-                            <option value="Maestría en Seguridad Pública y Políticas Públicas">Seguridad Pública y Políticas Públicas</option>
-                            <option value="Maestría en Administración de Negocios">Administración de Negocios</option>
-                            <option value="Maestría en Tecnologías de la Información">Tecnologías de la Información</option>
-                        </optgroup>
-                        <optgroup label="Diplomados">
-                            <option value="Diplomado en Alta Dirección en la Función Pública">Alta Dirección en la Función Pública</option>
-                            <option value="Diplomado en Análisis y Diseño de Políticas Públicas">Análisis y Diseño de Políticas Públicas</option>																
-                            <option value="Diplomado Evaluación de Políticas Publicas">Evaluación de Políticas Públicas</option>
-                            <option value="Diplomado Disciplina Financiera y Fiscalización">Disciplina Financiera y Fiscalización</option>
-                            <option value="Diplomado en Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
-                            <option value="Diplomado en Habilidades Gerenciales">Diplomado en habilidades Gerenciales y Liderazgo</option>
-                        </optgroup>
-                        <optgroup label="Doctorado">
-                            <option value="Doctorado en Políticas Públicas">Doctorado en Políticas Públicas</option>
-                        </optgroup>
-                        <optgroup label="Master">
-                            <option value="Innovación y Gestión Educativa">Innovación y Gestión Educativa</option>
-                            <option value="Ciencia de Datos Aplicada">Ciencia de Datos Aplicada</option>
-                        </optgroup>
-                    </select>
+                        <select class="form-control" name="programa" required>
+                            <option name="programa" value="">- Programa académico de interés -</option>
+                            <optgroup label="Licenciaturas">              
+                                <option value="LCP">Ciencias Políticas y Administración Pública</option>
+                                <option value="LSP">Seguridad Pública</option>
+                                <option value="LAE">Administración de Empresas</option>
+                                <option value="LD">Derecho</option>
+                            </optgroup>          
+                            <optgroup label="Maestrías">  
+                                <option value="MFP">Finanzas Públicas</option>
+                                <option value="MAPP">Administración y Políticas Públicas</option>
+                                <option value="MEPP">Evaluación de Políticas Públicas</option>
+                                <option value="MSPP">Seguridad Pública y Políticas Públicas</option>
+                                <option value="MBAT">Administración de Negocios</option>
+                                <option value="MITIC">Tecnologías de la Información</option>
+                            </optgroup>
+                            <optgroup label="Diplomados">
+                                <option value="DADFP">Alta Dirección en la Función Pública</option>
+                                <option value="DADPP">Análisis y Diseño de Políticas Públicas</option>																
+                                <option value="MEPP">Evaluación de Políticas Públicas</option>
+                                <option value="DDFF">Disciplina Financiera y Fiscalización</option>
+                                <option value="DPRSED">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
+                                <option value="DHG">Diplomado en habilidades Gerenciales y Liderazgo</option>
+                            </optgroup>
+                            <optgroup label="Doctorado">
+                                <option value="DOC">Doctorado en Políticas Públicas</option>
+                            </optgroup>
+                            <optgroup label="Master">
+                                <option value="MMPOP">Marketing Político y Opinión Pública</option>
+                                <option value="MAG">Auditoría Gubernamental</option>
+                                <option value="MSPAJ">Sistema Penal Acusatorio y Juicio Oral </option>
+                                <option value="MAIS">Administración de Instituciones de Salud</option>
+                                <option value="MGPM">Gestión Pública Municipal</option>
+                                <option value="MCDA">Ciencia de Datos Aplicada</option>
+                                <option value="MIGE">Innovación y Gestión Educativa</option>
+                            </optgroup>
+                        </select>
                 </div>
             </div>
             <button type="submit" class="btn btn-primario float-right">Enviar</button>
@@ -501,6 +516,60 @@ Template Name: Becas
         });
     });   
 </script>
+<script>
+      $(document).ready(function(){
+
+$('#modal-beca-IEXE button.btn.btn-primario').click(function(){    
+    $('#modal-beca-IEXE button.btn.btn-primario').removeClass("error exito"); 
+    $('#modal-beca-IEXE button.btn.btn-primario').attr("disabled", true);
+    var nombre = $("[name='nombre']").val();
+    var correo = $("[name='email']").val();
+    
+    if($('input#hiddenPrograma').val()){
+        var programa = $('input#hiddenPrograma').val();
+        console.log(programa);
+    }else{
+        var programa = $("[name='programa']").val();
+        console.log(programa);
+    }
+    //var telefono = $("#telefono").val();
+    var telefono = iti.getNumber(crossOriginIsolated);
+    var data;           
+    // var formData = new FormData(forma);
+    // formData.append('telefono', String(iti.getNumber(crossOriginIsolated)));
+    $.ajax({
+    url: 'https://api.redisoft.dev/Leads/web',
+    type: 'post',
+    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "&charifaz=" + navigator.userAgent,
+    success: function(data){
+        console.log(data);
+        if(data == true || data == "saved"){
+            console.log("se salvó :)");
+            $("#problemaModal").modal('show');
+            $('#interes button.btn.btn-primario').addClass("error");
+
+        }else if(data == "duplicated"){
+            console.log("Ya hay un registro con este correo electrónico");
+        } else{
+            $("#guardadoModal").modal('show');
+            $('#interes button.btn.btn-primario').removeClass("error");
+            $('#interes button.btn.btn-primario').addClass("exito");
+        }
+        $('#interes button.btn.btn-primario').attr("disabled", false);
+        
+    },
+    error: function(data){
+        console.log("No se logró contactar al servidor");
+        console.log(data);
+        $('#interes button.btn.btn-primario').attr("disabled", false);
+        $('#interes button.btn.btn-primario').addClass("error");
+        // $("#modalFracaso").modal('show');
+        // $("#error-alerta").html("El servidor remoto no se pudo contactar, por favor intente más tarde");
+    }
+});
+});
+});
+  </script>
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer( ); ?>

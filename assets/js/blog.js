@@ -13,15 +13,16 @@ $(document).ready(function(){
     //     $(this).fadeIn(500);
 
     // });
-    $('.categoria-img').hover(makeBigger, returnToOriginalSize);
+    // if($(window).width() > 960){
+    //         $('.categoria-img').hover(makeBigger, returnToOriginalSize);
 
-function makeBigger() {
-    $(this).css({height: '+=10%', width: '+=10%', marginTop:'-20px'});
-}
-function returnToOriginalSize() {
-    $(this).css({height: "", width: "", marginTop:""});
-}
-
+    //     function makeBigger() {
+    //         $(this).css({height: '+=10%', width: '+=10%', marginTop:'-20px'});
+    //     }
+    //     function returnToOriginalSize() {
+    //         $(this).css({height: "", width: "", marginTop:""});
+    //     }
+    // }
 $('select#seleccionperiodo').change(function() {
     //var envio = 'https://' +  window.location.hostname + '/' + $(this).val();
     var limpio = $(this).val();

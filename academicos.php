@@ -361,6 +361,10 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                             echo $requisitos_doctorado;
                         }elseif(get_field('tipo') == "Maestría en línea"){
                             echo $requisitos_maestria;
+                        }elseif(get_field('tipo') == "Master en línea" || get_field('tipo') == "Máster en línea" || get_field('tipo') == "Máster en linea"){
+                            echo $requisitos_master;
+                        }elseif(get_field('tipo') == "Diplomado en línea" || get_field('tipo') == "Diplomado en linea"){
+                            echo $requisitos_diplomado;
                         }else{
                             echo $requisitos_licenciatura;
                         }
