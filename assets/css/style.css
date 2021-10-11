@@ -2835,8 +2835,8 @@ a.icono-spotify {
     margin-right: 30px;
 }
 section#mapa-comunidad {
-    background: linear-gradient(
-90deg, rgba(255,255,255,1) 12%, rgba(0,255,232,1) 100%);
+    /* background: linear-gradient(
+90deg, rgba(255,255,255,1) 12%, rgba(0,255,232,1) 100%); */
 }
 img.img-fluid.internacional {
     margin-top: -85px;

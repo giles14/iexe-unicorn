@@ -200,10 +200,10 @@
             </div>
         </div>
     </section> -->
-    <!-- <section id="mapa-comunidad">
+    <section id="mapa-comunidad">
         <div class="container">
             <div class="row">
-                <img class="img-fluid internacional" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/comunidad-internacional.png" alt="">
+                <img class="img-fluid internacional" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comunidad-internacional.png" alt="">
             </div>
             <div class="row">
                 <div class="col-md">
@@ -214,7 +214,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="lista-pais">
-                        <div class="bandera"></div>
+                        <div class="bandera"><img src="" alt=""></div>
                         <div class="nombre-pais">Ecuador</div>
                     </div>
                     <div class="lista-pais">
@@ -244,7 +244,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 <section id="banner-libro">
     <div class="container">
