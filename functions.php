@@ -27,6 +27,7 @@ function agregar_estilos_tema(){
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-becas', get_template_directory_uri() . '/assets/js/becas.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-pasos', get_template_directory_uri() . '/assets/js/extra.js', 'jquery', '1.0', true );
+    wp_register_script( 'iexe-unicorn-comunidad', get_template_directory_uri() . '/assets/js/comunidad.js', 'jquery', '1.0', true );
     wp_register_style( 'intlTelinput-style', get_template_directory_uri() . '/assets/css/intlTelInput.min.css' , '17.0', 'all' );
     wp_register_script( 'intlTelinput', get_template_directory_uri() . '/assets/js/intlTelInput.min.js', 'jquery', true );
     wp_register_script( 'validate-js', 'https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js', 'jquery', '1.19.3', true );
@@ -62,6 +63,9 @@ function agregar_estilos_tema(){
     }
     if(is_page_template('capacitaciones.php')){
         wp_enqueue_style( 'iexe-unicorn-capacitaciones');
+    }
+    if(is_page_template('comunidad.php')){
+        wp_enqueue_script( 'iexe-unicorn-comunidad');
     }
     if(is_page_template('page-busqueda.php')){
         wp_enqueue_style( 'live-search-select-style', 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css', 'bootstrap', '1.13.14', 'all' );

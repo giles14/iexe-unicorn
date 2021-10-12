@@ -730,6 +730,7 @@ section#interes {
 #interes img.img-fluid.escudo {
     z-index: 2;
     position: relative;
+    border-radius: 0;
 }
 .fondo-x {
     position: absolute;
@@ -1503,8 +1504,93 @@ div#desc-programa {
 div#que-vas-a-aprender {
     display: inherit;
 }
+#mapa-comunidad .el-mundo {
+    float: right;
+    position: relative;
+    z-index: 10;
+}
 #comunidad #seleccion-categoria .categoria-img {
     height: 340px;
+}
+#comunidad .bandera{
+    float: left;
+}
+#comunidad .lista-pais{
+    height: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    cursor: pointer;
+    margin-left: -30px;
+
+}
+#comunidad .nombre-pais{
+    font-weight: 300;
+    margin-left: 14px;
+    font-size: 24px;
+}
+#comunidad .nombre-pais.active{
+    font-weight: 800;
+}
+#comunidad .nombre-pais:hover{
+    font-weight: 800;
+}
+#comunidad .mensaje-pais {
+    position: absolute;
+    z-index: 11;
+}
+#comunidad p.estudiante-testimonio {
+    border: 1px solid blue;
+    border-radius: 9px;
+    padding: 25px;
+    background: rgba(255,255,255, 0.9);
+    min-height: 210px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 17px;
+    width: 372px;
+}
+#comunidad span.nombre-estudiante {
+    font-size: 18px;
+    font-weight: 600;
+}
+#comunidad .estudiante-autor {
+    width: 372px;
+    background: rgba(0,24,255,0.9);
+    color: #FFF;
+    padding: 10px;
+    border-radius: 9px;
+    margin-top: -36px;
+    margin-left: 72px;
+}
+#comunidad .estudiante-autor span.descripcion{
+    font-size: 15px;
+    font-weight: 300;
+}
+#comunidad .bandera img.img-fluid {
+    border-radius: unset;
+}
+#comunidad .lista-pais:hover .nombre-pais {
+    font-weight: 800;
+}
+.mensaje-pais{
+    display: none;
+}
+.col-md-1.un-bloque-azul {
+    background: var(--primario-azul);
+    margin-top: -130px;
+}
+.col-md-1.un-bloque-azul:before {
+    left: -999em;
+    background: var(--primario-azul);
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+}
+#mapa-comunidad h1.titulo {
+    margin-top: -38px;
 }
 .bloque-materia {
     background: url(../img/fondoMaterias.svg);
@@ -2568,7 +2654,7 @@ body#comunidad {
     background-repeat: no-repeat;
 }
 section#comunicados {
-    margin-top: 37%;
+    margin-top: 50%;
     background: linear-gradient(180deg, rgba(0,255,232,1) 0%, rgba(142,153,255,1) 77%, rgba(255,255,255,1) 100%);
     padding-top: 28px;
 }
@@ -2836,11 +2922,12 @@ a.icono-spotify {
     margin-right: 30px;
 }
 section#mapa-comunidad {
-    background: linear-gradient(
-90deg, rgba(255,255,255,1) 12%, rgba(0,255,232,1) 100%);
+    /* background: linear-gradient(
+90deg, rgba(255,255,255,1) 12%, rgba(0,255,232,1) 100%); */
 }
 img.img-fluid.internacional {
     margin-top: -85px;
+    padding-top: 64px;
 }
 
 /*
