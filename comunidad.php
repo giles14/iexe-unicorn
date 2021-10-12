@@ -203,44 +203,69 @@
     <section id="mapa-comunidad">
         <div class="container">
             <div class="row">
-                <img class="img-fluid internacional" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comunidad-internacional.png" alt="">
+                <div class="col">
+                    <img class="img-fluid internacional float-right" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comunidad-internacional.png" alt="">
+                </div>
+                
             </div>
             <div class="row">
-                <div class="col-md">
+                <div class="col-md-12 offset-md-1">
                     <h1 class="titulo">Comunidad Internacional</h1>
                     <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="lista-pais">
-                        <div class="bandera"><img src="" alt=""></div>
-                        <div class="nombre-pais">Ecuador</div>
+                <div class="col-md-1 un-bloque-azul">
+
+                </div>
+                <div class="col-md-4">
+                    <div id="ecuador" class="lista-pais">
+                        <div class="bandera"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banderas-comunidad/ecuador.png" alt="bandera de Ecuador"></div>
+                        <div class="nombre-pais my-auto">Ecuador</div>
                     </div>
-                    <div class="lista-pais">
-                        <div class="bandera"></div>
-                        <div class="nombre-pais">Colombia</div>
+                    <div id="colombia" class="lista-pais">
+                        <div class="bandera"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banderas-comunidad/colombia.png" alt="bandera de Colombia"></div>
+                        <div class="nombre-pais my-auto">Colombia</div>
                     </div>
-                    <div class="lista-pais">
-                        <div class="bandera"></div>
-                        <div class="nombre-pais">Guatemala</div>
+                    <!-- <div id="guatemala" class="lista-pais">
+                        <div class="bandera"><img class="img-fluid" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/banderas-comunidad/guatemala.png" alt="bandera de Guatemala"></div>
+                        <div class="nombre-pais my-auto">Guatemala</div>
+                    </div> -->
+                    <div id="mexico" class="lista-pais">
+                        <div class="bandera"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banderas-comunidad/mexico.png" alt="bandera de México"></div>
+                        <div class="nombre-pais my-auto">México</div>
                     </div>
-                    <div class="lista-pais">
-                        <div class="bandera"></div>
-                        <div class="nombre-pais">Estados Unidos</div>
+                    <div id="elSalvador" class="lista-pais">
+                        <div class="bandera"><img style="width: 52px;" class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banderas-comunidad/el-salvador.webp" alt="bandera de El Salvador"></div>
+                        <div class="nombre-pais my-auto">El Salvador</div>
                     </div>
-                    <div class="lista-pais">
-                        <div class="bandera"></div>
-                        <div class="nombre-pais">México</div>
+                </div>
+                <div class="col-md-7">
+                    <div id="mensaje-colombia" class="mensaje-pais">
+                        <p class="estudiante-testimonio">“Estudiar en iexe universidad, ha sido una experiencia bastante importante para mi formación profesional y academica, ya que la metodología de enseñanza es muy practica.”</p>
+                        <div class="estudiante-autor">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Fenry_Alonso_Colombia.webp" alt="Fenry Alonso" class="autor-foto">
+                            <span class="nombre-estudiante">Fenry Alonso Beltrán<br></span>
+                            <span class="descripcion">Maestría en Administración y Políticas Públicas.</span>
+                        </div>
                     </div>
-                    <div class="lista-pais">
-                        <div class="bandera"></div>
-                        <div class="nombre-pais">Argentina</div>
+                    <div id="mensaje-ecuador" class="mensaje-pais">
+                        <p class="estudiante-testimonio">“Cursar mis estudios de Maestría en IEXE , gran experiencia, me permite organizar mi tiempo, cumplir mis actividades. Su excelente estructura digital me da la oportunidad de lograr mis objetivos.”</p>
+                        <div class="estudiante-autor">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Ruth_Noemi_Ecuador.webp" alt="" class="autor-foto">
+                            <span class="nombre-estudiante">Ruth Noemí Vernaza Casquete</span>
+                            <span class="descripcion">Maestría en Administración y Políticas Públicas.</span>
+                        </div>
                     </div>
-                    <div class="lista-pais">
-                        <div class="bandera"></div>
-                        <div class="nombre-pais">República Dominicana</div>
+                    <div id="mensaje-salvador" class="mensaje-pais">
+                        <p class="estudiante-testimonio">“Estudiar en IEXE es la mejor experiencia, ya que los horarios de clases son autoadaptables y los docentes accesibles, las estrategias de evaluación son muy adecuadas y permite la experiencia de adquirir conocimientos y así en un futuro desarrollarte en el ámbito laboral.”</p>
+                        <div class="estudiante-autor">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/sanda_ventura_el_salvador.webp" alt="" class="autor-foto">
+                            <span class="nombre-estudiante">Sandra Elizabeth Ramos Ventura</span>
+                            <span class="descripcion">Licenciatura Ciencias Políticas y Administración Pública</span>
+                        </div>
                     </div>
+                    <img class="img-fluid el-mundo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/mundo_iexe.webp" alt="">
                 </div>
             </div>
         </div>
