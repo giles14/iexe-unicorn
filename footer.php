@@ -346,6 +346,7 @@ $('#interes button.btn.btn-primario').click(function(){
 
         }else if(data == "duplicated"){
             console.log("Ya hay un registro con este correo electrónico");
+            $("#duplicadoModal").modal('show');
         } else{
             $("#guardadoModal").modal('show');
             $('#interes button.btn.btn-primario').removeClass("error");
@@ -416,7 +417,7 @@ $('#interes button.btn.btn-primario').click(function(){
         </button>
       </div>
       <div class="modal-body">
-          <p class="description">Sus datos ya se encuentran almacenados en el sistema si lo desea, puede contactarnos directamente a nuestro whastapp. </p>
+          <p class="description">Sus datos ya se encuentran almacenados en el sistema si lo desea, puede contactarnos directamente a nuestro whastapp:<a href="https://bit.ly/3p4NXV9"><img style="width: 25px; margin-top:5px;" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/whatsapp.png" alt=""></a> <a target="_blank" href="https://bit.ly/3p4NXV9" style="color: #FFF; color: cyan; margin-top: 5px; display: block;">+52 222-460-35-89</a></p>
           <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
           
       </div>
