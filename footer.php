@@ -114,10 +114,10 @@
         <div class="menu-navegacion">
             <a class="button-primary">ACCESOS</a>
             <div class="contenedor-menu">
-                <a class="menu-movil" target="_blank" href="https://www.alumnos.iexe.edu.mx/">Alumnos</a>
-                <a class="menu-movil" target="_blank" href="https://www.docentes.iexe.edu.mx">Docentes</a>
+                <a class="menu-movil" target="_blank" href="https://alumnos.iexe.edu.mx/">Alumnos</a>
+                <a class="menu-movil" target="_blank" href="https://docentes.iexe.edu.mx">Docentes</a>
                 <!-- <a class="menu-movil" target="_blank" href="https://develop.redisoft.dev">Colaboradores</a> -->
-                <a class="menu-movil" target="_blank" href="https://www.talento.iexe.edu.mx">Comercial</a>
+                <a class="menu-movil" target="_blank" href="https://talento.iexe.edu.mx">Comercial</a>
             </div>
         </div>
     </div>

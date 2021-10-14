@@ -211,7 +211,7 @@
             <div class="row">
                 <div class="col-md-12 offset-md-1">
                     <h1 class="titulo">Comunidad Internacional</h1>
-                    <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                    <h2 class="description">Tu también podrás ser parte de una comunidad estudiantil vibrante, incluyente y multicultural.</h2>
                 </div>
             </div>
             <div class="row">

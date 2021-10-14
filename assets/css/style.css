@@ -1138,6 +1138,14 @@ img.boton-play {
     padding: .3rem 1rem;
     z-index: 98;
 }
+p.blockquote-footer {
+    font-size: 18px;
+}
+cite {
+    color: #000;
+    font-weight: 600;
+}
+
 
 .sticky{
     display: unset;

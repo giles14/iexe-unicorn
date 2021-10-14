@@ -137,8 +137,9 @@ if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) :
                //else
                // After the content
                $wpse_excerpt .= $excerpt_more; /*Add read more in new paragraph */
-           }  
-           $wpse_excerpt .= ' [...]';
+           }
+           $wpse_excerpt = substr($wpse_excerpt, 0, -1);  
+           $wpse_excerpt .= '...';
 
             return $wpse_excerpt;   
 

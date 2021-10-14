@@ -183,10 +183,32 @@ h2.titulo-entrada-destacada {
     line-height: 21px;
     letter-spacing: -0.2px;
     hyphens: auto;
+    position: relative;
+}
+.bloque-entrada p:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 66%;
+    height: 20px;
+    background: linear-gradient(
+90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 41%);
+    pointer-events: none;
+}
+.post-texto p:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 66%;
+    height: 27%;
+    background: linear-gradient(
+90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 41%);
+    pointer-events: none;
 }
 .autor-destacada {
     height: 78px;
-    background: url(../img/x-elemento.svg);
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-color: #e3e3e3;
@@ -203,6 +225,7 @@ h2.titulo-entrada-destacada {
 .post-texto p {
     font-size: 24px;
     line-height: 36px;
+    position: relative;
 }
 .bloque-entrada-blog h2.titulo a {
     color: #000;
