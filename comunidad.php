@@ -177,29 +177,30 @@
 
     </section>
 
-    <!-- <section id="video-testimonial">
+    <section id="video-testimonial">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-4">
-                    <h1>Videos testimoniales IEXE</h1>
-                    <p>Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.</p>
+                    <h1>IEXALUMNOS</h1>
+                    <p>Conoce algunas de las experiencias y la trayectoria de los alumnos de nuestra comunidad. Recuerda que tú podrías ser nuestro próximo embajador IEXE. Escríbenos para ser el siguiente participante: <a href="mailto:admisiones@iexe.edu.mx">admisiones@iexe.edu.mx</a></p>
+                    
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 offset-md-4">
-                    <img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/video-testimonial.png" alt="">
-                    <h2 class="titulo-testimonial">Podcast Uno: <strong>El valor de X</strong></h2>
+                    <img src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/mujerTrabajando.png" alt="">
+                    <h2 class="titulo-testimonial">Henry Mario Rodriguez Zambrano</strong></h2>
                 </div>
                 <div class="col-md-3 offset-md-1">
-                    <img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/video-testimonial.png" alt="">
-                    <h2 class="titulo-testimonial">Podcast Uno: <strong>El valor de X</strong></h2>
+                    <img src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/mujerTrabajando.png" alt="">
+                    <h2 class="titulo-testimonial">Stephanie Gomiciaga de Loera</strong></h2>
                 </div>
                 <div class="col-md-1">
 
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <section id="mapa-comunidad">
         <div class="container">
             <div class="row">
