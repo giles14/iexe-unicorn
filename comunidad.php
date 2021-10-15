@@ -188,15 +188,27 @@
             </div>
             <div class="row">
                 <div class="col-md-3 offset-md-4">
-                    <img src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/mujerTrabajando.png" alt="">
-                    <h2 class="titulo-testimonial">Henry Mario Rodriguez Zambrano</strong></h2>
+                    <div class="un-testimonio">
+                        <img class="img-fluid" src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/Henry.png" alt="">
+                        <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Oq6xon0-0S4" data-target="#myModal">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <h2 class="titulo-testimonial text-center">Henry Mario Rodriguez Zambrano</strong></h2>
+                        
+                    
                 </div>
-                <div class="col-md-3 offset-md-1">
-                    <img src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/mujerTrabajando.png" alt="">
-                    <h2 class="titulo-testimonial">Stephanie Gomiciaga de Loera</strong></h2>
+                <div class="col-md-3 offset-md-1 align-self-center">
+                <div class="un-testimonio">
+                    <img class="img-fluid" src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/Stephanie-Gomiciaga.png" alt="">
+                    <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/9O6XqY1q1tE" data-target="#myModal">
+                            <i class="fas fa-play"></i>
+                    </button>
                 </div>
-                <div class="col-md-1">
-
+                    <h2 class="titulo-testimonial text-center">Sandra Lucía Ruíz Hernández</strong></h2>
+                </div>
+                <div class="col-md-1 align-self-center float-right">
+                        <a class="float-right" href=""><img src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/flecha-iexalumnos.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -293,5 +305,26 @@
         </div>
     </div>
 </section>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+</div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer(); ?>
