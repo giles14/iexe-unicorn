@@ -1,3 +1,17 @@
+var maestria = document.querySelector("#telefono-maestria");
+var telMaestria = window.intlTelInput(maestria, {
+  localizedCountries: { 'us': 'Estados Unidos' },
+  preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+  separateDialCode: true,
+  utilsScript: "https://iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/js/utils.js",
+});
+var doctorado = document.querySelector("#telefono-doctorado");
+var telDoctorado = window.intlTelInput(doctorado, {
+  localizedCountries: { 'us': 'Estados Unidos' },
+  preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+  separateDialCode: true,
+  utilsScript: "https://iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/js/utils.js",
+});
 $(document).ready(function(){
     $("#licenciaturas .los-requisitos .inicia-proceso a").click(function(){
         $(this).parents(".los-requisitos").toggle();
@@ -32,24 +46,34 @@ $(document).ready(function(){
     $('#informacion-programa').carousel({
         interval: false,
      });
-     var input = document.querySelector("#telefono-maestria");
-    window.intlTelInput(input, {
-      localizedCountries: { 'us': 'Estados Unidos' },
-      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
-      separateDialCode: true,
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js",
-    });
-    var input = document.querySelector("#telefono-doctorado");
-    window.intlTelInput(input, {
-      localizedCountries: { 'us': 'Estados Unidos' },
-      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
-      separateDialCode: true,
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js",
-    });
 
-    $(".formulario-crm").on('click', "button", function(){
-        let name = $(this).parent().find("[name='nombre']").val();
-        var contenido = $(this).parent().find("input[name=nombre]").val();
-        console.log(name);
+     // telMaestria = telMaestria.getNumber(crossOriginIsolated);
+     // telDoctorado = telDoctorado.getNumber(crossOriginIsolated);
+     // telLicenciatura = iti.getNumber(crossOriginIsolated);
+     
+
+    $("button.al-crm").click(function(){
+        var maestre = "";
+        var doctore = "";
+        var licenciatura = "";
+        maestre = telMaestria.getNumber(crossOriginIsolated);
+        doctore = telDoctorado.getNumber(crossOriginIsolated);
+        licenciatura = iti.getNumber(crossOriginIsolated);
+
+        telLicenciatura = '';
+        telDoctorado = '';
+        if(maestre.length > 1 ){
+            telefonoA = maestre;
+        } else if(doctore.length > 1 ){
+            telefonoA = doctore;
+
+        } else if(licenciatura.length > 1){
+            telefonoA = licenciatura;
+        }
+        console.log(telefonoA);
+        console.log('En la funcion');
+        var nombre = $(this).parents('.el-formulario').find("[name='nombre']").val();
+        var programa = $(this).parents('.el-formulario').find("[name='programa']").val();
+        console.log(nombre + ' , ' + telefonoA + ' , ' + programa);
     });
 });
