@@ -46,4 +46,10 @@ $(document).ready(function(){
       separateDialCode: true,
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js",
     });
+
+    $(".formulario-crm").on('click', "button", function(){
+        let name = $(this).parent().find("[name='nombre']").val();
+        var contenido = $(this).parent().find("input[name=nombre]").val();
+        console.log(name);
+    });
 });

@@ -211,6 +211,8 @@ a.opcion-tipo-becas.active {
     border-radius: unset;
     border-bottom: 1px solid var(--primario-cyan);
     background: transparent;
+    color: #fff;
+    font-weight: 600;
 }
 #inscripcion .form-control::placeholder {
     color: #ededed;
