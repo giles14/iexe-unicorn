@@ -74,7 +74,7 @@ Template Name: Admisiones
             </div>
             <div class="row contenedor-admision el-formulario" style="display: none">
                     <div class="col-md-4"><h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Licenciaturas</h1></div>
-                    <div class="col-md-4">
+                    <div class="col-md-8">
                         <form id="inscripcion" class="formulario-crm">
                             <div class="form-group">
                             <label for="nombre">Nombre completo*</label>
@@ -99,9 +99,9 @@ Template Name: Admisiones
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-4  d-flex align-items-end">
+                        <!-- <div class="col-md-4  d-flex align-items-end"> -->
                             <button style="display:block; margin: 0 auto; margin-bottom: 24px;" type="button" class="btn btn-primario mt-3">Enviar registro</button>
-                        </div>
+                        <!-- </div> -->
                         </form>
                         <div class="regresa-requisitos">
                         <a>< Regresar</a>
