@@ -5,8 +5,10 @@
                 <div id="slidePrincipal" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                            <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
-                            <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
+                            <video muted loop autoplay>
+                                    <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/videoHome.mp4" type="video/mp4">
+                                    El navegador no acepta video
+                            </video>
                       </div>
                       <div class="carousel-item">
                             <a target="_blank" href="https://bit.ly/iexaWHA"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno.webp" alt="IEXALUMNO Slide"></a>
