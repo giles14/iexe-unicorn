@@ -1,3 +1,13 @@
+<?php 
+    $elOrigen = 'no-conocido';
+    if(is_page_template('academicos.php')){
+        $elOrigen = 'formulario-interesado-carrera';
+    }elseif(is_home()) {
+        $elOrigen = 'formulario-home-conocer';
+    }elseif(is_page_template('comunidad.php')){
+        $elOrigen = 'formulario-comunidad';
+    }
+?>
 <section id="pie">
         <div class="overlay-img">
         <div class="container">
@@ -314,6 +324,7 @@ $('#interes button.btn.btn-primario').click(function(){
     $('#interes button.btn.btn-primario').attr("disabled", true);
     var nombre = $("[name='nombre']").val();
     var correo = $("[name='email']").val();
+    var origen = '<?php echo $elOrigen; ?>';
     
     if($('input#hiddenPrograma').val()){
         var programa = $('input#hiddenPrograma').val();
@@ -322,15 +333,12 @@ $('#interes button.btn.btn-primario').click(function(){
         var programa = $("[name='programa']").val();
         console.log(programa);
     }
-    //var telefono = $("#telefono").val();
     var telefono = iti.getNumber(crossOriginIsolated);
     var data;           
-    // var formData = new FormData(forma);
-    // formData.append('telefono', String(iti.getNumber(crossOriginIsolated)));
     $.ajax({
     url: 'https://api.redisoft.dev/Leads/web',
     type: 'post',
-    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#interes" + "&charifaz=" + navigator.userAgent,
+    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#interes" + "&charifaz=" + navigator.userAgent + "&adicional=origen:%20" + origen,
     success: function(data){
         console.log(data);
         if(data == true || data == "saved"){

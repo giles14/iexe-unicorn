@@ -183,35 +183,6 @@ Template Name: Becas
             </div>  
     
 </section>
-<!-- <section id="inscripcion">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="bloque-inscripcion">
-                    <h2 class="titulo">Requisitos de admisión</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy:</p>
-                    <ul class="requisitos">
-                        <li>Acta de nacimiento original.</li>
-                        <li>Copia de CURP.</li>
-                        <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
-                    </ul>
-                    
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="bloque-inscripcion azul">
-                    <h2 class="titulo">Proceso de inscripción</h2>
-                    <p>El primer paso para ingresar al programa es completar el formulario de inscripción. Una vez recibido nos pondremos en contacto para coordinar la entrevista (online).</p>
-                    <p class="text-center">
-                        <button type="submit" class="btn btn-primario mt-3">Quiero inscribirme</button>
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
 <?php get_template_part( 'template-parts/calcula-beca'); ?>
 
 <section id="banner">

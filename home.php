@@ -13,7 +13,7 @@
                             <a target="_blank" href="https://bit.ly/iexaWHA"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno_movil.webp" alt="IEXALUMNO Slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/becas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
+                        <a href="/becas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
                             <a href="/becas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador-mobile.webp" alt="Embajadores Slide"></a>
                       </div>
                       <div class="carousel-item">

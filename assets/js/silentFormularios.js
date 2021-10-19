@@ -23,7 +23,7 @@ $(document).ready(function(){
     $.ajax({
     url: 'https://api.redisoft.dev/Leads/web',
     type: 'post',
-    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#calcula-beca" + "&charifaz=" + navigator.userAgent,
+    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#calcula-beca" + "&charifaz=" + navigator.userAgent + "&adicional=origen:%20calcula-tu-beca",
     success: function(data){
         console.log(data);
         if(data == true || data == "saved"){
