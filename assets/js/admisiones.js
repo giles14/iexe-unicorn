@@ -1,12 +1,12 @@
-var maestria = document.querySelector("#telefono-maestria");
-var telMaestria = window.intlTelInput(maestria, {
+var doctorado = document.querySelector("#telefono-doctorado");
+var telDoctorado = window.intlTelInput(doctorado, {
   localizedCountries: { 'us': 'Estados Unidos' },
   preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
   separateDialCode: true,
   utilsScript: "https://iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/js/utils.js",
 });
-var doctorado = document.querySelector("#telefono-doctorado");
-var telDoctorado = window.intlTelInput(doctorado, {
+var maestria = document.querySelector("#telefono-maestria");
+var telMaestria = window.intlTelInput(maestria, {
   localizedCountries: { 'us': 'Estados Unidos' },
   preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
   separateDialCode: true,
@@ -41,27 +41,16 @@ $(document).ready(function(){
         window.scrollTo(0,0);
         $("section#navegacion a").removeClass('active');
         $(this).addClass('active');
-
     });
     $('#informacion-programa').carousel({
         interval: false,
-     });
-
-     // telMaestria = telMaestria.getNumber(crossOriginIsolated);
-     // telDoctorado = telDoctorado.getNumber(crossOriginIsolated);
-     // telLicenciatura = iti.getNumber(crossOriginIsolated);
-     
+     });   
 
     $("button.al-crm").click(function(){
-        var maestre = "";
-        var doctore = "";
-        var licenciatura = "";
-        maestre = telMaestria.getNumber(crossOriginIsolated);
-        doctore = telDoctorado.getNumber(crossOriginIsolated);
-        licenciatura = iti.getNumber(crossOriginIsolated);
+        var doctore = telDoctorado.getNumber(crossOriginIsolated);
+        var maestre = telMaestria.getNumber(crossOriginIsolated);
+        var licenciatura = iti.getNumber(crossOriginIsolated);
 
-        telLicenciatura = '';
-        telDoctorado = '';
         if(maestre.length > 1 ){
             telefonoA = maestre;
         } else if(doctore.length > 1 ){
@@ -74,6 +63,39 @@ $(document).ready(function(){
         console.log('En la funcion');
         var nombre = $(this).parents('.el-formulario').find("[name='nombre']").val();
         var programa = $(this).parents('.el-formulario').find("[name='programa']").val();
-        console.log(nombre + ' , ' + telefonoA + ' , ' + programa);
+        var correo = $(this).parents('.el-formulario').find("[name='correo']").val();
+        console.log(nombre + ' , ' + telefonoA + ' , ' + programa + ' , ' + correo);
+
+        $.ajax({
+            url: 'https://api.redisoft.dev/Leads/web',
+            type: 'post',
+            data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefonoA + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#proceso" + "&charifaz=" + navigator.userAgent + "&adicional=origen:%20inicia-tu-proceso",
+            success: function(data){
+                console.log(data);
+                if(data == true || data == "saved"){
+                    console.log("se salvó :)");
+                    $("#problemaModal").modal('show');
+                    $('#interes button.btn.btn-primario').addClass("error");
+        
+                }else if(data == "duplicated"){
+                    console.log("Ya hay un registro con este correo electrónico");
+                    $("#duplicadoModal").modal('show');
+                } else{
+                    $("#guardadoModal").modal('show');
+                    $('#interes button.btn.btn-primario').removeClass("error");
+                    $('#interes button.btn.btn-primario').addClass("exito");
+                }
+                $('#interes button.btn.btn-primario').attr("disabled", false);
+                
+            },
+            error: function(data){
+                console.log("No se logró contactar al servidor");
+                console.log(data);
+                $('#interes button.btn.btn-primario').attr("disabled", false);
+                $('#interes button.btn.btn-primario').addClass("error");
+                $("#modalFracaso").modal('show');
+                $("#error-alerta").html("El servidor remoto no se pudo contactar, por favor intente más tarde");
+            }
+        });
     });
 });

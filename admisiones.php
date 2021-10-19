@@ -142,7 +142,7 @@ Template Name: Admisiones
                             </div>
                             <div class="form-group">
                                 <label for="correo">Correo electrónico*</label>
-                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
                                 <label for="telefono">Teléfono o celular*</label>
@@ -199,7 +199,7 @@ Template Name: Admisiones
                             </div>
                             <div class="form-group">
                                 <label for="correo">Correo electrónico*</label>
-                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group">
                                 <label for="telefono">Teléfono o celular*</label>
