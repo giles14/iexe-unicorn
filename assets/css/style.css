@@ -44,6 +44,11 @@ section{
     color: var(--primario--azul-obscuro);
     margin-top: 64px;
 }
+label.error {
+    color: red;
+    font-weight: 300!important;
+    display: block;
+}
 section#slider{
     margin-top: unset;
 }
@@ -2887,7 +2892,42 @@ a.conocelos {
     float: left;
     margin-left: 17px;
 }
-
+section#video-testimonial {
+    background: var(--primario--azul-obscuro);
+    color: #f6f6f6;
+}
+h2.titulo-testimonial {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.22px;
+    color: #f6f6f6;
+    margin-bottom: 46px;
+    margin-top: 10px
+}
+section#video-testimonial {
+    background: var(--primario--azul-obscuro);
+    color: #f6f6f6;
+    background-image: url(../img/video-bg.webp);
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-size: contain;
+    background-position-x: -158px;
+}
+section#video-testimonial h1 {
+    color: var(--primario-cyan);
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+    margin-top: 26px;
+    font-family: var(--familia-titulos);
+}
+section#video-testimonial p {
+    max-width: 440px;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0.26px;
+    margin-bottom: 40px;
+}
 section#anuncio-tiktok {
     margin-top: 82px;
 }

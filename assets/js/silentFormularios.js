@@ -8,16 +8,11 @@ $(document).ready(function(){
     });
 
     $('button#crm').click(function(){
-    var nombre = $("[name='nombre']").val();
-    var correo = $("[name='email']").val();
+        var nombre = $(this).parents('#calcular-beca').find("[name='nombre']").val();
+        var correo = $(this).parents('#calcular-beca').find("[name='email']").val();
+        var telefono = $(this).parents('#calcular-beca').find("[name='telefono']").val();
+        var programa = $(this).parents('#calcular-beca').find("[name='programa']").val();
     
-    if($('input#hiddenPrograma').val()){
-        var programa = $('input#hiddenPrograma').val();
-        console.log(programa);
-    }else{
-        var programa = $("[name='programa']").val();
-        console.log(programa);
-    }
     var telefono = calculaTel.getNumber(crossOriginIsolated);
     console.log(telefono);
     $.ajax({

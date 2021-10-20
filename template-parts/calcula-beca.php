@@ -19,7 +19,7 @@
                     </ul>
 
                 </div>
-                <form id="calcula-beca">
+                <form id="calcular-beca">
                     <!-- progressbar -->
                     <!-- <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -27,13 +27,13 @@
                     <fieldset>
                         <div class="form-card">
                             <label class="fieldlabels">Nombre</label> 
-                            <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" />
+                            <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" required/>
                             <label class="fieldlabels">Email: *</label>
-                            <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" />
+                            <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" required/>
                             <label class="fieldlabels">Celular: *</label>
-                            <input id="telefono-beca" type="tel" name="telefono" placeholder="Ingresa aquí tu teléfono móvil" />
+                            <input id="telefono-beca" type="tel" name="telefono" placeholder="Ingresa aquí tu teléfono móvil" required  minlength="7" maxlength="11"/>
                             <div style="margin-top: 15px" class="form-group">
-                                <label for="programa-interes">Selecciona un programa</label>
+                                <label for="programa-interesB">Selecciona un programa</label>
                                 <?php get_template_part( 'template-parts/selectProgramas'); ?>
                             </div>
                             <div class="row">
