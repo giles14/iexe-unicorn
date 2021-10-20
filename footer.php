@@ -442,7 +442,6 @@ $('#interes button.btn.btn-primario').click(function(){
       <div class="modal-body">
           <p class="description">El servidor remoto no ha podido contactarse, le rogamos vuelva a intentarlo y si el problema persiste por favor contactenos.</p>
           <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
-          <img style="height: 150px; margin: 0 auto; text-align: center; display: block;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/ira.jpg" alt="">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
