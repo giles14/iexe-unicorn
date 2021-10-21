@@ -115,7 +115,7 @@
                             <div class="links-programas">
                                 <ul>
                                     <li><a href="oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Seguridad Pública y Políticas Públicas</a></li>
-                                    <li><a href="oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Política Públicas</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Políticas Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-finanzas-publicas">Finanzas Públicas</a></li>
                                     <li><a href="oferta-educativa/maestria-en-administracion-de-negocios-mba/">Administración de Negocios (MBA)</a></li>

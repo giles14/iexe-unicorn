@@ -135,7 +135,7 @@
             <div class="row">
                 <div class="col-md-6 offset-md-2">
                     <h1 class="button-primary fijo">Misión</h1>
-                    <p>En IEXE Universidad nuestra misión es <strong>impulsar</strong> tu <strong>vida profesional.</strong> Buscamos que todos nuestros alumnos tengan más y mejores <strong>oportunidades</strong> para <strong>crecer profesionalmente</strong> a través de <strong>modelos pedagógicos</strong> innovadores, <strong>herramientas tecnológicas</strong> de vanguardia, docentes con <strong>experiencia profesional</strong> relevante y el desarrollo y la enseñanza de <strong>conocimiento práctico,</strong> valioso y realmente útil, acorde con el contexto laboral. </p>
+                    <p>Nuestra misión es <strong>impulsar</strong> tu <strong>vida profesional.</strong> Buscamos que todos nuestros alumnos tengan más y mejores <strong>oportunidades</strong> para <strong>crecer profesionalmente</strong> a través de <strong>modelos pedagógicos</strong> innovadores, <strong>herramientas tecnológicas</strong> de vanguardia, docentes con <strong>experiencia profesional</strong> relevante y el desarrollo y la enseñanza de <strong>conocimiento práctico,</strong> valioso y realmente útil, acorde con el contexto laboral. </p>
                 </div>
                 <div class="col-md-4">
                 <img class="img-fluid float-right" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Vision_IEXE.webp" alt="">
@@ -146,8 +146,8 @@
             <div class="row">
                 <div class="col-md-6 offset-md-2">
                     <h1 class="button-primary fijo">Visión</h1>
-                    <p>En IEXE Universidad somos la institución que cambia los <strong>paradigmas</strong> de la <strong>educación</strong> en línea y establecemos el <strong>futuro</strong> del aprendizaje en <strong>América Latina</strong>; formando la comunidad estudiantil más grande del continente y contando con egresados que colaboran en instituciones de los <strong>tres órdenes de gobierno</strong>, en agencias multilaterales, en las principales agencias gubernamentales y en organizaciones privadas de primer nivel.</p>
-                    <p>Somos la primera opción de las personas cuando buscan una institución de educación superior <strong>especializada, totalmente en línea.</strong></p>
+                    <p>Ser la institución que cambia los <strong>paradigmas</strong> de la <strong>educación</strong> en línea y establecer el <strong>futuro</strong> del aprendizaje en <strong>América Latina</strong>; formando la comunidad estudiantil más grande del continente y contar con egresados que colaboren en instituciones de los <strong>tres órdenes de gobierno</strong>, en agencias multilaterales, en las principales agencias gubernamentales y en organizaciones privadas de primer nivel.</p>
+                    <p>Ser la primera opción de las personas que buscan una institución de educación superior <strong>especializada, totalmente en línea.</strong></p>
                 </div>
                 <div class="col-md-4">
                     <img class="img-fluid float-md-right escudo-nosostros" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-iexe-nosotros.svg" alt="">
