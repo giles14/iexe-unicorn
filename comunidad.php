@@ -112,7 +112,7 @@
                     <span class="tipo-de">Podcast</span>
                     <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/barra-progreso.svg" alt="">
                     <div class="controles-audio">
-                        
+                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/controles-podcast.webp" alt="Controles">
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -177,7 +177,7 @@
 
     </section>
 
-    <section id="video-testimonial">
+    <!-- <section id="video-testimonial">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-4">
@@ -189,7 +189,7 @@
             <div class="row">
                 <div class="col-md-3 offset-md-4">
                     <div class="un-testimonio">
-                        <img class="img-fluid" src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/Henry.png" alt="">
+                        <img class="img-fluid" src="<?php //  echo esc_url(get_template_directory_uri()) ?>/assets/img/Henry.png" alt="">
                         <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Oq6xon0-0S4" data-target="#myModal">
                             <i class="fas fa-play"></i>
                         </button>
@@ -200,7 +200,7 @@
                 </div>
                 <div class="col-md-3 offset-md-1 align-self-center">
                 <div class="un-testimonio">
-                    <img class="img-fluid" src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/Stephanie-Gomiciaga.png" alt="">
+                    <img class="img-fluid" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/Stephanie-Gomiciaga.png" alt="">
                     <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/9O6XqY1q1tE" data-target="#myModal">
                             <i class="fas fa-play"></i>
                     </button>
@@ -212,7 +212,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section id="mapa-comunidad">
         <div class="container">
             <div class="row">
