@@ -310,7 +310,7 @@ a.leer-mas {
 .post-titulo a {
     color: var(--azul-primario);
     font-weight: 800;
-    font-size: 30px;
+    font-size: 34px;
     line-height: 30px;
 }
 #entrada-blog span.meta-blog-autor {
@@ -349,6 +349,10 @@ a.leer-mas {
 }
 #entrada-blog h1.titulo.navegacion {
     font-size: 22px;
+}
+#entrada-blog .contenido-post h2 {
+    font-size: 25px;
+    font-weight: 700;
 }
 h2.post-categorias {
     font-family: 'Nunito Sans';
