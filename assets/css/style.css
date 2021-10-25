@@ -31,6 +31,8 @@ html {
 .navegacion-botones a {
     text-decoration: none;
     color: #fff;
+    float: left;
+    padding: 18px 10px;
 }
 .navegacion-botones a:hover {
     text-decoration: none;
@@ -804,7 +806,7 @@ section#editorial::after{
 }
 .navegacion-botones{
     color: #FFF;
-    margin: 0 5% 0 70%;
+    margin: 0 5% 0 38%;
     font-weight: 300;
 }
 .texto-slider{
@@ -1176,7 +1178,7 @@ nav.navbar.sticky {
 }
 nav.navbar.sticky .navegacion-botones {
     color: #FFF;
-    margin: 0 5% 0 70%;
+    margin: 0 5% 0 38%;
     font-weight: 300;
     transition: all 0.5s ease-out;
 }
@@ -3369,3 +3371,50 @@ span.nombre-institucion {
         strong {
             font-weight: bold;
         }
+/* Búsqueda interactiva */
+
+.autocomplete-suggestions { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; font-family: 'Nunito Sans', sans-serif; box-sizing: border-box; border: 1px solid #999; background: rgba(0,30,66,0.95); color: #FFF; cursor: default; overflow: auto; /*-webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);*/ } 
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-no-suggestion { padding: 2px 5px;}
+.autocomplete-selected { background: #c0c0c0; font-weight: 800;cursor: pointer;color: #001E42;}
+.autocomplete-suggestions strong { font-weight: 600; color: cyan; }
+.autocomplete-group { padding: 2px 5px; font-weight: bold; font-size: 18px; color: cyan; display: block; font-weight: 800; }
+input#mi-busqueda:focus {
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 0px;
+    outline: none;
+}
+input#mi-busqueda {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #FFF;
+    display: block;
+    margin: 15px 0;
+    border-radius: 15px 15px 15px 15px;
+    background: rgb(0, 30, 66,0.95);
+    color: cyan;
+    width: 337px;
+    background-image: url(https://iexe.xyz/busqueda/content/buscar.svg) ;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 25px;
+    float: left;
+}
+input#mi-busqueda[placeholder] {
+    padding-left: 40px;
+}
+.autocomplete-suggestions {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    background: #001E42;
+    color: #FFF;
+    cursor: default;
+    overflow: auto;
+    -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid #FFF;
+    border-top: 0px;
+    padding: 5px;
+}
