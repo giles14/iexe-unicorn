@@ -33,6 +33,7 @@ html {
     color: #fff;
     float: left;
     padding: 18px 10px;
+    margin-left: 80px;
 }
 .navegacion-botones a:hover {
     text-decoration: none;
@@ -776,13 +777,13 @@ section#oferta-educativa a:hover {
     background: var(--primario-azul);
     width: 100px;
     text-align: center;
-    height: 27px;
+    height: 36px;
     border-radius: 3px;
     color: #FFF;
     font-family: 'Nunito Sans';
     font-size: 15px;
     font-weight: 200;
-    padding: 3px;
+    padding: 8px;
 }
 img.menu-boton {
     margin-left: 16px;
@@ -3380,9 +3381,17 @@ span.nombre-institucion {
 .autocomplete-suggestions strong { font-weight: 600; color: cyan; }
 .autocomplete-group { padding: 2px 5px; font-weight: bold; font-size: 18px; color: cyan; display: block; font-weight: 800; }
 input#mi-busqueda:focus {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
     border-bottom: 0px;
     outline: none;
+    background: rgba(0,30,66,0.8);
+    background-image: url(https://iexe.xyz/busqueda/content/buscar.svg);
+    background-size: 25px;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+    width: 330px;
+    border: none;
 }
 input#mi-busqueda {
     font-size: 16px;
@@ -3390,10 +3399,10 @@ input#mi-busqueda {
     border: 1px solid #FFF;
     display: block;
     margin: 15px 0;
-    border-radius: 15px 15px 15px 15px;
-    background: rgb(0, 30, 66,0.95);
+    border-radius: 20px;
+    background: rgba(0,30,66,0.15);
     color: cyan;
-    width: 337px;
+    width: 175px;
     background-image: url(https://iexe.xyz/busqueda/content/buscar.svg) ;
     background-repeat: no-repeat;
     background-position: 10px;
@@ -3401,20 +3410,61 @@ input#mi-busqueda {
     float: left;
 }
 input#mi-busqueda[placeholder] {
-    padding-left: 40px;
+    padding-left: 48px;
+}
+input#mi-busqueda::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFF;
 }
 .autocomplete-suggestions {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
-    background: #001E42;
+    background: rgba(0,30,66,0.8);
     color: #FFF;
     cursor: default;
     overflow: auto;
     -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
-    border-radius: 0px 0px 15px 15px;
-    border: 1px solid #FFF;
+    /* border-radius: 0px 0px 15px 15px; */
+    /* border: 1px solid #FFF; */
     border-top: 0px;
     padding: 5px;
+    border: none;
 }
+.sticky input#mi-busqueda:focus {
+    border-bottom: 1px solid;
+}
+.gradient-border {
+    --borderWidth: 2px;
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    /* background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); */
+    background: linear-gradient(60deg, #bec4fd, #919bfc, #5666fc,  #6600ff, #001E42,#0018FF,#00a2ff,#00ffe8);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 6s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
