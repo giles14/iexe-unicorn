@@ -4,26 +4,32 @@
             <div class="row">
                 <div id="slidePrincipal" class="carousel slide w-100" data-ride="carousel">
                     <div class="carousel-inner">
+                      <!-- <div class="carousel-item active">
+                            <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
+                            <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
+                      </div> -->
                       <div class="carousel-item active">
-                            <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
-                            <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
-                      </div>
-                      <div class="carousel-item">
-                            <a target="_blank" href="https://bit.ly/iexaWHA"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno.webp" alt="IEXALUMNO Slide"></a>
-                            <a target="_blank" href="https://bit.ly/iexaWHA"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno_movil.webp" alt="IEXALUMNO Slide"></a>
-                      </div>
-                      <div class="carousel-item">
-                        <a href="/becas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
-                            <a href="/becas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador-mobile.webp" alt="Embajadores Slide"></a>
-                      </div>
-                      <div class="carousel-item">
-                            <a href="/editorial"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
-                            <a href="/editorial"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
+                            <a href="https://api.whatsapp.com/send/?phone=5212224603589&text=Hola%2C+me+interesa+m%C3%A1s+informaci%C3%B3n+de+la+beca.&app_absent=0" target="_blank"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-becas-promo-fin.webp" alt="Promo Fin"></a>
+                            <a href="https://api.whatsapp.com/send/?phone=5212224603589&text=Hola%2C+me+interesa+m%C3%A1s+informaci%C3%B3n+de+la+beca.&app_absent=0" target="_blank"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-becas-promo-fin-movil.webp" alt="Somos Slide"></a>
                       </div>
                       <div class="carousel-item">
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
                       </div>
+                      
+                      <div class="carousel-item">
+                            <a target="_blank" href="https://bit.ly/iexaWHA"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno.webp" alt="IEXALUMNO Slide"></a>
+                            <a target="_blank" href="https://bit.ly/iexaWHA"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno_movil.webp" alt="IEXALUMNO Slide"></a>
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <a href="/becas"><img class="w-100 d-none d-sm-block" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
+                            <a href="/becas"><img class="d-block d-sm-none w-100" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador-mobile.webp" alt="Embajadores Slide"></a>
+                      </div> -->
+                      <div class="carousel-item">
+                            <a href="/editorial"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
+                            <a href="/editorial"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
+                      </div>
+                      
                       <div class="carousel-item">
                             <a href="/comunidad"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
                             <a href="/comunidad"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
