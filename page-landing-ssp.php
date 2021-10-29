@@ -12,6 +12,11 @@
                     En IEXE Universidad te formaremos en materia de seguridad pública para ser capaz de hacer frente a los retos de seguridad que aquejan a la sociedad desde diferentes instancias y niveles de gobierno.
                 </p>
                 <div class="row">
+                    <div class="col-md-2">
+                        <div class="bloque-descarga">
+
+                        </div>
+                    </div>
                     <div class="col-md-8">
                         <img src="" alt="" class="certificado-unitar"><a href=""><img src="" alt=""></a>
                     </div>
@@ -19,7 +24,7 @@
                 
             </div>
             <div class="col-md-5">
-                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-landing-ssp-2.webp" alt="" class="escudo-licenciatura img-fluid">
+                <img style="width: 550px" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-landing-ssp-2.webp" alt="" class="escudo-licenciatura d-none d-sm-block">
 
             </div>
         </div>
@@ -68,12 +73,13 @@
             
                     <div class="col-md-4">
                         <label for="nombre">Nombre*</label>
-                        <input id="nombre" type="text" class="form-control" placeholder="Ingresa aquí tu nombre">
+                        <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Ingresa aquí tu nombre">
                     </div>
 
                     <div class="col-md-4">
                         <label for="correo">Correo electrónico*</label>
-                        <input id="correo" type="email" class="form-control" placeholder="Ingresa aquí tu correo">
+                        <input id="correo" name="correo" type="email" class="form-control" placeholder="Ingresa aquí tu correo">
+                          <input type="hidden" id="programa" name="programa" value="lsp">
                     </div>
                 
                     <div class="col-md-4">
@@ -81,7 +87,7 @@
                         <input type="text" id="telefono" class="form-control" placeholder="Ingresa aquí tu número">
                     </div>                
             </div>
-            <button class="enviar-landing">Enviar registro</button>
+            <button type="button" class="enviar-landing">Enviar registro</button>
         </form>
     </div>
     
@@ -90,12 +96,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <span class="pregunta-sin-enfasis">¿Porqué elegir</span>
-                <span class="pregunta-con-enfasis">IEXE Universidad?</span>
-                <p class="text-center"><strong>Más de 44 años de experiencia</strong> nos respaldan para brindarte todas las herramientas necesarias para un óptimo desarrollo<br> personal y profesional con <strong>grandes beneficios.</strong></p>
+                <h2 class="podras">Podrás trabajar en:</h2>
+                <ul class="podras-trabajar-en">
+                    <li><strong> Instituciones gubernamentales</strong> encargadas de la prevención, procuración y reinserción social.</li>
+                    <li><strong>Empresas de seguridad privada</strong> como asesores(as) o estrategas.</li>
+                    <li><strong>Como consultores(as) especializados</strong> en temas de seguridad pública.</li>
+                    <li>Como <strong>docentes e investigadores</strong> en temas de seguridad pública, formación y desarrollo policial.</li>
+                    <li> <strong>Instituciones de seguridad pública</strong>, realizando diagnósticos y diseñando programas de prevención delictiva, de conductas antisociales y para la seguridad ciudadana.</li>
+                    <li><strong>Fiscalías estatales y federales</strong>, en áreas periciales, de formación y capacitación e investigación profesional.</li>
+                </ul>
             </div>
         </div>
-        <div class="row">
+
+        <!-- <div class="row">
             <div class="col-md-3">
                 <img src="" alt="" class="el-icono">
                 <p class="texto-porque"><strong>Usa el tiempo a tu favor:</strong> <br> Concluye tu licenciatura en 3 años o maestría en 16 meses.</p>
@@ -112,8 +125,18 @@
                 <img src="" alt="" class="el-icono">
                 <p class="texto-porque"><strong>Garantía de continuidad de estudios:</strong><br> infraestructura de vanguardia para garantizar la continuidad de tus estudios antes cualquier circunstancia.</p>
             </div>
-        </div>
+        </div> -->
     </div>
+</section>
+<section id="el-por-que">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center el-porque"><span class="pregunta-sin-enfasis">¿Por qué elegir</span> IEXE Universidad?</h1>
+                <p class="texto-por-que text-center">La misión de IEXE universidad es y seguirá siendo ayudar a nuestros alumnos a crear<br> <strong>valor público</strong>, a través de la enseñanza de herramientas prácticas y modelos para la<br> <strong>toma de decisiones</strong> mediante una <strong>plataforma disponible las 24 horas del día.</strong></p>
+            </div>
+        </div>
+    </div>  
 </section>
 <section>
     <div class="container">
@@ -122,17 +145,21 @@
                 <h1 class="text-center relacionados">Programas relacionados</h1>
             </div>
             <div class="row">
-                <div class="col-md-3">
-
+                <div class="col-md-3 offset-md-1">
+                    <h2 class="sigla-programa">MSP</h2>
+                    <h3 class="nombre">Maestría en <br> Seguridad Pública</h3>
+                    <a href="/ofertas-academicas" class="tipo-boton">¡Descubrelo!</a>
                 </div>
                 <div class="col-md-2">
-
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo_MSP.webp" alt="" class="img-fluid">
                 </div>
-                <div class="col-md-3 offset-md-2">
-
+                <div class="col-md-3 offset-md-1">
+                    <h2 class="sigla-programa">DDP</h2>
+                    <h3 class="nombre">Doctorado en<br> Políticas Públicas</h3>
+                    <a href="/ofertas-academicas" class="tipo-boton">¡Descubrelo!</a>
                 </div>
                 <div class="col-md-2">
-
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo_DPP.webp" alt="" class="img-fluid">
                 </div>
                 
             </div>

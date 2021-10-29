@@ -39,7 +39,7 @@ span.descripcion {
 }
 h2.frase-heroica {
     font-weight: 700;
-    font-family: 'Georama', sans-serif;;
+    font-family: 'Georama', sans-serif;
     font-size: 36px;
     color: #FFF;
     padding-top: 32px;
@@ -75,7 +75,7 @@ button.enviar-landing {
 span.pregunta-sin-enfasis {
     font-weight: 400;
     font-size: 30px;
-    color: var(--primario-azul);
+    color: #FFF;
 }
 span.pregunta-con-enfasis {
     font-weight: 800;
@@ -109,5 +109,55 @@ span.informacion-secundaria {
 #formulario-interes-landing h1 {
     color: #FFF;
     padding-top: 24px;
+    padding-bottom: 16px;
+    font-family: 'Georama', sans-serif;
+}
+section#el-por-que {
+    background: var(--primario-azul);
+    color: #FFF;
+    padding: 40px;
+}
+h2.podras{
+    font-family: 'Georama', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+ul.podras-trabajar-en {
+    font-size: 21px;
+    font-weight: 300;
+}
+section#el-por-que {
+    background: var(--primario-azul);
+    padding: 40px;
+    color: #FFF;
+}
+h1.text-center.el-porque {
+    color: #FFF;
+    font-family: 'Georama';
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+p.texto-por-que {
+    font-size: 24px;
+    font-weight: 300;
+}
+a.tipo-boton {
+    background: linear-gradient(
+90deg, rgba(37,51,244,1) 0%, rgba(136,119,242,1) 100%);
+    color: #FFF;
+    padding: 3px 29px;
+    border-radius: 22px;
+}
+h2.sigla-programa {
+    font-family: 'Georama';
+    font-weight: 800;
+}
+h3.nombre {
+    line-height: 38px;
+}
+h1.relacionados {
+    color: var(--primario-azul);
+    font-weight: 800;
     padding-bottom: 16px;
 }

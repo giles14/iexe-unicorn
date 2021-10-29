@@ -37,6 +37,7 @@ function agregar_estilos_tema(){
     wp_register_script( 'jquery-autocomplete', get_template_directory_uri() . '/assets/js/jquery.autocomplete.js', 'jquery-mockjax', '1.4.11', true );
     wp_register_script( 'iexe-unicorn-init-busqueda', get_template_directory_uri() . '/assets/js/busqueda-init.js', 'jquery-mockjax', '1.0', true );
     wp_register_script( 'iexe-unicorn-valores', get_template_directory_uri() . '/assets/js/valores.js', 'jquery', '1.0', true );
+    wp_register_script( 'iexe-unicorn-landing', get_template_directory_uri() . '/assets/js/landing.js', 'jquery', '1.0', true );
 
     wp_register_script( 'iexe-unicorn-admisiones', get_template_directory_uri() . '/assets/js/admisiones.js', 'jquery', '1.0', true );
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css', false, '4.6', 'all' );
@@ -84,6 +85,8 @@ function agregar_estilos_tema(){
     }
     if(is_page_template('page-landing-ssp.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp');
+        wp_enqueue_script('iexe-unicorn-landing');
+        
     }
     wp_enqueue_style('intlTelinput-style');
     wp_enqueue_script('intlTelinput');
