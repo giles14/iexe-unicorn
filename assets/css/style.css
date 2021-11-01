@@ -31,6 +31,9 @@ html {
 .navegacion-botones a {
     text-decoration: none;
     color: #fff;
+    float: left;
+    padding: 18px 10px;
+    margin-left: 80px;
 }
 .navegacion-botones a:hover {
     text-decoration: none;
@@ -44,6 +47,11 @@ section{
     color: var(--primario--azul-obscuro);
     margin-top: 64px;
 }
+label.error {
+    color: red;
+    font-weight: 300!important;
+    display: block;
+}
 section#slider{
     margin-top: unset;
 }
@@ -56,7 +64,7 @@ section#embajadores-iexe {
 }
 section#info-primaria{
 
-    margin-top: -100px;
+    margin-top: -70px;
     position: relative;
 }
 section#botones-accion {
@@ -100,6 +108,7 @@ img.flecha-ir {
     background: url(../img/fondoB.webp);
     border-radius: 10px;
     padding: 15px;
+    overflow: hidden;
 }
 .menu-navegacion a.button-primary {
     margin-bottom: 80px;
@@ -768,13 +777,13 @@ section#oferta-educativa a:hover {
     background: var(--primario-azul);
     width: 100px;
     text-align: center;
-    height: 27px;
+    height: 36px;
     border-radius: 3px;
     color: #FFF;
     font-family: 'Nunito Sans';
     font-size: 15px;
     font-weight: 200;
-    padding: 3px;
+    padding: 8px;
 }
 img.menu-boton {
     margin-left: 16px;
@@ -798,7 +807,7 @@ section#editorial::after{
 }
 .navegacion-botones{
     color: #FFF;
-    margin: 0 5% 0 70%;
+    margin: 0 5% 0 38%;
     font-weight: 300;
 }
 .texto-slider{
@@ -1138,6 +1147,14 @@ img.boton-play {
     padding: .3rem 1rem;
     z-index: 98;
 }
+p.blockquote-footer {
+    font-size: 18px;
+}
+cite {
+    color: #000;
+    font-weight: 600;
+}
+
 
 .sticky{
     display: unset;
@@ -1162,7 +1179,7 @@ nav.navbar.sticky {
 }
 nav.navbar.sticky .navegacion-botones {
     color: #FFF;
-    margin: 0 5% 0 70%;
+    margin: 0 5% 0 38%;
     font-weight: 300;
     transition: all 0.5s ease-out;
 }
@@ -2827,7 +2844,7 @@ span.tipo-de {
     background: var(--primario--azul-obscuro);
     margin-left: 5%;
     border-radius: 15px;
-    background-image: url(../img/tiktok.svg);
+    background-image: url(../img/tiktok_icono.webp);
     background-repeat: no-repeat;
     background-position-x: 99%;
     min-height: 185px;
@@ -3355,3 +3372,103 @@ span.nombre-institucion {
         strong {
             font-weight: bold;
         }
+/* Búsqueda interactiva */
+
+.autocomplete-suggestions { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; font-family: 'Nunito Sans', sans-serif; box-sizing: border-box; border: 1px solid #999; background: rgba(0,30,66,0.95); color: #FFF; cursor: default; overflow: auto; /*-webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);*/ } 
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-no-suggestion { padding: 2px 5px;}
+.autocomplete-selected { background: #c0c0c0; font-weight: 400;cursor: pointer;color: #001E42;}
+.autocomplete-suggestions strong { font-weight: 500; color: cyan; }
+.autocomplete-group { padding: 2px 5px; font-weight: bold; font-size: 18px; color: cyan; display: block; font-weight: 400; }
+input#mi-busqueda:focus {
+    border-radius: 0px 0px 0px 0px;
+    border-bottom: 0px;
+    outline: none;
+    background: rgba(0,30,66,0.9);
+    background-image: url(https://iexe.xyz/busqueda/content/buscar.svg);
+    background-size: 25px;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    transition: 0.5s all;
+    width: 330px;
+    border: none;
+}
+input#mi-busqueda:focus:placeholder-shown{
+    padding-left: 115px;
+}
+input#mi-busqueda {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #FFF;
+    display: block;
+    margin: 15px 0;
+    border-radius: 20px;
+    background: rgba(0,30,66,0.15);
+    color: cyan;
+    width: 175px;
+    background-image: url(https://iexe.xyz/busqueda/content/buscar.svg) ;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 25px;
+    float: left;
+}
+input#mi-busqueda[placeholder] {
+    padding-left: 48px;
+}
+input#mi-busqueda::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    color: #FFF;
+}
+.autocomplete-suggestions {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    background: rgba(0,30,66,0.9);
+    color: #FFF;
+    cursor: default;
+    overflow: auto;
+    font-weight: 100;
+    -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.8);
+    /* border-radius: 0px 0px 15px 15px; */
+    /* border: 1px solid #FFF; */
+    border-top: 0px;
+    padding: 5px;
+    border: none;
+}
+.sticky input#mi-busqueda:focus {
+    border-bottom: 1px solid;
+}
+.gradient-border {
+    --borderWidth: 2px;
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    /* background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); */
+    background: linear-gradient(60deg, #bec4fd, #919bfc, #5666fc,  #6600ff, #001E42,#0018FF,#00a2ff,#00ffe8);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 6s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
