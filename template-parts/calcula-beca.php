@@ -19,7 +19,7 @@
                     </ul>
 
                 </div>
-                <form id="calcula-beca">
+                <form id="calcular-beca">
                     <!-- progressbar -->
                     <!-- <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -27,13 +27,13 @@
                     <fieldset>
                         <div class="form-card">
                             <label class="fieldlabels">Nombre</label> 
-                            <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" />
+                            <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" required/>
                             <label class="fieldlabels">Email: *</label>
-                            <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" />
+                            <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" required/>
                             <label class="fieldlabels">Celular: *</label>
-                            <input id="telefono-beca" type="tel" name="telefono" placeholder="Ingresa aquí tu teléfono móvil" />
+                            <input id="telefono-beca" type="tel" name="telefono" placeholder="Ingresa aquí tu teléfono móvil" required  minlength="7" maxlength="11"/>
                             <div style="margin-top: 15px" class="form-group">
-                                <label for="programa-interes">Selecciona un programa</label>
+                                <label for="programa-interesB">Selecciona un programa</label>
                                 <?php get_template_part( 'template-parts/selectProgramas'); ?>
                             </div>
                             <div class="row">
@@ -46,7 +46,7 @@
                             </div> 
                         </div> 
                         
-                        <button type="button" name="next" class="next btn btn-primario float-right mt-3">Siguiente</button>
+                        <button type="button" name="next" id="crm" class="next btn btn-primario float-right mt-3">Siguiente</button>
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
@@ -103,7 +103,7 @@
                                 <div class="col-12">
                                 <div class="GaugeMeter" id="medidorBeca" data-append="%" data-size="200" data-theme="Red-Green" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors=true data-animate_text_colors=true data-width="15" data-label=null data-style="Arch" data-label_color="#006400"></div>    
                                 <p class="text-center">Este porcentaje representa el monto de beca que puedes obtener.</p>
-                                <a class="descubre-mas azul-primario-color text-center d-block" target="_blank" href="https://bit.ly/3kzGElO">Inicia el proceso contactando a un asesor.</a><br>
+                                <a class="descubre-mas azul-primario-color text-center d-block" target="_blank" href="https://bit.ly/3j2TYOl">Inicia el proceso contactando a un asesor.</a><br>
                                 
                                 </div>
                             </div>
@@ -120,6 +120,7 @@
         </div>
     </div>
 </section>
+<?php wp_enqueue_script('iexe-unicorn-silent-formulario');  ?>
 <script src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/GaugeMeter.js"></script>
 
 <style>

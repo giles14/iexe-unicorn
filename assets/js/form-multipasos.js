@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#calcular-beca").validate();
     var current_fs, next_fs, previous_fs; //fieldsets
     var opacity;
     var current = 1;
@@ -6,9 +7,13 @@ $(document).ready(function(){
 
     setProgressBar(current);
 
-    $(".next").click(function(){
+    $(".next").click(function(){        
         if(current == 1){
-            if(($('input[name=nombre]').val().length != 0) && ($('input[name=email]').val().length != 0) && ($('input[name=telefono]').val().length != 0)){
+            var nombre = $(this).parents('#calcular-beca').find("[name='nombre']").val();
+            var email = $(this).parents('#calcular-beca').find("[name='email']").val();
+            var telefono = $(this).parents('#calcular-beca').find("[name='telefono']").val();
+            var programa = $(this).parents('#calcular-beca').find("[name='programa']").val();
+            if((nombre.length != 0) && (email.length != 0) && (telefono.length != 0) && ($('#calcular-beca')[0].checkValidity()) ){
                 console.log('tiene informacion');
                 console.log(current);
                 current_fs = $(this).parent();
@@ -16,7 +21,7 @@ $(document).ready(function(){
             }else{
                 console.log('PASO UNO NO PASO');
                 console.log(current);
-                alert('Por favor llene los datos antes de contiunuar');
+                alert('Por favor llene correctamente los datos antes de contiunuar');
                 console.log('nuevo valor ' + current);
             }
         }else if(current == 2){

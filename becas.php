@@ -183,35 +183,6 @@ Template Name: Becas
             </div>  
     
 </section>
-<!-- <section id="inscripcion">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="bloque-inscripcion">
-                    <h2 class="titulo">Requisitos de admisión</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy:</p>
-                    <ul class="requisitos">
-                        <li>Acta de nacimiento original.</li>
-                        <li>Copia de CURP.</li>
-                        <li>Certificado de término de bachillerato o preparatoria, debidamente legalizado (en caso de que se encuentre en trámite, constancia reciente donde lo avale).</li>
-                    </ul>
-                    
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="bloque-inscripcion azul">
-                    <h2 class="titulo">Proceso de inscripción</h2>
-                    <p>El primer paso para ingresar al programa es completar el formulario de inscripción. Una vez recibido nos pondremos en contacto para coordinar la entrevista (online).</p>
-                    <p class="text-center">
-                        <button type="submit" class="btn btn-primario mt-3">Quiero inscribirme</button>
-                    </p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
 <?php get_template_part( 'template-parts/calcula-beca'); ?>
 
 <section id="banner">
@@ -251,10 +222,10 @@ Template Name: Becas
         <form>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
+                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombreIE" id="nombre" required>
                 </div>
                 <div class="form-group col-md-6">
-                <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="email" id="correo" required>
+                <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="emailIE" id="correo" required>
                 </div>
             </div>
             <div class="form-row">
@@ -262,7 +233,7 @@ Template Name: Becas
                 <input placeholder="Teléfono móvil*" id="telefono-iexe" type="text" class="form-control" name="telefono" required>
                 </div>
                 <div class="form-group col-md-6">
-                <select class="form-control" name="programa" required>
+                <select class="form-control" name="programaIE" required>
                     <option name="programa" value="">- Programa académico de interés -</option>
                     <optgroup label="Licenciaturas">              
                         <option value="LCP">Ciencias Políticas y Administración Pública</option>
@@ -301,7 +272,7 @@ Template Name: Becas
                 </select>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primario float-right">Enviar</button>
+            <button type="button" class="btn btn-primario float-right">Enviar</button>
         </form>
         </div>
       </div>
@@ -381,7 +352,7 @@ Template Name: Becas
                             </select>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primario float-right">Enviar</button>
+                    <button type="button" class="btn btn-primario float-right">Enviar</button>
                 </form>
                 </div>
             </div>
@@ -465,7 +436,7 @@ Template Name: Becas
                         </select>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primario float-right">Enviar</button>
+            <button type="button" class="btn btn-primario float-right">Enviar</button>
         </form>
         </div>
       </div>
@@ -476,13 +447,7 @@ Template Name: Becas
     </div>
 </div>
 <script>
-    var input = document.querySelector("#telefono-iexe");
-    window.intlTelInput(input, {
-      localizedCountries: { 'us': 'Estados Unidos' },
-      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
-      separateDialCode: true,
-      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
-    });
+    
     var input = document.querySelector("#telefono-sep");
     window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },

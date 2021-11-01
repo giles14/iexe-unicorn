@@ -1,3 +1,13 @@
+<?php 
+    $elOrigen = 'no-conocido';
+    if(is_page_template('academicos.php')){
+        $elOrigen = 'formulario-interesado-carrera';
+    }elseif(is_home()) {
+        $elOrigen = 'formulario-home-conocer';
+    }elseif(is_page_template('comunidad.php')){
+        $elOrigen = 'formulario-comunidad';
+    }
+?>
 <section id="pie">
         <div class="overlay-img">
         <div class="container">
@@ -114,10 +124,10 @@
         <div class="menu-navegacion">
             <a class="button-primary">ACCESOS</a>
             <div class="contenedor-menu">
-                <a class="menu-movil" target="_blank" href="https://www.alumnos.iexe.edu.mx/">Alumnos</a>
-                <a class="menu-movil" target="_blank" href="https://www.docentes.iexe.edu.mx">Docentes</a>
+                <a class="menu-movil" target="_blank" href="https://alumnos.iexe.edu.mx/">Alumnos</a>
+                <a class="menu-movil" target="_blank" href="https://docentes.iexe.edu.mx">Docentes</a>
                 <!-- <a class="menu-movil" target="_blank" href="https://develop.redisoft.dev">Colaboradores</a> -->
-                <a class="menu-movil" target="_blank" href="https://www.talento.iexe.edu.mx">Comercial</a>
+                <a class="menu-movil" target="_blank" href="https://talento.iexe.edu.mx">Comercial</a>
             </div>
         </div>
     </div>
@@ -282,6 +292,8 @@ function enableScroll() {
 
 </script>
 <?php wp_footer(  )?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/localization/messages_es.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
     $(document).ready(function(){
@@ -304,13 +316,7 @@ function enableScroll() {
       separateDialCode: true,
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
-    var input = document.querySelector("#telefono-beca");
-    window.intlTelInput(input, {
-      localizedCountries: { 'us': 'Estados Unidos' },
-      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
-      separateDialCode: true,
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js",
-    });
+    
   </script>
   <script>
       $(document).ready(function(){
@@ -320,6 +326,7 @@ $('#interes button.btn.btn-primario').click(function(){
     $('#interes button.btn.btn-primario').attr("disabled", true);
     var nombre = $("[name='nombre']").val();
     var correo = $("[name='email']").val();
+    var origen = '<?php echo $elOrigen; ?>';
     
     if($('input#hiddenPrograma').val()){
         var programa = $('input#hiddenPrograma').val();
@@ -328,15 +335,12 @@ $('#interes button.btn.btn-primario').click(function(){
         var programa = $("[name='programa']").val();
         console.log(programa);
     }
-    //var telefono = $("#telefono").val();
     var telefono = iti.getNumber(crossOriginIsolated);
     var data;           
-    // var formData = new FormData(forma);
-    // formData.append('telefono', String(iti.getNumber(crossOriginIsolated)));
     $.ajax({
     url: 'https://api.redisoft.dev/Leads/web',
     type: 'post',
-    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#interes" + "&charifaz=" + navigator.userAgent,
+    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#interes" + "&charifaz=" + navigator.userAgent + "&adicional=origen:%20" + origen,
     success: function(data){
         console.log(data);
         if(data == true || data == "saved"){
@@ -346,6 +350,7 @@ $('#interes button.btn.btn-primario').click(function(){
 
         }else if(data == "duplicated"){
             console.log("Ya hay un registro con este correo electrónico");
+            $("#duplicadoModal").modal('show');
         } else{
             $("#guardadoModal").modal('show');
             $('#interes button.btn.btn-primario').removeClass("error");
@@ -406,6 +411,27 @@ $('#interes button.btn.btn-primario').click(function(){
     </div>
   </div>
 </div>
+<div class="modal fade" id="duplicadoModal" tabindex="-1" aria-labelledby="duplicadoModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titulo" id="duplicadoModalLabel">Ha ocurrido un error</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p class="description">Sus datos ya se encuentran almacenados en el sistema si lo desea, puede contactarnos directamente a nuestro whastapp:<a href="https://bit.ly/3p4NXV9"><img style="width: 25px; margin-top:5px;" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/whatsapp.png" alt=""></a> <a target="_blank" href="https://bit.ly/3p4NXV9" style="color: #FFF; color: cyan; margin-top: 5px; display: block;">+52 222-460-35-89</a></p>
+          <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 <div class="modal fade" id="servidorModal" tabindex="-1" aria-labelledby="servidorModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -418,7 +444,6 @@ $('#interes button.btn.btn-primario').click(function(){
       <div class="modal-body">
           <p class="description">El servidor remoto no ha podido contactarse, le rogamos vuelva a intentarlo y si el problema persiste por favor contactenos.</p>
           <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
-          <img style="height: 150px; margin: 0 auto; text-align: center; display: block;" class="img-fluid" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/ira.jpg" alt="">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

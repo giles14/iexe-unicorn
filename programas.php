@@ -75,7 +75,7 @@ Template Name: Programas
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <ul class="masters secundario">
+                    <ul class="masters secundario" style="margin-block-start: 5px;margin-inline-start: -18px; ">
                         <li><a href="oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/">Marketing Político y Opinión Pública</a></li>
                         <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>
                         <li><a href="oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/">Sistema Penal Acusatorio y Juicio Oral </a></li>

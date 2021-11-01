@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/bcx3rtu.css">
     <script src="https://kit.fontawesome.com/0edce41d7a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -45,8 +46,7 @@
         
 
     </nav> -->
-    <nav class="navbar fixed-top
-     navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             
           <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
@@ -59,28 +59,6 @@
         </button> -->
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul> -->
           <div class="navegacion-botones">
             <input id="mi-busqueda" type="text" placeholder="¿Qué buscas?">
             <a onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos"> Accesos</a>

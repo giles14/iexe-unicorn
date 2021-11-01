@@ -1,0 +1,163 @@
+body#ssp{
+    background: #EFEFEF;
+    background-image: url('../img/landing-ssp.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+body#ssp #informacion-general h1.nombre-programa {
+    font-family: var(--familia-general);
+    font-weight: 100;
+    font-size: 54px;
+}
+section#informacion-general {
+    margin-top: 106px;
+}
+section#formulario-interes-landing {
+    background: var(--primario--azul-obscuro);
+    padding-bottom: 20px;
+    top: 0;
+    position:sticky;
+    z-index:9;
+}
+#informacion-general img.icono {
+    width: 43px;
+    display: block;
+    margin-top: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+span.descripcion {
+    color: var(--primario-cyan);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Georama', sans-serif;
+    font-size: 30px
+}
+h2.frase-heroica {
+    font-weight: 700;
+    font-family: 'Georama', sans-serif;
+    font-size: 36px;
+    color: #FFF;
+    padding-top: 32px;
+    font-style: italic;
+}
+p.descripcipn-programa {
+    color: #FFF;
+    font-size: 21px;
+    padding-top: 32px;
+    padding-right: 16px;
+    font-weight: 200;
+}
+button.enviar-landing {
+    background: var(--primario-azul);
+    border: none;
+    border-radius: 26px;
+    padding: 5px 40px;
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #FFF;
+    margin-top: 24px;
+    font-size: 21px;
+    min-width: 335px;
+}
+#formulario-interes-landing label {
+    color: #FFF;
+}
+#por-que-elegir span {
+    display: block;
+    text-align: center;
+}
+span.pregunta-sin-enfasis {
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFF;
+}
+span.pregunta-con-enfasis {
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--primario-azul);
+}
+.bloque-puntos-clave {
+    background: var(--primario-azul);
+    border-radius: 10px;
+    height: 150px;
+    position: relative;
+    box-shadow: 0px 0px 20px 6px #2e2e2e36;
+}
+h3.keypoint {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+    width: 120px;
+    padding-left: 20px;
+    line-height: 20px;
+    padding-top: 60px;
+}
+span.informacion-secundaria {
+    font-weight: 300;
+    color: var(--primario-cyan);
+    padding-left: 20px;
+}
+#informacion-general .col-md-2 {
+    margin: 0px 32px;
+}
+#formulario-interes-landing h1 {
+    color: #FFF;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    font-family: 'Georama', sans-serif;
+}
+section#el-por-que {
+    background: var(--primario-azul);
+    color: #FFF;
+    padding: 40px;
+}
+h2.podras{
+    font-family: 'Georama', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+ul.podras-trabajar-en {
+    font-size: 21px;
+    font-weight: 300;
+}
+section#el-por-que {
+    background: var(--primario-azul);
+    padding: 40px;
+    color: #FFF;
+}
+h1.text-center.el-porque {
+    color: #FFF;
+    font-family: 'Georama';
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+p.texto-por-que {
+    font-size: 24px;
+    font-weight: 300;
+}
+a.tipo-boton {
+    background: linear-gradient(
+90deg, rgba(37,51,244,1) 0%, rgba(136,119,242,1) 100%);
+    color: #FFF;
+    padding: 3px 29px;
+    border-radius: 22px;
+}
+h2.sigla-programa {
+    font-family: 'Georama';
+    font-weight: 800;
+}
+h3.nombre {
+    line-height: 38px;
+}
+h1.relacionados {
+    color: var(--primario-azul);
+    font-weight: 800;
+    padding-bottom: 16px;
+}

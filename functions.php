@@ -14,7 +14,7 @@ add_image_size('destacada-interesar', 374 , 210, true );
 //add_theme_support( 'woocommerce' );
 
 function agregar_estilos_tema(){
-    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.0', 'all'  );
+    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.05', 'all'  );
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
@@ -22,6 +22,8 @@ function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-programas-academicos', get_template_directory_uri() . '/assets/css/programas-academicos.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-capacitaciones', get_template_directory_uri() . '/assets/css/capacitaciones.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-modals', get_template_directory_uri() . '/assets/css/modal.css', 'iexe-unicorn-main', '1.0', 'all' );
+    wp_register_style( 'iexe-unicorn-comunidad', get_template_directory_uri() . '/assets/css/comunidad.css', 'iexe-unicorn-main', '1.0', 'all' );
+    wp_register_style( 'iexe-unicorn-landing-ssp', get_template_directory_uri() . '/assets/css/landing-ssp.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_script( 'iexe-unicorn-programas', get_template_directory_uri() . '/assets/js/academico.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-multipasos', get_template_directory_uri() . '/assets/js/form-multipasos.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
@@ -31,18 +33,27 @@ function agregar_estilos_tema(){
     wp_register_style( 'intlTelinput-style', get_template_directory_uri() . '/assets/css/intlTelInput.min.css' , '17.0', 'all' );
     wp_register_script( 'intlTelinput', get_template_directory_uri() . '/assets/js/intlTelInput.min.js', 'jquery', true );
     wp_register_script( 'validate-js', 'https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js', 'jquery', '1.19.3', true );
+    wp_register_script( 'iexe-unicorn-silent-formulario', get_template_directory_uri() . '/assets/js/silentFormularios.js', 'jquery', '1.0', true );
+    wp_register_script( 'jquery-autocomplete', get_template_directory_uri() . '/assets/js/jquery.autocomplete.js', 'jquery-mockjax', '1.4.11', true );
+    wp_register_script( 'iexe-unicorn-init-busqueda', get_template_directory_uri() . '/assets/js/busqueda-init.js', 'jquery-mockjax', '1.0', true );
+    wp_register_script( 'iexe-unicorn-valores', get_template_directory_uri() . '/assets/js/valores.js', 'jquery', '1.0', true );
+    wp_register_script( 'iexe-unicorn-landing', get_template_directory_uri() . '/assets/js/landing.js', 'jquery', '1.0', true );
 
     wp_register_script( 'iexe-unicorn-admisiones', get_template_directory_uri() . '/assets/js/admisiones.js', 'jquery', '1.0', true );
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css', false, '4.6', 'all' );
     wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', false, '3.6.0', true );
     wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', 'jquery', '4.6.0', 'all' );
+    wp_enqueue_script( 'jquery-mockjax', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/2.6.0/jquery.mockjax.min.js', 'jquery', '2.6.0', true );
+    wp_enqueue_script( 'jquery-autocomplete');
+    wp_enqueue_script( 'iexe-unicorn-valores');
+    wp_enqueue_script( 'iexe-unicorn-init-busqueda');
+    
     
     if(!is_page() || !is_page_template( 'academicos.php' ) ){
         wp_enqueue_style( 'iexe-unicorn-blog');
         wp_enqueue_script( 'iexe-unicorn-blog');
     }
     
-
     wp_enqueue_style( 'iexe-unicorn-main' );
     wp_enqueue_style( 'iexe-unicorn-modals');
     if(is_page_template('academicos.php')){
@@ -66,10 +77,16 @@ function agregar_estilos_tema(){
     }
     if(is_page_template('comunidad.php')){
         wp_enqueue_script( 'iexe-unicorn-comunidad');
+        wp_enqueue_style( 'iexe-unicorn-comunidad');
     }
     if(is_page_template('page-busqueda.php')){
         wp_enqueue_style( 'live-search-select-style', 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css', 'bootstrap', '1.13.14', 'all' );
         wp_enqueue_script( 'live-search-select', 'https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js', 'jquery', '1.13.14', true );
+    }
+    if(is_page_template('page-landing-ssp.php')){
+        wp_enqueue_style( 'iexe-unicorn-landing-ssp');
+        wp_enqueue_script('iexe-unicorn-landing');
+        
     }
     wp_enqueue_style('intlTelinput-style');
     wp_enqueue_script('intlTelinput');
@@ -137,8 +154,9 @@ if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) :
                //else
                // After the content
                $wpse_excerpt .= $excerpt_more; /*Add read more in new paragraph */
-           }  
-           $wpse_excerpt .= ' [...]';
+           }
+           $wpse_excerpt = substr($wpse_excerpt, 0, -1);  
+           $wpse_excerpt .= '...';
 
             return $wpse_excerpt;   
 
