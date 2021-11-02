@@ -2972,6 +2972,13 @@ img.img-fluid.internacional {
     padding: 4px 28px;
     font-weight: 500;
     font-size: 16px;
+    background: var(--primario--azul-obscuro);
+    margin: 7px 0px;
+}
+p.condiciones {
+    font-size: 12px;
+    text-align: center;
+    padding-right: 16px;
 }
 
 /*

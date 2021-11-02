@@ -60,18 +60,14 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="navegacion-botones">
-            <input id="mi-busqueda" type="text" placeholder="¿Qué buscas?">
+            
             <a onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos"> Accesos</a>
+
             <!-- <img style="margin-left: 20px;" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/search.svg" alt="" class="busqueda"> Buscar -->
           </div>
-                   
+          <div class="el-whatsapp"><a href="https://bit.ly/iexeSSP" target="_blank"><img class="el-icono" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-wa.webp" alt=""> <span class="de-contacto">Contacta a un asesor</span> <span class="el-telefono">55 6814 0690</span></a></div>         
         </div>
-            <a style="color: #FFF" class="d-block d-sm-none" onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos">Accesos</a>
+            
             <!-- <img style="margin-left: 20px;" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/search.svg" alt="" class="busqueda"> Buscar -->
-        <a href="javascript:void(0)" class="closebtn" onclick="openNav()">
-          <div class="menu gradient-border">
-              Menú <img class="menu-boton" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/menu.svg" alt="">
-          </div>
-        </a>
         </div>
       </nav>

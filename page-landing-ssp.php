@@ -3,54 +3,54 @@
 <section id="informacion-general">
 <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-lg-7 col-md-12">
                 <span class="descripcion">Licenciatura en línea</span>
                 <h1 class="nombre-programa">Seguridad Pública</h1>
-                <h2 class="frase-heroica">Ve más alla de tus límites y alcanza tus metas con IEXE</h2>
+                <h2 class="frase-heroica">Ve más alla de tus límites y<br> alcanza tus metas con IEXE</h2>
                 <p class="descripcipn-programa">
                     Esta licenciatura te prepara con las mejores herramientas para desempeñarte profesionalmente en un campo laboral altamente competitivo.
                     En IEXE Universidad te formaremos en materia de seguridad pública para ser capaz de hacer frente a los retos de seguridad que aquejan a la sociedad desde diferentes instancias y niveles de gobierno.
                 </p>
                 <div class="row">
-                    <div class="col-md-2">
-                        <div class="bloque-descarga">
-
-                        </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <a href="#" target="_blank"><div class="bloque-descarga">
+                            <p>Descarga el folleto <br>del programa</p><img class="icono-descargar" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_descargar_IEXE.webp" alt="">
+                        </div></a>
                     </div>
                     <div class="col-md-8">
-                        <img src="" alt="" class="certificado-unitar"><a href=""><img src="" alt=""></a>
+                        <!-- <img src="" alt="" class="certificado-unitar"><a href=""><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_descargar_IEXE.webp" alt=""></a> -->
                     </div>
                 </div>
                 
             </div>
-            <div class="col-md-5">
-                <img style="width: 550px" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-landing-ssp-2.webp" alt="" class="escudo-licenciatura d-none d-sm-block">
+            <div class="col-md-5 d-none d-lg-block">
+                <img style="width: 550px" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-landing-ssp-2.webp" alt="" class="escudo-licenciatura">
 
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-lg-2 col-sm-3">
                 <div class="bloque-puntos-clave">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_certificado_IEXE.webp" alt="" class="icono">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_horario_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Duración del programa</h3>
-                    <span class="informacion-secundaria">9 trimestes</span>
+                    <span class="informacion-secundaria">9 Cuatrimestes</span>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-lg-2 col-sm-3">
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_Fecha_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Fechas de inicio</h3>
                     <span class="informacion-secundaria">1 de Noviembre</span>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-lg-2 col-sm-3">
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_certificado_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Validez Oficial</h3>
                     <span class="informacion-secundaria">SEP - RVOES</span>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-lg-2 col-sm-3">
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_Pragma_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Modelo Educativo</h3>
@@ -145,21 +145,21 @@
                 <h1 class="text-center relacionados">Programas relacionados</h1>
             </div>
             <div class="row">
-                <div class="col-md-3 offset-md-1">
+                <div class="col-md-3 offset-md-1 col-12 text-center text-sm-left">
                     <h2 class="sigla-programa">MSP</h2>
                     <h3 class="nombre">Maestría en <br> Seguridad Pública</h3>
                     <a href="/ofertas-academicas" class="tipo-boton">¡Descubrelo!</a>
                 </div>
                 <div class="col-md-2">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo_MSP.webp" alt="" class="img-fluid">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo_MSP.webp" alt="" class="img-fluid d-none d-sm-block">
                 </div>
-                <div class="col-md-3 offset-md-1">
+                <div class="col-md-3 offset-md-1 col-12 text-center text-sm-left mt-3">
                     <h2 class="sigla-programa">DDP</h2>
                     <h3 class="nombre">Doctorado en<br> Políticas Públicas</h3>
                     <a href="/ofertas-academicas" class="tipo-boton">¡Descubrelo!</a>
                 </div>
                 <div class="col-md-2">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo_DPP.webp" alt="" class="img-fluid">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo_DPP.webp" alt="" class="img-fluid d-none d-sm-block">
                 </div>
                 
             </div>
@@ -169,5 +169,4 @@
 
     
 
-
-<?php get_footer(); ?>
+<?php get_template_part( 'template-parts/footer-landing'); ?>

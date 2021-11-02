@@ -398,13 +398,6 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
     </div>
 </section>
-<script>
-    jQuery(document).ready(function($){
-        $('section#navegacion a').click(function(){
-            
-        });
-    }
-</script>
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer( ); ?>

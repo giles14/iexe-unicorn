@@ -11,7 +11,7 @@ body#ssp #informacion-general h1.nombre-programa {
     font-size: 54px;
 }
 section#informacion-general {
-    margin-top: 106px;
+    margin-top: 0px;
 }
 section#formulario-interes-landing {
     background: var(--primario--azul-obscuro);
@@ -44,6 +44,7 @@ h2.frase-heroica {
     color: #FFF;
     padding-top: 32px;
     font-style: italic;
+    letter-spacing: 2px;
 }
 p.descripcipn-programa {
     color: #FFF;
@@ -85,9 +86,10 @@ span.pregunta-con-enfasis {
 .bloque-puntos-clave {
     background: var(--primario-azul);
     border-radius: 10px;
-    height: 150px;
+    height: 175px;
     position: relative;
     box-shadow: 0px 0px 20px 6px #2e2e2e36;
+    margin-top: 20px;
 }
 h3.keypoint {
     color: #FFF;
@@ -104,6 +106,9 @@ span.informacion-secundaria {
     padding-left: 20px;
 }
 #informacion-general .col-md-2 {
+    margin: 0px 32px;
+}
+#informacion-general .col-lg-2 {
     margin: 0px 32px;
 }
 #formulario-interes-landing h1 {
@@ -160,4 +165,102 @@ h1.relacionados {
     color: var(--primario-azul);
     font-weight: 800;
     padding-bottom: 16px;
+}
+h2.sigla-programa {
+    font-weight: 800;
+}
+h3.keypoint:after {
+    border-bottom: 2px solid cyan;
+    content: '';
+    width: 50px;
+    display: block;
+}
+img.el-icono {
+    width: 35px;
+}
+.el-whatsapp {
+    position: relative;
+}
+span.de-contacto {
+    position: absolute;
+    color: #FFF;
+    font-size: 16px;
+    width: 150px;
+    left: 110px;
+}
+img.el-icono {
+    width: 50px;
+}
+span.el-telefono {
+    font-weight: 800;
+    font-family: 'Georama';
+    font-size: 30px;
+    color: #FFF;
+    position: absolute;
+    width: 220px;
+    top: 10px;
+}
+.navegacion-botones {
+    visibility: hidden;
+}
+.bloque-descarga {
+    background: var(--primario--azul-obscuro);
+    color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    height: 90px;
+    letter-spacing: 1px;
+    margin-top: 16px;
+}
+.bloque-descarga p {
+    font-size: 16px;
+    font-family: 'Georama';
+    font-weight: 300;
+    line-height: 26px;
+}
+img.icono-descargar {
+    width: 22px;
+    position: absolute;
+    right: 12px;
+    bottom: 32px;
+}
+#informacion-general a:hover {
+    text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+    .bloque-puntos-clave {
+        margin-bottom: 20px;
+    }
+    h2.frase-heroica {
+        color: var(--primario--azul-obscuro);
+    }
+    p.descripcipn-programa {
+        color: var(--primario--azul-obscuro);
+    }
+    section#formulario-interes-landing{
+        position: relative;
+    }
+    .col-lg-4.col-sm-12 {
+        margin: 0 36px;
+    }
+    ul.podras-trabajar-en {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+@media only screen and (max-width: 1183px) {
+    .bloque-descarga p {
+        font-size: 16px;
+        font-family: 'Georama';
+        font-weight: 300;
+        line-height: 26px;
+    }
+    .bloque-descarga{
+        padding: 15px;
+    }
+    img.icono-descargar {
+        bottom: 16px;
+    }
 }
