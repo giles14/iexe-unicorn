@@ -13,7 +13,7 @@
                 </p>
                 <div class="row">
                     <div class="col-lg-4 col-sm-12">
-                        <a href="#" target="_blank"><div class="bloque-descarga">
+                        <a href="https://bit.ly/iexeLSSP" target="_blank"><div class="bloque-descarga">
                             <p>Descarga el folleto <br>del programa</p><img class="icono-descargar" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_descargar_IEXE.webp" alt="">
                         </div></a>
                     </div>
@@ -148,7 +148,7 @@
                 <div class="col-md-3 offset-md-1 col-12 text-center text-sm-left">
                     <h2 class="sigla-programa">MSP</h2>
                     <h3 class="nombre">Maestría en <br> Seguridad Pública</h3>
-                    <a href="/ofertas-academicas" class="tipo-boton">¡Descubrelo!</a>
+                    <a href="/oferta-educativa" class="tipo-boton">¡Descubrelo!</a>
                 </div>
                 <div class="col-md-2">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo_MSP.webp" alt="" class="img-fluid d-none d-sm-block">
@@ -156,7 +156,7 @@
                 <div class="col-md-3 offset-md-1 col-12 text-center text-sm-left mt-3">
                     <h2 class="sigla-programa">DDP</h2>
                     <h3 class="nombre">Doctorado en<br> Políticas Públicas</h3>
-                    <a href="/ofertas-academicas" class="tipo-boton">¡Descubrelo!</a>
+                    <a href="/oferta-educativa" class="tipo-boton">¡Descubrelo!</a>
                 </div>
                 <div class="col-md-2">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo_DPP.webp" alt="" class="img-fluid d-none d-sm-block">

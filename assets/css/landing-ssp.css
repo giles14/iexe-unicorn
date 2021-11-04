@@ -10,6 +10,18 @@ body#ssp #informacion-general h1.nombre-programa {
     font-weight: 100;
     font-size: 54px;
 }
+body#licenciatura\ en\ seguridad\ pública #informacion-general h1.nombre-programa{
+    font-family: var(--familia-general);
+    font-weight: 100;
+    font-size: 54px;
+}
+body#licenciatura\ en\ seguridad\ pública{
+    background: #EFEFEF;
+    background-image: url('../img/landing-ssp.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
 section#informacion-general {
     margin-top: 0px;
 }
