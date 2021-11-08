@@ -13,8 +13,8 @@
                             <a href="https://bit.ly/iexebf21" target="_blank"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_buen_fin_movil.webp" alt="Somos Slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
+                            <a href="/producto/capitalismo-natural-y-economia-circular/"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner-libro-capitalismo.webp" alt="Doctorado slide"></a>
+                            <a href="/producto/capitalismo-natural-y-economia-circular/"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner-libro-capitalismo-movil.webp" alt="Doctorado slide"></a>
                       </div>
                       
                       <div class="carousel-item">
@@ -139,7 +139,8 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="oferta-educativa/doctorado-en-politicas-publicas">Políticas Públicas</a></li>                                
+                                    <li><a href="oferta-educativa/doctorado-en-politicas-publicas">Políticas Públicas</a></li>
+                                    <li><a href="oferta-educativa/doctorado-en-seguridad-publica/">Seguridad Pública (preinscripción)</a></li>                       
                                 </ul>
                             </div>
                         </div>
@@ -174,7 +175,7 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/">Disciplina Financiera y Fiscalización</a> </li>
+                                    <!-- <li><a href="/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/">Disciplina Financiera y Fiscalización</a> </li> -->
                                     <li><a href="/oferta-educativa/diplomado-en-habilidades-gerenciales-y-liderazgo/">Habilidades Gerenciales y Liderazgo</a> </li>
                                     <li><a href="/oferta-educativa/diplomado-en-analisis-y-diseno-y-de-politicas-publicas/">Análisis y Diseño de Políticas Públicas</a> </li>
                                     <li><a href="/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/">Fundamentos de Administración Pública</a></li>

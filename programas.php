@@ -57,6 +57,8 @@ Template Name: Programas
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Doctorado</h1>
                     <ul class="doctorados">
                         <li><a href="/oferta-educativa/doctorado-en-politicas-publicas">Políticas Públicas</a> </li>
+                        <li><a href="/oferta-educativa/doctorado-en-seguridad-publica/">Seguridad Pública (preinscripción)</a> </li>
+                        
                     </ul>
                 </div>  
             </div>
