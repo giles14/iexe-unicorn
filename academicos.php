@@ -27,7 +27,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                               <?php if($estiloPrograma == "Programas Tradicionales") { ?>
                               <p id="RVOE" class="revoe">
                                   <strong><?php the_field('texto_rvoe'); ?></strong><br>
-                                  <?php if(get_field('link_rvoe')) { ?>
+                                  <?php if(get_field('link_rvoe') && get_the_ID() != 1903) { ?>
                                     Consultalo en: <a href="<?php the_field('link_rvoe'); ?>" class="notorio" target="_blank">www.sirvoes.sep.gob.mx</a>
                                   <?php } ?>
                               </p>

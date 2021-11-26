@@ -54,9 +54,11 @@ Template Name: Programas
         <div class="container">
             <div class="row contenedor-programa">
                 <div class="col-md-6">
-                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Doctorado</h1>
+                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Doctorados</h1>
                     <ul class="doctorados">
                         <li><a href="/oferta-educativa/doctorado-en-politicas-publicas">Políticas Públicas</a> </li>
+                        <li><a href="/oferta-educativa/doctorado-en-seguridad-publica/">Seguridad Pública (preinscripción)</a> </li>
+                        
                     </ul>
                 </div>  
             </div>
@@ -75,7 +77,7 @@ Template Name: Programas
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <ul class="masters secundario" style="margin-block-start: 5px;margin-inline-start: -18px; ">
+                    <ul class="masters secundario" style="margin-block-start: 5px;margin-inline-start: 2px; ">
                         <li><a href="oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/">Marketing Político y Opinión Pública</a></li>
                         <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>
                         <li><a href="oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/">Sistema Penal Acusatorio y Juicio Oral </a></li>
@@ -91,7 +93,8 @@ Template Name: Programas
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Diplomados</h1>
                     <ul class="displomados">
                         <!-- <li><a href="/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/">Disciplina Financiera y Fiscalización</a> </li> -->
-                        <li><a href="/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/">Fundamentos de Administración Pública</a> </li>
+                        <!-- <li><a href="/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/">Fundamentos de Administración Pública</a> </li> -->
+                        <li><a href="/oferta-educativa/diplomado-en-presupuesto-basado-en-resultados/">Presupuesto basado en Resultados (PbR)</a></li>
                         <li><a href="/oferta-educativa/diplomado-en-habilidades-gerenciales-y-liderazgo/">Habilidades Gerenciales y Liderazgo</a> </li>
                         <li><a href="/oferta-educativa/diplomado-en-analisis-y-diseno-y-de-politicas-publicas/">Análisis y Diseño de Políticas Públicas</a> </li>
                         <li><a href="/oferta-educativa/diplomado-en-alta-direccion-en-la-funcion-publica/">Alta Dirección en la Función Pública</a></li>

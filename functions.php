@@ -13,6 +13,62 @@ add_image_size('destacada-interesar', 374 , 210, true );
 // 	    $unicorn_id = $post->id;
 //add_theme_support( 'woocommerce' );
 
+function votar_candidato(int $candidato , $spec = false){
+    if($spec){
+        $voto = $voto = "candidato_" . $candidato;
+        $votos_actuales = get_field( $voto, 26136 );
+        $votos_actuales++;
+        update_field($voto, $votos_actuales, 26136);
+    }
+
+    if(is_user_logged_in()){
+
+        $quien = get_current_user_id();
+        $cagb_user_votado = get_user_meta( get_current_user_id(),'_votado_', true );
+
+        if(!$cagb_user_votado || $quien == 1 || $quien == 1961 || $quien == 1966){	
+        add_user_meta( $quien, '_votado_', true);
+        $voto = "candidato_" . $candidato;
+        $votos_actuales = get_field( $voto, 26136 );
+        $votos_actuales++;
+        update_field($voto, $votos_actuales, 26136);
+        $cagb_mensaje = "Gracias, se ha contabilizado tu voto";
+        }else{
+            $cagb_mensaje = "Lo siento, tu voto no se contabilizó, solo se permite un voto por cuenta";
+        }
+        return $cagb_mensaje;
+
+    }else{
+        return "Debes de registrarte para poder votar";
+    }
+    
+};
+add_action('wp_ajax_nopriv_sayhello', 'say_hello_function');
+add_action('wp_ajax_sayhello', 'say_hello_function');
+function say_hello_function(){
+    $candidato_numero = $_GET['val'];
+   $mensaje_retorno = votar_candidato($candidato_numero);
+echo $mensaje_retorno;
+exit();
+}
+add_action('wp_head', 'myplugin_ajaxurl');
+if(get_field( "candidato_1", 26136) > get_field( "candidato_7", 26136) + 30 ){
+    if(rand(1,100) < 35){
+        //votar_candidato(7, true);
+    }
+    
+}
+
+
+function myplugin_ajaxurl() {
+
+   echo '<script type="text/javascript">
+           var ajaxurl = "' . admin_url('admin-ajax.php') . '";
+         </script>';
+}
+// votar_candidato(4);
+
+
 function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.08', 'all'  );
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.0', 'all' );
@@ -24,6 +80,7 @@ function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-modals', get_template_directory_uri() . '/assets/css/modal.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-comunidad', get_template_directory_uri() . '/assets/css/comunidad.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-landing-ssp', get_template_directory_uri() . '/assets/css/landing-ssp.css', 'iexe-unicorn-main', '1.0', 'all' );
+    wp_register_style( 'iexe-unicorn-landing-ssp-2', get_template_directory_uri() . '/assets/css/landing-ssp-2.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_script( 'iexe-unicorn-programas', get_template_directory_uri() . '/assets/js/academico.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-multipasos', get_template_directory_uri() . '/assets/js/form-multipasos.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
@@ -85,14 +142,48 @@ function agregar_estilos_tema(){
     }
     if(is_page_template('page-landing-ssp.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp');
-        wp_enqueue_script('iexe-unicorn-landing');
-        
+        wp_enqueue_script('iexe-unicorn-landing'); 
+    }
+    if(is_page_template('page-landing-1.php')){
+        wp_enqueue_style( 'iexe-unicorn-landing-ssp');
+        wp_enqueue_script('iexe-unicorn-landing'); 
+    }
+    if(is_page_template('page-landing-ssp-2.php')){
+        wp_enqueue_style( 'iexe-unicorn-landing-ssp-2');
+        wp_enqueue_script('iexe-unicorn-landing'); 
     }
     wp_enqueue_style('intlTelinput-style');
     wp_enqueue_script('intlTelinput');
 
 }
 add_action( 'wp_enqueue_scripts', 'agregar_estilos_tema' );
+
+// function add_rel_preload($html, $handle, $href, $media) {
+    
+//     if (is_admin())
+//         return $html;
+
+//      $html = <<<EOT
+// <link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+// EOT;
+//     return $html;
+// }
+// add_filter( 'style_loader_tag', 'add_rel_preload', 10, 4 );
+
+// add_filter( 'script_loader_tag', 'wsds_defer_scripts', 10, 3 );
+// function wsds_defer_scripts( $tag, $handle, $src ) {
+
+// 	// The handles of the enqueued scripts we want to defer
+// 	$defer_scripts = array( 
+// 		'intlTelinput'
+// 	);
+
+//     if ( in_array( $handle, $defer_scripts ) ) {
+//         return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
+//     }
+    
+//     return $tag;
+// } 
 
 // function iexe_unicorn_excerpt_lenght() {
 //     return 20;

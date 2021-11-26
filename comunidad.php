@@ -15,12 +15,12 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">AVISO</span>
-                    <div class="fecha">7 de Octubre del 2021</div>
+                    <div class="fecha">8 de Noviembre del 2021</div>
                     <div class="titulo-aviso">
-                        <h3>¡Bienvenida Generación octubre 2021!</h3>
+                        <h3>¡Bienvenida Generación Noviembre 2021!</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Esperamos que tengan una excelente experiencia y aprovechen al máximo todas las herramientas que les brindamos por medio de la plataforma</p>
+                        <p>Esperamos que tengan una excelente experiencia y aprovechen al máximo todas las herramientas que les brindamos por medio de la plataforma.</p>
                     </div>
                 </div>
             </div>
@@ -30,12 +30,27 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">7 de Octubre del 2021</div>
+                    <div class="fecha">8 de Noviembre del 2021</div>
                     <div class="titulo-aviso">
-                        <h3>Masterclass de octubre</h3>
+                        <h3>Masterclass de Noviembre</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Te esperamos en la semana de Masterclass del mes de Octubre. Recuerda agendar del 25 al 29 de Octubre. ¡No te la puedes perder!</p>
+                        <p>Te esperamos en la semana de Masterclass del mes de noviembre. Recuerda agendar del 22 al 26 de noviembre. ¡No te la puedes perder!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-sm-block">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/grad.webp" alt="">
+            </div>
+            <div class="col-md-9">
+                <div class="aviso">
+                    <span class="tipo">EVENTO</span>
+                    <div class="fecha">8 de Noviembre del 2021</div>
+                    <div class="titulo-aviso">
+                        <h3>¡Llegó el momento de festejar!</h3>
+                    </div>
+                    <div class="descripcion-aviso">
+                        <p>Alista todo y prepárate para la graduación del 4 de diciembre. Recuerda que aún estamos recibiendo las fotografías de los alumnos para la ceremonia de graduación. ¡Felicidades a los graduados!</p>
                     </div>
                 </div>
             </div>
@@ -45,7 +60,7 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">NOTICIA</span>
-                    <div class="fecha">3 de Octubre del 2021</div>
+                    <div class="fecha">9 de Noviembre del 2021</div>
                     <div class="titulo-aviso">
                         <h3>Pragmaflex</h3>
                     </div>
@@ -189,7 +204,7 @@
             <div class="row">
                 <div class="col-md-3 offset-md-4">
                     <div class="un-testimonio">
-                        <img class="img-fluid" src="<?php //  echo esc_url(get_template_directory_uri()) ?>/assets/img/Henry.png" alt="">
+                        <img class="img-fluid" src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/Henry.png" alt="">
                         <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Oq6xon0-0S4" data-target="#myModal">
                             <i class="fas fa-play"></i>
                         </button>
@@ -200,7 +215,7 @@
                 </div>
                 <div class="col-md-3 offset-md-1 align-self-center">
                 <div class="un-testimonio">
-                    <img class="img-fluid" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/Stephanie-Gomiciaga.png" alt="">
+                    <img class="img-fluid" src="<?php  echo esc_url(get_template_directory_uri()) ?>/assets/img/Stephanie-Gomiciaga.png" alt="">
                     <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/9O6XqY1q1tE" data-target="#myModal">
                             <i class="fas fa-play"></i>
                     </button>

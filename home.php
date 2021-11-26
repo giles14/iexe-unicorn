@@ -8,32 +8,33 @@
                             <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
                             <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
                       </div> -->
+
                       <div class="carousel-item active">
-                            <a href="https://bit.ly/iexebf21" target="_blank"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_buen_fin.webp" alt="Promo Fin"></a>
-                            <a href="https://bit.ly/iexebf21" target="_blank"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_buen_fin_movil.webp" alt="Somos Slide"></a>
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
                       </div>
                       <div class="carousel-item">
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
+                            <a href="/editorial"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
+                            <a href="/editorial"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
+                      </div>
+                      <div class="carousel-item">
+                            <a href="/comunidad"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
+                            <a href="/comunidad"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
+                      </div>
+                      <div class="carousel-item">
+                            <a href="https://bit.ly/iexebf21" target="_blank"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-blackFriday.webp" alt="Promo Fin"></a>
+                            <a href="https://bit.ly/iexebf21" target="_blank"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-blackFriday-movil.webp" alt="Somos Slide"></a>
+                      </div>
+                      <div class="carousel-item">
+                            <a target="_blank" href="https://bit.ly/iexaWHA"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno.webp" alt="IEXALUMNO Slide"></a>
+                            <a target="_blank" href="https://bit.ly/iexaWHA"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno_movil.webp" alt="IEXALUMNO Slide"></a>
                       </div>
                       
-                      <div class="carousel-item">
-                            <a target="_blank" href="https://bit.ly/iexaWHA"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno.webp" alt="IEXALUMNO Slide"></a>
-                            <a target="_blank" href="https://bit.ly/iexaWHA"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno_movil.webp" alt="IEXALUMNO Slide"></a>
-                      </div>
+                      
                       <!-- <div class="carousel-item">
                         <a href="/becas"><img class="w-100 d-none d-sm-block" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
                             <a href="/becas"><img class="d-block d-sm-none w-100" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador-mobile.webp" alt="Embajadores Slide"></a>
                       </div> -->
-                      <div class="carousel-item">
-                            <a href="/editorial"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
-                            <a href="/editorial"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
-                      </div>
-                      
-                      <div class="carousel-item">
-                            <a href="/comunidad"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
-                            <a href="/comunidad"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
-                      </div>
                       <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
                       </div> -->
@@ -135,11 +136,12 @@
                 <div class="col-12 col-md-4">
                     <div id="maestro" class="oferta-bloque doc">
                         <div class="informa">
-                            <a class="button-primary">DOCTORADO</a>
+                            <a class="button-primary">DOCTORADOS</a>
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
                                     <li><a href="oferta-educativa/doctorado-en-politicas-publicas">Políticas Públicas</a></li>                                
+                                    <li><a href="oferta-educativa/doctorado-en-seguridad-publica">Seguridad Pública (preinscripción)</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -176,8 +178,9 @@
                                 <ul>
                                     <!-- <li><a href="/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/">Disciplina Financiera y Fiscalización</a> </li> -->
                                     <li><a href="/oferta-educativa/diplomado-en-habilidades-gerenciales-y-liderazgo/">Habilidades Gerenciales y Liderazgo</a> </li>
+                                    <li><a href="/oferta-educativa/diplomado-en-presupuesto-basado-en-resultados/">Presupuesto basado en Resultados (PbR)</a> </li>
                                     <li><a href="/oferta-educativa/diplomado-en-analisis-y-diseno-y-de-politicas-publicas/">Análisis y Diseño de Políticas Públicas</a> </li>
-                                    <li><a href="/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/">Fundamentos de Administración Pública</a></li>
+                                    <!-- <li><a href="/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/">Fundamentos de Administración Pública</a></li> -->
                                     <li><a href="/oferta-educativa/diplomado-en-alta-direccion-en-la-funcion-publica/">Alta Dirección en la Función Pública</a></li>                                    
                                 </ul>
                             </div>
@@ -218,7 +221,7 @@
                 <div class="col col-md-4 d-none d-md-block my-video primero d-none d-sm-block">
                     <div class="marco">
                         <div class="info-pre-video">
-                            <a><img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt=""></a>
+                            <a><img loading="lazy" class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt=""></a>
                             <p class="consejos">Tips para mis compañeros de maestría</p>
                         </div>
                     </div>
@@ -231,7 +234,7 @@
                 <div class="col col-md-4 my-video segundo">
                     <div class="marco">
                         <div class="info-pre-video">
-                            <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
+                            <img loading="lazy" class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
                             <p class="consejos">Consejos para mis próximos compañeros de doctorado</p>
                         </div>
                     </div>
@@ -259,14 +262,14 @@
 
     </section>
     <?php get_template_part( 'template-parts/interes'); ?>
-        <a href="/comunidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_recta.png" alt="" class="img-fluid miniban d-none "></a>
+        <a href="/comunidad"><img loading="lazy" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_recta.png" alt="" class="img-fluid miniban d-none "></a>
     <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe'); ?>
     <section id="banners">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/admisiones"><img class="d-none d-sm-block img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
-                    <a href="/admisiones"><img class="d-block d-sm-none img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home_movil.webp" alt=""></a>
+                    <a href="/admisiones"><img loading="lazy" class="d-none d-sm-block img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                    <a href="/admisiones"><img loading="lazy" class="d-block d-sm-none img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home_movil.webp" alt=""></a>
                 </div>
             </div>
         </div>
@@ -294,12 +297,12 @@
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="imagen-blog">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/convenio-haya.webp" alt="" class="img-fluid">
+                            <img loading="lazy" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/convenio-haya.webp" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="autor d-none d-sm-block">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/luis.webp" alt="" class="autor-foto">
+                            <img loading="lazy" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/luis.webp" alt="" class="autor-foto">
                             <div class="meta-informacion">
                                 <span class="nombre">Luis Miguel Arroyo</span>
                                 <span class="redes">Colaborador IEXE</span>

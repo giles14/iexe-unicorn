@@ -93,10 +93,10 @@
     <?php  if(is_page_template('academicos.php')){ ?>
                             <a href="https://bit.ly/iexebf2021" target="_blank">
 						<div style="color: #FFF;" class="inscribete-ya">
-                            <h3 style="color: #FFF;">¡Una beca que se ajusta a tus necesidades!</h3>
+                            <h3 style="color: #FFF;">¡Todos nuestros programas con beneficios especiales en: inscripcion,<br>mensualidades, reinscripciones y titulación!</h3>
                             <!-- <p class="postulate">Del 18 al 30 de junio, postulate ahora</p> -->
-                                <a class="btn btn-primario" href="https://bit.ly/iexebf2021" target="_blank">¡Solicítala ahora!</a>
-                            <p class="condiciones">*Válido únicamente para inscritos de nuevo ingreso en licenciaturas, maestrías, másteres o doctorado. Se aplican restricciones, contáctanos para más información.</p>
+                                <a class="btn btn-primario" href="https://bit.ly/IEXEbf" target="_blank">¡Más información aquí!</a>
+                            <p class="condiciones">Válido únicamente para inscritos de nuevo ingreso en licenciaturas, maestrías, másteres o doctorado. <br> *Se aplican restricciones, contáctanos para más información.</p>
                         </div>
                         </a>
 
@@ -132,7 +132,7 @@
                     <ul class="programas-academicos">
                         <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
                         <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
-                        <li><a href="/oferta-educativa/#doctorado">Doctorado</a></li>
+                        <li><a href="/oferta-educativa/#doctorado">Doctorados</a></li>
                         <li><a href="/oferta-educativa/#masters">Masters</a></li>
                         <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
                         <li><a href="/capacitaciones/">Capacitaciones</a></li>
@@ -337,6 +337,7 @@ function enableScroll() {
 });
 </script>
 <script>
+// $(document).ready(function(){
     var input = document.querySelector("#telefono");
     var iti = window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
@@ -344,7 +345,7 @@ function enableScroll() {
       separateDialCode: true,
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
-    
+// });
   </script>
   <script>
       $(document).ready(function(){

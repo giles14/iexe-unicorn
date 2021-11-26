@@ -2,13 +2,27 @@
 <section id="slider">
         <div class="container-fluid">
             <div class="row">
-                <div id="carouselExampleControls" style="height: 100vh" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-licenciaturas.webp" alt="First slide">
+                            <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
+                            <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Second slide">
+                            <a href="/becas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
+                            <a href="/becas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador-mobile.webp" alt="Embajadores Slide"></a>
+                      </div>
+                      <div class="carousel-item">
+                            <a href="/editorial"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
+                            <a href="/editorial"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
+                      </div>
+                      <div class="carousel-item">
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
+                      </div>
+                      <div class="carousel-item">
+                            <a href="/comunidad"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
+                            <a href="/comunidad"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
                       </div>
                       <!-- <div class="carousel-item">
                         <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
@@ -27,27 +41,37 @@
         </div>
         
     </section>
-    <section id="info-primaria">
-        <div class="container">
+    <section class="d-none d-sm-block" id="info-primaria">
+        <div class="container" style="position: relative;">
+            <video width="1140" height="420" autoplay muted loop style="position: absolute;top: 0;left: 0;border-radius: 15px;">
+                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/video4.m4v" type="video/mp4" muted>
+                        El navegador no acepta video
+            </video>
             <div class="row">
                 <div class="col-12 col-md-4">
+                    <a href="/oferta-educativa">
                     <div class="boton-slide d-flex">
-                        <span>Estudiar a tu ritmo</span>
+                        <span>Educación a distancia</span>
                     </div>
+                    </a>
+                    <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/">
                     <div class="boton-slide d-flex">
-                        <span>Inscripción en línea</span>
+                        <span>Programas internacionales</span>
                     </div>
+                    </a>
+                    <a href="/becas">
                     <div class="boton-slide last d-flex">
                         <span>Becas a tu medida</span>
                     </div>
+                    </a>
 
                 </div>
                 <div class="col-md-5">
 
                 </div>
                 <div class="col-md-3">
-                    <p class="descripcion">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque</p>
-                    <a href="#" class="descubre-mas">Descubre más</a>
+                    <!-- <p class="descripcion">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque</p> -->
+                    <!-- <a href="#" class="descubre-mas">Descubre más</a> -->
 
                 </div>
             </div>
@@ -58,8 +82,8 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="titulo">Oferta Educativa</h1>
-                    <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+                    <a href="/oferta-educativa/"><h1 class="titulo">Oferta educativa</h1></a>
+					<h2 class="description">Conoce nuestros programas <strong>100% en línea.</strong> ¡Desarróllate, especialízate y concreta tu futuro profesional!</h2>
                 </div>
             </div>
             <div class="row">
@@ -70,10 +94,10 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
+                                    <li><a href="oferta-educativa/licenciatura-en-seguridad-publica/licenciatura-en-seguridad-publica">Seguridad Pública</a></li>
                                     <li><a href="oferta-educativa/licenciatura-en-ciencias-politicas-y-administracion-publica/">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="oferta-educativa/licenciatura-en-seguridad-publica/">Seguridad Pública</a></li>
-                                    <li><a href="oferta-educativa/derecho/">Derecho</a></li>
-                                    <li><a href="oferta-educativa/seguridad-publica/">Administración de Empresas</a></li>                                    
+                                    <li><a href="oferta-educativa/licenciatura-en-derecho/">Derecho</a></li>
+                                    <li><a href="oferta-educativa/licenciatura-en-administracion-de-empresas/">Administración de Empresas</a></li>                                    
                                 </ul>
                             </div>
                         </div> 
@@ -86,10 +110,12 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Seguridad Pública y Políticas Públicas</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Política Públicas</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-finanzas-publicas">Finanzas Públicas</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-administracion-de-negocios-mba/">Administración de Negocios (MBA)</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-ingenieria-en-tecnologias-de-la-informacion/">Ingeniería en Tecnologías de la Información</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -103,10 +129,7 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="oferta-educativa/doctorado-en-politicas-publicas">Políticas Públicas</a></li>                                
                                 </ul>
                             </div>
                         </div>
@@ -118,14 +141,17 @@
                 <div class="col-12 col-md-4">
                     <div class="oferta-bloque mas">
                         <div class="informa">
-                            <a class="button-primary">MÁSTERS</a>
+                            <a class="button-primary">MÁSTERES</a>
                             <a class="descubre-mas" disabled>Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/">Marketing Político y Opinión Pública</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoría Gubernamental</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/">Sistema Penal Acusatorio y Juicio Oral </a></li>
+                                    <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a></li>                                                                 
                                 </ul>
                             </div>
                         </div> 
@@ -138,10 +164,11 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/">Disciplina Financiera y Fiscalización</a> </li>
+                                    <li><a href="/oferta-educativa/diplomado-en-habilidades-gerenciales-y-liderazgo/">Habilidades Gerenciales y Liderazgo</a> </li>
+                                    <li><a href="/oferta-educativa/diplomado-en-analisis-y-diseno-y-de-politicas-publicas/">Análisis y Diseño de Políticas Públicas</a> </li>
+                                    <li><a href="/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/">Fundamentos de Administración Pública</a></li>
+                                    <li><a href="/oferta-educativa/diplomado-en-alta-direccion-en-la-funcion-publica/">Alta Dirección en la Función Pública</a></li>                                    
                                 </ul>
                             </div>
                         </div> 
@@ -154,10 +181,7 @@
                             <a class="descubre-mas">Descubre más</a>
                             <div class="links-programas">
                                 <ul>
-                                    <li><a href="#">Ciencias Políticas y Administración Pública</a></li>
-                                    <li><a href="#">Seguridad Pública</a></li>
-                                    <li><a href="#">Derecho</a></li>
-                                    <li><a href="#">Administración de Empresas</a></li>                                    
+                                    <li><a href="/capacitaciones/">Programas de capacitación para el sector público y privado</a></li>                                    
                                 </ul>
                             </div>
                         </div> 
@@ -175,53 +199,47 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="titulo">Embajadores IEXE</h1>
-                    <h2 class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h2>
+					<h2 class="description">Conoce las experiencias de nuestra comunidad y al igual que ellos, <strong>¡decídete a estudiar con nosotros!</strong></h2>
                 </div>
             </div>
         </div>
         <div class="container container-plus">
             <div class="row no-gutters">
-                <div class="col col-md-4 my-video primero">
+                <div class="col col-md-4 d-none d-md-block my-video primero d-none d-sm-block">
                     <div class="marco">
                         <div class="info-pre-video">
                             <a><img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt=""></a>
-                            <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
+                            <p class="consejos">Tips para mis compañeros de maestría</p>
                         </div>
                     </div>
-                    <video width="443" height="579" muted loop>
-                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx1.mp4" type="video/mp4" muted>
+                    <video width="443" height="579" loop>
+                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx1.m4v" type="video/mp4">
                         El navegador no acepta video
                   </video>
 
                 </div>
-                <div class="col col-md-4 my-video segundo muted">
+                <div class="col col-md-4 my-video segundo">
                     <div class="marco">
                         <div class="info-pre-video">
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
-                            <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
+                            <p class="consejos">Consejos para mis próximos compañeros de doctorado</p>
                         </div>
                     </div>
                         <video width="443" height="579" muted loop>
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
-                            <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx2.mp4" type="video/mp4">
+                            <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx2.m4v" type="video/mp4">
                             El navegador no acepta video
                       </video>
-                    <!-- <div class="marco">
-                        <div class="info-pre-video">
-                            <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
-                        </div>
-                    </div> -->
-
                 </div>
-                <div class="col col-md-4 my-video tercero">
+                <div class="col col-md-4 d-none d-md-block my-video tercero d-none d-sm-block">
                     <div class="marco">
                         <div class="info-pre-video">
                             <img class="boton-play" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/play.png" alt="">
-                            <p class="consejos">Consejos para estudiar en IEXE Universidad</p>
+                            <p class="consejos">Ventajas de estudiar en línea mi licenciatura</p>
                         </div>
                     </div>
                     <video width="443" height="579" muted loop>
-                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx3.mp4" type="video/mp4" muted>
+                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/alx3.m4v" type="video/mp4" muted>
                         El navegador no acepta video
                   </video>
 
@@ -230,103 +248,78 @@
         </div>
 
     </section>
-    <section id="interes">
+    <?php get_template_part( 'template-parts/interes'); ?>
+        <a href="/comunidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_recta.png" alt="" class="img-fluid miniban d-none "></a>
+    <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe'); ?>
+    <section id="banners">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h1 class="titulo">¿Te interesa algún programa?</h1>
-                </div>
-            </div>
-            <div class="row buffer-60">
-                <div class="col-md-6">
-                        <img class="img-fluid escudo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo.webp" alt="">
-                </div>
-                <div class="fondo-x">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x.png" alt="">
-                </div>
-                <div class="col-md-5">
-                    <p class="interes-programa">Someday is not a fucking day of the week. Whatever can be captured in words can be conquered with understanding. Defy fucking convention. If you don’t test your will against the dissent of the world, it can never grow stronger.</p>
-                    <form id="contacto">
-                        <div class="form-group">
-                          <label for="nombre">Nombre completo*</label>
-                          <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group">
-                            <label for="correo">Correo electrónico*</label>
-                            <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Teléfono o celular*</label>
-                            <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group">
-                            <label for="interes">Programa académico de interés</label>
-                            <select class="form-control" id="interes" name="select">
-                                <option value="value1" selected>Seleccionar programa</option>
-                                <option value="value2">Value 2</option>
-                                <option value="value3">Value 3</option>
-                            </select>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>
-                        </div>
-                      </form>
-
+                <div class="col-md-12">
+                    <a href="/admisiones"><img class="d-none d-sm-block img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                    <a href="/admisiones"><img class="d-block d-sm-none img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home_movil.webp" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
-    <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe'); ?>
      <section id="blog">
         <div class="overlay-img">
         <div class="container">
             <div class="row">
                 <div class="col-10 offset-1">
-                    <div class="bloque-moderno izquierda">
-                        <div class="bloque-azul">    
+                     <div class="bloque-moderno izquierda">
+                        <!--<div class="bloque-azul">    
                         </div>
                             <div class="bloque-neon">
                                 <h3 class="titulos">Hablemos de...</h3>
-                            </div>
+                            </div> -->
+                            <a href="/blog" class="button-primary">En el blog IEXE Hablamos de...</a>
                     </div>
+                    
                 </div>
                 <div class="clearfix"></div>
             </div>
             <div class="row quick-quit">
                     <div class="col-md-1 align-self-center">
-                        <div class="boton-izquierdo"><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-izquierda.png" alt=""></a></div>
+                        <div class="boton-izquierdo"><a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-izquierda.png" alt=""></a></div>
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="imagen-blog">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blogMiniatura.webp" alt="" class="img-fluid">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/convenio-haya.webp" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-12 col-md-5">
-                        <div class="autor">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor.png" alt="" class="autor-foto">
+                        <div class="autor d-none d-sm-block">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/luis.webp" alt="" class="autor-foto">
                             <div class="meta-informacion">
-                                <span class="nombre">Name Surname</span>
-                                <span class="redes">@johndoe</span>
+                                <span class="nombre">Luis Miguel Arroyo</span>
+                                <span class="redes">Colaborador IEXE</span>
                             </div>
                             
                         </div>
                         <div class="post">
-                            <h2 class="titulo">Subtítulo de la noticia destacada</h2>
+                            <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/"><h2 class="titulo">Validez internacional a títulos expedidos por IEXE Universidad</h2></a>
                             <div class="entrada">
-                                <p>Lorem ipsum dolor sit amet onse tetur sadipscing elitr dolor sit amet onse tetur sadips ipsum dolor sit amet onse</p>
+                                <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/"><p>Los títulos expedidos por IEXE Universidad mediante la Conferencia de la Haya y la suscripción…</p></a>
                             </div>
                             <div class="iconos">
-                                <i class="fas fa-heart primero"></i>90<i class="fas fa-comment-alt"></i>78<i class="fas fa-sync-alt"></i>12<i class="fas fa-bookmark ultimo"></i>34
+                                <!-- <i class="fas fa-heart primero"></i>90<i class="fas fa-comment-alt"></i>78<i class="fas fa-sync-alt"></i>12<i class="fas fa-bookmark ultimo"></i>34 -->
                             </div>
                         </div>
                     </div>
                     <div class="col-md-1 align-self-center">
-                        <div class="boton-derecha"><a href="#"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-derecha.png" alt=""></a></div>
+                        <div class="boton-derecha"><a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-derecha.png" alt=""></a></div>
                     </div>
 
             </div>
         </div>
         </div>
     </section>
+    <?php get_template_part( 'template-parts/banderas'); ?>
     <?php get_template_part( 'template-parts/vinculos'); ?>
+    <style>
+        .miniban{
+            margin: 10px 0px;
+            padding: 0px 12px;
+        }
+    </style>
     <?php get_footer( ); ?>

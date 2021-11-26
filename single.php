@@ -42,13 +42,13 @@
                     <?php the_content(); ?>
                 </div>
                 <?php if(get_field('notas')): ?>
-                    <div class="notas">
+                    <div class="notas mt-5">
                         <h2 >Notas</h2>
                         <?php the_field('notas') ?>
                     </div>
                 <?php endif; ?>
-                <?php if(get_field('notas')): ?>
-                    <div class="referencias">
+                <?php if(get_field('referencias')): ?>
+                    <div class="referencias mt-5">
                         <h2>Referencias</h2>
                         <?php the_field('referencias'); ?>
                     </div>
