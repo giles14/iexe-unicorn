@@ -36,7 +36,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                           <div class="col-md-4 offset-md-2 d-none d-sm-block">
                               <div class="formulario">
                                   <div class="cabecera">
-                                      <h1 class="interes">¿Estás interesado?</h1>
+                                      <h1 class="interes"> <?php echo (is_page(1903)) ? "Pre-registrate" : "¿Estás interesado?"?></h1>
                                   </div>
                                   <div class="cuerpo">
                                       <form id="interes" method="POST" action="">
