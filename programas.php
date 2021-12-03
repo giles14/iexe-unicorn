@@ -35,18 +35,25 @@ Template Name: Programas
     </section>
     <section id="maestrias">
         <div class="container">
-            <div class="row contenedor-programa">
-                <div class="col-md-6 offset-md-6">
-                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrías</h1>
-                    <ul class="maestrias">
-                        <li><a href="/oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Seguridad Pública y Políticas Públicas</a></li>
-                        <li><a href="/oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Políticas Públicas</a></li>
-                        <li><a href="/oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
-                        <li><a href="/oferta-educativa/maestria-en-finanzas-publicas">Finanzas Públicas</a></li>
-                        <li><a href="oferta-educativa/maestria-en-administracion-de-negocios-mba/">Administración de Negocios (MBA)</a> </li>
-                        <li><a href="oferta-educativa/maestria-en-ingenieria-en-tecnologias-de-la-informacion">Ingeniería en Tecnologías de la Información</a> </li>
-                    </ul>
-                </div>
+            <div class="row contenedor-programa">                    
+                    <div class="col-md-4 offset-md-4">
+                        <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrías</h1>
+                        <ul class="masters">
+                            <li><a href="/oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Seguridad Pública y Políticas Públicas</a></li>
+                            <li><a href="/oferta-educativa/maestria-en-administracion-y-politica-publicas">Administración y Políticas Públicas</a></li>
+                            <li><a href="/oferta-educativa/maestria-en-evaluacion-de-politicas-publicas">Evaluación de Políticas Públicas</a></li>
+                            <li><a href="/oferta-educativa/maestria-en-finanzas-publicas">Finanzas Públicas</a></li>
+                            <li><a href="oferta-educativa/maestria-en-administracion-de-negocios-mba/">Administración de Negocios (MBA)</a> </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="masters secundario">
+                            <li><a href="oferta-educativa/maestria-en-ingenieria-en-tecnologias-de-la-informacion">Ingeniería en Tecnologías de la Información</a> </li>
+                            <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
+                            <li><a href="/oferta-educativa/maestria-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a> </li>
+                        </ul>
+                    </div>
             </div>
         </div>  
     </section>
@@ -70,9 +77,9 @@ Template Name: Programas
                 <div class="col-md-4 offset-md-4">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Másters</h1>
                     <ul class="masters">
-                        <li><a href="/oferta-educativa/maestria-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a> </li>
+                        
                         <li><a href="/oferta-educativa/maestria-en-ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a> </li>
-                        <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
+                        
                         <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoría Gubernamental</a></li>
                     </ul>
                 </div>

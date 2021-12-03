@@ -855,7 +855,7 @@ section#blog a:hover h2 {
     height: 100%;
     float: left;
     border-radius: 15px;
-    background: rgb(230, 230, 230);
+    
 }
 #comunidad img.img-fluid {
     border-radius: 15px;
@@ -3258,6 +3258,12 @@ Login
         margin: 20px 5px;
     }
 
+}
+.cerrar-inscribete-ya a {
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    padding-left: 15px;
 }
 /* Woocommerce */
 span.woocommerce-input-wrapper {

@@ -1,15 +1,21 @@
-<?php /* Template Name: Landing SSP  2*/ ?>
+<?php /* Template Name: Landing Modelo 2*/ ?>
 <?php get_template_part( 'template-parts/header-landing'); ?>
+<?php $image_principal = get_field('imagen_de_programa'); ?>
+<style>
+    body {
+    background: url(<?php echo esc_url($image_principal['url']);  ?>) 0% 0% / contain no-repeat rgb(239, 239, 239);
+    background-repeat: no-repeat;
+    }
+</style>
 <section id="informacion-general">
 <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12">
-                <span class="descripcion">Maestría en línea</span>
-                <h1 class="nombre-programa">Seguridad Pública<br> y Políticas Públicas</h1>
-                <h2 class="frase-heroica">Ve más alla de tus límites<br> y alcanza tus metas con IEXE</h2>
+                <span class="descripcion"><?php the_field('tipo_de_programa'); ?></span>
+                <h1 class="nombre-programa"><?php the_title();  ?></h1>
+                <h2 class="frase-heroica"><?php the_field('frase_heroica'); ?></h2>
                 <p class="descripcipn-programa">
-                    Esta licenciatura te prepara con las mejores herramientas para desempeñarte profesionalmente en un campo laboral altamente competitivo.
-                    En IEXE Universidad te formaremos en materia de seguridad pública para ser capaz de hacer frente a los retos de seguridad que aquejan a la sociedad desde diferentes instancias y niveles de gobierno.
+                    <?php the_field('descripcion_de_programa'); ?>
                 </p>
                 
                 
@@ -47,14 +53,14 @@
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_horario_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Duración del programa</h3>
-                    <span class="informacion-secundaria">5 Cuatrimestes</span>
+                    <span class="informacion-secundaria"><?php the_field('duracion'); ?></span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_Fecha_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Fechas de inicio</h3>
-                    <span class="informacion-secundaria">3 de Diciembre</span>
+                    <span class="informacion-secundaria"><?php the_field('fechas_de_inicio'); ?></span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
@@ -101,12 +107,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="podras">Podrás trabajar en:</h2>
-                <ul class="podras-trabajar-en">
+                <!-- <ul class="podras-trabajar-en">
                     <li><strong> Entidades gubernamentales</strong> como servidor(a) público(a), realizando procesos de asesoría y liderazgo para una efectiva toma de decisiones y procesos de análisis de políticas públicas, así como para la mejora del desempeño gubernamental y el logro de objetivos institucionales.</li>
                     <li><strong>Partidos políticos</strong>, realizando análisis político y electoral.</li>
                     <li><strong>Organizaciones de la sociedad civil</strong> elaborando proyectos de investigación para incidir en proyectos y políticas públicas.</li>
                     <li><strong>Organismos multilaterales</strong> de carácter nacional e internacional.</li>
-                </ul>
+                </ul> -->
+                <?php the_field('podras_trabajar') ?>
             </div>
         </div>
 

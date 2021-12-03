@@ -8,7 +8,7 @@
                 <h1 class="nombre-programa">Seguridad Pública<br> y Políticas Públicas</h1>
                 <h2 class="frase-heroica">Ve más alla de tus límites<br> y alcanza tus metas con IEXE</h2>
                 <p class="descripcipn-programa">
-                    Esta licenciatura te prepara con las mejores herramientas para desempeñarte profesionalmente en un campo laboral altamente competitivo.
+                    Esta maestría te prepara con las mejores herramientas para desempeñarte profesionalmente en un campo laboral altamente competitivo.
                     En IEXE Universidad te formaremos en materia de seguridad pública para ser capaz de hacer frente a los retos de seguridad que aquejan a la sociedad desde diferentes instancias y niveles de gobierno.
                 </p>
                 

@@ -91,8 +91,10 @@
 
     </section>
     <?php  if(is_page_template('academicos.php')){ ?>
-                            <a href="https://bit.ly/iexebf2021" target="_blank">
+                            
 						<div style="color: #FFF;" class="inscribete-ya">
+                            <div class="cerrar-inscribete-ya"><a>Cerrar [X]</a></div>
+                            <a href="https://bit.ly/iexebf2021" target="_blank">
                             <h3 style="color: #FFF;">¡Todos nuestros programas con beneficios especiales en: inscripcion,<br>mensualidades, reinscripciones y titulación!</h3>
                             <!-- <p class="postulate">Del 18 al 30 de junio, postulate ahora</p> -->
                                 <a class="btn btn-primario" href="https://bit.ly/IEXEbf" target="_blank">¡Más información aquí!</a>
@@ -114,6 +116,11 @@
                                 if(jQuery(window).scrollTop() < 300){
                                     jQuery(".inscribete-ya").fadeOut("fast");
                                 }
+                            });
+                        });
+                        jQuery(document).ready(function(){
+                            jQuery(".cerrar-inscribete-ya a").click(function(){
+                                jQuery(".inscribete-ya").hide();
                             });
                         });
                     

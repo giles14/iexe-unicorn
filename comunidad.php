@@ -270,7 +270,7 @@
                 </div>
                 <div class="col-md-7">
                     <div id="mensaje-colombia" class="mensaje-pais">
-                        <p class="estudiante-testimonio">“Estudiar en iexe universidad, ha sido una experiencia bastante importante para mi formación profesional y academica, ya que la metodología de enseñanza es muy practica.”</p>
+                        <p class="estudiante-testimonio">“Estudiar en IEXE universidad, ha sido una experiencia bastante importante para mi formación profesional y academica, ya que la metodología de enseñanza es muy practica.”</p>
                         <div class="estudiante-autor">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Fenry_Alonso_Colombia.webp" alt="Fenry Alonso" class="autor-foto">
                             <span class="nombre-estudiante">Fenry Alonso Beltrán<br></span>

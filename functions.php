@@ -148,6 +148,10 @@ function agregar_estilos_tema(){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp');
         wp_enqueue_script('iexe-unicorn-landing'); 
     }
+    if(is_page_template('page-landing-2.php')){
+        wp_enqueue_style( 'iexe-unicorn-landing-ssp-2');
+        wp_enqueue_script('iexe-unicorn-landing'); 
+    }
     if(is_page_template('page-landing-ssp-2.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp-2');
         wp_enqueue_script('iexe-unicorn-landing'); 
