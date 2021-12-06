@@ -4,14 +4,9 @@
             <div class="row">
                 <div id="slidePrincipal" class="carousel slide w-100" data-ride="carousel">
                     <div class="carousel-inner">
-                      <!-- <div class="carousel-item active">
+                      <div class="carousel-item active">
                             <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
                             <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
-                      </div> -->
-                      
-                      <div class="carousel-item active">
-                            <a href="https://www.facebook.com/IEXE.Universidad" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/graduados-2021.webp" alt="Graduacion 2021"></a>
-                            <a href="https://www.facebook.com/IEXE.Universidad"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/graduados-2021-movil.webp" alt="Graduación 2021"></a>
                       </div>
                       <div class="carousel-item">
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>

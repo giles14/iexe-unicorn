@@ -90,7 +90,7 @@
         </div>
 
     </section>
-    <?php  if(is_page_template('academicos.php')){ ?>
+    <?php  if(is_page_template('academicos.php') && false){ ?>
                             
 						<div style="color: #FFF;" class="inscribete-ya">
                             <div class="cerrar-inscribete-ya"><a>Cerrar [X]</a></div>
