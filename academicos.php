@@ -350,6 +350,18 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
     </div>
 </section>
+<section id="identificador">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-4">
+                <p class="el-identificador">
+                    "Diseño de Polítucas Públicas<br> de Julio Franco Corzo."
+                </p>
+                <p>-El bestseller de políticas públicas en Amazon.</p>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="inscripcion">
     <div class="container">
         <div class="row">

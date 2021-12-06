@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@100;200;300;400;500;600;700;800&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
     <link href="https://use.typekit.net/bcx3rtu.css" rel="preload" as="style" onload="this.rel='stylesheet'">
     <script src="https://kit.fontawesome.com/0edce41d7a.js" defer="defer" crossorigin="anonymous"></script>
     <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="preload" as="style" onload="this.rel='stylesheet'">
