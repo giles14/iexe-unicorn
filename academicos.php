@@ -8,6 +8,7 @@ $unicorn_contador = 1;
 $unicorn_grupo = 1;
 $materiasMax = MAXIMAS_MATERIAS;
 $imagenAsesor = get_field('imagen_coordinador');
+$imagenIdentificador = get_field('imagen_identificador');
 $estiloPrograma = get_field('estilo_de_programa'); ?>
 <?php get_header( ); ?>
 <section id="header">
@@ -350,18 +351,24 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
     </div>
 </section>
+<?php if(get_field('texto_identificador')){ ?>
 <section id="identificador">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 offset-md-4">
+            <div class="col-md-3 offset-md-1 contenedor-identificador d-none d-sm-block">
+                <img src="<?php echo esc_url($imagenIdentificador['url']); ?>" alt="" class="img-fluid imagen-identificador">
+            </div>
+            <div class="col-md-7">
                 <p class="el-identificador">
-                    "Diseño de Polítucas Públicas<br> de Julio Franco Corzo."
+                    <?php the_field('texto_identificador') ?>
+                    <!-- Esta maestría fue diseñada por el <span class="destacado"><strong>Doctor Julio Franco Corzo</strong></span>, autor de <span class="destacado">“Diseño de Políticas Públicas”</span> el <i>bestseller</i> de políticas públicas en Amazon y <strong>libro de cabecera</strong> en consultorías, agencias de gobierno y otras universidades. -->
                 </p>
-                <p>-El bestseller de políticas públicas en Amazon.</p>
+                
             </div>
         </div>
     </div>
 </section>
+<?php } ?>
 <section id="inscripcion">
     <div class="container">
         <div class="row">
