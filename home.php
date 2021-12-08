@@ -124,7 +124,8 @@
                                     <li><a href="oferta-educativa/maestria-en-administracion-de-negocios-mba/">Administración de Negocios (MBA)</a></li>
                                     <li><a href="oferta-educativa/maestria-en-ingenieria-en-tecnologias-de-la-informacion/">Ingeniería en Tecnologías de la Información</a></li>
                                     <li><a href="oferta-educativa/maestria-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a></li>
-                                    <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>    
+                                    <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
+                                    <li><a href="oferta-educativa/maestria-en-ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a></li>    
                                 </ul>
                             </div>
                         </div>
@@ -139,7 +140,7 @@
                             <div class="links-programas">
                                 <ul>
                                     <li><a href="oferta-educativa/doctorado-en-politicas-publicas">Políticas Públicas</a></li>                                
-                                    <li><a href="oferta-educativa/doctorado-en-seguridad-publica">Seguridad Pública (preinscripción)</a></li>
+                                    <li><a href="oferta-educativa/doctorado-en-seguridad-publica">Seguridad Pública</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -159,7 +160,6 @@
                                     <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoría Gubernamental</a></li>
                                     <li><a href="oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/">Sistema Penal Acusatorio y Juicio Oral </a></li>
                                     <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>
-                                    <li><a href="oferta-educativa/maestria-en-ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a></li>
                                                                                                  
                                 </ul>
                             </div>
