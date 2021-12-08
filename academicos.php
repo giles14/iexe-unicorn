@@ -368,6 +368,11 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
     </div>
 </section>
+<style>
+section#identificador {
+  background: <?php the_field('bg_color'); ?>;
+}
+</style>
 <?php } ?>
 <section id="inscripcion">
     <div class="container">
