@@ -352,8 +352,18 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
     </div>
 </section>
 <?php if(get_field('texto_identificador')){ ?>
-<section id="identificador">
+<div class="container">
+    
+</div>
+<section id="identificador" class="<?php echo ( get_field('extra_size') )  ? "extra" : "" ?>">
     <div class="container">
+    <div class="row">
+            <div class="col-md-7 offset-md-4">
+                <p class="texto-identificador" >
+                    Una razón más para elegir este programa
+                </p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-3 offset-md-1 contenedor-identificador d-none d-sm-block">
                 <img src="<?php echo esc_url($imagenIdentificador['url']); ?>" alt="" class="img-fluid imagen-identificador">

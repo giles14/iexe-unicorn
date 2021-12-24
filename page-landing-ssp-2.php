@@ -8,8 +8,7 @@
                 <h1 class="nombre-programa">Seguridad Pública<br> y Políticas Públicas</h1>
                 <h2 class="frase-heroica">Ve más alla de tus límites<br> y alcanza tus metas con IEXE</h2>
                 <p class="descripcipn-programa">
-                    Esta maestría te prepara con las mejores herramientas para desempeñarte profesionalmente en un campo laboral altamente competitivo.
-                    En IEXE Universidad te formaremos en materia de seguridad pública para ser capaz de hacer frente a los retos de seguridad que aquejan a la sociedad desde diferentes instancias y niveles de gobierno.
+                    Es un <strong>programa académico</strong> que te brindará las herramientas prácticas para el diseño, implementación y evaluación de las estrategias de intervención para la preservación del <strong>orden público,</strong> salvaguardando los <strong>derechos, patrimonio e integridad de la ciudadanía.</strong> Lo anterior por medio de  una convivencia civil pacífica que garantice el desarrollo de las personas y de la sociedad en su conjunto; así como la prevención y reducción de las manifestaciones de violencia que ponen en riesgo a poblaciones y territorios.
                 </p>
                 
                 
@@ -101,12 +100,14 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="podras">Podrás trabajar en:</h2>
-                <ul class="podras-trabajar-en">
+                <p class="descripcipn-programa negro">
+                    Puedes aplicar tus conocimientos en alguna de las instancias del <strong>Sistema Nacional de Seguridad Pública,</strong> en los órdenes de Gobierno Federal, Estatal o Municipal; en institutos, centros formativos públicos o privados, orientados a la capacitación en materia de <strong>seguridad ciudadana</strong>, en <strong>las áreas de investigación, prevención, procuración e impartición de justicia, y reinserción social.</strong> </p>
+                <!-- <ul class="podras-trabajar-en">
                     <li><strong> Entidades gubernamentales</strong> como servidor(a) público(a), realizando procesos de asesoría y liderazgo para una efectiva toma de decisiones y procesos de análisis de políticas públicas, así como para la mejora del desempeño gubernamental y el logro de objetivos institucionales.</li>
                     <li><strong>Partidos políticos</strong>, realizando análisis político y electoral.</li>
                     <li><strong>Organizaciones de la sociedad civil</strong> elaborando proyectos de investigación para incidir en proyectos y políticas públicas.</li>
                     <li><strong>Organismos multilaterales</strong> de carácter nacional e internacional.</li>
-                </ul>
+                </ul> -->
             </div>
         </div>
 

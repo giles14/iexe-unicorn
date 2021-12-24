@@ -41,6 +41,9 @@ section#formulario-interes-landing {
     right: 10px;
 }
 
+.negro{
+    color: #000!important;
+}
 
 span.descripcion {
     color: var(--primario-cyan);

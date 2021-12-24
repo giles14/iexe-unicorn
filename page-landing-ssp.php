@@ -8,8 +8,7 @@
                 <h1 class="nombre-programa">Seguridad Pública</h1>
                 <h2 class="frase-heroica">Ve más alla de tus límites y<br> alcanza tus metas con IEXE</h2>
                 <p class="descripcipn-programa">
-                    Esta licenciatura te prepara con las mejores herramientas para desempeñarte profesionalmente en un campo laboral altamente competitivo.
-                    En IEXE Universidad te formaremos en materia de seguridad pública para ser capaz de hacer frente a los retos de seguridad que aquejan a la sociedad desde diferentes instancias y niveles de gobierno.
+                    Programa acdémico que te da la preparación para la <strong>prevención, investigación y persecución</strong> de la <strong>delincuencia</strong> en términos de las leyes vigentes. Así mismo, te brinda los conocimientos sobre la función del <strong>Estado</strong> y las instituciones encargadas de la <strong>seguridad pública,</strong> con el fin de conservar el orden y la paz social, así como defender las garantías y <strong>derechos humanos</strong> de la ciudadanía.
                 </p>
                 <div class="row">
                     <div class="col-lg-4 col-sm-12">
@@ -33,7 +32,7 @@
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_horario_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Duración del programa</h3>
-                    <span class="informacion-secundaria">9 Cuatrimestes</span>
+                    <span class="informacion-secundaria">9 Cuatrimestres</span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
@@ -97,14 +96,17 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="podras">Podrás trabajar en:</h2>
-                <ul class="podras-trabajar-en">
+                <p class="descripcipn-programa negro">
+                    Puedes desempeñarte en alguna de las instituciones que forman parte del  <strong>Sistema Nacional de Seguridad Pública</strong>, en los órdenes <strong>Federal, Estatal y Municipal</strong>, tales como: la <strong>Secretaría de Gobernación</strong>, la <strong>Guardia Nacional</strong>, la <strong>Fiscalía General de la República</strong>, las fiscalías generales de los estados, las subsecretarías de investigación policial, las direcciones municipales de seguridad y el sistema penitenciario. Además, puedes compartir tu talento y conocimientos en instancias privadas de seguridad y en el desarrollo de <strong>proyectos de consultoría.</strong>    
+                </p>
+                <!-- <ul class="podras-trabajar-en">
                     <li><strong> Instituciones gubernamentales</strong> encargadas de la prevención, procuración y reinserción social.</li>
                     <li><strong>Empresas de seguridad privada</strong> como asesores(as) o estrategas.</li>
                     <li><strong>Como consultores(as) especializados</strong> en temas de seguridad pública.</li>
                     <li>Como <strong>docentes e investigadores</strong> en temas de seguridad pública, formación y desarrollo policial.</li>
                     <li> <strong>Instituciones de seguridad pública</strong>, realizando diagnósticos y diseñando programas de prevención delictiva, de conductas antisociales y para la seguridad ciudadana.</li>
                     <li><strong>Fiscalías estatales y federales</strong>, en áreas periciales, de formación y capacitación e investigación profesional.</li>
-                </ul>
+                </ul> -->
             </div>
         </div>
 
