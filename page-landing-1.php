@@ -1,6 +1,9 @@
 <?php /* Template Name: Landing modelo 1 */ ?>
 <?php 
 $image_principal = get_field('imagen_de_programa');
+$file = get_field('informacion_descargable');
+setlocale(LC_ALL,"es_ES");
+//echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month"));
 ?>
 <?php get_template_part( 'template-parts/header-landing'); ?>
 <style>
@@ -13,7 +16,7 @@ $image_principal = get_field('imagen_de_programa');
 <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-12">
-                <span class="descripcion"><?php the_field('tipo_de_programa'); ?> </span>
+                <span class="descripcion"><?php the_field('tipo_de_programa'); ?></span>
                 <h1 class="nombre-programa"><?php the_title();  ?></h1>
                 <h2 class="frase-heroica"><?php the_field('frase_heroica'); ?></h2>
                 <p class="descripcipn-programa">
@@ -21,7 +24,7 @@ $image_principal = get_field('imagen_de_programa');
                 </p>
                 <div class="row">
                     <div class="col-lg-4 col-sm-12">
-                        <a href="https://bit.ly/iexeLSSP" target="_blank"><div class="bloque-descarga">
+                        <a href="<?php echo ($file) ?  $file['url']  : "#"?>" target="_blank"><div class="bloque-descarga">
                             <p>Descarga el folleto <br>del programa</p><img class="icono-descargar" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_descargar_IEXE.webp" alt="">
                         </div></a>
                     </div>
@@ -50,7 +53,7 @@ $image_principal = get_field('imagen_de_programa');
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_Fecha_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Fechas de inicio</h3>
-                    <span class="informacion-secundaria"><?php the_field('fechas_de_inicio'); ?></span>
+                    <span class="informacion-secundaria">3 de Enero<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
