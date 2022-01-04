@@ -13,6 +13,48 @@ add_image_size('destacada-interesar', 374 , 210, true );
 // 	    $unicorn_id = $post->id;
 //add_theme_support( 'woocommerce' );
 
+function votar_candidato(int $candidato){
+    if(is_user_logged_in()){
+
+        $quien = get_current_user_id();
+        $cagb_user_votado = get_user_meta( get_current_user_id(),'_votado_', true );
+
+        if(!$cagb_user_votado){	
+        add_user_meta( $quien, '_votado_', true);
+        $voto = "candidato_" . $candidato;
+        $votos_actuales = get_field( $voto, 26136 );
+        $votos_actuales++;
+        update_field($voto, $votos_actuales, 26136);
+        $cagb_mensaje = "Gracias, se ha contabilizado tu voto";
+        }else{
+            $cagb_mensaje = "Lo siento, tu voto no se contabilizó, solo se permite un voto por cuenta";
+        }
+        return $cagb_mensaje;
+
+    }else{
+        return "Debes de registrarte para poder votar";
+    }
+    
+};
+add_action('wp_ajax_nopriv_sayhello', 'say_hello_function');
+add_action('wp_ajax_sayhello', 'say_hello_function');
+function say_hello_function(){
+    $candidato_numero = $_GET['val'];
+   $mensaje_retorno = votar_candidato($candidato_numero);
+echo $mensaje_retorno;
+exit();
+}
+add_action('wp_head', 'myplugin_ajaxurl');
+
+function myplugin_ajaxurl() {
+
+   echo '<script type="text/javascript">
+           var ajaxurl = "' . admin_url('admin-ajax.php') . '";
+         </script>';
+}
+// votar_candidato(4);
+
+
 function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.08', 'all'  );
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.0', 'all' );

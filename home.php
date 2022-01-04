@@ -9,8 +9,8 @@
                             <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
                       </div> -->
                       <div class="carousel-item active">
-                            <a href="https://bit.ly/iexebf21" target="_blank"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_buen_fin.webp" alt="Promo Fin"></a>
-                            <a href="https://bit.ly/iexebf21" target="_blank"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_buen_fin_movil.webp" alt="Somos Slide"></a>
+                            <a href="https://bit.ly/iexebf21" target="_blank"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/promoBUENFIN_MSI.webp" alt="Promo Fin"></a>
+                            <a href="https://bit.ly/iexebf21" target="_blank"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/promoBUENFIN_MSI_movil.webp" alt="Somos Slide"></a>
                       </div>
                       <div class="carousel-item">
                             <a href="/producto/capitalismo-natural-y-economia-circular/"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner-libro-capitalismo.webp" alt="Doctorado slide"></a>
