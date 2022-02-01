@@ -10,50 +10,17 @@ body#ssp #informacion-general h1.nombre-programa {
     font-weight: 100;
     font-size: 54px;
 }
-body#maestría\ en\ seguridad\ pública #informacion-general h1.nombre-programa{
+body#licenciatura\ en\ seguridad\ pública #informacion-general h1.nombre-programa{
     font-family: var(--familia-general);
     font-weight: 100;
     font-size: 54px;
 }
-body#maestría\ en\ seguridad\ pública\ 2{
+body#licenciatura\ en\ seguridad\ pública{
     background: #EFEFEF;
     background-image: url('../img/landing-ssp.webp');
     background-size: contain;
     background-repeat: no-repeat;
 
-}
-body#maestría\ en\ seguridad\ pública\ 2{
-    background: #EFEFEF;
-    background-image: url('../img/landing-ssp-2.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-body#maestría\ en\ seguridad\ publica\ 2 {
-    background-image: url('../img/landing-ssp-2.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-body#seguridad\ pública\ y\ políticas\ públicas{
-    background-image: url('../img/landing-ssp-2.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#informacion-general .cabecera {
-    height: unset;
-}
-p.el-por-que {
-    color: #F6F6F6;
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
-
-}
-#informacion-general h1.nombre-programa {
-    color: #FFF;
-    font-size: 50px;
-    font-weight: 300;
-    letter-spacing: 1.3px;
-    font-family: var(--familia-general);
 }
 section#informacion-general {
     margin-top: 0px;
@@ -61,6 +28,8 @@ section#informacion-general {
 section#formulario-interes-landing {
     background: var(--primario--azul-obscuro);
     padding-bottom: 20px;
+    top: 0;
+    position:sticky;
     z-index:9;
 }
 #informacion-general img.icono {
@@ -71,6 +40,7 @@ section#formulario-interes-landing {
     top: 10px;
     right: 10px;
 }
+
 .negro{
     color: #000!important;
 }
@@ -93,13 +63,10 @@ h2.frase-heroica {
 }
 p.descripcipn-programa {
     color: #FFF;
-    font-size: 18px;
+    font-size: 21px;
     padding-top: 32px;
     padding-right: 16px;
     font-weight: 200;
-}
-p.descripcipn-programa {
-    padding-right: 70px;
 }
 button.enviar-landing {
     background: var(--primario-azul);
@@ -132,30 +99,26 @@ span.pregunta-con-enfasis {
     color: var(--primario-azul);
 }
 .bloque-puntos-clave {
-    background: var(--primario--azul-obscuro);
+    background: var(--primario-azul);
     border-radius: 10px;
     height: 175px;
     position: relative;
     box-shadow: 0px 0px 20px 6px #2e2e2e36;
     margin-top: 20px;
-    padding: 0 20px;
 }
 h3.keypoint {
     color: #FFF;
     font-weight: 600;
     font-size: 16px;
     width: 120px;
-    /* padding-left: 20px; */
+    padding-left: 20px;
     line-height: 20px;
     padding-top: 60px;
-}
-span.en-pragmaflex {
-    color: #FFF;
 }
 span.informacion-secundaria {
     font-weight: 300;
     color: var(--primario-cyan);
-    /* padding-left: 20px; */
+    padding-left: 20px;
 }
 #informacion-general .col-md-2 {
     margin: 0px 32px;
@@ -174,24 +137,6 @@ section#el-por-que {
     color: #FFF;
     padding: 40px;
 }
-.col-md-3.del-por-que {
-    margin: 0 auto;
-    background: var(--primario-azul);
-    flex: 0 0 31%;
-    max-width: 31%;
-    padding: 16px 10px 0px 16px;
-    border-radius: 10px;
-}
-.del-por-que .iconos {
-    display: block;
-    width: 80px;
-    margin: 0 auto;
-    margin-bottom: 16px;
-}
-.del-por-que p {
-    text-align: center;
-    font-weight: 300;
-}
 h2.podras{
     font-family: 'Georama', sans-serif;
     font-weight: 600;
@@ -200,6 +145,11 @@ h2.podras{
 ul.podras-trabajar-en {
     font-size: 21px;
     font-weight: 300;
+}
+section#el-por-que {
+    background: var(--primario-azul);
+    padding: 40px;
+    color: #FFF;
 }
 h1.text-center.el-porque {
     color: #FFF;
@@ -211,9 +161,6 @@ h1.text-center.el-porque {
 p.texto-por-que {
     font-size: 24px;
     font-weight: 300;
-}
-#informacion-general .formulario {
-    margin-top: 60px;
 }
 a.tipo-boton {
     background: linear-gradient(
@@ -302,10 +249,10 @@ img.icono-descargar {
         margin-bottom: 20px;
     }
     h2.frase-heroica {
-        color: #FFF);
+        color: var(--primario--azul-obscuro);
     }
     p.descripcipn-programa {
-        color: #FFF;
+        color: var(--primario--azul-obscuro);
     }
     section#formulario-interes-landing{
         position: relative;
@@ -317,26 +264,6 @@ img.icono-descargar {
         font-size: 20px;
         font-weight: 300;
     }
-    body#maestría\ en\ seguridad\ publica\ 2 {
-        background-image: url(../img/landing-ssp-2.webp);
-        background-size: inherit;
-        background-repeat: no-repeat;
-    }
-    body#seguridad\ pública\ y\ políticas\ públicas {
-        background-image: url(../img/landing-ssp-2.webp);
-        background-size: initial;
-        background-repeat: no-repeat;
-    }
-    p.descripcipn-programa {
-        padding-right: unset;
-    }
-    .cabecera {
-        background: var(--primario--azul-obscuro);
-    }
-    #informacion-general .formulario {
-        margin-bottom: 60px;
-    }
-
 }
 @media only screen and (max-width: 1183px) {
     .bloque-descarga p {

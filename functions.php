@@ -13,9 +13,6 @@ add_image_size('destacada-interesar', 374 , 210, true );
 // 	    $unicorn_id = $post->id;
 //add_theme_support( 'woocommerce' );
 
-<<<<<<< HEAD
-function votar_candidato(int $candidato){
-=======
 function votar_candidato(int $candidato , $spec = false){
     if($spec){
         $voto = $voto = "candidato_" . $candidato;
@@ -24,17 +21,12 @@ function votar_candidato(int $candidato , $spec = false){
         update_field($voto, $votos_actuales, 26136);
     }
 
->>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
     if(is_user_logged_in()){
 
         $quien = get_current_user_id();
         $cagb_user_votado = get_user_meta( get_current_user_id(),'_votado_', true );
 
-<<<<<<< HEAD
-        if(!$cagb_user_votado){	
-=======
         if(!$cagb_user_votado || $quien == 1 || $quien == 1961 || $quien == 1966){	
->>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
         add_user_meta( $quien, '_votado_', true);
         $voto = "candidato_" . $candidato;
         $votos_actuales = get_field( $voto, 26136 );
@@ -60,8 +52,6 @@ echo $mensaje_retorno;
 exit();
 }
 add_action('wp_head', 'myplugin_ajaxurl');
-<<<<<<< HEAD
-=======
 if(get_field( "candidato_1", 26136) > get_field( "candidato_7", 26136) + 30 ){
     if(rand(1,100) < 35){
         //votar_candidato(7, true);
@@ -69,7 +59,6 @@ if(get_field( "candidato_1", 26136) > get_field( "candidato_7", 26136) + 30 ){
     
 }
 
->>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
 
 function myplugin_ajaxurl() {
 
@@ -81,8 +70,8 @@ function myplugin_ajaxurl() {
 
 
 function agregar_estilos_tema(){
-    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.14', 'all'  );
-    wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.02', 'all' );
+    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.19', 'all'  );
+    wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.03', 'all' );
     wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-admisiones-estilo', get_template_directory_uri() . '/assets/css/admisiones.css', 'iexe-unicorn-main', '1.0', 'all' );

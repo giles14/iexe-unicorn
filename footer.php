@@ -49,7 +49,7 @@
                      ?>
                 </div>
                 <div class="col-md-3 order-4">
-                    <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a target="_blank" class="telefono-whatsapp" href="https://bit.ly/iexeWAN"> 222-460-3589</a></p>
+                    <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a target="_blank" class="telefono-whatsapp" href="https://bit.ly/3uOB6Hv"> 55-6814-0690</a></p>
                     <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
                     <!-- <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a> -->
                     <div class="iconos-redes-sociales">
@@ -90,7 +90,9 @@
         </div>
 
     </section>
-    <?php  if(is_page_template('academicos.php') || is_page_template('admisiones.php') || is_page_template( 'page-blog.php' )){ ?>
+    <?php // if(is_page_template('academicos.php') || is_page_template('admisiones.php') || is_page_template( 'page-blog.php' ) && true){ 
+        if(false){ 
+        ?>
                             
 						<div style="color: #FFF;" class="inscribete-ya">
                             <div class="cerrar-inscribete-ya"><a>Cerrar [X]</a></div>

@@ -75,20 +75,8 @@ Template Name: Programas
         <div class="container">
             <div class="row contenedor-programa">
                 <div class="col-md-6 offset-md-6">
-                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Másters</h1>
-<<<<<<< HEAD
-                    <ul class="masters">
-                        <li><a href="/oferta-educativa/maestria-en-innovacion-y-gestion-educativa">Innovación y Gestión Educativa</a> </li>
-                        <li><a href="/oferta-educativa/maestria-en-ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a> </li>
-                        <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
-                        <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoría Gubernamental</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="masters secundario" style="margin-block-start: 5px;margin-inline-start: 2px; ">
-=======
+                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Masters</h1>
                     <ul class="masters">  
->>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                         <li><a href="oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/">Marketing Político y Opinión Pública</a></li>
                         <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoría Gubernamental</a></li>
                         <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>

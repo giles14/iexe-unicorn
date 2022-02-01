@@ -1097,6 +1097,8 @@ a.button-primary {
 }
 .links-programas ul li {
     padding-bottom: 20px;
+    text-indent: -24px;
+    padding-left: 24px;
 }
 .links-programas.maestrias ul li {
     padding-bottom: 14px;
@@ -2690,12 +2692,12 @@ body#comunidad {
 }
 section#comunicados {
     margin-top: 50%;
-    /* background: linear-gradient(180deg, rgba(0,255,232,1) 0%, rgba(142,153,255,1) 77%, rgba(255,255,255,1) 100%); */
-    background: linear-gradient(180deg, rgba(0,30,66,1) 0%, rgba(142,153,255,1) 77%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(0,255,232,1) 0%, rgba(142,153,255,1) 77%, rgba(255,255,255,1) 100%);
+    /* background: linear-gradient(180deg, rgba(0,30,66,1) 0%, rgba(142,153,255,1) 77%, rgba(255,255,255,1) 100%); */
     padding-top: 28px;
 }
 section#comunicados h2.description {
-    color: #FFF;
+    color: var(--primario-azul-obscuro);
 }
 section#comunicados .aviso {
     border-radius: 0px 0px 15px 15px;
@@ -3265,6 +3267,17 @@ Login
     }
     #anuncio-tiktok .tiktok {
         margin: 0px 15px 90px 15px;
+        background-size: 28%;
+    }
+    #comunidad .lista-pais {
+        margin-left: unset;
+    }
+    #comunidad p.estudiante-testimonio {
+        width: 330px;
+    }
+    #comunidad .estudiante-autor {
+        width: 347px;
+        margin-left: -6px;
     }
     .col-md-5.offset-md-1.generacion {
         margin: 0 15px;
@@ -3284,7 +3297,14 @@ Login
     .archivo-thumb{
         margin: 20px 5px;
     }
-
+    body#comunidad {
+        background: url(../img/comunidad-bg-movil.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    section#comunicados {
+        margin-top: 82vh;
+    }
 }
 .cerrar-inscribete-ya a {
     cursor: pointer;

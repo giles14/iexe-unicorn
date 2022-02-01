@@ -8,7 +8,12 @@ $unicorn_contador = 1;
 $unicorn_grupo = 1;
 $materiasMax = MAXIMAS_MATERIAS;
 $imagenAsesor = get_field('imagen_coordinador');
-$estiloPrograma = get_field('estilo_de_programa'); ?>
+$imagenIdentificador = get_field('imagen_identificador');
+$estiloPrograma = get_field('estilo_de_programa'); 
+$elTipo = get_field('tipo');
+$elTipo = explode(" " , $elTipo);
+?>
+
 <?php get_header( ); ?>
 <section id="header">
     <div id="informacion-programa" class="carousel slide carousel-fade" data-ride="carousel">
@@ -17,8 +22,8 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
             <div class="mask flex-center">
               <div class="container">
                   <div class="row">
-                      <div id="desc-programa">
-                          <div class="col-12 col-md-6">
+                      <div id="desc-programa" class="<?php echo (get_field('clave_del_programa')) ? get_field('clave_del_programa')  : 'SINA'; ?>">
+                          <div class="col-12 col-md-7">
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
@@ -27,13 +32,13 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                               <?php if($estiloPrograma == "Programas Tradicionales") { ?>
                               <p id="RVOE" class="revoe">
                                   <strong><?php the_field('texto_rvoe'); ?></strong><br>
-                                  <?php if(get_field('link_rvoe')) { ?>
-                                    Consultalo en: <a href="<?php the_field('link_rvoe'); ?>" class="notorio" target="_blank">www.sirvoes.sep.gob.mx</a>
+                                  <?php if(get_field('link_rvoe') && get_the_ID() != 1903) { ?>
+                                    Consúltalo en: <a href="<?php the_field('link_rvoe'); ?>" class="notorio" target="_blank">www.sirvoes.sep.gob.mx</a>
                                   <?php } ?>
                               </p>
                                 <?php } ?>
                           </div>
-                          <div class="col-md-4 offset-md-2 d-none d-sm-block">
+                          <div class="col-md-4 offset-md-1 d-none d-sm-block">
                               <div class="formulario">
                                   <div class="cabecera">
                                       <h1 class="interes"> <?php echo (is_page(1903)) ? "Pre-registrate" : "¿Estás interesado?"?></h1>
@@ -73,7 +78,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
               <div class="container">
                   <div class="row">
                       <div id="desc-programa">
-                          <div class="col-12 col-md-6">
+                          <div class="col-12 col-md-7">
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
@@ -85,7 +90,7 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                               </div>
               
                           </div>
-                          <div class="col-md-4 offset-md-2 d-none d-sm-block">
+                          <div class="col-md-4 offset-md-1 d-none d-sm-block">
                               <!--  -->
                               <?php
                               if ( !empty( $imagenAsesor ) ): ?>
@@ -146,8 +151,8 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
                             <div class="col-md-1">
                                 
                             </div>
-                            <div class="col-md-5 my-auto">
-                                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/pragmaFlex-logo.webp" alt="">
+                            <div class="col-md-5 my-auto d-none d-md-block">
+                                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo-pragmaflex.png" alt="">
                             </div>
             
                         </div>               
@@ -163,9 +168,9 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
 <section id="navegacion">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">DESCRIPCIÓN<br> DEL PROGRAMA</div></div></a></div>
+            <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONOCE TU<br> <?php echo strtoupper($elTipo[0]) ?></div></div></a></div>
             <?php if($estiloPrograma == "Programas Tradicionales") { ?>
-                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">QUÉ VAS A APRENDER </div></div></a></div>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">POR QUÉ ELEGIR ESTE PROGRAMA </div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">DÓNDE PUEDES TRABAJAR</div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">NUESTRO MÉTODO DE ENSEÑANZA</div></div></a></div>
             <?php }else{ ?>
@@ -278,6 +283,18 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
     </div>
 </section>
 <?php } ?>
+<?php if(is_page('1310') || is_page('1287')) { ?>
+<section id="acreditacion-unitar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aws-academy.webp" alt="">
+                <img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aws-movil.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<?php } ?>
 <section id="plan-de-estudios">
     <div class="container">
         <div class="row">
@@ -350,6 +367,39 @@ $estiloPrograma = get_field('estilo_de_programa'); ?>
         </div>
     </div>
 </section>
+<?php if(false && get_field('texto_identificador')){ ?>
+<div class="container">
+    
+</div>
+<section id="identificador" class="<?php echo ( get_field('extra_size') )  ? "extra" : "" ?>">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-7 offset-md-4">
+                <p class="texto-identificador" >
+                    Una razón más para elegir este programa
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-1 contenedor-identificador d-none d-sm-block">
+                <img src="<?php echo esc_url($imagenIdentificador['url']); ?>" alt="" class="img-fluid imagen-identificador">
+            </div>
+            <div class="col-md-7">
+                <p class="el-identificador">
+                    <?php the_field('texto_identificador') ?>
+                    <!-- Esta maestría fue diseñada por el <span class="destacado"><strong>Doctor Julio Franco Corzo</strong></span>, autor de <span class="destacado">“Diseño de Políticas Públicas”</span> el <i>bestseller</i> de políticas públicas en Amazon y <strong>libro de cabecera</strong> en consultorías, agencias de gobierno y otras universidades. -->
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+section#identificador {
+  background: <?php the_field('bg_color'); ?>;
+}
+</style>
+<?php } ?>
 <section id="inscripcion">
     <div class="container">
         <div class="row">

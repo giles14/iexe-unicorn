@@ -49,7 +49,7 @@ p.descripcion-programa{
   line-height: 22px;
 }
 p#RVOE {
-  margin-top: 32px;
+  /* margin-top: 32px; */
   color: var(--primario-azul);
 }
 img.asesor {
@@ -91,6 +91,9 @@ img.asesor {
     -webkit-animation-name: slideInRight;
     animation-name: slideInRight;
     animation-duration: 1s;
+}
+.MAIS .descripcion-programa {
+  line-height: 20.4px;
 }
 /* #informacion-programa .carousel-item a{background:#F47735; padding:13px 32px; display:inline-block; } */
 #informacion-programa .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
@@ -258,7 +261,7 @@ img.asesor {
   animation-name: slideInRight;
 }
 #informacion-programa a.button-primary {
-    max-width: 390px!important;
+    max-width: 450px!important;
     margin: unset;
 }
 #informacion-programa .container{

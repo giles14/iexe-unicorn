@@ -15,15 +15,9 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">AVISO</span>
-<<<<<<< HEAD
-                    <div class="fecha">8 de Noviembre del 2021</div>
+                    <div class="fecha">3 de Enero del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>¡Bienvenida Generación Noviembre 2021!</h3>
-=======
-                    <div class="fecha">20 de Diciembre del 2021</div>
-                    <div class="titulo-aviso">
-                        <h3>¡Bienvenida Generación Enero 2021!</h3>
->>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
+                        <h3>¡Bienvenida Generación Enero 2022!</h3>
                     </div>
                     <div class="descripcion-aviso">
                         <p>Esperamos que tengan una excelente experiencia y aprovechen al máximo todas las herramientas que les brindamos por medio de la plataforma.</p>
@@ -36,59 +30,42 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">8 de Noviembre del 2021</div>
+                    <div class="fecha">3 de Enero del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Masterclass de Noviembre</h3>
+                        <h3>Conferencias de nuevo ingreso</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Te esperamos en la semana de Masterclass del mes de noviembre. Recuerda agendar del 22 al 26 de noviembre. ¡No te la puedes perder!</p>
+                        <p>Asiste a las conferencias de bienvenida de cursos que tenemos programadas para tí. Consulta tus calendarios.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 d-none d-sm-block">
-<<<<<<< HEAD
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/grad.jpg" alt="">
-=======
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/grad.webp" alt="">
->>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
+            <!--<div class="col-md-3 d-none d-sm-block">
+                <img class="img-fluid" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/grad.webp" alt="">
             </div>
-            <div class="col-md-9">
+             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-<<<<<<< HEAD
-                    <div class="fecha">8 de Noviembre del 2021</div>
-                    <div class="titulo-aviso">
-                        <h3>¡Llegó el momento de festejar!</h3>
-                    </div>
-                    <div class="descripcion-aviso">
-                        <p>Alista todo y prepárate para la graduación del 4 de diciembre. Recuerda que aún estamos recibiendo las fotografías de los alumnos para la ceremonia de graduación. ¡Felicidades a los graduados!</p>
-=======
                     <div class="fecha">20 de Diciembre del 2021</div>
                     <div class="titulo-aviso">
                         <h3>¡Llegó el momento de festejar en familia!</h3>
                     </div>
                     <div class="descripcion-aviso">
                         <p>IEXE Universidad, te desea ¡Felices Fiestas! en compañía de toda tu familia</p>
->>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-md-3 d-none d-sm-block">
                 <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/de-comunidad-1.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">NOTICIA</span>
-<<<<<<< HEAD
-                    <div class="fecha">9 de Noviembre del 2021</div>
-=======
-                    <div class="fecha">20 de Diciembre del 2021</div>
->>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
+                    <div class="fecha">10 de Enero del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Pragmaflex</h3>
+                        <h3>IEXE Universidad ahora es parte de AWS academy</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Estudia una materia a la vez, ahora con el nuevo modelo educativo obtendrás mayor concentración, metas más claras y eficiencia en el manejo de tu tiempo. ¡Es más fácil!</p>
+                        <p>Aprovecha los beneficios que esto trae para tí, pregunta con tu asesor estudiantil para mayor información.</p>
                     </div>
                 </div>
             </div>
@@ -266,7 +243,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-1 un-bloque-azul">
+                <div class="col-md-1 un-bloque-azul d-none d-sm-block">
 
                 </div>
                 <div class="col-md-4">
@@ -306,6 +283,14 @@
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Ruth_Noemi_Ecuador.webp" alt="" class="autor-foto">
                             <span class="nombre-estudiante">Ruth Noemí Vernaza Casquete</span>
                             <span class="descripcion">Maestría en Administración y Políticas Públicas.</span>
+                        </div>
+                    </div>
+                    <div id="mensaje-mexico" class="mensaje-pais">
+                        <p class="estudiante-testimonio">“Hoy más que nunca nos damos cuenta de lo esencial de la enseñanza a través de los medios tecnológicos. No importa el origen, las expectativas académicas, el estatus social, la edad o cualquier otras condiciones de índole social, IEXE Universidad nos ha otorgado herramientas útiles que nos ayudarán a lograr nuestros objetivos profesionales.”</p>
+                        <div class="estudiante-autor">
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/gonzalez-ulises.png" alt="" class="autor-foto testimonio">
+                            <span class="nombre-estudiante">Ulises Gonzalez Garduño<br></span>
+                            <span class="descripcion">Maestría en Finanzas Públicas<br>&nbsp;</span>
                         </div>
                     </div>
                     <div id="mensaje-salvador" class="mensaje-pais">

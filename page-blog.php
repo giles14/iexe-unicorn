@@ -129,6 +129,9 @@
                             <span class="meta categoria">Noticias</span>
                             <h2 class="titulo"><a href="<?php the_permalink() ?>"><?php echo wp_trim_words(get_the_title(), 9, '...'); ?></a></h2>
                             <p><?php echo get_the_excerpt() ?></p>
+                            <div class="meta-iconos">
+                                0 <i class="uil uil-comment-alt"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
