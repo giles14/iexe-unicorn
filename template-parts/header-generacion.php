@@ -7,14 +7,13 @@
     <meta name="keywords" content="Universidad, estudia en línea, Maestría, Doctorado">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
-    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@100;200;300;400;500;600;700;800&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
-    <link href="https://use.typekit.net/bcx3rtu.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-    <script src="https://kit.fontawesome.com/0edce41d7a.js" defer="defer" crossorigin="anonymous"></script>
-    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-    <link type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/bcx3rtu.css">
+    <script src="https://kit.fontawesome.com/0edce41d7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/favicon-32x32.png">
@@ -81,17 +80,17 @@
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul> -->
-          <div class="navegacion-botones">
+          <div class="navegacion-botones d-none">
             <input id="mi-busqueda" type="text" placeholder="¿Qué buscas?">
             <a onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos"> Accesos</a>
             <!-- <img style="margin-left: 20px;" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/search.svg" alt="" class="busqueda"> Buscar -->
           </div>
                    
         </div>
-            <a style="color: #FFF" class="d-block d-md-none" onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos">Accesos</a>
+            <a style="color: #FFF" class="d-none" onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos">Accesos</a>
             <!-- <img style="margin-left: 20px;" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/search.svg" alt="" class="busqueda"> Buscar -->
         <a href="javascript:void(0)" class="closebtn" onclick="openNav()">
-          <div class="menu gradient-border">
+          <div class="menu gradient-border d-none">
               Menú <img class="menu-boton" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/menu.svg" alt="">
           </div>
         </a>

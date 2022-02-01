@@ -1,6 +1,11 @@
 <?php /* Template Name: Generacion */ ?>
+<<<<<<< HEAD
 <!-- <?php // get_template_part( 'template-parts/header-landing'); ?> -->
 <?php get_header( ); ?>
+=======
+<?php get_template_part( 'template-parts/header-generacion'); ?>
+<?php // get_header( ); ?>
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
 
 <?php
     $cagb_votos_1 = get_field( "candidato_1", 26136 );
@@ -17,6 +22,10 @@
     <div class="row">
         <div class="col-md-6 d-none d-md-block">
             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/generacion-2021.png" alt="" class="img-fluid" style="position: absolute;top: 21vw;left: 20%;">
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
         </div>
     </div>
 </div>
@@ -24,8 +33,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p style="color: #FFF">“IEXE AWARDS” es un proyecto dirigido a nuestra comunidad académica, en donde se buscan a los representantes egresados de la generación mediante el voto abierto. Los nominados al premio AWARDS de nuestros nominados, están divididos en 3 categorías: desempeño académico, amigos embajadores y trayectoria profesional. </p>
-                <p style="color: #001E42">Éste premio le brindará la oportunidad a la persona ganadora de seguir desarrollando nuevas competencias, para aplicarlas en la construcción de su carrera profesional. Por lo que la persona ganadora, será acreedora de una beca del 80% en cualquiera de nuestros programas (diplomado, maestría o doctorado) y un apoyo del 60% para el proceso de titulación.</p>
+            <div class="final-conteo">
+                <div id="conteo"></div>
+                <p class="finalizacion-votacion">El cierre para el periodo de votación será el día 22 de Noviembre de 2021 a las 20:00hrs Horario del centro de México</p>
+            </div>
+            
+                <p style="color: #FFF">“IEXE AWARDS” es un proyecto dirigido a nuestra comunidad estudiantil, en donde se elige a los representantes egresados de la generación mediante el voto abierto. Los nominados al premio AWARDS están divididos en 3 categorías: Desempeño Académico, Amigos Embajadores y Trayectoria Profesional.</p>
+                <p class="es-el-secundario" style="color: #001E42">Este premio le brindará la oportunidad a la persona ganadora de seguir desarrollando nuevas competencias para aplicarlas en el progreso de su carrera profesional; pues será acreedora a una beca del 80% en cualquiera de nuestros programas académicos (diplomado, maestría o doctorado) y un apoyo del 60% para el proceso de titulación.</p>
             </div>
         </div>
     </div>
@@ -80,7 +94,11 @@
             </div>
         </div>
         <div class="row">
+<<<<<<< HEAD
             <div class="col-md-3">
+=======
+            <div class="col-md-3 text-center">
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/generacion/javier-martinez.png" alt="" class="imagen-candidato">
                 <h3 class="nombre-candidato">Javier Martínez Morales</h3>
                 <h4 class="carrera-de">Doctorado en Políticas Públicas</h4>
@@ -88,7 +106,11 @@
                 <p class="porcentaje-votacion"><?php echo round( $cagb_votos_1*100/$votos_totales,2) ?></p>
                 <button class="boton-votar voto-1" type="button" role="button">Votar</button>
             </div>
+<<<<<<< HEAD
             <div class="col-md-3">
+=======
+            <div class="col-md-3 text-center">
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/generacion/juan-carlos.png" alt="" class="imagen-candidato">
                 <h3 class="nombre-candidato">Juan Carlos Aguirre García</h3>
                 <h4 class="carrera-de">Maestría en Evaluación de Políticas Públicas</h4>
@@ -96,7 +118,11 @@
                 <p class="porcentaje-votacion"><?php echo round( $cagb_votos_2*100/$votos_totales,2) ?></p>
                 <button class="boton-votar voto-2" type="button" role="button">Votar</button>
             </div>
+<<<<<<< HEAD
             <div class="col-md-3">
+=======
+            <div class="col-md-3 text-center">
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/generacion/cecilia-tremonisha.png" alt="" class="imagen-candidato">
                 <h3 class="nombre-candidato">Cecilia Treemonisha Barros Ruiz</h3>
                 <h4 class="carrera-de">Maestría en Administración de Políticas Públicas</h4>
@@ -105,7 +131,11 @@
                 <button class="boton-votar voto-3" type="button" role="button">Votar</button>
                  
             </div>
+<<<<<<< HEAD
             <div class="col-md-3">
+=======
+            <div class="col-md-3 text-center">
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/generacion/diana-deubner.png" alt="" class="imagen-candidato">
                 <h3 class="nombre-candidato">Diana Deubner Valenzuela</h3>
                 <h4 class="carrera-de">Licenciatura en Administración de Empresas</h4>
@@ -155,7 +185,11 @@
                         <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/generacion/marcela-munoz.png" alt="" class="imagen-candidato">
                         <h3 class="nombre-candidato">Marcela Muñoz Martínez</h3>
                         <h4 class="carrera-de">Maestría en Seguridad Pública</h4>
+<<<<<<< HEAD
                         <p class="cargo-actual">Secretaria de Seguridad Pública del Estado de Campeche.</p>
+=======
+                        <p class="cargo-actual">Secretaria de Seguridad Pública del Estado de Campeche</p>
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                         <p class="descripcion-nominacion">Se ha desempeñado exitosamente en el servicio público por más de una década.</p>
                         <p class="porcentaje-votacion"><?php echo round( $cagb_votos_7*100/$votos_totales,2) ?></p>
                         <button class="boton-votar voto-7" type="button" role="button">Votar</button>
@@ -189,9 +223,15 @@
 </section> -->
 <div class="container">
     <div class="row">
+<<<<<<< HEAD
         <div class="col-md-12 mt-3">
             <p class="condiciones-voto">Vota del 12 al 22 de noviembre con toda la comunidad IEXE para elegir al alumno de la generación.</p>
             <p class="condiciones-voto-2">El ganador será anunciado el 4 de diciembre en la ceremomia de graduación.</p>
+=======
+        <div class="col-md-12 mt-5">
+            <p class="condiciones-voto">Vota del 16 al 22 de noviembre con toda la comunidad IEXE para elegir al alumno de la generación.</p>
+            <p class="condiciones-voto-2">El ganador será anunciado el 4 de diciembre en la ceremonia de graduación.</p>
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
          
         </div>
     </div>
@@ -242,7 +282,22 @@ body#nominaciones {
     background-repeat: no-repeat;
 }
 section#descripcion-awards {
-    margin-top: 45%;
+    margin-top: 40%;
+}
+@media only screen and (max-width: 800px) {
+  body#nominaciones {
+    background-image: url(https://generacion.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/graduacion-bg-movil.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  section#descripcion-awards {
+    margin-top: 90%;
+    }
+    #descripcion-awards p {
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
 }
 h1.categoria-nominacion {
     font-family: 'Georama';
@@ -341,6 +396,10 @@ a.boton-votar {
     font-weight: 800;
     box-shadow: 0px 9px 6px #0c22f526;
     border: none;
+<<<<<<< HEAD
+=======
+    display: none;
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
 }
 .boton-votar:hover {
     color: #001e42;
@@ -411,6 +470,10 @@ p.porcentaje-votacion:after {
 p.porcentaje-votacion {
     text-align: center;
     font-weight: 600;
+<<<<<<< HEAD
+=======
+    display:none;
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
 }
 p.cargo-actual {
     height: 30px;
@@ -428,5 +491,80 @@ p.condiciones-voto-2 {
     text-align: center;
     color: #001e42;
 }
+<<<<<<< HEAD
+=======
+p.finalizacion-votacion {
+    color: var(--primario--azul-obscuro);
+    font-size: 13px!important;
+    text-align: center;
+}
+.conteo{
+    text-align: center;
+}
+div#conteo {
+    text-align: center;
+    font-size: 32px;
+    color: var(--primario--azul-obscuro);
+}
+.final-conteo {
+    background: var(--primario-cyan);
+    padding: 10px;
+    margin: 0 auto 16px auto;
+    width: 560px
+
+}
+@media only screen and (max-width: 800px) {
+  body#nominaciones {
+    background-image: url(https://generacion.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/graduacion-bg-movil.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  section#descripcion-awards {
+    margin-top: 93%;
+    }
+    #descripcion-awards p {
+    font-size: 18px;
+    padding: 0px 10px;
+    }
+    #descripcion-awards p.es-el-secundario {
+    padding-top: 90px;
+}
+    
+}
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
 </style>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 22, 2021 20:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  seconds = minTwoDigits(seconds);
+  hours = minTwoDigits(hours);
+  
+  document.getElementById("conteo").innerHTML = hours + "h : "
+  + minutes + "m : " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("conteo").innerHTML = "FINALIZADO";
+  }
+}, 1000);
+function minTwoDigits(n) {
+  return (n < 10 ? '0' : '') + n;
+}
+</script>
 <?php get_footer(); ?>

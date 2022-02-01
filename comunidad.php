@@ -15,9 +15,15 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">AVISO</span>
+<<<<<<< HEAD
                     <div class="fecha">8 de Noviembre del 2021</div>
                     <div class="titulo-aviso">
                         <h3>¡Bienvenida Generación Noviembre 2021!</h3>
+=======
+                    <div class="fecha">20 de Diciembre del 2021</div>
+                    <div class="titulo-aviso">
+                        <h3>¡Bienvenida Generación Enero 2021!</h3>
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                     </div>
                     <div class="descripcion-aviso">
                         <p>Esperamos que tengan una excelente experiencia y aprovechen al máximo todas las herramientas que les brindamos por medio de la plataforma.</p>
@@ -40,17 +46,30 @@
                 </div>
             </div>
             <div class="col-md-3 d-none d-sm-block">
+<<<<<<< HEAD
                 <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/grad.jpg" alt="">
+=======
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/grad.webp" alt="">
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
             </div>
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
+<<<<<<< HEAD
                     <div class="fecha">8 de Noviembre del 2021</div>
                     <div class="titulo-aviso">
                         <h3>¡Llegó el momento de festejar!</h3>
                     </div>
                     <div class="descripcion-aviso">
                         <p>Alista todo y prepárate para la graduación del 4 de diciembre. Recuerda que aún estamos recibiendo las fotografías de los alumnos para la ceremonia de graduación. ¡Felicidades a los graduados!</p>
+=======
+                    <div class="fecha">20 de Diciembre del 2021</div>
+                    <div class="titulo-aviso">
+                        <h3>¡Llegó el momento de festejar en familia!</h3>
+                    </div>
+                    <div class="descripcion-aviso">
+                        <p>IEXE Universidad, te desea ¡Felices Fiestas! en compañía de toda tu familia</p>
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                     </div>
                 </div>
             </div>
@@ -60,7 +79,11 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">NOTICIA</span>
+<<<<<<< HEAD
                     <div class="fecha">9 de Noviembre del 2021</div>
+=======
+                    <div class="fecha">20 de Diciembre del 2021</div>
+>>>>>>> 7a933a2282cf81bd4f90047b3fd68a36a86638c5
                     <div class="titulo-aviso">
                         <h3>Pragmaflex</h3>
                     </div>
@@ -171,14 +194,14 @@
     <section id="anuncio-tiktok">
         <div class="container">
             <div class="row">
-                <div class="col col-md-5 tiktok">
+                <div class="col col-md-11 tiktok">
                     <div class="texto">
                         Descubre y diviértete con nuestro nuevo canal de Tik tok IEXE
                         <a target="_blank" href="https://vm.tiktok.com/ZMRoQFFQC/" class="btn btn-primario" target="_blank">¡Descúbrelo!</a>
                     </div>
 
                 </div>
-                <div class="col-md-5 offset-md-1 generacion">
+                <!-- <div class="col-md-5 offset-md-1 generacion">
                     <img class="float-left escudo-comunidad" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudoComunidad.webp" alt="">
                     <div class="texto">
                         <h1>Alumno de la generación</h1>
@@ -186,7 +209,7 @@
                         <a target="_blank" href="https://generacion.iexe.edu.mx/" class="conocelos">¡Cónocelos!</a>
                     </div>
 
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -270,7 +293,7 @@
                 </div>
                 <div class="col-md-7">
                     <div id="mensaje-colombia" class="mensaje-pais">
-                        <p class="estudiante-testimonio">“Estudiar en iexe universidad, ha sido una experiencia bastante importante para mi formación profesional y academica, ya que la metodología de enseñanza es muy practica.”</p>
+                        <p class="estudiante-testimonio">“Estudiar en IEXE universidad, ha sido una experiencia bastante importante para mi formación profesional y academica, ya que la metodología de enseñanza es muy practica.”</p>
                         <div class="estudiante-autor">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Fenry_Alonso_Colombia.webp" alt="Fenry Alonso" class="autor-foto">
                             <span class="nombre-estudiante">Fenry Alonso Beltrán<br></span>

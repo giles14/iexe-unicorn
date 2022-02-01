@@ -49,7 +49,7 @@
                      ?>
                 </div>
                 <div class="col-md-3 order-4">
-                    <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a target="_blank" class="telefono-whatsapp" href="https://bit.ly/3uOB6Hv">55-6814-0690</a></p>
+                    <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a target="_blank" class="telefono-whatsapp" href="https://bit.ly/iexeWAN"> 222-460-3589</a></p>
                     <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
                     <!-- <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a> -->
                     <div class="iconos-redes-sociales">
@@ -90,13 +90,14 @@
         </div>
 
     </section>
-    <?php  if(is_page_template('academicos.php')){ ?>
-                            <a href="https://bit.ly/iexebf2021" target="_blank">
+    <?php  if(is_page_template('academicos.php') || is_page_template('admisiones.php') || is_page_template( 'page-blog.php' )){ ?>
+                            
 						<div style="color: #FFF;" class="inscribete-ya">
-                            <h3 style="color: #FFF;">¡Una beca que se ajusta a tus necesidades!</h3>
-                            <!-- <p class="postulate">Del 18 al 30 de junio, postulate ahora</p> -->
-                                <a class="btn btn-primario" href="https://bit.ly/iexebf2021" target="_blank">¡Solicítala ahora!</a>
-                            <p class="condiciones">*Válido únicamente para inscritos de nuevo ingreso en licenciaturas, maestrías, másteres o doctorado. Se aplican restricciones, contáctanos para más información.</p>
+                            <div class="cerrar-inscribete-ya"><a>Cerrar [X]</a></div>
+                            <a href="https://bit.ly/iexeANU" target="_blank">
+                            <h3 style="color: #FFF;">Inicia el 2022 preparándote ¡Asegura tu BECA!</h3>
+                            <!-- <p class="postulate">Del 18 al 30 de junio, postulate ahora</p> -->¡Da click ahora!</a>
+                            <p class="condiciones">*Válido únicamente para inscritos de nuevo ingreso en licenciaturas, maestrías, másteres o doctorado. <br> *Se aplican restricciones, contáctanos para más información.</p>
                         </div>
                         </a>
 
@@ -116,6 +117,11 @@
                                 }
                             });
                         });
+                        jQuery(document).ready(function(){
+                            jQuery(".cerrar-inscribete-ya a").click(function(){
+                                jQuery(".inscribete-ya").hide();
+                            });
+                        });
                     
                     </script>
     <div id="mySidenav" class="sidenav animate__bounceInRight"> 
@@ -132,7 +138,7 @@
                     <ul class="programas-academicos">
                         <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
                         <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
-                        <li><a href="/oferta-educativa/#doctorado">Doctorado</a></li>
+                        <li><a href="/oferta-educativa/#doctorado">Doctorados</a></li>
                         <li><a href="/oferta-educativa/#masters">Masters</a></li>
                         <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
                         <li><a href="/capacitaciones/">Capacitaciones</a></li>
@@ -337,6 +343,7 @@ function enableScroll() {
 });
 </script>
 <script>
+// $(document).ready(function(){
     var input = document.querySelector("#telefono");
     var iti = window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
@@ -344,7 +351,7 @@ function enableScroll() {
       separateDialCode: true,
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
-    
+// });
   </script>
   <script>
       $(document).ready(function(){

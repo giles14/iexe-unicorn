@@ -1,18 +1,30 @@
-<?php /* Template Name: Landing SSP */ ?>
+<?php /* Template Name: Landing modelo 1 */ ?>
+<?php 
+$image_principal = get_field('imagen_de_programa');
+$file = get_field('informacion_descargable');
+setlocale(LC_ALL,"es_ES");
+//echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month"));
+?>
 <?php get_template_part( 'template-parts/header-landing'); ?>
+<style>
+    body {
+    background: url(https://iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/landing-ssp.webp) 0% 0% / contain no-repeat rgb(239, 239, 239);
+    background-repeat: no-repeat;
+    }
+</style>
 <section id="informacion-general">
 <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-12">
-                <span class="descripcion">Licenciatura en línea</span>
-                <h1 class="nombre-programa">Seguridad Pública</h1>
-                <h2 class="frase-heroica">Ve más alla de tus límites y<br> alcanza tus metas con IEXE</h2>
+                <span class="descripcion"><?php the_field('tipo_de_programa'); ?></span>
+                <h1 class="nombre-programa"><?php the_title();  ?></h1>
+                <h2 class="frase-heroica"><?php the_field('frase_heroica'); ?></h2>
                 <p class="descripcipn-programa">
-                    Programa acdémico que te da la preparación para la <strong>prevención, investigación y persecución</strong> de la <strong>delincuencia</strong> en términos de las leyes vigentes. Así mismo, te brinda los conocimientos sobre la función del <strong>Estado</strong> y las instituciones encargadas de la <strong>seguridad pública,</strong> con el fin de conservar el orden y la paz social, así como defender las garantías y <strong>derechos humanos</strong> de la ciudadanía.
+                    <?php the_field('descripcion_de_programa'); ?>
                 </p>
                 <div class="row">
                     <div class="col-lg-4 col-sm-12">
-                        <a href="https://bit.ly/iexeLSSP" target="_blank"><div class="bloque-descarga">
+                        <a href="<?php echo ($file) ?  $file['url']  : "#"?>" target="_blank"><div class="bloque-descarga">
                             <p>Descarga el folleto <br>del programa</p><img class="icono-descargar" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_descargar_IEXE.webp" alt="">
                         </div></a>
                     </div>
@@ -23,7 +35,9 @@
                 
             </div>
             <div class="col-md-5 d-none d-lg-block">
-                <img style="width: 550px" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-landing-ssp-2.webp" alt="" class="escudo-licenciatura">
+                <?php if( !empty( $image_principal ) ): ?>
+                    <img src="<?php echo esc_url($image_principal['url']); ?>" alt="<?php echo esc_attr($image_principal['alt']); ?>" style="width: 550px" class="escudo-licenciatura"/>
+                <?php endif; ?>
 
             </div>
         </div>
@@ -32,14 +46,14 @@
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_horario_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Duración del programa</h3>
-                    <span class="informacion-secundaria">9 Cuatrimestres</span>
+                    <span class="informacion-secundaria"><?php the_field('duracion'); ?></span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_Fecha_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Fechas de inicio</h3>
-                    <span class="informacion-secundaria">1 de Noviembre</span>
+                    <span class="informacion-secundaria">3 de Enero<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
@@ -96,17 +110,8 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="podras">Podrás trabajar en:</h2>
-                <p class="descripcipn-programa negro">
-                    Puedes desempeñarte en alguna de las instituciones que forman parte del  <strong>Sistema Nacional de Seguridad Pública</strong>, en los órdenes <strong>Federal, Estatal y Municipal</strong>, tales como: la <strong>Secretaría de Gobernación</strong>, la <strong>Guardia Nacional</strong>, la <strong>Fiscalía General de la República</strong>, las fiscalías generales de los estados, las subsecretarías de investigación policial, las direcciones municipales de seguridad y el sistema penitenciario. Además, puedes compartir tu talento y conocimientos en instancias privadas de seguridad y en el desarrollo de <strong>proyectos de consultoría.</strong>    
-                </p>
-                <!-- <ul class="podras-trabajar-en">
-                    <li><strong> Instituciones gubernamentales</strong> encargadas de la prevención, procuración y reinserción social.</li>
-                    <li><strong>Empresas de seguridad privada</strong> como asesores(as) o estrategas.</li>
-                    <li><strong>Como consultores(as) especializados</strong> en temas de seguridad pública.</li>
-                    <li>Como <strong>docentes e investigadores</strong> en temas de seguridad pública, formación y desarrollo policial.</li>
-                    <li> <strong>Instituciones de seguridad pública</strong>, realizando diagnósticos y diseñando programas de prevención delictiva, de conductas antisociales y para la seguridad ciudadana.</li>
-                    <li><strong>Fiscalías estatales y federales</strong>, en áreas periciales, de formación y capacitación e investigación profesional.</li>
-                </ul> -->
+                    <?php the_field('podras_trabajar') ?>
+                </ul>
             </div>
         </div>
 
