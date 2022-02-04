@@ -15,9 +15,9 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">AVISO</span>
-                    <div class="fecha">3 de Enero del 2022</div>
+                    <div class="fecha">2 de Febrero del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>¡Bienvenida Generación Enero 2022!</h3>
+                        <h3>¡Bienvenida Generación Febrero 2022!</h3>
                     </div>
                     <div class="descripcion-aviso">
                         <p>Esperamos que tengan una excelente experiencia y aprovechen al máximo todas las herramientas que les brindamos por medio de la plataforma.</p>
@@ -30,7 +30,7 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">3 de Enero del 2022</div>
+                    <div class="fecha">3 de Febrero del 2022</div>
                     <div class="titulo-aviso">
                         <h3>Conferencias de nuevo ingreso</h3>
                     </div>
