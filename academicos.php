@@ -7,8 +7,9 @@ Template Name: Programas academicos
 $unicorn_contador = 1;
 $unicorn_grupo = 1;
 $materiasMax = MAXIMAS_MATERIAS;
-$imagenAsesor = get_field('imagen_coordinador');
-$imagenIdentificador = get_field('imagen_identificador');
+$imagenAsesor = get_field('imagen_donde_puedes_trabajar');
+$imagenIdentificadorHead = get_field('imagen_coordinador');
+$imagenIdentificador = get_field('imagen_donde_puedes_trabajar');
 $estiloPrograma = get_field('estilo_de_programa'); 
 $elTipo = get_field('tipo');
 $elTipo = explode(" " , $elTipo);
@@ -93,8 +94,8 @@ $elTipo = explode(" " , $elTipo);
                           <div class="col-md-4 offset-md-1 d-none d-sm-block">
                               <!--  -->
                               <?php
-                              if ( !empty( $imagenAsesor ) ): ?>
-                                <img class="asesor" src="<?php echo esc_url($imagenAsesor['url']); ?>" alt="<?php echo esc_attr($imagenAsesor['alt']); ?>" />
+                              if ( !empty( $imagenIdentificadorHead ) ): ?>
+                                <img class="identificador-nuevo" src="<?php echo esc_url($imagenIdentificadorHead['url']); ?>" alt="<?php echo esc_attr($imagenIdentificadorHead['alt']); ?>" />
                             <?php endif; ?>
                           </div>
           
