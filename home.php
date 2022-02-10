@@ -321,10 +321,10 @@
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="autor d-none d-sm-block">
-                            <img loading="lazy" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/luis.webp" alt="" class="autor-foto">
+                            <img loading="lazy" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/alexandro.webp" alt="" class="autor-foto">
                             <div class="meta-informacion">
-                                <span class="nombre">IEXE STAFF</span>
-                                <span class="redes">Autor de Nota</span>
+                                <span class="nombre">Alexandro Giles</span>
+                                <span class="redes">Experto TI</span>
                             </div>
                             
                         </div>

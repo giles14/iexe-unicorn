@@ -567,6 +567,8 @@ section#blog .entrada p {
 img.autor-foto {
     float: left;
     margin-right: 8px;
+    border-radius: 80px;
+    width: 65px;
 }
 span.nombre {
     float: left;

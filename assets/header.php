@@ -23,19 +23,6 @@
     <link rel="mask-icon" href="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <?php
-    if (is_product_category()){
-      ?>
-      <meta property="og:url"                content="<?php echo home_url($_SERVER['REQUEST_URI']) ?>" />
-      <meta property="og:type"               content="book" />
-      <meta property="og:title"              content="Tienda Editorial IEXE" />
-      <meta property="og:description"        content="Visita nuestra sección de libros gratuitos" />
-      <meta property="og:image"              content="https://iexe.edu.mx/wp-content/uploads/2022/02/bg_IEXE_politicas.jpg" />
-
-      <?php
-    }
-     ?>
-
 
     <?php wp_head(); ?>
 </head>
