@@ -81,6 +81,7 @@ function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-comunidad', get_template_directory_uri() . '/assets/css/comunidad.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-landing-ssp', get_template_directory_uri() . '/assets/css/landing-ssp.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-landing-ssp-2', get_template_directory_uri() . '/assets/css/landing-ssp-2.css', 'iexe-unicorn-main', '1.0', 'all' );
+    wp_register_style( 'iexe-unicorn-landing-match', get_template_directory_uri() . '/assets/css/landing-match.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_script( 'iexe-unicorn-programas', get_template_directory_uri() . '/assets/js/academico.js', 'jquery', '1.02', true );
     wp_register_script( 'iexe-unicorn-multipasos', get_template_directory_uri() . '/assets/js/form-multipasos.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
@@ -154,6 +155,10 @@ function agregar_estilos_tema(){
     }
     if(is_page_template('page-landing-ssp-2.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp-2');
+        wp_enqueue_script('iexe-unicorn-landing'); 
+    }
+    if(is_page_template('page-landing-match.php')){
+        wp_enqueue_style( 'iexe-unicorn-landing-match');
         wp_enqueue_script('iexe-unicorn-landing'); 
     }
     wp_enqueue_style('intlTelinput-style');

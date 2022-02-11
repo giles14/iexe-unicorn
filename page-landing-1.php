@@ -72,7 +72,7 @@ switch(get_field('tipo_de_programa')) {
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_Fecha_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Fechas de inicio</h3>
-                    <span class="informacion-secundaria">1 de Febrero<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
+                    <span class="informacion-secundaria">01 de Marzo<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
@@ -179,7 +179,7 @@ switch(get_field('tipo_de_programa')) {
     </div>
     </div>  
 </section>
-<?php if(is_page(1898)){
+<?php if(is_page(18989)){
 ?>
 <section>
     <div class="container">
