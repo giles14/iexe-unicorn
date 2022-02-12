@@ -25,11 +25,11 @@
                                       <form id="interes">
                                           <div class="form-group">
                                             <label for="nombre">Nombre completo*</label>
-                                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
                                           </div>
                                           <div class="form-group">
                                               <label for="correo">Correo electrónico*</label>
-                                              <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                              <input id="correo" name="email" type="email" class="form-control" placeholder="Ingresa aquí tu correo">
                                           </div>
                                           <div class="form-group">
                                               <label for="telefono">Teléfono o celular*</label>
@@ -37,7 +37,7 @@
                                           </div>
                                           <div class="form-group">
                                               <label for="maestria-tipo">Elige tu maestría</label>
-                                                <select id="maestria-tipo" name="maestria-tipo">
+                                                <select id="maestria-tipo" name="programa">
                                                     <option value="MSPPP">Seguridad Pública y Políticas Públicas</option>
                                                     <option value="MAPP">Administración y Políticas Públicas</option>
                                                     <option value="MEPP">Evaluación de Políticas Públicas</option>
