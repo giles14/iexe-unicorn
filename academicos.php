@@ -28,7 +28,31 @@ $elTipo = explode(" " , $elTipo);
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
-                                <?php the_field('descripcion_del_programa'); ?>
+                                <?php // the_field('descripcion_del_programa'); ?>
+                                <div class="text-rotator">
+                                    <div class="slider">
+                                        <div class="mask">
+                                        <ul>
+                                            <li class="anim1">
+                                            <div class="quote">Con la Maestría en Ciencia de Datos Aplicada dominarás conocimientos y competencias en programación, estadística aplicada y matemáticas para desarrollar propuestas y estrategias basadas en Big Data. Conocerás metodologías de síntesis y herramientas tecnológicas que te permitirán obtener, interpretar y procesar datos para convertirlos en recursos estratégicos para la toma de decisiones al generar propuestas organizacionales y empresariales de valor, potenciando su competitividad y reduciendo riesgos financieros</div>
+                                            <!-- <div class="source">- Lorem ipsum</div> -->
+                                            </li>
+                                            <li class="anim2">
+                                            <div class="quote">Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.</div>
+                                            <!-- <div class="source">- Lorem ipsum</div> -->
+                                            </li>
+                                            <li class="anim3">
+                                            <div class="quote">Aprende metodologías y herramientas tecnológicas para procesar datos.</div>
+                                            <!-- <div class="source">- Lorem ipsum</div> -->
+                                            </li>
+                                            <li class="anim4">
+                                            <div class="quote">Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos.</div>
+                                            <!-- <div class="source">- Lorem ipsum</div> -->
+                                            </li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </div>
                               </div>
                               <?php if($estiloPrograma == "Programas Tradicionales") { ?>
                               <p id="RVOE" class="revoe">
@@ -181,6 +205,401 @@ $elTipo = explode(" " , $elTipo);
         </div>
     </div>
 </section>
+<div class="container">
+    <div class="row">
+    
+    </div>
+</div>
+<style>
+.text-rotator {
+  width: 100%;
+  height: 360px;
+}
+.slider {
+  height: 320px;
+  width: 680px;
+  margin: 40px auto 0;
+  overflow: visible;
+  position: relative;
+}
+.mask {
+  overflow: hidden;
+  height: 320px;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider li {
+  width: 680px;
+  height: 320px;
+  position: absolute;
+  top: -325px;
+  list-style: none;
+}
+
+.slider .quote {
+    color: var(--primario-azul);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0px;
+    margin-top: 0px;
+    line-height: 22px;
+}
+
+.slider .source {
+  font-size: 20px;
+  text-align: right;
+}
+
+.slider li.anim1 {
+  -moz-animation: cycle 30s linear infinite;
+  -webkit-animation: cycle 30s linear infinite;
+  animation: cycle 30s linear infinite;
+}
+
+.slider li.anim2 {
+  -moz-animation: cycle2 30s linear infinite;
+  -webkit-animation: cycle2 30s linear infinite;
+  animation: cycle2 30s linear infinite;
+}
+
+.slider li.anim3 {
+  -moz-animation: cycle3 30s linear infinite;
+  -webkit-animation: cycle3 30s linear infinite;
+  animation: cycle3 30s linear infinite;
+}
+
+.slider li.anim4 {
+  -moz-animation: cycle4 30s linear infinite;
+  -webkit-animation: cycle4 30s linear infinite;
+  animation: cycle4 30s linear infinite;
+}
+
+.slider:hover li {
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@-moz-keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -325px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes cycle2 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  16% {
+    top: -325px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-moz-keyframes cycle3 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  36% {
+    top: -325px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+  }
+  60% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-moz-keyframes cycle4 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  56% {
+    top: -325px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -325px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cycle2 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  16% {
+    top: -325px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes cycle3 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  36% {
+    top: -325px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  60% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes cycle4 {
+  0% {
+    top: -325px;
+    opacity: 0;
+  }
+  56% {
+    top: -325px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 325px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -325px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+
+</style>
+
 <!-- <section id="segunda-nav">
     <div class="container">
         <div class="row">
