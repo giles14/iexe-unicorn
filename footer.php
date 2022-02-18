@@ -53,7 +53,7 @@
                     <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
                     <!-- <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a> -->
                     <div class="iconos-redes-sociales">
-                        <a target="_blank" href="https://www.facebook.com/IEXE.Universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a target="_blank" href="https://twitter.com/IEXE_Uni"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a target="_blank" href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a target="_blank" href="https://www.linkedin.com/school/iexeuniversidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a target="_blank" href="https://www.instagram.com/iexe_universidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a><a target="_blank" href="https://open.spotify.com/show/0UL42ohKAgBn2Sdse3VV5J"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/spotify.svg" alt="" class="redes"></a><a target="_blank" href="https://vm.tiktok.com/ZMRoQFFQC/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/tiktok.svg" alt="" class="redes"></a>
+                        <a target="_blank" href="https://www.facebook.com/IEXE.Universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a target="_blank" href="https://twitter.com/IEXE_Uni"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a target="_blank" href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a target="_blank" href="https://www.linkedin.com/school/iexeuniversidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a target="_blank" href="https://www.instagram.com/comunidad_online_/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a><a target="_blank" href="https://open.spotify.com/show/0UL42ohKAgBn2Sdse3VV5J"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/spotify.svg" alt="" class="redes"></a><a target="_blank" href="https://vm.tiktok.com/ZMRoQFFQC/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/tiktok.svg" alt="" class="redes"></a>
                     </div>
                     <p class="direccion">Blvd. Esteban de Antuñano 2702,<br>C.P. 72160 Cd. de Puebla, México</p>
                 </div>
@@ -93,12 +93,12 @@
     <?php if(is_page_template('academicos.php') || is_page_template('admisiones.php')){ 
         ?>
                             
-						<div style="color: #FFF;" class="inscribete-ya">
+						<div style="color: #FBB4F8;" class="inscribete-ya">
                             <div class="cerrar-inscribete-ya"><a>Cerrar [X]</a></div>
                             <a href="https://bit.ly/iexeANU" target="_blank">
                             <h3 style="color: #FFF;">¡Da el sí a tu futuro profesional y obtén una beca!</h3>
                             <!-- <p class="postulate">Del 18 al 30 de junio, postulate ahora</p> ¡Da click ahora!</a>-->
-                            <button class="btn btn-primario mt-3 rosa"> ¡HAZ MATCH! </button>
+                            <button class="btn btn-primario mb-2 mt-2 rosa"> ¡HAZ MATCH! </button>
                             <p class="condiciones">*Válido únicamente del 11 al 17 de Febrero de 2022. Aplica para inscritos de nuevo ingreso en licenciaturas, maestrías o másteres. <br> *Se aplican restricciones, contáctanos para más información.</p>
                         </div>
                         </a>

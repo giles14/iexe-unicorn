@@ -9,15 +9,31 @@
 }
 h2.materia {
   min-height: 45px;
+  line-height: 25px;
+}
+span.badge.rounded-pill.bg-success {
+  color: #fff;
+  font-weight: 600;
+  display: block;
+  width: 100px;
+  border-radius: 0px!important;
+  white-space: break-spaces;
+}
+span.badge.rounded-pill.bg-success.sec {
+  width: 100%;
+  background: #FFF!important;
+  color: var(--primario--azul-obscuro);
+  margin-bottom: 10px;
 }
 a.button-primary {
   line-height: 32px;
 }
 .bloque-materia {
-  min-height: 318px;
+  /* min-height: 318px; */
 }
 .descripcion-materia {
-  min-height: 145px;
+  /* min-height: 145px; */
+  display: none;
 }
 select#seleccionperiodo option{
   text-transform: capitalize;

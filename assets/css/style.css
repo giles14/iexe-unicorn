@@ -754,6 +754,7 @@ section#interes{
 }
 section#info-primaria{
     background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(237,237,237,1) 20%);
+    z-index: 20;
 }
 section#oferta-educativa{
     background: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 39%, rgba(255,255,255,1) 46%);
@@ -2236,6 +2237,9 @@ section#principal {
     background: url(../img/slider-licenciaturas.webp);
     background-size: cover;
 }
+#slidePrincipal {
+    z-index: 5;
+}
 section#todos-los-programas-academicos {
     margin: unset;
 }
@@ -2982,15 +2986,15 @@ img.img-fluid.internacional {
     width: 100%;
     z-index: 100;
     bottom: 0;
-    background-color: #a01a21;
+    background-color: #001e42;
     color: #FFF;
     text-align: center;
     display: none;
-    height: 100px;
+    height: 110px;
     margin-top: -20px;
 }
 .inscribete-ya a {
-    color: yellow;
+    color: #FFF;
     font-weight: 800;
 }
 .inscribete-ya h3 {
@@ -3010,9 +3014,18 @@ img.img-fluid.internacional {
     margin: 7px 0px;
 }
 p.condiciones {
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     padding-right: 16px;
+    font-weight: 300;
+}
+button.btn.btn-primario.mt-2.rosa {
+    background: #FBB4F8;
+    padding: 5px 50px;
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--primario--azul-obscuro);
+    font-weight: 900;
 }
 
 /*

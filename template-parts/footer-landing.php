@@ -13,8 +13,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="<?php echo is_page_template('page-landing-match.php') ? '#' : get_home_url() ?>"><img class="logo-abajo mx-auto img-fluid 	d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.svg"  alt=""></a>
-                    <a href="<?php echo is_page_template('page-landing-match.php') ? '#' : get_home_url() ?>"><img style="width:60%" class="logo-abajo mx-auto  d-none d-lg-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical.svg" alt=""></a>
+                    <a href="#"><img class="logo-abajo mx-auto img-fluid 	d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.svg"  alt=""></a>
+                    <a href="#"><img style="width:60%" class="logo-abajo mx-auto  d-none d-lg-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical.svg" alt=""></a>
                     <!-- <span class="redes-sociales">SÍGUENOS EN</span> -->
                     
                 </div>
