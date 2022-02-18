@@ -826,8 +826,8 @@ section#editorial::after{
     visibility: hidden;
 } */
 #blog section#banner {
-    background: #EEEEEE;
-    margin-top: -5px;
+    background: #FFF;
+    margin-top: 25px;
 }
 section#blog a:hover {
     text-decoration: none;
@@ -3600,4 +3600,8 @@ input#mi-busqueda::placeholder {
         display: flex;
         flex-basis: auto;
     }
+}
+section#banner-youtube {
+    background: #EEEEEE;
+    margin-top: 0px;
 }

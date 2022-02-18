@@ -28,31 +28,38 @@ $elTipo = explode(" " , $elTipo);
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
                               <a class="button-primary"><?php the_title() ?></a>
                               <div class="descripcion-programa">
-                                <?php // the_field('descripcion_del_programa'); ?>
-                                <div class="text-rotator">
-                                    <div class="slider">
-                                        <div class="mask">
-                                        <ul>
-                                            <li class="anim1">
-                                            <div class="quote">Con la Maestría en Ciencia de Datos Aplicada dominarás conocimientos y competencias en programación, estadística aplicada y matemáticas para desarrollar propuestas y estrategias basadas en Big Data. Conocerás metodologías de síntesis y herramientas tecnológicas que te permitirán obtener, interpretar y procesar datos para convertirlos en recursos estratégicos para la toma de decisiones al generar propuestas organizacionales y empresariales de valor, potenciando su competitividad y reduciendo riesgos financieros</div>
-                                            <!-- <div class="source">- Lorem ipsum</div> -->
-                                            </li>
-                                            <li class="anim2">
-                                            <div class="quote">Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.</div>
-                                            <!-- <div class="source">- Lorem ipsum</div> -->
-                                            </li>
-                                            <li class="anim3">
-                                            <div class="quote">Aprende metodologías y herramientas tecnológicas para procesar datos.</div>
-                                            <!-- <div class="source">- Lorem ipsum</div> -->
-                                            </li>
-                                            <li class="anim4">
-                                            <div class="quote">Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos.</div>
-                                            <!-- <div class="source">- Lorem ipsum</div> -->
-                                            </li>
-                                        </ul>
+                                  <?php if(is_page(1310)){ ?>
+                                    <div class="text-rotator">
+                                        <div class="slider">
+                                            <div class="mask">
+                                            <ul>
+                                                <li class="anim1">
+                                                <div class="quote">Con la Maestría en Ciencia de Datos Aplicada dominarás conocimientos y competencias en programación, estadística aplicada y matemáticas para desarrollar propuestas y estrategias basadas en Big Data. Conocerás metodologías de síntesis y herramientas tecnológicas que te permitirán obtener, interpretar y procesar datos para convertirlos en recursos estratégicos para la toma de decisiones al generar propuestas organizacionales y empresariales de valor, potenciando su competitividad y reduciendo riesgos financieros</div>
+                                                <!-- <div class="source">- Lorem ipsum</div> -->
+                                                </li>
+                                                <li class="anim2">
+                                                <div class="quote">Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.</div>
+                                                <!-- <div class="source">- Lorem ipsum</div> -->
+                                                </li>
+                                                <li class="anim3">
+                                                <div class="quote">Aprende metodologías y herramientas tecnológicas para procesar datos.</div>
+                                                <!-- <div class="source">- Lorem ipsum</div> -->
+                                                </li>
+                                                <li class="anim4">
+                                                <div class="quote">Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos.</div>
+                                                <!-- <div class="source">- Lorem ipsum</div> -->
+                                                </li>
+                                            </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                  <?php } else {
+                                      //the_field('descripcion_del_programa');
+                                      ?>
+                                      <?php 
+                                  }
+                                      ?>
+                                
                               </div>
                               <?php if($estiloPrograma == "Programas Tradicionales") { ?>
                               <p id="RVOE" class="revoe">
@@ -205,12 +212,8 @@ $elTipo = explode(" " , $elTipo);
         </div>
     </div>
 </section>
-<div class="container">
-    <div class="row">
-    
-    </div>
-</div>
-<style>
+<?php if( is_page(1310) ){ ?>
+    <style>
 .text-rotator {
   width: 100%;
   height: 360px;
@@ -596,9 +599,8 @@ $elTipo = explode(" " , $elTipo);
     z-index: -1;
   }
 }
-
-
 </style>
+<?php }?>
 
 <!-- <section id="segunda-nav">
     <div class="container">
