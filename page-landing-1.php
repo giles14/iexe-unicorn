@@ -112,7 +112,7 @@ switch(get_field('tipo_de_programa')) {
                     <div class="col-md-4">
                         <label for="correo">Correo electrónico*</label>
                         <input id="correo" name="correo" type="email" class="form-control" placeholder="Ingresa aquí tu correo">
-                          <input type="hidden" id="programa" name="programa" value="lsp">
+                          <input type="hidden" id="programa" name="programa" value="<?php the_field("clave_programa") ?>">
                     </div>
                 
                     <div class="col-md-4">

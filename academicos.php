@@ -54,8 +54,26 @@ $elTipo = explode(" " , $elTipo);
                                         </div>
                                     </div>
                                   <?php } else {
-                                      //the_field('descripcion_del_programa');
+                                      the_field('descripcion_del_programa');
                                       ?>
+                                      <br>
+                                      <p id="texto-imp"></p>
+                                      <!-- <write-and-delete timeout="500" speed="100">Aprende metodologías y herramientas tecnológicas para procesar datos.</write-and-delete> -->
+                                      <script src="https://www.cssscript.com/demo/mimic-human-typing/dist/lib.js"></script>
+                                        <script src="https://www.cssscript.com/demo/mimic-human-typing/dist/webcomponent.js" defer></script>
+                                        <script>
+                                            writeAndDelete(document.querySelector("#texto-imp"), [
+                                                `Con la Maestría en Ciencia de Datos Aplicada dominarás conocimientos y competencias en programación, estadística aplicada y matemáticas para desarrollar propuestas y estrategias basadas en Big Data. Conocerás metodologías de síntesis y herramientas tecnológicas que te permitirán obtener, interpretar y procesar datos para convertirlos en recursos estratégicos para la toma de decisiones al generar propuestas organizacionales y empresariales de valor, potenciando su competitividad y reduciendo riesgos financieros
+Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.`,
+                                                "Aprende metodologías y herramientas tecnológicas para procesar datos.",
+                                                "Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos."
+                                            ], {
+                                                timeout: 1000,
+                                                speed: 80,
+                                                loop: true,
+                                                errorQuota: 0.05,
+                                            });
+                                        </script>
                                       <?php 
                                   }
                                       ?>

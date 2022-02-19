@@ -22,15 +22,16 @@
                                       <form id="interes">
                                           <div class="form-group">
                                             <label for="nombre">Nombre completo*</label>
-                                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp">
+                                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" name="nombre" id="nombre" aria-describedby="emailHelp">
                                           </div>
                                           <div class="form-group">
                                               <label for="correo">Correo electrónico*</label>
-                                              <input type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                              <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                           </div>
                                           <div class="form-group">
                                               <label for="telefono">Teléfono o celular*</label>
                                               <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" name="telefono" id="telefono" aria-describedby="emailHelp">
+                                              <input type="hidden" id="programa" name="programa" value="MSPPP">
                                           </div>
                                           <div class="col-12 text-center">
                                               <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>
