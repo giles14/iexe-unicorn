@@ -181,6 +181,17 @@ $elTipo = explode(" " , $elTipo);
         </div>
     </div>
 </section>
+<section id="frases-diferenciadoras">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <p class="text-center">
+                                Con la Maestría en Ciencia de Datos Aplicada dominarás conocimientos y competencias en programación, estadística aplicada y matemáticas para desarrollar propuestas y estrategias basadas en Big Data. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+</section>
 <!-- <section id="segunda-nav">
     <div class="container">
         <div class="row">
