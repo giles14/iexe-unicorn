@@ -142,7 +142,7 @@
                                     En este podcast platicamos sobre el regreso a clases presenciales. Con la compañía de profesores que están viviendo la situación, nos preguntamos ¿Es buen momento para regresar a las aulas? y ¿Cuál será el impacto que esto tendrá en las futuras generaciones? ¡Acompáñanos!
                                     <div class="links-podcast">
                                         <a target="_blank" class="icono-spotify" href="https://open.spotify.com/episode/01V6ky4wGTMCeD3GBblAvJ"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-spotify.webp" alt=""> Ir a Spotify</a>
-                                        <a target="_blank" class="icono-youtube" href="https://www.youtube.com/watch?v=Vrml8ZtA4vw"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
+                                        <a target="_blank" class="icono-youtube" href="https://youtu.be/XlBG_rmaT7A"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
                                     </div>
                                 </p>
                             </div>
@@ -152,12 +152,12 @@
                                 <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/miniatura-podcast.png" alt="">
                             </div>
                             <div class="col-md-8">
-                                <h3 class="titulo-podcast">Episodio dos: <strong>Legalización del aborto (próximamente)</strong></h3>
+                                <h3 class="titulo-podcast">Episodio dos: <strong>Legalización del aborto</strong></h3>
                                 <p class="descripcion-podcast">
                                     En este episodio hablamos de un tema de alta relevancia nacional, basado en el poder de decisión de las mujeres. Te invitamos a estar al pendiente este 11 de Ocrubre.</p>
                                     <div class="links-podcast">
-                                        <a class="icono-spotify"  disabled><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-spotify.webp" alt=""> Ir a Spotify</a>
-                                        <a class="icono-youtube"  disabled><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
+                                        <a href="https://open.spotify.com/episode/1x1tsU61nywSRAA4N8dBA4" target="_blank" class="icono-spotify"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-spotify.webp" alt=""> Ir a Spotify</a>
+                                        <a target="blank" href="https://youtu.be/9Cl7KrF9obU" class="icono-youtube" ><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
                                     </div>
                                 
                             </div>
