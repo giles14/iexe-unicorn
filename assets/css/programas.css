@@ -14,6 +14,7 @@ img.comillas {
 }
 #frases-diferenciadoras .frase {
   border-bottom: 1px solid var(--primario-azul);
+  height: 145px;
 }
 .descripcion-programa ul {
     margin-top: 8px;
