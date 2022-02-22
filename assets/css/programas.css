@@ -1,5 +1,20 @@
 /* Estilos Programas academicos */
 
+span.rotate{
+  font-family: 'Hepta Slab', serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+img.comillas {
+  position: absolute;
+  left: 46%;
+  bottom: -18px;
+  background: #FFF;
+  padding: 0 2%;
+}
+#frases-diferenciadoras .frase {
+  border-bottom: 1px solid var(--primario-azul);
+}
 .descripcion-programa ul {
     margin-top: 8px;
 }

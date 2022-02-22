@@ -184,14 +184,17 @@ $elTipo = explode(" " , $elTipo);
 <section id="frases-diferenciadoras">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 offset-md-2">
+                        <div class="col-md-8 offset-md-2 frase">
                             <p class="text-center">
-                                Con la Maestría en Ciencia de Datos Aplicada dominarás conocimientos y competencias en programación, estadística aplicada y matemáticas para desarrollar propuestas y estrategias basadas en Big Data. 
+                                <span class="rotate">Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.| Aprende metodologías y herramientas tecnológicas para procesar grándes volúmenes de datos.| Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos.</span>
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comillas.png" alt="" class="comillas">
                             </p>
                         </div>
                     </div>
                 </div>
 </section>
+<script>
+</script>
 <!-- <section id="segunda-nav">
     <div class="container">
         <div class="row">
