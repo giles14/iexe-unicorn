@@ -193,6 +193,28 @@ $elTipo = explode(" " , $elTipo);
                     </div>
                 </div>
 </section>
+<section id="videos-testimoniales">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1 class="titulo-plan mt-3 mb-4">Video testimoniales</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="https://www.youtube.com/embed/XlBG_rmaT7A?autoplay=1" data-lity>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/clases-presenciales-screen.jpg" class="img-fluid" alt="">
+                    <h3 class="text-center">¿Que vas a aprender?</h3>
+
+                </a>   
+            </div>
+            <div class="col-md-6">
+                <a href="https://www.youtube.com/embed/9Cl7KrF9obU?autoplay=1" data-lity>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aborto-legal-screen.jpg" class="img-fluid" alt="">
+                    <h3 class="text-center">Te ofrecemos...</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 <script>
 </script>
 <!-- <section id="segunda-nav">

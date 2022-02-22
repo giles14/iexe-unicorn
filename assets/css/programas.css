@@ -19,6 +19,10 @@ img.comillas {
 .descripcion-programa ul {
     margin-top: 8px;
 }
+section#videos-testimoniales {
+  background: linear-gradient(180deg, rgba(220,232,248,1) 0%, rgba(255,255,255,1) 100%);
+  margin-bottom: 120px;
+}
 .descripcion-materia p {
   font-weight: 300;
   min-height: 145px;

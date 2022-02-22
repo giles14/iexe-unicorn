@@ -82,6 +82,7 @@ function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-landing-ssp', get_template_directory_uri() . '/assets/css/landing-ssp.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-landing-ssp-2', get_template_directory_uri() . '/assets/css/landing-ssp-2.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-landing-match', get_template_directory_uri() . '/assets/css/landing-match.css', 'iexe-unicorn-main', '1.0', 'all' );
+    wp_register_style( 'iexe-unicorn-lity-css', get_template_directory_uri() . '/assets/css/lity.min.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_script( 'iexe-unicorn-programas', get_template_directory_uri() . '/assets/js/academico.js', 'jquery', '1.02', true );
     wp_register_script( 'iexe-unicorn-multipasos', get_template_directory_uri() . '/assets/js/form-multipasos.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
@@ -97,6 +98,7 @@ function agregar_estilos_tema(){
     wp_register_script( 'iexe-unicorn-valores', get_template_directory_uri() . '/assets/js/valores.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-landing', get_template_directory_uri() . '/assets/js/landing.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-programas-rotator', get_template_directory_uri() . '/assets/js/jquery.simple-text-rotator.js', 'jquery', '1.0', true );
+    wp_register_script( 'iexe-unicorn-lity', get_template_directory_uri() . '/assets/js/lity.min.js', 'jquery', '1.0', true );
 
     wp_register_script( 'iexe-unicorn-admisiones', get_template_directory_uri() . '/assets/js/admisiones.js', 'jquery', '1.0', true );
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css', false, '4.6', 'all' );
@@ -119,6 +121,8 @@ function agregar_estilos_tema(){
         wp_enqueue_style('iexe-unicorn-programas-estilo');
         wp_enqueue_script( 'iexe-unicorn-programas');
         wp_enqueue_script( 'iexe-unicorn-programas-rotator');
+        wp_enqueue_style('iexe-unicorn-lity-css');
+        wp_enqueue_script( 'iexe-unicorn-lity');
     }
 
     if(is_page_template('becas.php')){
