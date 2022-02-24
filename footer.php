@@ -90,7 +90,8 @@
         </div>
 
     </section>
-    <?php if(is_page_template('academicos.php') || is_page_template('admisiones.php')){ 
+    <?php // if(is_page_template('academicos.php') || is_page_template('admisiones.php')){ 
+        if(false){
         ?>
                             
 						<div style="color: #FBB4F8;" class="inscribete-ya">
@@ -106,6 +107,14 @@
                         <?php
                         }
     ?>
+    <script>
+                jQuery(document).ready(function(){
+                jQuery('span.rotate').textrotator({
+                    animation: "dissolve",
+                    speed: 6000
+                });
+            });
+    </script>
                     <script>
                         jQuery(document).ready(function(){
                             jQuery(window).scroll(function(){
