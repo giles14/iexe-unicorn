@@ -220,8 +220,6 @@ $elTipo = explode(" " , $elTipo);
         </div>
     </div>
 </section>
-<script>
-</script>
 <!-- <section id="segunda-nav">
     <div class="container">
         <div class="row">
