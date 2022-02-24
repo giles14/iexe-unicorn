@@ -198,6 +198,30 @@ $elTipo = explode(" " , $elTipo);
                     </div>
                 </div>
 </section>
+<section id="videos-testimoniales">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1 class="titulo-plan mt-3 mb-4">Video testimoniales</h1></div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-5">
+                <a href="https://www.youtube.com/embed/XlBG_rmaT7A?autoplay=1" data-lity>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/clases-presenciales-screen.jpg" class="img-fluid" alt=""></a>
+                    <h3 class="text-center que-vas mt-3 mb-2">¿Qué es la ciencia de datos?</h3>
+                    <p class="texto-que-vas mt-3 mb-5 mb-sm-0">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+
+                   
+            </div>
+            <div class="col-md-5 offset-md-1">
+                <a href="https://www.youtube.com/embed/9Cl7KrF9obU?autoplay=1" data-lity>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aborto-legal-screen.jpg" class="img-fluid" alt=""></a>
+                    <h3 class="text-center que-vas mt-3 mb-2">Descubre el campo laboral</h3>
+                    <p class="texto-que-vas que-vas mt-3 mb-2">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
 <?php
 }
 ?>

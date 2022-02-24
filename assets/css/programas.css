@@ -14,7 +14,7 @@ img.comillas {
 }
 #frases-diferenciadoras .frase {
   border-bottom: 1px solid var(--primario-azul);
-  height: 145px;
+  min-height: 145px;
 }
 .texto-que-vas{
   font-size: 14px;
@@ -34,7 +34,7 @@ h3.que-ofrece-laboral{
 }
 section#videos-testimoniales {
   background: linear-gradient(180deg, rgba(220,232,248,1) 0%, rgba(255,255,255,1) 100%);
-  margin-bottom: 60px;
+  margin-bottom: 6git 0px;
 }
 .descripcion-materia p {
   font-weight: 300;
