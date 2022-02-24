@@ -181,6 +181,27 @@ $elTipo = explode(" " , $elTipo);
         </div>
     </div>
 </section>
+<?php if (is_page(2978)){
+?>
+<section id="frases-diferenciadoras">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="que-ofrece-laboral">Este programa te ofrece:</p>
+                        </div>
+                        <div class="col-md-8 offset-md-2 frase">
+                            <p class="text-center">
+                                <span class="rotate">1. Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.| 2. Aprende metodologías y herramientas tecnológicas para procesar grándes volúmenes de datos.| 3. Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos.</span>
+                                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comillas.png" alt="" class="comillas">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+</section>
+<?php
+}
+?>
+
 <!-- <section id="segunda-nav">
     <div class="container">
         <div class="row">
