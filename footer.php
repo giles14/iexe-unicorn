@@ -90,17 +90,10 @@
         </div>
 
     </section>
-    <?php if(is_page_template('academicos.php') || is_page_template('admisiones.php')){ 
-        ?>
-            <script>
-                jQuery(document).ready(function(){
-                jQuery('span.rotate').textrotator({
-                    animation: "dissolve",
-                    speed: 8000
-                });
-            });
-            </script>
-                            
+            
+    <?php // if(is_page_template('academicos.php') || is_page_template('admisiones.php')){ 
+        if(FALSE){ 
+        ?>                           
 						<div style="color: #FBB4F8;" class="inscribete-ya">
                             <div class="cerrar-inscribete-ya"><a>Cerrar [X]</a></div>
                             <a href="https://bit.ly/iexeANU" target="_blank">
@@ -134,6 +127,14 @@
                         });
                     
                     </script>
+                    <script>
+                jQuery(document).ready(function(){
+                jQuery('span.rotate').textrotator({
+                    animation: "dissolve",
+                    speed: 8000
+                });
+            });
+            </script>
     <div id="mySidenav" class="sidenav animate__bounceInRight"> 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Cerrar <span>&times;</span></a>
         <a class="d-none d-sm-block" href="<?php home_url(); ?>"><div class="logo">

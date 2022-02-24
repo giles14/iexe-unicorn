@@ -184,9 +184,12 @@ $elTipo = explode(" " , $elTipo);
 <section id="frases-diferenciadoras">
                 <div class="container">
                     <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="que-ofrece-laboral">Este programa te ofrece:</p>
+                        </div>
                         <div class="col-md-8 offset-md-2 frase">
                             <p class="text-center">
-                                <span class="rotate">Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.| Aprende metodologías y herramientas tecnológicas para procesar grándes volúmenes de datos.| Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos.</span>
+                                <span class="rotate">1. Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.| 2. Aprende metodologías y herramientas tecnológicas para procesar grándes volúmenes de datos.| 3. Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos.</span>
                                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comillas.png" alt="" class="comillas">
                             </p>
                         </div>
@@ -198,19 +201,21 @@ $elTipo = explode(" " , $elTipo);
         <div class="row">
             <div class="col-md-12"><h1 class="titulo-plan mt-3 mb-4">Video testimoniales</h1></div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row justify-content-md-center">
+            <div class="col-md-5">
                 <a href="https://www.youtube.com/embed/XlBG_rmaT7A?autoplay=1" data-lity>
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/clases-presenciales-screen.jpg" class="img-fluid" alt="">
-                    <h3 class="text-center">¿Que vas a aprender?</h3>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/clases-presenciales-screen.jpg" class="img-fluid" alt=""></a>
+                    <h3 class="text-center que-vas mt-3 mb-2">¿Qué es la ciencia de datos?</h3>
+                    <p class="texto-que-vas mt-3">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
 
-                </a>   
+                   
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5 offset-md-1">
                 <a href="https://www.youtube.com/embed/9Cl7KrF9obU?autoplay=1" data-lity>
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aborto-legal-screen.jpg" class="img-fluid" alt="">
-                    <h3 class="text-center">Te ofrecemos...</h3>
-                </a>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aborto-legal-screen.jpg" class="img-fluid" alt=""></a>
+                    <h3 class="text-center que-vas mt-3 mb-2">Descubre el campo laboral</h3>
+                    <p class="texto-que-vas que-vas mt-3 mb-2">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                
             </div>
         </div>
     </div>

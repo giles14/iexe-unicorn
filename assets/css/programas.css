@@ -16,12 +16,25 @@ img.comillas {
   border-bottom: 1px solid var(--primario-azul);
   height: 145px;
 }
+.texto-que-vas{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+h3.que-vas{
+    font-size: 24px;
+}
+h3.que-ofrece-laboral{
+  font-size: 24px;
+  font-weight: 300;
+}
+
 .descripcion-programa ul {
     margin-top: 8px;
 }
 section#videos-testimoniales {
   background: linear-gradient(180deg, rgba(220,232,248,1) 0%, rgba(255,255,255,1) 100%);
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 .descripcion-materia p {
   font-weight: 300;
