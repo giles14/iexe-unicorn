@@ -107,14 +107,15 @@
                         <?php
                         }
     ?>
-    <script>
+    <!-- <script>
                 jQuery(document).ready(function(){
                 jQuery('span.rotate').textrotator({
                     animation: "dissolve",
+                    separator: "|",
                     speed: 6000
                 });
             });
-    </script>
+    </script> -->
                     <script>
                         jQuery(document).ready(function(){
                             jQuery(window).scroll(function(){

@@ -39,11 +39,7 @@
         switch (settings.animation) { 
           case 'dissolve':
             el.animate({
-<<<<<<< HEAD
               textShadowBlur:0,
-=======
-              textShadowBlur:20,
->>>>>>> variacion-programas-ok
               opacity: 0
             }, 500 , function() {
               index = $.inArray(el.text(), array)

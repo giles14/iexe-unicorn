@@ -311,8 +311,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <a href="/producto/diseno-de-politicas-publicas/"><img class="img-fluid d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_bestseller-politicas-publicas.webp" alt=""></a>
-                <a href="/producto/diseno-de-politicas-publicas/"><img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner-comunidad-responsive.webp" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img class="img-fluid d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_bestseller-politicas-publicas.webp" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner-comunidad-responsive.webp" alt=""></a>
             </div>
         </div>
     </div>
