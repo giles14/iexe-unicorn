@@ -117,7 +117,7 @@ function agregar_estilos_tema(){
     
     wp_enqueue_style( 'iexe-unicorn-main' );
     wp_enqueue_style( 'iexe-unicorn-modals');
-    if(is_page_template('academicos.php')){
+    if(is_page_template('academicos.php') || is_page_template( 'academicos-v2.php' )){
         wp_enqueue_style('iexe-unicorn-programas-estilo');
         wp_enqueue_script( 'iexe-unicorn-programas');
         wp_enqueue_script( 'iexe-unicorn-programas-rotator');
@@ -298,7 +298,7 @@ function iexe_unicorn_body() {
 
 	}elseif(is_page()){
 
-        if(is_page_template('academicos.php')){
+        if(is_page_template('academicos.php') || is_page_template('academicos-v2.php')){
             echo 'id="programas"';
         }else{
             echo "id = '" . strtolower(get_the_title()) . "'";
