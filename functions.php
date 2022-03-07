@@ -123,6 +123,9 @@ function agregar_estilos_tema(){
         wp_enqueue_script( 'iexe-unicorn-programas-rotator');
         wp_enqueue_style('iexe-unicorn-lity-css');
         wp_enqueue_script( 'iexe-unicorn-lity');
+        wp_enqueue_script( 'slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', 'jquery', '1.8.1', true );
+        wp_enqueue_style( 'slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css', 'bootstrap', '1.8.1', 'all' );
+        wp_enqueue_style( 'slick-css-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css', 'bootstrap', 'all' );  
     }
 
     if(is_page_template('becas.php')){
