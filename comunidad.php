@@ -15,9 +15,9 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">AVISO</span>
-                    <div class="fecha">2 de Febrero del 2022</div>
+                    <div class="fecha">1 de Marzo del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>¡Bienvenida Generación Febrero 2022!</h3>
+                        <h3>¡Bienvenida Generación Marzo 2022!</h3>
                     </div>
                     <div class="descripcion-aviso">
                         <p>Esperamos que tengan una excelente experiencia y aprovechen al máximo todas las herramientas que les brindamos por medio de la plataforma.</p>
@@ -30,12 +30,12 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">3 de Febrero del 2022</div>
+                    <div class="fecha">19 de Marzo del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Conferencias de nuevo ingreso</h3>
+                        <h3>Conversatorio: "La Inteligencia Artificial en Latinoamérica"</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Asiste a las conferencias de bienvenida de cursos que tenemos programadas para tí. Consulta tus calendarios.</p>
+                        <p>Recuerda apartar el día para asistir a la conferencia exclusiva para los alumnos de Ciencias de Datos.</p>
                     </div>
                 </div>
             </div>
