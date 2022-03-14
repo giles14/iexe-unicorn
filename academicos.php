@@ -42,7 +42,7 @@ $elTipo = explode(" " , $elTipo);
                           <div class="col-md-4 offset-md-1 d-none d-sm-block">
                               <div class="formulario">
                                   <div class="cabecera">
-                                      <h1 class="interes"> <?php echo (is_page(1903)) ? "Pre-registrate" : "¿Estás interesado?"?></h1>
+                                      <h1 class="interes">¿Estás interesado?</h1>
                                   </div>
                                   <div class="cuerpo">
                                       <form id="interes" method="POST" action="">
@@ -171,7 +171,7 @@ $elTipo = explode(" " , $elTipo);
         <div class="row no-gutters">
             <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONOCE TU<br> <?php echo strtoupper($elTipo[0]) ?></div></div></a></div>
             <?php if($estiloPrograma == "Programas Tradicionales") { ?>
-                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">POR QUÉ ELEGIR ESTE PROGRAMA </div></div></a></div>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle"><?php echo (is_page('2978')) ? "QUÉ HACE DIFERENTE A ESTE PROGRAMA" : "POR QUÉ ELEGIR ESTE PROGRAMA" ?></div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">DÓNDE PUEDES TRABAJAR</div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">NUESTRO MÉTODO DE ENSEÑANZA</div></div></a></div>
             <?php }else{ ?>
@@ -181,15 +181,17 @@ $elTipo = explode(" " , $elTipo);
         </div>
     </div>
 </section>
+<?php if (is_page(2978)){
+?>
 <section id="frases-diferenciadoras">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3 class="que-ofrece-laboral">Este programa te ofrece:</p>
+                            <h3 class="que-ofrece-laboral">Con este programa:</p>
                         </div>
                         <div class="col-md-8 offset-md-2 frase">
                             <p class="text-center">
-                                <span class="rotate">1. Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.| 2. Aprende metodologías y herramientas tecnológicas para procesar grándes volúmenes de datos.| 3. Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos.</span>
+                                <span class="rotate">Domina competencias en programación, estadística aplicada, y matemáticas para desarrollar propuestas basadas en Big Data.| Aprende metodologías y herramientas tecnológicas para procesar grándes volúmenes de datos.| Toma decisiones organizacionales y empresariales para potenciar la competitividad y reducir los riesgos.</span>
                                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comillas.png" alt="" class="comillas">
                             </p>
                         </div>
@@ -198,28 +200,33 @@ $elTipo = explode(" " , $elTipo);
 </section>
 <section id="videos-testimoniales">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12"><h1 class="titulo-plan mt-3 mb-4">Video testimoniales</h1></div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-5"><h1 class="titulo-plan nuevo mt-5 mb-4">¿Por qué la Ciencia de Datos definirá el futuro?</h1></div>
+            <div class="col-md-5 offset-md-1"><h1 class="titulo-plan nuevo mt-5 mb-4">Conoce la experiencia de <br> nuestros alumnos</h1></div>
         </div>
         <div class="row justify-content-md-center">
             <div class="col-md-5">
-                <a href="https://www.youtube.com/embed/XlBG_rmaT7A?autoplay=1" data-lity>
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/clases-presenciales-screen.jpg" class="img-fluid" alt=""></a>
-                    <h3 class="text-center que-vas mt-3 mb-2">¿Qué es la ciencia de datos?</h3>
-                    <p class="texto-que-vas mt-3">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                <a href="https://www.youtube.com/embed/SH82FfSyv6c?autoplay=1" data-lity>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/preview_que_es.webp" class="img-fluid pre-video" alt=""></a>
+                    <!-- <h3 class="text-center que-vas mt-3 mb-2 mb-xs-4">La profesión con mayor crecimiento</h3> -->
+                    <p class="texto-que-vas mt-3 mb-5 mb-sm-0">Tania Pérez Peralta te comparte las razones por las cuales los expertos en ciencia de datos serán fundamentales para las empresas de todos los sectores.</p>
 
                    
             </div>
-            <div class="col-md-5 offset-md-1">
-                <a href="https://www.youtube.com/embed/9Cl7KrF9obU?autoplay=1" data-lity>
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aborto-legal-screen.jpg" class="img-fluid" alt=""></a>
-                    <h3 class="text-center que-vas mt-3 mb-2">Descubre el campo laboral</h3>
-                    <p class="texto-que-vas que-vas mt-3 mb-2">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+            <div class="col-md-5 offset-md-1 mt-5 mt-sm-0">
+                <a href="https://www.youtube.com/embed/nBYUnKi6vbU?autoplay=1" data-lity>
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/preview_laboral.webp" class="img-fluid pre-video" alt=""></a>
+                    <!-- <h3 class="text-center que-vas mt-3 mb-2">El futuro es la ciencia de datos</h3> -->
+                    <p class="texto-que-vas que-vas mt-3 mb-2">Alfonso Espinosa, alumno de la Maestría en Ciencia de Datos Aplicada, te comparte porqué decidió estudiar este programa en IEXE Universidad y como lo aplica en el mundo profesional.</p>
                 
             </div>
         </div>
     </div>
 </section>
+<?php
+}
+?>
+
 <!-- <section id="segunda-nav">
     <div class="container">
         <div class="row">
@@ -440,6 +447,93 @@ section#identificador {
 }
 </style>
 <?php } ?>
+<?php if( is_page(2978)){ ?>
+    <section id="tus-docentes">
+    <div class="container">
+        <div class="row">
+            <div class="col slick">
+                <div class="slide-1">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/slide_profesor.png" alt="" class="img-fluid">
+                    <a href="nosotros/#facultad" target="_blank" class="link-academia">Conoce más de la facultad</a>
+                </div>
+                <div class="slide-2">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/slide_profesor-2.png" alt="" class="img-fluid">
+                    <a href="nosotros/#facultad" target="_blank" class="link-academia">Conoce más de la facultad</a>
+                </div>
+                <div class="slide-3">
+                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/slide_profesor-3.png" alt="" class="img-fluid">
+                    <a href="nosotros/#facultad" target="_blank" class="link-academia">Conoce más de la facultad</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    </section>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('.col.slick').slick({
+                
+            });
+        });
+    </script>
+    <style>
+        .slide-1{
+            /* background: green; */
+            position: relative;
+        }
+        .slide-2{
+            /* background: green; */
+            position: relative;
+        }
+        .slide-3{
+            /* background: green; */
+            position: relative;
+        }
+        a.link-academia {
+            position: absolute;
+            z-index: 999;
+            color: blue;
+            right: 40px;
+            bottom: 20px;
+            font-weight: 700;
+            text-decoration: underline 1px;
+        }
+    .slick-prev:before, .slick-next:before {
+        font-family: 'slick';
+        font-size: 20px;
+        line-height: 0;
+        /* opacity: .75; */
+        color: var(--primario--azul-obscuro);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-next {
+        right: 40px;
+    }
+    .slick-prev {
+        left: unset;
+        display: none;
+    }
+    .contenido.d-table-cell.align-middle {
+        line-height: 19px;
+    }
+    h1.titulo-plan.nuevo{
+        font-size: 24px
+        line-height: 30px;
+    }
+    h1.titulo-plan.nuevo.mt-5.mb-4 {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .texto-que-vas {
+        font-size: 16px;
+    }
+    </style>
+
+<?php } ?>
+
 <section id="inscripcion">
     <div class="container">
         <div class="row">
@@ -482,8 +576,11 @@ section#identificador {
 <section id="banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 d-none d-sm-block">
                 <a href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_programas_academicos.webp" alt=""></a>
+            </div>
+            <div class="col-md-12 d-block d-sm-none">
+                <a href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_programas_academicos_r.webp" alt=""></a>
             </div>
         </div>
     </div>
