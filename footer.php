@@ -382,6 +382,10 @@ $('#interes button.btn.btn-primario').click(function(){
     var nombre = $("[name='nombre']").val();
     var correo = $("[name='email']").val();
     var origen = '<?php echo $elOrigen; ?>';
+    var idConvenio = '';
+    if($("[name='convenios']").val()){
+        var idConvenio =  $("[name='convenios'] option:selected").val()
+    }
     
     if($('input#hiddenPrograma').val()){
         var programa = $('input#hiddenPrograma').val();
@@ -395,7 +399,7 @@ $('#interes button.btn.btn-primario').click(function(){
     $.ajax({
     url: 'https://api.redisoft.dev/Leads/web',
     type: 'post',
-    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#interes" + "&charifaz=" + navigator.userAgent + "&adicional=origen:%20" + origen,
+    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#interes" + "&charifaz=" + navigator.userAgent + "&adicional=origen:%20" + origen + "&idConvenio=" + parseInt(idConvenio),
     success: function(data){
         console.log(data);
         if(data == true || data == "saved"){
