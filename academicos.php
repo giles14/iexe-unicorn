@@ -171,7 +171,7 @@ $elTipo = explode(" " , $elTipo);
         <div class="row no-gutters">
             <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONOCE TU<br> <?php echo strtoupper($elTipo[0]) ?></div></div></a></div>
             <?php if($estiloPrograma == "Programas Tradicionales") { ?>
-                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle"><?php echo (is_page('2978')) ? "QUÉ HACE DIFERENTE A ESTE PROGRAMA" : "POR QUÉ ELEGIR ESTE PROGRAMA" ?></div></div></a></div>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle"><?php echo (is_page('2978') || is_page('1310') ) ? "QUÉ HACE DIFERENTE A ESTE PROGRAMA" : "POR QUÉ ELEGIR ESTE PROGRAMA" ?></div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">DÓNDE PUEDES TRABAJAR</div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">NUESTRO MÉTODO DE ENSEÑANZA</div></div></a></div>
             <?php }else{ ?>
@@ -446,6 +446,14 @@ section#identificador {
   background: <?php the_field('bg_color'); ?>;
 }
 </style>
+<?php } ?>
+<?php if(is_page(1310)){ ?>
+    <style>
+        .contenido.d-table-cell.align-middle {
+        line-height: 19px;
+    }
+    </style>
+    
 <?php } ?>
 <?php if( is_page(2978)){ ?>
     <section id="tus-docentes">
