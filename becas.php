@@ -444,6 +444,102 @@ Template Name: Becas
   </div>
 </div>
 
+<!-- Modal BECA Convenios -->
+<div class="modal fade" id="modal-beca-convenios" tabindex="-1" aria-labelledby="modal-beca-convenios" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titulo" id="modal-beca-embajadoresLabel">Formulario Beca Convenios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
+                </div>
+            </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="email" id="correo" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input placeholder="Teléfono móvil*" id="telefono-convenios" type="tel" class="form-control" name="telefono" required>
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-5" id="lista-convenios">
+                        <select class="form-control" name="convenios" id="idConvenios">
+                            <?php
+                                $url = "https://iexe.app/api/";
+                                $json = file_get_contents($url);
+                                $json_data = json_decode($json, true);
+                                echo '<option value="0">-- Selecciona un convenio --</option>';
+                                foreach($json_data as $form){
+                                    echo '<option value="' . $form['idConvenio'] . '">' . $form['nombre'] . '</option>';
+                                }
+                            ?>
+                        </select>
+            </div>
+                <div class="form-group col-md-7">
+                        <select class="form-control" name="programa" required>
+                            <option name="programa" value="">- Programa académico de interés -</option>
+                            <optgroup label="Licenciaturas">              
+                                <option value="LCP">Ciencias Políticas y Administración Pública</option>
+                                <option value="LSP">Seguridad Pública</option>
+                                <option value="LAE">Administración de Empresas</option>
+                                <option value="LD">Derecho</option>
+                            </optgroup>          
+                            <optgroup label="Maestrías">  
+                                <option value="MFP">Finanzas Públicas</option>
+                                <option value="MAPP">Administración y Políticas Públicas</option>
+                                <option value="MEPP">Evaluación de Políticas Públicas</option>
+                                <option value="MSPP">Seguridad Pública y Políticas Públicas</option>
+                                <option value="MBAT">Administración de Negocios</option>
+                                <option value="MITIC">Tecnologías de la Información</option>
+                                <option value="MAIS">Administración de Instituciones de Salud</option>
+                                <option value="MCDA">Ciencia de Datos Aplicada</option>
+                                <option value="MIGE">Innovación y Gestión Educativa</option>
+                            </optgroup>
+                            <optgroup label="Diplomados">
+                                <option value="DADFP">Alta Dirección en la Función Pública</option>
+                                <option value="DADPP">Análisis y Diseño de Políticas Públicas</option>																
+                                <option value="MEPP">Evaluación de Políticas Públicas</option>
+                                <option value="DDFF">Disciplina Financiera y Fiscalización</option>
+                                <option value="DPRSED">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
+                                <option value="DHG">Diplomado en habilidades Gerenciales y Liderazgo</option>
+                            </optgroup>
+                            <optgroup label="Doctorado">
+                                <option value="DOC">Doctorado en Políticas Públicas</option>
+                            </optgroup>
+                            <optgroup label="Master">
+                                <option value="MMPOP">Marketing Político y Opinión Pública</option>
+                                <option value="MAG">Auditoría Gubernamental</option>
+                                <option value="MSPAJ">Sistema Penal Acusatorio y Juicio Oral </option>
+                                <option value="MGPM">Gestión Pública Municipal</option>
+                            </optgroup>
+                        </select>
+                </div>
+                <style>
+                    label.form-check-label{
+                        color: #FFF;
+                    }
+                </style>
+            </div>
+            <button type="button" class="btn btn-primario float-right">Enviar</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
 </div>
 <script>
@@ -459,6 +555,13 @@ Template Name: Becas
     window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
       preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+    var input = document.querySelector("#telefono-convenios");
+    window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','ec'],
       separateDialCode: true,
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
