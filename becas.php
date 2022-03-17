@@ -279,7 +279,6 @@ Template Name: Becas
     </div>
   </div>
 </div>
-
 <!-- Modal BECA SEP-->
 <div class="modal fade" id="modal-beca-SEP" tabindex="-1" aria-labelledby="modal-beca-SEPLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -461,7 +460,7 @@ Template Name: Becas
                     <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
                 </div>
             </div>
-        <form>
+        <form id="interes" method="POST" data-origen="formulario convenios" action="">
             <div class="form-row">
                 <div class="form-group col-md-5">
                 <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
@@ -532,7 +531,7 @@ Template Name: Becas
                     }
                 </style>
             </div>
-            <button type="button" class="btn btn-primario float-right">Enviar</button>
+            <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
         </form>
         </div>
       </div>
