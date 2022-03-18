@@ -99,6 +99,8 @@ function agregar_estilos_tema(){
     wp_register_script( 'iexe-unicorn-landing', get_template_directory_uri() . '/assets/js/landing.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-programas-rotator', get_template_directory_uri() . '/assets/js/jquery.simple-text-rotator.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-lity', get_template_directory_uri() . '/assets/js/lity.min.js', 'jquery', '1.0', true );
+    wp_register_script('sweet-alert', "//cdn.jsdelivr.net/npm/sweetalert2@11" ,"", '2.0',true);
+    wp_register_script( 'iexe-nuevos-formularios', get_template_directory_uri() . '/assets/js/formularios.js', 'sweet-alert', '1.0', true );
 
     wp_register_script( 'iexe-unicorn-admisiones', get_template_directory_uri() . '/assets/js/admisiones.js', 'jquery', '1.0', true );
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css', false, '4.6', 'all' );
@@ -108,6 +110,7 @@ function agregar_estilos_tema(){
     wp_enqueue_script( 'jquery-autocomplete');
     wp_enqueue_script( 'iexe-unicorn-valores');
     wp_enqueue_script( 'iexe-unicorn-init-busqueda');
+    wp_enqueue_script( 'sweet-alert');
     
     
     if(!is_page() || !is_page_template( 'academicos.php' ) ){
@@ -129,6 +132,7 @@ function agregar_estilos_tema(){
         wp_enqueue_script( 'iexe-unicorn-becas');
         wp_enqueue_style( 'iexe-unicorn-becas-estilo');
         wp_enqueue_script('iexe-unicorn-multipasos');
+        wp_enqueue_script('iexe-nuevos-formularios');
     }
     if(is_page_template('admisiones.php')){
         wp_enqueue_script( 'iexe-unicorn-admisiones');

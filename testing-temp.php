@@ -1,3 +1,20 @@
+<?php /* Template Name: Testing template*/ ?>
+<?php get_header( ); ?>
+<style>
+    body {
+    background: url(<?php echo esc_url($image_principal['url']);  ?>) 0% 0% / contain no-repeat rgb(239, 239, 239);
+    background-repeat: no-repeat;
+    }
+</style>
+<section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Prueba de Formularios</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 <section id="interes">
         <div class="container">
             <div class="row">
@@ -31,7 +48,8 @@
                             <label for="programa-interes">Selecciona un programa</label>
                             <?php get_template_part( 'template-parts/selectProgramas'); ?>
                         </div>
-                        <?php get_template_part( 'template-parts/formularios-convenios'); ?>
+                        
+                            <?php get_template_part( 'template-parts/formularios-convenios'); ?>
                         <div class="col-12 text-center">
                             <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>
                         </div>
@@ -41,3 +59,4 @@
             </div>
         </div>
     </section>
+    <?php get_footer( ); ?>

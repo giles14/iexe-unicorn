@@ -18,7 +18,7 @@ Template Name: Becas
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <div class="mask flex-center">
               <div class="container">
                   <div class="row">
@@ -49,7 +49,7 @@ Template Name: Becas
                 </div>
         
               </div>
-            </div>
+            </div> -->
         </div>
       </div>
 </section>
@@ -64,6 +64,25 @@ Template Name: Becas
 </section>
 <section id="becas-slider">
             <div class="sliding">
+            <!-- <div>
+                    <div class="container">
+                                <div class="row con-x">
+                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
+                                    <div class="col-md-3 d-none d-sm-block">
+                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_convenios.webp" alt="" class="beca">
+                                    </div>
+                                    <div class="col-8 col-md-5 offset-md-2">
+                                        <h1 class="titulo">Beca por Convenio IEXE</h1>
+                                        <p  class="descripcion-beca">Gracias al Convenio podrás acceder a becas de hasta <strong>el 80% de descuento</strong>, precios preferenciales en publicaciones de nuestra casa editorial, así como otros <strong>beneficios exclusivos</strong>, mismos que son <strong>extensivos a tus familiares.</strong></p>
+                                        <div class="botones-beca">
+                                            <a class="btn mt-3 btn-primario" href="#" data-toggle="modal" data-target="#modal-beca-convenios">¡Contáctanos!</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
+                                </div>
+                    </div>
+                </div> -->
                 <div>
                     <div class="container">
                                 <div class="row">
@@ -180,6 +199,7 @@ Template Name: Becas
                                 </div>
                     </div>
                 </div>
+                
             </div>  
     
 </section>
@@ -219,21 +239,21 @@ Template Name: Becas
                     <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
                 </div>
             </div>
-        <form>
+            <form id="beca-iexe" method="POST" data-origen="Formulario Beca IEXE" action="">
             <div class="form-row">
                 <div class="form-group col-md-6">
-                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombreIE" id="nombre" required>
+                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
                 </div>
                 <div class="form-group col-md-6">
-                <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="emailIE" id="correo" required>
+                <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="email" id="correo" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                <input placeholder="Teléfono móvil*" id="telefono-iexe" type="text" class="form-control" name="telefono" required>
+                <input placeholder="Teléfono móvil*" id="telefono-beca-iexe" type="text" class="form-control" name="telefono" required>
                 </div>
                 <div class="form-group col-md-6">
-                <select class="form-control" name="programaIE" required>
+                <select class="form-control" name="programa" required>
                     <option name="programa" value="">- Programa académico de interés -</option>
                     <optgroup label="Licenciaturas">              
                         <option value="LCP">Ciencias Políticas y Administración Pública</option>
@@ -272,14 +292,13 @@ Template Name: Becas
                 </select>
                 </div>
             </div>
-            <button type="button" class="btn btn-primario float-right">Enviar</button>
+            <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
         </form>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <!-- Modal BECA SEP-->
 <div class="modal fade" id="modal-beca-SEP" tabindex="-1" aria-labelledby="modal-beca-SEPLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -299,7 +318,7 @@ Template Name: Becas
             </div>
             <div class="row">
                 <div class="col">
-                        <form>
+                    <form id="forma-beca-SEP" method="POST" data-origen="formulario Beca SEP" action="">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                         <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
@@ -352,7 +371,7 @@ Template Name: Becas
                             </select>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primario float-right">Enviar</button>
+                    <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
                 </form>
                 </div>
             </div>
@@ -380,7 +399,7 @@ Template Name: Becas
                     <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
                 </div>
             </div>
-        <form>
+        <form id="forma-embajadores" method="POST" data-origen="formulario embajadores" action="">
             <div class="form-row">
                 <div class="form-group col-md-5">
                 <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
@@ -436,7 +455,103 @@ Template Name: Becas
                         </select>
                 </div>
             </div>
-            <button type="button" class="btn btn-primario float-right">Enviar</button>
+            <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal BECA Convenios -->
+<div class="modal fade" id="modal-beca-convenios" tabindex="-1" aria-labelledby="modal-beca-convenios" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title titulo" id="modal-beca-embajadoresLabel">Formulario Beca Convenios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
+                </div>
+            </div>
+        <form id="forma-convenio" method="POST" data-origen="formulario convenios" action="">
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="email" id="correo" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input placeholder="Teléfono móvil*" id="telefono-convenios" type="tel" class="form-control" name="telefono" required>
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-5" id="lista-convenios">
+                        <select class="form-control" name="convenios" id="idConvenios">
+                            <?php
+                                $url = "https://iexe.app/api/";
+                                $json = file_get_contents($url);
+                                $json_data = json_decode($json, true);
+                                echo '<option value="0">-- Selecciona un convenio --</option>';
+                                foreach($json_data as $form){
+                                    echo '<option value="' . $form['idConvenio'] . '">' . $form['nombre'] . '</option>';
+                                }
+                            ?>
+                        </select>
+            </div>
+                <div class="form-group col-md-7">
+                        <select class="form-control" name="programa" required>
+                            <option name="programa" value="">- Programa académico de interés -</option>
+                            <optgroup label="Licenciaturas">              
+                                <option value="LCP">Ciencias Políticas y Administración Pública</option>
+                                <option value="LSP">Seguridad Pública</option>
+                                <option value="LAE">Administración de Empresas</option>
+                                <option value="LD">Derecho</option>
+                            </optgroup>          
+                            <optgroup label="Maestrías">  
+                                <option value="MFP">Finanzas Públicas</option>
+                                <option value="MAPP">Administración y Políticas Públicas</option>
+                                <option value="MEPP">Evaluación de Políticas Públicas</option>
+                                <option value="MSPP">Seguridad Pública y Políticas Públicas</option>
+                                <option value="MBAT">Administración de Negocios</option>
+                                <option value="MITIC">Tecnologías de la Información</option>
+                                <option value="MAIS">Administración de Instituciones de Salud</option>
+                                <option value="MCDA">Ciencia de Datos Aplicada</option>
+                                <option value="MIGE">Innovación y Gestión Educativa</option>
+                            </optgroup>
+                            <optgroup label="Diplomados">
+                                <option value="DADFP">Alta Dirección en la Función Pública</option>
+                                <option value="DADPP">Análisis y Diseño de Políticas Públicas</option>																
+                                <option value="MEPP">Evaluación de Políticas Públicas</option>
+                                <option value="DDFF">Disciplina Financiera y Fiscalización</option>
+                                <option value="DPRSED">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
+                                <option value="DHG">Diplomado en habilidades Gerenciales y Liderazgo</option>
+                            </optgroup>
+                            <optgroup label="Doctorado">
+                                <option value="DOC">Doctorado en Políticas Públicas</option>
+                            </optgroup>
+                            <optgroup label="Master">
+                                <option value="MMPOP">Marketing Político y Opinión Pública</option>
+                                <option value="MAG">Auditoría Gubernamental</option>
+                                <option value="MSPAJ">Sistema Penal Acusatorio y Juicio Oral </option>
+                                <option value="MGPM">Gestión Pública Municipal</option>
+                            </optgroup>
+                        </select>
+                </div>
+                <style>
+                    label.form-check-label{
+                        color: #FFF;
+                    }
+                </style>
+            </div>
+            <button type="button" onclick="enviarFormulario(this)" class="btn sin-form float-right btn-primario">Enviar</button>
         </form>
         </div>
       </div>
@@ -449,21 +564,35 @@ Template Name: Becas
 <script>
     
     var input = document.querySelector("#telefono-sep");
-    window.intlTelInput(input, {
+    var iti4 = window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+    var input = document.querySelector("#telefono-beca-iexe");
+    var iti5 = window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
       preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
       separateDialCode: true,
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
     var input = document.querySelector("#telefono-embajadores");
-    window.intlTelInput(input, {
+    var iti2 = window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
       preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
       separateDialCode: true,
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
+    var input = document.querySelector("#telefono-convenios");
+    var iti = window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','ec'],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
     var input = document.querySelector("#telefono-beca");
-    window.intlTelInput(input, {
+    var iti3 = window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
       preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
       separateDialCode: true,

@@ -21,58 +21,58 @@ $(document).ready(function(){
         $('.' + $(this).val()).closest('.col-md-4').show('20');
     });
 
-    $('.modal form button').click(function(){
-        var ancest = $(this).parent().children();
+//     $('.modal form button').click(function(){
+//         var ancest = $(this).parent().children();
 
 
-        console.log(ancest);
-        $('#interes button.btn.btn-primario').removeClass("error exito"); 
-        $('#interes button.btn.btn-primario').attr("disabled", true);
-        var nombre = $("[name='nombreIE']").val();
-        var correo = $("[name='emailIE']").val();
+//         console.log(ancest);
+//         $('#interes button.btn.btn-primario').removeClass("error exito"); 
+//         $('#interes button.btn.btn-primario').attr("disabled", true);
+//         var nombre = $("[name='nombreIE']").val();
+//         var correo = $("[name='emailIE']").val();
 
-        if($('input#hiddenPrograma').val()){
-            var programa = $('input#hiddenPrograma').val();
-            console.log(programa);
-        }else{
-            var programa = $("[name='programaIE']").val();
-            console.log(programa);
-        }
-        var telefono = becaIexeTel.getNumber(crossOriginIsolated);
-        var data = "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#becas" + "&charifaz=" + navigator.userAgent;
-        console.log(data);
-    $.ajax({
-        url: 'https://api.redisoft.dev/Leads/web',
-        type: 'post',
-        data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#becas" + "&charifaz=" + navigator.userAgent,
-        success: function(data){
-            console.log(data);
-            if(data == true || data == "saved"){
-                console.log("se salvó :)");
-                $("#problemaModal").modal('show');
-                $('#interes button.btn.btn-primario').addClass("error");
-                console.log(data);
+//         if($('input#hiddenPrograma').val()){
+//             var programa = $('input#hiddenPrograma').val();
+//             console.log(programa);
+//         }else{
+//             var programa = $("[name='programaIE']").val();
+//             console.log(programa);
+//         }
+//         var telefono = becaIexeTel.getNumber(crossOriginIsolated);
+//         var data = "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#becas" + "&charifaz=" + navigator.userAgent;
+//         console.log(data);
+//     $.ajax({
+//         url: 'https://api.redisoft.dev/Leads/web',
+//         type: 'post',
+//         data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#becas" + "&charifaz=" + navigator.userAgent,
+//         success: function(data){
+//             console.log(data);
+//             if(data == true || data == "saved"){
+//                 console.log("se salvó :)");
+//                 $("#problemaModal").modal('show');
+//                 $('#interes button.btn.btn-primario').addClass("error");
+//                 console.log(data);
     
-            }else if(data == "duplicated"){
-                console.log("Ya hay un registro con este correo electrónico");
-            } else{
-                $("#guardadoModal").modal('show');
-                $('#interes button.btn.btn-primario').removeClass("error");
-                $('#interes button.btn.btn-primario').addClass("exito");
-            }
-            $('#interes button.btn.btn-primario').attr("disabled", false);
+//             }else if(data == "duplicated"){
+//                 console.log("Ya hay un registro con este correo electrónico");
+//             } else{
+//                 $("#guardadoModal").modal('show');
+//                 $('#interes button.btn.btn-primario').removeClass("error");
+//                 $('#interes button.btn.btn-primario').addClass("exito");
+//             }
+//             $('#interes button.btn.btn-primario').attr("disabled", false);
             
-        },
-        error: function(data){
-            console.log("No se logró contactar al servidor");
-            console.log(data);
-            $('#interes button.btn.btn-primario').attr("disabled", false);
-            $('#interes button.btn.btn-primario').addClass("error");
-            // $("#modalFracaso").modal('show');
-            // $("#error-alerta").html("El servidor remoto no se pudo contactar, por favor intente más tarde");
-        }
-    });
-});
+//         },
+//         error: function(data){
+//             console.log("No se logró contactar al servidor");
+//             console.log(data);
+//             $('#interes button.btn.btn-primario').attr("disabled", false);
+//             $('#interes button.btn.btn-primario').addClass("error");
+//             // $("#modalFracaso").modal('show');
+//             // $("#error-alerta").html("El servidor remoto no se pudo contactar, por favor intente más tarde");
+//         }
+//     });
+// });
 
     
 
