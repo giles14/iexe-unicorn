@@ -18,7 +18,7 @@ Template Name: Becas
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <div class="mask flex-center">
               <div class="container">
                   <div class="row">
@@ -49,7 +49,7 @@ Template Name: Becas
                 </div>
         
               </div>
-            </div>
+            </div> -->
         </div>
       </div>
 </section>
@@ -64,6 +64,25 @@ Template Name: Becas
 </section>
 <section id="becas-slider">
             <div class="sliding">
+            <!-- <div>
+                    <div class="container">
+                                <div class="row con-x">
+                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
+                                    <div class="col-md-3 d-none d-sm-block">
+                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_convenios.webp" alt="" class="beca">
+                                    </div>
+                                    <div class="col-8 col-md-5 offset-md-2">
+                                        <h1 class="titulo">Beca por Convenio IEXE</h1>
+                                        <p  class="descripcion-beca">Gracias al Convenio podrás acceder a becas de hasta <strong>el 80% de descuento</strong>, precios preferenciales en publicaciones de nuestra casa editorial, así como otros <strong>beneficios exclusivos</strong>, mismos que son <strong>extensivos a tus familiares.</strong></p>
+                                        <div class="botones-beca">
+                                            <a class="btn mt-3 btn-primario" href="#" data-toggle="modal" data-target="#modal-beca-convenios">¡Contáctanos!</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
+                                </div>
+                    </div>
+                </div> -->
                 <div>
                     <div class="container">
                                 <div class="row">
@@ -180,6 +199,7 @@ Template Name: Becas
                                 </div>
                     </div>
                 </div>
+                
             </div>  
     
 </section>
@@ -219,21 +239,21 @@ Template Name: Becas
                     <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
                 </div>
             </div>
-        <form>
+            <form id="beca-iexe" method="POST" data-origen="Formulario Beca IEXE" action="">
             <div class="form-row">
                 <div class="form-group col-md-6">
-                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombreIE" id="nombre" required>
+                <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
                 </div>
                 <div class="form-group col-md-6">
-                <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="emailIE" id="correo" required>
+                <input type="email" class="form-control" placeholder="Tu Correo electrónico*" name="email" id="correo" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                <input placeholder="Teléfono móvil*" id="telefono-iexe" type="text" class="form-control" name="telefono" required>
+                <input placeholder="Teléfono móvil*" id="telefono-beca-iexe" type="text" class="form-control" name="telefono" required>
                 </div>
                 <div class="form-group col-md-6">
-                <select class="form-control" name="programaIE" required>
+                <select class="form-control" name="programa" required>
                     <option name="programa" value="">- Programa académico de interés -</option>
                     <optgroup label="Licenciaturas">              
                         <option value="LCP">Ciencias Políticas y Administración Pública</option>
@@ -272,7 +292,7 @@ Template Name: Becas
                 </select>
                 </div>
             </div>
-            <button type="button" class="btn btn-primario float-right">Enviar</button>
+            <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
         </form>
         </div>
       </div>
@@ -298,7 +318,7 @@ Template Name: Becas
             </div>
             <div class="row">
                 <div class="col">
-                        <form>
+                    <form id="forma-beca-SEP" method="POST" data-origen="formulario Beca SEP" action="">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                         <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
@@ -351,7 +371,7 @@ Template Name: Becas
                             </select>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primario float-right">Enviar</button>
+                    <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
                 </form>
                 </div>
             </div>
@@ -379,7 +399,7 @@ Template Name: Becas
                     <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
                 </div>
             </div>
-        <form>
+        <form id="forma-embajadores" method="POST" data-origen="formulario embajadores" action="">
             <div class="form-row">
                 <div class="form-group col-md-5">
                 <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
@@ -435,7 +455,7 @@ Template Name: Becas
                         </select>
                 </div>
             </div>
-            <button type="button" class="btn btn-primario float-right">Enviar</button>
+            <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
         </form>
         </div>
       </div>
@@ -460,7 +480,7 @@ Template Name: Becas
                     <p class="description">Rellena el siguiente formulario y recibirás un mail de confirmación. Toda solicitud de beca debe ser avalada y aprobada por la institución correspondiente.</p>
                 </div>
             </div>
-        <form id="interes" method="POST" data-origen="formulario convenios" action="">
+        <form id="forma-convenio" method="POST" data-origen="formulario convenios" action="">
             <div class="form-row">
                 <div class="form-group col-md-5">
                 <input placeholder="Tu Nombre completo*" type="text" class="form-control" name="nombre" id="nombre" required>
@@ -531,7 +551,7 @@ Template Name: Becas
                     }
                 </style>
             </div>
-            <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
+            <button type="button" onclick="enviarFormulario(this)" class="btn sin-form float-right btn-primario">Enviar</button>
         </form>
         </div>
       </div>
@@ -544,28 +564,35 @@ Template Name: Becas
 <script>
     
     var input = document.querySelector("#telefono-sep");
-    window.intlTelInput(input, {
+    var iti4 = window.intlTelInput(input, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+    var input = document.querySelector("#telefono-beca-iexe");
+    var iti5 = window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
       preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
       separateDialCode: true,
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
     var input = document.querySelector("#telefono-embajadores");
-    window.intlTelInput(input, {
+    var iti2 = window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
       preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
       separateDialCode: true,
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
     var input = document.querySelector("#telefono-convenios");
-    window.intlTelInput(input, {
+    var iti = window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
       preferredCountries: ['mx','ec'],
       separateDialCode: true,
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
     var input = document.querySelector("#telefono-beca");
-    window.intlTelInput(input, {
+    var iti3 = window.intlTelInput(input, {
       localizedCountries: { 'us': 'Estados Unidos' },
       preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
       separateDialCode: true,
