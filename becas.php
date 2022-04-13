@@ -4,6 +4,7 @@ Template Name: Becas
 */
 ?>
 <?php get_header( ); ?>
+
 <section id="header">
     <div id="informacion-programa" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
@@ -64,7 +65,7 @@ Template Name: Becas
 </section>
 <section id="becas-slider">
             <div class="sliding">
-            <!-- <div>
+                <div>
                     <div class="container">
                                 <div class="row con-x">
                                     <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
@@ -73,7 +74,7 @@ Template Name: Becas
                                     </div>
                                     <div class="col-8 col-md-5 offset-md-2">
                                         <h1 class="titulo">Beca por Convenio IEXE</h1>
-                                        <p  class="descripcion-beca">Gracias al Convenio podrás acceder a becas de hasta <strong>el 80% de descuento</strong>, precios preferenciales en publicaciones de nuestra casa editorial, así como otros <strong>beneficios exclusivos</strong>, mismos que son <strong>extensivos a tus familiares.</strong></p>
+                                        <p  class="descripcion-beca">Contamos con diversos <strong>convenios</strong> tanto con <strong>instituciones públicas</strong> como <strong>privadas</strong>, si perteneces a alguna, podrás obtener <strong>becas especiales</strong> para ti y tu familia, así como otros beneficios ¡Consulta la lista de convenios y conócelos!</p>
                                         <div class="botones-beca">
                                             <a class="btn mt-3 btn-primario" href="#" data-toggle="modal" data-target="#modal-beca-convenios">¡Contáctanos!</a>
                                         </div>
@@ -82,7 +83,7 @@ Template Name: Becas
                                     <div class="col-2 col-md-1 align-self-center"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
                                 </div>
                     </div>
-                </div> -->
+                </div>
                 <div>
                     <div class="container">
                                 <div class="row">
@@ -203,14 +204,16 @@ Template Name: Becas
             </div>  
     
 </section>
-<?php get_template_part( 'template-parts/calcula-beca'); ?>
+<?php get_template_part( 'template-parts/calcula-beca', null, array(
+    'porcentaje' =>  $porcentajeBeca
+)); ?>
 
-<section id="banner">
+<section id="banner-xpresa">
     <div class="container">
         <div class="row">
             <div class="col col-md-12">
-                <a class="d-none d-sm-block" href="/admisiones"><img class="img-fluid redondear" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_becas.webp" alt=""></a>
-                <a class="d-block d-sm-none" href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner-becas-movil.webp" alt=""></a>
+                <a class="d-none d-sm-block" href="https://www.tiktok.com/@iexeuniversidad" target="_blank"><img class="img-fluid redondear" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_IEXE_Interno-TikTok.webp" alt=""></a>
+                <a class="d-block d-sm-none" href="https://www.tiktok.com/@iexeuniversidad" target="_blank"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_r_TikTok.webp" alt=""></a>
             </div>
         </div>
     </div>
@@ -599,6 +602,7 @@ Template Name: Becas
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
   </script>
+  
   <script>
     jQuery(document).ready(function($){
         $(".submit").click(function(){
@@ -606,7 +610,7 @@ Template Name: Becas
         });
         $(".GaugeMeter").gaugeMeter();
         $("#generar-resultado").click(function(){
-            $("#medidorBeca").gaugeMeter({percent:<?php echo round(rand(50 , 70), -1) ?>});
+            $("#medidorBeca").gaugeMeter({percent:<?php echo $porcentajeBeca ?>});
         });
     });   
 </script>

@@ -16,7 +16,7 @@
                         <li class="active">Paso</li>
                         <li>Paso</li>
                         <li>Paso</li>
-                    </ul>
+                    </ul> 
 
                 </div>
                 <form id="calcular-beca">
@@ -26,12 +26,15 @@
                     </div> <br> fieldsets -->
                     <fieldset>
                         <div class="form-card">
-                            <label class="fieldlabels">Nombre</label> 
+                            <label class="fieldlabels">Nombre <?php echo $porcentajeBeca ?></label> 
                             <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" required/>
                             <label class="fieldlabels">Email: *</label>
                             <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" required/>
                             <label class="fieldlabels">Celular: *</label>
                             <input id="telefono-beca" type="tel" name="telefono" placeholder="Ingresa aquí tu teléfono móvil" required  minlength="7" maxlength="11"/>
+                            <input name="porcentaje-2" type="hidden" value="<?php if ( $args['porcentaje'] ) {
+                                                                                                            echo $args['porcentaje'];
+                                                                                                            } ?>" />
                             <div style="margin-top: 15px" class="form-group">
                                 <label for="programa-interesB">Selecciona un programa</label>
                                 <?php get_template_part( 'template-parts/selectProgramas'); ?>
@@ -57,6 +60,7 @@
                             <input type="text" name="ocupacion" placeholder="¿Cual es tu ocupación?" /> 
                             <label class="fieldlabels">Promedio de preparatoria/licenciatura/maestria: *</label>
                             <input type="text" name="promedio" placeholder="Proporcionanos tu último promedio académico" />
+                            
                             <div class="form-group">
                                 <label for="dependientes" class="fieldlabels">¿Cuantas personas dependen económicamente de ti? *</label>
                                 <select name="dependientes" id="dependientes">
@@ -103,8 +107,7 @@
                                 <div class="col-12">
                                 <div class="GaugeMeter" id="medidorBeca" data-append="%" data-size="200" data-theme="Red-Green" data-back="RGBa(0,0,0,.1)" data-animate_gauge_colors=true data-animate_text_colors=true data-width="15" data-label=null data-style="Arch" data-label_color="#006400"></div>    
                                 <p class="text-center">Este porcentaje representa el monto de beca que puedes obtener.</p>
-                                <a class="descubre-mas azul-primario-color text-center d-block" target="_blank" href="https://bit.ly/3j2TYOl">Inicia el proceso contactando a un asesor.</a><br>
-                                
+                                <a class="descubre-mas azul-primario-color text-center d-block" target="_blank" href="https://bit.ly/3FMBIE">Inicia el proceso contactando a un asesor.</a><br>
                                 </div>
                             </div>
                             <div class="row justify-content-center">

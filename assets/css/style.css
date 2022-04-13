@@ -440,6 +440,9 @@ section#proceso-revalidacion a.btn.btn-primario {
     z-index: 2;
     position: relative;
 }
+.redondear{
+    border-radius: 15px;
+}
 #comunidad .galeria .col-4 {
     border-radius: 20px;
 }
@@ -826,8 +829,8 @@ section#editorial::after{
     visibility: hidden;
 } */
 #blog section#banner {
-    background: #EEEEEE;
-    margin-top: -5px;
+    background: #fff;
+    margin-top: 65px;
 }
 section#blog a:hover {
     text-decoration: none;
@@ -3581,6 +3584,9 @@ input#mi-busqueda::placeholder {
     .navegacion-botones{
         margin: 0 5% 0 20%;
     }
+    #maestrias .row.contenedor-programa,#licenciaturas .row.contenedor-programa,#doctorado .row.contenedor-programa,#masters .row.contenedor-programa,#diplomados .row.contenedor-programa,#capacitaciones .row.contenedor-programa {
+        background: var(--primario--azul-obscuro)
+    }    
     nav.navbar.sticky .navegacion-botones {
         margin: 0 5% 0 20%;
     }
@@ -3600,4 +3606,9 @@ input#mi-busqueda::placeholder {
         display: flex;
         flex-basis: auto;
     }
+}
+
+section#banner-youtube {	
+    background: #EEEEEE;	
+    margin-top: 0px;	
 }

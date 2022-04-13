@@ -10,32 +10,32 @@
         </div>
         <div class="row">
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/de-comunidad-3.webp" alt="">
-            </div>
-            <div class="col-md-9">
-                <div class="aviso">
-                    <span class="tipo">AVISO</span>
-                    <div class="fecha">1 de Marzo del 2022</div>
-                    <div class="titulo-aviso">
-                        <h3>¡Bienvenida Generación Marzo 2022!</h3>
-                    </div>
-                    <div class="descripcion-aviso">
-                        <p>Esperamos que tengan una excelente experiencia y aprovechen al máximo todas las herramientas que les brindamos por medio de la plataforma.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/de-comunidad-2.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Gobierno_y_politica_.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">19 de Marzo del 2022</div>
+                    <div class="fecha">28 de Marzo del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Conversatorio: "La Inteligencia Artificial en Latinoamérica"</h3>
+                        <h3>¡Nos vemos en la masterclass!</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Recuerda apartar el día para asistir a la conferencia exclusiva para los alumnos de Ciencias de Datos.</p>
+                        <p>Números y cuentos chinos ¿Qué dice y qué no dice la estadística descriptiva?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-sm-block">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Seguridad_Publica.webp" alt="">
+            </div>
+            <div class="col-md-9">
+                <div class="aviso">
+                    <span class="tipo">EVENTO</span>
+                    <div class="fecha">29 de Marzo del 2022</div>
+                    <div class="titulo-aviso">
+                        <h3>Uso legítimo de la fuerza</h3>
+                    </div>
+                    <div class="descripcion-aviso">
+                        <p>Te esperamos en la masterclass a cargo del Mtro. Carlos Armando Navarrete Maldonado. No faltes.</p>
                     </div>
                 </div>
             </div>
@@ -55,17 +55,47 @@
                 </div>
             </div> -->
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/de-comunidad-1.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Economia_y_Ciencias_Ambientales.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
-                    <span class="tipo">NOTICIA</span>
-                    <div class="fecha">10 de Enero del 2022</div>
+                    <span class="tipo">EVENTO</span>
+                    <div class="fecha">30 de Marzo del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>IEXE Universidad ahora es parte de AWS academy</h3>
+                        <h3>Economía y Ciencias Ambientales</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Aprovecha los beneficios que esto trae para tí, pregunta con tu asesor estudiantil para mayor información.</p>
+                        <p>Masterclass de Prospectiva: cómo imaginar el futuro por la Mtra. Idalí Flores Miruelo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-sm-block">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Finanzas.webp" alt="">
+            </div>
+            <div class="col-md-9">
+                <div class="aviso">
+                    <span class="tipo">EVENTO</span>
+                    <div class="fecha">31 de Marzo del 2022</div>
+                    <div class="titulo-aviso">
+                        <h3>¡Esto te puede interesar!</h3>
+                    </div>
+                    <div class="descripcion-aviso">
+                        <p>Nuestra masterclass de finanzas, con el tema: Análisis financiero para la toma de decisiones de inversión.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-sm-block">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Derecho_fiscal.webp" alt="">
+            </div>
+            <div class="col-md-9">
+                <div class="aviso">
+                    <span class="tipo">EVENTO</span>
+                    <div class="fecha">01 de Abril del 2022</div>
+                    <div class="titulo-aviso">
+                        <h3>Estás invitado a la masterclass</h3>
+                    </div>
+                    <div class="descripcion-aviso">
+                        <p>Participaciones federales a los estados y la ley de coordinación fiscal</p>
                     </div>
                 </div>
             </div>
@@ -81,7 +111,7 @@
             </div>
             <div class="row buffer-25">
                 <div class="col-md-6">
-                        <img class="img-fluid escudo d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo_comunidad.webp" alt="">
+                        <img class="img-fluid escudo d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/registro_comunidad_iexe_v2.webp" alt="">
                 </div>
                 <div class="fondo-x d-none d-sm-block">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x.png" alt="">
@@ -118,57 +148,8 @@
             </div>
         </div>
     </section>
-    <section id="podcast">
-        <div class="container podcast">
-            <div class="row">
-                <div class="col-md-3">
-                    <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/imagen-de-podcast.webp" alt="imágen de podcast">
-                    <h2 class="titulo-podcast">El valor de X</h2>
-                    <span class="tipo-de">Podcast</span>
-                    <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/barra-progreso.svg" alt="">
-                    <div class="controles-audio">
-                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/controles-podcast.webp" alt="Controles">
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="container">   
-                        <div class="row">
-                            <div class="col-md-3 offset-md-1">
-                                <img class="img-fluid foto-podcast" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/miniatura-podcast.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 class="titulo-podcast">Episodio Uno: <strong>El regreso a clases presencial</strong></h3>
-                                <p class="descripcion-podcast">
-                                    En este podcast platicamos sobre el regreso a clases presenciales. Con la compañía de profesores que están viviendo la situación, nos preguntamos ¿Es buen momento para regresar a las aulas? y ¿Cuál será el impacto que esto tendrá en las futuras generaciones? ¡Acompáñanos!
-                                    <div class="links-podcast">
-                                        <a target="_blank" class="icono-spotify" href="https://open.spotify.com/episode/01V6ky4wGTMCeD3GBblAvJ"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-spotify.webp" alt=""> Ir a Spotify</a>
-                                        <a target="_blank" class="icono-youtube" href="https://youtu.be/XlBG_rmaT7A"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
-                                    </div>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3 offset-md-1">
-                                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/miniatura-podcast.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h3 class="titulo-podcast">Episodio dos: <strong>Legalización del aborto</strong></h3>
-                                <p class="descripcion-podcast">
-                                    En este episodio hablamos de un tema de alta relevancia nacional, basado en el poder de decisión de las mujeres. Te invitamos a estar al pendiente este 11 de Ocrubre.</p>
-                                    <div class="links-podcast">
-                                        <a href="https://open.spotify.com/episode/1x1tsU61nywSRAA4N8dBA4" target="_blank" class="icono-spotify"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-spotify.webp" alt=""> Ir a Spotify</a>
-                                        <a target="blank" href="https://youtu.be/9Cl7KrF9obU" class="icono-youtube" ><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
-                                    </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section id="anuncio-tiktok">
+    <?php get_template_part( 'template-parts/podcast'); ?>
+    <!-- <section id="anuncio-tiktok">
         <div class="container">
             <div class="row">
                 <div class="col col-md-11 tiktok">
@@ -178,18 +159,19 @@
                     </div>
 
                 </div>
-                <!-- <div class="col-md-5 offset-md-1 generacion">
-                    <img class="float-left escudo-comunidad" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudoComunidad.webp" alt="">
-                    <div class="texto">
-                        <h1>Alumno de la generación</h1>
-                        <p>Esta dinámica le dará la oportunidad de ser representante de la generación al alumno más votado por la comunidad.</p>
-                        <a target="_blank" href="https://generacion.iexe.edu.mx/" class="conocelos">¡Cónocelos!</a>
-                    </div>
-
-                </div> -->
             </div>
         </div>
 
+    </section> -->
+    <section id="banner-xpresa">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-12">
+                    <a class="d-none d-sm-block" href="https://www.tiktok.com/@iexeuniversidad" target="_blank"><img class="img-fluid redondear" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_IEXE_Interno-TikTok.webp" alt=""></a>
+                    <a class="d-block d-sm-none" href="https://www.tiktok.com/@iexeuniversidad" target="_blank"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_r_TikTok.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- <section id="video-testimonial">
@@ -319,11 +301,21 @@
 </section>
 
 <?php get_template_part( 'template-parts/comunidad'); ?>
+<!-- <section id="comunidad-internacional">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/"><img class="img-fluid" src="<?php //echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_comunidad_internacional.webp" alt="Banner comunidad Internacional"></a>
+            </div>
+        </div>
+    </div>
+</section> -->
 <section id="comunidad-internacional">
     <div class="container">
         <div class="row">
             <div class="col">
-                <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_comunidad_internacional.webp" alt="Banner comunidad Internacional"></a>
+                <a href="https://bit.ly/3NFUkYX" target="_blank"><img class="img-fluid d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_IEXE_InternosRecomienda.webp" alt="Banner comunidad Internacional"></a>
+                <a href="https://bit.ly/3NFUkYX" target="_blank"><img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_r_IEXE_InternosRecomienda.webp" alt=""></a>
             </div>
         </div>
     </div>

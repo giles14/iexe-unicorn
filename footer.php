@@ -68,7 +68,7 @@
                     <div class="informacion-importante">
                         <div class="bloque">
                         
-                            <p>Todos los derechos reservados IEXE 2021.
+                            <p>Todos los derechos reservados IEXE 2022.
                             <?php
                             echo strip_tags(
                                 wp_nav_menu( array(
@@ -107,15 +107,6 @@
                         <?php
                         }
     ?>
-    <!-- <script>
-                jQuery(document).ready(function(){
-                jQuery('span.rotate').textrotator({
-                    animation: "dissolve",
-                    separator: "|",
-                    speed: 6000
-                });
-            });
-    </script> -->
                     <script>
                         jQuery(document).ready(function(){
                             jQuery(window).scroll(function(){
@@ -136,14 +127,16 @@
                         });
                     
                     </script>
+                    <?php if(is_page_template('academicos.php')){ ?>
                     <script>
-                jQuery(document).ready(function(){
-                jQuery('span.rotate').textrotator({
-                    animation: "dissolve",
-                    speed: 8000
-                });
-            });
-            </script>
+                            jQuery(document).ready(function(){
+                            jQuery('span.rotate').textrotator({
+                                animation: "dissolve",
+                                speed: 8000
+                            });
+                        });
+                    </script>
+                    <?php } ?>
     <div id="mySidenav" class="sidenav animate__bounceInRight"> 
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Cerrar <span>&times;</span></a>
         <a class="d-none d-sm-block" href="<?php home_url(); ?>"><div class="logo">
@@ -373,6 +366,7 @@ function enableScroll() {
     });
 // });
   </script>
+  <?php  if(is_page_template('home.php')){ ?>
   <script>
       $(document).ready(function(){
 
@@ -423,13 +417,12 @@ $('#interes button.btn.btn-primario').click(function(){
         console.log(data);
         $('#interes button.btn.btn-primario').attr("disabled", false);
         $('#interes button.btn.btn-primario').addClass("error");
-        // $("#modalFracaso").modal('show');
-        // $("#error-alerta").html("El servidor remoto no se pudo contactar, por favor intente más tarde");
     }
 });
 });
 });
   </script>
+  <?php } ?>
   <div class="modal fade" id="guardadoModal" tabindex="-1" aria-labelledby="guardadoModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">

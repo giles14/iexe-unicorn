@@ -302,7 +302,9 @@ Template Name: Admisiones
         </div>
     </div>
 </section>
-<?php get_template_part( 'template-parts/calcula-beca'); ?>
+<?php get_template_part( 'template-parts/calcula-beca', null, array(
+    'porcentaje' =>  $porcentajeBeca
+)); ?>
 <section id="revalidacion">
     <div class="container">
         <div class="row">

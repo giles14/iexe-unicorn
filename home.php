@@ -5,8 +5,20 @@
                 <div id="slidePrincipal" class="carousel slide w-100 carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
+                            <a href="https://bit.ly/mcdiaIE"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_TecnologiasIEXE.webp" alt="Planes Tecnológicos"></a>
+                            <a href="https://bit.ly/mcdiaIE"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_r-tech-iexe.webp" alt="Planes Tecnológicos"></a>
+                        </div>
+                        <div class="carousel-item">
                             <a href="https://bit.ly/3I4QqoR"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-aws.webp" alt="AWS academy"></a>
                             <a href="https://bit.ly/3I4QqoR"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-aws-movil.webp" alt="AWS academy"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://bit.ly/3NFUkYX"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
+                            <a href="https://bit.ly/3NFUkYX"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-r_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_IEXE_TV.webp" alt="Doctorado slide"></a>
+                            <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_R-YoutubeMovil.webp" alt="Doctorado slide"></a>
                         </div>
                         <div class="carousel-item">
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>

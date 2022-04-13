@@ -73,7 +73,6 @@ section#entrada-blog {
     letter-spacing: -1px;
     font-weight: 600;
     left: 12px;
-    width: 54px;
 }
 #seleccion-categoria .categoria-img h2 {
     /* color: var(--primario--azul-obscuro); */
@@ -113,6 +112,12 @@ section#noticia-destacada {
 section#noticia-destacada h1.titulo {
     color: var(--primario-cyan);
     padding-top: 30px;
+}
+.comunicado span.meta-blog-autor {
+    visibility: hidden;
+}
+.comunicado h1.titulo.navegacion {
+    visibility: hidden;
 }
 section#noticia-destacada h2.description {
     color: #e3e3e3;

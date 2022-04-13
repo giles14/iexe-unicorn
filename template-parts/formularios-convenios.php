@@ -4,7 +4,7 @@
 </div>
 <div class="form-group" id="lista-convenios">
         <label for="idConvenios">Selecciona un convenio</label>
-        <form>
+        
             <select class="form-control" name="convenios" id="idConvenios">
                 <?php
                     $url = "https://iexe.app/api/";
@@ -17,7 +17,7 @@
                     }
                 ?>
             </select>
-        </form>
+        
 </div>
 <script>
         jQuery("#lista-convenios").hide();

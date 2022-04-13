@@ -21,7 +21,7 @@ Template Name: Programas
     <section id="licenciaturas">
         <div class="container">
             <div class="row contenedor-programa">
-                <div class="col-md-6">
+                <div class="col-md-8 col-lg-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Licenciaturas</h1>
                     <ul class="licenciaturas">
                         <li><a href="/oferta-educativa/licenciatura-en-seguridad-publica/licenciatura-en-seguridad-publica">Seguridad Pública</a> </li>
@@ -36,7 +36,7 @@ Template Name: Programas
     <section id="maestrias">
         <div class="container">
             <div class="row contenedor-programa">                    
-                    <div class="col-md-4 offset-md-4">
+                    <div class="col-md-7 col-lg-6 offset-lg-2 col-xl-4 offset-xl-4">
                         <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrías</h1>
                         <ul class="masters">
                             <li><a href="/oferta-educativa/maestria-en-seguridad-publica-y-politicas-publicas">Seguridad Pública y Políticas Públicas</a></li>
@@ -47,7 +47,7 @@ Template Name: Programas
                             <li><a href="/oferta-educativa/maestria-en-ciencia-de-datos-aplicada/">Ciencia de Datos Aplicada</a> </li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5 col-lg-4">
                         <ul class="masters secundario">
                             <li><a href="oferta-educativa/maestria-en-ingenieria-en-tecnologias-de-la-informacion">Ingeniería en Tecnologías de la Información</a> </li>
                             <li><a href="oferta-educativa/maestria-en-administracion-de-instituciones-de-salud">Administración de Instituciones de Salud</a></li>
@@ -74,7 +74,7 @@ Template Name: Programas
     <section id="masters">
         <div class="container">
             <div class="row contenedor-programa">
-                <div class="col-md-6 offset-md-6">
+                <div class="col-md-8 col-lg-6 offset-lg-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Masters</h1>
                     <ul class="masters">  
                         <li><a href="oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/">Marketing Político y Opinión Pública</a></li>
@@ -89,7 +89,7 @@ Template Name: Programas
     <section id="diplomados">
         <div class="container">
             <div class="row contenedor-programa">
-                <div class="col-md-6">
+                <div class="col-md-8 col-lg-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Diplomados</h1>
                     <ul class="displomados">
                         <!-- <li><a href="/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/">Disciplina Financiera y Fiscalización</a> </li> -->
@@ -107,7 +107,7 @@ Template Name: Programas
     <section id="capacitaciones">
         <div class="container">
             <div class="row contenedor-programa">
-                <div class="col-md-6 offset-md-6">
+                <div class="col-md-9 col-lg-6 offset-lg-6">
                     <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Capacitaciones</h1>
                     <ul class="capacitaciones">
                         <li><a href="/capacitaciones/">Programas de capacitación para el sector público y privado</a> </li>

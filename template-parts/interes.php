@@ -14,7 +14,7 @@
                 </div>
                 <div class="col-md-5">
                     <p class="interes-programa">Estudia uno de nuestros programas académicos totalmente digital y adaptable. No descuides el resto de tus actividades gracias a una plataforma abierta las 24 horas del día, todos los días. Pertenece a una institución con dos décadas de experiencia en educación en línea.</p>
-                    <form id="contacto">
+                    <form id="contacto"  method="POST" data-origen="formulario home" action="">
                         <div class="form-group">
                           <label for="nombre">Nombre completo*</label>
                           <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp" required>
@@ -33,7 +33,7 @@
                         </div>
                         <?php get_template_part( 'template-parts/formularios-convenios'); ?>
                         <div class="col-12 text-center">
-                            <button type="submit" class="btn btn-primario mt-3">Enviar registro</button>
+                            <button type="button" onclick="enviarFormulario(this)" class="btn sin-form btn-primario mt-3">Enviar registro</button>
                         </div>
                       </form>
 

@@ -91,12 +91,12 @@
                 
         </div>
     </section>
-    <section id="banner">
+    <section id="banner" style="background: #EEEEEE; margin-top: auto">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/comunidad"><img class="img-fluid d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_blog.webp" alt=""></a>
-                    <a href="/comunidad"><img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_blog_movil.webp" alt=""></a>
+                    <a href="https://www.tiktok.com/@iexeuniversidad"><img class="img-fluid d-none d-sm-block redondear" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_IEXE_Interno-TikTok.webp" alt=""></a>
+                    <a href="https://www.tiktok.com/@iexeuniversidad"><img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_r_TikTok.webp" alt=""></a>
                 </div>
             </div>
         </div>
@@ -171,11 +171,10 @@
                 <div class="col-md-6" style="margin-left: -1px;">
                     <div class="destacada-post">
                         <div class="autor-destacada">
-                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/luis.webp" alt="" class="autor-foto" style="border: 1px solid cyan; border-radius: 40px;">
+                            <img src="/wp-content/uploads/2022/03/iexe_staff-webp.webp" alt="" class="autor-foto" style="border: 1px solid cyan; border-radius: 40px;">
                             <div class="meta-informacion">
-                                <span class="nombre"><?php // echo get_the_author() ?>Luis Miguel Arroyo</span>
-                                <span class="redes">Colaborador IEXE</span>
-                            </div>
+                                <span class="nombre"><?php // echo get_the_author() ?>IEXE Staff</span>
+                                </div>
                         </div>
                         <div class="resumen-destacada">
                             <div class="post-texto"><p><?php echo get_the_excerpt() ?></p>

@@ -12,13 +12,14 @@ $(document).ready(function(){
         var correo = $(this).parents('#calcular-beca').find("[name='email']").val();
         var telefono = $(this).parents('#calcular-beca').find("[name='telefono']").val();
         var programa = $(this).parents('#calcular-beca').find("[name='programa']").val();
+        var porcentaje = $(this).parents('#calcular-beca').find("[name='porcentaje-2']").val();
     
     var telefono = calculaTel.getNumber(crossOriginIsolated);
     console.log(telefono);
     $.ajax({
     url: 'https://api.redisoft.dev/Leads/web',
     type: 'post',
-    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#calcula-beca" + "&charifaz=" + navigator.userAgent + "&adicional=origen:%20calcula-tu-beca",
+    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#calcula-beca" + "&charifaz=" + navigator.userAgent + "&adicional=origen:%20calcula-tu-beca porcentaje=" + porcentaje,
     success: function(data){
         console.log(data);
         if(data == true || data == "saved"){
