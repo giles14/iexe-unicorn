@@ -2387,7 +2387,7 @@ body#editorial {
     transition: all 0.5s;
 }
 .editorial-1 {
-    background-image: url(../img/crisis-bg.webp)!important;
+    background-image: url(../img/bg-capitalismo-natural.webp)!important;
     /* background-color: #EDEDED; */
     background-size: contain!important;
     background-repeat: no-repeat;
@@ -2462,10 +2462,10 @@ h2#post-972 {
     background: url(../img/boton-campana-over.webp);
 }
 #seleccion-categoria .crisis-viral{
-    background: url(../img/boton-crisis-viral.webp);
+    background: url(../img/boton-capitalismo-natural.webp);
 }
 #seleccion-categoria .crisis-viral:hover{
-    background: url(../img/boton-crisis-viral-over.webp);
+    background: url(../img/boton-capitalismo-natural_over.webp);
 }
 #seleccion-categoria .politicas-publicas{
     background: url(../img/boton-politicas-publicas.webp);

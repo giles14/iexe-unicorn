@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-4">
                 <div class="boton-accion asesor">
-                  <a target="_blank" href="https://bit.ly/3C4nwCo">
+                  <a target="_blank" href="https://bit.ly/iexeWAN">
                     <div class="boton-accion-contenido">
                       <h4>Asesor en línea</h4>
                       <p>Inicia tu proceso de admisión con alguno de nuestros asesores</p>

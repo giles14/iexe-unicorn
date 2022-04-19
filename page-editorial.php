@@ -37,9 +37,9 @@
                 </a>
             </div>
             <div class="col-md-3">
-                <a href="/producto/crisis-viral/">
+                <a href="/producto/capitalismo-natural-y-economia-circular//">
                 <div class="categoria-img crisis-viral">
-                    <h2>Crisis Viral</h2>
+                    <h2>Capitalismo Natural y Economía Circular</h2>
                 </div>
                 </a>
             </div>
