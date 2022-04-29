@@ -123,7 +123,8 @@ Template Name: Programas
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <a href="/admisiones"><img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner-oferta.webp" alt="" class="img-fluid d-block d-sm-none"></a>
+                    <a href="/admisiones"><img loading="lazy" class="d-none d-sm-block img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                    <a href="/admisiones"><img loading="lazy" class="d-block d-sm-none img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home_movil.webp" alt=""></a>
             </div>
         </div>
     </div>

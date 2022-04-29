@@ -33,7 +33,7 @@
                         </div>
                         <?php get_template_part( 'template-parts/formularios-convenios'); ?>
                         <div class="col-12 text-center">
-                            <button type="button" onclick="enviarFormulario(this)" class="btn sin-form btn-primario mt-3">Enviar registro</button>
+                            <button type="button" onclick="enviarFormulario(this)" class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro <div class="ld ld-ring ld-spin"></div></button>
                         </div>
                       </form>
 

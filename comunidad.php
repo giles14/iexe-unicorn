@@ -9,33 +9,48 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Gobierno_y_politica_.webp" alt="">
+        <div class="col-md-3 d-none d-sm-block">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/SEMANA_DE_MASTERCLAS.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">28 de Marzo del 2022</div>
+                    <div class="fecha">22 de Abril del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>¡Nos vemos en la masterclass!</h3>
+                        <h3>Semana de Master Class</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Números y cuentos chinos ¿Qué dice y qué no dice la estadística descriptiva?</p>
+                        <p>¡Nos vemos esta semana en la masterclass! Recuerda apartar tu semana del 25-29 de abril para asistir a todos los eventos.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Seguridad_Publica.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Que_papel_le_queda_al_Estado_después_de_la_globalización.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">29 de Marzo del 2022</div>
+                    <div class="fecha">25 de Abril del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Uso legítimo de la fuerza</h3>
+                        <h3>¿Qué papel le queda al Estado después de la globalización?</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Te esperamos en la masterclass a cargo del Mtro. Carlos Armando Navarrete Maldonado. No faltes.</p>
+                        <p>Dirigido por la Mtra. Celia Faride García Especialista en Sistemas de Protección Social y Microsimulación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-sm-block">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Tecnicas_para_realizar_un_estudio_de_mercado.webp" alt="">
+            </div>
+            <div class="col-md-9">
+                <div class="aviso">
+                    <span class="tipo">EVENTO</span>
+                    <div class="fecha">26 de Abril del 2022</div>
+                    <div class="titulo-aviso">
+                        <h3>Técnicas para realizar un estudio de mercado</h3>
+                    </div>
+                    <div class="descripcion-aviso">
+                        <p>El Dr. Gustavo Jiménez, Especialista en Finanzas Públicas te enseñará como vas lograr tus metas de ventas deseadas.</p>
                     </div>
                 </div>
             </div>
@@ -55,47 +70,47 @@
                 </div>
             </div> -->
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Economia_y_Ciencias_Ambientales.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Revolucion_Blockchain.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">30 de Marzo del 2022</div>
+                    <div class="fecha">27 de Abril del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Economía y Ciencias Ambientales</h3>
+                        <h3>Revolución Blockchain.</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Masterclass de Prospectiva: cómo imaginar el futuro por la Mtra. Idalí Flores Miruelo.</p>
+                        <p>No te puedes perder la ponencia del Mtro. Carlos Alexandro Giles.<br> Especialista en Tecnologías de la Información.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Finanzas.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/El_Ministeria_Publico_y_el_ejercicio_de_la_accion_penal.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">31 de Marzo del 2022</div>
+                    <div class="fecha">28 de Abril del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>¡Esto te puede interesar!</h3>
+                        <h3>El Ministerio Público y el ejercicio de la acción penal.</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Nuestra masterclass de finanzas, con el tema: Análisis financiero para la toma de decisiones de inversión.</p>
+                        <p>Con la presencia del Mtro. Mario Alberto González, Especialista en Derecho Penal.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Derecho_fiscal.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Educacion_a_distancia.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">01 de Abril del 2022</div>
+                    <div class="fecha">29 de Abril del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Estás invitado a la masterclass</h3>
+                        <h3>Educación a distancia.</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Participaciones federales a los estados y la ley de coordinación fiscal</p>
+                        <p>Desde los orígenes hasta las realidades, el Mtro. Carlos Alberto Cañada, Especialista en Desarrollo Social a través de la Educación, nos dará una ponencia más detallada sobre el tema en tendencia.</p>
                     </div>
                 </div>
             </div>

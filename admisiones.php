@@ -227,8 +227,8 @@ Template Name: Admisiones
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="titulo">Proceso de revalidación internacional</h1>
-                <h2 class="description">En los siguientes enlaces podrás encontrar la información necesaria de cada país para realizar tu proceso de revalidación.</h2>
+                <h1 class="titulo">Proceso de convalidación internacional</h1>
+                <h2 class="description">En los siguientes enlaces podrás encontrar la información necesaria de cada país para realizar tu proceso de convalidación.</h2>
             </div>
         </div>
         <div class="row banderas">
@@ -236,7 +236,7 @@ Template Name: Admisiones
                 <span class="nombre-pais">Ecuador</span>
                 <span class="nombre-institucion">SENECYT</span>
                 <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/revalidacion/ecuador.png" alt="">
-                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://siau.senescyt.gob.ec/proceso/registro-de-titulos-extranjeros/">Ver información</a>
+                <a class="mostrar-mas azul-primario-color" target="_blank" href="https://www.gob.ec/senescyt/tramites/reconocimiento-general-titulos-extranjero">Ver información</a>
             </div>
             <div class="col">
                 <span class="nombre-pais">Colombia</span>
@@ -290,6 +290,20 @@ Template Name: Admisiones
         </div>
     </div>
 </section> -->
+
+<section id="banners">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <a href="/admisiones"><img loading="lazy" class="d-none d-sm-block img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                    <a href="/admisiones"><img loading="lazy" class="d-block d-sm-none img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home_movil.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php get_template_part( 'template-parts/calcula-beca', null, array(
+    'porcentaje' =>  $porcentajeBeca
+)); ?>
 <section id="banner">
     <div class="container">
         <div class="row">
@@ -298,19 +312,6 @@ Template Name: Admisiones
                     <img class="img-fluid banners d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones.webp" alt="">
                     <img class="img-fluid banners d-block d-sm-none" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/banner_admisiones_movil.webp" alt="">
                 </a>
-            </div>
-        </div>
-    </div>
-</section>
-<?php get_template_part( 'template-parts/calcula-beca', null, array(
-    'porcentaje' =>  $porcentajeBeca
-)); ?>
-<section id="revalidacion">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-            </div>
-            <div class="col-md-6">
             </div>
         </div>
     </div>

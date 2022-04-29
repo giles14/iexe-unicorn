@@ -6,7 +6,11 @@ function enviarFormulario(parent, silent = false, strict = false, debug = false)
     var nombre = elementos.namedItem('nombre').value;
     var mail = encodeURIComponent(elementos.namedItem('email').value);
     var telefono = encodeURIComponent(elementos.namedItem('telefono').value);
-    var programa = selecciones["programa"].value;
+    if(selecciones){
+      var programa = selecciones["programa"].value;  
+    }else{
+      var programa = elementos["programa"].value;
+    }
     var convenio = "";
     if(selecciones["convenios"] != ""){
         convenio = selecciones["convenios"].value;

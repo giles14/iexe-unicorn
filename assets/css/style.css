@@ -3455,6 +3455,9 @@ span.nombre-institucion {
             padding: 10px;
             padding-top: 26px;
         }
+        img.avatar.avatar-450.photo {
+            height: 100%;
+        }
         .description {
             text-align: justify;
             padding: 15px;
@@ -3611,4 +3614,26 @@ input#mi-busqueda::placeholder {
 section#banner-youtube {	
     background: #EEEEEE;	
     margin-top: 0px;	
+}
+/* estatus de botones formularios overrides */
+.btn-exito{
+    background-color: green!important;
+}
+h2#swal2-title {
+    color: white;
+}
+.swal2-popup.swal2-toast.swal2-icon-success.swal2-show {
+    box-shadow: 3px 11px 18px 0px rgb(0 30 66 / 50%);
+}
+.swal2-popup.swal2-toast {
+    background-color: #2F9C95!important;
+}
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+    background-color: white!important;
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid rgba(255,255,255,.5)!important;
+}
+.swal2-container {
+    padding: 0.925em!important;
 }

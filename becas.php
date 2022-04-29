@@ -204,6 +204,16 @@ Template Name: Becas
             </div>  
     
 </section>
+    <section id="banners">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/admisiones"><img loading="lazy" class="d-none d-sm-block img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
+                    <a href="/admisiones"><img loading="lazy" class="d-block d-sm-none img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home_movil.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
 <?php get_template_part( 'template-parts/calcula-beca', null, array(
     'porcentaje' =>  $porcentajeBeca
 )); ?>

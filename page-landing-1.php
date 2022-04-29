@@ -98,7 +98,7 @@ switch(get_field('tipo_de_programa')) {
 <section id="formulario-interes-landing">
     <div class="container">
         
-        <form>
+        <form id="form-interes-landing" class="form-interes-landing" method="POST" data-origen="Landing">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="text-center">¿Estás interesado en nuestro programa?</h1>
@@ -106,21 +106,21 @@ switch(get_field('tipo_de_programa')) {
             
                     <div class="col-md-4">
                         <label for="nombre">Nombre*</label>
-                        <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Ingresa aquí tu nombre">
+                        <input id="nombre" name="nombre" type="text" class="form-control nombre-landing" placeholder="Ingresa aquí tu nombre" required>
                     </div>
 
                     <div class="col-md-4">
                         <label for="correo">Correo electrónico*</label>
-                        <input id="correo" name="correo" type="email" class="form-control" placeholder="Ingresa aquí tu correo">
-                          <input type="hidden" id="programa" name="programa" value="<?php the_field("clave_programa") ?>">
+                        <input id="correo" name="email" type="email" class="form-control" placeholder="Ingresa aquí tu correo">
+                          <input type="hidden" class="programa-landing" id="programa" name="programa" value="<?php the_field("clave_programa") ?>" required>
                     </div>
                 
                     <div class="col-md-4">
                         <label for="telefono">Teléfono o celular*</label>
-                        <input type="text" id="telefono" class="form-control" placeholder="Ingresa aquí tu número">
+                        <input type="text" id="telefono" class="form-control telefono-landing" placeholder="Ingresa aquí tu número" required>
                     </div>                
             </div>
-            <button type="button" class="enviar-landing">Enviar registro</button>
+            <button type="button"  onclick="enviarFormulario(this)"  class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
         </form>
     </div>
     

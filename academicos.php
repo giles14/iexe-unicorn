@@ -575,6 +575,9 @@ section#identificador {
                     </p>
                     
                 </div>
+                <?php if(get_field('tipo') == "Maestría en línea"){ ?>
+                        <a href="https://bit.ly/3EUMlDB" target="_blank"><img class="img-fluid mt-4" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/minibanner_IEXE_Interno-talento.webp" alt=""></a>
+                    <?php } ?>
             </div>
         </div>
     </div>

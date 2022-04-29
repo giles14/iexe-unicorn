@@ -70,7 +70,7 @@ function myplugin_ajaxurl() {
 
 $porcentajeBeca = round(rand(50 , 70), -1);
 function agregar_estilos_tema(){
-    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.27', 'all'  );
+    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.28', 'all'  );
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.09', 'all' );
     wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.01', 'all' );
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
@@ -167,6 +167,7 @@ function agregar_estilos_tema(){
     if(is_page_template('page-landing-1.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp');
         wp_enqueue_script('iexe-unicorn-landing'); 
+        wp_enqueue_script( 'iexe-formulariosZ');
     }
     if(is_page_template('page-landing-2.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp-2');
