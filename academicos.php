@@ -45,7 +45,7 @@ $elTipo = explode(" " , $elTipo);
                                       <h1 class="interes">¿Estás interesado?</h1>
                                   </div>
                                   <div class="cuerpo">
-                                      <form id="interes" method="POST" action="">
+                                      <form id="interes" method="POST" data-origen="interes carrera" action="">
                                           <div class="form-group">
                                             <label for="nombre">Nombre completo*</label>
                                             <input type="text" placeholder="Ingresa aquí tu nombre" class="form-control" name="nombre" id="nombre" >
@@ -59,8 +59,8 @@ $elTipo = explode(" " , $elTipo);
                                               <input type="tel" placeholder="Ingresa aquí tu teléfono móvil" class="form-control" name="telefono" id="telefono">
                                           </div>
                                           <div class="col-12 text-center">
-                                          <input id="hiddenPrograma" name="hiddenPrograma" type="hidden" value="<?php echo (get_field('clave_del_programa')) ? get_field('clave_del_programa')  : 'SINA'; ?>">
-                                              <button type="button" class="btn btn-primario mt-3">Enviar registro</button>
+                                          <input id="hiddenPrograma" name="programa" type="hidden" value="<?php echo (get_field('clave_del_programa')) ? get_field('clave_del_programa')  : 'SINA'; ?>">
+                                              <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
                                           </div>
                                         </form>
                                   </div>
@@ -578,6 +578,13 @@ section#identificador {
                 <?php if(get_field('tipo') == "Maestría en línea"){ ?>
                         <a href="https://bit.ly/3EUMlDB" target="_blank"><img class="img-fluid mt-4" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/minibanner_IEXE_Interno-talento.webp" alt=""></a>
                     <?php } ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <?php if(!(get_field('tipo') == "Maestría en línea")){ ?>
+                <a href="https://bit.ly/3EUMlDB" target="_blank"><img class="img-fluid mt-4" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_IEXE_Interno-talento.webp" alt=""></a>
+            <?php } ?>
             </div>
         </div>
     </div>

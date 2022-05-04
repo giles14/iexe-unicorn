@@ -18,8 +18,9 @@ function enviarFormulario(parent, silent = false, strict = false, debug = false)
     //var programa = selecciones["programa"].value;
     var adicional = window.location.href + "#" + forma.id;
     var convenio = "";
-    var ip =""; 
-    var ip = getIP(); 
+    var ObjIp =""; 
+    ObjIp = JSON.parse(httpGet()); 
+    ip = ObjIp['location']['country'];
     
     if(selecciones["convenios"]){
         convenio = selecciones["convenios"].value;
@@ -45,7 +46,7 @@ function enviarFormulario(parent, silent = false, strict = false, debug = false)
             text: 'Tus datos ya se encuentran registrados en nuestro sistema',
             icon: 'warning',
             toast: true,
-            timer: 16000,
+            timer: 6000,
             timerProgressBar: true,
             confirmButtonColor: "green",
             confirmButtonText: 'Entendido'
@@ -74,7 +75,7 @@ function enviarFormulario(parent, silent = false, strict = false, debug = false)
             toast: true,
             //position: 'bottom-end',
             showConfirmButton: false,
-            timer: 16000,
+            timer: 6000,
             timerProgressBar: true,
             confirmButtonColor: "green",
             confirmButtonText: 'Entendido'
@@ -112,6 +113,13 @@ function getIP(){
         return JSON.stringify(data, null, 2);
     });
     return ipThis;
+}
+function httpGet()
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", 'https://geo.ipify.org/api/v2/country?apiKey=at_hDuU1vZBExogkhLRsrXTnXL2qzSyF&ipAddress', false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
 }
 // function sleep (time) {
 //   return new Promise((resolve) => setTimeout(resolve, time));
