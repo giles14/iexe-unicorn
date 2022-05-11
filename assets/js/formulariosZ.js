@@ -69,17 +69,20 @@ function enviarFormulario(parent, silent = false, strict = false, debug = false)
           console.log("se guardó");
           removeAttribute("disabled");
         }else if(responseServer["status"] == 'success') {
-          sleep(2000).then(() => { Swal.fire({
-            icon: 'success',
-            title: 'Datos registrados con éxito',
-            toast: true,
-            //position: 'bottom-end',
-            showConfirmButton: false,
-            timer: 6000,
-            timerProgressBar: true,
-            confirmButtonColor: "green",
-            confirmButtonText: 'Entendido'
-          });
+          sleep(2000).then(() => { Swal.fire(
+            // icon: 'success',
+            // title: 'Datos registrados con éxito',
+            // toast: true,
+            // //position: 'bottom-end',
+            // showConfirmButton: false,
+            // timer: 6000,
+            // timerProgressBar: true,
+            // confirmButtonColor: "green",
+            // confirmButtonText: 'Entendido'
+            'Tus datos han sido registrados',
+            'Nuestros asesores se comunicarán contigo en breve',
+            'success'
+          );
           console.log("se guardó efectivamente");
           boton.classList.remove('running');
           boton.style.backgroundColor = 'green';

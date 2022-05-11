@@ -1,5 +1,5 @@
 <?php /* Template Name: Comunidad */ ?>
-<?php get_header( ); ?>
+<?php get_header(); ?>
 <section id="comunicados">
     <div class="container">
         <div class="row">

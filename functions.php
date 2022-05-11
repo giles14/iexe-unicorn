@@ -70,7 +70,7 @@ function myplugin_ajaxurl() {
 
 $porcentajeBeca = round(rand(50 , 70), -1);
 function agregar_estilos_tema(){
-    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.28', 'all'  );
+    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.29', 'all'  );
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.09', 'all' );
     wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.01', 'all' );
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
@@ -131,6 +131,10 @@ function agregar_estilos_tema(){
         wp_enqueue_script( 'iexe-unicorn-programas-rotator');
         wp_enqueue_style('iexe-unicorn-lity-css');
         wp_enqueue_script( 'iexe-unicorn-lity');
+    }
+    if(is_page_template('academicos-v2.php')){
+        wp_enqueue_style('iexe-unicorn-programas-academicos');
+        wp_enqueue_style( 'slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css', null, '1.8.1', 'all' );
     }
     if(is_page_template( 'home.php' )){
         wp_enqueue_script( 'iexe-formulariosZ');
@@ -314,10 +318,15 @@ function iexe_unicorn_body() {
 
         if(is_page_template('academicos.php')){
             echo 'id="programas"';
+        }elseif(is_page_template('academicos-v2.php')){
+            echo "id='" . cagb_stripAccents(get_field('tipo')) ."'";
         }else{
             echo "id = '" . strtolower(get_the_title()) . "'";
         }
     }
+}
+function cagb_stripAccents($str) {
+    return strtr(utf8_decode($str), utf8_decode('àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), 'aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
 }
 
 if ( ! function_exists( 'iexe_unicorn_registra_nav_menu' ) ) {

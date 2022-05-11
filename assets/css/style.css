@@ -3619,7 +3619,7 @@ section#banner-youtube {
 .btn-exito{
     background-color: green!important;
 }
-h2#swal2-title {
+/* h2#swal2-title {
     color: white;
 }
 .swal2-popup.swal2-toast.swal2-icon-success.swal2-show {
@@ -3633,7 +3633,10 @@ h2#swal2-title {
 }
 .swal2-icon.swal2-success .swal2-success-ring {
     border: 0.25em solid rgba(255,255,255,.5)!important;
-}
+} */
 .swal2-container {
     padding: 0.925em!important;
+}
+.swal2-styled.swal2-confirm {
+    background-color: #57AA57!important;
 }

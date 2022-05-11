@@ -74,19 +74,29 @@ img.x-admision {
 }
 .inicia-proceso {
     position: absolute;
-    bottom: 24px;
+    bottom: 30px;
     right: 25px;
-    width: 140px;
+    /* width: 140px; */
     z-index: 5;
     text-align: right;
 }
-.inicia-proceso a {
+/* .inicia-proceso a {
     color: var(--primario-cyan)!important;
     text-decoration: underline!important;
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
     cursor: pointer;
+} */
+.inicia-proceso a {
+    background: #00FFE8;
+    font-weight: 800!important;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: var(--primario--azul-obscuro)!important;
+    padding: 8px 25px;
 }
 p.preguntas {
     color: #f6f6f6;

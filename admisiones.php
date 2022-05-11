@@ -67,7 +67,7 @@ Template Name: Admisiones
                         </ul>
                     </div>
                     <div class="inicia-proceso">
-                        <a>Inicia tu proceso con un asesor</a>
+                        <a>Quiero inscribirme</a>
                     </div>
                     <div class="col-md-6">
                     </div>
@@ -129,7 +129,7 @@ Template Name: Admisiones
                     </ul>
                 </div>
                 <div class="inicia-proceso">
-                    <a>Inicia tu proceso con un asesor</a>
+                    <a>Quiero inscribirme</a>
                 </div>
             </div>
             <div class="row contenedor-admision el-formulario" style="display: none">
@@ -186,7 +186,7 @@ Template Name: Admisiones
                 <div class="col-md-6">
                 </div>
                 <div class="inicia-proceso">
-                    <a>Inicia tu proceso con un asesor</a>
+                    <a>Quiero inscribirme</a>
                 </div>
             </div>
             <div class="row contenedor-admision el-formulario" style="display: none">
