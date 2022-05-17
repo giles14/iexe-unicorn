@@ -144,7 +144,7 @@ function agregar_estilos_tema(){
         wp_enqueue_script( 'iexe-unicorn-becas');
         wp_enqueue_style( 'iexe-unicorn-becas-estilo');
         wp_enqueue_script('iexe-unicorn-multipasos');
-        wp_enqueue_script('iexe-nuevos-formularios');
+        // wp_enqueue_script('iexe-nuevos-formularios');
         wp_enqueue_script( 'iexe-formulariosZ');
     }
     if(is_page_template('admisiones.php')){
@@ -152,6 +152,7 @@ function agregar_estilos_tema(){
         wp_enqueue_style( 'iexe-unicorn-admisiones-estilo');
         wp_enqueue_script('iexe-unicorn-multipasos');
         wp_enqueue_script( 'validate-js');
+        wp_enqueue_script( 'iexe-formulariosZ');
     }
     if(is_page_template('capacitaciones.php')){
         wp_enqueue_style( 'iexe-unicorn-capacitaciones');
@@ -170,7 +171,7 @@ function agregar_estilos_tema(){
     }
     if(is_page_template('page-landing-1.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp');
-        wp_enqueue_script('iexe-unicorn-landing'); 
+        //wp_enqueue_script('iexe-unicorn-landing'); 
         wp_enqueue_script( 'iexe-formulariosZ');
     }
     if(is_page_template('page-landing-2.php')){

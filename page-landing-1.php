@@ -218,5 +218,5 @@ switch(get_field('tipo_de_programa')) {
 
 
     
-<script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/formulario.js"></script>
+
 <?php get_template_part( 'template-parts/footer-landing'); ?>

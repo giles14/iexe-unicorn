@@ -130,16 +130,16 @@ Template Name: Becas
                                               otorga porcentajes que van <strong> desde el 25% al 75% sobre la colegiatura. </strong>
                                               </p>
                                         <div class="botones-beca d-block d-sm-none">
-                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/CONVOCATORIA-FIRMADA-POR-EL-C.-SRIO.pdf">Convocatoria SEP</a>
-                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/SEP_convocatoria_particulares_2022-2023_-1.pdf">Formato de solicitud</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/SEP_convocatoria_particulares_2022-2023_-1.pdf">Convocatoria SEP</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/FORMATO_DE_SOLICITUD_DE_BECA_CICLO_2021-2022-2.docx">Formato de solicitud</a>
                                             <a id="boton-sep" class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
                                         </div>
                                     </div>
                                     
                                     <div class="col-md-3 d-none d-sm-block">
                                         <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/CONVOCATORIA-FIRMADA-POR-EL-C.-SRIO.pdf">Convocatoria SEP</a>
-                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/SEP_convocatoria_particulares_2022-2023_-1.pdf">Formato de solicitud</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/SEP_convocatoria_particulares_2022-2023_-1.pdf">Convocatoria SEP</a>
+                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/FORMATO_DE_SOLICITUD_DE_BECA_CICLO_2021-2022-2.docx">Formato de solicitud</a>
                                             <a class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
                                         </div>
                                     </div>
@@ -305,7 +305,7 @@ Template Name: Becas
                 </select>
                 </div>
             </div>
-            <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
+            <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right ld-ext-right">Enviar<div class="ld ld-ring ld-spin"></div></button>
         </form>
         </div>
       </div>
@@ -384,7 +384,7 @@ Template Name: Becas
                             </select>
                         </div>
                     </div>
-                    <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right">Enviar</button>
+                    <button type="button" onclick="enviarFormulario(this)" class="btn btn-primario float-right ld-ext-right">Enviar<div class="ld ld-ring ld-spin"></div></button>
                 </form>
                 </div>
             </div>
@@ -564,7 +564,7 @@ Template Name: Becas
                     }
                 </style>
             </div>
-            <button type="button" onclick="enviarFormulario(this)" class="btn sin-form float-right btn-primario">Enviar</button>
+            <button type="button" onclick="enviarFormulario(this)" class="btn sin-form float-right btn-primario ld-ext-right">Enviar<div class="ld ld-ring ld-spin"></div></button>
         </form>
         </div>
       </div>
@@ -624,60 +624,7 @@ Template Name: Becas
         });
     });   
 </script>
-<script>
-      $(document).ready(function(){
 
-$('#modal-beca-IEXE button.btn.btn-primario').click(function(){    
-    $('#modal-beca-IEXE button.btn.btn-primario').removeClass("error exito"); 
-    $('#modal-beca-IEXE button.btn.btn-primario').attr("disabled", true);
-    var nombre = $("[name='nombre']").val();
-    var correo = $("[name='email']").val();
-    
-    if($('input#hiddenPrograma').val()){
-        var programa = $('input#hiddenPrograma').val();
-        console.log(programa);
-    }else{
-        var programa = $("[name='programa']").val();
-        console.log(programa);
-    }
-    //var telefono = $("#telefono").val();
-    var telefono = iti.getNumber(crossOriginIsolated);
-    var data;           
-    // var formData = new FormData(forma);
-    // formData.append('telefono', String(iti.getNumber(crossOriginIsolated)));
-    $.ajax({
-    url: 'https://api.redisoft.dev/Leads/web',
-    type: 'post',
-    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "&charifaz=" + navigator.userAgent,
-    success: function(data){
-        console.log(data);
-        if(data == true || data == "saved"){
-            console.log("se salvó :)");
-            $("#problemaModal").modal('show');
-            $('#interes button.btn.btn-primario').addClass("error");
-
-        }else if(data == "duplicated"){
-            console.log("Ya hay un registro con este correo electrónico");
-        } else{
-            $("#guardadoModal").modal('show');
-            $('#interes button.btn.btn-primario').removeClass("error");
-            $('#interes button.btn.btn-primario').addClass("exito");
-        }
-        $('#interes button.btn.btn-primario').attr("disabled", false);
-        
-    },
-    error: function(data){
-        console.log("No se logró contactar al servidor");
-        console.log(data);
-        $('#interes button.btn.btn-primario').attr("disabled", false);
-        $('#interes button.btn.btn-primario').addClass("error");
-        // $("#modalFracaso").modal('show');
-        // $("#error-alerta").html("El servidor remoto no se pudo contactar, por favor intente más tarde");
-    }
-});
-});
-});
-  </script>
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>
 <?php get_footer( ); ?>

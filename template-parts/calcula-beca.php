@@ -19,7 +19,7 @@
                     </ul> 
 
                 </div>
-                <form id="calcular-beca">
+                <form id="calcular-beca" method="POST" data-origen="calcula-beca" action="">
                     <!-- progressbar -->
                     <!-- <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -32,7 +32,7 @@
                             <input type="email" name="email" placeholder="Ingresa aquí tu correo electrónico" required/>
                             <label class="fieldlabels">Celular: *</label>
                             <input id="telefono-beca" type="tel" name="telefono" placeholder="Ingresa aquí tu teléfono móvil" required  minlength="7" maxlength="11"/>
-                            <input name="porcentaje-2" type="hidden" value="<?php if ( $args['porcentaje'] ) {
+                            <input id="pje-beca" name="porcentaje-2" type="hidden" value="<?php if ( $args['porcentaje'] ) {
                                                                                                             echo $args['porcentaje'];
                                                                                                             } ?>" />
                             <div style="margin-top: 15px" class="form-group">
@@ -49,7 +49,7 @@
                             </div> 
                         </div> 
                         
-                        <button type="button" name="next" id="crm" class="next btn btn-primario float-right mt-3">Siguiente</button>
+                        <button type="button" onclick="enviarFormulario(this,true)" name="next" id="crm" class="next btn btn-primario float-right mt-3 ld-ext-right">Siguiente<div class="ld ld-ring ld-spin"></div></button>
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
@@ -123,7 +123,7 @@
         </div>
     </div>
 </section>
-<?php wp_enqueue_script('iexe-unicorn-silent-formulario');  ?>
+<?php // wp_enqueue_script('iexe-unicorn-silent-formulario');  ?>
 <script src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/GaugeMeter.js"></script>
 
 <style>

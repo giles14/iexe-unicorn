@@ -74,35 +74,41 @@ Template Name: Admisiones
             </div>
             <div class="row contenedor-admision el-formulario" style="display: none">
                     <div class="col-md-4"><h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Licenciaturas</h1></div>
-                    <div class="col-md-4">
-                        <form id="inscripcion" class="formulario-crm">
-                            <div class="form-group">
-                            <label for="nombre">Nombre completo*</label>
-                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" name="nombre" id="nombre" aria-describedby="emailHelp">
+                    <div class="col-md-8">
+                        
+                        <form id="inscripcion" class="formulario-crm" method="POST" data-origen="inicia-tu-proceso" action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="nombre">Nombre completo*</label>
+                                    <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" name="nombre" id="nombre" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="correo">Correo electrónico*</label>
+                                        <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telefono">Teléfono o celular*</label>
+                                        <input type="tel" placeholder="Ingresa aquí tu número telefónico" name="telefono" class="form-control" id="telefono" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="interes">Programa académico de interés</label>
+                                        <select name="programa" class="form-control" id="interes" name="programa">
+                                            <option selected="">Seleccionar programa</option>
+                                            <option value="LCP">Ciencias Políticas y Administración Pública</option>
+                                            <option value="LSP">Seguridad Pública</option>
+                                            <option value="LD">Derecho</option>
+                                            <option value="LAE">Administración de Empresas</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6  d-flex align-items-end">
+                                    <button style="display:block; margin: 0 auto; margin-bottom: 24px;" type="button" onclick="enviarFormulario(this)" class="btn btn-primario mt-3 al-crm ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="correo">Correo electrónico*</label>
-                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                                <label for="telefono">Teléfono o celular*</label>
-                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" name="telefono" class="form-control" id="telefono" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                                <label for="interes">Programa académico de interés</label>
-                                <select name="programa" class="form-control" id="interes" name="programa">
-                                    <option selected="">Seleccionar programa</option>
-                                    <option value="LCP">Ciencias Políticas y Administración Pública</option>
-                                    <option value="LSP">Seguridad Pública</option>
-                                    <option value="LD">Derecho</option>
-                                    <option value="LAE">Administración de Empresas</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-4  d-flex align-items-end">
-                            <button style="display:block; margin: 0 auto; margin-bottom: 24px;" type="button" class="btn btn-primario mt-3 al-crm">Enviar registro</button>
-                        </div>
                         </form>
+                            
+                        </div>
                         <div class="regresa-requisitos">
                         <a>< Regresar</a>
                     </div>
@@ -134,37 +140,43 @@ Template Name: Admisiones
             </div>
             <div class="row contenedor-admision el-formulario" style="display: none">
                     <div class="col-md-4"><h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Maestrías</h1></div>
-                    <div class="col-md-4">
-                        <form id="inscripcion">
-                            <div class="form-group">
-                            <label for="nombre">Nombre completo*</label>
-                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                                <label for="correo">Correo electrónico*</label>
-                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                                <label for="telefono">Teléfono o celular*</label>
-                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono-maestria" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                                <label for="interes">Programa académico de interés</label>
-                                <select class="form-control" id="interes" name="programa">
-                                    <option selected="">Seleccionar programa</option>
-                                    <option value="MBAT">Administración de Negocios</option>
-                                    <option value="MITIC">Ingeniería en Tecnologías de la Información</option>
-                                    <option value="MAPP">Administración y Políticas Públicas</option>
-                                    <option value="MEPP">Evaluación de Políticas Públicas</option>
-                                    <option value="MFP">Finanzas Públicas</option>
-                                    <option value="MSPP">Seguridad Pública y Políticas Públicas</option>
-                                </select>
-                            </div>
+                    <div class="col-md-8">
+                            <form id="inscripcion" method="POST" data-origen="inicia-tu-proceso" action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                        <label for="nombre">Nombre completo*</label>
+                                        <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="correo">Correo electrónico*</label>
+                                            <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="telefono">Teléfono o celular*</label>
+                                            <input type="tel" placeholder="Ingresa aquí tu número telefónico" name="telefono" class="form-control" id="telefono-maestria" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="interes">Programa académico de interés</label>
+                                            <select class="form-control" id="interes" name="programa">
+                                                <option selected="">Seleccionar programa</option>
+                                                <option value="MBAT">Administración de Negocios</option>
+                                                <option value="MITIC">Ingeniería en Tecnologías de la Información</option>
+                                                <option value="MAPP">Administración y Políticas Públicas</option>
+                                                <option value="MEPP">Evaluación de Políticas Públicas</option>
+                                                <option value="MFP">Finanzas Públicas</option>
+                                                <option value="MSPP">Seguridad Pública y Políticas Públicas</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6  d-flex align-items-end">
+                                        <button style="display:block; margin: 0 auto; margin-bottom: 24px;" onclick="enviarFormulario(this)" type="button" class="btn btn-primario mt-3 al-crm ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
+                                    </div>
+                                    
+                                </div>
+                            </form>
                         </div>
-                        <div class="col-md-4  d-flex align-items-end">
-                            <button style="display:block; margin: 0 auto; margin-bottom: 24px;" type="button" class="btn btn-primario mt-3 al-crm">Enviar registro</button>
-                         </form>
-                        </div>
+                        
                         <div class="regresa-requisitos">
                         <a>< Regresar</a>
                     </div>
@@ -191,31 +203,38 @@ Template Name: Admisiones
             </div>
             <div class="row contenedor-admision el-formulario" style="display: none">
                     <div class="col-md-4"><h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Doctorado</h1></div>
-                    <div class="col-md-4">
-                        <form id="inscripcion">
-                            <div class="form-group">
-                            <label for="nombre">Nombre completo*</label>
-                            <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+                    <div class="col-md-8">
+                        <form id="inscripcion" method="POST" data-origen="inicia-tu-proceso" action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre completo*</label>
+                                        <input type="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="correo">Correo electrónico*</label>
+                                        <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telefono">Teléfono o celular*</label>
+                                        <input type="tel" placeholder="Ingresa aquí tu número telefónico" name="telefono" class="form-control" id="telefono-doctorado" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="interes">Programa académico de interés</label>
+                                        <select class="form-control" id="interes" name="programa">
+                                            <option value="DPP" selected="">Políticas Públicas</option>
+                                            <option value="DSP" selected="">Seguridad Pública</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-end">
+                                <button style="display:block; margin: 0 auto; margin-bottom: 24px;" onclick="enviarFormulario(this)" type="button" class="btn btn-primario mt-3 al-crm ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
+                                </div>
+                                
                             </div>
-                            <div class="form-group">
-                                <label for="correo">Correo electrónico*</label>
-                                <input type="email" placeholder="Ingresa aquí tu correo electrónico" name="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                                <label for="telefono">Teléfono o celular*</label>
-                                <input type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono-doctorado" aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                                <label for="interes">Programa académico de interés</label>
-                                <select class="form-control" id="interes" name="programa">
-                                    <option value="DOC" selected="">Políticas Públicas</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-4  d-flex align-items-end">
-                            <button style="display:block; margin: 0 auto; margin-bottom: 24px;" type="button" class="btn btn-primario mt-3 al-crm">Enviar registro</button>
-                         </form>
-                        </div>
+                        </form>
+                    </div>
+                        
                         <div class="regresa-requisitos">
                         <a>< Regresar</a>
                     </div>
@@ -446,7 +465,7 @@ Template Name: Admisiones
         });
         $(".GaugeMeter").gaugeMeter();
         $("#generar-resultado").click(function(){
-            $("#medidorBeca").gaugeMeter({percent:<?php echo round(rand(50 , 70), -1) ?>});
+            $("#medidorBeca").gaugeMeter({percent:<?php echo $porcentajeBeca /*round(rand(50 , 70), -1)*/ ?>});
         });
     });   
 </script>

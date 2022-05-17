@@ -15,12 +15,12 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">22 de Abril del 2022</div>
+                    <div class="fecha">23 al 27 de Mayo del 2022</div>
                     <div class="titulo-aviso">
                         <h3>Semana de Master Class</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>¡Nos vemos esta semana en la masterclass! Recuerda apartar tu semana del 25-29 de abril para asistir a todos los eventos.</p>
+                        <p>¡Nos vemos esta semana en la masterclass! Recuerda apartar tu semana del 23-27 de Mayo para asistir a todos los eventos.</p>
                     </div>
                 </div>
             </div>
@@ -30,12 +30,12 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">25 de Abril del 2022</div>
+                    <div class="fecha">23 de Mayo del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>¿Qué papel le queda al Estado después de la globalización?</h3>
+                        <h3>La seguridad pública y la política criminal en México</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Dirigido por la Mtra. Celia Faride García Especialista en Sistemas de Protección Social y Microsimulación.</p>
+                        <p>Dirigido por el Maestro Manuel Alonso García, Especialista en Seguridad Pública.</p>
                     </div>
                 </div>
             </div>
@@ -45,12 +45,12 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">26 de Abril del 2022</div>
+                    <div class="fecha">24 de Mayo del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Técnicas para realizar un estudio de mercado</h3>
+                        <h3>Evolución constitucional en México</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>El Dr. Gustavo Jiménez, Especialista en Finanzas Públicas te enseñará como vas lograr tus metas de ventas deseadas.</p>
+                        <p>El Mtro. Oscar Sarmiento, Especialista en en Derecho y Políticas Públicas hablará sobre la importancia de conocer más sobre nuestra Constitución.</p>
                     </div>
                 </div>
             </div>
@@ -75,12 +75,12 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">27 de Abril del 2022</div>
+                    <div class="fecha">25 de Mayo del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Revolución Blockchain.</h3>
+                        <h3>La significatividad en el sistema educativo mexicano</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>No te puedes perder la ponencia del Mtro. Carlos Alexandro Giles.<br> Especialista en Tecnologías de la Información.</p>
+                        <p>No te puedes perder la ponencia de la Maestra Nelly Patricia Sandoval, Especialista en Evaluación Educativa.</p>
                     </div>
                 </div>
             </div>
@@ -90,12 +90,12 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">28 de Abril del 2022</div>
+                    <div class="fecha">26 de Mayo del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>El Ministerio Público y el ejercicio de la acción penal.</h3>
+                        <h3>Las personas físicas y morales. Su trascendencia en el ordenamiento jurídico mexicano</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Con la presencia del Mtro. Mario Alberto González, Especialista en Derecho Penal.</p>
+                        <p>Con la presencia del Lic. Javier Elain Cabrera, Especialista en Derecho Civil y Familiar.</p>
                     </div>
                 </div>
             </div>
@@ -105,12 +105,12 @@
             <div class="col-md-9">
                 <div class="aviso">
                     <span class="tipo">EVENTO</span>
-                    <div class="fecha">29 de Abril del 2022</div>
+                    <div class="fecha">27 de Mayo del 2022</div>
                     <div class="titulo-aviso">
-                        <h3>Educación a distancia.</h3>
+                        <h3>La grafología. Una puerta de entrada al conocimiento del inconsciente.</h3>
                     </div>
                     <div class="descripcion-aviso">
-                        <p>Desde los orígenes hasta las realidades, el Mtro. Carlos Alberto Cañada, Especialista en Desarrollo Social a través de la Educación, nos dará una ponencia más detallada sobre el tema en tendencia.</p>
+                        <p>La Mtra. Eurídice Isabel Curry, Especialista en Evaluación y Diagnóstico Psicológico nos dará una ponencia más detallada sobre este tema en tendencia.</p>
                     </div>
                 </div>
             </div>

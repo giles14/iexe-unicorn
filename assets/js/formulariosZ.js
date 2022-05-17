@@ -1,4 +1,4 @@
-function enviarFormulario(parent, silent = false, strict = false, debug = false){
+function enviarFormulario(parent, silent = false, strict = false, debug = true){
     //boton = parent.getElementsByClassName('ld-ext-right');    
     const forma = parent.closest('form');
     boton = forma.querySelector('.ld-ext-right');
@@ -10,6 +10,11 @@ function enviarFormulario(parent, silent = false, strict = false, debug = false)
     var nombre = elementos.namedItem('nombre').value;
     var mail = encodeURIComponent(elementos.namedItem('email').value);
     var telefono = encodeURIComponent(elementos.namedItem('telefono').value);
+    var porcentaje = '';
+    if(elementos['porcentaje-2']){
+        porcentaje = ' porcentaje=' + encodeURIComponent(elementos.namedItem('porcentaje-2').value);
+    }
+    
     if(selecciones[0]){
       var programa = selecciones["programa"].value;  
     }else{
@@ -32,6 +37,7 @@ function enviarFormulario(parent, silent = false, strict = false, debug = false)
         console.log(telefono);
         console.log(programa);
         console.log(convenio);
+        console.log(porcentaje);
     }
     var url = "https://hooks.zapier.com/hooks/catch/6680892/bz4gez0";
     var xhttp = new XMLHttpRequest();
@@ -69,24 +75,27 @@ function enviarFormulario(parent, silent = false, strict = false, debug = false)
           console.log("se guardó");
           removeAttribute("disabled");
         }else if(responseServer["status"] == 'success') {
-          sleep(2000).then(() => { Swal.fire(
-            // icon: 'success',
-            // title: 'Datos registrados con éxito',
-            // toast: true,
-            // //position: 'bottom-end',
-            // showConfirmButton: false,
-            // timer: 6000,
-            // timerProgressBar: true,
-            // confirmButtonColor: "green",
-            // confirmButtonText: 'Entendido'
-            'Tus datos han sido registrados',
-            'Nuestros asesores se comunicarán contigo en breve',
-            'success'
-          );
-          console.log("se guardó efectivamente");
-          boton.classList.remove('running');
-          boton.style.backgroundColor = 'green';
-          });
+          if(!silent){
+            sleep(2000).then(() => { Swal.fire(
+              // icon: 'success',
+              // title: 'Datos registrados con éxito',
+              // toast: true,
+              // //position: 'bottom-end',
+              // showConfirmButton: false,
+              // timer: 6000,
+              // timerProgressBar: true,
+              // confirmButtonColor: "green",
+              // confirmButtonText: 'Entendido'
+              'Tus datos han sido registrados',
+              'Nuestros asesores se comunicarán contigo en breve',
+              'success'
+            );
+            console.log("se guardó efectivamente");
+            boton.classList.remove('running');
+            boton.style.backgroundColor = 'green';
+            });
+          }
+          
           
             
           }else {
@@ -105,7 +114,7 @@ function enviarFormulario(parent, silent = false, strict = false, debug = false)
           }
 
     }
-    var data = "nombre="+ nombre +"&correo="+ mail +"&telefono="+ telefono +"&programa="+ programa +"&referencia="+ window.location.href +"#"+ idForm +"&charifaz="+ navigator.userAgent +"&adicional=origen:%20"+ origen + "&idConvenio="+ convenio + "&origen=" + adicional+ "&ip=" + ip;
+    var data = "nombre="+ nombre +"&correo="+ mail +"&telefono="+ telefono +"&programa="+ programa +"&referencia="+ window.location.href +"#"+ idForm +"&charifaz="+ navigator.userAgent +"&adicional=origen:%20"+ origen + porcentaje + "&idConvenio="+ convenio + "&origen=" + adicional +  "&ip=" + ip;
     
     xhttp.send(data);
     return console.log("esperando mensaje")

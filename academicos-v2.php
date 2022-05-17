@@ -435,93 +435,137 @@ section#identificador {
     </style>
     
 <?php } ?>
-<?php if( is_page(2978)){ ?>
-    <section id="tus-docentes">
+
+<section id="claves">
     <div class="container">
         <div class="row">
-            <div class="col slick">
-                <div class="slide-1">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/slide_profesor.png" alt="" class="img-fluid">
-                    <a href="nosotros/#facultad" target="_blank" class="link-academia">Conoce más de la facultad</a>
-                </div>
-                <div class="slide-2">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/slide_profesor-2.png" alt="" class="img-fluid">
-                    <a href="nosotros/#facultad" target="_blank" class="link-academia">Conoce más de la facultad</a>
-                </div>
-                <div class="slide-3">
-                    <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/slide_profesor-3.png" alt="" class="img-fluid">
-                    <a href="nosotros/#facultad" target="_blank" class="link-academia">Conoce más de la facultad</a>
+            <div class="col-md-3">
+                <div class="bloque-clave">
+                    <div class="icono-bloque-clave"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/reloj.png" alt=""></div>
+                    <p class="nombre-elemento-clave">Duración del programa</p>
+                    <div class="linea-degradada"></div>
+                    <div class="info-especial">15 meses</div>
                 </div>
             </div>
-            
+            <div class="col-md-3">
+                <div class="bloque-clave">
+                    <div class="icono-bloque-clave"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/birrete.png" alt=""></div>
+                    <p class="nombre-elemento-clave">Validez <br>Oficial</p>
+                    <div class="linea-degradada"></div>
+                    <div class="info-especial">SEP - RVOE</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bloque-clave">
+                    <div class="icono-bloque-clave"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/curso-por-internet.png" alt=""></div>
+                    <p class="nombre-elemento-clave">Maestrías <br> 100%</p>
+                    <div class="linea-degradada"></div>
+                    <div class="info-especial">En línea</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="bloque-clave">
+                    <div class="icono-bloque-clave"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/escudo-min.png" alt=""></div>
+                    <p class="nombre-elemento-clave">Modelo <br> Educativo</p>
+                    <div class="linea-degradada"></div>
+                    <div class="info-especial">Pragmaflex</div>
+                </div>
+            </div>
         </div>
     </div>
-
-    </section>
-    <script>
-        jQuery(document).ready(function(){
-            jQuery('.col.slick').slick({
-                
-            });
-        });
-    </script>
-    <style>
-        .slide-1{
-            /* background: green; */
-            position: relative;
-        }
-        .slide-2{
-            /* background: green; */
-            position: relative;
-        }
-        .slide-3{
-            /* background: green; */
-            position: relative;
-        }
-        a.link-academia {
-            position: absolute;
-            z-index: 999;
-            color: blue;
-            right: 40px;
-            bottom: 20px;
-            font-weight: 700;
-            text-decoration: underline 1px;
-        }
-    .slick-prev:before, .slick-next:before {
-        font-family: 'slick';
-        font-size: 20px;
-        line-height: 0;
-        /* opacity: .75; */
-        color: var(--primario--azul-obscuro);
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+</section>
+<style>
+    .bloque-clave{
+        width: 210px;
+        height: 210px;
+        background: var(--primario--azul-obscuro);
+        box-shadow: -15px 20px 30px #001C3A5C;
+        border-radius: 15px;
+        position: relative;
     }
-    .slick-next {
-        right: 40px;
+    .icono-bloque-clave{
+        right: 15px;
+        top: 15px;
+        position: absolute;
     }
-    .slick-prev {
-        left: unset;
-        display: none;
-    }
-    .contenido.d-table-cell.align-middle {
-        line-height: 19px;
-    }
-    h1.titulo-plan.nuevo{
-        font-size: 24px
-        line-height: 30px;
-    }
-    h1.titulo-plan.nuevo.mt-5.mb-4 {
+    p.nombre-elemento-clave{
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 24px;
-        line-height: 30px;
-        text-align: center;
+        color: #F6f6f6;
+        font-weight: 800;
+        line-height: 22px;
+        margin-top: 78px;
+        margin-left: 19px;
+        position: absolute;
     }
-    .texto-que-vas {
-        font-size: 16px;
+    .linea-degradada{
+        background: linear-gradient(90deg, rgba(0,255,232,1) 0%, rgba(255,255,255,0) 100%);
+        height: 5px;
     }
-    </style>
-
-<?php } ?>
-
+    .linea-degradada {
+    background: linear-gradient(90deg, rgba(0,255,232,1) 0%, rgba(255,255,255,0) 100%);
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    top: 135px;
+    left: 20px;
+}
+.info-especial {
+    color: var(--primario-cyan);
+    font-size: 21px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+}
+#estas-interesado-formulario h1 {
+    text-align: center;
+    font-weight: 800;
+    color: var(--primario-cyan);
+    font-family: var(--familia-titulos);
+    margin-bottom: 28px;
+}
+#estas-interesado-formulario p {
+    color: #FFF;
+    font-family: var(--familia-titulos);
+    font-size: 30px;
+    line-height: 51px;
+    font-weight: 400;
+}
+.col-md-12.forma {
+    background: var(--primario--azul-obscuro);
+    padding: 27px 96px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+#estas-interesado-formulario input[type="text"] {
+    background: none;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #B8C6E9;
+    color: #B8C6E9;
+    border-spacing: 4px;
+    line-height: 0px;
+    font-family: 'Nunito Sans';
+    font-size: 24px;
+}
+#estas-interesado-formulario input[type="text"]::placeholder {
+    color: #B8c6E9;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+}
+#estas-interesado-formulario button {
+    background: var(--primario-cyan);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 103px;
+    font-weight: 800;
+    color: var(--primario--azul-obscuro);
+    font-size: 20px;
+    margin: 32px auto 24px auto;
+    display: block;
+}
+</style>
 <section id="inscripcion">
     <div class="container">
         <div class="row">
@@ -570,9 +614,35 @@ section#identificador {
     </div>
 </section>
 <?php get_template_part( 'template-parts/botones-accion'); ?>
+<section id="estas-interesado-formulario">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 forma">
+                <h1>¿ESTÁS INTERESADO?</h1>
+                <p>¡Hola! me llamo <input type="text" placeholder="escribe tu nombre completo ">, estoy interesado en selecciona programa. <br> Me gustaría que me contacte un asesor educativo y poder saber más de este programa. <br>
+                 Pueden contactarme al teléfono <input type="text" placeholder="escribe tu teléfono">  y al email <input type="text" placeholder="escribe tu correo electrónico">. ¡Gracias!</p>
+                 <button>Enviar solicitud</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="claustro-academico">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</section>
 <?php get_template_part( 'template-parts/calcula-beca', null, array(
     'porcentaje' =>  $porcentajeBeca
 )); ?>
+
+<style>
+
+</style>
 <section id="banner">
     <div class="container">
         <div class="row">
