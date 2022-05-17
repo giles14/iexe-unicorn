@@ -57,14 +57,12 @@ section#slider{
 }
 section#oferta-educativa{
     margin:unset;
-    padding-top: 60px;
+    /* padding-top: 150px; */
 }
 section#embajadores-iexe {
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 section#info-primaria{
-
-    margin-top: -70px;
     position: relative;
 }
 section#botones-accion {
@@ -94,7 +92,7 @@ section#comunidad .button-primary{
     max-width: unset;
 }
 section#slider {
-    height: 100vh;
+    /* height: 100vh; */
 }
 .boton-accion {
     position: relative;
@@ -756,11 +754,12 @@ section#interes{
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 20%, rgba(237,237,237,1) 80%, rgba(255,255,255,1) 100%);
 }
 section#info-primaria{
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(237,237,237,1) 20%);
+    /* background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(237,237,237,1) 20%); */
     z-index: 20;
 }
 section#oferta-educativa{
-    background: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 39%, rgba(255,255,255,1) 46%);
+    /* background: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 39%, rgba(255,255,255,1) 46%); */
+    background: none;
 }
 #home section h1.titulo {
     margin-bottom: 10px;

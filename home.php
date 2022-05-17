@@ -5,8 +5,12 @@
                 <div id="slidePrincipal" class="carousel slide w-100 carousel-fade" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://bit.ly/3I4QqoR"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-aws.webp" alt="AWS academy"></a>
-                            <a href="https://bit.ly/3I4QqoR"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-aws-movil.webp" alt="AWS academy"></a>
+                            <a href="https://bit.ly/3I4QqoR"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_AWS_iexe.webp" alt="AWS academy"></a>
+                            <a href="https://bit.ly/3I4QqoR"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_R-IEXE-AWS.webp" alt="AWS academy"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://bit.ly/3sBlc3B"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_hotsale_iexe.webp" alt="Hot Sale 2022"></a>
+                            <a href="https://bit.ly/3sBlc3B"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider-r_hotsale_2022.webp" alt="Hot Sale 2022"></a>
                         </div>
                         <div class="carousel-item">
                             <a href="https://bit.ly/3NFUkYX"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
@@ -67,43 +71,6 @@
             </div>
         </div>
         
-    </section>
-    <section class="d-none d-sm-block" id="info-primaria">
-        <div class="container" style="position: relative;">
-            <video width="1140" height="420" autoplay muted loop style="position: absolute;top: 0;left: 0;border-radius: 15px;">
-                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/video4.m4v" type="video/mp4" muted>
-                        El navegador no acepta video
-            </video>
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <a href="/oferta-educativa">
-                    <div class="boton-slide d-flex">
-                        <span>Educación a distancia</span>
-                    </div>
-                    </a>
-                    <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/">
-                    <div class="boton-slide d-flex">
-                        <span>Programas internacionales</span>
-                    </div>
-                    </a>
-                    <a href="/becas">
-                    <div class="boton-slide last d-flex">
-                        <span>Becas a tu medida</span>
-                    </div>
-                    </a>
-
-                </div>
-                <div class="col-md-5">
-
-                </div>
-                <div class="col-md-3">
-                    <!-- <p class="descripcion">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque</p> -->
-                    <!-- <a href="#" class="descubre-mas">Descubre más</a> -->
-
-                </div>
-            </div>
-        </div>
-
     </section>
     <section id="oferta-educativa">
         <div class="container">
@@ -223,6 +190,43 @@
             
         </div>
         
+    </section>
+    <section class="d-none d-sm-block" id="info-primaria">
+        <div class="container" style="position: relative;">
+            <video width="1140" height="420" autoplay muted loop style="position: absolute;top: 0;left: 0;border-radius: 15px;">
+                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/video4.m4v" type="video/mp4" muted>
+                        El navegador no acepta video
+            </video>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <a href="/oferta-educativa">
+                    <div class="boton-slide d-flex">
+                        <span>Educación a distancia</span>
+                    </div>
+                    </a>
+                    <a href="/blog/validez-internacional-a-titulos-expedidos-por-iexe-universidad/">
+                    <div class="boton-slide d-flex">
+                        <span>Programas internacionales</span>
+                    </div>
+                    </a>
+                    <a href="/becas">
+                    <div class="boton-slide last d-flex">
+                        <span>Becas a tu medida</span>
+                    </div>
+                    </a>
+
+                </div>
+                <div class="col-md-5">
+
+                </div>
+                <div class="col-md-3">
+                    <!-- <p class="descripcion">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque</p> -->
+                    <!-- <a href="#" class="descubre-mas">Descubre más</a> -->
+
+                </div>
+            </div>
+        </div>
+
     </section>
     <section id="embajadores-iexe">
         <div class="container">
