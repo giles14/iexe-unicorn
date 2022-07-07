@@ -155,7 +155,7 @@ $elTipo = explode(" " , $elTipo);
                    
             </div>
             <div class="col-md-5 offset-md-1 mt-5 mt-sm-0">
-                <a class="in-video" href="https://www.youtube.com/embed/nBYUnKi6vbU?autoplay=1" data-lity>
+                <a class="in-video" href="https://www.youtube.com/embed/SH82FfSyv6c?autoplay=1" data-lity>
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/preview_laboral.webp" class="img-fluid pre-video" alt=""></a>
                     <!-- <h3 class="text-center que-vas mt-3 mb-2">El futuro es la ciencia de datos</h3> -->
                     
@@ -290,13 +290,16 @@ $elTipo = explode(" " , $elTipo);
                 <h2 class="description">Clases enfocadas en conocimientos <strong>útiles</strong> para tu <strong>vida profesional.</strong></h2>
             </div>
             <div class="col-12 col-md-6">
-                        <div class="boton-descarga-plan">
+            <a href="https://iexe.edu.mx/wp-content/uploads/2022/05/Brochure-2022-MCDA.pdf" target="_blank">
+                <div class="boton-descarga-plan">
                             <p class="descarga">Descarga el folleto del programa</p>
                             <span>Encontrarás el plan completo con todas las materias</span>
-                        </div>
+                            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/flecha-descarga.png" alt="" class="download-icon">
+                </div>
+            </a>
             </div>
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="row materias">
                 <div class="col-md-4 desc-materias text-center">
                     <h2 class="trimestre">Trimestre 1</h3>
@@ -339,7 +342,7 @@ $elTipo = explode(" " , $elTipo);
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <script>
             jQuery(document).ready(function(){
@@ -352,42 +355,48 @@ $elTipo = explode(" " , $elTipo);
                 });
             });
         </script>
-        <div class="row">
+        <div class="row materias">
         <?php 
             while( $unicorn_grupo <= get_field('cantidad_de_periodos')) {
                 if( have_rows("periodo_{$unicorn_grupo}") ):
                     while( have_rows("periodo_{$unicorn_grupo}") ): the_row();
-                        $materiaC = 1;
-                    while( $materiaC <= $materiasMax) {   
+                        $materiaC = 1; ?>
+                    <div class="col-md-4 desc-materias text-center">
+                        <h2 class="trimestre">Trimestre <?php echo $unicorn_grupo ?></h3>
+                        <ul class="materias v-2">
+                        <?php
+                    while( $materiaC <= $materiasMax) { ?>
+                    
+                        
+                    <?php
                         if( have_rows("materia_{$materiaC}") ):
+                            ?> 
+                                
+                            <?php
                             while( have_rows("materia_{$materiaC}") ): the_row();
                                 $materia = get_sub_field('nombre_materia');
                                 //$descripcionM = get_sub_field('descripcion_materia');
                                 
                                 if($materia){  ?>
-                                    <div class="col-md-4">
-                                        <div class="bloque-materia periodo-<?php echo $unicorn_grupo ?>">
-                                            <h2 class="materia"><?php the_sub_field('nombre_materia') ?></h2>
-                                            <h3 class="duracion"><?php echo ($estiloPrograma == "Programas Tradicionales") ? 'Duración: 16'  : get_sub_field('duracion_materia') ?> hrs.</h3>
-                                            <div class="descripcion-materia">
-                                                <?php the_sub_field('descripcion_materia') ?>
-                                            </div>
-                                            <!-- <div id="social">
-                                                
-                                            </div> -->
-                                        </div>
-                                    </div>
+                                    <li class="materia"><?php the_sub_field('nombre_materia') ?></li>
                                     <?php 
                                 }else{
                                     break;
                                 }
-                            endwhile;
+                            endwhile; ?>
+                                
+                            <?php 
                         endif;
                         $materiaC++;
-                    }
+                    } ?>
+                        </ul>
+                        </div>
+                    <?php 
                         $unicorn_grupo++;
-                        echo '<br>';
                     endwhile;
+                    ?> 
+                    
+                    <?php
                 endif;
             }
         ?>
@@ -474,7 +483,66 @@ section#identificador {
         </div>
     </div>
 </section>
+<section id="tienes-dudas">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <h1 class="deseas">¿Tienes alguna duda o deseas recibir más información?</h1>
+            </div>
+        </div>
+        <form>
+            <div class="form-row mt-3 pb-5">
+                <div class="col">
+                    <label for="nombre-f-1">Nombre completo*</label>
+                    <input type="text" id="nombre-f-1" class="form-control" placeholder="Ingresa aquí tu nombre">
+                </div>
+                <div class="col">
+                    <label for="correo-f-1">Correo electrónico*</label>
+                    <input type="text" id="correo-f-1" class="form-control" placeholder="Ingresa aquí tu correo electrónico">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primario mt-3">Solicitar información</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+</section>
+
 <style>
+    section#tienes-dudas{
+        background: linear-gradient(90deg, rgba(222,218,250,1) 0%, rgba(219,229,245,1) 75%, rgba(216,217,219,1) 100%);
+    }
+    h1.deseas {
+    font-size: 36px;
+    font-family: var(--familia-titulos);
+    }
+    #tienes-dudas button.btn.btn-primario {
+        background: linear-gradient(90deg, rgba(37,51,244,1) 0%, rgba(136,119,242,1) 100%);
+        color: #FFF;
+        border-radius: 25px;
+        padding: 6px 50px;
+        font-weight: bold;
+        font-size: 18px;
+        -webkit-box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
+        box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
+        border: 0px;
+        bottom: 1px;
+        position: absolute;
+    }
+    #tienes-dudas label {
+        margin-bottom: 0;
+        font-weight: 800;
+    }
+    #tienes-dudas input {
+        border-radius: 0px;
+        border-color: #adadad;
+    }
+    #tienes-dudas input::placeholder {
+    border-radius: 0px;
+    border-color: #adadad;
+    color: var(--primario-azul);
+    font-size: 14px;
+}
     .bloque-clave{
         width: 210px;
         height: 210px;
@@ -548,6 +616,10 @@ section#identificador {
     line-height: 0px;
     font-family: 'Nunito Sans';
     font-size: 24px;
+    width: 220px;
+}
+.iti.iti--allow-dropdown.iti--separate-dial-code {
+    display: inline;
 }
 #estas-interesado-formulario input[type="text"]::placeholder {
     color: #B8c6E9;
@@ -564,6 +636,89 @@ section#identificador {
     font-size: 20px;
     margin: 32px auto 24px auto;
     display: block;
+}
+
+section#claustro-academico {
+    border-bottom: 11px solid blue;
+}
+section#claustro-academico {
+    border-bottom: 8px solid blue;
+    margin-bottom: 64px;
+}
+.profr {
+    position: relative;
+}
+.prof-seleccionado {
+    position: absolute;
+    top: -15px;
+    background: url(<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/cuadroSeleccion.png);
+}
+.info {
+    position: relative;
+    margin-top: 285px;
+    margin-left: 15px;
+    color: #FFF;
+}
+.prof-seleccionado .nombre {
+    font-family: var(--familia-titulos);
+    font-size: 18px;
+}
+.link-perfil {
+    color: cyan;
+    text-decoration: underline;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 45px;
+}
+.prof-seleccionado .rol {
+    font-weight: 100;
+    font-family: var(--familia-general);
+}
+img.download-icon {
+    position: absolute;
+    right: 25px;
+    top: 17px;
+}
+h3.inicio-clases{
+    text-align: center;
+    font-family: var(--familia-titulos);
+    color: var(--primario-azul);
+    font-size: 24px;
+}
+p#conteo-reversa {
+    text-align: center;
+    font-family: var(--familia-general);
+    font-size: 36px;
+    font-weight: 300;
+}
+.prof-seleccionado {
+    position: absolute;
+    top: -15px;
+    background: url(https://iexe.edu.mx/wp-content/themes/iexe-unicorn/assets//img/cuadroSeleccion.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
+.prof-seleccionado.activo {
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.hidden.prof-seleccionado.show{
+    display:block;
+    cursor: pointer;
+}
+.full-info {
+    height: 98%;
+    width: 96%;
+    background: var(--primario--azul-obscuro);
+    display: none;
+    padding: 24px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 300;
 }
 </style>
 <section id="inscripcion">
@@ -594,6 +749,8 @@ section#identificador {
                 <div class="bloque-inscripcion azul">
                     <h2 class="titulo">Proceso de inscripción</h2>
                     <p>El primer paso para ingresar al programa es completar el formulario de inscripción. Una vez recibido nos pondremos en contacto para coordinar la entrevista (online).</p>
+                    <h3 class="inicio-clases mt-4">Próximo inicio de clases</h3>
+                    <p id="conteo-reversa"></p>
                     <p class="text-center">
                         <a class="btn btn-primario mt-3" href="/admisiones">Quiero inscribirme</a>
                     </p>
@@ -619,8 +776,8 @@ section#identificador {
         <div class="row">
             <div class="col-md-12 forma">
                 <h1>¿ESTÁS INTERESADO?</h1>
-                <p>¡Hola! me llamo <input type="text" placeholder="escribe tu nombre completo ">, estoy interesado en selecciona programa. <br> Me gustaría que me contacte un asesor educativo y poder saber más de este programa. <br>
-                 Pueden contactarme al teléfono <input type="text" placeholder="escribe tu teléfono">  y al email <input type="text" placeholder="escribe tu correo electrónico">. ¡Gracias!</p>
+                <p>¡Hola! me llamo <input type="text" name="nombre" placeholder="escribe tu nombre ">, estoy interesado en selecciona programa. <br> Me gustaría que me contacte un asesor educativo y poder saber más de este programa. <br>
+                 Pueden contactarme al teléfono <input id="telefono" name="telefono" type="text" placeholder="tu teléfono" style="width: 280px">  y al email <input type="text" name="correo" placeholder="correo electrónico">. ¡Gracias!</p>
                  <button>Enviar solicitud</button>
             </div>
         </div>
@@ -629,10 +786,60 @@ section#identificador {
 <section id="claustro-academico">
     <div class="container">
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
+            <div class="col-12 col-md-12">
+                <h1 class="titulo-plan">Claustro Académico</h1>
+                <h2 class="description">Clases enfocadas en conocimientos útiles para tu vida profesional.</strong></h2>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid profr" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/profes_03.png" alt="">
+                <div class="hidden prof-seleccionado">
+                    <div class="info">
+                        <div class="nombre">Mtro. Leopoldo Garza</div>
+                        <div class="rol">Director académico</div>
+                        <div class="link-perfil"><a onclick="myFunction(this)">Ver Perfil</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid profr" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/profes_05.png" alt="">
+                <div class="prof-seleccionado">
+                    <div class="info">
+                        <div class="nombre">Mtro. Brenda Graciela</div>
+                        <div class="rol">Profesor Bases de Datos</div>
+                        <div class="link-perfil"><a onclick="myFunction(this)">Ver Perfil</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid profr" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/profes_07.png" alt="">
+                <div class="prof-seleccionado">
+                    <div class="full-info">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae iure adipisci itaque nulla cum nisi officia quaerat deserunt laboriosam est autem suscipit officiis enim architecto voluptas accusantium earum, dolor maxime!
+                    </div>
+                    <div class="info">
+                        <div class="nombre">Mtro. Leopoldo Garza</div>
+                        <div class="rol">Director académico</div>
+                        <div class="link-perfil"><a onclick="myFunction(this)">Ver Perfil</a></div>
+                    </div>
+                    
+                </div>   
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid profr" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/profes_09.png" alt="">
+                <div class="prof-seleccionado">
+                    <div class="full-info">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae iure adipisci itaque nulla cum nisi officia quaerat deserunt laboriosam est autem suscipit officiis enim architecto voluptas accusantium earum, dolor maxime!
+                    </div>
+                    <div class="info">
+                        <div class="nombre">Mtro. Leopoldo Garza</div>
+                        <div class="rol">Director académico</div>
+                        <div class="link-perfil"><a onclick="myFunction(this)">Ver Perfil</a></div>
+                    </div>
+                    
+                </div> 
+            </div>
         </div>
     </div>
 </section>
@@ -655,6 +862,60 @@ section#identificador {
         </div>
     </div>
 </section>
+<script>
+var countDownDate = new Date("Jul 1, 2022 00:01:00").getTime();
+
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("conteo-reversa").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Aperturando siguiente ciclo";
+  }
+}, 1000);
+</script>
 <?php get_template_part( 'template-parts/comunidad', 'comunidad-iexe' ); ?>
 <?php get_template_part( 'template-parts/vinculos'); ?>
+<script>
+    console.log("antes de funcion");
+const containeros = document.querySelectorAll('#claustro-academico .col-md-3');
+containeros.forEach(f => f.addEventListener('mouseenter', function() {
+  containeros.forEach(e => {
+    var div = e.querySelector('div');
+    div.classList.add('hidden');
+    div.classList.remove('show');
+    const list = Array.from(document.querySelectorAll('.full-info'));
+    list.forEach(el => {
+        el.style.display = 'none';
+    });
+    //y = document.querySelector('.full-info');
+
+  })
+  this.querySelector('div').classList.add('show')
+}));
+function myFunction(xparent) {
+    y = xparent.parentElement
+    //var x = document.getElementsByClassName('full-info');
+    var y = xparent.closest('.prof-seleccionado');
+    var z = y.querySelector('.full-info');
+    //console.log(x);
+    if (z.style.display === 'block') {
+        z.style.display = 'none';
+    } else {
+        z.style.display = 'block';
+    }
+}
+</script>
 <?php get_footer( ); ?>

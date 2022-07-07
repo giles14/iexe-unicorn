@@ -23,7 +23,7 @@
                     <div class="bloque-foto d-table" style="margin: 6px 6px 0 0;"><a href="https://www.instagram.com/iexe_universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comunidad/3.webp" class="img-fluid" alt=""></a></div>
                     <div class="bloque-foto d-table" style="margin: 6px 0 0 6px;"><a href="https://www.instagram.com/iexe_universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comunidad/4.webp" class="img-fluid" alt=""></a></div> 
                 </div>
-                <div class="col-4 col-md-4 d-none d-sm-block"><a href="https://www.instagram.com/iexe_universidad/" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comunidad/5edificio.webp" class="img-fluid foto-grande" alt=""></a></div>
+                <div class="col-4 col-md-4 d-none d-sm-block"><a href="https://www.instagram.com/iexe_universidad/" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/comunidad/Edificio_IEXE.webp" class="img-fluid foto-grande" alt=""></a></div>
             </div>
             <div class="row galeria">
                 <div class="col-4 col-md-4 d-none d-sm-block el-collage">

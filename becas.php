@@ -86,66 +86,66 @@ Template Name: Becas
                 </div>
                 <div>
                     <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-6">
-                                        <!-- <h1 class="titulo">Beca Institucional IEXE</h1> -->
-                                        <!-- <h2 class="description"></h2> -->
-                                    </div>
-                                </div>
-                                <div class="row con-x">
-                                    <div class="col-2 col-md-1 align-self-center"><img class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
-                                    <div class="col-md-3 d-none d-sm-block">
-                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_1.webp" alt="" class="beca">
-                                    </div>
-                                    <div class="col-8 col-md-5 offset-md-2">
-                                        <h1 class="titulo">Beca Institucional IEXE</h1>
-                                        <p class="descripcion-beca">Pensada en apoyar a los alumnos sobresalientes,
-                                            la Beca IEXE otorga un porcentaje que va <strong>del 20% al 70% en las colegiaturas de licenciaturas,
-                                            maestrías, másteres y doctorado.</strong> Nuestros estudiantes y aspirantes pueden solicitarla todo el año.</p>
-                                        <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3" href="#" data-toggle="modal" data-target="#modal-beca-IEXE">Solicítala aquí</a>
+                                    <div class="row">
+                                        <div class="col-md-6 offset-md-5">
+                                            <!-- <h1 class="titulo">Beca SEP</h1>
+                                            <h2 class="description"></h2> -->
                                         </div>
                                     </div>
-                                    <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
-                                </div>
-                    </div>
+                                    <div class="row con-x">
+                                        <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
+                                        <div class="col-md-3 d-none d-sm-block">
+                                            <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_4.webp" alt="" class="beca">
+                                        </div>
+                                        <div class=" col-8 col-md-3 offset-md-1">
+                                            <h1 class="titulo">Beca SEP</h1>
+                                            <p  class="descripcion-beca">Promovida por la Secretaría de Educación Pública,
+                                                la convocatoria de la Beca SEP es publicada una vez al año y
+                                                otorga porcentajes que van <strong> desde el 25% al 75% sobre la colegiatura. </strong>
+                                                </p>
+                                            <div class="botones-beca d-block d-sm-none">
+                                                <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/SEP_convocatoria_particulares_2022-2023_-1.pdf">Convocatoria SEP</a>
+                                                <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/10.-SOLICITUD-DE-BECA-PARA-EL-CICLO-ESCOLAR-2022-2023.pdf">Formato de solicitud</a>
+                                                <a id="boton-sep" class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-3 d-none d-sm-block">
+                                            <div class="botones-beca">
+                                                <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/SEP_convocatoria_particulares_2022-2023_-1.pdf">Convocatoria SEP</a>
+                                                <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/10.-SOLICITUD-DE-BECA-PARA-EL-CICLO-ESCOLAR-2022-2023.pdf">Formato de solicitud</a>
+                                                <a class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
+                                    </div>
+                        </div>
                 </div>
                 <div>
                     <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-5">
-                                        <!-- <h1 class="titulo">Beca SEP</h1>
-                                        <h2 class="description"></h2> -->
-                                    </div>
-                                </div>
-                                <div class="row con-x">
-                                    <div class="col-2 col-md-1 align-self-center"><img  class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
-                                    <div class="col-md-3 d-none d-sm-block">
-                                        <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_4.webp" alt="" class="beca">
-                                    </div>
-                                    <div class=" col-8 col-md-3 offset-md-1">
-                                        <h1 class="titulo">Beca SEP</h1>
-                                        <p  class="descripcion-beca">Promovida por la Secretaría de Educación Pública,
-                                             la convocatoria de la Beca SEP es publicada una vez al año y
-                                              otorga porcentajes que van <strong> desde el 25% al 75% sobre la colegiatura. </strong>
-                                              </p>
-                                        <div class="botones-beca d-block d-sm-none">
-                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/SEP_convocatoria_particulares_2022-2023_-1.pdf">Convocatoria SEP</a>
-                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/FORMATO_DE_SOLICITUD_DE_BECA_CICLO_2021-2022-2.docx">Formato de solicitud</a>
-                                            <a id="boton-sep" class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
+                                    <div class="row">
+                                        <div class="col-md-6 offset-md-6">
+                                            <!-- <h1 class="titulo">Beca Institucional IEXE</h1> -->
+                                            <!-- <h2 class="description"></h2> -->
                                         </div>
                                     </div>
-                                    
-                                    <div class="col-md-3 d-none d-sm-block">
-                                        <div class="botones-beca">
-                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2022/05/SEP_convocatoria_particulares_2022-2023_-1.pdf">Convocatoria SEP</a>
-                                            <a class="btn btn-primario mt-3 azules float-right" target="_blank" href="/wp-content/uploads/2021/09/FORMATO_DE_SOLICITUD_DE_BECA_CICLO_2021-2022-2.docx">Formato de solicitud</a>
-                                            <a class="btn btn-primario mt-3 float-right" href="#" data-toggle="modal" data-target="#modal-beca-SEP">Solicítala aquí</a>
+                                    <div class="row con-x">
+                                        <div class="col-2 col-md-1 align-self-center"><img class="boton-atras" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-atras.svg" alt=""></div>
+                                        <div class="col-md-3 d-none d-sm-block">
+                                            <img src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/beca_1.webp" alt="" class="beca">
                                         </div>
+                                        <div class="col-8 col-md-5 offset-md-2">
+                                            <h1 class="titulo">Beca Institucional IEXE</h1>
+                                            <p class="descripcion-beca">Pensada en apoyar a los alumnos sobresalientes,
+                                                la Beca IEXE otorga un porcentaje que va <strong>del 20% al 70% en las colegiaturas de licenciaturas,
+                                                maestrías, másteres y doctorado.</strong> Nuestros estudiantes y aspirantes pueden solicitarla todo el año.</p>
+                                            <div class="botones-beca">
+                                                <a class="btn btn-primario mt-3" href="#" data-toggle="modal" data-target="#modal-beca-IEXE">Solicítala aquí</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
                                     </div>
-                                    <div class="col-2 col-md-1 align-self-center float-right"><img class="boton-adelante float-right" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/flecha-adelante.svg" alt=""></div>
-                                </div>
-                    </div>
+                        </div>
                 </div>
                 <div>
                     <div class="container">

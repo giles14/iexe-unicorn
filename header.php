@@ -106,18 +106,22 @@
             </li>
           </ul> -->
           <div class="navegacion-botones">
-            <input id="mi-busqueda" type="text" placeholder="¿Qué buscas?">
+            <input id="mi-busqueda" type="text" placeholder="Buscar">
             <a onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos"> Accesos</a>
+            <a href="javascript:void(0)" class="solicitar-info d-none d-lg-block" data-toggle="modal" data-target="#grid">Solicitar Información</a>
             <!-- <img style="margin-left: 20px;" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/search.svg" alt="" class="busqueda"> Buscar -->
           </div>
                    
         </div>
             <a style="color: #FFF" class="d-block d-md-none" onclick="abreAccesos()" href="javascript:void()"><img  src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/login.svg" alt="" class="accesos">Accesos</a>
             <!-- <img style="margin-left: 20px;" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/search.svg" alt="" class="busqueda"> Buscar -->
+        
         <a href="javascript:void(0)" class="closebtn" onclick="openNav()">
           <div class="menu gradient-border">
               Menú <img class="menu-boton" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/menu.svg" alt="">
           </div>
         </a>
+        
         </div>
+        <div class="banderaPride"></div>
       </nav>

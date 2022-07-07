@@ -3,22 +3,29 @@
         <div class="container-fluid">
             <div class="row">
                 <div id="slidePrincipal" class="carousel slide w-100 carousel-fade" data-ride="carousel">
+                    <div class="wrapper">
+                        <ol class="carousel-indicators d-none d-md-block">
+                            <li data-target="#slidePrincipal" data-slide-to="0" class="active"></li>
+                            <li data-target="#slidePrincipal" data-slide-to="1"></li>
+                            <li data-target="#slidePrincipal" data-slide-to="2"></li>
+                            <li data-target="#slidePrincipal" data-slide-to="3"></li>
+                            <li data-target="#slidePrincipal" data-slide-to="4"></li>
+                            <li data-target="#slidePrincipal" data-slide-to="5"></li>
+                        </ol>
+                    </div>
+                
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <a href="https://bit.ly/3I4QqoR"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_AWS_iexe.webp" alt="AWS academy"></a>
                             <a href="https://bit.ly/3I4QqoR"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_R-IEXE-AWS.webp" alt="AWS academy"></a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://bit.ly/3sBlc3B"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_hotsale_iexe.webp" alt="Hot Sale 2022"></a>
-                            <a href="https://bit.ly/3sBlc3B"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider-r_hotsale_2022.webp" alt="Hot Sale 2022"></a>
-                        </div>
+                            <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_TecnologiasIEXE.webp" alt="Somos tecnología"></a>
+                            <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_r-tech-iexe.webp" alt="Somos tecnología"></a>
+                      </div>
                         <div class="carousel-item">
                             <a href="https://bit.ly/3NFUkYX"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
                             <a href="https://bit.ly/3NFUkYX"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-r_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_IEXE_TV.webp" alt="Doctorado slide"></a>
-                            <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_R-YoutubeMovil.webp" alt="Doctorado slide"></a>
                         </div>
                         <div class="carousel-item">
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
@@ -36,10 +43,10 @@
                             <a href="https://bit.ly/iexeBNA" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="https://iexe.edu.mx/wp-content/uploads/2021/12/slider-2022.webp" alt="Promo Año Nuevo"></a>
                             <a href="https://bit.ly/iexeBNA" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="https://iexe.edu.mx/wp-content/uploads/2021/12/slider-2022-movil.webp" alt="Promo Año Nuevo"></a>
                       </div> -->
-                      <div class="carousel-item">
-                            <a href="/editorial"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
-                            <a href="/editorial"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
-                      </div>
+                      <!-- <div class="carousel-item">
+                            <a href="/editorial"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
+                            <a href="/editorial"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
+                      </div> -->
                       <div class="carousel-item">
                             <a href="/comunidad"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
                             <a href="/comunidad"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
@@ -72,7 +79,7 @@
         </div>
         
     </section>
-    <section id="oferta-educativa">
+    <section id="oferta-educativa" class="mt-xs-4" >
         <div class="container">
             <div class="row">
                 <div class="col">

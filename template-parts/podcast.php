@@ -22,7 +22,7 @@
                                     En este podcast platicamos sobre el regreso a clases presenciales. Con la compañía de profesores que están viviendo la situación, nos preguntamos ¿Es buen momento para regresar a las aulas? y ¿Cuál será el impacto que esto tendrá en las futuras generaciones? ¡Acompáñanos!
                                     <div class="links-podcast">
                                         <a target="_blank" class="icono-spotify" href="https://open.spotify.com/episode/01V6ky4wGTMCeD3GBblAvJ"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-spotify.webp" alt=""> Ir a Spotify</a>
-                                        <a target="_blank" class="icono-youtube" href="https://youtu.be/XlBG_rmaT7A"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
+                                        <!-- <a target="_blank" class="icono-youtube" href="https://youtu.be/XlBG_rmaT7A"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a> -->
                                     </div>
                                 </p>
                             </div>
@@ -37,7 +37,7 @@
                                     En este episodio hablamos de un tema de alta relevancia nacional, basado en el poder de decisión de las mujeres. Te invitamos a estar al pendiente este 11 de Ocrubre.</p>
                                     <div class="links-podcast">
                                         <a href="https://open.spotify.com/episode/1x1tsU61nywSRAA4N8dBA4" target="_blank" class="icono-spotify"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-spotify.webp" alt=""> Ir a Spotify</a>
-                                        <a target="blank" href="https://youtu.be/9Cl7KrF9obU" class="icono-youtube" ><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a>
+                                        <!-- <a target="blank" href="https://youtu.be/9Cl7KrF9obU" class="icono-youtube" ><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-youtube.webp" alt=""> Ir a Youtube</a> -->
                                     </div>
                                 
                             </div>

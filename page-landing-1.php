@@ -72,7 +72,7 @@ switch(get_field('tipo_de_programa')) {
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_Fecha_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Fechas de inicio</h3>
-                    <span class="informacion-secundaria">02 de Mayo<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
+                    <span class="informacion-secundaria">01 de Agosto<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
@@ -98,7 +98,7 @@ switch(get_field('tipo_de_programa')) {
 <section id="formulario-interes-landing">
     <div class="container">
         
-        <form id="form-interes-landing" class="form-interes-landing" method="POST" data-origen="Landing">
+        <form id="form-interes-landing" class="form-interes-landing" onsubmit="event.preventDefault(); enviarFormulario(this)" data-origen="Landing">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="text-center">¿Estás interesado en nuestro programa?</h1>
@@ -111,8 +111,8 @@ switch(get_field('tipo_de_programa')) {
 
                     <div class="col-md-4">
                         <label for="correo">Correo electrónico*</label>
-                        <input id="correo" name="email" type="email" class="form-control" placeholder="Ingresa aquí tu correo">
-                          <input type="hidden" class="programa-landing" id="programa" name="programa" value="<?php the_field("clave_programa") ?>" required>
+                        <input id="correo" name="email" type="email" class="form-control" placeholder="Ingresa aquí tu correo" required>
+                          <input type="hidden" class="programa-landing" id="programa" name="programa" value="<?php the_field("clave_programa") ?>">
                     </div>
                 
                     <div class="col-md-4">
@@ -120,7 +120,7 @@ switch(get_field('tipo_de_programa')) {
                         <input type="text" id="telefono" class="form-control telefono-landing" placeholder="Ingresa aquí tu número" required>
                     </div>                
             </div>
-            <button type="button"  onclick="enviarFormulario(this)"  class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
+            <button type="submit"  class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
         </form>
     </div>
     

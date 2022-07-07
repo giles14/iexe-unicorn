@@ -23,9 +23,10 @@ function enviarFormulario(parent, silent = false, strict = false, debug = true){
     //var programa = selecciones["programa"].value;
     var adicional = window.location.href + "#" + forma.id;
     var convenio = "";
-    var ObjIp =""; 
-    ObjIp = JSON.parse(httpGet()); 
-    ip = ObjIp['location']['country'];
+    // var ObjIp =""; 
+    // ObjIp = JSON.parse(httpGet()); 
+    // ip = ObjIp['location']['country'];
+    ip = httpGet();
     
     if(selecciones["convenios"]){
         convenio = selecciones["convenios"].value;
@@ -90,6 +91,7 @@ function enviarFormulario(parent, silent = false, strict = false, debug = true){
               'Nuestros asesores se comunicarán contigo en breve',
               'success'
             );
+            $('#grid').modal('hide');
             console.log("se guardó efectivamente");
             boton.classList.remove('running');
             boton.style.backgroundColor = 'green';
@@ -129,9 +131,22 @@ function getIP(){
 function httpGet()
 {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", 'https://geo.ipify.org/api/v2/country?apiKey=at_hDuU1vZBExogkhLRsrXTnXL2qzSyF&ipAddress', false ); // false for synchronous request
+    xmlHttp.open( "GET", 'https://geo.ipify.org/api/v2/country?apiKey=at_17J238PMAJ4vVWoPH7Uhxm48D1p1V&ipAddress', false ); // false for synchronous request
     xmlHttp.send( null );
-    return xmlHttp.responseText;
+    if(xmlHttp.response.status === 403){
+      ip = "falla";
+      return ip;
+    }else {
+      ObjIp= JSON.parse(xmlHttp.responseText)
+      if(ObjIp['code'] == 403){
+        ip = "falla";
+      }else{
+        ip = ObjIp['location']['country'];
+      }
+      
+      return ip;
+    }
+    
 }
 // function sleep (time) {
 //   return new Promise((resolve) => setTimeout(resolve, time));

@@ -10,7 +10,7 @@
         </div>
         <div class="row">
         <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/SEMANA_DE_MASTERCLAS.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/semana_masterclass.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Que_papel_le_queda_al_Estado_después_de_la_globalización.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/La_seguridad_publica_y_la_politica_criminal_en_Mexico.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Tecnicas_para_realizar_un_estudio_de_mercado.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/evolucion_constitucional_en_Mexico.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
@@ -70,7 +70,7 @@
                 </div>
             </div> -->
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Revolucion_Blockchain.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/La_significatividad_en_el_sistema_educativo_mexicano.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
@@ -85,7 +85,7 @@
                 </div>
             </div>
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/El_Ministeria_Publico_y_el_ejercicio_de_la_accion_penal.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Las_personas_fisicas_y_morales_su_trascendencia_en_el_ordenamiento.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="col-md-3 d-none d-sm-block">
-                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Educacion_a_distancia.webp" alt="">
+                <img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/La_grafologia_una_puerta_de_entrada_al_conocimiento_del_inconsciente.webp" alt="">
             </div>
             <div class="col-md-9">
                 <div class="aviso">
@@ -178,16 +178,16 @@
         </div>
 
     </section> -->
-    <section id="banner-xpresa">
+    <!-- <section id="banner-xpresa">
         <div class="container">
             <div class="row">
                 <div class="col col-md-12">
-                    <a class="d-none d-sm-block" href="https://www.tiktok.com/@iexeuniversidad" target="_blank"><img class="img-fluid redondear" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_IEXE_Interno-TikTok.webp" alt=""></a>
-                    <a class="d-block d-sm-none" href="https://www.tiktok.com/@iexeuniversidad" target="_blank"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_r_TikTok.webp" alt=""></a>
+                    <a class="d-none d-sm-block" href="https://www.tiktok.com/@iexeuniversidad" target="_blank"><img class="img-fluid redondear" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_IEXE_Interno-TikTok.webp" alt=""></a>
+                    <a class="d-block d-sm-none" href="https://www.tiktok.com/@iexeuniversidad" target="_blank"><img class="img-fluid" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_r_TikTok.webp" alt=""></a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- <section id="video-testimonial">
         <div class="container">
@@ -304,16 +304,16 @@
         </div>
     </section>
 
-<section id="banner-libro">
+<!-- <section id="banner-libro">
     <div class="container">
         <div class="row">
             <div class="col">
-                <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img class="img-fluid d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_bestseller-politicas-publicas.webp" alt=""></a>
-                <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner-comunidad-responsive.webp" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img class="img-fluid d-none d-sm-block" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_bestseller-politicas-publicas.webp" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ" target="_blank"><img class="img-fluid d-block d-sm-none" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/banner-comunidad-responsive.webp" alt=""></a>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <?php get_template_part( 'template-parts/comunidad'); ?>
 <!-- <section id="comunidad-internacional">

@@ -576,14 +576,16 @@ section#identificador {
                     
                 </div>
                 <?php if(get_field('tipo') == "Maestría en línea"){ ?>
-                        <!-- <a href="https://bit.ly/3EUMlDB" target="_blank"><img class="img-fluid mt-4" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/minibanner_IEXE_Interno-talento.webp" alt=""></a> -->
+                        <!-- <a href="https://bit.ly/3MKJTCE" target="_blank"><img class="img-fluid mt-4" src="/wp-content/uploads/2022/05/Minibaner_hotsale_2022-copy.webp" alt=""></a> -->
                     <?php } ?>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-            <?php if(!(get_field('tipo') == "Maestría en línea")){ ?>
-                <!-- <a href="https://bit.ly/3EUMlDB" target="_blank"><img class="img-fluid mt-4" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_IEXE_Interno-talento.webp" alt=""></a> -->
+            <?php if(get_field('tipo') == "Master en línea" or get_field('tipo') == "Licenciatura en línea" ){ ?>
+                <!-- <a href="https://bit.ly/3MKJTCE" target="_blank"><img class="img-fluid mt-4" src="https://iexe.edu.mx/wp-content/uploads/2022/05/Banner_IEXE_Interno-hotsale70_2022-.webp" alt=""></a> -->
+            <?php } elseif(get_field('tipo') == "Doctorado en línea"){ ?>
+                <!-- <a href="https://bit.ly/3MNGbZa" target="_blank"><img class="img-fluid mt-4" src="https://iexe.edu.mx/wp-content/uploads/2022/05/Banner_IEXE_Interno-hotsale75_2022.webp" alt=""></a> -->
             <?php } ?>
             </div>
         </div>

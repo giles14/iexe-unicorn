@@ -159,6 +159,7 @@
                 <a class="menu-movil" href="/admisiones">Admisiones</a>
                 <a class="menu-movil" href="/becas">Becas</a>
                 <a class="menu-movil" href="/comunidad">IEXE Comunidad</a>
+                <a class="menu-movil" href="/blog">Blog y noticias</a>
             </div>
         </div>
     </div>
@@ -504,5 +505,243 @@ $('#interes button.btn.btn-primario').click(function(){
     </div>
   </div>
 </div>
+<div class="modal fade" id="grid" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col text-white">
+            <div class="contenedor-modal">
+            <h2 class="text-center mb-5 mt-4">¿Tienes alguna duda?</h2>
+            <p>Aqui te ofrecemos toda la información que necesites sobre:</p>
+            <p>
+                <ul>
+                    <li><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iconos/educacion.png" alt=""> Becas académicas</li>
+                    <li><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iconos/ordenador.png" alt="">Inscripciones</li>
+                    <li><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iconos/libros.png" alt="">Oferta académica y planes de estudio</li>
+                    <li><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iconos/backpack.png" alt="">Nuestra comunidad</li>
+                </ul>
+            </p>
+            </div>
+            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x-layout.svg" alt="" class="lay-fondo">
+          </div>
+          <div class="col">
+            <div class="contenedor-modal pe-5 ps-5">
+            <p>¡Estamos para ayudarte! Déjanos tus datos y un asesor educativo se pondrá en contacto contigo.</p>
+            <form id="contacto"  onsubmit="event.preventDefault(); enviarFormulario(this)"  data-origen="formulario popup" action="">
+                        <div class="form-group">
+                          <label for="nombre">Nombre completo*</label>
+                          <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico*</label>
+                            <input name="email" type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono móvil*</label>
+                            <input name="telefono" type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono-pop"></div>
+                        
+                        <div class="form-group">
+                            <label for="programa-interes">Selecciona un programa</label>
+                            <select class="form-control" name="programa" id="programa-interes">
+                        <option value="SINA">Seleccionar Programa</option>
+                        <optgroup label="Licenciaturas">              
+                            <option value="LCP">Ciencias Políticas y Administración Pública</option>
+                            <option value="LSP">Seguridad Pública</option>
+                            <option value="LAE">Administración de Empresas</option>
+                            <option value="LD">Derecho</option>
+                        </optgroup>          
+                        <optgroup label="Maestrías">  
+                            <option value="MFP">Finanzas Públicas</option>
+                            <option value="MAPP">Administración y Políticas Públicas</option>
+                            <option value="MEPP">Evaluación de Políticas Públicas</option>
+                            <option value="MSPP">Seguridad Pública y Políticas Públicas</option>
+                            <option value="MBAT">Administración de Negocios</option>
+                            <option value="MITIC">Tecnologías de la Información</option>
+                        </optgroup>
+                        <optgroup label="Diplomados">
+                            <option value="DADFP">Alta Dirección en la Función Pública</option>
+                            <option value="DADPP">Análisis y Diseño de Políticas Públicas</option>															
+                            <option value="DEPP">Evaluación de Políticas Públicas</option>																	
+                            <option value="DDFF">Disciplina Financiera y Fiscalización</option>
+                            <option value="DPRSED">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
+                            <option value="DHG">Diplomado en habilidades Gerenciales y Liderazgo</option>
+                        </optgroup>
+                        <optgroup label="Doctorado">
+                            <option value="DOC">Doctorado en Políticas Públicas</option>
+                        </optgroup>
+                        <optgroup label="Master">
+                            <option value="MIGE">Innovación y Gestión Educativa</option>
+                            <option value="MCDA">Ciencia de Datos Aplicada</option>
+                            <option value="MAIS">Administración de Instituciones de Salud</option>
+                            <option value="MAG">Auditoria Gubernamental</option>
+                            <option value="MMPOP">Marketing Político y Opinión Pública</option>
+                            <option value="MGPM">Gestión Pública Municipal</option>
+                            <option value="MSPAJ">Sistema Penal Acusatorio y Juicio Oral</option>
+                        </optgroup>
+                    </select>                        
+                    </div>
+                    <p class="terminos">Al hacer clic en “CONTINUAR”, reconoces haber leído las Políticas de Privacidad y confirmas estar de acuerdo con el uso de ellas, así como los Términos y Condiciones del sitio</p>
+                    <button type="submit" class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar datos<div class="ld ld-ring ld-spin"></div></button>                            
+                    </form>
+            </div>
+          </div>
+        </div>   
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<style>
+    #grid .modal-content {
+    background: linear-gradient(90deg, rgba(0,30,66,1) 50%, rgba(255,255,255,1) 50%);
+    box-shadow: 0px 9px 18px #0C22F55C;
+    outline: unset;
+    overflow: hidden;
+    outline: 0px;
+    border: 1px;
+}
+#grid .modal .close {
+    color: red;
+    opacity: 1;
+}
+#grid .close{
+    float: right;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 0.5;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    letter-spacing: -2px; 
+}
+#grid h2 {
+    font-family: 'aktiv-grotesk-extended';
+    font-size: 24px;
+    font-weight: 200;
+}
+#grid p {
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.38px;
+}
+.contenedor-modal {
+    padding: 38px;
+    position: relative;
+}
+.lay-fondo{
+    bottom: -30px;
+    position: absolute;
+    right: 14px;
+}
+#grid #contacto .form-control {
+    border: none;
+    border-radius: unset;
+    border-bottom: 1px solid var(--primario-azul);
+    background: #FFF;
+}
+#grid p.terminos {
+    font-size: 16px;
+}
+#grid ul li {
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 12px;
+    list-style: none;
+}
+#grid button.enviar-landing.btn.sin-form.btn-primario.mt-3.ld-ext-right {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+#grid ul {
+    margin-block-start: 0px;
+    padding-inline-start: 10px;
+}
+#grid ul img {
+    margin-right: 12px;
+}
+a.solicitar-info{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 25px!important;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+nav.navbar.sticky .navegacion-botones {
+    color: #FFF;
+    margin: 0 3% 0 10%;
+    font-weight: 300;
+    transition: all 0.5s ease-out;
+}
+.navegacion-botones {
+    color: #FFF;
+    margin: 0 3% 0 10%;
+    font-weight: 300;
+}
+.navegacion-botones a {
+    text-decoration: none;
+    color: #fff;
+    float: left;
+    padding: 18px 10px;
+    margin-left: 25px;
+}
+input#mi-busqueda {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 0;
+    background: rgba(0,30,66,0.01);
+    /* border-bottom: 1px solid #FFF; */
+    background-image: url(https://iexe.xyz/busqueda/content/buscar.svg);
+    background-repeat: no-repeat;
+}
+#grid .close {
+    background: blue;
+    border-radius: 25px;
+    opacity: 1;
+    color: #FFF;
+    font-size: 20px;
+    margin: 0px;
+}
+div#navbarSupportedContent {
+    flex-direction: row-reverse;
+}
+@media (max-width: 1199px){
+nav.navbar.sticky .navegacion-botones {
+    margin: 0 0% 0 0%;
+}}
+@media (max-width: 995px){
+nav.navbar.sticky .navegacion-botones {
+    margin: 0 0% 0 0%;
+}
+.navegacion-botones {
+    color: #FFF;
+    margin: 0px 3% 0 3%;
+    font-weight: 300;
+}
+.navegacion-botones a {
+    margin-left: 25px;
+}
+}
+</style>
+<script>
+    var inputing = document.querySelector("#telefono-pop");
+    var iti = window.intlTelInput(inputing, {
+      localizedCountries: { 'us': 'Estados Unidos' },
+      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+      separateDialCode: true,
+      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    });
+</script>
 </body>
 </html>
