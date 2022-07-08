@@ -2,6 +2,10 @@
 /*
 Template Name: Admisiones
 */
+?>
+<?php 
+    $banner = get_field('banner_admisiones', 3505);
+    $bannerMovil = get_field('banner_admisiones_movil', 3505);
 ?> 
 <?php get_header( ); ?>
 <section id="header">
@@ -314,8 +318,14 @@ Template Name: Admisiones
         <div class="container">
             <div class="row">
                 <div class="col-md-12 mb-5">
-                    <a href="/admisiones"><img loading="lazy" class="d-none d-sm-block img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home.webp" alt=""></a>
-                    <a href="/admisiones"><img loading="lazy" class="d-block d-sm-none img-fluid banners" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_home_movil.webp" alt=""></a>
+                    <?php
+                        if( !empty( $banner ) ): ?>
+                            <a href="/admisiones"><img loading="lazy" src="<?php echo esc_url($banner['url']); ?>" class="d-none d-sm-block img-fluid banners" alt="<?php echo esc_attr($banner['alt']); ?>" /></a>
+                        <?php endif; ?>
+                        <?php
+                        if( !empty( $bannerMovil ) ): ?>
+                            <a href="/admisiones"><img loading="lazy" src="<?php echo esc_url($bannerMovil['url']); ?>" class="d-block d-sm-none img-fluid banners" alt="<?php echo esc_attr($bannerMovil['alt']); ?>" /></a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

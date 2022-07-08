@@ -3344,6 +3344,12 @@ Login
         transition: 0.3s;
     }
 }
+span.disclaimer {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
 .cerrar-inscribete-ya a {
     cursor: pointer;
     position: absolute;

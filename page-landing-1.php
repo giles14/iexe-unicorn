@@ -122,6 +122,7 @@ switch(get_field('tipo_de_programa')) {
             </div>
             <button type="submit"  class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
         </form>
+        <span class="disclaimer text-white mt-3">Al ingresar tus datos, aceptas nuestro <a href="https://iexe.edu.mx/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a>.</span>
     </div>
     
 </section>

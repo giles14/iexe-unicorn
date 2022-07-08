@@ -587,7 +587,7 @@ $('#interes button.btn.btn-primario').click(function(){
                         </optgroup>
                     </select>                        
                     </div>
-                    <p class="terminos">Al hacer clic en “CONTINUAR”, reconoces haber leído las Políticas de Privacidad y confirmas estar de acuerdo con el uso de ellas, así como los Términos y Condiciones del sitio</p>
+                    <p class="terminos">Al hacer clic en “CONTINUAR”, reconoces haber leído nuestro <a href="https://iexe.edu.mx/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a> y confirmas estar de acuerdo con el uso de ellas, así como los Términos y Condiciones del sitio</p>
                     <button type="submit" class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar datos<div class="ld ld-ring ld-spin"></div></button>                            
                     </form>
             </div>

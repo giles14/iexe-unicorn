@@ -36,7 +36,7 @@
                             <button type="button" onclick="enviarFormulario(this)" class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro <div class="ld ld-ring ld-spin"></div></button>
                         </div>
                       </form>
-
+                      <span class="disclaimer">Al ingresar tus datos, aceptas nuestro <a href="https://iexe.edu.mx/aviso-de-privacidad/">Aviso de Privacidad</a>.</span>
                 </div>
             </div>
         </div>
