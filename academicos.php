@@ -167,13 +167,14 @@ $elTipo = explode(" " , $elTipo);
         <a class="carousel-control-prev" href="#informacion-programa" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#informacion-programa" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> 
       </div>
 </section>
+
 <section id="navegacion">
     <div class="container">
         <div class="row no-gutters">
             <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONOCE TU<br> <?php echo strtoupper($elTipo[0]) ?></div></div></a></div>
             <?php if($estiloPrograma == "Programas Tradicionales") { ?>
-                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle"><?php echo (is_page('2978') || is_page('1310') ) ? "QUÉ HACE DIFERENTE A ESTE PROGRAMA" : "POR QUÉ ELEGIR ESTE PROGRAMA" ?></div></div></a></div>
-                <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">DÓNDE PUEDES TRABAJAR</div></div></a></div>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle"><?php // echo (is_page('2978') || is_page('1310') ) ? "QUÉ HACE DIFERENTE A ESTE PROGRAMA" : "POR QUÉ ELEGIR ESTE PROGRAMA" ?>¿POR QUÉ ELEGIR ESTE PROGRAMA?</div></div></a></div>
+                <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">¿DÓNDE PUEDES TRABAJAR?</div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="3"><div class="col d-table"><div class="contenido d-table-cell align-middle">NUESTRO MÉTODO DE ENSEÑANZA</div></div></a></div>
             <?php }else{ ?>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle">DIRIGIDO A</div></div></a></div>
@@ -336,13 +337,14 @@ $elTipo = explode(" " , $elTipo);
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img class="img-fluid d-none d-sm-block" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aws-academy.webp" alt="">
-                <img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aws-movil.webp" alt="">
+                <a href="https://www.iexe.edu.mx/noticias/alianza-estrategica-iexe-universidad-e-instituto-mirai/" target="_blank"><img class="img-fluid d-none d-sm-block roundedx" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aliaza-mirai.webp" alt=""></a>
+                <a href="https://www.iexe.edu.mx/noticias/alianza-estrategica-iexe-universidad-e-instituto-mirai/" target="_blank"><img class="img-fluid d-block d-sm-none roundedx" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aliaza-mirai-r.webp" alt=""></a>
             </div>
         </div>
     </div>
 </section>
 <?php } ?>
+
 <section id="plan-de-estudios">
     <div class="container">
         <div class="row">
@@ -415,6 +417,18 @@ $elTipo = explode(" " , $elTipo);
         </div>
     </div>
 </section>
+<?php if(is_page('1310') || is_page('1287')) { ?>
+<section id="acreditacion-unitar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-fluid d-none d-sm-block roundedx" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aws-academy.webp" alt="">
+                <img class="img-fluid d-block d-sm-none roundedx" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/aws-movil.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<?php } ?>
 <?php if(false && get_field('texto_identificador')){ ?>
 <div class="container">
     
@@ -593,9 +607,9 @@ section#identificador {
     </div>
 </section>
 <?php get_template_part( 'template-parts/botones-accion'); ?>
-<?php get_template_part( 'template-parts/calcula-beca', null, array(
-    'porcentaje' =>  $porcentajeBeca
-)); ?>
+<?php get_template_part( 'template-parts/calcula-beca-alt', null, array(
+        'porcentaje' =>  $porcentajeBeca
+    )); ?>
 <section id="banner">
     <div class="container">
         <div class="row">

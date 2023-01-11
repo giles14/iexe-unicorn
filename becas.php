@@ -223,11 +223,17 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
             </div>
         </div>
     </section>
-<?php get_template_part( 'template-parts/calcula-beca', null, array(
-    'porcentaje' =>  $porcentajeBeca
-)); ?>
+<?php if (is_user_logged_in()){
+     get_template_part( 'template-parts/calcula-beca-alt', null, array(
+        'porcentaje' =>  $porcentajeBeca
+    ));
+}else{
+    get_template_part( 'template-parts/calcula-beca-alt', null, array(
+        'porcentaje' =>  $porcentajeBeca
+    ));
+}  ?>
 
-<section id="banner-xpresa">
+<!-- <section id="banner-xpresa">
     <div class="container">
         <div class="row">
             <div class="col col-md-12">
@@ -236,7 +242,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <div class="container">
     <div class="row">
@@ -558,6 +564,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                             </optgroup>
                             <optgroup label="Doctorado">
                                 <option value="DOC">Doctorado en Políticas Públicas</option>
+                                <option value="DSP">Doctorado en Seguridad Públicas</option>
                             </optgroup>
                             <optgroup label="Master">
                                 <option value="MMPOP">Marketing Político y Opinión Pública</option>

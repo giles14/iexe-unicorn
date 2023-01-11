@@ -1,5 +1,8 @@
 <?php /* Template Name: Pagina Blog */ ?>
-
+<?php 
+    $banner = get_field('banner_pagina_principal', 3505);
+    $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
+?>
 <?php get_header( ); ?>
 <section id="seleccion-categoria" class="buffer-blog">
     <div class="container">
@@ -91,12 +94,29 @@
                 
         </div>
     </section>
-    <section id="banner" style="background: #EEEEEE; margin-top: auto">
+    <!-- <section id="banner" style="background: #EEEEEE; margin-top: auto">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <a href="https://www.tiktok.com/@iexeuniversidad"><img class="img-fluid d-none d-sm-block redondear" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_IEXE_Interno-TikTok.webp" alt=""></a>
                     <a href="https://www.tiktok.com/@iexeuniversidad"><img class="img-fluid d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Banner_r_TikTok.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="banners" style="background: #EEEEEE; margin-top: auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php
+                        if( !empty( $banner ) ): ?>
+                            <a href="/admisiones"><img loading="lazy" src="<?php echo esc_url($banner['url']); ?>" class="d-none d-sm-block img-fluid banners" alt="<?php echo esc_attr($banner['alt']); ?>" /></a>
+                        <?php endif; ?>
+                        <?php
+                        if( !empty( $bannerMovil ) ): ?>
+                            <a href="/admisiones"><img loading="lazy" src="<?php echo esc_url($bannerMovil['url']); ?>" class="d-block d-sm-none img-fluid banners" alt="<?php echo esc_attr($bannerMovil['alt']); ?>" /></a>
+                        <?php endif; ?>
+                    
                 </div>
             </div>
         </div>
@@ -127,7 +147,7 @@
                         <div class="bloque-entrada">
                             <span class="meta fecha"><?php echo get_the_date('j F\, Y'); ?></span>
                             <span class="meta categoria">Noticias</span>
-                            <h2 class="titulo"><a href="<?php the_permalink() ?>"><?php echo wp_trim_words(get_the_title(), 9, '...'); ?></a></h2>
+                            <h2 class="titulo"><a href="<?php the_permalink() ?>"><?php echo wp_trim_words(get_the_title(), 8, '...'); ?></a></h2>
                             <p><?php echo get_the_excerpt() ?></p>
                             <div class="meta-iconos">
                                 0 <i class="uil uil-comment-alt"></i>
@@ -153,7 +173,7 @@
             <div class="row">
             <?php 
                 // Parametros de WP_Query
-                $the_query = new WP_Query( array( 'category_name' => 'destacado',
+                $the_query = new WP_Query( array( 'category_name' => 'noticias',
                                                     'posts_per_page' => 1
                 
                                             ) ); ?>

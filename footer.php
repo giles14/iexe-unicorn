@@ -49,11 +49,11 @@
                      ?>
                 </div>
                 <div class="col-md-3 order-4">
-                    <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a target="_blank" class="telefono-whatsapp" href="https://bit.ly/3uOB6Hv"> 55-6814-0690</a></p>
+                    <p class="telefono-mexico buffer"><img class="whatsapp-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/wa.svg" alt=""><a target="_blank" class="telefono-whatsapp" href="https://bit.ly/3PkX4L4"> 55-1993-3234</a></p>
                     <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
                     <!-- <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a> -->
                     <div class="iconos-redes-sociales">
-                        <a target="_blank" href="https://www.facebook.com/IEXE.Universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a target="_blank" href="https://twitter.com/IEXE_Uni"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a target="_blank" href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a target="_blank" href="https://www.linkedin.com/school/iexeuniversidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a target="_blank" href="https://www.instagram.com/iexe_universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a><a target="_blank" href="https://open.spotify.com/show/0UL42ohKAgBn2Sdse3VV5J"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/spotify.svg" alt="" class="redes"></a><a target="_blank" href="https://vm.tiktok.com/ZMRoQFFQC/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/tiktok.svg" alt="" class="redes"></a>
+                        <a target="_blank" href="https://www.facebook.com/IEXE.Universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a target="_blank" href="https://twitter.com/IEXE_Uni"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a target="_blank" href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a target="_blank" href="https://www.linkedin.com/school/iexeuniversidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a target="_blank" href="https://www.instagram.com/iexe_universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a><a target="_blank" href="https://open.spotify.com/show/0UL42ohKAgBn2Sdse3VV5J"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/spotify.svg" alt="" class="redes"></a>
                     </div>
                     <p class="direccion">Blvd. Esteban de Antuñano 2702,<br>C.P. 72160 Cd. de Puebla, México</p>
                 </div>
@@ -522,11 +522,12 @@ $('#interes button.btn.btn-primario').click(function(){
             <p>Aqui te ofrecemos toda la información que necesites sobre:</p>
             <p>
                 <ul>
-                    <li><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iconos/educacion.png" alt=""> Becas académicas</li>
-                    <li><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iconos/ordenador.png" alt="">Inscripciones</li>
-                    <li><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iconos/libros.png" alt="">Oferta académica y planes de estudio</li>
-                    <li><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/iconos/backpack.png" alt="">Nuestra comunidad</li>
+                    <li><i class="sprite sprite-educacion"></i> Becas académicas</li>
+                    <li><i class="sprite sprite-ordenador"></i>Inscripciones</li>
+                    <li><i class="sprite sprite-libros"></i>Oferta académica y planes de estudio</li>
+                    <li><i class="sprite sprite-backpack"></i>Nuestra comunidad</li>
                 </ul>
+                
             </p>
             </div>
             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x-layout.svg" alt="" class="lay-fondo">
@@ -650,7 +651,7 @@ $('#interes button.btn.btn-primario').click(function(){
     background: #FFF;
 }
 #grid p.terminos {
-    font-size: 16px;
+    font-size: 12px;
 }
 #grid ul li {
     font-size: 24px;
@@ -702,7 +703,7 @@ input#mi-busqueda {
     border-radius: 0;
     background: rgba(0,30,66,0.01);
     /* border-bottom: 1px solid #FFF; */
-    background-image: url(https://iexe.xyz/busqueda/content/buscar.svg);
+    background-image: url(https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/buscar.svg);
     background-repeat: no-repeat;
 }
 #grid .close {
@@ -718,11 +719,11 @@ div#navbarSupportedContent {
 }
 @media (max-width: 1199px){
 nav.navbar.sticky .navegacion-botones {
-    margin: 0 0% 0 0%;
+    margin: 0 3% 0 10%;
 }}
 @media (max-width: 995px){
 nav.navbar.sticky .navegacion-botones {
-    margin: 0 0% 0 0%;
+    margin: 0 3% 0 10%;
 }
 .navegacion-botones {
     color: #FFF;
@@ -743,5 +744,31 @@ nav.navbar.sticky .navegacion-botones {
       utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
     });
 </script>
+<?php if (is_user_logged_in()){ 
+    get_template_part( 'template-parts/botonera-multi');
+}
+?>
+<?php
+    if ( is_super_admin() ){
+
+        //$act = $_SERVER["REQUEST_URI"];
+        //$act = wp_get_referer()=="https://www.iexe.edu.mx/" ? "/" : str_replace("https://www.iexe.edu.mx/","",wp_get_referer());
+        //$act = str_replace("https://www.iexe.edu.mx/","",wp_get_referer());
+        
+        // session_start();
+        // global $wp;
+        // $act = add_query_arg( array(), $wp->request );
+        // $adic = $_SERVER['REQUEST_URI'];
+        // echo "<br>";
+        // echo $_SERVER["REQUEST_URI"];
+        // echo "<br>";
+        // $_SESSION["RUTA"] .= $act . " & ";
+        // $_SESSION["ALTERNA"] .= $adic . " & ";
+        // echo($_SESSION["RUTA"]);
+        // echo "<br>";
+        // echo($_SESSION["ALTERNA"]);
+    }
+    
+?>
 </body>
 </html>

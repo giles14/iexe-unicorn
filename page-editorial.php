@@ -16,9 +16,9 @@
         </div>
         <div class="row">
             <div class="col-md-3">
-                <a href="/producto/el-pais-de-los-elefantes-blancos/">
+                <a href="/producto/evaluacion-de-politicas-publicas/">
                 <div class="categoria-img elefantes-blancos">
-                    <h2>El País de los Elefantes Blancos</h2>
+                    <h2>Evaluación de Políticas Públicas</h2>
                 </div>
                 </a>
             </div>

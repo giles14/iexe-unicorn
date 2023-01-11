@@ -37,7 +37,9 @@
                                                                                                             } ?>" />
                             <div style="margin-top: 15px" class="form-group">
                                 <label for="programa-interesB">Selecciona un programa</label>
-                                <?php get_template_part( 'template-parts/selectProgramas'); ?>
+                                <?php get_template_part( 'template-parts/selectProgramas', null, array(
+                                        'diplomados' => true,
+                                    )); ?>
                             </div>
                             <div class="row">
                                 <div class="col-7">

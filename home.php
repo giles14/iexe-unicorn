@@ -20,55 +20,45 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                 
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://bit.ly/3I4QqoR"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_AWS_iexe.webp" alt="AWS academy"></a>
-                            <a href="https://bit.ly/3I4QqoR"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_R-IEXE-AWS.webp" alt="AWS academy"></a>
+                            <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-ama.webp" alt="Nuevo libro"></a>
+                            <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-mov-ama.webp" alt="Nuevo libro"></a>
                         </div>
+                        <div class="carousel-item">
+                            <a href="https://bit.ly/3Ya2gqy" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="https://www.iexe.edu.mx/wp-content/uploads/2022/12/slide-conexiones-libro-andere-scaled.webp" alt="Conexiones y equilibrios"></a>
+                            <a href="https://bit.ly/3Ya2gqy" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="https://www.iexe.edu.mx/wp-content/uploads/2022/12/slide-conexiones-libro-andere-2-copy.webp" alt="Conexiones y equilibrios"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/somos_digitales.webp" alt="Somos digitales"></a>
+                            <a href="#"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/somos_digitalesR.webp" alt="Somos digitales"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_DoctoradoPP.webp" alt="Doctorado slide"></a>
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_DoctoradoPP_movil.webp" alt="Doctorado slide"></a>
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <a href="https://bit.ly/3NFUkYX"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
+                            <a href="https://bit.ly/3NFUkYX"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-r_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
+                        </div> -->
                         <div class="carousel-item">
                             <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_TecnologiasIEXE.webp" alt="Somos tecnología"></a>
                             <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_r-tech-iexe.webp" alt="Somos tecnología"></a>
-                      </div>
-                        <div class="carousel-item">
-                            <a href="https://bit.ly/3NFUkYX"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
-                            <a href="https://bit.ly/3NFUkYX"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-r_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
                         </div>
                         <div class="carousel-item">
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
+                            <a href="https://bit.ly/3I4QqoR"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_AWS_iexe.webp" alt="AWS academy"></a>
+                            <a href="https://bit.ly/3I4QqoR"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_R-IEXE-AWS.webp" alt="AWS academy"></a>
                         </div>
-                      <!-- <div class="carousel-item active">
-                            <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos.webp" alt="Somos Slide"></a>
-                            <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-somos-mobil.webp" alt="Somos Slide"></a>
-                      </div> -->
-                      <!-- <div class="carousel-item">
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado.webp" alt="Doctorado slide"></a>
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-doctorado-mobile.webp" alt="Doctorado slide"></a>
-                      </div> -->
-                      <!-- <div class="carousel-item">
-                            <a href="https://bit.ly/iexeBNA" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="https://iexe.edu.mx/wp-content/uploads/2021/12/slider-2022.webp" alt="Promo Año Nuevo"></a>
-                            <a href="https://bit.ly/iexeBNA" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="https://iexe.edu.mx/wp-content/uploads/2021/12/slider-2022-movil.webp" alt="Promo Año Nuevo"></a>
-                      </div> -->
-                      <!-- <div class="carousel-item">
-                            <a href="/editorial"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp.webp" alt="Libro diseño de políticas públicas slide"></a>
-                            <a href="/editorial"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-ddpp-mobile.webp" alt="Libro diseño de políticas públicas slide"></a>
-                      </div> -->
                       <div class="carousel-item">
                             <a href="/comunidad"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
                             <a href="/comunidad"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
                       </div>
-                      
-                      <!-- <div class="carousel-item">
-                            <a target="_blank" href="https://bit.ly/iexaWHA"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno.webp" alt="IEXALUMNO Slide"></a>
-                            <a target="_blank" href="https://bit.ly/iexaWHA"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_iexalumno_movil.webp" alt="IEXALUMNO Slide"></a>
-                      </div> -->
-                      
-                      
-                      <!-- <div class="carousel-item">
-                        <a href="/becas"><img class="w-100 d-none d-sm-block" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador.webp" alt="Embajadores Slide"></a>
-                            <a href="/becas"><img class="d-block d-sm-none w-100" src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-embajador-mobile.webp" alt="Embajadores Slide"></a>
-                      </div> -->
-                      <!-- <div class="carousel-item">
-                        <img class="d-block w-100" src="<?php // echo get_template_directory_uri() ?>/assets/img/sliderGde.png" alt="Third slide">
-                      </div> -->
+                      <div class="carousel-item">
+                            <a href="#" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="https://www.iexe.edu.mx/wp-content/uploads/2023/01/Slider_IEXE_TV-copy.webp" alt="Nuevo libro"></a>
+                            <a href="#" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="https://www.iexe.edu.mx/wp-content/uploads/2023/01/Slider-R-_IEXE_TV-copy.webp" alt="Nuevo libro"></a>
+                        </div>
+                      <div class="carousel-item">
+                            <a href="#"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/recomienda_gana_slide.webp" alt="Recomienda y gana"></a>
+                            <a href="#"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/recomienda_gana_slideR.webp" alt="Recomienda y gana"></a>
+                        </div>
                     </div>
                     <a class="carousel-control-prev" href="#slidePrincipal" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,16 +73,16 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
         </div>
         
     </section>
-    <section id="oferta-educativa" class="mt-xs-4" >
+    <section id="oferta-educativa" class="mt-xs-4" style="min-height: 1053px;">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col" style="min-height: 97px;">
                     <a href="/oferta-educativa/"><h1 class="titulo">Oferta educativa</h1></a>
 					<h2 class="description">Conoce nuestros programas <strong>100% en línea.</strong> ¡Desarróllate, especialízate y concreta tu futuro profesional!</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" style="min-height: 431px;">
                     <div class="oferta-bloque lic">
                         <div class="informa">
                             <a class="button-primary">LICENCIATURAS</a>
@@ -108,7 +98,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                         </div> 
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" style="min-height: 431px;">
                     <div id="maestro" class="oferta-bloque mae">
                         <div class="informa">
                             <a class="button-primary">MAESTRÍAS</a>
@@ -130,7 +120,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                         
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" style="min-height: 431px;">
                     <div id="maestro" class="oferta-bloque doc">
                         <div class="informa">
                             <a class="button-primary">DOCTORADOS</a>
@@ -147,7 +137,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" style="min-height: 431px;">
                     <div class="oferta-bloque mas">
                         <div class="informa">
                             <a class="button-primary">MASTERS</a>
@@ -164,7 +154,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                         </div> 
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" style="min-height: 431px;">
                     <div class="oferta-bloque dip">
                         <div class="informa">
                             <a class="button-primary">DIPLOMADOS</a>
@@ -182,7 +172,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                         </div> 
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" style="min-height: 431px;">
                     <div class="oferta-bloque cap">
                         <div class="informa">
                             <a class="button-primary">CAPACITACIONES</a>
@@ -313,73 +303,10 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
             </div>
         </div>
     </section>
-     <section id="blog">
-        <div class="overlay-img">
-        <div class="container">
-            <div class="row">
-            <?php 
-                // Parametros de WP_Query
-                $the_query = new WP_Query( array( 'category_name' => 'principal',
-                                                    'posts_per_page' => 1
-                
-                                            ) ); ?>
-                <div class="col-10 offset-1">
-                     <div class="bloque-moderno izquierda">
-                        <!--<div class="bloque-azul">    
-                        </div>
-                            <div class="bloque-neon">
-                                <h3 class="titulos">Hablemos de...</h3>
-                            </div> -->
-                            <a href="/blog" class="button-primary">En el blog IEXE, hablamos de...</a>
-                    </div>
-                    
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <?php 
-                while ($the_query -> have_posts()) : $the_query -> the_post(); 
-            ?>
-            <div class="row quick-quit">
-                    <div class="col-md-1 align-self-center">
-                        <div class="boton-izquierdo"> <!-- <a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-izquierda.png" alt=""></a> --></div>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <div class="imagen-blog">
-                            <?php the_post_thumbnail('destacada-archivo', array('class' => 'img-fluid')); ?>
-                            <!-- <img loading="lazy" src="<?php// echo esc_url(get_template_directory_uri()) ?>/assets/img/convenio-haya.webp" alt="" class="img-fluid"> -->
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <div class="autor d-none d-sm-block">
-                            <img loading="lazy" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/alexandro.webp" alt="" class="autor-foto">
-                            <div class="meta-informacion">
-                                <span class="nombre">Alexandro Giles</span>
-                                <span class="redes">Experto TI</span>
-                            </div>
-                            
-                        </div>
-                        <div class="post">
-                            <a href="<?php the_permalink() ?>"><h2 class="titulo"><?php echo wp_trim_words(get_the_title(), 10, '...'); ?></h2></a>
-                            <div class="entrada">
-                                <a href="<?php the_permalink() ?>"><p><?php echo get_the_excerpt() ?></p></a>
-                            </div>
-                            <div class="iconos">
-                                <!-- <i class="fas fa-heart primero"></i>90<i class="fas fa-comment-alt"></i>78<i class="fas fa-sync-alt"></i>12<i class="fas fa-bookmark ultimo"></i>34 -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1 align-self-center">
-                        <div class="boton-derecha"><!-- <a href="#"><img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/boton-derecha.png" alt=""></a> --></div>
-                    </div>
-
-            </div>
-        </div>
-        </div>
-        <?php 
-                endwhile;
-                wp_reset_postdata();
-                ?>
-    </section>
+     
+    <?php 
+       get_template_part('template-parts/blog-front'); 
+    ?>
     <?php get_template_part( 'template-parts/banderas'); ?>
     <?php get_template_part( 'template-parts/vinculos'); ?>
     <style>
@@ -387,5 +314,14 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
             margin: 10px 0px;
             padding: 0px 12px;
         }
+        .widget .pop-up .pop-up-circle.bubble {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
     </style>
+    <!-- Código de instalación Cliengo para Natalia (Prueba) --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/62e4184a6b1374002a108b4a/6318e0fc6b542e002a619720.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+    <style>
+#popupIframe, #chatIframe {float: left! important; right: 115px! important;}
+</style>
     <?php get_footer( ); ?>

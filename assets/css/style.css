@@ -59,6 +59,12 @@ section#oferta-educativa{
     margin:unset;
     /* padding-top: 150px; */
 }
+#oferta-educativa .oferta-bloque {
+    height: 466px;
+}
+section#oferta-educativa {
+    min-height: 1053px;
+}
 section#embajadores-iexe {
     /* margin-top: 40px; */
 }
@@ -68,6 +74,9 @@ section#info-primaria{
 section#botones-accion {
     margin-top: 80px;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(175,191,230,1) 25%, rgba(175,191,230,1) 14%, rgba(255,255,255,1) 100%);
+}
+div#navbarSupportedContent {
+    height: 65px;
 }
 section#plan-de-estudios {
     background: url(../img/fondoX.svg);
@@ -92,7 +101,7 @@ section#comunidad .button-primary{
     max-width: unset;
 }
 section#slider {
-    /* height: 100vh; */
+    height: 102vh;
 }
 .boton-accion {
     position: relative;
@@ -230,26 +239,32 @@ h2.description{
 .oferta-bloque.lic{
     background: url(../img/licenciaturas.webp);
     background-size: cover;
+    height: 466px;
 }
 .oferta-bloque.mae{
     background: url(../img/maestrias.webp);
     background-size: cover;
+    height: 466px;
 }
 .oferta-bloque.doc{
     background: url(../img/doctorados3.webp);
     background-size: cover;
+    height: 466px;
 }
 .oferta-bloque.mas{
     background: url(../img/masters.webp);
     background-size: cover;
+    height: 466px;
 }
 .oferta-bloque.dip{
     background: url(../img/diplomados.webp);
     background-size: cover;
+    height: 466px;
 }
 .oferta-bloque.cap{
     background: url(../img/capacitaciones.webp);
     background-size: cover;
+    height: 466px;
 }
 .carrera {
     position: relative;
@@ -735,6 +750,13 @@ section#sub-pie {
     font-family: 'Nunito Sans';
     font-weight: 600;
     letter-spacing: 0.16px;
+    font-size: 16px;
+}
+.informacion-importante a:first-child:after {
+    content: " | ";
+}
+.informacion-importante a:last-child {
+    /* font-weight: 100; */
 }
 section#interes {
     position: relative;
@@ -921,6 +943,7 @@ section#comunidad .mensaje {
     position: relative;
     width: 100%;
     overflow: hidden;
+    height: 466px;
   }
   
   .image {
@@ -1922,6 +1945,9 @@ position: relative
 .form-card {
 text-align: left
 }
+.roundedx {
+    border-radius: 25px;
+}
 
 #calcula-beca fieldset:not(:first-of-type) {
 display: none
@@ -2379,7 +2405,7 @@ section#maestrias .contenedor-programa ul li a:hover {
 
 /* Estilos tienda Woocommerce */
 body#editorial {
-    background: url(../img/elefantes-bg.webp);
+    background: url(../img/composicion-EPP.webp);
     /* background-color: #EDEDED; */
     background-size: contain;
     background-repeat: no-repeat;
@@ -2473,10 +2499,10 @@ h2#post-972 {
     background: url(../img/boton-politicas-publicas-over.webp);
 }
 #seleccion-categoria .elefantes-blancos{
-    background: url(../img/boton-elefantes-blancos.webp);
+    background: url(https://www.iexe.edu.mx/wp-content/uploads/2022/12/boton-EPP1-copia.png);
 }
 #seleccion-categoria .elefantes-blancos:hover{
-    background: url(../img/boton-elefantes-blancos-over.webp);
+    background: url(https://www.iexe.edu.mx/wp-content/uploads/2022/12/boton-EPP2.png);
 }
 
 section#editorial h1.titulo {
@@ -3522,7 +3548,7 @@ input#mi-busqueda:focus {
     border-bottom: 0px;
     outline: none;
     background: rgba(0,30,66,0.9);
-    background-image: url(https://iexe.xyz/busqueda/content/buscar.svg);
+    background-image: url(../img/buscar.svg);
     background-size: 25px;
     background-position: 10px;
     background-repeat: no-repeat;
@@ -3543,7 +3569,7 @@ input#mi-busqueda {
     background: rgba(0,30,66,0.15);
     color: cyan;
     width: 175px;
-    background-image: url(https://iexe.xyz/busqueda/content/buscar.svg) ;
+    background-image: url(../img/buscar.svg);
     background-repeat: no-repeat;
     background-position: 10px;
     background-size: 25px;
@@ -3597,6 +3623,26 @@ input#mi-busqueda::placeholder {
     background-size: 300% 300%;
   }
   
+  body#términos\ y\ condiciones\ de\ uso\ del\ correo\ electrónico {
+    background: url(../img/bg-programas-academicos.webp);
+    margin-top: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: unset;
+}
+body#términos\ y\ condiciones\ de\ uso\ del\ correo\ electrónico h2 {
+    font-size: 36px;
+    font-family: var(--familia-titulos);
+    color: var(--primario--azul-obscuro);
+    letter-spacing: -0.54px;
+    text-decoration: underline 3px solid var(--primario-azul);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 50px;
+    max-width: 760px;
+}
   
   @keyframes animatedgradient {
       0% {
@@ -3628,6 +3674,9 @@ input#mi-busqueda::placeholder {
     }
     nav.navbar.sticky .navegacion-botones {
         margin: 0 5% 0 5%;
+    }
+    .bloque-foto.d-table {
+        width: 47%;
     }
 }
 @media (min-width: 768px){
@@ -3738,12 +3787,62 @@ section#banner-youtube {
     /* visibility: hidden; */
     left: 0;
 }
-@media only screen and (max-width: 600px) {
-    .bandera {
-      height: 8px;
+.bloque-foto.d-table {
+    height: 50%;
+}
+i.sprite {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-backpack {
+    width: 25px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+.sprite-educacion {
+    width: 25px;
+    height: 25px;
+    background-position: -40px -5px;
+}
+
+.sprite-libros {
+    width: 25px;
+    height: 26px;
+    background-position: -40px -40px;
+}
+
+.sprite-ordenador {
+    width: 25px;
+    height: 25px;
+    background-position: -75px -5px;
+}
+
+.sprite-play {
+    width: 32px;
+    height: 32px;
+    background-position: -75px -40px;
+}
+/* @media only screen and (min-width: 1000px){
+    #oferta-educativa {
+        min-height: 1053px;;
     }
+} */
+@media only screen and (max-width: 600px) {
+    /* .bandera {
+      height: 8px;
+    } */
     .sticky .banderaPride {
         top: 67px;
         height: 4px;
     }
   }
+
+  

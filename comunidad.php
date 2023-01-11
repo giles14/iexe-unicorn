@@ -1,6 +1,6 @@
 <?php /* Template Name: Comunidad */ ?>
 <?php get_header(); ?>
-<section id="comunicados">
+<section id="comunicados" class="d-none">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -117,7 +117,7 @@
         </div>
     </div>
 </section>
-<section id="interes">
+<section id="interes" style="margin-top:50%">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -163,7 +163,7 @@
             </div>
         </div>
     </section>
-    <?php get_template_part( 'template-parts/podcast'); ?>
+    <?php // get_template_part( 'template-parts/podcast'); ?>
     <!-- <section id="anuncio-tiktok">
         <div class="container">
             <div class="row">

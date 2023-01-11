@@ -1,37 +1,102 @@
-function enviarFormulario(parent, silent = false, strict = false, debug = true){
-    //boton = parent.getElementsByClassName('ld-ext-right');    
+function enviarFormulario(parent, silent = false, strict = false, debug = true, loadA = true, isValid=true){ 
+    console.log(isValid);
+    if(!isValid)return;
     const forma = parent.closest('form');
     boton = forma.querySelector('.ld-ext-right');
-    boton.classList.add('running');
-    boton.setAttribute("disabled", '');
+    if (loadA){
+      boton.classList.add('running');
+      boton.setAttribute("disabled", '');
+    }
+    
     var elementos = forma.getElementsByTagName("input");
-    var selecciones = forma.getElementsByTagName("select");
+    try{
+      var selecciones = forma.getElementsByTagName("select");
+    }catch(err){
+      console.log('no se detecto programa académico');
+      console.error(err);
+      selecciones[0] = 'SINA';
+    }
+    
     var idForm = forma.getAttribute('id');
     var nombre = elementos.namedItem('nombre').value;
     var mail = encodeURIComponent(elementos.namedItem('email').value);
     var telefono = encodeURIComponent(elementos.namedItem('telefono').value);
     var porcentaje = '';
+    var conv = document.getElementById('hiddenConvenio');
+    var conve = document.getElementById('convenios');
+    var escolaridad = "";
+    var textoBoton = "OK";
+    try {
+      var mensaje = elementos.namedItem("mensaje").value;
+    }catch(err){
+      console.log(err);
+    }
+
     if(elementos['porcentaje-2']){
         porcentaje = ' porcentaje=' + encodeURIComponent(elementos.namedItem('porcentaje-2').value);
     }
-    
-    if(selecciones[0]){
-      var programa = selecciones["programa"].value;  
-    }else{
-      var programa = elementos["programa"].value;
+    try{
+      if(selecciones[0]){
+        var programa = selecciones["programa"].value;  
+      }
+    }catch(err){
+        console.log(err);
     }
-    //var programa = selecciones["programa"].value;
+
+    try{
+      var programa = elementos["programa"].value;
+    }catch(err){
+        console.log(err);
+    }
+   
+    try{
+      if(selecciones["mensaje"]){
+        var mensaje = selecciones["mensaje"].value;  
+      }    
+    } catch(err) {
+      console.log(err);
+    }
+
+    try{
+      escolaridad = forma.querySelector('input[name="escolaridad"]:checked').value;
+      switch (escolaridad){
+        case 'Si':
+          textoBoton = "Entendido";
+          break;
+        case 'No':
+          textoBoton = "Correcto";
+          break;
+        case 'En-tramite':
+          textoBoton = "Continuar"
+          break;
+        default:
+          textoBoton = "OK";
+      }
+    }
+    catch(err){
+      console.log(err);
+    }
+        
     var adicional = window.location.href + "#" + forma.id;
     var convenio = "";
-    // var ObjIp =""; 
-    // ObjIp = JSON.parse(httpGet()); 
-    // ip = ObjIp['location']['country'];
     ip = httpGet();
     
     if(selecciones["convenios"]){
         convenio = selecciones["convenios"].value;
     }
+  
+    if(typeof(conv) != 'undefined' && conv != null){
+      var convenio = conv.value;
+    }
+    if(typeof(conve) != 'undefined' && conve != null){
+      var convenio = conve.value;
+    }
+    
     var origen = forma.dataset.origen;
+    //var mensaje = elementos.namedItem("mensaje").value;
+    if(typeof(mensaje) != 'undefined' && mensaje != null){
+      var origen = origen + " Mensaje: " + mensaje;
+    }
     if (debug){
         console.log(nombre);
         console.log(mail);
@@ -39,6 +104,7 @@ function enviarFormulario(parent, silent = false, strict = false, debug = true){
         console.log(programa);
         console.log(convenio);
         console.log(porcentaje);
+        console.log(origen);
     }
     var url = "https://hooks.zapier.com/hooks/catch/6680892/bz4gez0";
     var xhttp = new XMLHttpRequest();
@@ -77,7 +143,7 @@ function enviarFormulario(parent, silent = false, strict = false, debug = true){
           removeAttribute("disabled");
         }else if(responseServer["status"] == 'success') {
           if(!silent){
-            sleep(2000).then(() => { Swal.fire(
+            sleep(2000).then(() => { Swal.fire({
               // icon: 'success',
               // title: 'Datos registrados con éxito',
               // toast: true,
@@ -87,14 +153,17 @@ function enviarFormulario(parent, silent = false, strict = false, debug = true){
               // timerProgressBar: true,
               // confirmButtonColor: "green",
               // confirmButtonText: 'Entendido'
-              'Tus datos han sido registrados',
-              'Nuestros asesores se comunicarán contigo en breve',
-              'success'
-            );
+              icon: 'success',
+              title: 'Tus datos han sido registrados',
+              text: 'Nuestros asesores se comunicarán contigo en breve',
+              confirmButtonText: textoBoton
+            });
             $('#grid').modal('hide');
             console.log("se guardó efectivamente");
-            boton.classList.remove('running');
-            boton.style.backgroundColor = 'green';
+            if(loadA){
+              boton.classList.remove('running');
+              boton.style.backgroundColor = 'green';
+            }
             });
           }
           
@@ -116,7 +185,7 @@ function enviarFormulario(parent, silent = false, strict = false, debug = true){
           }
 
     }
-    var data = "nombre="+ nombre +"&correo="+ mail +"&telefono="+ telefono +"&programa="+ programa +"&referencia="+ window.location.href +"#"+ idForm +"&charifaz="+ navigator.userAgent +"&adicional=origen:%20"+ origen + porcentaje + "&idConvenio="+ convenio + "&origen=" + adicional +  "&ip=" + ip;
+    var data = "nombre="+ nombre +"&correo="+ mail +"&telefono="+ telefono +"&programa="+ programa +"&referencia="+ window.location.href +"#"+ idForm +"&charifaz="+ navigator.userAgent +"&adicional=origen:%20"+ origen + porcentaje + "&idConvenio="+ convenio + "&origen=" + adicional +  "&ip=" + ip + "&escolar=" + escolaridad;
     
     xhttp.send(data);
     return console.log("esperando mensaje")
@@ -131,7 +200,7 @@ function getIP(){
 function httpGet()
 {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", 'https://geo.ipify.org/api/v2/country?apiKey=at_17J238PMAJ4vVWoPH7Uhxm48D1p1V&ipAddress', false ); // false for synchronous request
+    xmlHttp.open( "GET", 'https://geo.ipify.org/api/v2/country?apiKey=at_hDuU1vZBExogkhLRsrXTnXL2qzSyF&ipAddress', false ); // false for synchronous request
     xmlHttp.send( null );
     if(xmlHttp.response.status === 403){
       ip = "falla";

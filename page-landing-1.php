@@ -15,17 +15,30 @@ switch(get_field('tipo_de_programa')) {
         $bg_image = "";
         break;
 }
-
+if(get_field('tipo_de_programa') == "Licenciatura en línea") {
+    $cagb_estudio_mensaje = "¿Tienes tu bachiller o Preparatoria concluida?";
+}elseif(get_field('tipo_de_programa') == "Maestría en línea"){
+    $cagb_estudio_mensaje = "¿Tienes tu Licenciatura o tercer nivel concluido?";
+} elseif(get_field('tipo_de_programa') == "Doctorado en línea"){
+    $cagb_estudio_mensaje = "¿Tienes tu Maestría concluida?";
+}
 //echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month"));
 ?>
 <?php get_template_part( 'template-parts/header-landing'); ?>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GP32R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+</script>
 <style>
     body {
     background: url(<?php echo $bg_image ?>) 0% 0% / contain no-repeat rgb(239, 239, 239);
     background-size: contain;
     background-repeat: no-repeat;
     }
-    @media only screen and (max-width: 900px){}
+    @media only screen and (max-width: 900px){
         body {
             background-size: inherit;
         }
@@ -72,7 +85,7 @@ switch(get_field('tipo_de_programa')) {
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_Fecha_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Fechas de inicio</h3>
-                    <span class="informacion-secundaria">01 de Agosto<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
+                    <span class="informacion-secundaria">03 de Enero 2023<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
@@ -98,7 +111,7 @@ switch(get_field('tipo_de_programa')) {
 <section id="formulario-interes-landing">
     <div class="container">
         
-        <form id="form-interes-landing" class="form-interes-landing" onsubmit="event.preventDefault(); enviarFormulario(this)" data-origen="Landing">
+        <form id="form-interes-landing" class="form-interes-landing" onsubmit="event.preventDefault(); enviarFormulario(this); fillDataLayer()" data-origen="Landing">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="text-center">¿Estás interesado en nuestro programa?</h1>
@@ -120,6 +133,21 @@ switch(get_field('tipo_de_programa')) {
                         <input type="text" id="telefono" class="form-control telefono-landing" placeholder="Ingresa aquí tu número" required>
                     </div>                
             </div>
+            <?php 
+                if(true){
+            ?>
+            <div class="row">
+                        <div class="col-sm-4 mt-3 mx-auto text-center">
+                            <p class="text-white"><?php echo $cagb_estudio_mensaje ?></p>
+                            <input type="radio" id="concluida" name="escolaridad" value="Si" required>
+                            <label for="concluida">Si</label>
+                            <input type="radio" id="no-concluida" name="escolaridad" value="No">
+                            <label for="no-concluida">No</label>
+                            <input type="radio" id="en-tramite" name="escolaridad" value="En-tramite">
+                            <label for="en-tramite">En trámite</label>
+                        </div>
+            </div>
+            <?php } ?>
             <button type="submit"  class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
         </form>
         <span class="disclaimer text-white mt-3">Al ingresar tus datos, aceptas nuestro <a href="https://iexe.edu.mx/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a>.</span>
@@ -215,9 +243,30 @@ switch(get_field('tipo_de_programa')) {
      get_template_part( 'template-parts/landing-relacionados');
 }
  ?>
+<style>
+    :target:before {
+    content: "";
+    display: block;
+    height: 0px;
+    margin: 0px;
+}
+</style>
 
-
-
+<script>
+    function fillDataLayer(){
+        nombre = document.getElementById('nombre').value;
+        correo = document.getElementById('correo').value;
+        telefono = document.getElementById('telefono').value;
+        escolaridad = document.querySelector('input[name="escolaridad"]:checked').value
+        dataLayer.push({
+            "nombre": nombre,
+            "correo": correo,
+            "telefono": telefono,
+            "escolaridad": escolaridad,
+            "pruebaF":"en efecto"
+        });
+    }
+</script>
     
 
 <?php get_template_part( 'template-parts/footer-landing'); ?>

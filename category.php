@@ -1,3 +1,5 @@
+<?php if(!is_user_logged_in( )){
+    ?>
 <?php get_header( ); ?>
 <section id="archivo-posts">
     <div class="container">
@@ -52,3 +54,19 @@
 </section>
 
 <?php get_footer( ); ?>
+<?php
+}else{
+?>
+<?php get_template_part('template-parts/header-blog') ?>
+<div class="topics-top">
+    <a onclick="nav_toggle();" class="bandera-topics"><img class="la-bandera" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/bandera-topics.png" alt=""></a>
+</div>
+<?php get_template_part('template-parts/top-entradas') ?>
+<?php get_template_part('template-parts/category-blog') ?>
+<style>
+    html {
+    margin-top: 0px !important;
+    }
+</style>
+<?php get_template_part('template-parts/footer-blog') ?>
+<?php } ?>

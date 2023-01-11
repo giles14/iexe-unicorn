@@ -6,6 +6,7 @@ Template Name: Admisiones
 <?php 
     $banner = get_field('banner_admisiones', 3505);
     $bannerMovil = get_field('banner_admisiones_movil', 3505);
+    $link_banner = esc_url(get_field('link_banner_2', 3505));
 ?> 
 <?php get_header( ); ?>
 <section id="header">
@@ -320,17 +321,17 @@ Template Name: Admisiones
                 <div class="col-md-12 mb-5">
                     <?php
                         if( !empty( $banner ) ): ?>
-                            <a href="/admisiones"><img loading="lazy" src="<?php echo esc_url($banner['url']); ?>" class="d-none d-sm-block img-fluid banners" alt="<?php echo esc_attr($banner['alt']); ?>" /></a>
+                            <a href="<?php echo $link_banner ?>" target="_blank"><img loading="lazy" src="<?php echo esc_url($banner['url']); ?>" class="d-none d-sm-block img-fluid banners" alt="<?php echo esc_attr($banner['alt']); ?>" /></a>
                         <?php endif; ?>
                         <?php
                         if( !empty( $bannerMovil ) ): ?>
-                            <a href="/admisiones"><img loading="lazy" src="<?php echo esc_url($bannerMovil['url']); ?>" class="d-block d-sm-none img-fluid banners" alt="<?php echo esc_attr($bannerMovil['alt']); ?>" /></a>
+                            <a href="<?php echo $link_banner ?>" target="_blank"><img loading="lazy" src="<?php echo esc_url($bannerMovil['url']); ?>" class="d-block d-sm-none img-fluid banners" alt="<?php echo esc_attr($bannerMovil['alt']); ?>" /></a>
                     <?php endif; ?>
                 </div>
             </div>
         </div>
     </section>
-<?php get_template_part( 'template-parts/calcula-beca', null, array(
+<?php get_template_part( 'template-parts/calcula-beca-alt', null, array(
     'porcentaje' =>  $porcentajeBeca
 )); ?>
 <section id="banner">

@@ -79,57 +79,57 @@ var valores = [
   {
     "value": "Innovación y Gestión Educativa",
     "data": {
-      "category": "Másters",
+      "category": "Maestrias",
       "link": "https://iexe.edu.mx/oferta-educativa/maestria-en-innovacion-y-gestion-educativa"
     }
   },
   {
     "value": "Ciencia de Datos Aplicada",
     "data": {
-      "category": "Másters",
+      "category": "Maestrias",
       "link": "https://iexe.edu.mx/oferta-educativa/maestria-en-ciencia-de-datos-aplicada/"
     }
   },
   {
     "value": "Administración de Instituciones de Salud",
     "data": {
-      "category": "Másters",
+      "category": "Maestrias",
       "link": "https://iexe.edu.mx/oferta-educativa/oferta-educativa/maestria-en-administracion-de-instituciones-de-salud"
     }
   },
   {
     "value": "Auditoría Gubernamental",
     "data": {
-      "category": "Másters",
+      "category": "Masters",
       "link": "https://iexe.edu.mx/oferta-educativa/oferta-educativa/maestria-en-auditoria-gubernamental"
+    }
+  },
+  {
+    "value": "Marketing Político y Opinión Pública",
+    "data": {
+      "category": "Masters",
+      "link": "https://www.iexe.edu.mx/oferta-educativa/oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/"
     }
   },
   {
     "value": "Gestión Pública Municipal",
     "data": {
-      "category": "Másters",
+      "category": "Masters",
       "link": "https://iexe.edu.mx/oferta-educativa/oferta-educativa/maestria-en-gestion-publica-municipal/"
     }
   },
   {
     "value": "Sistema Penal Acusatorio y Juicio Oral",
     "data": {
-      "category": "Másters",
+      "category": "Masters",
       "link": "https://iexe.edu.mx/oferta-educativa/oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/"
     }
   },
   {
-    "value": "Disciplina Financiera y Fiscalización",
+    "value": "Presupuesto basado en Resultados (PbR)",
     "data": {
       "category": "Diplomados",
-      "link": "https://iexe.edu.mx/oferta-educativa/diplomado-en-disciplina-financiera-y-fiscalizacion/"
-    }
-  },
-  {
-    "value": "Fundamentos de Administración Pública",
-    "data": {
-      "category": "Diplomados",
-      "link": "https://iexe.edu.mx/oferta-educativa/diplomado-en-fundamentos-de-administracion-publica/"
+      "link": "https://www.iexe.edu.mx/oferta-educativa/diplomado-en-presupuesto-basado-en-resultados/"
     }
   },
   {
@@ -144,6 +144,13 @@ var valores = [
     "data": {
       "category": "Diplomados",
       "link": "https://iexe.edu.mx/oferta-educativa/diplomado-en-alta-direccion-en-la-funcion-publica/"
+    }
+  },
+  {
+    "value": "Habilidades Gerenciales y Liderazgo",
+    "data": {
+      "category": "Diplomados",
+      "link": "https://www.iexe.edu.mx/oferta-educativa/diplomado-en-habilidades-gerenciales-y-liderazgo/"
     }
   },
   {
@@ -194,6 +201,26 @@ var valores = [
       "category": "Sitio Web",
       "link": "https://iexe.edu.mx/editorial/"
     }
-  }
-
+  },
+  {
+    "value": "El país de los elefantes Blancos",
+    "data": {
+      "category": "IEXE editorial",
+      "link": "https://www.iexe.edu.mx/producto/el-pais-de-los-elefantes-blancos/"
+    }
+  },
+  {
+    "value": "Diseño de Políticas Públicas",
+    "data": {
+      "category": "IEXE editorial",
+      "link": "https://www.iexe.edu.mx/producto/diseno-de-politicas-publicas/"
+    }
+  },
+  {
+    "value": "Capitalismo Natural y Economía Circular",
+    "data": {
+      "category": "IEXE editorial",
+      "link": "https://www.iexe.edu.mx/producto/capitalismo-natural-y-economia-circular/"
+    }
+  },
  ]

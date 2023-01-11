@@ -1,4 +1,6 @@
 <?php
+update_option( 'siteurl', 'https://www.iexe.edu.mx' );
+update_option( 'home', 'https://www.iexe.edu.mx' );
 /* CONSTANTES DE PROGRAMAS
 ========================================== */
 define('MAXIMAS_MATERIAS' , 7);
@@ -9,6 +11,8 @@ add_image_size( 'destacada-archivo', 600, 420 , true );
 add_image_size( 'ultimas-archivo', 400, 280 , true );
 add_image_size('destacada-post-header', 900 , 508, true );
 add_image_size('destacada-interesar', 374 , 210, true );
+add_image_size('destacada-nuevo-bloque', 331 , 187, true );
+add_image_size('destacada-nuevo-sidebar', 500 , 252, true );
 // global $post; 
 // 	    $unicorn_id = $post->id;
 //add_theme_support( 'woocommerce' );
@@ -70,9 +74,9 @@ function myplugin_ajaxurl() {
 
 $porcentajeBeca = round(rand(50 , 70), -1);
 function agregar_estilos_tema(){
-    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.32.7', 'all'  );
+    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.33.7', 'all'  );
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.09', 'all' );
-    wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.03', 'all' );
+    wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.04', 'all' );
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-admisiones-estilo', get_template_directory_uri() . '/assets/css/admisiones.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-programas-academicos', get_template_directory_uri() . '/assets/css/programas-academicos.css', 'iexe-unicorn-main', '1.0', 'all' );
@@ -83,6 +87,7 @@ function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-landing-ssp-2', get_template_directory_uri() . '/assets/css/landing-ssp-2.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-landing-match', get_template_directory_uri() . '/assets/css/landing-match.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-lity-css', get_template_directory_uri() . '/assets/css/lity.min.css', 'iexe-unicorn-main', '1.0', 'all' );
+    wp_register_style( 'iexe-tooltip-css', 'https://unpkg.com/microtip/microtip.css', '', '1.0', 'all' );
     wp_register_script( 'iexe-unicorn-programas', get_template_directory_uri() . '/assets/js/academico.js', 'jquery', '1.02', true );
     wp_register_script( 'iexe-unicorn-multipasos', get_template_directory_uri() . '/assets/js/form-multipasos.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
@@ -101,12 +106,17 @@ function agregar_estilos_tema(){
     wp_register_script( 'iexe-unicorn-lity', get_template_directory_uri() . '/assets/js/lity.min.js', 'jquery', '1.0', true );
     wp_register_script('sweet-alert', "//cdn.jsdelivr.net/npm/sweetalert2@11" ,"", '2.0',true);
     wp_register_script( 'iexe-nuevos-formularios', get_template_directory_uri() . '/assets/js/formularios.js', 'sweet-alert', '1.0', true );
-    wp_register_script( 'iexe-formulariosZ', get_template_directory_uri() . '/assets/js/formulariosZ.js', 'sweet-alert', '1.0', true );
+    wp_register_script( 'iexe-formulariosZ', get_template_directory_uri() . '/assets/js/formulariosZ.js', 'sweet-alert', '1.4.1', true );
+    wp_register_script( 'iexe-loadmore', get_template_directory_uri() . '/assets/js/btnloadmore.min.js', 'jquery', '1.0.0', true );
+    wp_register_style( 'iexe-new-blog', get_template_directory_uri() . '/assets/css/style-blog.css' , '1.0', 'all' );
+    
+    
 
     wp_register_script( 'iexe-unicorn-admisiones', get_template_directory_uri() . '/assets/js/admisiones.js', 'jquery', '1.0', true );
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css', false, '4.6', 'all' );
     wp_enqueue_style( 'loadercss', '//cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.min.css', false, '2.0.0', 'all' );
     wp_enqueue_style( 'loaderio', '//cdn.jsdelivr.net/gh/loadingio/ldbutton@v1.0.1/dist/ldbtn.min.css', 'loadercss', '1.0.1', 'all' );
+    wp_enqueue_style('iexe-tooltip-css');
     
     wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', false, '3.6.0', true );
     wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', 'jquery', '4.6.0', 'all' );
@@ -143,6 +153,12 @@ function agregar_estilos_tema(){
     if(is_page_template( 'home.php' )){
         wp_enqueue_script( 'iexe-formulariosZ');
     }
+    if(is_page_template( 'page-new-blog.php' )){
+        wp_enqueue_style( 'iexe-new-blog');
+    }
+    if(is_page_template( 'page-landing-convenios.php' )){
+        wp_enqueue_style( 'slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css', null, '1.8.1', 'all' );
+    }
 
     if(is_page_template('becas.php')){
         wp_enqueue_script( 'iexe-unicorn-becas');
@@ -150,6 +166,15 @@ function agregar_estilos_tema(){
         wp_enqueue_script('iexe-unicorn-multipasos');
         // wp_enqueue_script('iexe-nuevos-formularios');
         wp_enqueue_script( 'iexe-formulariosZ');
+    }
+    if(is_page_template('page-beca.php')){
+        wp_enqueue_script( 'iexe-unicorn-becas');
+        wp_enqueue_style( 'iexe-unicorn-becas-estilo');
+        wp_enqueue_script('iexe-unicorn-multipasos');
+        wp_enqueue_script( 'iexe-formulariosZ');
+    }
+    if(is_page_template('page-landing-convenios.php')){
+        wp_enqueue_script( 'iexe-loadmore');
     }
     if(is_page_template('admisiones.php')){
         wp_enqueue_script( 'iexe-unicorn-admisiones');
@@ -184,11 +209,17 @@ function agregar_estilos_tema(){
     }
     if(is_page_template('page-landing-ssp-2.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp-2');
-        wp_enqueue_script('iexe-unicorn-landing'); 
+        wp_enqueue_script('iexe-formulariosZ'); 
     }
     if(is_page_template('page-landing-match.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-match');
         wp_enqueue_script('iexe-unicorn-landing'); 
+    }
+    if(is_category() || is_tag() || is_search() ){
+        wp_enqueue_style('iexe-new-blog');
+    }
+    if(is_single() && is_user_logged_in( )){
+        wp_enqueue_style('iexe-new-blog');
     }
     wp_enqueue_style('intlTelinput-style');
     wp_enqueue_script('intlTelinput');
@@ -246,7 +277,7 @@ if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) :
             $wpse_excerpt = strip_tags($wpse_excerpt, wpse_allowedtags()); /*IF you need to allow just certain tags. Delete if all tags are allowed */
 
             //Set the excerpt word count and only break after sentence is complete.
-                $excerpt_word_count = 10;
+                $excerpt_word_count = 9;
                 $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count); 
                 $tokens = array();
                 $excerptOutput = '';
@@ -298,6 +329,132 @@ endif;
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt'); 
 
+add_filter( 'get_avatar','get_local_avatar' , 10, 6 );
+ 
+function get_local_avatar($avatar, $author, $size, $default, $alt, $args) {
+  // ------------------------------------
+  // handle user passed by email or by id
+  if(get_user_by('ID', $author) || get_user_by('email', $author)){
+  if(stristr($author,"@")) $autore = get_user_by('email', $author);
+    else $autore = get_user_by('ID', $author);
+ 
+  $url = get_the_author_meta( 'userpicprofile', $autore->ID);
+  if($url) {
+    return "<img class='autor-profile-pic img-fluid' alt=\"".$alt."\" src='".$url."' width='".$size."' />";
+  } else {
+    return $avatar;
+  }
+}else{
+    return $avatar;
+}
+}
+// --------------------------------------
+// add the field in your user edit profile page
+function add_author_image( $contactmethods ) {
+  $contactmethods['userpicprofile'] = 'URL for profile image';
+  return $contactmethods;
+}
+add_filter('user_contactmethods','add_author_image',10,1);
+
+function wpb_author_info_box($type=1) {
+ 
+    global $post;
+
+    $info_autor = [];
+
+     
+    // Detect if it is a single post with a post author
+    if ( is_single() && isset( $post->post_author ) ) {
+     
+    // Get author's display name
+    $info_autor['name'] = get_the_author_meta( 'display_name', $post->post_author );
+    
+     
+    // If display name is not available then use nickname as display name
+    if ( empty( $display_name ) )
+    $info_autor['nick'] = get_the_author_meta( 'nickname', $post->post_author );
+     
+    // Get author's biographical information or description
+    $info_autor['desc'] = get_the_author_meta( 'user_description', $post->post_author );
+     
+    // Get author's website URL
+    $info_autor['url'] = get_the_author_meta('url', $post->post_author);
+
+    $info_autor['img_url'] = get_avatar( get_the_author_meta('user_email') , 300, '', 'Imagen de autor', $args = array('class' => 'img-fluid'));
+     
+    // Get link to the author archive page
+    $info_autor['posts_url'] = get_author_posts_url( get_the_author_meta( 'ID' , $post->post_author));
+     
+    if ( ! empty( $display_name ) )
+     
+    $author_details = '<p class="author_name">Más del Autor ' . $display_name . '</p>';
+     
+    if ( ! empty( $user_description ) )
+    // Author avatar and bio
+     
+    $author_details .= '<p class="author_details">' . get_avatar( get_the_author_meta('user_email') , 300, '', 'Imagen de autor', array('class' => 'img-fluid img-avatar')) . nl2br( $user_description ). '</p>';
+     
+    $author_details .= '<p class="author_links"><a href="'. $user_posts .'">Ver sus posts ' . $display_name . '</a>';  
+     
+    // Check if author has a website in their profile
+    if ( ! empty( $user_website ) ) {
+     
+    // Display author website link
+    $author_details .= ' | <a href="' . $user_website .'" target="_blank" rel="nofollow">Website</a></p>';
+     
+    } else {
+    // if there is no author website then just close the paragraph
+    $author_details .= '</p>';
+    }
+     
+    // Pass all this info to post content
+    $contenido = '<footer class="author_bio_section" >' . $author_details . '</footer>';
+    }
+    if ($type == 1){
+        $cagb_resultado = "
+    <section id='info-autor'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-2 col-6'>
+                    {$info_autor['img_url']}
+                </div>
+                <div class='col-md-3 col-6'>
+                    <p class='nombre-autor'>{$info_autor['name']}</p>
+                    Redactor en <b>EXPOST</b><br>
+                    Redes sociales
+                </div>
+                <div class='col-md-7 col-12'>
+                    <p class='bio-autor'>{$info_autor['desc']} </p>
+                </div>
+            </div>
+        </div>
+    </section>
+        ";
+    }else{
+        $cagb_resultado = "
+        <section id='info-autor'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-md-2 col-6'>
+                        {$info_autor['img_url']}
+                    </div>
+                    <div class='col-md-3 col-6'>
+                        <p class='nombre-autor'>{$info_autor['name']}</p>
+                        Redactor en <b>EXPOST</b><br>
+                        Redes sociales
+                    </div>
+                    <div class='col-md-7 col-12'>
+                        <p class='bio-autor'>{$info_autor['desc']} </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            ";
+    }
+    
+    return $cagb_resultado;
+    }
+
 function iexe_unicorn_body() {
 
 	global $post; 
@@ -342,9 +499,10 @@ if ( ! function_exists( 'iexe_unicorn_registra_nav_menu' ) ) {
             'menu_segundo'  => 'Footer columna 2',
             'menu_tercero'  => 'Footer columna 3',
             'pie_principal' => 'pie principal',
+            'menu_expost' => 'Header Expost',
             'menu_principal' => 'Menu Principal'
         ) );
-    }
+}
     add_action( 'after_setup_theme', 'iexe_unicorn_registra_nav_menu', 0 );
 }
 add_filter('comment_form_default_fields', 'iexe_unicorn_unset_url_field');
@@ -360,6 +518,48 @@ function my_user_profile_update_errors($errors, $update, $user) {
     $errors->remove('empty_email');
 }
 
+// Remove support for Guttemberg
+function smartwp_remove_wp_block_library_css(){
+    wp_dequeue_style( 'wp-block-library' );
+    wp_dequeue_style( 'wp-block-library-theme' );
+    wp_dequeue_style( 'wc-blocks-style' ); // Remove WooCommerce block CSS
+   } 
+add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
+
+// Adding support for google cdn por jquery Lookup to improve speed load and eliminate (as possible) the blocking render resources.
+
+add_action('init', 'use_jquery_from_google');
+
+function use_jquery_from_google () {
+	if (is_admin()) {
+		return;
+	}
+
+	global $wp_scripts;
+	if (isset($wp_scripts->registered['jquery']->ver)) {
+		$ver = $wp_scripts->registered['jquery']->ver;
+                $ver = str_replace("-wp", "", $ver);
+	} else {
+		$ver = '1.12.4';
+	}
+
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', "//ajax.googleapis.com/ajax/libs/jquery/$ver/jquery.min.js", false, $ver);
+}
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+function add_menu_link_class( $atts, $item, $args ) {
+    if (property_exists($args, 'link_class')) {
+      $atts['class'] = $args->link_class;
+    }
+    return $atts;
+  }
+add_filter( 'nav_menu_link_attributes', 'add_menu_link_class', 1, 3 );
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
 add_action('user_new_form', 'my_user_new_form', 10, 1);
 add_action('show_user_profile', 'my_user_new_form', 10, 1);
 add_action('edit_user_profile', 'my_user_new_form', 10, 1);
@@ -402,10 +602,12 @@ function unicorn_boton_compartir($content) {
 
         // Add sharing button at the end of page/page content
         $content .= '<div class="social-box"><div class="social-btn">';
-        $content .= '<a class="col-1 sbtn s-twitter" href="'. $twitterURL .'" target="_blank" rel="nofollow"><span><i class="uil uil-twitter"></i></span></a>';
-        $content .= '<a class="col-1 sbtn s-facebook" href="'.$facebookURL.'" target="_blank" rel="nofollow"><span><i class="uil uil-facebook-f"></i></span></a>';
-        $content .= '<a class="col-2 sbtn s-whatsapp" href="'.$whatsappURL.'" target="_blank" rel="nofollow"><span><i class="uil uil-whatsapp"></i></span></a>';
-        $content .= '<a class="col-2 sbtn s-linkedin" href="'.$linkedInURL.'" target="_blank" rel="nofollow"><span><i class="uil uil-linkedin"></i></span></a>';
+        $content .= '<a class="col-1 sbtn s-twitter" href="'. $twitterURL .'" target="_blank" rel="nofollow"><span><img src="https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/ico-redes/icon_tw_blue_iexe.png" /></span></a>';
+        $content .= '<a class="col-1 sbtn s-facebook" href="'.$facebookURL.'" target="_blank" rel="nofollow"><span><img src="https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/ico-redes/icon_fb_blue_iexe.png" /></span></a>';
+        //$content .= '<a class="col-2 sbtn s-whatsapp" href="'.$whatsappURL.'" target="_blank" rel="nofollow"><span><i class="uil uil-whatsapp"></i></a>';
+        //$content .= '<a class="col-2 sbtn s-whatsapp" href="'.$whatsappURL.'" target="_blank" rel="nofollow"><span><i class="uil uil-whatsapp"></i></span></a>';
+        $content .= '<a class="col-2 sbtn s-linkedin" href="'.$linkedInURL.'" target="_blank" rel="nofollow"><span><img src="https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/ico-redes/icon_in_blue_iexe.png" /></span></a>';
+        //$content .= '<a class="col-2 sbtn s-linkedin" href="'.$linkedInURL.'" target="_blank" rel="nofollow"><span><i class="uil uil-linkedin"></i></span></a>';
         $content .= '</div></div>';
         
         return $content;
@@ -416,6 +618,198 @@ function unicorn_boton_compartir($content) {
 };
 add_shortcode('social','unicorn_boton_compartir');
 
+function wpb_tag_cloud() { 
+    $tags = get_tags();
+    $args = array(
+        'smallest'                  => 12, 
+        'largest'                   => 12,
+        'unit'                      => 'px', 
+        'number'                    => 6,  
+        'format'                    => 'flat',
+        'separator'                 => " ",
+        'orderby'                   => 'count', 
+        'order'                     => 'DESC',
+        'show_count'                => false,
+        'echo'                      => false
+    ); 
+     
+    $tag_string = wp_generate_tag_cloud( $tags, $args );
+     
+    return $tag_string; 
+     
+    } 
+    function cagb_tag_cloud(){
+        $cagb_the_cloud = wp_tag_cloud(array(
+            'smallest'                  => 12, 
+            'largest'                   => 12,
+            'unit'                      => 'px', 
+            'number'                    => 6,  
+            'format'                    => 'flat',
+            'separator'                 => " ",
+            'orderby'                   => 'count', 
+            'order'                     => 'DESC',
+            'show_count'                => false,
+            'echo'                      => false
+        ));
+        return $cagb_the_cloud;
+    }
+
+/**
+ * Count words ann store it as post meta
+ */
+
+add_filter('manage_posts_columns', 'cagb_add_column');
+function cagb_add_column($cagb_wordcount_column) {
+    $cagb_wordcount_column['cagb_wordcount'] = 'Conteo de palabras';
+    return $cagb_wordcount_column;
+}
+  
+//Link the word count to our new column//
+add_action('manage_posts_custom_column',  'cagb_display_wordcount'); 
+function cagb_display_wordcount($name) 
+{
+   global $post;
+   switch ($name)
+{
+     case 'cagb_wordcount':
+        //Get the post ID and pass it into the get_wordcount function//
+            $cagb_wordcount = cagb_get_wordcount($post->ID);
+            echo $cagb_wordcount;
+     }
+}
+ 
+function cagb_get_wordcount($post_id) {
+     //Get the post, remove any unnecessary tags and then perform the word count// 
+     $cagb_wordcount = str_word_count( strip_tags( strip_shortcodes(get_post_field( 'post_content', $post_id )) ) );
+      return $cagb_wordcount;
+}
+
+add_action('save_post', 'cagb_save_time');
+function time_to_read($words){
+    //define("PA_PM" , 200);
+
+    $cagb_total = intval($words/200);
+    if($cagb_total == 0){
+        $cagb_total = 1;
+    }
+
+    return $cagb_total;
+}
+
+function cagb_save_time($post_id){
+    // if ( 'post' !== $post->post_type ) {
+	// 	return;
+	// }
+    $time = strval(time_to_read(cagb_get_wordcount($post_id)));
+    update_post_meta($post_id,'time_to_read', $time);
+
+}
+
+function limit_to_n_tags($terms) {
+    return array_slice($terms,0,12,true);
+}
+add_filter('term_links-post_tag','limit_to_n_tags');
+/*
+* Boostrap 4 Pagination for WordPress
+* Author: Renz R.
+* Author URL: https://www.renzramos.com
+* Created At: 2019-01-01
+* Updated At: 2021-02-08
+* Intructions: Include this file and then use wp_boostrap_4_pagination() after the loop.
+*/
+
+function wp_boostrap_4_pagination(){
+
+    if( is_singular() )
+        return;
+ 
+    global $wp_query;
+ 
+    /** Check number of pages **/
+    if( $wp_query->max_num_pages <= 1 )
+        return;
+ 
+    $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+    $max   = intval( $wp_query->max_num_pages );
+ 
+    /** Add current page to the array */
+    if ( $paged >= 1 )
+        $links[] = $paged;
+ 
+    /** Add the pages around the current page to the array */
+    if ( $paged >= 3 ) {
+        $links[] = $paged - 1;
+        $links[] = $paged - 2;
+    }
+ 
+    if ( ( $paged + 2 ) <= $max ) {
+        $links[] = $paged + 2;
+        $links[] = $paged + 1;
+    }
+ 
+    echo '<div class="pagination-container"><ul class="pagination">' . "\n";
+ 
+    /** Previous Post Link */
+    if ( get_previous_posts_link() )
+        printf( '<li class="page-item">%s</li>' . "\n", get_previous_posts_link() );
+ 
+    /** Link to first page, plus ellipses if necessary */
+    if ( ! in_array( 1, $links ) ) {
+        $class = 1 == $paged ? ' class="page-item active"' : ' class="page-item"';
+ 
+        printf( '<li%s><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+ 
+        if ( ! in_array( 2, $links ) )
+            echo '<li>…</li>';
+    }
+
+    /** Link to current page, plus 2 pages in either direction if necessary */
+    sort( $links );
+    foreach ( (array) $links as $link ) {
+        $class = $paged == $link ? ' class="page-item active"' : ' class="page-item"';
+        printf( '<li%s><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+    }
+ 
+    /** Link to last page, plus ellipses if necessary */
+    if ( ! in_array( $max, $links ) ) {
+        if ( ! in_array( $max - 1, $links ) )
+            echo '<li>…</li>' . "\n";
+ 
+        $class = $paged == $max ? ' class="page-item active"' : ' class="page-item"';
+        printf( '<li%s><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+    }
+ 
+    /** Next Post Link */
+    if ( get_next_posts_link() )
+        printf( '<li class="page-item">%s</li>' . "\n", get_next_posts_link() );
+ 
+    echo '</ul></div>' . "\n";
+ 
+}
+/*
+* Cookie set to get user origin
+*/
+add_action('init', function() {
+    setcookie('el_origen', null, strtotime('-1 day'));
+    if(isset($_GET['origen'])){
+
+        if (!isset($_COOKIE['el_origen'])) {
+            setcookie('el_origen', $_GET['origen'], strtotime('+30 day'));
+        }
+    } 
+});
+
+/*
+* Custom Attribute for links
+*/
+
+add_filter('next_posts_link_attributes', 'wp_boostrap_4_pagination_posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'wp_boostrap_4_pagination_posts_link_attributes');
+
+function wp_boostrap_4_pagination_posts_link_attributes() {
+    return 'class="page-link"';
+}
+ 
 /**
  * Sidebar Editorial.
  */
@@ -455,3 +849,13 @@ $requisitos_maestria = "<li>Acta de nacimiento original.</li><li>Copia de CURP.<
 $requisitos_master ="<li>Acta de Nacimiento, CURP o Carnet de Identificación.</li>";
 $requisitos_diplomado ="<li>Copia de CURP</li><li> Comprobante de licenciatura concluida (carta pasante, certificado total, título o cédula)</li>";
 $requisitos_doctorado = "<li>Acta de nacimiento Original</li><li>Copia de Curp</li><li>Copia de grado de maestría (en caso de que se encuentre en trámite constancia de titulación en trámite y copia de acta de examen de grado).</li><li>Copia de cédula profesional de maestría (en caso de que se encuentre en trámite constancia de titulación en trámite).</li>";
+
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
+function woo_rename_tabs( $tabs ) {
+
+	$tabs['description']['title'] = " ";		// Rename the description tab
+
+
+	return $tabs;
+
+}
