@@ -55,7 +55,7 @@
     });
   function openMen() {
         
-        if(w > 800){
+        if(w > 990){
             // document.getElementById("mySidenav").style.width = "66%";
             menuBlog.style.width = "66%";
             overlay.style.display = "block";
@@ -211,7 +211,7 @@
                         <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
                         <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
                         <li><a href="/oferta-educativa/#doctorado">Doctorados</a></li>
-                        <li><a href="/oferta-educativa/#masters">Masters</a></li>
+                        <li><a href="/oferta-educativa/#masters">Másteres</a></li>
                         <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
                         <li><a href="/capacitaciones/">Capacitaciones</a></li>
                     </ul>

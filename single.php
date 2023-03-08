@@ -2,6 +2,9 @@
 <?php if(!is_user_logged_in( )){
     ?>
     <?php get_header( ); ?>
+    <?php  cagb_setPostViews(get_the_ID()); ?>
+    
+    
     <?php  while ( have_posts() ) : the_post(); ?>
 <section id="entrada-blog">
     <div class="container">
@@ -84,6 +87,9 @@
                 <?php get_template_part( 'template-parts/info-autor'); ?>
             </div>
             <div class="col-md-3 ">
+                <div class="banner text-center mt-5 pl-3" style="position: sticky;display: block;top: 100px;">
+                    <a href="https://www.youtube.com/@iexeuniversidad" target="_blank"><img src="<?php echo esc_url(get_template_directory_uri()) .'/assets/img/BannerBlog_Youtebue_iexe.webp' ?>" alt="" class="img-fluid"></a>
+                </div>
                     <div class="wrapper-x d-block d-sm-none">
                         <?php if(is_single()){
                         get_template_part( 'template-parts/lateral-blog');
@@ -132,6 +138,8 @@
     // BLOG v2
 ?>
     <?php get_template_part('template-parts/header-blog') ?>
+    <?php $cagb_like_voted = check_if_voted(get_the_ID(), $_SERVER['REMOTE_ADDR'], get_current_user_id()); ?>
+    
     <!-- <div class="container">
         <div class="row fix">
 
@@ -145,7 +153,11 @@
             <div class="col-1 d-none d-lg-flex">
                 <div class="menu-nav pt-5">
                     <a href="/blog-nuevo"><span aria-label="Inicio" data-microtip-position="right" role="tooltip"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/ico-home.svg" alt="" class="icono-menu-blog"></span></a>
-                    <a href="#"><span aria-label="Me gusta" data-microtip-position="right" role="tooltip"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/ico-heart.svg" alt="" class="icono-menu-blog" ></span></a>
+                    <a onclick="likePost()" style="position: relative;"><span aria-label="Me gusta" data-microtip-position="right" role="tooltip"><svg xmlns="http://www.w3.org/2000/svg" width="27.978" height="23.497" viewBox="0 0 27.978 23.497">
+                        <path id="Icon_awesome-heart" class="awesome-heart <?php echo ($cagb_like_voted) ? "filled" : ""?>" data-name="Icon awesome-heart" d="M24.356,3.777a7.494,7.494,0,0,0-9.831.679L13.487,5.469,12.449,4.456a7.493,7.493,0,0,0-9.831-.679A6.915,6.915,0,0,0,2.1,14.156L12.291,24.13a1.716,1.716,0,0,0,2.387,0l10.195-9.975a6.91,6.91,0,0,0-.516-10.379Z" transform="translate(0.502 -1.745)" fill="none" stroke="#273482" stroke-width="1"/>
+                        </svg></span><span class="num-come"><?php echo cagb_count_likes_post(); ?></span>
+                    </a>
+                    
                     <a data-toggle="modal" data-target="#modal-compartir"><span aria-label="Compartir" data-microtip-position="right" role="tooltip"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/ico-share.svg" alt="" class="icono-menu-blog"></span></a>
                     <a onclick="copyRichText()"><span aria-label="Citar" data-microtip-position="right" role="tooltip"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/ico-quo.svg" alt="" class="icono-menu-blog"></span></a>
                     <a href="#comentarios"  onclick="document.getElementById('comment').focus();"><span aria-label="Comentar" data-microtip-position="right" role="tooltip"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/ico-comments.svg" alt="" class="icono-menu-blog"></span></a>
@@ -173,7 +185,7 @@
                             <!-- <img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/mini-autor.png" alt="" class="minuatura-autor"> -->
                         </div>
                         <div class="col-6 mb-4">
-                            <p class="meta-autor-mini">Por <a href="#" style="text-transform: uppercase"><?php echo get_the_author_meta( 'display_name', $post->post_author ); ?></a></p>
+                            <p class="meta-autor-mini">Por <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" style="text-transform: uppercase"><?php echo get_the_author_meta( 'display_name', $post->post_author ); ?></a></p>
                             <p class="meta-autor-mini">Redactor en <a href="">EXPOST</a></p>
                         </div>
                     </div>
@@ -201,6 +213,7 @@
                         <div class="contenido-post">
                                 <?php the_content(); ?>
                                 <span class="pilldor"></span>
+                                <?php get_template_part( 'template-parts/single-button'); ?>
                         </div>
                             <?php if(get_field('notas')): ?>
                                 <div class="notas mt-5">
@@ -226,6 +239,7 @@
                                 <?php echo cagb_tag_cloud(); ?>
                                 
                             </div>
+                        
                     </section>
                     <?php get_template_part( 'template-parts/info-autor'); ?>
                     <section id="comentarios">

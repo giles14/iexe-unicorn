@@ -74,11 +74,12 @@
                         <div class="col-md-3 un-post-min mb-4">
                             <div class="entrada-min">
                                 <?php the_post_thumbnail( 'ultimas-archivo', array( 'class' => 'img-fluid d-block mx-auto' ) ); ?>
-                                <?php the_category(); ?>
+                                <?php //the_category(); 
+                                exclude_post_categories(); ?>
                                 <div class="info-post-min">
                                     <p class="tiempo"><?php echo get_post_meta($post->ID, 'time_to_read', true) . " min de lectura" ?></p>
                                     <h2 class="titulo-noticia"><a href="<?php the_permalink() ?>"><?php the_title();  ?></a></h2>
-                                    <p class="meta-info"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-calendar.png" alt="icono de calendario"><span class="fecha"><?php the_date('d\/m\/Y') ?></span><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-like.png" alt="icono de calendario"><span class="likes-noticia">0</span><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-commen.png" alt="icono de calendario"> <span class="comentarios"><?php echo get_comments_number() ?></span></p>
+                                    <p class="meta-info"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-calendar.png" alt="icono de calendario"><span class="fecha"><?php the_date('d\/m\/Y') ?></span><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-like.png" alt="icono de calendario"><span class="likes-noticia"><?php echo cagb_count_likes_post($post->ID); ?></span><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-commen.png" alt="icono de calendario"> <span class="comentarios"><?php echo get_comments_number() ?></span></p>
                                 </div>
                             </div>
                         </div>

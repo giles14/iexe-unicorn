@@ -778,3 +778,6 @@ img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
     padding-top: 14px;
     font-size: 13px;
 }
+.filled{
+    fill: #273482;
+}

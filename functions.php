@@ -1,6 +1,11 @@
 <?php
 update_option( 'siteurl', 'https://www.iexe.edu.mx' );
 update_option( 'home', 'https://www.iexe.edu.mx' );
+function cagb_ids_no_iexe_logo(){
+    $cagb_ids = [1310 , 1406 , 847];
+    return $cagb_ids;
+}
+
 /* CONSTANTES DE PROGRAMAS
 ========================================== */
 define('MAXIMAS_MATERIAS' , 7);
@@ -17,6 +22,210 @@ add_image_size('destacada-nuevo-sidebar', 500 , 252, true );
 // 	    $unicorn_id = $post->id;
 //add_theme_support( 'woocommerce' );
 
+add_action( 'wp_ajax_cagb_vote_post', 'cagb_vote_post');
+add_action( 'wp_ajax_nopriv_cagb_vote_post', 'cagb_vote_post');
+
+function cagb_vote_post($post_id = 0, $ip = 0){
+    $nonce = sanitize_text_field($_POST['nonce']);
+
+    $meta_key = "_liked";
+    $liked = [];
+    $post = sanitize_text_field($_POST["id_post"]);
+    $user = sanitize_text_field($_POST["user"]);
+
+    if ( ! wp_verify_nonce( $nonce, 'cagb-vote-ajax-nonce' ) ) {
+        die ( 'No se pudo comprobar que sea una petición legítima!');
+    }
+
+    $ip = sanitize_text_field($_SERVER['REMOTE_ADDR']);
+    $remote_address = "none";
+
+    if($_SERVER['HTTP_X_FORWARDED_FOR']){
+        $remote_address = sanitize_text_field($_SERVER['HTTP_X_FORWARDED_FOR']);
+    }
+    $quien = "por_ip";
+    if(is_user_logged_in()){
+        $quien = get_current_user_id();
+    }else{
+        $quien = $ip;
+        $liked["ip"] = $ip;
+        $liked["remote_address"] = $remote_address;
+    }
+    $liked["user"] = $quien;
+    $liked["post"] = $post;
+    $liked["ip"] = $ip;
+    $liked["remote_address"] = $remote_address;
+
+    $serializados = serialize($liked);
+    //$resultado = add_post_meta($post, $meta_key, $serializados);
+
+    $resultado = "es correcto: " . $serializados;
+    //actualizar
+    //$status = update_post_meta( $post, $meta_key, $serializados);
+    //crear meta
+
+    if( check_if_voted($post, $ip, $quien)>0 ){
+        //$res = check_if_voted($post, $ip, $quien);
+        $res = "ya has votado";
+        echo $res;
+        delete_post_meta( $post, $meta_key, $quien);
+        delete_post_meta( $post, $meta_key, $ip);
+        echo " removiendo voto";
+        wp_die();
+    }
+    if ($liked["user"]){
+        $status = add_post_meta( $post, $meta_key, $liked["user"]);
+    }else{
+        $status = add_post_meta( $post, $meta_key, $liked["ip"]);
+    }
+
+    echo ($status) ? $status : $resultado;
+    wp_die();
+
+}
+function cagb_count_likes_post($id = 0){
+    if($id > 0){
+        $post_id = $id;
+    }else{
+        $post_id = get_the_ID();
+    }
+    $meta_key = "_liked";
+    $meta = get_post_meta($post_id, $meta_key, false);
+    
+
+    if ($meta){
+        $number_of_likes = count($meta);
+    }else{
+        $number_of_likes = 0;
+    }
+    
+    return $number_of_likes;
+}
+ /*
+    Views Counter for Blog
+ */
+
+ function cagb_getPostViews($postID){
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 View";
+    }
+    return $count.' Views';
+}
+function cagb_setPostViews($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '1');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+function cagb_get_postViews($postID) {
+    //Get the post, remove any unnecessary tags and then perform the word count
+    $count = get_post_meta($postID, $count_key, true);
+     return $count;
+}
+
+add_filter('manage_post_posts_columns', function($columns) {
+	return array_merge($columns, ['views' => "Vistas"]);
+});
+
+add_action('manage_post_posts_custom_column', function($column_key, $post_id) {
+	if ($column_key == 'views') {
+		$count = get_post_meta($post_id, 'post_views_count', true);
+		if ($count) {
+			echo "{$count}";
+		} else {
+			echo "0";
+		}
+	}
+}, 10, 2);
+
+add_filter('manage_edit-post_sortable_columns', function($columns) {
+	$columns['views'] = 'views';
+	return $columns;
+});
+
+add_action('pre_get_posts', function($query) {
+    if (!is_admin()) {
+        return;
+    }
+ 
+    $orderby = $query->get('orderby');
+    if ($orderby == 'views') {
+        $query->set('meta_key', 'post_views_count');
+        $query->set('orderby', 'meta_value_num');
+    }
+});
+// Remove issues with prefetching adding extra views
+//remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+/**
+ * Receives the id of a post, the ip of the visitor and is logged in the user_id.
+ *
+ *
+ * @see Function/method/class relied on
+ * @link URL
+ * @global type $user_id Description.
+ * @global type $varname Description.
+ *
+ * @param type $var Description.
+ * @param type $var Optional. Description. Default.
+ * @return type Description.
+ */
+function check_if_voted($id, $ip = 0, $user_id = 0){
+
+    $ip = sanitize_text_field($ip);
+
+    $resultado = 0;
+    //return True if already voted by user
+    $meta_key = "_liked";
+    // $encontrado = get_post_meta($id, $meta_key, false);
+
+    // foreach ( $encontrado as $registro ) {
+    // }
+
+    $meta = get_post_meta($id, $meta_key, false);
+
+    //$resultado = serialize($meta);
+    
+    foreach ( $meta as $key => $value ) {
+
+        if ($value == $user_id){
+            $resultado = 1;
+            return $resultado;
+        } else if ( $value == $ip){
+            $resultado = 1;
+            return $resultado;
+        }
+       
+    }
+    return $resultado;
+}
+
+
+add_action( 'wp_ajax_cagb_show_message', 'cagb_show_message');
+add_action( 'wp_ajax_nopriv_cagb_show_message', 'cagb_show_message');
+
+function cagb_show_message(){
+    $el_id = " sin id";
+    $el_id = $_POST["id_post"];
+    $el_nonce = $_POST["nonce"];
+
+    
+    $message = "recibí tu ping" . $el_id . " Este es nonce" . $el_nonce;
+
+
+    echo $message;
+    wp_die();
+}
 function votar_candidato(int $candidato , $spec = false){
     if($spec){
         $voto = $voto = "candidato_" . $candidato;
@@ -59,10 +268,8 @@ add_action('wp_head', 'myplugin_ajaxurl');
 if(get_field( "candidato_1", 26136) > get_field( "candidato_7", 26136) + 30 ){
     if(rand(1,100) < 35){
         //votar_candidato(7, true);
-    }
-    
+    }    
 }
-
 
 function myplugin_ajaxurl() {
 
@@ -74,7 +281,7 @@ function myplugin_ajaxurl() {
 
 $porcentajeBeca = round(rand(50 , 70), -1);
 function agregar_estilos_tema(){
-    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.33.7', 'all'  );
+    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.34.2', 'all'  );
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.09', 'all' );
     wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.04', 'all' );
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
@@ -109,6 +316,7 @@ function agregar_estilos_tema(){
     wp_register_script( 'iexe-formulariosZ', get_template_directory_uri() . '/assets/js/formulariosZ.js', 'sweet-alert', '1.4.1', true );
     wp_register_script( 'iexe-loadmore', get_template_directory_uri() . '/assets/js/btnloadmore.min.js', 'jquery', '1.0.0', true );
     wp_register_style( 'iexe-new-blog', get_template_directory_uri() . '/assets/css/style-blog.css' , '1.0', 'all' );
+    wp_register_script( 'iexe-blog-ajax', get_template_directory_uri() . '/assets/js/blog-ajax.js', 'jquery', '1.0.0', true );
     
     
 
@@ -211,11 +419,14 @@ function agregar_estilos_tema(){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp-2');
         wp_enqueue_script('iexe-formulariosZ'); 
     }
+    if(is_page_template('page-audio.php')){
+        wp_dequeue_script('iexe-formulariosZ');
+    }
     if(is_page_template('page-landing-match.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-match');
         wp_enqueue_script('iexe-unicorn-landing'); 
     }
-    if(is_category() || is_tag() || is_search() ){
+    if(is_category() || is_tag() || is_search() || is_author()){
         wp_enqueue_style('iexe-new-blog');
     }
     if(is_single() && is_user_logged_in( )){
@@ -226,6 +437,32 @@ function agregar_estilos_tema(){
 
 }
 add_action( 'wp_enqueue_scripts', 'agregar_estilos_tema' );
+
+function theme_ajax_enqueue_scripts() {
+    global $post;
+    $id = $post->id;
+    $user = "not_logged";
+    if(is_user_logged_in()){
+        $user = get_current_user_id();
+    }
+    $id = get_queried_object_id();
+	/**
+	 * frontend ajax requests.
+	 */
+    if(is_single()){
+        wp_enqueue_script( 'iexe-blog-ajax');
+	    wp_localize_script( 'iexe-blog-ajax', 'frontend_ajax_object',
+		array( 
+			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'el_post_id' => $id,
+            'user' => $user,
+			'nonce' => wp_create_nonce( 'cagb-vote-ajax-nonce' ),
+            )
+        );
+    }
+	
+}
+add_action( 'wp_enqueue_scripts', 'theme_ajax_enqueue_scripts' );
 
 // function add_rel_preload($html, $handle, $href, $media) {
     
@@ -273,6 +510,7 @@ if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) :
             $wpse_excerpt = get_the_content('');
             $wpse_excerpt = strip_shortcodes( $wpse_excerpt );
             $wpse_excerpt = apply_filters('the_content', $wpse_excerpt);
+            //$wpse_excerpt = str_replace(']]>', ']]&gt;', $wpse_excerpt);
             $wpse_excerpt = str_replace(']]>', ']]&gt;', $wpse_excerpt);
             $wpse_excerpt = strip_tags($wpse_excerpt, wpse_allowedtags()); /*IF you need to allow just certain tags. Delete if all tags are allowed */
 
@@ -287,8 +525,8 @@ if ( ! function_exists( 'wpse_custom_wp_trim_excerpt' ) ) :
                 preg_match_all('/(<[^>]+>|[^<>\s]+)\s*/u', $wpse_excerpt, $tokens);
 
                 foreach ($tokens[0] as $token) { 
-
-                    if ($count >= $excerpt_length && preg_match('/[\,\;\?\.\!]\s*$/uS', $token)) { 
+                    //if ($count >= $excerpt_length && preg_match('/[\,\;\?\.\!]\s*$/uS', $token)) { 
+                    if ($count >= $excerpt_length && preg_match('/[\,\?\.\!]\s*$/uS', $token)) { 
                     // Limit reached, continue until , ; ? . or ! occur at the end
                         $excerptOutput .= trim($token);
                         break;
@@ -356,15 +594,15 @@ function add_author_image( $contactmethods ) {
 }
 add_filter('user_contactmethods','add_author_image',10,1);
 
-function wpb_author_info_box($type=1) {
- 
+function wpb_author_info_box($type=1, $author=0) {
+    //if the block needs to be displayed in a page that doesn't have an author, $author should be passed and $post->post_author should be rewrited.
+
     global $post;
 
     $info_autor = [];
-
      
     // Detect if it is a single post with a post author
-    if ( is_single() && isset( $post->post_author ) ) {
+    if ( is_single() || is_author() && isset( $post->post_author ) ) {
      
     // Get author's display name
     $info_autor['name'] = get_the_author_meta( 'display_name', $post->post_author );
@@ -384,6 +622,40 @@ function wpb_author_info_box($type=1) {
      
     // Get link to the author archive page
     $info_autor['posts_url'] = get_author_posts_url( get_the_author_meta( 'ID' , $post->post_author));
+
+    //Get social network links to the author
+    $linkedin = "";
+    $facebook = "";
+    $twitter = "";
+    $instagram = "";
+
+    $info_autor['linkedin'] =  get_the_author_meta( 'linkedin' , $post->post_author);
+    $info_autor['facebook'] =  get_the_author_meta( 'facebook' , $post->post_author);
+    $info_autor['twitter'] =  get_the_author_meta( 'twitter' , $post->post_author);
+    $info_autor['instagram'] =  get_the_author_meta( 'instagram' , $post->post_author);
+
+    if($info_autor['linkedin']){
+        $linkedin = "<a href='{$info_autor['linkedin']}' target='_blank'>
+            <img src='https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/ico-redes/icon_in_blue_iexe.png' alt='' class='autor-red'>
+        </a>";    
+    }
+    if($info_autor['facebook']){
+        $facebook = "<a href='{$info_autor['facebook']}' target='_blank'>
+            <img src='https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/ico-redes/icon_fb_blue_iexe.png' alt='' class='autor-red'>
+        </a>";   
+    }
+    if($info_autor['twitter']){
+        $twitter = "<a href='{$info_autor['twitter']}' target='_blank'>
+            <img src='https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/ico-redes/icon_tw_blue_iexe.png' alt='' class='autor-red'>
+        </a>";   
+    }
+    if($info_autor['instagram']){
+        $instagram = "<a href='{$info_autor['instagram']}' target='_blank'>
+            <img src='https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/ico-redes/icon_ig_blue_iexe.png' alt='' class='autor-red'>
+        </a>";   
+    }
+
+    
      
     if ( ! empty( $display_name ) )
      
@@ -400,7 +672,7 @@ function wpb_author_info_box($type=1) {
     if ( ! empty( $user_website ) ) {
      
     // Display author website link
-    $author_details .= ' | <a href="' . $user_website .'" target="_blank" rel="nofollow">Website</a></p>';
+    $author_details .= ' | <a href="' . $user_website .'" target="_blank" rel="nofollow">Website</a></p>'; 
      
     } else {
     // if there is no author website then just close the paragraph
@@ -415,13 +687,16 @@ function wpb_author_info_box($type=1) {
     <section id='info-autor'>
         <div class='container'>
             <div class='row'>
-                <div class='col-md-2 col-6'>
+                <div class='col-md-2 col-4 offset-1 offset-md-0'>
                     {$info_autor['img_url']}
                 </div>
                 <div class='col-md-3 col-6'>
                     <p class='nombre-autor'>{$info_autor['name']}</p>
                     Redactor en <b>EXPOST</b><br>
-                    Redes sociales
+                    Redes sociales<br>
+                    <div class='redes-sociales-autor'>
+                        {$facebook}{$linkedin}{$twitter}{$instagram}
+                   </div>
                 </div>
                 <div class='col-md-7 col-12'>
                     <p class='bio-autor'>{$info_autor['desc']} </p>
@@ -441,7 +716,8 @@ function wpb_author_info_box($type=1) {
                     <div class='col-md-3 col-6'>
                         <p class='nombre-autor'>{$info_autor['name']}</p>
                         Redactor en <b>EXPOST</b><br>
-                        Redes sociales
+                        Redes sociales:<br>
+                        {$facebook}{$linkedin}{$twitter}{$instagram}
                     </div>
                     <div class='col-md-7 col-12'>
                         <p class='bio-autor'>{$info_autor['desc']} </p>
@@ -859,3 +1135,127 @@ function woo_rename_tabs( $tabs ) {
 	return $tabs;
 
 }
+
+/* Comments new field */
+
+    // Add phone number field
+
+    function add_review_phone_field_on_comment_form() {
+        echo '<p class="comment-form-phone uk-margin-top"><label class="for-phone" for="phone">' . 'Teléfono ' . '</label><input class="uk-input uk-width-large uk-display-block" type="text" name="phone" id="phone"/></p>';
+    }
+    add_action( 'comment_form_logged_in_after', 'add_review_phone_field_on_comment_form' );
+    add_action( 'comment_form_after_fields', 'add_review_phone_field_on_comment_form' );
+
+
+    // Save phone number
+    add_action( 'comment_post', 'save_comment_review_phone_field' );
+    function save_comment_review_phone_field( $comment_id ){
+        if( isset( $_POST['phone'] ) )
+          update_comment_meta( $comment_id, 'telefono', esc_attr( $_POST['phone'] ) );
+    }
+
+    function print_review_phone( $id ) {
+        $val = get_comment_meta( $id, "telefono", true );
+        $title = $val ? '<strong class="review-phone">' . $val . '</strong>' : '';
+        return $title;
+    }
+
+    // Print phone number - remove if not needed to show in front end
+    add_action('woocommerce_review_before_comment_meta', 'get_comment_phone' );
+    function get_comment_phone($comment){
+        echo print_review_phone($comment->comment_ID);
+    }
+
+    add_filter('manage_edit-comments_columns', 'my_add_comments_columns');
+
+function my_add_comments_columns($my_cols) {
+
+    $temp_columns = array(
+        'phone' => 'Telefono'
+    );
+    $my_cols = array_slice($my_cols, 0, 3, true) + $temp_columns + array_slice($my_cols, 3, NULL, true);
+
+    return $my_cols;
+}
+add_action('manage_comments_custom_column', 'my_add_comment_columns_content', 10, 2);
+
+function my_add_comment_columns_content($column, $comment_ID) {
+    global $comment;
+    switch ($column) :
+
+        case 'phone' : {
+
+                echo get_comment_meta($comment_ID, 'phone', true);
+                break;
+            }
+    endswitch;
+}
+function exclude_post_categories($excl='3,35', $spacer=' '){
+    $categories = get_the_category($post->ID);
+       if(!empty($categories)){
+         $exclude=$excl;
+         $exclude = explode(",", $exclude);
+         $thecount = count(get_the_category()) - count($exclude);
+         foreach ($categories as $cat) {
+             $html = '<ul class="post-categories">';
+             if(!in_array($cat->cat_ID, $exclude)) {
+                 $html .= "<li>";
+                 $html .= '<a href="' . get_category_link($cat->cat_ID) . '" ';
+                 $html .= 'title="' . $cat->cat_name . '">' . $cat->cat_name . '</a>';
+                 $html .= '</li>';
+                 if($thecount>1){
+                     $html .= $spacer;
+                 }
+             $thecount--;
+             $html .= '</ul>';
+             echo $html;
+             }
+           }
+       }
+ }
+ /* Return the Add Banner */
+function cagb_return_banner($post_id = 0) {
+    $default = get_field('banner_por_default', 3505);
+    $bannerA = get_field('banner_1');
+    $bannerB = get_field('banner_2');
+    $default_url = $default['url_banner_forzado'];
+    $default_banner = $default['url'];
+
+    $bannerA_img = esc_url($bannerA['url']);
+    $bannerA_url = esc_url(get_field('link_rotacion_a'));
+    $bannerB_img = esc_url($bannerB['url']);
+    $bannerB_url = esc_url(get_field('link_rotacion_b'));
+
+    $forzado = get_field('banner_forzado', 3505);
+    
+
+    if($forzado){
+        $bannerForzado_img = $forzado['url'];
+        $bannerForzado_url = $forzado['url_banner_forzado'];
+        echo "
+            <a href='{$bannerForzado_url}' target='_blank'>
+                <img src='{$bannerForzado_img}' class='img-fluid' alt='banner IEXE' />
+            </a>";
+        
+    }else{
+        $factor = rand(1,100)*.01;
+        if(($bannerA && $factor > 0.5) || ($bannerA and !$bannerB)) {
+            echo "
+            <a href='$bannerA_url' target='_blank'>
+                <img src='{$bannerA_img}' class='img-fluid' alt='banner IEXE' />
+            </a>";
+        }elseif($bannerB){
+            echo "
+            <a href='$bannerB_url' target='_blank'>
+                <img src='{$bannerB_img}' class='img-fluid' alt='banner IEXE' />
+            </a>";
+        }else{
+            echo "
+            <a href='{$default_url}' target='_blank'>
+                <img src='{$default_banner}' class='img-fluid' alt='banner IEXE' />
+            </a>";
+        }
+
+    }
+
+    }

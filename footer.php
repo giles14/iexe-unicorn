@@ -13,8 +13,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="<?php echo get_home_url(); ?>"><img class="logo-abajo mx-auto img-fluid 	d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.svg"  alt=""></a>
-                    <a href="<?php echo get_home_url(); ?>"><img style="width:60%" class="logo-abajo mx-auto  d-none d-lg-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical.svg" alt=""></a>
+                    <?php
+                        
+                        //Para agregar más ids de carrera, buscar en functions.php la variable
+                        if(!in_array( get_the_ID() ,cagb_ids_no_iexe_logo())){
+                     ?>
+                        <a href="<?php echo get_home_url(); ?>"><img class="logo-abajo mx-auto img-fluid 	d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo.svg"  alt=""></a>
+                        <a href="<?php echo get_home_url(); ?>"><img style="width:60%" class="logo-abajo mx-auto  d-none d-lg-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical.svg" alt=""></a>
+                    <?php } else{
+                        ?>
+                        <a href="<?php echo get_home_url(); ?>"><img class="logo-abajo mx-auto img-fluid 	d-block d-sm-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Logo_IEXE_Menu_no_uni.webp"  alt=""></a>
+                        <a href="<?php echo get_home_url(); ?>"><img style="width:60%" class="logo-abajo mx-auto  d-none d-lg-block" id="logo-pie" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/logo_vertical_no_uni.svg" alt=""></a>
+                        <?php }?>
                     <!-- <span class="redes-sociales">SÍGUENOS EN</span> -->
                     
                 </div>
@@ -53,7 +63,7 @@
                     <p class="telefono-puebla"><img class="telefono-logo" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/telefono.svg" alt=""><a class="telefono-mexico" href="tel:800-286-84-64">800-286-84-64</a></p>
                     <!-- <a href="mailto:informes@iexe.edu.mx" class="e-mail">informes@iexe.edu.mx</a> -->
                     <div class="iconos-redes-sociales">
-                        <a target="_blank" href="https://www.facebook.com/IEXE.Universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a target="_blank" href="https://twitter.com/IEXE_Uni"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a target="_blank" href="https://www.youtube.com/channel/UCz2KnWwPWPbQ4GTYuqqAGqQ"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a target="_blank" href="https://www.linkedin.com/school/iexeuniversidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a target="_blank" href="https://www.instagram.com/iexe_universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a><a target="_blank" href="https://open.spotify.com/show/0UL42ohKAgBn2Sdse3VV5J"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/spotify.svg" alt="" class="redes"></a>
+                        <a target="_blank" href="https://www.facebook.com/IEXE.Universidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/facebook.svg" alt="" class="redes"></a><a target="_blank" href="https://twitter.com/IEXE_Uni"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/twitter.svg" alt="" class="redes"></a><a target="_blank" href="https://www.youtube.com/@iexeuniversidad"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/youtube.svg" alt="" class="redes"></a><a target="_blank" href="https://www.linkedin.com/school/iexeuniversidad/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/linkedin.svg" alt="" class="redes"></a><a target="_blank" href="https://www.instagram.com/iexe_university/"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/instagram.svg" alt="" class="redes"></a><a target="_blank" href="https://open.spotify.com/show/0UL42ohKAgBn2Sdse3VV5J"><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/spotify.svg" alt="" class="redes"></a>
                     </div>
                     <p class="direccion">Blvd. Esteban de Antuñano 2702,<br>C.P. 72160 Cd. de Puebla, México</p>
                 </div>
@@ -152,7 +162,7 @@
                         <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
                         <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
                         <li><a href="/oferta-educativa/#doctorado">Doctorados</a></li>
-                        <li><a href="/oferta-educativa/#masters">Masters</a></li>
+                        <li><a href="/oferta-educativa/#masters">Másteres</a></li>
                         <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
                         <li><a href="/capacitaciones/">Capacitaciones</a></li>
                     </ul>
@@ -674,9 +684,11 @@ $('#interes button.btn.btn-primario').click(function(){
 a.solicitar-info{
     border: 1px solid;
     border-radius: 5px;
-    padding: 5px 25px!important;
+    padding: 5px 20px!important;
     margin-top: 15px;
     margin-left: 35px;
+    width: 196px;
+    text-align: center;
 }
 nav.navbar.sticky .navegacion-botones {
     color: #FFF;
@@ -705,6 +717,7 @@ input#mi-busqueda {
     /* border-bottom: 1px solid #FFF; */
     background-image: url(https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/buscar.svg);
     background-repeat: no-repeat;
+    background-position-y: 5px;
 }
 #grid .close {
     background: blue;

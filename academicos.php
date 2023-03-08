@@ -16,7 +16,7 @@ $elTipo = explode(" " , $elTipo);
 ?>
 
 <?php get_header( ); ?>
-<section id="header">
+<section id="header" class="<?php echo strtolower(explode(" ", get_field('tipo'))[0]) ?>">
     <div id="informacion-programa" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -171,7 +171,7 @@ $elTipo = explode(" " , $elTipo);
 <section id="navegacion">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONOCE TU<br> <?php echo strtoupper($elTipo[0]) ?></div></div></a></div>
+            <div class="col"><a data-target="#informacion-programa" data-slide-to="0" class="active"><div class="col d-table"><div class="contenido d-table-cell align-middle">CONOCE TU<br> <?php echo mb_strtoupper($elTipo[0]) ?></div></div></a></div>
             <?php if($estiloPrograma == "Programas Tradicionales") { ?>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="1"><div class="col d-table"><div class="contenido d-table-cell align-middle"><?php // echo (is_page('2978') || is_page('1310') ) ? "QUÉ HACE DIFERENTE A ESTE PROGRAMA" : "POR QUÉ ELEGIR ESTE PROGRAMA" ?>¿POR QUÉ ELEGIR ESTE PROGRAMA?</div></div></a></div>
                 <div class="col"><a data-target="#informacion-programa" data-slide-to="2"><div class="col d-table"><div class="contenido d-table-cell align-middle">¿DÓNDE PUEDES TRABAJAR?</div></div></a></div>
@@ -614,10 +614,10 @@ section#identificador {
     <div class="container">
         <div class="row">
             <div class="col-md-12 d-none d-sm-block">
-                <a href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_programas_academicos.webp" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCSxRuy1NuIO5qPULWp_I7EQ" target="_blank"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/YouTubeBanner_IEXE_Internos_EL_2023.png" alt=""></a>
             </div>
             <div class="col-md-12 d-block d-sm-none">
-                <a href="/admisiones"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_programas_academicos_r.webp" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCSxRuy1NuIO5qPULWp_I7EQ" target="_blank"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner_r_Youtube-EL_2023_iexe.png" alt=""></a>
             </div>
         </div>
     </div>

@@ -98,14 +98,14 @@ p.descripcion-programa{
   color: var(--primario-azul);
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: 0px;
+  letter-spacing: -0.6px; /* Modif RUY */
   margin-top: 0px;
   line-height: 22px;
 }
 p#RVOE {
   /* margin-top: 32px; */
   color: var(--primario-azul);
-  padding-top: 16px;
+  padding-top: 1px; /* Modif RUY */
 }
 img.asesor {
   margin-top: -92px;
@@ -449,4 +449,21 @@ section#identificador p.texto-identificador{
   section#identificador p.texto-identificador{
     top: -75px;
   }
+}
+.nav-pills .nav-link {
+  border-radius: 9px 0px 0px 9px;
+  min-height: 75px;
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(90deg, rgba(166,183,228,1) 0%, rgba(223,235,251,1) 100%);
+  margin-bottom: 17px;
+  box-shadow: 0px 6px 15px #0e188036;
+}
+#programas section#header.doctorado {
+  background: url(../img/master_doctorados_iexe.webp);
+}
+#programas section#header.máster {
+  background: url(../img/master_doctorados_iexe.webp);
 }

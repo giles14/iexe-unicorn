@@ -120,6 +120,26 @@ img.flecha-ir {
 .menu-navegacion a.button-primary {
     margin-bottom: 80px;
 }
+a.solicitar-info{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 20px!important;
+    margin-top: 15px;
+    margin-left: 35px;
+    width: 196px;
+    text-align: center;
+}
+input#mi-busqueda {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 0;
+    background: rgba(0,30,66,0.01);
+    /* border-bottom: 1px solid #FFF; */
+    background-image: url(https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/buscar.svg);
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+}
 .boton-slide{
     background: var(--primario--azul-obscuro);
     height: 120px;
@@ -3442,7 +3462,15 @@ span.nombre-institucion {
 #proceso-revalidacion .col.ultimo {
     border: unset;
 }
-
+body#política\ de\ devoluciones\ y\ reembolsos {
+    background: url(../img/bg-programas-academicos.webp);
+    margin-top: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: unset;
+}
 /* Facultad */
 .instructor-item .instructor-info{
     position: absolute;
@@ -3685,6 +3713,92 @@ body#términos\ y\ condiciones\ de\ uso\ del\ correo\ electrónico h2 {
         flex-basis: auto;
     }
 }
+/* Convertir a flexbox los comentarios */
+form#commentform {
+    display: flex;
+    flex-wrap: wrap;
+}
+p.comment-form-cookies-consent {
+    order: 4;
+    display: flex;
+    width: 100%;
+}
+p.form-submit {
+    display: flex;
+    order: 6;
+    justify-content: flex-end;
+    width: 100%;
+}
+label.for-phone {
+    width: 100%;
+}
+
+p.comment-form-cookies-consent {
+    order: 4;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+p.comment-form-email {
+    margin-bottom: 0px;
+}
+p.comment-form-author {
+    margin-bottom: 0px!important;
+}
+input#phone {
+    width: 100%;
+    display: inherit;
+}
+label[for=wp-comment-cookies-consent] {
+    height: 24px;
+    margin-bottom: 0px;
+}
+input#wp-comment-cookies-consent {
+    margin-right: 10px;
+}
+p.comment-form-phone.uk-margin-top {
+    display: flex;
+    order: 3;
+    flex-wrap: wrap;
+    width: 33%;
+    padding: 10px;
+}
+p.comment-form-email {
+    width: 33%;
+}
+p.comment-form-author {
+    width: 33%;
+}
+
+@media only screen and (max-width: 768px) {
+    p.comment-form-phone.uk-margin-top {
+        width: 100%;
+    }
+    p.comment-form-email {
+        width: 100%;
+    }
+    p.comment-form-author {
+        width: 100%;
+    }
+    p.comment-form-cookies-consent {
+        order: 4;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        flex-wrap: nowrap
+    }
+    label[for=wp-comment-cookies-consent] {
+        height: unset;
+        margin-bottom: 0px;
+    }
+}
+
+/* End: commentarios */
+
+
 
 section#banner-youtube {	
     background: #EEEEEE;	
@@ -3693,6 +3807,17 @@ section#banner-youtube {
 /* estatus de botones formularios overrides */
 .btn-exito{
     background-color: green!important;
+}
+.nota-rvoe {
+    margin-top: -36px;
+    color: #FFF;
+    font-size: 12px;
+}
+#masters .nota-rvoe {
+    margin-top: 25px;
+    /* text-align: center; */
+    padding-left: 3em;
+    color: #00ffe8;
 }
 /* h2#swal2-title {
     color: white;

@@ -68,7 +68,7 @@
 
             <!-- <img style="margin-left: 20px;" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/search.svg" alt="" class="busqueda"> Buscar -->
           </div>
-          <div class="el-whatsapp"><a href="https://bit.ly/3KaEkx3" target="_blank"><img class="el-icono" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-wa.webp" alt=""> <span class="de-contacto">Contacta a un asesor</span> <span class="el-telefono">55 1993 3234</span></a></div>         
+          <div class="el-whatsapp invisible"><a href="https://bit.ly/3KaEkx3" target="_blank"><img class="el-icono" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono-wa.webp" alt=""> <span class="de-contacto">Contacta a un asesor</span> <span class="el-telefono">55 1993 3234</span></a></div>         
         </div>
             
             <!-- <img style="margin-left: 20px;" src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/search.svg" alt="" class="busqueda"> Buscar -->

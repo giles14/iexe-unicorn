@@ -19,7 +19,7 @@
 
 ?>
 <?php if(is_search( )) { ?>
-<section id="main-posts" style="padding-top: 80px;">
+<section id="main-posts" class="is-search" style="padding-top: 80px;">
     <div class="container">
         <div class="row">
             <div class="col-sm-9">
@@ -68,14 +68,23 @@
     </div>
 </section>
 <?php } else { ?>
-<section id="main-posts" style="padding-top: 80px;">
+<section id="main-posts" class="is-author">
     <div class="container">
         <div class="row">
             <div class="col-sm-9">
-                    <h2 class="nombre-de-categoria mb-4"><?php echo (is_category()) ? single_cat_title() : "Resultado de búsqueda" ?></h2>
+                    <?php  
+                        if(!is_author()){
+                    ?>
+                    <h2 class="nombre-de-categoria mb-4" style="padding-top: 80px;"><?php echo (is_category()) ? single_cat_title() : "Resultado de búsqueda" ?></h2>
+                    <?php 
+                        }else{ ?>
+                            <h2 class="nombre-de-categoria mb-4">Entradas del autor</h2>
+                        <?php
+                        }
+                    ?>
             </div>
         </div>
-        <div class="row">
+        <div class="row es-un-post">
             <div class="col-12 col-md-8 p-3">
                 <div class="container">
                     <div class="row">

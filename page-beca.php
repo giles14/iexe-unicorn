@@ -54,6 +54,33 @@
                                     <label class="fieldlabels" for="promedio">Promedio: *</label>
                                     <input id="promedio" type="number" name="promedio" placeholder="Ingresa aquí tu promedio" required  step="0.1" min="1" max="10.0"/>
                                 </div>
+                                <?php 
+                                     if(get_the_ID() == 3919 ){
+                                        ?>
+                                            <div class="col-sm-12 mt-3 text-center">
+                                                <p class="bachiller">¿Cuentas con tu título de licenciatura o tercer nivel concluido?</p>
+                                                <input type="radio" id="concluida" name="escolaridad" value="Si" required>
+                                                <label for="concluida">Si</label>
+                                                <input type="radio" id="no-concluida" name="escolaridad" value="No">
+                                                <label for="no-concluida">No</label>
+                                                <input type="radio" id="en-tramite" name="escolaridad" value="En-tramite">
+                                                <label for="en-tramite">En trámite</label>
+                                            </div>
+                                        <style>
+                                            input[name=escolaridad] {
+                                                width: unset!important;
+                                            }
+                                            p.bachiller{
+                                                font-weight: bold;
+                                                font-size: 16px;
+                                            }
+                                            label#escolaridad-error {
+                                                float: left;
+                                            }
+                                        </style>
+                                        <?php
+                                    }
+                                ?>
                                 <input id="pje-beca" name="porcentaje-2" type="hidden" value="" />
                                 <div style="margin-top: 15px" class="col-md-12">
                                     <label for="programa-interesB">Selecciona un programa</label>
@@ -69,7 +96,7 @@
                                             )); 
                                         }elseif(get_the_ID() == 3918 || get_the_ID() == 3919){
                                             get_template_part( 'template-parts/selectProgramas', null, array(
-                                                'programas' => array("maestrias" , "masters")
+                                                'programas' => array("maestrias")
                                             )); 
                                         }elseif(get_the_ID() == 3914 || get_the_ID() == 3915){
                                             get_template_part( 'template-parts/selectProgramas', null, array(

@@ -79,13 +79,16 @@ Template Name: Programas
         <div class="container">
             <div class="row contenedor-programa">
                 <div class="col-md-8 col-lg-6 offset-lg-6">
-                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Masters</h1>
+                    <h1 class="nombre-programa"><i class="cyan uil uil-angle-right"></i>Másteres</h1>
                     <ul class="masters">  
                         <li><a href="oferta-educativa/maestria-en-marketing-politico-y-opinion-publica/">Marketing Político y Opinión Pública</a></li>
                         <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoría Gubernamental</a></li>
                         <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>
                         <li><a href="oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/">Sistema Penal Acusatorio y Juicio Oral </a></li>
                     </ul>
+                    <div class="nota-rvoe">
+                        <p>Estudios sin reconocimiento de validez oficial (RVOE en trámite).</p>
+                    </div>
                 </div>
             </div>
         </div>

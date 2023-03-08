@@ -74,7 +74,14 @@
         <div class="container">
             
           <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Logo_IEXE_Menu.webp"  alt="">
+          <?php 
+                //Para agregar más ids de carrera, buscar en functions.php la funcion 
+                if(!in_array( get_the_ID() ,cagb_ids_no_iexe_logo())){
+              ?>
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Logo_IEXE_Menu.webp"  alt="">
+             <?php } else { ?>
+                <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Logo_IEXE_Menu_no_uni.webp"  alt="">
+              <?php } ?>
           </a>
             
             

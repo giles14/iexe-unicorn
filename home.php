@@ -19,17 +19,21 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                     </div>
                 
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                    <div class="carousel-item active">
+                            <a href="https://www.youtube.com/channel/UCSxRuy1NuIO5qPULWp_I7EQ" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_YouTube_rev.webp" alt="Canal de Youtube"></a>
+                            <a href="https://www.youtube.com/channel/UCSxRuy1NuIO5qPULWp_I7EQ" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider-R-IEXE_YouTube_rev.webp" alt="Canal de Youtube"></a>
+                        </div>
+                        <div class="carousel-item">
                             <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-ama.webp" alt="Nuevo libro"></a>
                             <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-mov-ama.webp" alt="Nuevo libro"></a>
                         </div>
-                        <div class="carousel-item">
+                        <!-- <div class="carousel-item">
                             <a href="https://bit.ly/3Ya2gqy" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="https://www.iexe.edu.mx/wp-content/uploads/2022/12/slide-conexiones-libro-andere-scaled.webp" alt="Conexiones y equilibrios"></a>
                             <a href="https://bit.ly/3Ya2gqy" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="https://www.iexe.edu.mx/wp-content/uploads/2022/12/slide-conexiones-libro-andere-2-copy.webp" alt="Conexiones y equilibrios"></a>
-                        </div>
+                        </div> -->
                         <div class="carousel-item">
-                            <a href="#"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/somos_digitales.webp" alt="Somos digitales"></a>
-                            <a href="#"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/somos_digitalesR.webp" alt="Somos digitales"></a>
+                            <a href="#"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/somos_digitales_rev.webp" alt="Somos digitales"></a>
+                            <a href="#"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_R-IEXE-100_digitales_rev.webp" alt="Somos digitales"></a>
                         </div>
                         <div class="carousel-item">
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_DoctoradoPP.webp" alt="Doctorado slide"></a>
@@ -39,10 +43,10 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                             <a href="https://bit.ly/3NFUkYX"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
                             <a href="https://bit.ly/3NFUkYX"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-r_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
                         </div> -->
-                        <div class="carousel-item">
+                        <!-- <div class="carousel-item">
                             <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_TecnologiasIEXE.webp" alt="Somos tecnología"></a>
                             <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_r-tech-iexe.webp" alt="Somos tecnología"></a>
-                        </div>
+                        </div> -->
                         <div class="carousel-item">
                             <a href="https://bit.ly/3I4QqoR"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_AWS_iexe.webp" alt="AWS academy"></a>
                             <a href="https://bit.ly/3I4QqoR"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_R-IEXE-AWS.webp" alt="AWS academy"></a>
@@ -51,10 +55,6 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                             <a href="/comunidad"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
                             <a href="/comunidad"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
                       </div>
-                      <div class="carousel-item">
-                            <a href="#" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="https://www.iexe.edu.mx/wp-content/uploads/2023/01/Slider_IEXE_TV-copy.webp" alt="Nuevo libro"></a>
-                            <a href="#" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="https://www.iexe.edu.mx/wp-content/uploads/2023/01/Slider-R-_IEXE_TV-copy.webp" alt="Nuevo libro"></a>
-                        </div>
                       <div class="carousel-item">
                             <a href="#"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/recomienda_gana_slide.webp" alt="Recomienda y gana"></a>
                             <a href="#"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/recomienda_gana_slideR.webp" alt="Recomienda y gana"></a>
@@ -140,7 +140,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                 <div class="col-12 col-md-4" style="min-height: 431px;">
                     <div class="oferta-bloque mas">
                         <div class="informa">
-                            <a class="button-primary">MASTERS</a>
+                            <a class="button-primary">MÁSTERES</a>
                             <a class="descubre-mas" disabled>Descubre más</a>
                             <div class="links-programas">
                                 <ul>
@@ -148,8 +148,10 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                                     <li><a href="oferta-educativa/maestria-en-auditoria-gubernamental">Auditoría Gubernamental</a></li>
                                     <li><a href="oferta-educativa/maestria-en-sistema-penal-acusatorio-y-juicio-oral/">Sistema Penal Acusatorio <br>y Juicio Oral </a></li>
                                     <li><a href="oferta-educativa/maestria-en-gestion-publica-municipal/">Gestión Pública Municipal</a></li>
-                                                                                                 
                                 </ul>
+                            </div>
+                            <div class="nota-rvoe">
+                                <p>Estudios sin reconocimiento de<br> validez oficial (RVOE en trámite).</p>
                             </div>
                         </div> 
                     </div>

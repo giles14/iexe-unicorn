@@ -1,6 +1,6 @@
 <aside>
         <div class="banner-interno-blog mb-4 text-center">
-            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/banner-doctorado.png" class="img-fluid" alt="">
+            <?php cagb_return_banner() ?>
         </div>
         <h2 class="titulo-sidebar">Explora</h2>
         <ul class="in-cloud-tag">    

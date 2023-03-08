@@ -20,7 +20,7 @@ $doctorados ='<optgroup  label="Doctorados">
 <option  value="DOC">Doctorado en Políticas Públicas</option>
 <option  value="DSP">Doctorado en Seguridad Pública</option>
 </optgroup>';
-$masters ='<optgroup  label="Masters">
+$masters ='<optgroup  label="Másteres">
 <option value="MAG">Auditoria Gubernamental</option>
 <option value="MMPOP">Marketing Político y Opinión Pública</option>
 <option value="MGPM">Gestión Pública Municipal</option>
