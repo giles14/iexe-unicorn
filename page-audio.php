@@ -165,7 +165,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                     </div>
                 </div>
         </div> 
-        <div class="row d-none">
+        <div class="row">
                 <div class="col-12 col-md-4 col-lg-4 mb-3  mx-auto">
                     <div class="book-container text-center">
                         <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/03/decidete_audiolibros-IEXE.webp" alt="" class="img-fluid mb-3">

@@ -145,9 +145,7 @@
 
         </div>
     </div> -->
-    <div class="topics-top">
-        <a onclick="nav_toggle();" class="bandera-topics"><img class="la-bandera" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/bandera-topics.png" alt=""></a>
-    </div>
+    <?php get_template_part('template-parts/topics-bandera') ?>
     <div class="container-fluid">
         <div class="row">
             <div class="col-1 d-none d-lg-flex">

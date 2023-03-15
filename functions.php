@@ -283,7 +283,7 @@ $porcentajeBeca = round(rand(50 , 70), -1);
 function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.34.2', 'all'  );
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.09', 'all' );
-    wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.04', 'all' );
+    wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.05', 'all' );
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-admisiones-estilo', get_template_directory_uri() . '/assets/css/admisiones.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-programas-academicos', get_template_directory_uri() . '/assets/css/programas-academicos.css', 'iexe-unicorn-main', '1.0', 'all' );
@@ -295,6 +295,7 @@ function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-landing-match', get_template_directory_uri() . '/assets/css/landing-match.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-lity-css', get_template_directory_uri() . '/assets/css/lity.min.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-tooltip-css', 'https://unpkg.com/microtip/microtip.css', '', '1.0', 'all' );
+    wp_register_style( 'iexe-test-orientacion-vocacional', get_template_directory_uri() . '/assets/css/style-tov.css', array(), '1.0', 'all' );
     wp_register_script( 'iexe-unicorn-programas', get_template_directory_uri() . '/assets/js/academico.js', 'jquery', '1.02', true );
     wp_register_script( 'iexe-unicorn-multipasos', get_template_directory_uri() . '/assets/js/form-multipasos.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
@@ -317,7 +318,8 @@ function agregar_estilos_tema(){
     wp_register_script( 'iexe-loadmore', get_template_directory_uri() . '/assets/js/btnloadmore.min.js', 'jquery', '1.0.0', true );
     wp_register_style( 'iexe-new-blog', get_template_directory_uri() . '/assets/css/style-blog.css' , '1.0', 'all' );
     wp_register_script( 'iexe-blog-ajax', get_template_directory_uri() . '/assets/js/blog-ajax.js', 'jquery', '1.0.0', true );
-    
+    wp_register_script( 'charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js', array(), '2.9.3', true );
+    wp_register_script( 'iexe-test-orientacion-vocacional', get_template_directory_uri() . '/assets/js/script-tov.js', array('charts'), '1.0.0', true );
     
 
     wp_register_script( 'iexe-unicorn-admisiones', get_template_directory_uri() . '/assets/js/admisiones.js', 'jquery', '1.0', true );
@@ -405,6 +407,10 @@ function agregar_estilos_tema(){
     if(is_page_template('page-landing-ssp.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp');
         wp_enqueue_script('iexe-unicorn-landing'); 
+    }
+    if(is_page_template('page-ov.php')){
+        wp_enqueue_style( 'iexe-test-orientacion-vocacional');
+        wp_enqueue_script('iexe-test-orientacion-vocacional'); 
     }
     if(is_page_template('page-landing-1.php')){
         wp_enqueue_style( 'iexe-unicorn-landing-ssp');

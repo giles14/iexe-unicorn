@@ -1,8 +1,14 @@
 body#blog {
-    background: url(../img/blog-bg.jpg);
+    /* background: url(../img/blog-bg.jpg); */
     /* background-color: #EDEDED; */
     background-size: contain;
     background-repeat: no-repeat;
+}
+section#los-mas-leidos {
+    background: #FFF;
+}
+section{
+    background: #fff;
 }
 body#single{
     background: url(../img/bg-programas-academicos.webp);

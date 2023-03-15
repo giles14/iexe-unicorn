@@ -1,13 +1,3 @@
-<?php 
-    $elOrigen = 'no-conocido';
-    if(is_page_template('academicos.php')){
-        $elOrigen = 'formulario-interesado-carrera';
-    }elseif(is_home()) {
-        $elOrigen = 'formulario-home-conocer';
-    }elseif(is_page_template('comunidad.php')){
-        $elOrigen = 'formulario-comunidad';
-    }
-?>
 <div id="menuBlog" class="sidenav animate__bounceInRight"> 
         <a href="javascript:void(0)" class="closebtn" onclick="closeMen()">Cerrar <span>&times;</span></a>
         <a class="d-none d-sm-block" href=""><div class="logo">
@@ -166,132 +156,7 @@
                         <?php
                         }
     ?>
-                    <script>
-                        jQuery(document).ready(function(){
-                            jQuery(window).scroll(function(){
-                                if(jQuery(document).scrollTop() > 300){
-                                     jQuery(".inscribete-ya").fadeIn("fast");
-                                }
-                                });
-                                jQuery(window).scroll(function(){
-                                if(jQuery(window).scrollTop() < 300){
-                                    jQuery(".inscribete-ya").fadeOut("fast");
-                                }
-                            });
-                        });
-                        jQuery(document).ready(function(){
-                            jQuery(".cerrar-inscribete-ya a").click(function(){
-                                jQuery(".inscribete-ya").hide();
-                            });
-                        });
-                    
-                    </script>
-                    <?php if(is_page_template('academicos.php')){ ?>
-                    <script>
-                            jQuery(document).ready(function(){
-                            jQuery('span.rotate').textrotator({
-                                animation: "dissolve",
-                                speed: 8000
-                            });
-                        });
-                    </script>
-                    <?php } ?>
-    <div id="mySidenav" class="sidenav animate__bounceInRight"> 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Cerrar <span>&times;</span></a>
-        <a class="d-none d-sm-block" href="<?php home_url(); ?>"><div class="logo">
-            <i class="fas fa-home"></i>
-            <!-- <img src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/logo.svg" alt="Logo IEXE"> -->
-        </div></a>
-        <div class="menu-navegacion">
-            <a class="button-primary">MENÚ</a>
-            <div class="contenedor-menu">
-                <a class="menu-movil" href="/nosotros">Acerca de IEXE</a>
-                <a class="menu-movil" href="/oferta-educativa">Oferta educativa</a>
-                    <ul class="programas-academicos">
-                        <li><a href="/oferta-educativa/#licenciaturas">Licenciaturas</a></li>
-                        <li><a href="/oferta-educativa/#maestrias">Maestrías</a></li>
-                        <li><a href="/oferta-educativa/#doctorado">Doctorados</a></li>
-                        <li><a href="/oferta-educativa/#masters">Másteres</a></li>
-                        <li><a href="/oferta-educativa/#diplomados">Diplomados</a></li>
-                        <li><a href="/capacitaciones/">Capacitaciones</a></li>
-                    </ul>
-                <a class="menu-movil" href="/admisiones">Admisiones</a>
-                <a class="menu-movil" href="/becas">Becas</a>
-                <a class="menu-movil" href="/comunidad">IEXE Comunidad</a>
-                <a class="menu-movil" href="/blog">Blog y noticias</a>
-            </div>
-        </div>
-    </div>
-    <div id="accesos" class="accesosPanel animate__bounceInRight"> 
-        <a href="javascript:void(0)" class="closebtn" onclick="cierraAccesos()">Cerrar <span>&times;</span></a>
-        <a class="d-none d-sm-block" href="<?php home_url(); ?>"><div class="logo">
-            <i class="fas fa-home"></i>
-            <!-- <img src="<?php // echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/logo.svg" alt="Logo IEXE"> -->
-        </div></a>
-        <div class="menu-navegacion">
-            <a class="button-primary">ACCESOS</a>
-            <div class="contenedor-menu">
-                <a class="menu-movil" target="_blank" href="https://alumnos.iexe.edu.mx/">Alumnos</a>
-                <a class="menu-movil" target="_blank" href="https://docentes.iexe.edu.mx">Docentes</a>
-                <!-- <a class="menu-movil" target="_blank" href="https://develop.redisoft.dev">Colaboradores</a> -->
-                <a class="menu-movil" target="_blank" href="https://talento.iexe.edu.mx">Comercial</a>
-            </div>
-        </div>
-    </div>
     <div id="overlay-menu"></div>
-<script>
-    var $ = jQuery;
-    $(document).ready(function(){
-        $(".oferta-bloque").click(function(){
-            if($(this).hasClass('activo')){
-                if($('.links-programas ul li > a').parent().click()){
-                    $(this).removeClass('activo');
-                }
-
-            }else 
-            if ( $(this).hasClass('activo') ){
-                $(this).removeClass('activo')
-            } else {
-                $('.oferta-bloque').removeClass("activo");
-                $(this).addClass( "activo" );
-            }
-
-        });
-    });
-    
-</script>
-<script>
-    $(".my-video").mouseenter(function(){
-        $(this).find("video").addClass('activo');
-        $(this).find('video').trigger('play').prop('muted', false);
-    });
-    $(".my-video").mouseleave(function(){
-        $(this).find("video").removeClass('activo');
-        $(this).find('video').trigger('pause');
-    });
-    $(".my-video").click(function(){
-        $(this).find('video').trigger('play').prop('muted', false);
-    });
-</script>
-<script>
-    if($(window).width() < 540){
-        $('.navbar').addClass('sticky');
-    }
-    if($('#body#oferta\ educativa').length){
-        $('.navbar').addClass('sticky');
-    }else {
-        $(window).scroll(function() {
-        if ($(this).scrollTop() > 60 || $(window).width() < 540) {
-            $('.navbar').addClass('sticky');
-        }else{
-            if($(window).width() > 540){
-                $('.navbar').removeClass('sticky');
-            }
-            
-        }
-    });
-}
-</script>
 <script>    
     var estado_menu = false;
     const menu = document.getElementById("mySidenav");
@@ -320,33 +185,6 @@
       estado_menu = true;
     }
     
-    function closeNav() {
-      menu.style.width = "0";
-      estado_menu = false;
-      enableScroll();
-      overlay.style.display = "none";
-    }
-    function abreAccesos() {
-        
-        if(w > 800){
-            // document.getElementById("mySidenav").style.width = "66%";
-            acceso.style.width = "66%";
-            overlay.style.display = "block";
-            disableScroll();
-        }else {
-            $('nav.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light').addClass('sticky');
-            // document.getElementById("mySidenav").style.width = "100%";
-            acceso.style.width = "100%";
-            disableScroll();
-        }
-    }
-    
-    function cierraAccesos() {
-      acceso.style.width = "0";
-      enableScroll();
-      overlay.style.display = "none";
-    }
-
     function preventDefault(e) {
         e.preventDefault();
     }
@@ -392,116 +230,59 @@ function enableScroll() {
             // if the target of the click isn't the container nor a descendant of the container
             if (!container.is(e.target) && container.has(e.target).length === 0) 
             {
-                closeNav();
-                cierraAccesos();
+                //closeNav();
+                //cierraAccesos();
             }
         });
 
 </script>
-<?php wp_footer(  )?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/localization/messages_es.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
 <script>
-    $(document).ready(function(){
-        // $('.sliding').slick({
-        //     dots: true,
-        // infinite: true,
-        // variableWidth: false
-        // });
-        $('.sliding').slick({
-            prevArrow:$("img.boton-atras"),
-            nextArrow:$("img.boton-adelante")
-        });
-});
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide',{
+      type: 'loop',
+      perPage: 4,
+      perMove: 1,
+      pagination: false,
+      arrows: true,
+      rewind : true,
+      breakpoints: {
+      990: {
+        perPage: 3,
+        },
+      770: {
+      perPage: 2,
+      },
+      660: {
+      perPage: 1,
+      },
+      }
+    } );
+    splide.mount();
+  } );
 </script>
 <script>
-// $(document).ready(function(){
-    var input = document.querySelector("#telefono");
-    var iti = window.intlTelInput(input, {
-      localizedCountries: { 'us': 'Estados Unidos' },
-      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
-      separateDialCode: true,
-      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
-    });
-// });
-  </script>
-  <?php  if(is_page_template('home.php')){ ?>
-  <script>
-      $(document).ready(function(){
-
-$('#interes button.btn.btn-primario').click(function(){    
-    $('#interes button.btn.btn-primario').removeClass("error exito"); 
-    $('#interes button.btn.btn-primario').attr("disabled", true);
-    var nombre = $("[name='nombre']").val();
-    var correo = $("[name='email']").val();
-    var origen = '<?php echo $elOrigen; ?>';
-    var idConvenio = '';
-    if($("[name='convenios']").val()){
-        var idConvenio =  $("[name='convenios'] option:selected").val()
-    }
-    
-    if($('input#hiddenPrograma').val()){
-        var programa = $('input#hiddenPrograma').val();
-        console.log(programa);
-    }else{
-        var programa = $("[name='programa']").val();
-        console.log(programa);
-    }
-    var telefono = iti.getNumber(crossOriginIsolated);
-    var data;           
-    $.ajax({
-    url: 'https://api.redisoft.dev/Leads/web',
-    type: 'post',
-    data: "nombre=" + nombre + "&correo=" + correo + "&telefono=" + telefono + "&programa=" + programa + "&referencia=" + $(location).attr('href') + "#interes" + "&charifaz=" + navigator.userAgent + "&adicional=origen:%20" + origen + "&idConvenio=" + parseInt(idConvenio),
-    success: function(data){
-        console.log(data);
-        if(data == true || data == "saved"){
-            console.log("se salvó :)");
-            $("#problemaModal").modal('show');
-            $('#interes button.btn.btn-primario').addClass("error");
-
-        }else if(data == "duplicated"){
-            console.log("Ya hay un registro con este correo electrónico");
-            $("#duplicadoModal").modal('show');
-        } else{
-            $("#guardadoModal").modal('show');
-            $('#interes button.btn.btn-primario').removeClass("error");
-            $('#interes button.btn.btn-primario').addClass("exito");
-        }
-        $('#interes button.btn.btn-primario').attr("disabled", false);
-        
-    },
-    error: function(data){
-        console.log("No se logró contactar al servidor");
-        console.log(data);
-        $('#interes button.btn.btn-primario').attr("disabled", false);
-        $('#interes button.btn.btn-primario').addClass("error");
-    }
-});
-});
-});
-  </script>
-  <?php } ?>
-  <div class="modal fade" id="guardadoModal" tabindex="-1" aria-labelledby="guardadoModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title titulo" id="guardadoModalLabel">Se han registrado sus datos</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <p class="description">Nuestro equipo se pondrá en contácto con usted</p>
-          <i class="far fa-check-circle"></i>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primario" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
+            // var splide = new Splide('.splide', {
+            //     type: 'loop',
+            //     perPage: 3,
+            //     rewind: true,
+            //     breakpoints: {
+            //         640: {
+            //             perPage: 2,
+            //             gap: '.7rem',
+            //             height: '12rem',
+            //         },
+            //         480: {
+            //             perPage: 1,
+            //             gap: '.7rem',
+            //             height: '12rem',
+            //         },
+            //     },
+            // });
+            // splide.mount();
+        </script>
+<?php wp_footer(  )?>
 <div class="modal fade" id="busquedaModal" tabindex="-1" aria-labelledby="guardadoModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
@@ -547,164 +328,6 @@ $('#interes button.btn.btn-primario').click(function(){
                 </div>
           </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="problemaModal" tabindex="-1" aria-labelledby="problemaModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title titulo" id="problemaModalLabel">Ha ocurrido un error</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <p class="description">Por favor verifique que todos los campos fueron llenados y que la información proporcionada es correcta e intente de nuevo.</p>
-          <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
-          
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="duplicadoModal" tabindex="-1" aria-labelledby="duplicadoModal" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title titulo" id="duplicadoModalLabel">Ha ocurrido un error</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <p class="description">Sus datos ya se encuentran almacenados en el sistema si lo desea, puede contactarnos directamente a nuestro whastapp:<a href="https://bit.ly/3p4NXV9"><img style="width: 25px; margin-top:5px;" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/whatsapp.png" alt=""></a> <a target="_blank" href="https://bit.ly/3p4NXV9" style="color: #FFF; color: cyan; margin-top: 5px; display: block;">+52 222-460-35-89</a></p>
-          <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
-          
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="servidorModal" tabindex="-1" aria-labelledby="servidorModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title titulo" id="servidorModalLabel">Ha ocurrido un error</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <p class="description">El servidor remoto no ha podido contactarse, le rogamos vuelva a intentarlo y si el problema persiste por favor contactenos.</p>
-          <!-- <span><i class="uil uil-exclamation-octagon"></i></span> -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="grid" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col text-white">
-            <div class="contenedor-modal">
-            <h2 class="text-center mb-5 mt-4">¿Tienes alguna duda?</h2>
-            <p>Aqui te ofrecemos toda la información que necesites sobre:</p>
-            <p>
-                <ul>
-                    <li><i class="sprite sprite-educacion"></i> Becas académicas</li>
-                    <li><i class="sprite sprite-ordenador"></i>Inscripciones</li>
-                    <li><i class="sprite sprite-libros"></i>Oferta académica y planes de estudio</li>
-                    <li><i class="sprite sprite-backpack"></i>Nuestra comunidad</li>
-                </ul>
-                
-            </p>
-            </div>
-            <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/x-layout.svg" alt="" class="lay-fondo">
-          </div>
-          <div class="col">
-            <div class="contenedor-modal pe-5 ps-5">
-            <p>¡Estamos para ayudarte! Déjanos tus datos y un asesor educativo se pondrá en contacto contigo.</p>
-            <form id="contacto"  onsubmit="event.preventDefault(); enviarFormulario(this)"  data-origen="formulario popup" action="">
-                        <div class="form-group">
-                          <label for="nombre">Nombre completo*</label>
-                          <input type="text" name="nombre" placeholder="Ingresa aquí tu nombre" class="form-control" id="nombre" aria-describedby="emailHelp" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="correo">Correo electrónico*</label>
-                            <input name="email" type="email" placeholder="Ingresa aquí tu correo electrónico" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Teléfono móvil*</label>
-                            <input name="telefono" type="tel" placeholder="Ingresa aquí tu número telefónico" class="form-control" id="telefono-pop"></div>
-                        
-                        <div class="form-group">
-                            <label for="programa-interes">Selecciona un programa</label>
-                            <select class="form-control" name="programa" id="programa-interes">
-                        <option value="SINA">Seleccionar Programa</option>
-                        <optgroup label="Licenciaturas">              
-                            <option value="LCP">Ciencias Políticas y Administración Pública</option>
-                            <option value="LSP">Seguridad Pública</option>
-                            <option value="LAE">Administración de Empresas</option>
-                            <option value="LD">Derecho</option>
-                        </optgroup>          
-                        <optgroup label="Maestrías">  
-                            <option value="MFP">Finanzas Públicas</option>
-                            <option value="MAPP">Administración y Políticas Públicas</option>
-                            <option value="MEPP">Evaluación de Políticas Públicas</option>
-                            <option value="MSPP">Seguridad Pública y Políticas Públicas</option>
-                            <option value="MBAT">Administración de Negocios</option>
-                            <option value="MITIC">Tecnologías de la Información</option>
-                        </optgroup>
-                        <optgroup label="Diplomados">
-                            <option value="DADFP">Alta Dirección en la Función Pública</option>
-                            <option value="DADPP">Análisis y Diseño de Políticas Públicas</option>															
-                            <option value="DEPP">Evaluación de Políticas Públicas</option>																	
-                            <option value="DDFF">Disciplina Financiera y Fiscalización</option>
-                            <option value="DPRSED">Presupuesto basado en Resultados y Sistema de Evaluación del Desempeño</option>
-                            <option value="DHG">Diplomado en habilidades Gerenciales y Liderazgo</option>
-                        </optgroup>
-                        <optgroup label="Doctorado">
-                            <option value="DOC">Doctorado en Políticas Públicas</option>
-                        </optgroup>
-                        <optgroup label="Master">
-                            <option value="MIGE">Innovación y Gestión Educativa</option>
-                            <option value="MCDA">Ciencia de Datos Aplicada</option>
-                            <option value="MAIS">Administración de Instituciones de Salud</option>
-                            <option value="MAG">Auditoria Gubernamental</option>
-                            <option value="MMPOP">Marketing Político y Opinión Pública</option>
-                            <option value="MGPM">Gestión Pública Municipal</option>
-                            <option value="MSPAJ">Sistema Penal Acusatorio y Juicio Oral</option>
-                        </optgroup>
-                    </select>                        
-                    </div>
-                    <p class="terminos">Al hacer clic en “CONTINUAR”, reconoces haber leído nuestro <a href="https://iexe.edu.mx/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a> y confirmas estar de acuerdo con el uso de ellas, así como los Términos y Condiciones del sitio</p>
-                    <button type="submit" class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar datos<div class="ld ld-ring ld-spin"></div></button>                            
-                    </form>
-            </div>
-          </div>
-        </div>   
-      </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-      </div> -->
     </div>
   </div>
 </div>
@@ -861,13 +484,6 @@ nav.navbar.sticky .navegacion-botones {
 }
 }
 </style>
-<?php  if (is_page('815')){ ?>
-    <!-- Código de instalación Cliengo para giles.carlos@iexe.edu.mx --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/62e4184a6b1374002a108b4a/62e4184c6b1374002a108b4d.js?platform=dashboard'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
-<?php } ?>
-<?php if (is_user_logged_in()){ 
-    get_template_part( 'template-parts/botonera-multi');
-}
-?>
 <script>
     $(document).ready(function() {
 

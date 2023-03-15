@@ -42,7 +42,9 @@
       <?php
     }
      ?>
-
+     <!-- Registro de dominio para pinterest -->
+    <meta name="p:domain_verify" content="5dab07612c1323e8cf3f3ce639cb087c"/>
+    
   <script charset="UTF-8" src="//web.webpushs.com/js/push/fb04d2eca64670c2d4d4f783909d33aa_1.js" async></script>
     <?php wp_head(); ?>
 </head>
