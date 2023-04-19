@@ -166,13 +166,54 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                 </div>
         </div> 
         <div class="row">
-                <div class="col-12 col-md-4 col-lg-4 mb-3  mx-auto">
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="book-container text-center">
+                        <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/03/daryrecibir_audiolibros-IEXE.webp" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-8" data-target="#staticBackdrop" href="#" target="_blank" data-id="8" download><button>¡Descarga el resumen!</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
                     <div class="book-container text-center">
                         <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/03/decidete_audiolibros-IEXE.webp" alt="" class="img-fluid mb-3">
                             <a  data-toggle="modal" class="boton-descarga-7" data-target="#staticBackdrop" href="#" target="_blank" data-id="7" download><button>¡Descarga el resumen!</button></a>
                     </div>
                 </div>
-        </div> 
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="book-container text-center">
+                        <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/03/elabismo_audiolibros-IEXE.png" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-9" data-target="#staticBackdrop" href="#" target="_blank" data-id="9" download><button>¡Descarga el resumen!</button>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="book-container text-center">
+                        <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/trececosas_audiolibros-IEXE.png" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-11" data-target="#staticBackdrop" href="#" target="_blank" data-id="11" download><button>¡Descarga el resumen!</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="book-container text-center">
+                        <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/03/habitos_audiolibros-IEXE.png" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-10" data-target="#staticBackdrop" href="#" target="_blank" data-id="10" download><button>¡Descarga el resumen!</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="book-container text-center">
+                        <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/04/mitolider_audiolibros-IEXE.png" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-12" data-target="#staticBackdrop" href="#" target="_blank" data-id="12" download><button>¡Descarga el resumen!</button></a>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-12 col-md-4 col-lg-4 mb-3 mx-auto d-none">
+                    <div class="book-container text-center">
+                        <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/04/mideimporta_audiolibros-IEXE-copy.png" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-13" data-target="#staticBackdrop" href="#" target="_blank" data-id="13" download><button>¡Descarga el resumen!</button></a>
+                    </div>
+                </div>
+        </div>  
     </div>
 </section>
 <section id="banner-inferior">
@@ -290,11 +331,17 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
         let boton2 = document.getElementsByClassName("boton-descarga-2");
         let boton3 = document.getElementsByClassName("boton-descarga-3");
 
-        // 1.- Ruy descomenta la siguiente línea
+        
         let boton4 = document.getElementsByClassName("boton-descarga-4");
         let boton5 = document.getElementsByClassName("boton-descarga-5");
         let boton6 = document.getElementsByClassName("boton-descarga-6");
         let boton7 = document.getElementsByClassName("boton-descarga-7");
+        let boton8 = document.getElementsByClassName("boton-descarga-8");
+        let boton9 = document.getElementsByClassName("boton-descarga-9");
+        let boton10 = document.getElementsByClassName("boton-descarga-10");
+        let boton11 = document.getElementsByClassName("boton-descarga-11");
+        let boton12 = document.getElementsByClassName("boton-descarga-12");
+        let boton13 = document.getElementsByClassName("boton-descarga-13");
 
         
 
@@ -302,11 +349,16 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
         boton2[0].dataset.toggle = 'null';
         boton3[0].dataset.toggle = 'null';
         
-        // 2.- Ruy descomenta la siguiente línea
         boton4[0].dataset.toggle = 'null';
         boton5[0].dataset.toggle = 'null';
         boton6[0].dataset.toggle = 'null';
         boton7[0].dataset.toggle = 'null';
+        boton8[0].dataset.toggle = 'null';
+        boton9[0].dataset.toggle = 'null';
+        boton10[0].dataset.toggle = 'null';
+        boton11[0].dataset.toggle = 'null';
+        boton12[0].dataset.toggle = 'null';
+        boton13[0].dataset.toggle = 'null';
 
         // boton1[0].href = 'https://www.iexe.edu.mx/wp-content/uploads/2023/01/Resumen_DPP_iexe.pdf';
         // boton2[0].href = 'https://www.iexe.edu.mx/wp-content/uploads/2022/11/Resumen_Esencialismo.pdf';
@@ -321,6 +373,12 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
         boton5[0].href = responseLinks[4];
         boton6[0].href = responseLinks[5];
         boton7[0].href = responseLinks[6];
+        boton8[0].href = responseLinks[7];
+        boton9[0].href = responseLinks[8];
+        boton10[0].href = responseLinks[9];
+        boton11[0].href = responseLinks[10];
+        boton12[0].href = responseLinks[11];
+        boton13[0].href = responseLinks[12];
         
     }
     function switchLinks(respuesta){

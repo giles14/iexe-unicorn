@@ -1,0 +1,665 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: url('../img/orientacion-vocacional/bg.webp') #E6F5FF;
+    background-repeat: no-repeat;
+}
+h1{
+    color: #0018FF;
+}
+/* Style the form */
+#regForm {
+    /* margin: 20px auto 100px auto; */
+    padding: 40px;
+    width: 100%;
+    min-width: 300px;
+    background: #FFF;
+    /* box-shadow: 0px 12px 18px #001c3a1f;
+    border-radius: 18px; */
+}
+.pregs{
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0px;
+}
+
+/* Style the input fields */
+input {
+padding: 10px;
+width: 100%;
+font-size: 17px;
+font-family: Raleway;
+border: 1px solid #aaaaaa;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'NUNITO';
+    color: blue;
+    border: 1px solid;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbbbbb;
+border: none;
+border-radius: 50%;
+display: inline-block;
+opacity: 0.5;
+visibility: hidden;
+}
+button {
+    background: gray;
+    border: none;
+    padding: 10px 16px;
+    color: #FFF;
+    font-weight: bold;
+}
+.opcion {
+    border: 1px solid;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+input:checked {
+    border: none;
+    /* outline: 2px solid deeppink; */
+}
+/* Mark the active step: */
+.step.active {
+opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #0018FF;
+}
+input::placeholder {
+    color: blue;
+    font-family: 'Nunito', sans-serif;
+}
+input[type=radio] {
+    width: 20px;
+}
+h1.cambia{
+    color: #001E42;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 84px;
+    font-family: 'aktiv-grotesk-extended', sans-serif;
+}
+h2 {
+    font-family: 'aktiv-grotesk-extended', sans-serif;
+}
+a.btn.purpl {
+    background: linear-gradient(90deg, rgba(37,51,244,1) 0%, rgba(136,118,242,1) 100%);
+    color: #FFF;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 8px 75px;
+    font-size: 22px;
+    position: relative;
+    z-index: 9;
+}
+.testimonial {
+    box-shadow: 0px 12px 18px #001c3a1f;
+    padding: 14px;
+    border-radius: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    /* max-width: 296px; */
+}
+.testimonial img {
+    max-width: 120px;
+}
+p.testimonio {
+    font-weight: 300;
+    font-size: 15px;
+    color: #001E42;
+    height: 260px;
+}
+p.nombre-alumno {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: #001E42;
+}
+p.programa {
+    color: #0018FF;
+    font-size: 15px;
+}
+.testimonial.blanco{
+    background: #FFF;
+}
+.testimonial.azul{
+    background: #001E42;
+}
+.azul p.nombre-alumno {
+    color: #FFF;
+}
+.azul p.programa {
+    color: #00FFE8;
+}
+.azul p.testimonio{
+    color: #FFF;
+}
+h1.titulo.bandera {
+    color: #001e42;
+    font-size: 36px;
+    font-weight: 700;
+}
+section#alumnos-opinan {
+    padding-bottom: 144px;
+    background: linear-gradient(180deg, rgba(230,245,255,1) 0%, rgba(242,250,255,1) 100%);
+}
+#presencia-internacional {
+    background: linear-gradient(180deg, rgba(242,250,255,1) 0%, rgba(255,255,255,1) 85%);;
+    padding-bottom: 50px;
+}
+#pie {
+    background: linear-gradient(90deg, rgba(0,34,237,1) 0%, rgba(0,30,66,1) 100%);
+}
+.overlay-img {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.overlay-img::after {
+    content: "";
+    background: url('https://assets-global.website-files.com/60d28377885e0106c1158a35/60faf96692616d7217c80fe9_noise-transparent-intense.png');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+.menu {
+    background: var(--primario-azul);
+    width: 100px;
+    text-align: center;
+    height: 36px;
+    border-radius: 3px;
+    color: #FFF;
+    font-family: 'Nunito Sans';
+    font-size: 15px;
+    font-weight: 200;
+    padding: 8px;
+}
+#pie a.menu {
+    color: #00FFE9;
+    background: unset;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+    line-height: 24px;
+    padding-bottom: 15px;
+    display: block;
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
+#pie ul {
+    padding-inline-start: 0;
+}
+#pie li {
+    font-size: 12px;
+    list-style: none;
+}
+section#sub-pie {
+    background: #0018ff;
+    margin-top: 0;
+}
+#sub-pie {
+    padding-bottom: 32px;
+    color: #f6f6f6;
+}
+.informacion-importante {
+    margin-top: 24px;
+}
+.logo-abajo {
+    margin-top: 36px;
+}
+#pie li a {
+    font-size: 15px;
+    color: #EDEDED;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+a.telefono-whatsapp {
+    color: #71f6a5;
+    font-family: 'Nunito Sans';
+    font-size: 28px;
+    font-weight: 800;
+    text-align: right;
+}
+p.telefono-puebla {
+    color: #00FFE8;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: right;
+    margin-bottom: 0;
+}
+#pie .iconos-redes-sociales {
+    justify-content: space-evenly;
+    display: flex;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+p.direccion {
+    font-family: 'Nunito Sans';
+    font-size: 17px;
+    color: #e3f8f7;
+    text-align: right;
+    font-weight: 300;
+}
+#pie .buffer {
+    margin-top: 36px;
+}
+#sub-pie {
+    padding-bottom: 32px;
+    color: #f6f6f6;
+}
+section#sub-pie {
+    background: #001e42;
+    margin-top: 0;
+}
+.informacion-importante p {
+    text-align: center;
+    margin-right: 5px;
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    font-weight: 300;
+}
+.informacion-importante a {
+    color: #f6f6f6;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    letter-spacing: 0.16px;
+    font-size: 16px;
+}
+.bloque a:hover {
+    text-decoration: none;
+    color: #00ffe8;
+}
+a.telefono-mexico {
+    color: #00FFE8;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: right;
+    font-family: 'Nunito Sans';
+}
+.encuesta-frame{
+    position: relative;
+    z-index: 1;
+    margin: 10px 0 100px 0;
+    box-shadow: 0px 12px 18px #001c3a1f;
+    border-radius: 18px;
+    background: #FFF;
+    /* height: 460px; */
+    overflow: hidden;
+    display: none;
+}
+.img-rectangulo {
+    position: absolute;
+    top: -34%;
+    z-index: 0;
+    left: 10%;
+}
+.escudo {
+    position: relative;
+    z-index: 2;
+}
+a#haz-test {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contenido-forma {
+    height: 100%;
+    background: #fff;
+    width: 100%;
+}
+.imagen{
+    width: 50%;
+}
+.texto-apoyo {
+    width: 50%;
+    display: block;
+    float: left;
+}
+.texto-apoyo {
+    width: 50%;
+    display: block;
+    float: left;
+    display: flex;
+    max-height: 457px;
+    height: 100%;
+    justify-content: space-around;
+}
+.imagen {
+    width: 50%;
+    display: block;
+    float: left;
+}
+.contenedor {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 90%;
+}
+.contenedor a.btn.purpl{
+    display: block;
+    margin: 0 auto;
+} 
+.btn.purpl {
+    background: linear-gradient(90deg, rgba(37,51,244,1) 0%, rgba(136,118,242,1) 100%);
+    color: #FFF;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 8px 75px;
+    font-size: 22px;
+}
+form#contacto {
+    width: 100%;
+}
+#contacto input {
+    border-bottom: 1px solid blue;
+    border: none;
+    border-bottom: 1px solid blue;
+    border-radius: 0px;
+}
+#contacto input::placeholder {
+    color: #0018ff;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+}
+#contacto label {
+    font-size: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+.mostrar {
+    display: block;
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
+    -webkit-text-fill-color: #FFF;
+} 
+p.preg {
+    font-size: 36px;
+    color: #001e42;
+    font-weight: 300;
+    text-align: center;
+}
+p.pregs {
+    font-size: 36px;
+    color: #001e42;
+    font-weight: 300;
+    text-align: center;
+}
+.respuesta {
+    text-align: center;
+    margin: 0 14%;
+    background: blue;
+    height: 45px;
+}
+
+/* Estilos botones */
+.respuesta label {
+    font-size: 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    padding: 0 calc(35.5%);
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.respuesta {
+    text-align: center;
+    margin: 0 12%;
+    background:#0018FF;
+    height: 65px;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 5px 9px 5px #60606038;
+}
+.sombra:hover {
+    box-shadow: 5px 9px 5px #60606038;
+}
+.respuesta:hover {
+    background: #001E42;
+}
+p.preg {
+    font-size: 36px;
+    color: #001e42;
+    font-weight: 300;
+    text-align: center;
+    min-height: 108px;
+}
+p.resultado {
+    font-weight: 700;
+    font-size: 18px;
+    color: #0018FF;
+}
+h2.resultado-carrera {
+    font-weight: 200;
+    color: #001e42;
+    font-size: 36px;
+    width: 100%;
+}
+.respuesta input:checked {
+    /* border: 2px solid; */
+    /* outline: 250px solid #8473F2;
+    transform: translateX(70%); */
+}
+.respuesta input:hover {
+    outline: 250px solid #001E42;
+    transform: translateX(70%);
+}
+.respuesta input[type=radio] {
+    width: 0px;
+}
+.tab .row {
+    margin-bottom: 5%;
+}
+.resultado p.resultado {
+    margin-bottom: 0px;
+}
+button#nextBtn {
+    border-radius: 25px;
+    padding: 8px 48px;
+    background: linear-gradient(90deg, rgba(39,52,244,1) 0%, rgba(132,115,242,1) 85%);
+}
+.resultado .texto-apoyo {
+    width: 56%;
+    display: block;
+    float: left;
+    display: flex;
+    max-height: 457px;
+    height: 100%;
+    justify-content: space-around;
+}
+.resultado .imagen {
+    width: 44%;
+    display: block;
+    float: left;
+}
+p.ve-mas-alla {
+    font-weight: 700;
+    font-size: 20px;
+    color: #001e42;
+    font-style: italic;
+}
+.resultado .contenedor a.btn.purpl{
+    margin: unset;
+}
+p.bachillerato {
+    font-weight: bold;
+}
+.encuesta-frame .tab .row{
+    display: flex;
+    align-content: center;
+    height: 130px;
+}
+h2.felicidades {
+    font-size: 24px;
+    color: #001e42;
+}
+#my-last.tab .row {
+    height: 180px;
+}
+#my-last.tab .row {
+    height: 254px;
+}
+p.pregs-inicial.mb-4 {
+    color: #0018FF;
+    text-align: center;
+}
+.es-resultado a.btn.purpl {
+    background: none;
+    color: #001E42;
+    border-radius: 0px;
+    font-weight: 600;
+    padding: unset;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.es-resultado{
+    height: auto;
+}
+.es-resultado a.btn.purpl {
+    background: none;
+    color: rgba(0, 24, 255, 0.9);
+    border-radius: 25px;
+    font-weight: 600;
+    padding: unset;
+    font-size: 18px;
+    text-decoration: underline;
+}
+h2.resultado-carrera {
+    font-weight: 200;
+    color: #001e42;
+    font-size: 24px;
+    width: 100%;
+    min-height: 115px;
+}
+.boton-siguiente{
+    float: right;
+}
+#seleccion-de-interes{
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 24px;
+}
+section{
+    margin-top: unset;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+-webkit-text-fill-color: #000;
+-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+transition: box-shadow 3s ease-in-out 0s;
+font-family: 'Nunito Sans';
+}
+@media only screen and (max-width: 1199px){
+    .testimonial{
+        min-height: 550px;
+    }
+}
+@media only screen and (max-width: 990px) {
+    h1.cambia{
+        margin-top: 12px;
+    }
+    .texto-apoyo{
+        width: 100%;
+    }
+    section#alumnos-opinan {
+        padding-bottom: 72px;
+    }
+    .encuesta-frame {
+        min-height: 480px;
+    }
+    .btn.purpl {
+        padding: 8px 55px;
+    }
+    p.pregs {
+        font-size: 24px;
+        color: #001e42;
+        font-weight: 300;
+        text-align: center;
+        line-height: 34px;
+        padding-bottom: 16px;
+    }
+    .resultado .texto-apoyo {
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 700px) {
+    .encuesta-frame.mostrar{
+        height: auto;
+    }
+    p.preg {
+        font-size: 24px;
+        color: #001e42;
+        font-weight: 400;
+        text-align: center;
+        min-height: 89px;
+        line-height: 25px;
+        height: 120px;
+    }
+    .respuesta {
+        text-align: center;
+        margin: unset;
+        background: #0018FF;
+        height: 45px;
+        overflow: hidden;
+        margin-right: 5px;
+    }
+    #regForm {
+        padding: 20px;
+        width: 100%;
+        min-width: 300px;
+        background: #FFF;
+    }
+    .boton-siguiente{
+        float: unset;
+        text-align: center;
+    }
+    .respuesta label {
+        font-size: 30px;
+    }
+    h2.resultado-carrera {
+        min-height: unset;
+    }
+}

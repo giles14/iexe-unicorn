@@ -188,12 +188,7 @@
     color: #273481;
     margin: 0 5px;
 }
-.container-widget.azul {
-    background: #3051FF;
-    padding: 25px;
-    border-radius: 15px;
-    color: #fff;
-}
+
 .container-widget p {
     font-size: 14px;
     font-weight: 300;

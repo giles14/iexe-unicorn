@@ -14,13 +14,114 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'destacada-archivo', 600, 420 , true );
 add_image_size( 'ultimas-archivo', 400, 280 , true );
-add_image_size('destacada-post-header', 900 , 508, true );
+add_image_size('destacada-post-header', 900 , 600, true ); //ancho anterior: 508
 add_image_size('destacada-interesar', 374 , 210, true );
 add_image_size('destacada-nuevo-bloque', 331 , 187, true );
 add_image_size('destacada-nuevo-sidebar', 500 , 252, true );
 // global $post; 
 // 	    $unicorn_id = $post->id;
 //add_theme_support( 'woocommerce' );
+
+/*
+    This function will set the row number of postmeta at the beginning of the month in order to have 
+ */
+function cagb_set_meta_row_month(){
+    $meta_key = "_row_num";
+    // 3505 is the id of banners pagina that is used in the post meta since it's needed in all pages.
+    $post_id = 3505;
+    $linea = cagb_get_last_meta_row();
+    // echo $linea . "linea";
+
+    if(metadata_exists( 'post', $post_id, $meta_key )){
+        //echo "prexiste";
+
+        $meta_values = get_post_meta( $post_id, '_row_num', false );
+        //print_r($meta_values);
+        $i = 0;
+        foreach($meta_values as $meta => $values){
+            $value = unserialize($values);
+            if($i == 0){
+                $mes_maximo = explode('-', $value['date']);
+                $mes_maximo = $mes_maximo[1];
+            }
+            $mes_actual = explode('-', $value['date']);
+            if($mes_maximo < $mes_actual[1]){
+                $mes_maximo = intval($mes_actual[1]);
+            }
+            $i++;
+        }
+ 
+        $current_month = intval(date('m'));
+        
+        //echo "el mes actual " . $current_month;
+        //echo "el mes meta " . $mes_maximo;
+
+        if($mes_maximo < $current_month){
+            $date = date('d-m-Y');
+            $row_number = $linea;
+            //$row_number = 99;
+            $meta_value = serialize(array("date" => $date, "row_number" => $row_number));
+            add_post_meta( $post_id, $meta_key, $meta_value, false );
+        }
+        
+    }
+    else{
+        $date = date('d-m-Y');
+        $row_number = cagb_get_last_meta_row_num();
+        $meta_value = serialize(array("date" => $date, "row_number" => $row_number));
+        add_post_meta( $post_id, $meta_key, $meta_value, false );
+    }
+
+}
+function cagb_get_current_month_row(){
+    $post_id = 3505;
+    $meta_key = "_row_num"; 
+    if(metadata_exists( 'post', $post_id, $meta_key )){
+        //echo "prexiste";
+
+        $meta_values = get_post_meta( $post_id, '_row_num', false );
+        //print_r($meta_values);
+        $i = 0;
+        foreach($meta_values as $meta => $values){
+            $value = unserialize($values);
+            if($i == 0){
+                $mes_maximo = explode('-', $value['date']);
+                $mes_maximo = $mes_maximo[1];
+            }
+            $mes_actual = explode('-', $value['date']);
+            if($mes_maximo < $mes_actual[1]){
+                $mes_maximo = intval($mes_actual[1]);
+                $meta_id_maximo = $value['row_number'];
+            }
+            $i++;
+        }
+ 
+        $current_month = intval(date('m'));
+        
+        // echo "el mes actual " . $current_month;
+        // echo "el mes meta " . $mes_maximo;
+
+        // if($mes_maximo < $current_month){
+        //     $date = date('d-m-Y');
+        //     $row_number = $linea;
+        //     //$row_number = 99;
+        //     $meta_value = serialize(array("date" => $date, "row_number" => $row_number));
+        //     add_post_meta( $post_id, $meta_key, $meta_value, false );
+        // }
+        return $meta_id_maximo;
+    }
+    return 0;
+
+}
+
+function cagb_get_last_meta_row(){
+    global $wpdb;
+    //$meta_table = $wpdb->prefix . "postmeta";
+    $query = "SELECT MAX(meta_id) FROM wp_postmeta";
+    $last_meta_id = $wpdb->get_row($query);
+    $value = intval($last_meta_id->{'MAX(meta_id)'});
+    return $value;
+}
 
 add_action( 'wp_ajax_cagb_vote_post', 'cagb_vote_post');
 add_action( 'wp_ajax_nopriv_cagb_vote_post', 'cagb_vote_post');
@@ -36,7 +137,7 @@ function cagb_vote_post($post_id = 0, $ip = 0){
     if ( ! wp_verify_nonce( $nonce, 'cagb-vote-ajax-nonce' ) ) {
         die ( 'No se pudo comprobar que sea una petición legítima!');
     }
-
+    
     $ip = sanitize_text_field($_SERVER['REMOTE_ADDR']);
     $remote_address = "none";
 
@@ -281,9 +382,9 @@ function myplugin_ajaxurl() {
 
 $porcentajeBeca = round(rand(50 , 70), -1);
 function agregar_estilos_tema(){
-    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.34.2', 'all'  );
+    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.34.3', 'all');
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.09', 'all' );
-    wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.05', 'all' );
+    wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.07', 'all' );
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-admisiones-estilo', get_template_directory_uri() . '/assets/css/admisiones.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-programas-academicos', get_template_directory_uri() . '/assets/css/programas-academicos.css', 'iexe-unicorn-main', '1.0', 'all' );
@@ -294,8 +395,10 @@ function agregar_estilos_tema(){
     wp_register_style( 'iexe-unicorn-landing-ssp-2', get_template_directory_uri() . '/assets/css/landing-ssp-2.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-landing-match', get_template_directory_uri() . '/assets/css/landing-match.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-lity-css', get_template_directory_uri() . '/assets/css/lity.min.css', 'iexe-unicorn-main', '1.0', 'all' );
-    wp_register_style( 'iexe-tooltip-css', 'https://unpkg.com/microtip/microtip.css', '', '1.0', 'all' );
+    //wp_register_style( 'iexe-tooltip-css', 'https://unpkg.com/microtip/microtip.css', '', '1.0', 'all' );
+    wp_register_style( 'iexe-tooltip-css', 'https://cdn.jsdelivr.net/npm/microtip@0.2.2/microtip.min.css', '', '0.2.2', 'all' );
     wp_register_style( 'iexe-test-orientacion-vocacional', get_template_directory_uri() . '/assets/css/style-tov.css', array(), '1.0', 'all' );
+    wp_register_style( 'iexe-table-grid', 'https://cdn.jsdelivr.net/npm/gridjs@6.0.6/dist/theme/mermaid.min.css', array(), '1.0', 'all' );
     wp_register_script( 'iexe-unicorn-programas', get_template_directory_uri() . '/assets/js/academico.js', 'jquery', '1.02', true );
     wp_register_script( 'iexe-unicorn-multipasos', get_template_directory_uri() . '/assets/js/form-multipasos.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
@@ -316,10 +419,11 @@ function agregar_estilos_tema(){
     wp_register_script( 'iexe-nuevos-formularios', get_template_directory_uri() . '/assets/js/formularios.js', 'sweet-alert', '1.0', true );
     wp_register_script( 'iexe-formulariosZ', get_template_directory_uri() . '/assets/js/formulariosZ.js', 'sweet-alert', '1.4.1', true );
     wp_register_script( 'iexe-loadmore', get_template_directory_uri() . '/assets/js/btnloadmore.min.js', 'jquery', '1.0.0', true );
-    wp_register_style( 'iexe-new-blog', get_template_directory_uri() . '/assets/css/style-blog.css' , '1.0', 'all' );
+    wp_register_style( 'iexe-new-blog', get_template_directory_uri() . '/assets/css/style-blog.css' , '1.0.1', 'all' );
     wp_register_script( 'iexe-blog-ajax', get_template_directory_uri() . '/assets/js/blog-ajax.js', 'jquery', '1.0.0', true );
     wp_register_script( 'charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js', array(), '2.9.3', true );
     wp_register_script( 'iexe-test-orientacion-vocacional', get_template_directory_uri() . '/assets/js/script-tov.js', array('charts'), '1.0.0', true );
+    wp_register_script( 'iexe-table-grid', 'https://cdn.jsdelivr.net/npm/gridjs@6.0.6/dist/gridjs.production.min.js', array(), '6.0.6', true );
     
 
     wp_register_script( 'iexe-unicorn-admisiones', get_template_directory_uri() . '/assets/js/admisiones.js', 'jquery', '1.0', true );
@@ -351,6 +455,10 @@ function agregar_estilos_tema(){
         wp_enqueue_script( 'iexe-unicorn-programas-rotator');
         wp_enqueue_style('iexe-unicorn-lity-css');
         wp_enqueue_script( 'iexe-unicorn-lity');
+    }
+    if(is_page_template('page-landing-3.php')){
+        wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', false, '5.1', 'all' );
+        wp_enqueue_script( 'bootstrap_js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', 'jquery', '5.1', 'all' );
     }
     if(is_page_template('academicos-v2.php')){
         wp_enqueue_style('iexe-unicorn-programas-academicos');
@@ -432,17 +540,42 @@ function agregar_estilos_tema(){
         wp_enqueue_style( 'iexe-unicorn-landing-match');
         wp_enqueue_script('iexe-unicorn-landing'); 
     }
+    if(is_page_template('page-audio.php')){
+        wp_dequeue_style( 'iexe-unicorn-blog' );
+    }
     if(is_category() || is_tag() || is_search() || is_author()){
         wp_enqueue_style('iexe-new-blog');
     }
-    if(is_single() && is_user_logged_in( )){
+    if(is_single()){
         wp_enqueue_style('iexe-new-blog');
     }
+    
     wp_enqueue_style('intlTelinput-style');
     wp_enqueue_script('intlTelinput');
 
 }
 add_action( 'wp_enqueue_scripts', 'agregar_estilos_tema' );
+
+function cagb_enqueue_admin_js($hook_suffix){
+    wp_enqueue_script('iexe-table-gridjs-js');
+    wp_enqueue_style('iexe-table-gridjs-css');
+}
+add_action( 'admin_enqueue_scripts', 'cagb_enqueue_admin_js' );
+
+function my_admin_script() {
+    // Registrar el script
+    wp_register_script( 'my-admin-script', 'https://cdnjs.cloudflare.com/ajax/libs/gridjs/6.0.6/gridjs.umd.js' );
+    wp_enqueue_script( 'iexe-table-gridjs', 'https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js');
+    wp_enqueue_style( 'iexe-table-grid', 'https://cdnjs.cloudflare.com/ajax/libs/gridjs/6.0.6/theme/mermaid.css');
+
+    // Encolar el script solo en la página "mi-pagina"
+    $screen = get_current_screen();
+    if ( $screen->id == 'blog-metrics' ) {
+        wp_enqueue_script( 'iexe-table-gridjs', 'https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js');
+        wp_enqueue_style( 'iexe-table-grid', 'https://cdnjs.cloudflare.com/ajax/libs/gridjs/6.0.6/theme/mermaid.css');
+    }
+}
+add_action( 'admin_enqueue_scripts', 'my_admin_script' );
 
 function theme_ajax_enqueue_scripts() {
     global $post;

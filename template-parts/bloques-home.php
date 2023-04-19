@@ -3,7 +3,7 @@
     case "a":
         ?>
     <section class="mt-0 pb-5 <?php echo ($args['classes']) ? $args['classes'] : " "?>">
-        <div class="container pt-5">
+        <div class="container pt-2 pt-lg-5">
             <div class="row mb-5 mt-4">
                 <div class="col-9">
                     <h1 class="nombre-categoria text-uppercase"><a href="<?php echo get_category_link($args['categoria'] ) ?>"><?php echo get_cat_name( $args['categoria'] ); ?></a></h1>
@@ -27,8 +27,9 @@
                         <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>    
                             <div class="col-md-3 un-post-min">
                                 <div class="entrada-min">
-                                    <?php the_post_thumbnail( 'ultimas-archivo', array( 'class' => 'img-fluid d-block mx-auto' ) ); ?>
-                                    
+                                    <a href="<?php the_permalink() ?>">
+                                        <?php the_post_thumbnail( 'ultimas-archivo', array( 'class' => 'img-fluid d-block mx-auto' ) ); ?>
+                                    </a>
                                     <div class="info-post-min">
                                         <p class="tiempo"><?php echo get_post_meta($post->ID, 'time_to_read', true) . " min de lectura" ?></p>
                                         <h2 class="titulo-noticia"><a href="<?php the_permalink() ?>"><?php the_title();  ?></a></h2>
@@ -47,7 +48,7 @@
     case "b":
         ?>
         <section class="tipo-b pb-5 <?php echo ($args['classes']) ? $args['classes'] : " "?>">
-            <div class="container pt-5">
+            <div class="container pt-2 pt-lg-5">
                     <?php
                         $argus = [
                             'post_type' => 'post',
@@ -74,7 +75,7 @@
                                         <div class="col-8 pl-3 pr-3">
                                         <?php // the_category(); ?>
                                         <h2 class="titulo-noticia mb-2"><a href="<?php the_permalink() ?>"><?php the_title();  ?></a></h2>
-                                        <p class="meta-info"><img class="img-fluid pl-0" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-calendar.png" alt="icono de calendario"><span class="fecha pl-2"><?php the_date('d\/m\/Y') ?></span><img class="img-fluid pl-2" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-clock.png" alt="icono de reloj"><span class="reloj pl-1"><?php echo get_post_meta($post->ID, 'time_to_read', true) . ' min de lectura' ?></span><img class="img-fluid pl-2" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-like.png" alt="icono de calendario"><span class="likes-noticia pl-1"><?php echo cagb_count_likes_post($post->ID); ?></span><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-commen.png" class="img-fluid pl-2" alt="icono de calendario"> <span class="comentarios pl-1"><?php echo get_comments_number() ?></span></p>
+                                        <p class="meta-info"><img class="img-fluid pl-0 ico-cale" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-calendar.png" alt="icono de calendario"><span class="fecha pl-2"><?php the_date('d\/m\/Y') ?></span><img class="img-fluid pl-2" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-clock.png" alt="icono de reloj"><span class="reloj pl-1"><?php echo get_post_meta($post->ID, 'time_to_read', true) . ' min de lectura' ?></span><img class="img-fluid pl-2" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-like.png" alt="icono de calendario"><span class="likes-noticia pl-1"><?php echo cagb_count_likes_post($post->ID); ?></span><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-commen.png" class="img-fluid pl-2" alt="icono de calendario"> <span class="comentarios pl-1"><?php echo get_comments_number() ?></span></p>
                                         </div>
                                     </div>
                                 </div>

@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="row">
-                <a href="/comunidad" class="descubre-mas azul-primario-color">Descubre más</a>
+                <a href="https://www.instagram.com/iexe_university/" class="descubre-mas azul-primario-color">Descubre más</a>
             </div>
         </div>
     </section>

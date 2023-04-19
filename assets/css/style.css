@@ -101,7 +101,8 @@ section#comunidad .button-primary{
     max-width: unset;
 }
 section#slider {
-    height: 102vh;
+    /* height: 102vh; */
+
 }
 .boton-accion {
     position: relative;
@@ -267,7 +268,7 @@ h2.description{
     height: 466px;
 }
 .oferta-bloque.doc{
-    background: url(../img/doctorados3.webp);
+    background: url(../img/Ofertas_HOME_doctorado.webp);
     background-size: cover;
     height: 466px;
 }
@@ -282,7 +283,7 @@ h2.description{
     height: 466px;
 }
 .oferta-bloque.cap{
-    background: url(../img/capacitaciones.webp);
+    background: url(../img/Ofertas_HOME_capacitaciones.webp);
     background-size: cover;
     height: 466px;
 }
@@ -2411,13 +2412,13 @@ section#maestrias .contenedor-programa ul li a:hover {
     background: url(../img/oferta-maestrias.webp);
 }
 #doctorado .row.contenedor-programa {
-    background: url(../img/oferta-doctorados.webp);
+    background: url(../img/fondo-oferta-doctorados.webp);
 }
 #diplomados .row.contenedor-programa {
     background: url(../img/oferta-diplomados.webp);
 }
 #capacitaciones .row.contenedor-programa {
-    background: url(../img/oferta-capacitaciones.webp);
+    background: url(../img/fondo-oferta-capacitaciones.webp);
 }
 #programas #interes #contacto .form-control {
     background: transparent;
@@ -2432,7 +2433,7 @@ body#editorial {
     transition: all 0.5s;
 }
 .editorial-1 {
-    background-image: url(../img/bg-capitalismo-natural.webp)!important;
+    background-image: url(https://www.iexe.edu.mx/wp-content/uploads/2023/04/Banner-Conexiones-PNG-copy.webp)!important;
     /* background-color: #EDEDED; */
     background-size: contain!important;
     background-repeat: no-repeat;
@@ -2507,10 +2508,10 @@ h2#post-972 {
     background: url(../img/boton-campana-over.webp);
 }
 #seleccion-categoria .crisis-viral{
-    background: url(../img/boton-capitalismo-natural.webp);
+    background: url(https://www.iexe.edu.mx/wp-content/uploads/2023/04/Boton-inactivo-Conexiones-copy.webp);
 }
 #seleccion-categoria .crisis-viral:hover{
-    background: url(../img/boton-capitalismo-natural_over.webp);
+    background: url(https://www.iexe.edu.mx/wp-content/uploads/2023/04/Boton-activo-Conexiones-1-copy.webp);
 }
 #seleccion-categoria .politicas-publicas{
     background: url(../img/boton-politicas-publicas.webp);

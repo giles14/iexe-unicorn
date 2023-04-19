@@ -8,7 +8,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
             <div class="row">
                 <div id="slidePrincipal" class="carousel slide w-100 carousel-fade" data-ride="carousel">
                     <div class="wrapper">
-                        <ol class="carousel-indicators d-none d-md-block">
+                        <ol class="carousel-indicators d-none">
                             <li data-target="#slidePrincipal" data-slide-to="0" class="active"></li>
                             <li data-target="#slidePrincipal" data-slide-to="1"></li>
                             <li data-target="#slidePrincipal" data-slide-to="2"></li>

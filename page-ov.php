@@ -39,7 +39,7 @@
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/orientacion-vocacional/azul-logo_iexe_hor_200px.png" alt="" class="logo mt-5">
                     <h1 class="cambia">¡Cambia tu futuro hoy!</h1>
                     <p class="texto-test">
-                        Este test de orientación vocacional te ayudara a encontrar las áreas que más se adecuan a tus habilidades. De acuerdo con tus gustos y fortalezas, encontraremos tu carrera ideal. Te ayudamos a tomar una de las decisiones mas importantes de tu vida.
+                    Comprendemos lo difícil que puede ser elegir la carrera adecuada para ti. Es por eso que nuestro test de orientación vocacional te ayudará a encontrar la carrera que mejor se adapte a tus habilidades y gustos personales. Estamos aquí para ayudarte a tomar una decisión informada y confiada que te brinde satisfacción y seguridad en tu futuro laboral. ¡Confía en nosotros para guiarte en una de las decisiones más importantes de tu vida!
                     </p>
                     <a href="#test" id="haz-test" class="btn purpl mt-5 d-none d-lg-block sombra">Haz tu test</a>
                 </div>
@@ -62,8 +62,8 @@
                                 <h2 class="te-ayudamos mt-5 text-center">
                                     Te ayudamos a elegir la mejor carrera para  ti
                                 </h2>
-                                <p class="texto">
-                                    Este test de orientación vocacional te ayudara a encontrar las áreas que más se adecuan a tus habilidades. De acuerdo con tus gustos y fortalezas, encontraremos tu carrera ideal. Te ayudamos a tomar una de las decisiones mas importantes de tu vida.
+                                <p class="texto mt-4">
+                                    Esta prueba consta de una serie de preguntas que evaluará distintas áreas de interés. Tomará solo unos minutos, contesta cada pregunta presionando el botón de SI o NO, al final podrás ver tu resultado. Da click en el <strong>Empieza tu test</strong> para comenzar.
                                 </p>
                                 <a href="javascript:void(0)" onclick="tabsShow(1)" class="btn purpl mt-3 mt-lg-5 sombra">Empieza tu test</a>
                             </div>

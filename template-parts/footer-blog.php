@@ -117,7 +117,7 @@
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 text-white">
                 <!-- <img src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/expost-pie.png" alt="" class="logo-pie-expost"> -->
                 <h1 class="quienes-somos">¿Quiénes somos?</h1>
-                <p class="detalles-quienes">Somos una comunidad de escritores, consultores, docentes y redactores de opinión pública, respaldados por la <strong>Universidad IEXE</strong>. 
+                <p class="detalles-quienes">Somos una comunidad de escritores, consultores, docentes y redactores de opinión pública, respaldados por <strong>IEXE Universidad</strong>. 
                     En donde nuestro principal objetivo es “compartir conocimiento objetivo y estratégico que traspase fronteras”.</p>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3"><div class="bloque-img"><a href="https://iexe.edu.mx/" target="_blank"><img class="img-fluid" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/footer/somos_iexe.webp" alt=""></a><!--<div class="shadow"><h2 class="quien-tag">IEXE Universidad</h2></div>--></div></div>
@@ -260,28 +260,30 @@ function enableScroll() {
       }
     } );
     splide.mount();
+
+    var splideTop = new Splide( '.splideTop',{
+      type: 'slide',
+      perPage: 4,
+      perMove: 1,
+      pagination: false,
+      arrows: true,
+      rewind : false,
+      breakpoints: {
+      990: {
+        perPage: 3,
+        },
+      770: {
+      perPage: 2,
+      },
+      660: {
+      perPage: 1,
+      },
+      }
+    } );
+    splideTop.mount();
+
   } );
 </script>
-<script>
-            // var splide = new Splide('.splide', {
-            //     type: 'loop',
-            //     perPage: 3,
-            //     rewind: true,
-            //     breakpoints: {
-            //         640: {
-            //             perPage: 2,
-            //             gap: '.7rem',
-            //             height: '12rem',
-            //         },
-            //         480: {
-            //             perPage: 1,
-            //             gap: '.7rem',
-            //             height: '12rem',
-            //         },
-            //     },
-            // });
-            // splide.mount();
-        </script>
 <?php wp_footer(  )?>
 <div class="modal fade" id="busquedaModal" tabindex="-1" aria-labelledby="guardadoModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -319,10 +321,10 @@ function enableScroll() {
                 <div class="row mt-5">
                   <div class="col-md-12">
                     <ul class="lista-de-busqueda">
-                      <li>Políticas Públicas</li>
-                      <li>Tecnología</li>
-                      <li>Lo más leido</li>
-                      <li>Derecho</li>
+                      <li><a href="https://www.iexe.edu.mx/category/politicas-publicas/">Políticas Públicas</a></li>
+                      <li><a href="https://www.iexe.edu.mx/category/tecnologia/">Tecnología</a> </li>
+                      <li><a href="">Lo más leido</a></li>
+                      <li><a href="https://www.iexe.edu.mx/category/derecho/">Derecho</a></li>
                     </ul>
                   </div>
                 </div>

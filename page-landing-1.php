@@ -16,11 +16,11 @@ switch(get_field('tipo_de_programa')) {
         break;
 }
 if(get_field('tipo_de_programa') == "Licenciatura en línea") {
-    $cagb_estudio_mensaje = "¿Tienes tu bachiller o Preparatoria concluida?";
+    $cagb_estudio_mensaje = "¿Tienes tu bachiller o preparatoria concluida?";
 }elseif(get_field('tipo_de_programa') == "Maestría en línea"){
-    $cagb_estudio_mensaje = "¿Tienes tu Licenciatura o tercer nivel concluido?";
+    $cagb_estudio_mensaje = "¿Tienes tu licenciatura o tercer nivel concluido?";
 } elseif(get_field('tipo_de_programa') == "Doctorado en línea"){
-    $cagb_estudio_mensaje = "¿Tienes tu Maestría concluida?";
+    $cagb_estudio_mensaje = "¿Tienes tu maestría concluida?";
 }
 //echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month"));
 ?>
@@ -85,7 +85,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="bloque-puntos-clave">
                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icono_Fecha_IEXE.webp" alt="" class="icono">
                     <h3 class="keypoint">Fechas de inicio</h3>
-                    <span class="informacion-secundaria">03 de Abril 2023<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
+                    <span class="informacion-secundaria">02 de Mayo 2023<?php // echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month")); ?></span>
                 </div>
             </div>
             <div class="col-lg-2 col-sm-3">
@@ -137,7 +137,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 if(true){
             ?>
             <div class="row">
-                        <div class="col-sm-4 mt-3 mx-auto text-center">
+                        <div id="escolar" class="col-sm-4 mt-3 mx-auto text-center">
                             <p class="text-white"><?php echo $cagb_estudio_mensaje ?></p>
                             <input type="radio" id="concluida" name="escolaridad" value="Si" required>
                             <label for="concluida">Si</label>
@@ -148,7 +148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
             </div>
             <?php } ?>
-            <button type="submit"  class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
+            <button type="submit" id="boton-enviar" class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
         </form>
         <span class="disclaimer text-white mt-3">Al ingresar tus datos, aceptas nuestro <a href="https://iexe.edu.mx/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a>.</span>
     </div>
@@ -251,6 +251,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     margin: 0px;
 }
 </style>
+
+<script>
+    var radios = document.forms['form-interes-landing'].elements["escolaridad"];
+    for (var i = 0, max = radios.length; i < max; i++){
+    radios[i].onclick = function () {
+        let boton = document.getElementById('boton-enviar');
+        let seleccionada = document.querySelector('input[name="escolaridad"]:checked').value;
+        boton.classList.add = 'escolaridad-'seleccionada;
+    }
+}
+
+</script>
 
 <script>
     function fillDataLayer(){

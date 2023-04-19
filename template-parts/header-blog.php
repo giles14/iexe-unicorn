@@ -54,7 +54,7 @@
 
   <nav id="blog-nav" class="navbar navbar-expand-lg bg-expost sticky-blog pt-2 pb-2">
     <div class="<?php echo(is_single()) ? "container-fluid" : "container" ?>">
-        <a class="navbar-brand" href="https://www.iexe.edu.mx/blog-nuevo/"><img class="img-fluid header-logo-expost" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/expost-logo.png" alt="logo-expost" height="15"></a>
+        <a class="navbar-brand" href="https://www.iexe.edu.mx/blog/"><img class="img-fluid header-logo-expost" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/Logo_EXpost_IEXE.png" alt="logo-expost" height="15"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -100,6 +100,15 @@
       </div>
     </div>
 </nav>
+<?php 
+  if(is_user_logged_in( )){
+    ?>
+      body {
+          margin-top: 32px!important;
+      }
+    <?php
+  }
+?>
 <style>
     .bg-expost{
         background: #273481;
@@ -120,10 +129,8 @@ a.navbar-brand {
     margin-right: 30px;
 }
 .header-logo-expost{
-    height: 15px;
-}
-div#wpadminbar {
-    display: none;
+    height: 29px;
+    margin-top: -2px;
 }
 body#single{
   margin-top: 0px;

@@ -168,7 +168,6 @@
                     </ul>
                 <a class="menu-movil" href="/admisiones">Admisiones</a>
                 <a class="menu-movil" href="/becas">Becas</a>
-                <a class="menu-movil" href="/comunidad">IEXE Comunidad</a>
                 <a class="menu-movil" href="/blog">Blog y noticias</a>
             </div>
         </div>
