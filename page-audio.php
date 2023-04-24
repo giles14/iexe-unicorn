@@ -207,7 +207,7 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                 </div>
         </div>
         <div class="row">
-                <div class="col-12 col-md-4 col-lg-4 mb-3 mx-auto d-none">
+                <div class="col-12 col-md-4 col-lg-4 mb-3 mx-auto">
                     <div class="book-container text-center">
                         <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/04/mideimporta_audiolibros-IEXE-copy.png" alt="" class="img-fluid mb-3">
                             <a  data-toggle="modal" class="boton-descarga-13" data-target="#staticBackdrop" href="#" target="_blank" data-id="13" download><button>¡Descarga el resumen!</button></a>

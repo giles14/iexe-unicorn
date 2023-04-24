@@ -3,18 +3,10 @@
 $image_principal = get_field('imagen_de_programa');
 $file = get_field('informacion_descargable');
 setlocale(LC_ALL,"es_ES");
-$bg_image = "https://iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/landing_v3/bg_landingiexe_LAE2.webp";
-switch(get_field('tipo_de_programa')) {
-    case "licenciatura":
-        $bg_image = "https://iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/landing-ssp.webp";
-        break;
-    case "Maestría en línea":
-        $bg_image = "https://iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/landing-maestrias.webp";
-        break;
-    case "doctorado":
-        $bg_image = "";
-        break;
-}
+
+$bg_image = get_field('imagen_de_fondo');
+$bg_cont = get_field('imagen_de_fondo_contenedor');
+
 if(get_field('tipo_de_programa') == "Licenciatura en línea") {
     $cagb_estudio_mensaje = "¿Tienes tu bachiller o preparatoria concluida?";
 }elseif(get_field('tipo_de_programa') == "Maestría en línea"){
@@ -24,7 +16,7 @@ if(get_field('tipo_de_programa') == "Licenciatura en línea") {
 }
 //echo strftime("%A %d de %B del %Y",  strtotime("first monday of next month"));
 ?>
-<?php get_template_part( 'template-parts/header-landing'); ?>
+<?php get_template_part( 'template-parts/header-landing-v2'); ?>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GP32R"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -34,9 +26,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 <style>
     body {
-    background: url(<?php echo $bg_image ?>) 0% 0% / contain no-repeat rgb(211, 243, 253);
-    background-size: contain;
+    background: url(<?php echo esc_url($bg_image['url']); ?>) 0% 0% / contain no-repeat rgb(211, 243, 253);
+    background-size: auto;
     background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
     }
     @media only screen and (max-width: 900px){
         body {
@@ -47,31 +41,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="landing-principal">
     <div class="container">
         <div class="row no-gutters">
-            <div class="col-9">
+            <div class="col-12 col-lg-8 col-xl-9">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-8 bloque-sup">
-                            <h2 class="tipo">LICENCIATURA EN LÍNEA</h2>
-                            <h1 class="programa-academico mb-4">Ciencias Políticas y Administración Pública hasta tres renglones</h1>
-                            <p class="frase-iexe">Ve más alla de tus límites y<br> alcanza tus metas con IEXE</p>
+                    <div class="row mb-md-5">
+                        <div class="col-12 col-md-8 bloque-sup">
+                            <h2 class="tipo"><?php the_field('tipo_de_programa'); ?></h2>
+                            <h1 class="programa-academico mb-4"><?php the_title();  ?></h1>
+                            <p class="frase-iexe"><?php the_field('frase_heroica'); ?></p>
                             <p class="descripcion-programa">
-                                Adquirirás las herramientas y competencias para tu óptimo desempeño en las instituciones encargadas de la investigación y reacción en contra de la delincuencia y comportamientos criminales en términos de las leyes vigentes dentro de un entorno social determinado. Implementarás modelos de prevención del delito, combate a la delincuencia organizada, técnicas y sistemas de información, derechos humanos y ciencias penales, para generar procesos y estrategias alineadas al análisis de políticas públicas en materia de seguridad pública.
+                                <?php the_field('descripcion_de_programa'); ?>
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-3">
-                            <div class="bloques-principales">
+                        <div class="formulario d-block d-md-none mb-5">
+                            <div class="cabecera">
+                                <h1 class="interes">¡REGÍSTRATE!</h1>
+                            </div>
+                            <div class="cuerpo">
+                            <form id="form-interes-landing" class="form-interes-landing" onsubmit="event.preventDefault(); enviarFormulario(this); fillDataLayer()" data-origen="Landing">
+                                <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="nombre">Nombre completo*</label>
+                                            <input id="nombre" name="nombre" type="text" class="form-control nombre-landing" placeholder="Ingresa aquí tu nombre" required="">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="correo">Correo electrónico*</label>
+                                            <input id="correo" name="email" type="email" class="form-control" placeholder="Ingresa aquí tu correo" required="">
+                                            <input type="hidden" class="programa-landing" id="programa" name="programa" value="<?php the_field("clave_programa") ?>">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="telefono">Teléfono o celular*</label>
+                                            <input type="text" id="telefono" class="form-control telefono-landing" placeholder="Ingresa aquí tu número" required="">
+                                        </div>                
+                                </div>
+                                <div class="row">
+                                    <div id="escolar" class="col-sm-12 mx-auto text-center">
+                                        <p class="pregunta-bachiller m-0 mt-3">¿Tienes tu bachiller o preparatoria concluida?</p>
+                                        <input type="radio" id="concluida" name="escolaridad" value="Si" required="">
+                                        <label for="concluida">Si</label>
+                                        <input type="radio" id="en-tramite" name="escolaridad" value="En-tramite">
+                                        <label for="en-tramite">En trámite</label>
+                                        <input type="radio" id="no-concluida" name="escolaridad" value="No">
+                                        <label for="no-concluida">No</label>
+                                    </div>
+                                </div>
+                                            <button type="submit" id="boton-enviar" class="enviar-landing btn sin-form btn-primario esp ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
+                            </form>
+                                <span class="disclaimer">Al ingresar tus datos, aceptas nuestro <a href="https://iexe.edu.mx/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a>.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-md-5 mx-auto">
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="bloques-principales mx-auto mx-lg-0">
                                 <div class="bloque-ico">
                                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/landing_v3/reloj.svg" alt="" class="ico">
                                 </div>
                                 <p class="el-elemento">Duracion del programa</p>
                                 <span class="line-sep"></span>
-                                <span class="elemento-respuesta">3 años</span>
+                                <span class="elemento-respuesta"><?php the_field('duracion'); ?></span>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="bloques-principales">
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="bloques-principales mx-auto mx-lg-0">
                                 <div class="bloque-ico">
                                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/landing_v3/calendar.svg" alt="" class="ico">
                                 </div>
@@ -80,18 +113,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <span class="elemento-respuesta">1 Diciembre</span>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="bloques-principales">
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="bloques-principales mx-auto mx-lg-0">
                                 <div class="bloque-ico">
                                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/landing_v3/birrete.svg" alt="" class="ico">
                                 </div>
                                 <p class="el-elemento">Validez Oficial</p>
                                 <span class="line-sep"></span>
-                                <span class="elemento-respuesta">SEP-SES /21/ 114/01/2044 /2017</span>
+                                <span class="elemento-respuesta"><?php the_field('rvoe'); ?></span>
                             </div>
                         </div>
-                        <div class="col-3">
-                            <div class="bloques-principales">
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="bloques-principales mx-auto mx-lg-0">
                                 <div class="bloque-ico">
                                     <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/landing_v3/iexe_logo.svg" alt="" class="ico">
                                 </div>
@@ -106,7 +139,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="bloque-info-podras">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-7 pr-4">
+                                        <div class="col-xl-7 pr-4 pr-xl-0">
                                             <h1 class="podras">Podrás trabajar en:</h1>
                                             <p class="podras-texto">Podrás desempeñarte en alguna de las instituciones pertenecientes al Sistema Nacional de Seguridad Pública, en el orden federal, estatal y municipal, tales como: la Secretaría de Gobernación, la Guardia Nacional, la Fiscalía General de la República, las fiscalías generales de los estados, las subsecretarías de investigación policial, las direcciones municipales de seguridad y el sistema penitenciario. Asimismo, puedes desarrollarte en consultoría especializada en instancias privadas de seguridad.</p>
                                         </div>
@@ -118,45 +151,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="row mb-80">
                         <div class="col-md-12 mt-5 mb-3"><h1 class="por-que-elegir">¿Por qué elegir IEXE Universidad?</h1></div>
-                        <div class="col-md-4"><div class="bloque-gde">
+                        <div class="col-md-4"><div class="bloque-gde mb-0">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/landing_v3/atencion.svg" class="img-fluid ico-pq" alt="">
                             <p class="texto-del-por-que">Plataforma disponible las <strong>24 horas del día, los 7 días</strong> de la semana.</p></div></div>
-                        <div class="col-md-4"><div class="bloque-gde">
+                        <div class="col-md-4"><div class="bloque-gde mb-0">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/landing_v3/plataforma.svg" class="img-fluid ico-pq" alt="">
                             <p class="texto-del-por-que">Aprende de docentes con <strong>experiencia laboral relevante</strong> en su área de conocimiento.</p></div></div>
-                        <div class="col-md-4"><div class="bloque-gde">
+                        <div class="col-md-4"><div class="bloque-gde mb-0">
                             <img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/landing_v3/servicios-escolares.svg" class="img-fluid ico-pq" alt="">
                             <p class="texto-del-por-que">Recibe <strong>atención personalizada</strong> de docentes, atención a alumnos, servicios escolares y soporte técnico.</p></div></div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row d-none d-md-flex">
+                        <div class="fondo-blanco"></div>
                         <div class="col-md-12">
                             <h1 class="programas-relacionados mb-5">
                                 Programas relacionados
                             </h1>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
+                    <div class="row d-none d-md-flex">
+                        <div class="col-6 col-lg-3">
                             <p class="sigla-prog">DSP</p>
                             <p class="nombre-prog mb-5">Doctorado en Ciencias Políticas y Administración Pública</p>
-                            <a href="#" class="boton-descubrelo">¡DESCÚBRELO!</a>
+                            <a href="#" class="boton-descubrelo mb-3">¡DESCÚBRELO!</a>
                         </div>
-                        <div class="col-3">
+                        <div class="col-6 col-lg-3">
                             <img src="https://www.iexe.edu.mx/wp-content/uploads/2022/01/Escudo_LCPA_IEXE.webp" class="img-fluid" alt="">
                         </div>
-                        <div class="col-3">
+                        <div class="col-6 col-lg-3">
                             <p class="sigla-prog">DSP</p>
-                            <p class="nombre-prog mb-5">Doctorado en Ciencias Políticas y Administración Pública</p>
-                            <a href="#" class="boton-descubrelo">¡DESCÚBRELO!</a>
+                            <p class="nombre-prog">Doctorado en Ciencias Políticas y Administración Pública</p>
+                            <a href="#" class="boton-descubrelo mb-3">¡DESCÚBRELO!</a>
                         </div>
-                        <div class="col-3">
-                            <img src="https://www.iexe.edu.mx/wp-content/uploads/2022/01/Escudo_LCPA_IEXE.webp" class="img-fluid" alt="">
+                        <div class="col-6 col-lg-3">
+                            <img src="https://www.iexe.edu.mx/wp-content/uploads/2022/01/Escudo_LCPA_IEXE.webp" class="img-fluid mt-5" alt="">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
-            <div class="col-md-3">
+            
+            <div class="col-md-3 col-lg-4 col-xl-3 d-none d-md-block">
                 <div class="formulario">
                     <div class="cabecera">
                         <h1 class="interes">¡REGÍSTRATE!</h1>
@@ -171,7 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <div class="col-md-12">
                                     <label for="correo">Correo electrónico*</label>
                                     <input id="correo" name="email" type="email" class="form-control" placeholder="Ingresa aquí tu correo" required="">
-                                    <input type="hidden" class="programa-landing" id="programa" name="programa" value="LD">
+                                    <input type="hidden" class="programa-landing" id="programa" name="programa" value="<?php the_field("clave_programa") ?>">
                                 </div>
                                 <div class="col-md-12">
                                     <label for="telefono">Teléfono o celular*</label>
@@ -180,7 +215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         <div class="row">
                             <div id="escolar" class="col-sm-12 mx-auto text-center">
-                                <p class="pregunta-bachiller">¿Tienes tu bachiller o preparatoria concluida?</p>
+                                <p class="pregunta-bachiller m-0 mt-3">¿Tienes tu bachiller o preparatoria concluida?</p>
                                 <input type="radio" id="concluida" name="escolaridad" value="Si" required="">
                                 <label for="concluida">Si</label>
                                 <input type="radio" id="en-tramite" name="escolaridad" value="En-tramite">
@@ -197,15 +232,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
             
+            
         </div>
     </div>      
 </section>
+<!-- <section id="programas-relacionados" class="d-block mt-40">
+        <div class="container">
+            <div class="row">
+                <div class="fondo-blanco"></div>
+                <div class="col-md-12">
+                    <h1 class="programas-relacionados mb-5">
+                        Programas relacionados
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-2 offset-md-1">
+                    <p class="sigla-prog">DSP</p>
+                    <p class="nombre-prog mb-5">Doctorado en Ciencias Políticas y Administración Pública</p>
+                    <a href="#" class="boton-descubrelo mb-3">¡DESCÚBRELO!</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <img src="https://www.iexe.edu.mx/wp-content/uploads/2022/01/Escudo_LCPA_IEXE.webp" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-md-2 offset-md-1">
+                    <p class="sigla-prog">DSP</p>
+                    <p class="nombre-prog mb-5">Doctorado en Ciencias Políticas y Administración Pública</p>
+                    <a href="#" class="boton-descubrelo mb-3">¡DESCÚBRELO!</a>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <img src="https://www.iexe.edu.mx/wp-content/uploads/2022/01/Escudo_LCPA_IEXE.webp" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+</section> -->
+ <?php get_template_part( 'template-parts/landing-relacionados-v2'); ?>
 <section id="relacionados">
     <div class="col-md-4"></div>
     <div class="col-md-4"></div>
 </section>
 
 <style>
+    section#landing-principal {
+        margin-top: 16px;
+    }
     section#relacionados {
         background-color: #FFF;
     }
@@ -227,7 +297,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     .bloque-info-podras {
         background: var(--primario--azul-obscuro);
-        background: url('<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/landing_v3/foto_sec_lsp.webp');
+        background: url(<?php echo esc_url($bg_cont['url']); ?>) 0% 0% / contain no-repeat;
         border-radius: 15px;
         color: #fff;
         padding: 15px 31px;
@@ -281,14 +351,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     h2.tipo {
         color: #00ffe8;
         font-weight: 800;
-        font-size: 24px;
+        font-size: 18px;
         font-family: 'aktiv-grotesk-extended';
     }
     h1.programa-academico {
         font-weight: 300;
         color: #FFF;
-        font-size: 48px;
-        line-height: 55px;
+        font-size: 42px;
+        line-height: 50px;
+        width: 80%;
     }
     h1.programas-relacionados{
         font-weight: 800;
@@ -307,14 +378,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         text-align: center;
     }
     p.frase-iexe {
-        font-size: 24px;
+        font-size: 21px;
         font-weight: 800;
         font-family: var(--familia-titulos);
-        line-height: 36px;
+        line-height: 30px;
         color: #FFF;
+        max-width: 395px;
     }
     #landing-principal p.descripcion-programa {
-        color: #FFF;
+        color: #fff;
         font-weight: 200;
         font-size: 16px;
         letter-spacing: 0.14px;
@@ -364,7 +436,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         margin-bottom: 60px;
     }
     .mb-80{
-        margin-bottom: 80px;
+        margin-bottom: 0px;
+    }
+    .mt-40{
+        margin-top: 40px;
     }
     p.pregunta-bachiller {
         font-size: 12px;
@@ -394,7 +469,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         background: #0018ff;
         color: #FFF;
         border-radius: 25px;
-        padding: 4px 50px;
+        padding: 4px 5px;
         font-weight: bold;
         font-size: 18px;
         -webkit-box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
@@ -402,6 +477,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         border: 0px;
         margin-bottom: 12px;
         margin-top: 0px;
+        width: 100%;
     }
     #form-interes-landing.form-interes-landing label[for=en-tramite] {
         margin-bottom: 10px!important;
@@ -409,6 +485,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .formulario .cuerpo {
         padding: 5px 22px;
     }
+    #landing-principal .formulario{
+        top: 0px;
+        position: sticky;
+    }
+    #form-interes-landing #escolar label {
+        margin-top: 0px;
+    }
+    p.direccion{
+        position: absolute;
+        bottom: 0px;
+    }
+    section#programas-relacionados {
+        background: #fff;
+        margin: 50px 0px;
+        padding: 30px;
+        margin-bottom: -63px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .bloques-principales {
+            height: 185px;
+            width: 100%;
+            padding: 15px;
+            box-shadow: -15px 20px 30px #001C3A5C;
+            margin-bottom: 40px;
+        }
+        h1.programa-academico {
+            width: 100%;
+        }
+        .bloque-info-podras {
+            background: var(--primario--azul-obscuro);
+            padding: 15px;
+            margin-right: unset;
+        }
+        body {
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position-x: -300px;
+        background-position-y: top;
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        .bloque-info-podras {
+            background: var(--primario--azul-obscuro);
+        }
+    }
+    @media screen and (max-width: 1199px) and (min-width: 996px) {
+        .bloque-gde {
+            height: 295px;
+            padding: 20px;
+        }
+    }
+    @media screen and (max-width: 990px) and (min-width: 769px) {
+        .bloque-gde {
+            height: 310px;
+            padding: 20px;
+        }
+    }
+
 </style>
 <script>
     function fillDataLayer(){
@@ -427,4 +562,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
     
 
-<?php get_template_part( 'template-parts/footer-landing'); ?>
+<?php get_template_part( 'template-parts/footer-landing-v2'); ?>
