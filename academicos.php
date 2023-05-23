@@ -13,6 +13,9 @@ $imagenIdentificador = get_field('imagen_donde_puedes_trabajar');
 $estiloPrograma = get_field('estilo_de_programa'); 
 $elTipo = get_field('tipo');
 $elTipo = explode(" " , $elTipo);
+$bannerProgramas = get_field('banner_programas_academicos' , 3507);
+$bannerProgramasMovil = get_field('banner_programas_academicos_movil', 3507);
+$linkBannerProgramas = get_field('link_banner_programas_academicos', 3507);
 ?>
 
 <?php get_header( ); ?>
@@ -26,7 +29,7 @@ $elTipo = explode(" " , $elTipo);
                       <div id="desc-programa" class="<?php echo (get_field('clave_del_programa')) ? get_field('clave_del_programa')  : 'SINA'; ?>">
                           <div class="col-12 col-md-7">
                             <h2 class="tipo-oferta"><?php the_field('tipo') ?></h2>
-                              <a class="button-primary"><?php the_title() ?></a>
+                              <a class="button-primary"><h1 class="nombre-de-programa"><?php the_title() ?></h1></a>
                               <div class="descripcion-programa">
                                 <?php the_field('descripcion_del_programa'); ?>
                               </div>
@@ -42,7 +45,7 @@ $elTipo = explode(" " , $elTipo);
                           <div class="col-md-4 offset-md-1 d-none d-sm-block">
                               <div class="formulario">
                                   <div class="cabecera">
-                                      <h1 class="interes">¿Estás interesado?</h1>
+                                      <h2 class="interes">¿Estás interesado?</h2>
                                   </div>
                                   <div class="cuerpo">
                                       <form id="interes" method="POST" data-origen="interes carrera" action="">
@@ -428,7 +431,24 @@ $elTipo = explode(" " , $elTipo);
         </div>
     </div>
 </section>
-<?php } ?>
+<?php }else {
+    ?>
+        <section id="banner-oferta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <?php if( !empty( $bannerProgramas ) ): ?>
+                            <a href="<?php echo esc_url( $linkBannerProgramas ) ?>"><img loading="lazy" src="<?php echo esc_url($bannerProgramas['url']); ?>" class="img-fluid d-none d-sm-block roundedx" alt="<?php echo esc_attr($bannerProgramas['alt']); ?>" /></a>
+                        <?php endif; ?>
+                        <?php if( !empty( $bannerProgramasMovil ) ): ?>
+                            <a href="<?php echo esc_url( $linkBannerProgramas ) ?>"><img loading="lazy" src="<?php echo esc_url($bannerProgramasMovil['url']); ?>" class="img-fluid d-block d-sm-none roundedx" alt="<?php echo esc_attr($bannerProgramasMovil['alt']); ?>" /></a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    <?php 
+} ?>
 <?php if(false && get_field('texto_identificador')){ ?>
 <div class="container">
     

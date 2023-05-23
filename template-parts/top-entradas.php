@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="nombre-categoria mb-4 mt-4">TOP ENTRADAS</h1>
+                <h2 class="nombre-categoria mb-4 mt-4 top-entradas">TOP ENTRADAS</h2>
             </div>
         </div>
                     

@@ -357,6 +357,7 @@ function votar_candidato(int $candidato , $spec = false){
     }
     
 };
+
 add_action('wp_ajax_nopriv_sayhello', 'say_hello_function');
 add_action('wp_ajax_sayhello', 'say_hello_function');
 function say_hello_function(){
@@ -380,11 +381,23 @@ function myplugin_ajaxurl() {
 }
 // votar_candidato(4);
 
+/* Disable all extra stuff of wordpress that is not needed in frontend */
+
+function disable_classic_theme_styles() {
+    wp_deregister_style('classic-theme-styles');
+    wp_dequeue_style('classic-theme-styles');
+}
+add_filter('wp_enqueue_scripts', 'disable_classic_theme_styles', 100);
+
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+
 $porcentajeBeca = round(rand(50 , 70), -1);
 function agregar_estilos_tema(){
-    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.34.5', 'all');
+    wp_register_style( 'iexe-unicorn-main', get_template_directory_uri() . '/assets/css/style.css' , 'bootstrap', '1.34.9', 'all');
     wp_register_style( 'iexe-unicorn-programas-estilo', get_template_directory_uri() . '/assets/css/programas.css', 'iexe-unicorn-main', '1.09', 'all' );
-    wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.07', 'all' );
+    wp_register_style( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/css/blog.css', 'iexe-unicorn-main', '1.08', 'all' );
     wp_register_style( 'iexe-unicorn-becas-estilo', get_template_directory_uri() . '/assets/css/becas.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-admisiones-estilo', get_template_directory_uri() . '/assets/css/admisiones.css', 'iexe-unicorn-main', '1.0', 'all' );
     wp_register_style( 'iexe-unicorn-programas-academicos', get_template_directory_uri() . '/assets/css/programas-academicos.css', 'iexe-unicorn-main', '1.0', 'all' );
@@ -399,6 +412,7 @@ function agregar_estilos_tema(){
     wp_register_style( 'iexe-tooltip-css', 'https://cdn.jsdelivr.net/npm/microtip@0.2.2/microtip.min.css', '', '0.2.2', 'all' );
     wp_register_style( 'iexe-test-orientacion-vocacional', get_template_directory_uri() . '/assets/css/style-tov.css', array(), '1.0', 'all' );
     wp_register_style( 'iexe-table-grid', 'https://cdn.jsdelivr.net/npm/gridjs@6.0.6/dist/theme/mermaid.min.css', array(), '1.0', 'all' );
+    wp_register_style( 'splidecss', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css', array(), '4.1.4', 'all' );
     wp_register_script( 'iexe-unicorn-programas', get_template_directory_uri() . '/assets/js/academico.js', 'jquery', '1.02', true );
     wp_register_script( 'iexe-unicorn-multipasos', get_template_directory_uri() . '/assets/js/form-multipasos.js', 'jquery', '1.0', true );
     wp_register_script( 'iexe-unicorn-blog', get_template_directory_uri() . '/assets/js/blog.js', 'jquery', '1.0', true );
@@ -419,27 +433,30 @@ function agregar_estilos_tema(){
     wp_register_script( 'iexe-nuevos-formularios', get_template_directory_uri() . '/assets/js/formularios.js', 'sweet-alert', '1.0', true );
     wp_register_script( 'iexe-formulariosZ', get_template_directory_uri() . '/assets/js/formulariosZ.js', 'sweet-alert', '1.4.1', true );
     wp_register_script( 'iexe-loadmore', get_template_directory_uri() . '/assets/js/btnloadmore.min.js', 'jquery', '1.0.0', true );
-    wp_register_style( 'iexe-new-blog', get_template_directory_uri() . '/assets/css/style-blog.css' , '1.0.1', 'all' );
+    wp_register_style( 'iexe-new-blog', get_template_directory_uri() . '/assets/css/style-blog.css' , '1.0.3', 'all' );
     wp_register_script( 'iexe-blog-ajax', get_template_directory_uri() . '/assets/js/blog-ajax.js', 'jquery', '1.0.0', true );
     wp_register_script( 'charts', 'https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js', array(), '2.9.3', true );
     wp_register_script( 'iexe-test-orientacion-vocacional', get_template_directory_uri() . '/assets/js/script-tov.js', array('charts'), '1.0.0', true );
     wp_register_script( 'iexe-table-grid', 'https://cdn.jsdelivr.net/npm/gridjs@6.0.6/dist/gridjs.production.min.js', array(), '6.0.6', true );
+    wp_register_script( 'splidejs', 'https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js', array(), '3.6.12', true );
     
 
     wp_register_script( 'iexe-unicorn-admisiones', get_template_directory_uri() . '/assets/js/admisiones.js', 'jquery', '1.0', true );
-    wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css', false, '4.6', 'all' );
+    wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css', false, '4.6.0', 'all' );
     wp_enqueue_style( 'loadercss', '//cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.min.css', false, '2.0.0', 'all' );
     wp_enqueue_style( 'loaderio', '//cdn.jsdelivr.net/gh/loadingio/ldbutton@v1.0.1/dist/ldbtn.min.css', 'loadercss', '1.0.1', 'all' );
     wp_enqueue_style('iexe-tooltip-css');
     
     wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', false, '3.6.0', true );
-    wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', 'jquery', '4.6.0', 'all' );
+    wp_enqueue_script( 'bootstrap-js', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js', 'jquery', '4.6.0', 'all' );
     wp_enqueue_script( 'jquery-mockjax', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/2.6.0/jquery.mockjax.min.js', 'jquery', '2.6.0', true );
     wp_enqueue_script( 'jquery-autocomplete');
     wp_enqueue_script( 'iexe-unicorn-valores');
     wp_enqueue_script( 'iexe-unicorn-init-busqueda');
     wp_enqueue_script( 'sweet-alert');
     wp_enqueue_script( 'iexe-formulariosZ');
+    wp_enqueue_script('splidejs');
+    wp_enqueue_style('splidecss');
     
     
     if(!is_page() || !is_page_template( 'academicos.php' ) ){
@@ -472,6 +489,7 @@ function agregar_estilos_tema(){
     }
     if(is_page_template( 'home.php' )){
         wp_enqueue_script( 'iexe-formulariosZ');
+        
     }
     if(is_page_template( 'page-new-blog.php' )){
         wp_enqueue_style( 'iexe-new-blog');
@@ -617,25 +635,38 @@ add_action( 'wp_enqueue_scripts', 'theme_ajax_enqueue_scripts' );
 // }
 // add_filter( 'style_loader_tag', 'add_rel_preload', 10, 4 );
 
-// add_filter( 'script_loader_tag', 'wsds_defer_scripts', 10, 3 );
-// function wsds_defer_scripts( $tag, $handle, $src ) {
-
-// 	// The handles of the enqueued scripts we want to defer
-// 	$defer_scripts = array( 
-// 		'intlTelinput'
-// 	);
-
-//     if ( in_array( $handle, $defer_scripts ) ) {
-//         return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
-//     }
+add_filter( 'script_loader_tag', 'wsds_defer_scripts', 10, 3 );
+function wsds_defer_scripts( $tag, $handle, $src ) {
+    $defered_scripts_handles = ["intlTelinput", "splidejs", "sweet-alert", "bootstrap-js", "jquery-mockjax", "js-cookie-pys", "wc-cart-fragments", "gtm4wp-form-move-tracker", "jquery-autocomplete", "iexe-unicorn-valores", "iexe-unicorn-init-busqueda", "iexe-formulariosZ", "joinchat"];
     
-//     return $tag;
-// } 
+
+
+
+    if ( in_array( $handle, $defered_scripts_handles ) ) {
+        return '<script src="' . $src . '" defer type="text/javascript"></script>' . "\n";
+    }
+    
+    return $tag;
+} 
 
 // function iexe_unicorn_excerpt_lenght() {
 //     return 20;
 // }
 // add_filter( 'excerpt_length', 'iexe_unicorn_excerpt_lenght', 999 );
+
+function add_rel_preload($html, $handle, $href, $media) {
+    $defered_styles_handles = ["loadercss", "iexe-unicorn-modals", "intlTelinput-style", "joinchat", "loaderio", "splidecss"];
+    if (! in_array( $handle, $defered_styles_handles ) ) {
+        return $html;
+    }
+    if(is_admin())
+        return $html;
+    $html = <<<EOT
+    <link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+    EOT;
+    return $html;
+}
+add_filter( 'style_loader_tag', 'add_rel_preload', 10, 4 );
 
 function wpse_allowedtags() {
     // Add custom tags to this string
@@ -708,25 +739,171 @@ endif;
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt'); 
 
-add_filter( 'get_avatar','get_local_avatar' , 10, 6 );
- 
+add_filter( 'get_avatar','get_local_avatar_v2' , 10, 6 );
+
+//add_filter( 'get_avatar','get_local_avatar_v2' , 10, 6 );
+
+function get_local_avatar_v2($avatar, $author_id_or_object, $size, $default, $alt = '', $args) {
+
+    if(gettype($author_id_or_object) == 'string'){
+
+        if(stristr($author_id_or_object,"@")){
+            $autore = get_user_by('email', $author_id_or_object);
+            if(is_object($autore)){
+                $author_id = $autore->data->ID;
+            }
+            $url = get_the_author_meta( 'userpicprofile', $author_id);
+
+            return "<img class='autor-profile-pic img-fluid' alt=\"".$alt."\" src='".$url."' width='".$size."' />";
+
+        }
+    }
+    
+    
+    $user = false;
+
+    if(is_user_logged_in(  )){
+        //print_r($author_id_or_object);
+        //echo "debug autor";
+    }
+
+    if ( is_numeric($author_id_or_object)) {
+
+        $id = (int) $author_id_or_object;
+        $user = get_user_by('id' , $id );
+
+    } elseif( is_object( $author_id_or_object ) ) {
+
+        if ( ! empty( $author_id_or_object->user_id  )) {
+            $id = (int) $author_id_or_object->user_id;
+            $user = get_user_by('id', $id );
+        }
+
+    } else {
+
+        $user = get_user_by( 'email', $id_or_email );
+
+    }
+
+    if ( $user && is_object( $user ) ) {
+
+        $url = get_the_author_meta( 'userpicprofile', $user->data->ID);
+
+         if($url) {
+
+            return "<img class='autor-profile-pic img-fluid' alt=\"".$alt."\" src='".$url."' width='".$size."' />";
+        
+        }
+
+    }
+    
+    return $avatar;
+
+}
+
+function cagb_get_critical_css($part){
+    $critical_css = '';
+    if(get_option('cagb_critical_css')!= ''){
+        $critical_css = get_option('cagb_critical_css');
+    }
+
+    switch($part){
+        case 'academicos':
+            $critical_css = " ";
+            break;
+    }
+    return $critical_css;
+}
+
 function get_local_avatar($avatar, $author, $size, $default, $alt, $args) {
+    // ------------------------------------
+    // handle user passed by email or by id
+    if(get_user_by('ID', $author) || get_user_by('email', $author)){
+    if(stristr($author,"@")) $autore = get_user_by('email', $author);
+      else $autore = get_user_by('ID', $author);
+   
+    $url = get_the_author_meta( 'userpicprofile', $autore->ID);
+    if($url) {
+      return "<img class='autor-profile-pic img-fluid' alt=\"".$alt."\" src='".$url."' width='".$size."' />";
+    } else {
+      return $avatar;
+    }
+  }else{
+      return $avatar;
+  }
+  }
+ 
+function get_local_avatar_v1($avatar, $author, $size, $default, $alt = '', $args) {
+
+    // $user = false;
+
+    // if ( is_numeric( $author ) ) {
+
+    //     $id = (int) $author;
+    //     $user = get_user_by( 'id' , $id );
+
+    // } elseif ( is_object( $author ) ) {
+
+    //     if ( ! empty( $author->user_id ) ) {
+    //         $id = (int) $author->user_id;
+    //         $author = get_user_by( 'id' , $id );
+    //     }
+
+    // } else {
+    //     $author = get_user_by( 'email', $author );	
+    // }
+
+    // if ( $user && is_object( $user ) ) {
+
+    //     if ( $user->data->ID == '1' ) {
+    //         $url = get_the_author_meta( 'userpicprofile', $autore->ID);
+    //         $avatar = $url;
+    //         $avatar = "<img alt='{$alt}' src='{$avatar}' class='avatar autor-profile-pic avatar-{$size} photo' height='{$size}' width='{$size}' />";
+    //     }
+
+    // }
+    // return $avatar;
   // ------------------------------------
   // handle user passed by email or by id
   if(get_user_by('ID', $author) || get_user_by('email', $author)){
-  if(stristr($author,"@")) $autore = get_user_by('email', $author);
-    else $autore = get_user_by('ID', $author);
+
+    if(stristr($author,"@")) $autore = get_user_by('email', $author);
+        else $autore = get_user_by('ID', $author);
+    
+    $url = get_the_author_meta( 'userpicprofile', $autore->ID);
+    
+    if($url) {
+
+        return "<img class='autor-profile-pic img-fluid' alt=\"".$alt."\" src='".$url."' width='".$size."' />";
+        
+    } else {
+        return $avatar;
+    }
+    }else{
+        return $avatar;
+    }
+}
+
+//add_filter( 'get_avatar','get_flathash_avatar' , 10, 5 );
+// function get_local_avatar($avatar, $author, $size, $default, $alt) {
+//   // -------------------------------------------
+//   // handle user passed by email or by id or comment obj
+//   if(isset($author->comment_ID)){
+//     $code = $author->comment_author_email;
+//   } else {
+//     if(stristr($author,"@")) $code = $autore;
+//       else {
+//         $autore = get_user_by('ID', $author);
+//         $code =$autore->user_email;
+//       }
+//   }
  
-  $url = get_the_author_meta( 'userpicprofile', $autore->ID);
-  if($url) {
-    return "<img class='autor-profile-pic img-fluid' alt=\"".$alt."\" src='".$url."' width='".$size."' />";
-  } else {
-    return $avatar;
-  }
-}else{
-    return $avatar;
-}
-}
+//   // use flathash avatar instead of gravatar
+//   $avatar = "http://flathash.com/". md5($code);
+ 
+//   return "&lt;img class='avatar' alt=\"".$alt."\" src='".$avatar."' width='".$size."' />";
+// }
+
 // --------------------------------------
 // add the field in your user edit profile page
 function add_author_image( $contactmethods ) {
@@ -741,6 +918,8 @@ function wpb_author_info_box($type=1, $author=0) {
     global $post;
 
     $info_autor = [];
+
+    $author_details = '';
      
     // Detect if it is a single post with a post author
     if ( is_single() || is_author() && isset( $post->post_author ) ) {
@@ -806,8 +985,9 @@ function wpb_author_info_box($type=1, $author=0) {
     // Author avatar and bio
      
     $author_details .= '<p class="author_details">' . get_avatar( get_the_author_meta('user_email') , 300, '', 'Imagen de autor', array('class' => 'img-fluid img-avatar')) . nl2br( $user_description ). '</p>';
-     
-    $author_details .= '<p class="author_links"><a href="'. $user_posts .'">Ver sus posts ' . $display_name . '</a>';  
+
+         
+    $author_details .= '<p class="author_links"><a href="'. $info_autor['url'] .'">Ver sus posts ' . $info_autor['name'] . '</a>';  
      
     // Check if author has a website in their profile
     if ( ! empty( $user_website ) ) {
@@ -1331,8 +1511,8 @@ function my_add_comment_columns_content($column, $comment_ID) {
             }
     endswitch;
 }
-function exclude_post_categories($excl='3,35', $spacer=' '){
-    $categories = get_the_category($post->ID);
+function exclude_post_categories($excl='3,35,64', $spacer=' '){
+    $categories = get_the_category();
        if(!empty($categories)){
          $exclude=$excl;
          $exclude = explode(",", $exclude);
@@ -1359,13 +1539,20 @@ function cagb_return_banner($post_id = 0) {
     $default = get_field('banner_por_default', 3505);
     $bannerA = get_field('banner_1');
     $bannerB = get_field('banner_2');
-    $default_url = $default['url_banner_forzado'];
-    $default_banner = $default['url'];
 
-    $bannerA_img = esc_url($bannerA['url']);
-    $bannerA_url = esc_url(get_field('link_rotacion_a'));
-    $bannerB_img = esc_url($bannerB['url']);
-    $bannerB_url = esc_url(get_field('link_rotacion_b'));
+    if($default){
+        $default_url = esc_url(get_field('url_banner_default', 3505));
+        $default_banner = $default['url'];
+    }
+    
+    if($bannerA){
+        $bannerA_img = esc_url($bannerA['url']);
+        $bannerA_url = esc_url(get_field('link_rotacion_a'));
+    }
+    if($bannerB){
+        $bannerB_img = esc_url($bannerB['url']);
+        $bannerB_url = esc_url(get_field('link_rotacion_b'));
+    }   
 
     $forzado = get_field('banner_forzado', 3505);
     

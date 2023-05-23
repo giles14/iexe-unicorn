@@ -7,7 +7,7 @@
     <?php  cagb_set_meta_row_month(); ?>
     
     <?php  while ( have_posts() ) : the_post(); ?>
-<section id="entrada-blog">
+<section id="entrada-blog" class="single-product">
     <div class="container">
     <?php
     if(is_user_logged_in( )){
@@ -291,11 +291,11 @@
     .contenido-post {
     color: #273481;
     }
-    body#single {
-    background: url(<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/blog-bg.png);
+    /* body#single {
+    background: url(<?php // echo esc_url(get_template_directory_uri()) ?>/assets/img/blog-bg.png);
     background-repeat: repeat-x;
     margin-top: 0px;
-    }
+    } */
     aside {
         margin-top: 85px;
         padding: 0 14px;

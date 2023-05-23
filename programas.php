@@ -5,8 +5,9 @@ Template Name: Programas
 ?>
 <?php get_header( ); ?>
 <?php 
-    $banner = get_field('banner_pagina_principal', 3505);
-    $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
+    $banner = get_field('banners_pagina_principal', 3505);
+    $banner = $banner['ban_pagina_principal'];
+    $bannerMovil = $banner['ban_pagina_principal_movil'];
 ?>
 <!-- <section id="principal">
     <div class="imagen-principal-completa">

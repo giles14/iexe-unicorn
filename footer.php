@@ -184,7 +184,7 @@
                 <a class="menu-movil" target="_blank" href="https://alumnos.iexe.edu.mx/">Alumnos</a>
                 <a class="menu-movil" target="_blank" href="https://docentes.iexe.edu.mx">Docentes</a>
                 <!-- <a class="menu-movil" target="_blank" href="https://develop.redisoft.dev">Colaboradores</a> -->
-                <a class="menu-movil" target="_blank" href="https://talento.iexe.edu.mx">Comercial</a>
+                <!-- <a class="menu-movil" target="_blank" href="https://talento.iexe.edu.mx">Comercial</a> -->
             </div>
         </div>
     </div>
@@ -349,9 +349,9 @@ function enableScroll() {
 
 </script>
 <?php wp_footer(  )?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/localization/messages_es.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script defer src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/localization/messages_es.js"></script>
+<script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
     $(document).ready(function(){
         // $('.sliding').slick({
@@ -367,12 +367,15 @@ function enableScroll() {
 </script>
 <script>
 // $(document).ready(function(){
-    var input = document.querySelector("#telefono");
-    var iti = window.intlTelInput(input, {
-      localizedCountries: { 'us': 'Estados Unidos' },
-      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
-      separateDialCode: true,
-      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+    window.addEventListener('DOMContentLoaded', function() {
+        var input = document.querySelector("#telefono");
+        var iti = window.intlTelInput(input, {
+        localizedCountries: { 'us': 'Estados Unidos' },
+        preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+        onlyCountries: [ 'AR', 'BO', 'CL', 'CO', 'CR', 'CU', 'DO', 'EC', 'SV', 'GT', 'HN', 'MX', 'NI', 'PA', 'PY', 'PE', 'PR', 'ES', 'US' , 'UY', 'VE'],
+        separateDialCode: true,
+        utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+        });
     });
 // });
   </script>
@@ -695,11 +698,6 @@ nav.navbar.sticky .navegacion-botones {
     font-weight: 300;
     transition: all 0.5s ease-out;
 }
-.navegacion-botones {
-    color: #FFF;
-    margin: 0 3% 0 10%;
-    font-weight: 300;
-}
 .navegacion-botones a {
     text-decoration: none;
     color: #fff;
@@ -707,17 +705,20 @@ nav.navbar.sticky .navegacion-botones {
     padding: 18px 10px;
     margin-left: 25px;
 }
-input#mi-busqueda {
+/* input#mi-busqueda {
     font-size: 16px;
     padding: 5px;
     border: none;
     border-radius: 0;
     background: rgba(0,30,66,0.01);
-    /* border-bottom: 1px solid #FFF; */
+    /* border-bottom: 1px solid #FFF;
     background-image: url(https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/buscar.svg);
     background-repeat: no-repeat;
     background-position-y: 5px;
-}
+    color: cyan;
+    width: 175px;
+    float: left;
+} */
 #grid .close {
     background: blue;
     border-radius: 25px;
@@ -725,9 +726,6 @@ input#mi-busqueda {
     color: #FFF;
     font-size: 20px;
     margin: 0px;
-}
-div#navbarSupportedContent {
-    flex-direction: row-reverse;
 }
 @media (max-width: 1199px){
 nav.navbar.sticky .navegacion-botones {
@@ -747,13 +745,16 @@ nav.navbar.sticky .navegacion-botones {
 }
 }
 </style>
-<script>
-    var inputing = document.querySelector("#telefono-pop");
-    var iti = window.intlTelInput(inputing, {
-      localizedCountries: { 'us': 'Estados Unidos' },
-      preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
-      separateDialCode: true,
-      utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+<script  type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function() {
+        var inputing = document.querySelector("#telefono-pop");
+        var iti = window.intlTelInput(inputing, {
+        localizedCountries: { 'us': 'Estados Unidos' },
+        preferredCountries: ['mx','co', 'cr', 'py', 'pe' , 'ec', 'us' ],
+        onlyCountries: [ 'AR', 'BO', 'CL', 'CO', 'CR', 'CU', 'DO', 'EC', 'SV', 'GT', 'HN', 'MX', 'NI', 'PA', 'PY', 'PE', 'PR', 'ES', 'US' , 'UY', 'VE'],
+        separateDialCode: true,
+        utilsScript: "<?php echo esc_url(get_template_directory_uri()) ?>/assets/js/utils.js",
+        });
     });
 </script>
 <?php if (is_user_logged_in()){ 

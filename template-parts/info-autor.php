@@ -1,7 +1,5 @@
 <?php
-    if(is_user_logged_in(  )){
-        echo wpb_author_info_box();
-    }
+    echo wpb_author_info_box();
 ?>
 
 <style>

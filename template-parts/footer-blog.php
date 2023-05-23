@@ -86,7 +86,7 @@
                 spinner.classList.remove('hidden');
                 console.log('lo tiene');
             }
-            fetch('https://iexe.edu.mx/wp-json/wp/v2/search/?subtype=page&per_page=10&subtype=post&search='+ termino).then(response => response.json()).then(function(myJson){
+            fetch('https://www.iexe.edu.mx/wp-json/wp/v2/search/?subtype=page&per_page=10&subtype=post&search='+ termino).then(response => response.json()).then(function(myJson){
               elC.innerHTML = "";
               return myJson
             }).then(function(myJson) {
@@ -241,12 +241,12 @@ function enableScroll() {
 <script>
   document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.splide',{
-      type: 'loop',
+      type: 'slide',
       perPage: 4,
       perMove: 1,
       pagination: false,
       arrows: true,
-      rewind : true,
+      rewind : false,
       breakpoints: {
       990: {
         perPage: 3,
@@ -267,7 +267,7 @@ function enableScroll() {
       perMove: 1,
       pagination: false,
       arrows: true,
-      rewind : false,
+      rewind : true,
       breakpoints: {
       990: {
         perPage: 3,

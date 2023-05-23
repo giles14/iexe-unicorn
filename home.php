@@ -1,13 +1,51 @@
 <?php get_header( ); ?>
 <?php 
-$banner = get_field('banner_pagina_principal', 3505);
-$bannerMovil = get_field('banner_pagina_principal_movil', 3505);
+$banner = get_field('banners_pagina_principal', 3505);
+$banner = $banner['ban_pagina_principal'];
+$bannerMovil = $banner['ban_pagina_principal_movil'];
 ?>
 <section id="slider">
-        <div class="container-fluid">
+            <div class="splide">
+                <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <a href="#"><img fetchpriority="high" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/somos_digitales_rev.webp" alt="Somos digitales"></a>
+                                <a href="#"><img fetchpriority="high" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_R-IEXE-100_digitales_rev.webp" alt="Somos digitales"></a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img fetchpriority="high" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-ama.webp" alt="Nuevo libro"></a>
+                                <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img fetchpriority="high" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-mov-ama.webp" alt="Nuevo libro"></a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="https://bit.ly/IeLSP" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slides/slide_1_LSP.webp" alt="Licenciatura en Seguridad Pública"></a>
+                                <a href="https://bit.ly/IeLSP" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slides/slide_1_LSP_movil.webp" alt="Licenciatura en Seguridad Pública"></a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img fetchpriority="high" loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_DoctoradoPP.webp" alt="Doctorado slide"></a>
+                                <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_DoctoradoPP_movil.webp" alt="Doctorado slide"></a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="https://bit.ly/3I4QqoR"><img fetchpriority="high" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_AWS_iexe.webp" alt="AWS academy"></a>
+                                <a href="https://bit.ly/3I4QqoR"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_R-IEXE-AWS.webp" alt="AWS academy"></a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+            <script>
+                document.addEventListener( 'DOMContentLoaded', function() {
+                    var splide = new Splide( '.splide' );
+                    splide.mount();
+                } );
+            </script>
+            <style>
+                .splide{
+                    height: 100%;
+                }
+            </style>
+        <!-- <div class="container-fluid">
             <div class="row">
                 <div id="slidePrincipal" class="carousel slide w-100 carousel-fade" data-ride="carousel">
-                    <div class="wrapper">
+                     <div class="wrapper">
                         <ol class="carousel-indicators d-none">
                             <li data-target="#slidePrincipal" data-slide-to="0" class="active"></li>
                             <li data-target="#slidePrincipal" data-slide-to="1"></li>
@@ -16,48 +54,28 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                             <li data-target="#slidePrincipal" data-slide-to="4"></li>
                             <li data-target="#slidePrincipal" data-slide-to="5"></li>
                         </ol>
-                    </div>
+                    </div> 
                 
                     <div class="carousel-inner">
-                    <div class="carousel-item active">
-                            <a href="https://www.youtube.com/channel/UCSxRuy1NuIO5qPULWp_I7EQ" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_YouTube_rev.webp" alt="Canal de Youtube"></a>
-                            <a href="https://www.youtube.com/channel/UCSxRuy1NuIO5qPULWp_I7EQ" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider-R-IEXE_YouTube_rev.webp" alt="Canal de Youtube"></a>
+                        <div class="carousel-item active">
+                            <a href="#"><img fetchpriority="high" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/somos_digitales_rev.webp" alt="Somos digitales"></a>
+                            <a href="#"><img fetchpriority="high" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_R-IEXE-100_digitales_rev.webp" alt="Somos digitales"></a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-ama.webp" alt="Nuevo libro"></a>
-                            <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-mov-ama.webp" alt="Nuevo libro"></a>
-                        </div>
-                        <!-- <div class="carousel-item">
-                            <a href="https://bit.ly/3Ya2gqy" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="https://www.iexe.edu.mx/wp-content/uploads/2022/12/slide-conexiones-libro-andere-scaled.webp" alt="Conexiones y equilibrios"></a>
-                            <a href="https://bit.ly/3Ya2gqy" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="https://www.iexe.edu.mx/wp-content/uploads/2022/12/slide-conexiones-libro-andere-2-copy.webp" alt="Conexiones y equilibrios"></a>
-                        </div> -->
-                        <div class="carousel-item">
-                            <a href="#"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/somos_digitales_rev.webp" alt="Somos digitales"></a>
-                            <a href="#"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_R-IEXE-100_digitales_rev.webp" alt="Somos digitales"></a>
+                            <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img fetchpriority="high" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-ama.webp" alt="Nuevo libro"></a>
+                            <a href="https://www.amazon.com.mx/Evaluaci%C3%B3n-Pol%C3%ADticas-P%C3%BAblicas-evaluaciones-inteligentes/dp/6078571168/ref=sr_1_7?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1UF59QUPIICAT&keywords=julio+franco+corzo&qid=1668544502&qu=eyJxc2MiOiIyLjAyIiwicXNhIjoiMS40MSIsInFzcCI6IjEuMTUifQ%3D%3D&s=books&sprefix=julio+franco+corzo%2Cstripbooks%2C118&sr=1-7" target="_blank"><img fetchpriority="high" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/evaluacion-politicas-pub-mov-ama.webp" alt="Nuevo libro"></a>
                         </div>
                         <div class="carousel-item">
-                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_DoctoradoPP.webp" alt="Doctorado slide"></a>
+                            <a href="https://bit.ly/IeLSP" target="_blank"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slides/slide_1_LSP.webp" alt="Licenciatura en Seguridad Pública"></a>
+                            <a href="https://bit.ly/IeLSP" target="_blank"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slides/slide_1_LSP_movil.webp" alt="Licenciatura en Seguridad Pública"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img fetchpriority="high" loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_DoctoradoPP.webp" alt="Doctorado slide"></a>
                             <a href="/oferta-educativa/doctorado-en-politicas-publicas/"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_DoctoradoPP_movil.webp" alt="Doctorado slide"></a>
                         </div>
-                        <!-- <div class="carousel-item">
-                            <a href="https://bit.ly/3NFUkYX"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
-                            <a href="https://bit.ly/3NFUkYX"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slide-r_Recomienda-Gana_iexe.webp" alt="AWS academy"></a>
-                        </div> -->
-                        <!-- <div class="carousel-item">
-                            <a href="/oferta-educativa/#licenciaturas"><img class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_TecnologiasIEXE.webp" alt="Somos tecnología"></a>
-                            <a href="/oferta-educativa/#licenciaturas"><img class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_r-tech-iexe.webp" alt="Somos tecnología"></a>
-                        </div> -->
                         <div class="carousel-item">
-                            <a href="https://bit.ly/3I4QqoR"><img class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_AWS_iexe.webp" alt="AWS academy"></a>
+                            <a href="https://bit.ly/3I4QqoR"><img fetchpriority="high" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slider_AWS_iexe.webp" alt="AWS academy"></a>
                             <a href="https://bit.ly/3I4QqoR"><img class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/Slide_R-IEXE-AWS.webp" alt="AWS academy"></a>
-                        </div>
-                      <div class="carousel-item">
-                            <a href="/comunidad"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider_internacional.webp" alt="Diplomado slide"></a>
-                            <a href="/comunidad"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/slider-somos-internacional.webp" alt="Diplomado slide"></a>
-                      </div>
-                      <div class="carousel-item">
-                            <a href="#"><img loading="lazy" class="w-100 d-none d-sm-block" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/recomienda_gana_slide.webp" alt="Recomienda y gana"></a>
-                            <a href="#"><img loading="lazy" class="d-block d-sm-none w-100" src="<?php  echo esc_url(esc_url(get_template_directory_uri())) ?>/assets/img/recomienda_gana_slideR.webp" alt="Recomienda y gana"></a>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#slidePrincipal" role="button" data-slide="prev">
@@ -70,9 +88,16 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
         
     </section>
+    <?php
+        if(is_user_logged_in( )){
+            ?>
+            
+        <?php
+        }
+     ?>
     <section id="oferta-educativa" class="mt-xs-4" style="min-height: 1053px;">
         <div class="container">
             <div class="row">
@@ -194,10 +219,10 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
         </div>
         
     </section>
-    <section class="d-none d-sm-block" id="info-primaria">
+    <!-- <section class="d-none d-sm-block" id="info-primaria">
         <div class="container" style="position: relative;">
             <video width="1140" height="420" autoplay muted loop style="position: absolute;top: 0;left: 0;border-radius: 15px;">
-                        <source src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/video/video4.m4v" type="video/mp4" muted>
+                        <source src="<?php // echo esc_url(get_template_directory_uri()) ?>/assets/video/video4.m4v" type="video/mp4" muted>
                         El navegador no acepta video
             </video>
             <div class="row">
@@ -223,14 +248,13 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
 
                 </div>
                 <div class="col-md-3">
-                    <!-- <p class="descripcion">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque</p> -->
-                    <!-- <a href="#" class="descubre-mas">Descubre más</a> -->
+                    <p class="descripcion">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusatium doloremque</p>
+                    <a href="#" class="descubre-mas">Descubre más</a> 
 
                 </div>
             </div>
         </div>
-
-    </section>
+    </section> -->
     <section id="embajadores-iexe">
         <div class="container">
             <div class="row">
@@ -321,9 +345,12 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
             height: 50px;
             border-radius: 50%;
         }
+        #popupIframe, #chatIframe {float: left! important; right: 115px! important;}
     </style>
-    <!-- Código de instalación Cliengo para Natalia (Prueba) --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/62e4184a6b1374002a108b4a/6318e0fc6b542e002a619720.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
-    <style>
-#popupIframe, #chatIframe {float: left! important; right: 115px! important;}
-</style>
+    <!-- Código de instalación Cliengo para Natalia (Prueba) --> 
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function() {
+            (function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/62e4184a6b1374002a108b4a/6318e0fc6b542e002a619720.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();    
+        });
+    </script>
     <?php get_footer( ); ?>

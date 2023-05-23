@@ -75,7 +75,7 @@
                     <?php  
                         if(!is_author()){
                     ?>
-                    <h2 class="nombre-de-categoria mb-4" style="padding-top: 80px;"><?php echo (is_category()) ? single_cat_title() : "Resultado de búsqueda" ?></h2>
+                    <h1 class="nombre-de-categoria mb-4" style="padding-top: 80px;"><?php echo (is_category()) ? single_cat_title() : "Resultado de búsqueda" ?></h1>
                     <?php 
                         }else{ ?>
                             <h2 class="nombre-de-categoria mb-4">Entradas del autor</h2>
@@ -99,8 +99,8 @@
                                 <p><?php the_excerpt(); ?></p>
                             </div>
                             <div class="col-12 col-md-8 offset-md-4 no-gutters" style="margin-top: -16px;">
-                                <p class="meta-info d-flex d-md-none w-100 justify-content-around mb-5"><img class="img-fluid pl-3 d-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-calendar.png" alt="icono de calendario"><span class="fecha pl-0"><?php  echo get_the_date('d\/m\/Y') ?></span><img class="pl-1 pl-md-3" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-clock.png" alt=""><span class="min-lectura  pl-1"><?php echo get_post_meta($post->ID,'time_to_read',true) . " min" ?></span><img class="img-fluid pl-3" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-like.png" alt="icono de calendario"><span class="likes-noticia pl-1">300</span><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-commen.png" class="img-fluid pl-3" alt="icono de calendario"> <span class="comentarios pl-1"><?php echo get_comments_number() ?></span><span class="pl-5"><a href="<?php the_permalink()?>" class="link-ver-mas text-right">Ver más</a></span></p>
-                                <p class="meta-info d-none d-md-block"><img class="img-fluid pl-3 d-none d-md-inline" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-calendar.png" alt="icono de calendario"><span class="fecha pl-3"><?php  echo get_the_date('d\/m\/Y') ?></span><img class="pl-0 pl-md-3" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-clock.png" alt=""><span class="min-lectura  pl-3"><?php echo get_post_meta($post->ID,'time_to_read',true) . " min de lectura" ?></span><img class="img-fluid pl-3" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-like.png" alt="icono de calendario"><span class="likes-noticia pl-3">300</span><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-commen.png" class="img-fluid pl-3" alt="icono de calendario"> <span class="comentarios pl-3"><?php echo get_comments_number() ?></span></p>
+                                <p class="meta-info d-flex d-md-none w-100 justify-content-around mb-5"><img class="img-fluid pl-3 d-none" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-calendar.png" alt="icono de calendario"><span class="fecha pl-0"><?php  echo get_the_date('d\/m\/Y') ?></span><img class="pl-1 pl-md-3" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-clock.png" alt=""><span class="min-lectura  pl-1"><?php echo get_post_meta($post->ID,'time_to_read',true) . " min" ?></span><img class="img-fluid pl-3" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-like.png" alt="icono de calendario"><span class="likes-noticia pl-1"><?php echo cagb_count_likes_post($post->ID); ?></span><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-commen.png" class="img-fluid pl-3" alt="icono de calendario"> <span class="comentarios pl-1"><?php echo get_comments_number() ?></span><span class="pl-5"><a href="<?php the_permalink()?>" class="link-ver-mas text-right">Ver más</a></span></p>
+                                <p class="meta-info d-none d-md-block"><img class="img-fluid pl-3 d-none d-md-inline" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-calendar.png" alt="icono de calendario"><span class="fecha pl-3"><?php  echo get_the_date('d\/m\/Y') ?></span><img class="pl-0 pl-md-3" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-clock.png" alt=""><span class="min-lectura  pl-3"><?php echo get_post_meta($post->ID,'time_to_read',true) . " min de lectura" ?></span><img class="img-fluid pl-3" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-like.png" alt="icono de calendario"><span class="likes-noticia pl-3"><?php echo cagb_count_likes_post($post->ID); ?></span><img src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/icons/aw-commen.png" class="img-fluid pl-3" alt="icono de calendario"> <span class="comentarios pl-3"><?php echo get_comments_number() ?></span></p>
                                 <p class="text-right d-none d-md-block"><a href="<?php the_permalink()?>" class="link-ver-mas text-right">Ver más</a></p>
                             </div>
                         </div>
@@ -129,6 +129,17 @@
 <style>
     h2.nombre-de-categoria{
         text-transform: uppercase;
+    }
+    h1.nombre-de-categoria{
+        text-transform: uppercase;
+        font-size: 32px;
+    }
+    h2.nombre-categoria {
+        font-size: 24px;
+        color: #001E42;
+        text-decoration: underline 1px solid;
+        text-underline-offset: 8px;
+        font-weight: 200;
     }
     #los-mas-leidos h1.titulo {
         font-weight: 200;

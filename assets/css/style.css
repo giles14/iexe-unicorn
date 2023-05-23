@@ -1,6 +1,7 @@
 :root{
     --primario-azul: #0018FF;
     --primario-cyan: #00FFE8;
+    --primario-azul-obscuro: #001E42;
     --primario--azul-obscuro: #001E42;
     --boton-morado-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
     --color-navegacion: #F6F6F6;
@@ -28,12 +29,19 @@ html {
     font-weight: 500;
     line-height: 1;
 }
-.navegacion-botones a {
+/* .navegacion-botones a {
     text-decoration: none;
     color: #fff;
     float: left;
     padding: 18px 10px;
     margin-left: 80px;
+} */
+.navegacion-botones a {
+    text-decoration: none;
+    color: #fff;
+    float: left;
+    padding: 18px 10px;
+    margin-left: 25px;
 }
 .navegacion-botones a:hover {
     text-decoration: none;
@@ -77,6 +85,7 @@ section#botones-accion {
 }
 div#navbarSupportedContent {
     height: 65px;
+    flex-direction: row-reverse;
 }
 section#plan-de-estudios {
     background: url(../img/fondoX.svg);
@@ -101,8 +110,7 @@ section#comunidad .button-primary{
     max-width: unset;
 }
 section#slider {
-    /* height: 102vh; */
-
+    height: 56vmax;
 }
 .boton-accion {
     position: relative;
@@ -135,9 +143,9 @@ input#mi-busqueda {
     padding: 5px;
     border: none;
     border-radius: 0;
-    background: rgba(0,30,66,0.01);
+    background: rgb(0 30 66 / 1%);
     /* border-bottom: 1px solid #FFF; */
-    background-image: url(https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/buscar.svg);
+    background-image: url("https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/buscar.svg");
     background-repeat: no-repeat;
     background-position-y: 5px;
 }
@@ -853,9 +861,14 @@ section#editorial::after{
     border: 1px solid #f3f3f3;
     color: #fff;
 }
-.navegacion-botones{
+/* .navegacion-botones{
     color: #FFF;
     margin: 0 5% 0 38%;
+    font-weight: 300;
+} */
+.navegacion-botones {
+    color: #FFF;
+    margin: 0 3% 0 10%;
     font-weight: 300;
 }
 .texto-slider{
@@ -1206,7 +1219,7 @@ img.boton-play {
 .navbar{
     transition: all 0.5s ease-out;
     padding: .3rem 1rem;
-    z-index: 98;
+    z-index: 102;
 }
 p.blockquote-footer {
     font-size: 18px;
@@ -1230,6 +1243,7 @@ cite {
     overflow: hidden;
     /* transition: all 0.5s ease-out; */
     margin-right: 152px;
+    height: 73px;
     
 }
 nav.navbar.sticky {
@@ -1238,9 +1252,15 @@ nav.navbar.sticky {
     box-shadow: 0px 3px 3px #001c3a4d;
     transition: all 0.2s ease-out;
 }
-nav.navbar.sticky .navegacion-botones {
+/* nav.navbar.sticky .navegacion-botones {
     color: #FFF;
     margin: 0 5% 0 38%;
+    font-weight: 300;
+    transition: all 0.5s ease-out;
+} */
+nav.navbar.sticky .navegacion-botones {
+    color: #FFF;
+    margin: 0 3% 0 10%;
     font-weight: 300;
     transition: all 0.5s ease-out;
 }
@@ -1509,6 +1529,15 @@ h1.interes {
     font-family: var(--familia-titulos), sans-serif;
 }
 
+h2.interes {
+    margin: 6px;
+    font-size: 24px;
+    color: var(--color-navegacion);
+    font-family: var(--familia-titulos), sans-serif;
+}
+h1.nombre-de-programa{
+    font-size: 24px;
+}
 #navegacion a {
     cursor: pointer;
 }
@@ -3116,7 +3145,7 @@ Login
         margin-top: 64px;
     }
     section#slider {
-        height: unset;
+        height: 86vh;
     }
     p.telefono-mexico {
         text-align: center;
@@ -3588,7 +3617,7 @@ input#mi-busqueda:focus {
 input#mi-busqueda:focus:placeholder-shown{
     padding-left: 115px;
 }
-input#mi-busqueda {
+/* input#mi-busqueda {
     font-size: 16px;
     padding: 5px;
     border: 1px solid #FFF;
@@ -3602,6 +3631,21 @@ input#mi-busqueda {
     background-repeat: no-repeat;
     background-position: 10px;
     background-size: 25px;
+    float: left;
+} */
+input#mi-busqueda {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 0;
+    background: rgba(0,30,66,0.01);
+    margin: 15px 0;
+    /* border-bottom: 1px solid #FFF; */
+    background-image: url(https://www.iexe.edu.mx/wp-content/themes/iexe-unicorn/assets/img/buscar.svg);
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    color: cyan;
+    width: 175px;
     float: left;
 }
 input#mi-busqueda[placeholder] {

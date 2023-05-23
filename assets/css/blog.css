@@ -10,11 +10,11 @@ section#los-mas-leidos {
 #blog section{
     background: #fff;
 }
-body#single{
+/* body#single{
     background: url(../img/bg-programas-academicos.webp);
     background-repeat: no-repeat;
     margin-top: 160px;
-}
+} */
 section#archivo-posts {
     /* background: #FFF; */
     padding-top: 120px;

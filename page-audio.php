@@ -207,10 +207,36 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
                 </div>
         </div>
         <div class="row">
-                <div class="col-12 col-md-4 col-lg-4 mb-3 mx-auto">
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="book-container text-center">
+                        <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/04/empiezaporque-audiolibros-IEXE.png" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-14" data-target="#staticBackdrop" href="#" target="_blank" data-id="14" download><button>¡Descarga el resumen!</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
                     <div class="book-container text-center">
                         <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/04/mideimporta_audiolibros-IEXE-copy.png" alt="" class="img-fluid mb-3">
                             <a  data-toggle="modal" class="boton-descarga-13" data-target="#staticBackdrop" href="#" target="_blank" data-id="13" download><button>¡Descarga el resumen!</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="book-container text-center">
+                        <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/05/ganaramigos_audiolibros-IEXE.png" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-15" data-target="#staticBackdrop" href="#" target="_blank" data-id="15" download><button>¡Descarga el resumen!</button></a>
+                    </div>
+                </div>
+        </div>  
+        <div class="row">
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="book-container text-center">
+                        <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/05/hyperfocus_audiolibros-IEXE-1.webp" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-17" data-target="#staticBackdrop" href="#" target="_blank" data-id="17" download><button>¡Descarga el resumen!</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
+                    <div class="book-container text-center">
+                        <img src="https://www.iexe.edu.mx/wp-content/uploads/2023/05/agilidademocional_audiolibros-IEXE-copy.webp" alt="" class="img-fluid mb-3">
+                            <a  data-toggle="modal" class="boton-descarga-16" data-target="#staticBackdrop" href="#" target="_blank" data-id="16" download><button>¡Descarga el resumen!</button></a>
                     </div>
                 </div>
         </div>  
@@ -342,6 +368,10 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
         let boton11 = document.getElementsByClassName("boton-descarga-11");
         let boton12 = document.getElementsByClassName("boton-descarga-12");
         let boton13 = document.getElementsByClassName("boton-descarga-13");
+        let boton14 = document.getElementsByClassName("boton-descarga-14");
+        let boton15 = document.getElementsByClassName("boton-descarga-15");
+        let boton16 = document.getElementsByClassName("boton-descarga-16");
+        let boton17 = document.getElementsByClassName("boton-descarga-17");
 
         
 
@@ -359,6 +389,10 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
         boton11[0].dataset.toggle = 'null';
         boton12[0].dataset.toggle = 'null';
         boton13[0].dataset.toggle = 'null';
+        boton14[0].dataset.toggle = 'null';
+        boton15[0].dataset.toggle = 'null';
+        boton16[0].dataset.toggle = 'null';
+        boton17[0].dataset.toggle = 'null';
 
         // boton1[0].href = 'https://www.iexe.edu.mx/wp-content/uploads/2023/01/Resumen_DPP_iexe.pdf';
         // boton2[0].href = 'https://www.iexe.edu.mx/wp-content/uploads/2022/11/Resumen_Esencialismo.pdf';
@@ -379,6 +413,10 @@ $bannerMovil = get_field('banner_pagina_principal_movil', 3505);
         boton11[0].href = responseLinks[10];
         boton12[0].href = responseLinks[11];
         boton13[0].href = responseLinks[12];
+        boton14[0].href = responseLinks[13];
+        boton15[0].href = responseLinks[14];
+        boton16[0].href = responseLinks[15];
+        boton17[0].href = responseLinks[16];
         
     }
     function switchLinks(respuesta){

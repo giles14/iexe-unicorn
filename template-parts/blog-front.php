@@ -19,7 +19,7 @@
                     <a target="_blank" href="<?php the_permalink() ?>"><?php the_post_thumbnail('destacada-nuevo-bloque', array('class' => 'img-fluid')); ?></a>
                     <div class="area-de-texto">
                         <a href="<?php the_permalink() ?>"><h1><?php echo wp_trim_words(get_the_title(), 16, '...');  ?></h1></a>
-                        <p><?php echo get_the_excerpt() ?></p>
+                        <p><?php echo strip_tags(get_the_excerpt()) ?></p>
                         <div class="extra-data">
                             <span><img class="img-fluid mr-2" src="<?php echo esc_url(get_template_directory_uri()) ?>/assets/img/autor_iexe.png" alt=""> <?php echo get_author_name(); ?></span>
                         </div>

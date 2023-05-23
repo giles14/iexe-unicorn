@@ -86,7 +86,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <label for="no-concluida">No</label>
                                     </div>
                                 </div>
-                                            <button type="submit" id="boton-enviar" class="enviar-landing btn sin-form btn-primario esp ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
+                                            <!-- <button type="submit" id="boton-enviar" class="enviar-landing btn sin-form btn-primario esp ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button> -->
+                                            <button type="submit" id="boton-enviar" class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
                             </form>
                                 <span class="disclaimer">Al ingresar tus datos, aceptas nuestro <a href="https://iexe.edu.mx/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a>.</span>
                             </div>
@@ -110,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
                                 <p class="el-elemento">Fechas de inicio</p>
                                 <span class="line-sep"></span>
-                                <span class="elemento-respuesta">1 Diciembre</span>
+                                <span class="elemento-respuesta"><?php echo get_field('inicio_de_clases', 3505); ?></span>
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 col-12">
@@ -224,7 +225,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <label for="no-concluida">No</label>
                             </div>
                         </div>
-                                    <button type="submit" id="boton-enviar" class="enviar-landing btn sin-form btn-primario esp ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
+                                    <!-- <button type="submit" id="boton-enviar" class="enviar-landing btn sin-form btn-primario esp ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button> -->
+                                    <button type="submit" id="boton-enviar" class="enviar-landing btn sin-form btn-primario mt-3 ld-ext-right">Enviar registro<div class="ld ld-ring ld-spin"></div></button>
                     </form>
                         <span class="disclaimer">Al ingresar tus datos, aceptas nuestro <a href="https://iexe.edu.mx/aviso-de-privacidad/" target="_blank">Aviso de Privacidad</a>.</span>
                     </div>
@@ -501,6 +503,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         margin: 50px 0px;
         padding: 30px;
         margin-bottom: -63px;
+    }
+    #landing-principal button#boton-enviar {
+        background: #0018ff;
+        color: #FFF;
+        border-radius: 25px;
+        padding: 4px 5px;
+        font-weight: bold;
+        font-size: 18px;
+        -webkit-box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
+        box-shadow: 0px 9px 6px 0px rgb(12 34 245 / 15%);
+        border: 0px;
+        margin-bottom: 12px;
+        margin-top: 0px;
+        width: 100%;
     }
     
     @media screen and (max-width: 600px) {
